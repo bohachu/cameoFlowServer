@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:args/args.dart';
 import 'package:shelf/shelf.dart' as shelf;
 import 'package:shelf/shelf_io.dart' as io;
+
 import 'fetchTrello.dart';
 
 // For Google Cloud Run, set _hostname to '0.0.0.0'.
@@ -35,4 +36,7 @@ Future<shelf.Response> _echoRequest(shelf.Request request) async {
   String strFetchTrello = await FetchTrello.fetchTrello();
   print('server.dart/strFetchTrello:\n$strFetchTrello');
   return shelf.Response.ok('Request for "${request.url}"');
+  //TODO:
+  // how to server static files?
+  // Serve Flutter web project built files?
 }
