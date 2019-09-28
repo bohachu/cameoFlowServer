@@ -39,4 +39,9 @@ Future<shelf.Response> _echoRequest(shelf.Request request) async {
   //TODO:
   // how to server static files?
   // Serve Flutter web project built files?
+  // server: Use crontab or scheduling tools to trigger Trello API fetch data (1 min)
+  // server: call Trello API to get JSON files, and put JSON on a static web site
+  // client: HTTP get static JSON file from remote web site
+  // client: Generate Charts and show
+  // client: Use reload button to refresh data to latest changes.
 }
