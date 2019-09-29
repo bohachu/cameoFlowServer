@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link charset="utf-8" href="../../codebase/webix.css?v=7.0.1" rel="stylesheet" type="text/css">
+    <script charset="utf-8" src="../../codebase/webix.js?v=7.0.1" type="text/javascript"></script>
+    <title>Layout with Headers</title>
+</head>
+<body>
+<div id='layout_div' style='width:600px; height:600px; margin:20px;'></div>
+<script charset="utf-8" type="text/javascript">
+    webix.ui({
+        container: "layout_div",
+        height: 600,
+        width: 700,
+        cols: [
+            {header: "col 1", body: "content 1", width: 150},
+            {
+                collapsed: false,
+                header: "col 3",
+                body: "content 3",
+                width: 150
+            },
+            {header: "col 5", body: "content 5", width: 150}
+        ]
+    });
+
+</script>
+</body>
+</html>

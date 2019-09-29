@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link charset="utf-8" href="../../codebase/webix.css?v=7.0.1" rel="stylesheet" type="text/css">
+    <script charset="utf-8" src="../../codebase/webix.js?v=7.0.1" type="text/javascript"></script>
+    <link charset="utf-8" href="data/myform.css?v=7.0.1" rel="stylesheet" type="text/css">
+    <style>
+        #areaA {
+            margin: 50px;
+            width: 700px;
+            height: 410px;
+        }
+
+        .controls {
+            margin: 50px;
+        }
+    </style>
+    <title>Using HTTP-template</title>
+</head>
+<body>
+
+<div id="areaA"></div>
+
+<div class="controls">
+    <input onclick="set_form();" type="button" value="Set form"/>
+    <input onclick="get_form();" type="button" value="Get form"/>
+    <input onclick="clear_form();" type="button" value="Clear form"/>
+    <input onclick="focus_form();" type="button" value="Focus"/>
+    <input onclick="load_form();" type="button" value="Load form"/>
+</div>
+
+
+<script charset="utf-8" type="text/javascript">
+    webix.ui({
+        container: "areaA",
+        view: 'layout',
+        cols: [
+            {template: "left bar"},
+            {
+                id: "formView",
+                view: "htmlform",
+                template: "http->data/form.html",
+                width: 500
+            },
+            {template: "right bar"}
+        ]
+    });
+
+    function set_form() {
+        $$('formView').setValues({
+            title: "Book title 1",
+            author: "Author test",
+            in_store: false,
+            rank: "4",
+            genre: "fantasy",
+            annotation: "some test",
+            submit: "Order"
+        });
+    }
+
+    function get_form() {
+        var values = $$('formView').getValues();
+        console.log(values);
+    }
+
+    function clear_form() {
+        $$('formView').clear();
+    }
+
+    function focus_form(item) {
+        $$('formView').focus();
+    }
+
+    function load_form() {
+        $$('formView').load("./data/book.xml", "xml");
+    }
+</script>
+</body>
+</html>

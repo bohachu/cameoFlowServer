@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link charset="utf-8" href="../../codebase/webix.css?v=7.0.1" rel="stylesheet" type="text/css">
+    <script charset="utf-8" src="../../codebase/webix.js?v=7.0.1" type="text/javascript"></script>
+    <script src="../common/chartdata.js?v=7.0.1"></script>
+    <title>Fullscreen::View in accordion</title>
+</head>
+
+<body>
+<script charset="utf-8" type="text/javascript">
+    webix.ui({
+        rows: [
+            {
+                view: "button", value: "fullscreen chart", click: function () {
+                    webix.fullscreen.set("chart");
+                }
+            },
+            {
+                multi: true,
+                view: "accordion",
+                css: "webix_dark",
+                cols: [
+                    {
+                        header: "col1", body: {
+                            view: "chart",
+                            id: "chart",
+                            type: "bar",
+                            value: "#sales#",
+                            xAxis: {
+                                template: "'#year#"
+                            },
+                            yAxis: {
+                                start: 0,
+                                end: 100,
+                                step: 10,
+                                template: function (obj) {
+                                    return (obj % 20 ? "" : obj)
+                                }
+                            },
+                            data: dataset
+                        }
+                    },
+                    {body: "Content 2"},
+                    {header: "col 3", body: "content 3"}
+                ]
+            }
+        ]
+    });
+</script>
+</body>
+</html>

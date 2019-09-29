@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <title>Adding/Removing Items</title>
+    <script src="../../../codebase/webix.js?v=7.0.1" type="text/javascript"></script>
+    <link href="../../../codebase/webix.css?v=7.0.1" rel="STYLESHEET" type="text/css">
+    <script src="../../common/testdata.js?v=7.0.1"></script>
+    <link href="../02_templates/dataview_styles.css?v=7.0.1" rel="STYLESHEET" type="text/css">
+<body>
+
+<div id="data" style="width:545px;height:270px;margin:20px"></div>
+
+<form style="margin-left:20px;width:200px">
+    Title <input id="title" type="text" value="New movie"><br>
+    Year <input id="year" type="text" value="2012"><br>
+    <input onclick='addData()' type="button" value="Add &rarr;">
+    <hr>
+    <input onclick='removeData()' type="button" value="Remove selected &rarr;">
+    <input onclick='$$("data").clearAll()' type="button" value="Remove all items">
+</form>
+
+<script>
+    webix.ui({
+        id: "data",
+        view: "dataview",
+        container: "data",
+        select: 1,
+        css: "movies",
+        type: {
+            width: 261,
+            height: 90,
+            template: "<div class='overall'><div class='title'>#title#</div><div class='year'>#year# year</div> </div>"
+        },
+        data: big_film_set
+    });
+
+    function addData() {
+        $$("data").add({
+            title: document.getElementById("title").value,
+            year: document.getElementById("year").value
+        }, 0)
+    }
+
+    function removeData() {
+        if (!$$("data").getSelectedId()) {
+            webix.message("No item is selected!");
+            return;
+        }
+        $$("data").remove($$("data").getSelectedId());
+    }
+</script>
+
+</body>
+</html>
+

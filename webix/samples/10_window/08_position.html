@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link charset="utf-8" href="../../codebase/webix.css?v=7.0.1" rel="stylesheet" type="text/css">
+    <script charset="utf-8" src="../../codebase/webix.js?v=7.0.1" type="text/javascript"></script>
+
+    <style type="text/css">input {
+        width: 100px;
+        height: 30px;
+    }</style>
+    <title>Window: Relative Positioning</title>
+</head>
+<body>
+<div id='layout_div' style='margin-left:300px; margin-top:300px'>
+    <input onclick='$$("win1").show(this, { pos: "top"})' type='button'
+           value='Top'><br>
+    <input onclick='$$("win1").show(this, { pos: "bottom"})' type='button'
+           value='Bottom'><br>
+    <input onclick='$$("win1").show(this, { pos: "left"})' type='button'
+           value='Left'><br>
+    <input onclick='$$("win1").show(this, { pos: "right"})' type='button'
+           value='Right'><br>
+    <input onclick='$$("win1").show(this, { pos: "bottom", x:20, y:20})' type='button'
+           value='Bottom +20'>
+</div>
+<script charset="utf-8" type="text/javascript">
+    webix.ui({
+        view: "popup",
+        id: "win1",
+        height: 150,
+        width: 200,
+        head: "This window is centered",
+        position: "center",
+        body: {
+            template: "Some text"
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic loading. Load Ahead</title>
+    <link charset="utf-8" href="../../../codebase/webix.css?v=7.0.1" rel="stylesheet" type="text/css">
+    <script charset="utf-8" src="../../../codebase/webix.js?v=7.0.1" type="text/javascript"></script>
+
+    <link href="../common/samples.css?v=7.0.1" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class='header_comment'>Dynamic loading. Avoiding blank spots while scrolling</div>
+<div class='sample_comment'>
+    The sample shows the use of the "loadahead" parameter.
+    It allows you to avoid possible blank spots in the datatable while scrolling.
+    When you start scrolling, the datatable loads the number of records specified either by this parameter or
+    "datafetch" (choosing the biggest value).
+</div>
+<div class='sample_comment'>Dynamic loading from DB.</div>
+<div id="testA" style='height:600px'></div>
+
+<script charset="utf-8" type="text/javascript">
+
+    webix.ready(function () {
+        var grida = webix.ui({
+            container: "testA",
+            view: "datatable",
+            columns: [
+                {id: "id", header: "", css: {"text-align": "center"}, width: 50},
+                {id: "package", header: "Name", width: 200},
+                {id: "section", header: "Section", width: 120},
+                {id: "size", header: "Size", width: 80},
+                {id: "architecture", header: "PC", width: 60}
+            ],
+
+            datafetch: 50,//default
+            loadahead: 100,
+            autowidth: true,
+            url: "/samples/server/packages_dynamic"
+        });
+    });
+</script>
+</body>
+</html>

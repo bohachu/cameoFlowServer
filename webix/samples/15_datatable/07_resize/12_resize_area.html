@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Size of resize area</title>
+    <link charset="utf-8" href="../../../codebase/webix.css?v=7.0.1" rel="stylesheet" type="text/css">
+    <script charset="utf-8" src="../../../codebase/webix.js?v=7.0.1" type="text/javascript"></script>
+
+    <link href="../common/samples.css?v=7.0.1" rel="stylesheet" type="text/css">
+    <script charset="utf-8" src="../common/testdata.js?v=7.0.1" type="text/javascript"></script>
+    <style>
+        .header {
+            background-color: #edf7fe;
+        }
+    </style>
+</head>
+<body>
+<div class='header_comment'>size property</div>
+<div class='sample_comment'>The sample shows 'size' property of resizeColumn and resizeRow that defines the size of
+    resize area.
+</div>
+<div id="testA" style='width:450px; height:300px;'></div>
+<script charset="utf-8" type="text/javascript">
+    webix.ready(function () {
+        grid = webix.ui({
+            container: "testA",
+            view: "datatable",
+
+            columns: [
+                {id: "rank", header: "", css: "header", width: 40},
+                {id: "title", header: "Film title"},
+                {id: "year", header: "Released"},
+                {id: "votes", header: "Votes", fillspace: true}
+            ],
+            autowidth: true,
+            autoheight: true,
+            css: "webix_header_border",
+            resizeColumn: {size: 6},
+            resizeRow: {size: 6},
+            data: small_film_set
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link charset="utf-8" href="../../codebase/webix.css?v=7.0.1" rel="stylesheet" type="text/css">
+    <script charset="utf-8" src="../../codebase/webix.js?v=7.0.1" type="text/javascript"></script>
+    <title>Fullscreen::HTML</title>
+    <style type="text/css">
+        #some_html {
+            width: 320px;
+        }
+    </style>
+</head>
+<body>
+<div id="button"></div>
+<img id="some_html" src="../26_carousel/imgs/image001.jpg">
+
+<script charset="utf-8" type="text/javascript">
+    webix.ready(function () {
+        webix.ui({
+            container: "button",
+            view: "button",
+            width: 320,
+            value: "fullscreen",
+            click: function () {
+                webix.fullscreen.set(document.getElementById("some_html"));
+            }
+        });
+    });
+</script>
+</body>
+</html>

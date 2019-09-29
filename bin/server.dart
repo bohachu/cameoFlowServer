@@ -5,11 +5,16 @@ import 'package:shelf/shelf.dart' as shelf;
 import 'package:shelf/shelf_io.dart' as io;
 
 import 'fetchTrello.dart';
+import 'staticWeb.dart';
 
 // For Google Cloud Run, set _hostname to '0.0.0.0'.
 const _hostname = 'localhost';
 
-main(List<String> args) async {
+void main(List<String> args) async {
+  mainStaticWeb();
+}
+
+void mainOriginalShelf(List<String> args) async {
   var parser = ArgParser()..addOption('port', abbr: 'p');
   var result = parser.parse(args);
 

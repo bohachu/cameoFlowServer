@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>Styling</title>
+    <link charset="utf-8" href="../../../codebase/webix.css?v=7.0.1" rel="stylesheet" type="text/css">
+    <script charset="utf-8" src="../../../codebase/webix.js?v=7.0.1" type="text/javascript"></script>
+    <script charset="utf-8" src="common/data.js?v=7.0.1" type="text/javascript"></script>
+    <link href="../common/samples.css?v=7.0.1" rel="stylesheet" type="text/css">
+    <style>
+        .top {
+            background-color: #ffe0b2;
+            border-color: #ffcc80;
+
+        }
+
+        .webix_selected {
+            background-color: #2196f3 !important;
+            border-color: #2196f3 !important;
+        }
+    </style>
+</head>
+<body>
+
+<div id="testA" style='width:900px; height:450px; '></div>
+
+
+<script charset="utf-8" type="text/javascript">
+
+
+    webix.ready(function () {
+        var orgChart = new webix.ui({
+            container: "testA",
+            view: "organogram",
+            select: true,
+            borderless: true,
+            data: chart_data_style
+        });
+    });
+</script>
+</body>
+</html>

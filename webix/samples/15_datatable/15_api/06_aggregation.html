@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data aggregation</title>
+    <link charset="utf-8" href="../../../codebase/webix.css?v=7.0.1" rel="stylesheet" type="text/css">
+    <script charset="utf-8" src="../../../codebase/webix.js?v=7.0.1" type="text/javascript"></script>
+
+    <link href="../common/samples.css?v=7.0.1" rel="stylesheet" type="text/css">
+    <script charset="utf-8" src="../common/testdata.js?v=7.0.1" type="text/javascript"></script>
+</head>
+<body>
+<div class='sample_comment'>Original</div>
+<div id="testA"></div>
+<hr>
+
+<script charset="utf-8" type="text/javascript">
+
+    webix.ready(function () {
+        var myformat = webix.i18n.numberFormat;
+
+        grida = webix.ui({
+            container: "testA",
+            view: "datatable",
+            columns: [
+                {id: "rank", header: "", css: "rank", width: 50},
+                {id: "title", header: "Film title", width: 200},
+                {id: "year", header: "Released", width: 80},
+                {id: "votes", header: "Votes", format: webix.i18n.numberFormat, width: 100}
+            ],
+            autowidth: true,
+            height: 300,
+
+            data: big_film_set
+        });
+
+    });
+
+    function group_year() {
+        grida.group({
+            by: "year",
+            map: {
+                "title": ["year", "any"],
+                "votes": ["votes", "sum"]
+            }
+        });
+        grida.sort({by: "title"});
+    };
+
+    function group_year_10() {
+        grida.group({
+            by: function (obj) {
+                return Math.floor(obj.year / 10);
+            },
+            map: {
+                "title": [function (obj) {
+                    var min = obj.year - obj.year % 10;
+                    return min + " - " + (min + 10)
+                }],
+                "votes": ["votes", "sum"]
+            }
+        });
+        grida.sort({by: "title"});
+    };
+
+    function ungroup() {
+        grida.ungroup();
+        grida.sort({by: "rank", as: "int"});
+    };
+</script>
+<input onclick='group_year()' type="button" value='Group by year'>
+<input onclick='group_year_10()' type="button" value='Group by 10 years'>
+<input onclick='ungroup();' type="button" value='Ungroup'>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link charset="utf-8" href="../../codebase/webix.css?v=7.0.1" rel="stylesheet" type="text/css">
+    <script charset="utf-8" src="../../codebase/webix.js?v=7.0.1" type="text/javascript"></script>
+
+    <script charset="utf-8" src="../common/testdata.js?v=7.0.1" type="text/javascript"></script>
+    <title>Fullscreen::View in layout</title>
+</head>
+<body>
+<script charset="utf-8" type="text/javascript">
+    webix.ui({
+        type: "space", rows: [
+            {
+                view: "button", value: "enable datatable fullscreen", click: function () {
+                    webix.fullscreen.set("table");
+                }
+            },
+            {view: "datatable", id: "table", autoConfig: true, data: big_film_set, height: 500},
+            {template: "Some text"},
+        ]
+    });
+</script>
+</body>
+</html>
