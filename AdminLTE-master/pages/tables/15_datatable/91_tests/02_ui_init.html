@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Datatable - UI initialization</title>
+    <link charset="utf-8" href="../../../codebase/webix.css?v=7.0.1" rel="stylesheet" type="text/css">
+    <script charset="utf-8" src="../../../codebase/webix.js?v=7.0.1" type="text/javascript"></script>
+
+    <link href="../common/samples.css?v=7.0.1" rel="stylesheet" type="text/css">
+    <script charset="utf-8" src="./testdata.js?v=7.0.1" type="text/javascript"></script>
+
+</head>
+
+<body>
+<script charset="utf-8" type="text/javascript">
+    webix.ready(function () {
+        webix.ui({
+            cols: [
+                {},
+                {
+                    rows: [
+                        {},
+                        {
+                            view: "datatable",
+                            columns: [{id: "a"}, {id: "b"}, {id: "c"}, {id: "d"}, {id: "e"}],
+                            data: small_test_matrix
+                        },
+                        {}
+                    ]
+                },
+                {
+                    rows: [
+                        {},
+                        {
+                            view: "datatable",
+                            columns: [{id: "a"}, {id: "b"}, {id: "c"}, {id: "d"}, {id: "e"}],
+                            data: big_test_matrix
+                        },
+                        {}
+                    ]
+                },
+                {}
+            ]
+        })
+    });
+</script>
+</body>
+</html>

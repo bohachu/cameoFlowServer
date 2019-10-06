@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auto height in window</title>
+    <link charset="utf-8" href="../../../codebase/webix.css?v=7.0.1" rel="stylesheet" type="text/css">
+    <script charset="utf-8" src="../../../codebase/webix.js?v=7.0.1" type="text/javascript"></script>
+
+    <link href="../common/samples.css?v=7.0.1" rel="stylesheet" type="text/css">
+    <script charset="utf-8" src="../common/testdata.js?v=7.0.1" type="text/javascript"></script>
+</head>
+<body>
+<div class='header_comment'>Auto height in window</div>
+<div class='sample_comment'>The sample shows the use of parameters 'autoheight' in combination with window control.
+</div>
+<div id="testA"></div>
+<script charset="utf-8" type="text/javascript">
+    webix.ready(function () {
+        webix.ui({
+            view: "window", position: "center",
+            head: {
+                view: "button", value: "click to load data in grid",
+                click: function () {
+                    $$('testgrid').load("../01_loading/data/data.json");
+                }
+            },
+            body: {
+                view: "datatable", id: "testgrid",
+                columns: [
+                    {id: "rank", header: "", css: "rank", width: 50},
+                    {id: "title", header: "Film title", width: 200},
+                    {id: "year", header: "Released", width: 80},
+                    {id: "votes", header: "Votes", width: 100}
+                ],
+                autoheight: true,
+                autowidth: true
+            }
+        }).show();
+    });
+</script>
+</body>
+</html>
