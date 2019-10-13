@@ -1,6 +1,7 @@
 import 'trelloData.dart';
 
 /*
+jclang v1.4
 add 客源 /cards/customFieldItems/idValue idCustomField=="*3a1b"
 add 起始日 /cards/customFieldItems/value/date
 add 案件名稱 /cards/name
