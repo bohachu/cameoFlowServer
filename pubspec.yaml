@@ -10,9 +10,10 @@ environment:
 dependencies:
   http: ^0.12.0+2
   args: ^1.5.0
-  shelf: ^0.7.5
-  shelf_static: ^0.2.8
+  shelf: '>=0.0.1'
+  shelf_static: '>=0.0.1'
   json_annotation: '>=0.0.1'
+  logging:  '>=0.0.1'
 
 dev_dependencies:
   pedantic: ^1.8.0

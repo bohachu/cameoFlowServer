@@ -17,12 +17,25 @@ replace /cards/customFieldItems/idValue
 */
 
 void mainJclang(){
-  trelloDataHandler();
+  print('jclang.dart/mainJclang');
+  executeJclangCommand();
 }
-void trelloDataHandler(){
+
+void loopEachCard(Map mapJson) {
+  print('jclang.dart/loopEachCard');
+  List lstCards = mapJson['cards'];
+  for (int i = 0; i < lstCards.length; i++) {
+    Map card = lstCards[i];
+    print('jclang.dart/loopEachCard/i:$i');
+  }
+}
+
+void executeJclangCommand() {
   Map mapJson=getTrelloData();
   String strJclangCommandRow='add 客源 /cards/customFieldItems/idValue idCustomField=="*3a1b"';
-  jclangCommandDispatcher(strJclangCommandRow,mapJson);
+  loopEachCard(mapJson);
+  //jclangCommandDispatcher(strJclangCommandRow,mapJson);
+  //return mapJson;
 }
 
 void jclangCommandDispatcher(String strJclangCommandRow, Map mapJson){
