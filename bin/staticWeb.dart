@@ -11,20 +11,22 @@ void mainStaticWeb() {
 }
 
 void webixSamples() {
+  String strHost='127.0.0.1';
   int intPort=8083;
   var handler =
   createStaticHandler('webix/samples/', defaultDocument: 'index.html');
-  print('webixDemo at http://localhost:$intPort/');
-  io.serve(handler, 'localhost', intPort);
+  print('webixDemo at http://$strHost:$intPort/');
+  io.serve(handler, '$strHost', intPort);
 }
 
 void stylishDemo() {
+  String strHost='127.0.0.1';
   int intPort=8084;
   var handler = createStaticHandler(
       'startbootstrap-stylish-portfolio-gh-pages/',
       defaultDocument: 'index.html');
-  print('stylishDemo at http://localhost:$intPort/');
-  io.serve(handler, 'localhost', intPort);
+  print('stylishDemo at http://$strHost:$intPort/');
+  io.serve(handler, '$strHost', intPort);
 }
 
 void adminLteDemo() {
