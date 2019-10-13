@@ -28,6 +28,6 @@ void stylishDemo() {
 void adminLteDemo() {
   var handler =
   createStaticHandler('AdminLTE-master/', defaultDocument: 'index.html');
-  print('adminLteDemo at http://127.0.0.1:80/');
-  io.serve(handler, 'localhost', 8082);
+  print('adminLteDemo at http://localhost:80/');
+  io.serve(handler, 'localhost', 80);
 }
