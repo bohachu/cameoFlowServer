@@ -1,12 +1,13 @@
 import 'package:shelf/shelf_io.dart' as io;
 import 'package:shelf_static/shelf_static.dart';
-import 'jclang.dart';
+//import 'jclang.dart';
 
 void mainStaticWeb() {
   //webixSamples();
   //stylishDemo();
   //adminLteDemo();
-  mainJclang();
+  //mainJclang();
+  print("hihi");
 }
 
 void webixSamples() {
