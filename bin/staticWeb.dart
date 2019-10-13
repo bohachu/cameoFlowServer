@@ -5,7 +5,7 @@ import 'package:shelf_static/shelf_static.dart';
 void mainStaticWeb() {
   //webixSamples();
   //stylishDemo();
-  //adminLteDemo();
+  adminLteDemo();
   //mainJclang();
   print("hihi");
 }
