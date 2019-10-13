@@ -3,32 +3,35 @@ import 'package:shelf_static/shelf_static.dart';
 //import 'jclang.dart';
 
 void mainStaticWeb() {
-  //webixSamples();
-  //stylishDemo();
+  print("staticWeb.dart/mainStaticWeb");
+  webixSamples();
+  stylishDemo();
   adminLteDemo();
   //mainJclang();
-  print("hihi");
 }
 
 void webixSamples() {
+  int intPort=8083;
   var handler =
   createStaticHandler('webix/samples/', defaultDocument: 'index.html');
-  print('webixDemo at http://localhost:8083/');
-  io.serve(handler, 'localhost', 8083);
+  print('webixDemo at http://localhost:$intPort/');
+  io.serve(handler, 'localhost', intPort);
 }
 
 void stylishDemo() {
+  int intPort=8084;
   var handler = createStaticHandler(
       'startbootstrap-stylish-portfolio-gh-pages/',
       defaultDocument: 'index.html');
-  print('stylishDemo at http://localhost:8084/');
-  io.serve(handler, 'localhost', 8084);
+  print('stylishDemo at http://localhost:$intPort/');
+  io.serve(handler, 'localhost', intPort);
 }
 
 void adminLteDemo() {
+  String strHost='127.0.0.1';
+  int intPort=80;
   var handler =
   createStaticHandler('AdminLTE-master/', defaultDocument: 'index.html');
-  String strHost='127.0.0.1';
-  print('adminLteDemo at http://$strHost:80/');
-  io.serve(handler, '$strHost', 80);
+  print('adminLteDemo at http://$strHost:$intPort/');
+  io.serve(handler, '$strHost', intPort);
 }
