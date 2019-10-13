@@ -3,9 +3,9 @@ import 'package:shelf_static/shelf_static.dart';
 import 'jclang.dart';
 
 void mainStaticWeb() {
-  webixSamples();
-  stylishDemo();
-  adminLteDemo();
+  //webixSamples();
+  //stylishDemo();
+  //adminLteDemo();
   mainJclang();
 }
 
