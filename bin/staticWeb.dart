@@ -11,7 +11,7 @@ void mainStaticWeb() {
 }
 
 void webixSamples() {
-  String strHost='127.0.0.1';
+  String strHost='10.140.0.4';
   int intPort=8083;
   var handler =
   createStaticHandler('webix/samples/', defaultDocument: 'index.html');
