@@ -30,7 +30,7 @@ void stylishDemo() {
 }
 
 void adminLteDemo() {
-  String strHost='127.0.0.1';
+  String strHost='localhost';
   int intPort=80;
   var handler =
   createStaticHandler('AdminLTE-master/', defaultDocument: 'index.html');
