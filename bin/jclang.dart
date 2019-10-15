@@ -32,20 +32,78 @@ void loopEachCard(Map mapJson) {
 }
 
 void processEachCard(Map mapCard) {
+  processIdValue(mapCard);
+  processCustomFieldItems(mapCard, '起始日', 'value', 'date');
+  processCustomFieldItems(mapCard, '金額', 'value', 'number');
+  processCustomFieldItems(mapCard, '客戶', 'value', 'text');
+  processSecondTier(mapCard, '案件名稱', 'name');
+  processSecondTier(mapCard, '交期', 'due');
+  processSecondTier(mapCard, '階段', 'idList');
+  processLabels(mapCard);
+}
+
+void processLabels(Map mapCard) {
+  List lst = mapCard['labels'];
+  for (int i = 0; i < lst.length; i++) {
+    String strResult;
+    try {
+      strResult = lst[i]['color'];
+    } catch (e) {
+      strResult = null;
+    }
+    if (strResult != null) {
+      print('jclang.dart/優先次序,$strResult');
+    }
+  }
+}
+
+void processSecondTier(Map mapCard, String strName, String strKey) {
+  String strResult = mapCard[strKey];
+  if (strResult != null) {
+    print('jclang.dart/strResult,$strName,$strResult');
+  }
+}
+
+void processCustomFieldItems(Map mapCard,
+    String strName,
+    String strKey1,
+    String strKey2,) {
   List lstCustomFieldItems = mapCard['customFieldItems'];
+  for (int i = 0; i < lstCustomFieldItems.length; i++) {
+    String strResult;
+    try {
+      strResult = lstCustomFieldItems[i][strKey1][strKey2];
+    } catch (e) {
+      strResult = null;
+    }
+    if (strResult != null) {
+      print('jclang.dart/processCustomFieldItems,$strName,$strResult');
+    }
+  }
+}
+
+void processIdValue(Map mapCard) {
+  List lstCustomFieldItems = mapCard['customFieldItems'];
+
   for (int i = 0; i < lstCustomFieldItems.length; i++) {
     String strIdValue = lstCustomFieldItems[i]['idValue'];
     String strIdCustomField = lstCustomFieldItems[i]['idCustomField'];
-    print(
-        'jclang.dart/processEachCard/strIdValue:$strIdValue,strIdCustomField:$strIdCustomField');
+    bool isHit = false;
     if (strIdCustomField.endsWith("3a1b")) {
       print('客源 jclang.dart/processEachCard/hit 3a1b');
+      isHit = true;
     }
     if (strIdCustomField.endsWith("f3f0")) {
       print('人員 jclang.dart/processEachCard/hit f3f0');
+      isHit = true;
     }
     if (strIdCustomField.endsWith("a129")) {
       print('產品類別 jclang.dart/processEachCard/hit a129');
+      isHit = true;
+    }
+    if (isHit) {
+      print(
+          'jclang.dart/processEachCard/strIdValue:$strIdValue,strIdCustomField:$strIdCustomField');
     }
   }
 }
