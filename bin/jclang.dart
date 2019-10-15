@@ -18,7 +18,8 @@ replace /cards/customFieldItems/idValue
 
 void mainJclang() {
   print('jclang.dart/mainJclang');
-  executeJclangCommand();
+  Map mapJson = getTrelloData();
+  loopEachCard(mapJson);
 }
 
 void loopEachCard(Map mapJson) {
@@ -32,17 +33,19 @@ void loopEachCard(Map mapJson) {
 }
 
 void processEachCard(Map mapCard) {
-  processIdValue(mapCard);
+  processIdValue(mapCard, '客源', '3a1b');
+  processIdValue(mapCard, '人員', 'f3f0');
+  processIdValue(mapCard, '產品類別', 'a129');
   processCustomFieldItems(mapCard, '起始日', 'value', 'date');
   processCustomFieldItems(mapCard, '金額', 'value', 'number');
   processCustomFieldItems(mapCard, '客戶', 'value', 'text');
   processSecondTier(mapCard, '案件名稱', 'name');
   processSecondTier(mapCard, '交期', 'due');
   processSecondTier(mapCard, '階段', 'idList');
-  processLabels(mapCard);
+  processLabels(mapCard, '優先次序');
 }
 
-void processLabels(Map mapCard) {
+void processLabels(Map mapCard, strName) {
   List lst = mapCard['labels'];
   for (int i = 0; i < lst.length; i++) {
     String strResult;
@@ -52,7 +55,7 @@ void processLabels(Map mapCard) {
       strResult = null;
     }
     if (strResult != null) {
-      print('jclang.dart/優先次序,$strResult');
+      print('jclang.dart/$strName,$strResult');
     }
   }
 }
@@ -82,51 +85,16 @@ void processCustomFieldItems(Map mapCard,
   }
 }
 
-void processIdValue(Map mapCard) {
+void processIdValue(Map mapCard, String strName, String strEndsWith) {
   List lstCustomFieldItems = mapCard['customFieldItems'];
 
   for (int i = 0; i < lstCustomFieldItems.length; i++) {
     String strIdValue = lstCustomFieldItems[i]['idValue'];
     String strIdCustomField = lstCustomFieldItems[i]['idCustomField'];
-    bool isHit = false;
-    if (strIdCustomField.endsWith("3a1b")) {
-      print('客源 jclang.dart/processEachCard/hit 3a1b');
-      isHit = true;
-    }
-    if (strIdCustomField.endsWith("f3f0")) {
-      print('人員 jclang.dart/processEachCard/hit f3f0');
-      isHit = true;
-    }
-    if (strIdCustomField.endsWith("a129")) {
-      print('產品類別 jclang.dart/processEachCard/hit a129');
-      isHit = true;
-    }
-    if (isHit) {
+    if (strIdCustomField.endsWith(strEndsWith)) {
       print(
-          'jclang.dart/processEachCard/strIdValue:$strIdValue,strIdCustomField:$strIdCustomField');
+          'jclang.dart/processEachCard/strName:$strName,strIdValue:$strIdValue,strIdCustomField:$strIdCustomField');
     }
   }
 }
 
-void executeJclangCommand() {
-  Map mapJson = getTrelloData();
-  loopEachCard(mapJson);
-}
-
-void jclangCommandDispatcher(String strJclangCommandRow, Map mapJson) {
-  List lstJclangCommandRow = strJclangCommandRow.split(' ');
-  if (lstJclangCommandRow[0] == 'add') {
-    jclangAdd(lstJclangCommandRow[1], lstJclangCommandRow[2],
-        lstJclangCommandRow[3], mapJson);
-  }
-}
-
-void jclangAdd(strColumnName, strSelect, strWhere, Map mapJson) {
-  //add 客源 /cards/customFieldItems/idValue idCustomField=="*3a1b"
-  //cards[] scan all list
-  //customFieldItems scan all list
-  //get idValue where idCustomField=="*3a1b" and skip all others
-  //mapJson["cards"][2]["customFieldItems"][4]["idValue"]
-  print('staticWeb.dart/jclangAdd/mapJson:' +
-      mapJson["cards"][2]["customFieldItems"][4]["idValue"]);
-}
