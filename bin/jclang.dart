@@ -32,6 +32,7 @@ void loopEachCard(Map mapJson) {
   }
 }
 
+//20191015 23:24 next : output csv format, print first, then use file stream to write JSON file.
 void processEachCard(Map mapCard) {
   processIdValue(mapCard, '客源', '3a1b');
   processIdValue(mapCard, '人員', 'f3f0');
