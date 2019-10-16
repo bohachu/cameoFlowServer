@@ -32,6 +32,15 @@ void processEachCard(Map mapCard) {
   strCsv += processLabels(mapCard, '優先次序') + '\n';
 }
 
+void replaceListsId(Map mapJson) {
+  List lstLists = mapJson['lists'] ?? [];
+  for (int i = 0; i < lstLists.length; i++) {
+    String strId = lstLists[i]['id'] ?? '';
+    String strName = lstLists[i]['name'] ?? '';
+    strCsv = strCsv.replaceAll(strId, strName);
+  }
+}
+
 void replaceIdValueToText(Map mapJson) {
   List lstCustomFields = mapJson['customFields'] ?? [];
   for (int i = 0; i < lstCustomFields.length; i++) {
@@ -61,6 +70,7 @@ void mainJclang() {
   Map mapJson = getTrelloData();
   loopEachCard(mapJson);
   replaceIdValueToText(mapJson);
+  replaceListsId(mapJson);
   print(strCsv);
 }
 
