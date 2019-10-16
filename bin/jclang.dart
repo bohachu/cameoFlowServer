@@ -1,7 +1,7 @@
 import 'trelloData.dart';
 
 /*
-jclang v1.5
+jclang v1.6
 add 客源 /cards/customFieldItems/idValue idCustomField=="*3a1b"
 add 起始日 /cards/customFieldItems/value/date
 add 案件名稱 /cards/name
@@ -12,8 +12,8 @@ add 優先次序 /cards/labels/color
 add 客戶 /cards/customFieldItems/value/text
 add 階段 /cards/idList
 add 產品類別 /cards/customFieldItems/idValue idCustomField=="*a129"
-replace /cards/customFieldItems/idValue
-/customFields/options/value/text ../id
+replace /cards/customFieldItems/idValue /customFields/options/value/text ../id
+replace /lists/id /lists/name
 */
 
 List lstIdValue = [];
