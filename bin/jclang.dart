@@ -32,24 +32,25 @@ void loopEachCard(Map mapJson) {
   }
 }
 
-//20191015 23:24 next : output csv format, print first, then use file stream to write JSON file.
 void processEachCard(Map mapCard) {
-  processIdValue(mapCard, '客源', '3a1b');
-  processIdValue(mapCard, '人員', 'f3f0');
-  processIdValue(mapCard, '產品類別', 'a129');
-  processCustomFieldItems(mapCard, '起始日', 'value', 'date');
-  processCustomFieldItems(mapCard, '金額', 'value', 'number');
-  processCustomFieldItems(mapCard, '客戶', 'value', 'text');
-  processSecondTier(mapCard, '案件名稱', 'name');
-  processSecondTier(mapCard, '交期', 'due');
-  processSecondTier(mapCard, '階段', 'idList');
-  processLabels(mapCard, '優先次序');
+  String strCsv = '';
+  strCsv += processIdValue(mapCard, '客源', '3a1b') + ',';
+  strCsv += processIdValue(mapCard, '人員', 'f3f0') + ',';
+  strCsv += processIdValue(mapCard, '產品類別', 'a129') + ',';
+  strCsv += processCustomFieldItems(mapCard, '起始日', 'value', 'date') + ',';
+  strCsv += processCustomFieldItems(mapCard, '金額', 'value', 'number') + ',';
+  strCsv += processCustomFieldItems(mapCard, '客戶', 'value', 'text') + ',';
+  strCsv += processSecondTier(mapCard, '案件名稱', 'name') + ',';
+  strCsv += processSecondTier(mapCard, '交期', 'due') + ',';
+  strCsv += processSecondTier(mapCard, '階段', 'idList') + ',';
+  strCsv += processLabels(mapCard, '優先次序') + '\n';
+  print(strCsv);
 }
 
-void processLabels(Map mapCard, strName) {
+String processLabels(Map mapCard, strName) {
   List lst = mapCard['labels'];
+  String strResult = '';
   for (int i = 0; i < lst.length; i++) {
-    String strResult;
     try {
       strResult = lst[i]['color'];
     } catch (e) {
@@ -59,43 +60,51 @@ void processLabels(Map mapCard, strName) {
       print('jclang.dart/$strName,$strResult');
     }
   }
+  return strResult;
 }
 
-void processSecondTier(Map mapCard, String strName, String strKey) {
-  String strResult = mapCard[strKey];
+String processSecondTier(Map mapCard, String strName, String strKey) {
+  String strResult = mapCard[strKey] ?? '';
   if (strResult != null) {
     print('jclang.dart/strResult,$strName,$strResult');
   }
+  return strResult;
 }
 
-void processCustomFieldItems(Map mapCard,
+String processCustomFieldItems(Map mapCard,
     String strName,
     String strKey1,
     String strKey2,) {
+  String strResult = '';
   List lstCustomFieldItems = mapCard['customFieldItems'];
   for (int i = 0; i < lstCustomFieldItems.length; i++) {
-    String strResult;
     try {
       strResult = lstCustomFieldItems[i][strKey1][strKey2];
     } catch (e) {
-      strResult = null;
+      strResult = '';
     }
-    if (strResult != null) {
+    if (strResult != '') {
       print('jclang.dart/processCustomFieldItems,$strName,$strResult');
+      break;
     }
   }
+  if (strResult == null) {
+    print('null!!');
+  }
+  return strResult;
 }
 
-void processIdValue(Map mapCard, String strName, String strEndsWith) {
+String processIdValue(Map mapCard, String strName, String strEndsWith) {
   List lstCustomFieldItems = mapCard['customFieldItems'];
-
+  String strResult = '';
   for (int i = 0; i < lstCustomFieldItems.length; i++) {
     String strIdValue = lstCustomFieldItems[i]['idValue'];
     String strIdCustomField = lstCustomFieldItems[i]['idCustomField'];
     if (strIdCustomField.endsWith(strEndsWith)) {
+      strResult = strIdValue;
       print(
           'jclang.dart/processEachCard/strName:$strName,strIdValue:$strIdValue,strIdCustomField:$strIdCustomField');
     }
   }
+  return strResult;
 }
-
