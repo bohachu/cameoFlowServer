@@ -1,7 +1,7 @@
 import 'trelloData.dart';
 
 /*
-jclang v1.4
+jclang v1.5
 add 客源 /cards/customFieldItems/idValue idCustomField=="*3a1b"
 add 起始日 /cards/customFieldItems/value/date
 add 案件名稱 /cards/name
@@ -13,13 +13,37 @@ add 客戶 /cards/customFieldItems/value/text
 add 階段 /cards/idList
 add 產品類別 /cards/customFieldItems/idValue idCustomField=="*a129"
 replace /cards/customFieldItems/idValue
-/cards/customFields/options/value/text ../id
+/customFields/options/value/text ../id
 */
 
-void mainJclang() {
-  print('jclang.dart/mainJclang');
-  Map mapJson = getTrelloData();
-  loopEachCard(mapJson);
+List lstIdValue = [];
+String strCsv = '';
+
+void processEachCard(Map mapCard) {
+  strCsv += processIdValue(mapCard, '客源', '3a1b') + ',';
+  strCsv += processIdValue(mapCard, '人員', 'f3f0') + ',';
+  strCsv += processIdValue(mapCard, '產品類別', 'a129') + ',';
+  strCsv += processCustomFieldItems(mapCard, '起始日', 'value', 'date') + ',';
+  strCsv += processCustomFieldItems(mapCard, '金額', 'value', 'number') + ',';
+  strCsv += processCustomFieldItems(mapCard, '客戶', 'value', 'text') + ',';
+  strCsv += processSecondTier(mapCard, '案件名稱', 'name') + ',';
+  strCsv += processSecondTier(mapCard, '交期', 'due') + ',';
+  strCsv += processSecondTier(mapCard, '階段', 'idList') + ',';
+  strCsv += processLabels(mapCard, '優先次序') + '\n';
+}
+
+void replaceIdValueToText(Map mapJson) {
+  List lstCustomFields = mapJson['customFields'] ?? [];
+  for (int i = 0; i < lstCustomFields.length; i++) {
+    List lstOptions = lstCustomFields[i]['options'] ?? [];
+    for (int j = 0; j < lstOptions.length; j++) {
+      String strIdValue = lstOptions[j]['id'] ?? '';
+      String strText = lstOptions[j]['value']['text'] ?? '';
+      if (lstIdValue.contains(strIdValue)) {
+        strCsv = strCsv.replaceAll(strIdValue, strText);
+      }
+    }
+  }
 }
 
 void loopEachCard(Map mapJson) {
@@ -32,18 +56,11 @@ void loopEachCard(Map mapJson) {
   }
 }
 
-void processEachCard(Map mapCard) {
-  String strCsv = '';
-  strCsv += processIdValue(mapCard, '客源', '3a1b') + ',';
-  strCsv += processIdValue(mapCard, '人員', 'f3f0') + ',';
-  strCsv += processIdValue(mapCard, '產品類別', 'a129') + ',';
-  strCsv += processCustomFieldItems(mapCard, '起始日', 'value', 'date') + ',';
-  strCsv += processCustomFieldItems(mapCard, '金額', 'value', 'number') + ',';
-  strCsv += processCustomFieldItems(mapCard, '客戶', 'value', 'text') + ',';
-  strCsv += processSecondTier(mapCard, '案件名稱', 'name') + ',';
-  strCsv += processSecondTier(mapCard, '交期', 'due') + ',';
-  strCsv += processSecondTier(mapCard, '階段', 'idList') + ',';
-  strCsv += processLabels(mapCard, '優先次序') + '\n';
+void mainJclang() {
+  print('jclang.dart/mainJclang');
+  Map mapJson = getTrelloData();
+  loopEachCard(mapJson);
+  replaceIdValueToText(mapJson);
   print(strCsv);
 }
 
@@ -79,7 +96,7 @@ String processCustomFieldItems(Map mapCard,
   List lstCustomFieldItems = mapCard['customFieldItems'];
   for (int i = 0; i < lstCustomFieldItems.length; i++) {
     try {
-      strResult = lstCustomFieldItems[i][strKey1][strKey2];
+      strResult = lstCustomFieldItems[i][strKey1][strKey2] ?? '';
     } catch (e) {
       strResult = '';
     }
@@ -87,9 +104,6 @@ String processCustomFieldItems(Map mapCard,
       print('jclang.dart/processCustomFieldItems,$strName,$strResult');
       break;
     }
-  }
-  if (strResult == null) {
-    print('null!!');
   }
   return strResult;
 }
@@ -106,5 +120,6 @@ String processIdValue(Map mapCard, String strName, String strEndsWith) {
           'jclang.dart/processEachCard/strName:$strName,strIdValue:$strIdValue,strIdCustomField:$strIdCustomField');
     }
   }
+  lstIdValue.add(strResult);
   return strResult;
 }
