@@ -14,6 +14,16 @@ add 階段 /cards/idList
 add 產品類別 /cards/customFieldItems/idValue idCustomField=="*a129"
 replace /cards/customFieldItems/idValue /customFields/options/value/text ../id
 replace /lists/id /lists/name
+
+priority list
+3*
+1h load csv to datatable
+1h import datatable to bootstrap theme
+1h save csv to file system
+1h
+2*
+1*
+
 */
 
 List lstIdValue = [];
