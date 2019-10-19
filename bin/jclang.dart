@@ -27,19 +27,58 @@ priority list
 */
 
 List lstIdValue = [];
-String strCsv = '';
+String strOutput = '';
 
-void processEachCard(Map mapCard) {
-  strCsv += processIdValue(mapCard, '客源', '3a1b') + ',';
-  strCsv += processIdValue(mapCard, '人員', 'f3f0') + ',';
-  strCsv += processIdValue(mapCard, '產品類別', 'a129') + ',';
-  strCsv += processCustomFieldItems(mapCard, '起始日', 'value', 'date') + ',';
-  strCsv += processCustomFieldItems(mapCard, '金額', 'value', 'number') + ',';
-  strCsv += processCustomFieldItems(mapCard, '客戶', 'value', 'text') + ',';
-  strCsv += processSecondTier(mapCard, '案件名稱', 'name') + ',';
-  strCsv += processSecondTier(mapCard, '交期', 'due') + ',';
-  strCsv += processSecondTier(mapCard, '階段', 'idList') + ',';
-  strCsv += processLabels(mapCard, '優先次序') + '\n';
+void mainJclang() {
+  print('jclang.dart/mainJclang');
+  Map mapJson = getTrelloData();
+  loopEachCard(mapJson);
+  replaceIdValueToText(mapJson);
+  replaceListsId(mapJson);
+  print(strOutput);
+}
+
+void loopEachCard(Map mapJson) {
+  print('jclang.dart/loopEachCard');
+  List lstCards = mapJson['cards'];
+  strOutput += '{"data":[\n';
+  for (int i = 0; i < lstCards.length; i++) {
+    Map mapCard = lstCards[i];
+    processEachCardAjax(mapCard);
+    print('jclang.dart/loopEachCard/i:$i');
+  }
+  strOutput += ']}';
+}
+
+void processEachCardAjax(Map mapCard) {
+  strOutput += '[';
+  strOutput += '"' + processIdValue(mapCard, '客源', '3a1b') + '",';
+  strOutput += '"' + processIdValue(mapCard, '人員', 'f3f0') + '",';
+  strOutput += '"' + processIdValue(mapCard, '產品類別', 'a129') + '",';
+  strOutput +=
+      '"' + processCustomFieldItems(mapCard, '起始日', 'value', 'date') + '",';
+  strOutput +=
+      '"' + processCustomFieldItems(mapCard, '金額', 'value', 'number') + '",';
+  strOutput +=
+      '"' + processCustomFieldItems(mapCard, '客戶', 'value', 'text') + '",';
+  strOutput += '"' + processSecondTier(mapCard, '案件名稱', 'name') + '",';
+  strOutput += '"' + processSecondTier(mapCard, '交期', 'due') + '",';
+  strOutput += '"' + processSecondTier(mapCard, '階段', 'idList') + '",';
+  strOutput += '"' + processLabels(mapCard, '優先次序') + '"';
+  strOutput += '],\n';
+}
+
+void processEachCardCsv(Map mapCard) {
+  strOutput += processIdValue(mapCard, '客源', '3a1b') + ',';
+  strOutput += processIdValue(mapCard, '人員', 'f3f0') + ',';
+  strOutput += processIdValue(mapCard, '產品類別', 'a129') + ',';
+  strOutput += processCustomFieldItems(mapCard, '起始日', 'value', 'date') + ',';
+  strOutput += processCustomFieldItems(mapCard, '金額', 'value', 'number') + ',';
+  strOutput += processCustomFieldItems(mapCard, '客戶', 'value', 'text') + ',';
+  strOutput += processSecondTier(mapCard, '案件名稱', 'name') + ',';
+  strOutput += processSecondTier(mapCard, '交期', 'due') + ',';
+  strOutput += processSecondTier(mapCard, '階段', 'idList') + ',';
+  strOutput += processLabels(mapCard, '優先次序') + '\n';
 }
 
 void replaceListsId(Map mapJson) {
@@ -47,7 +86,7 @@ void replaceListsId(Map mapJson) {
   for (int i = 0; i < lstLists.length; i++) {
     String strId = lstLists[i]['id'] ?? '';
     String strName = lstLists[i]['name'] ?? '';
-    strCsv = strCsv.replaceAll(strId, strName);
+    strOutput = strOutput.replaceAll(strId, strName);
   }
 }
 
@@ -59,29 +98,10 @@ void replaceIdValueToText(Map mapJson) {
       String strIdValue = lstOptions[j]['id'] ?? '';
       String strText = lstOptions[j]['value']['text'] ?? '';
       if (lstIdValue.contains(strIdValue)) {
-        strCsv = strCsv.replaceAll(strIdValue, strText);
+        strOutput = strOutput.replaceAll(strIdValue, strText);
       }
     }
   }
-}
-
-void loopEachCard(Map mapJson) {
-  print('jclang.dart/loopEachCard');
-  List lstCards = mapJson['cards'];
-  for (int i = 0; i < lstCards.length; i++) {
-    Map mapCard = lstCards[i];
-    processEachCard(mapCard);
-    print('jclang.dart/loopEachCard/i:$i');
-  }
-}
-
-void mainJclang() {
-  print('jclang.dart/mainJclang');
-  Map mapJson = getTrelloData();
-  loopEachCard(mapJson);
-  replaceIdValueToText(mapJson);
-  replaceListsId(mapJson);
-  print(strCsv);
 }
 
 String processLabels(Map mapCard, strName) {
