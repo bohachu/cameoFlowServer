@@ -1,0 +1,569 @@
+== start coding 20191020 19:09 ==
+. 往後的研發記錄可以直接在這邊追蹤，應該比起 gmail 回報研發記錄簿更方便才對
+. 要有地方可以記錄 todo 的內容
+. 採用 evernote 紀錄 skype 裡面的待辦還不錯
+. 或者採用 trello 紀錄待辦還不錯
+. 可以用用看 trello 好了
+. trello 已經把 todo 弄好了 https://trello.com/b/zARWAN43/cameo-flow
+
+==
+
+cameo flow 研發記錄簿
+收件匣
+x
+Start timer
+
+Bowen Chiu <cbh@cameo.tw>
+2019年9月29日 上午8:19
+寄給 我
+
+儀表板圓餅圖長條圖的鴻順已經在試算表拉出來的樣態示範
+https://photos.google.com/share/AF1QipOktB9JfMIh6CDnAWJWUe-GE3omZ3DesV-SDNzBmzHLaTAs2t01bqjhNrSL-7sZCQ?key=NjZoLTFQS3hlMENDRV9TRklJa0hSd1A5YUYxck5R
+
+線上試算表，線上看板法元件 js javascript
+https://webix.com/demos/kanban/
+
+有完整Excel線上試算表的功能示範
+https://handsontable.com/examples?headers
+
+家廚
+http://www.moodi-wood.com/
+
+
+Bowen Chiu <cbh@cameo.tw>
+2019年10月6日 上午11:56
+寄給 我
+
+start 2019-10-06 10:51
+歷程紀錄：
+心得：未來不管bootstrap or table元件怎麼改變，核心dart coding都不會改變就可以了
+把webix嵌入bootstrap adminlte看看
+http://localhost:8085/pages/tables/15_datatable/01_loading/02_url_data.html
+可行可以看到相對路徑元件都沒有問題
+https://docs.webix.com/api__refs__ui.datatable.html
+
+加愛紀錄：
++ 下次可以用純 webix 測試看看 https://webix.com/demos/bank-app/#!/top/transactions
++ 這次混合 bootstrap webix 感覺很酷
++ 下次可以讓純 webix 在手機或者平板上面跑
++ 純 webix 的處理可以將資料與程式碼徹底分離，而且很乾淨，寫法簡單
++ 已經知道純 bootstrap 是很難處理資料與程式碼顯示分離的情況，其實這也是為何要有資料框架的原因
+
+2019-10-06 08:52 +i
++已經可以讓 webix table 正確顯示中文以及內涵，但是放大縮小螢幕還不會動作
++已經找到讓 bootstrap 可以有 bowenBox 區域可以改變 table
++確定 bootstrap theme 是用 html tags 方式來展示，所以只要動態產生 html tags 很有彈性納入圖表
++adminlte, bootstrap也有table搜尋功能，表單的功能不亞於 webix
++webix可以動態 load data.json是比較能夠讓程式碼乾淨的處理
+
+
+Bowen Chiu <cbh@cameo.tw>
+2019年10月6日 下午3:23
+寄給 我
+
+== coding log: start 2019-10-06 14:19 ==
+有點煩，因為兼職薪資的討論有點煩
+然後：因為不確定整個產品選單框架選哪一個有點煩
+webix優點是程式設計比較容易，資料與顯示分離
+bootstrap優點是完整RWD管理介面很不錯
+混合bootstrap rwd + webix 看起來是比較好的選擇 for users
+但是混合就會造成程式設計複雜度html的複雜度問題
+有一個簡單的做法是硬改 bootstrap rwd
+目前的目標應該鎖定在：看看有哪些可能的方案，允許嵌入 webix datatable 又能好用的
+
+001 adminlte(要放大125%) + webix datatable => 可用，但程式碼有點難寫，要找出聰明寫法
+002 webix only, 找不到 touch ui demo => webix banking app 是最適合的，可以收合 menu
+003 angularDart, or dart table mat-table => 找不到適合的
+004 flutter only
+ok, 決定採用 webix banking app 繼續發展下去，這樣就有一個框架了
+
+現在要把 webix banking app 架設起來
+看了 readme 所以要先安裝 npm
+必須執行下面這兩行
+brew install node
+brew install npm
+
+安裝結果可行，但是，碰到無法整合到 dart 的困難度，目前不知道怎樣讓 dart server 可以啟動
+已經確認 npm start 啟動沒有問題，但是我們其實並不想要使用 npm server
+另外，有個問題是：有很多元件有安全性問題不知道怎麼升級（npm install就會發現）
+
+15:18
+剛剛跑了 npm run build 竟然就可以用在 dart server 成功了
+太詭異了哈哈哈哈哈，幾乎是最後一分鐘成功
+
+3min +i
++ 挑選到 webix banking app 原本以為沒希望，結果又編譯成功，而且有 source code 的樣子
++ 大排版框架已經有一個譜
+i 未來性堪慮，這個 webix widget 應該沒問題，但是 webix banking app 未來性有點問題
+i banking source code 沒有看清楚，不知道等一下改會不會出問題，可以試試看把試算表都弄上來看看
+
+== coding log: start 2019-10-06 13:25 ==
+測試 ipad mini 瀏覽 webix demo 橫向的使用者經驗是否滿意
+http://192.168.1.6:8085/pages/tables/simple.html
+http://localhost:8085/pages/tables/simple.html
+https://webix.com/demos/touch/ 這個就很適合我們使用在 ipad 上面了，麻煩的是沒有 source code
+13:47 要找一下 source code
+
+== coding log: start 2019-10-06 10:51 ==
+歷程紀錄：
+心得：未來不管bootstrap or table元件怎麼改變，核心dart coding都不會改變就可以了
+把webix嵌入bootstrap adminlte看看
+http://localhost:8085/pages/tables/15_datatable/01_loading/02_url_data.html
+可行可以看到相對路徑元件都沒有問題
+https://docs.webix.com/api__refs__ui.datatable.html
+
+加愛紀錄：
++ 下次可以用純 webix 測試看看 https://webix.com/demos/bank-app/#!/top/transactions
++ 這次混合 bootstrap webix 感覺很酷
++ 下次可以讓純 webix 在手機或者平板上面跑
++ 純 webix 的處理可以將資料與程式碼徹底分離，而且很乾淨，寫法簡單
++ 已經知道純 bootstrap 是很難處理資料與程式碼顯示分離的情況，其實這也是為何要有資料框架的原因
+
+== coding log: 2019-10-06 08:52 +i ==
++已經可以讓 webix table 正確顯示中文以及內涵，但是放大縮小螢幕還不會動作
++已經找到讓 bootstrap 可以有 bowenBox 區域可以改變 table
++確定 bootstrap theme 是用 html tags 方式來展示，所以只要動態產生 html tags 很有彈性納入圖表
++adminlte, bootstrap也有table搜尋功能，表單的功能不亞於 webix
++webix可以動態 load data.json是比較能夠讓程式碼乾淨的處理
+
+目前要找 dart table 可以顯示的方法
+https://pub.dev/packages/json_table
+https://webix.com/widget/datatable/
+
+https://www.datatables.net/
+https://material.angular.io/components/table/overview
+
+
+Bowen Chiu <cbh@cameo.tw>
+2019年10月7日 上午12:01 (13 天前)
+寄給 我
+
+== coding log 21:35 ==
+pending: 如何讓 bootstrap touch ui 可以更多適合 ipad 的橫版本版型？ pending
+如何讓 dart bootstrap 可以結合？
+中文化 datatables datatable jquery
+http://yhhuang1966.blogspot.com/2013/05/jquery-datatable.html
+var opt={"oLanguage":{"sUrl":"dataTables.zh-tw.txt"},
+              "bJQueryUI":true,
+              "bProcessing":true,
+              "aoColumns":[{"sTitle":"股票名稱"},{"sTitle":"股票代號"}],
+              "sAjaxSource":"http://tony1966.xyz/test/jquerytest/get_stocks_list_aa.php"
+              };
+$("#table1").dataTable(opt);
+結果現在連 jquery 也可以運用 datatable 達成跟 webix 幾乎相同甚至更強大的能力
+現在應該就是開始做 jquery datatable 的排版運用了
+
++i 22:37
++ 總算找到可以長期運用的 jquery datatables 而且還是大部分 bootstrap theme 所採用
++ jquery datatables 可以輕易的嵌入 json from url 或者跟後臺資料庫格式對接
++ jquery datatables 看起來跟 dart 產生 json 可以完美的結合在一起，太棒了
+q angularDart 竟然沒有一個很好的 datatables 而且編譯好久，然後顯示也很久，怪怪的東西
++ bootstrap studio 應該可以多多運用，如果讀取 theme 很順暢的話，說不定可以用來編輯
+
+== start task 21:22 審查
+done
+
+== start task 2019-10-06 17:48
+task 1 start 17:48 印出明天要簡報的東西
+task 2 審查宜敏的東西
+task 1: 18:22 印出東西黑白已經完成正在印彩色等待當中
+
+== coding log: start 2019-10-06 16:07 ==
+單純用 webix 已經宣告完蛋，因為有授權bugs版本號問題
+現在還有一個考慮是可以採用 angularDart 因為這個作法的 table 元件很強大
+我們可以考慮看看
+start angularDart的tutorial
+Run the app
+In WebStorm:
+In the project view, right-click web/index.html.
+Choose Run ‘index.html’.
+hello angular成功了！
+哎，繼續學下去，angular感覺也是一堆麻煩的事情，很糟
+差不多接下去就要運用 bootstrap 來做事情了 dart plus bootstrap 可以找找方法
+i dart bootstrap 作為下次的起頭吧！！！
+
+== coding log: start 15:39 25min ==
+可以再深入一下 webix banking
+this version of webix is not intended for using outside of webix.com
+這個問題很嚴重
+決定放棄 webix banking
+回到 adminlte 要考慮是不是運用 adminlte 搭配 table 產生器來製作美麗表單
+end 15:47
+
+
+Bowen Chiu <cbh@cameo.tw>
+2019年10月9日 上午9:29 (11 天前)
+寄給 我
+
+TC轉轉語言 v1.4
+add 客源 /cards/customFieldItems/idValue idCustomField=="*3a1b"
+add 起始日 /cards/customFieldItems/value/date
+add 案件名稱 /cards/name
+add 金額 /cards/customFieldItems/value/number
+add 交期 /cards/due
+add 人員 /cards/customFieldItems/idValue idCustomField=="*f3f0"
+add 優先次序 /cards/labels/color
+add 客戶 /cards/customFieldItems/value/text
+add 階段 /cards/idList
+add 產品類別 /cards/customFieldItems/idValue idCustomField=="*a129"
+replace /cards/customFieldItems/idValue
+/cards/customFields/options/value/text ../id
+
+~~
+
+TC轉轉語言 v1.3
+add 客源 /cards/customFieldItems/idValue idCustomField=="*3a1b"
+add 起始日 /cards/customFieldItems/value/date
+add 案件名稱 /cards/name
+add 金額 /cards/customFieldItems/value/number
+add 交期 /cards/due
+add 人員 /cards/customFieldItems/idValue idCustomField=="*f3f0"
+add 優先次序 /cards/labels/color
+add 客戶 /cards/customFieldItems/value/text
+add 階段 /cards/idList
+add 產品類別 /cards/customFieldItems/idValue idCustomField=="*a129"
+replace /cards/customFieldItems/idValue
+/cards/customFields/options/value/text /cards/customFields/options/id
+
+~~
+
+TC轉轉語言 v1.2
+add 客源 /cards/customFieldItems/idValue idCustomField=="*3a1b"
+replace /cards/customFieldItems/idValue
+/cards/customFields/options/value/text /cards/customFields/id=="*3a1b"
+
+add 起始日 /cards/customFieldItems/value/date
+add 案件名稱 /cards/name
+add 金額 /cards/customFieldItems/value/number
+add 交期 /cards/due
+
+add 人員 /cards/customFieldItems/idValue idCustomField=="*f3f0"
+replace /cards/customFieldItems/idValue
+/cards/customFields/options/value/text /cards/customFields/id=="*f3f0"
+
+add 優先次序 /cards/labels/color
+add 客戶 /cards/customFieldItems/value/text
+add 階段 /cards/idList
+
+add 產品類別 /cards/customFieldItems/idValue idCustomField=="*a129"
+replace /cards/customFieldItems/idValue
+/cards/customFields/options/value/text /cards/customFields/id=="*a129"
+
+~~
+
+TC轉轉語言 v1.1
+add 客源 /cards/customFieldItems/idValue idCustomField=="*3a1b"
+replace 客源 /cards/customFields/options/value/text ../id
+
+add 起始日 /cards/customFieldItems/value/date
+add 案件名稱 /cards/name
+add 金額 /cards/customFieldItems/value/number
+add 交期 /cards/due
+
+add 人員 /cards/customFieldItems/idValue idCustomField=="*f3f0"
+replace 人員 /cards/customFields/options/value/text ../id
+
+add 優先次序 /cards/labels/color
+add 客戶 /cards/customFieldItems/value/text
+add 階段 /cards/idList
+
+add 產品類別 /cards/customFieldItems/idValue idCustomField=="*a129"
+replace 產品類別 /cards/customFields/options/value/text ../id
+
+~~
+
+TC轉轉語言 v1.0
+add 客源 /[]cards/{}/[]customFieldItems/{}/idValue idCustomField=="*3a1b"
+replace 客源 /[]cards/[]customFields/{}/[]options/{}/{}value/text ../id
+
+add 起始日 /[]cards/{}/[]customFieldItems/{}/{}value/date
+add 案件名稱 /[]cards/{}/name
+add 金額 /[]cards/{}/[]customFieldItems/{}/{}value/number
+add 交期 /[]cards/{}/due
+
+add 人員 /[]cards/{}/[]customFieldItems/{}/idValue idCustomField=="*f3f0"
+replace 人員 /[]cards/[]customFields/{}/[]options/{}/{}value/text ../id
+
+add 優先次序 /[]cards/{}/[]labels/{}/color
+add 客戶 /[]cards/{}/[]customFieldItems/{}/{}value/text
+add 階段 /[]cards/{}/idList
+
+add 產品類別 /[]cards/{}/[]customFieldItems/{}/idValue idCustomField=="*a129"
+replace 產品類別 /[]cards/[]customFields/{}/[]options/{}/{}value/text ../id
+
+
+Bowen Chiu <cbh@cameo.tw>
+2019年10月10日 下午3:01 (10 天前)
+寄給 我
+
+== coding log start 14:02 ==
+有兩種可以進行的方式，每天早上早起運動完畢之後快速看課程，做兩個小時分享
+這樣今天下午就可以做 jsoncsv 的開發
+要先做一個簡單可以處理的環境，coding環境要先建構出來，可以輕易處理json的環境
+至少把第一個欄位的值先調用出來 print
+
+已經可以show
+
+void jclangAdd(strColumnName,strSelect,strWhere,Map mapJson){
+  //add 客源 /cards/customFieldItems/idValue idCustomField=="*3a1b"
+  //cards[] scan all list
+  //customFieldItems scan all list
+  //get idValue where idCustomField=="*3a1b" and skip all others
+  //mapJson["cards"][2]["customFieldItems"][4]["idValue"]
+  print('staticWeb.dart/jclangAdd/mapJson:'+mapJson["cards"][2]["customFieldItems"][4]["idValue"]);
+}
+
+
+Bowen Chiu <cbh@cameo.tw>
+2019年10月14日 上午7:14 (6 天前)
+寄給 我
+
+== coding 2019 1013 22:53
+done 找出 javaScript 最受歡迎課程來學習（done 感覺動力還好，學習動力需要有專案驅動）23:02
+找出 bss.design 是不是可以抓遠端 trello json 的可能性，這樣架站安全密碼比較方便
+23:25 ans:
+bss.design可以hosting所有的程式碼沒有問題，但是trello json
+data怎麼過去呢？有一個技巧。可以直接post過去，簡單的說，可以這樣弄：
+http://flow.cameo.tw/?companyId=cj06
+這是環中店的意思
+這個網址會對應到一個簡單的 python source code cgi 讀取全部的環中店內容之後 http get 給 bss.design
+
+todo 找出 javaScript 用來判斷是不是已經登入的程式碼，看有沒有密碼登入比較現成可用的
+todo cameo flow, 把每個欄位填寫出來回報 cameo flow team
+
++找到jsonp這種寫法確定可以讓bss.design順暢顯示東西，然後讓 compute engine 產生做好的json
+file之後，提供 jsonp server
+https://blog.techbridge.cc/2017/05/20/api-ajax-cors-and-jsonp/
+jsonp server可以回傳 using dart
+
+== coding 1013 18:39
+現在開始開發 trello to csv 的程式碼，專注的寫出只要功能，下一個步驟才考慮 refactoring
++ 已經可以把106張卡片裡面的三個欄位：客源、人員、產品類別，全部抓出來了
++ 發明jclang v1.4雖然還沒有真的動態變成語言，但可以透過人類的方式翻譯程式碼也很有趣
++ jclang v1.4 -> human -> dart functions
++ 先寫出有功能的程式碼確實有成就感
+i 下一個步驟可能要把簡單的欄位也全部抓出來，然後填寫每個 card 到 row, row.add('人員',strValue);
+
+== coding 1013 15:53
+現在有個麻煩的地方是，無法綁定 google compute engine port 80,
+
+找出有哪些 port number 正在聽取 netstat -tulpn | grep LISTEN
+
+突破 permission 限制綁定 port 80  sudo dart bin/server.dart
+
+現在要直接連 port 80
+
+第一個條件要打開防火牆
+gcloud compute firewall-rules create default-allow-http-8080 \
+    --allow tcp:8080 \
+    --source-ranges 0.0.0.0/0 \
+    --target-tags http-server \
+    --description "Allow port 8080 access to http-server"
+
+第二個條件要綁定 private ip 才能對應到 public ip
+
+編輯 VM 之後，取得靜態IP位置
+
++ 已經可以取得靜態IP 可以運用了
+http://35.221.219.153:8083/
+http://35.221.219.153:80
+
++ 防火牆打開的命令也都會了
++ 實驗也知道綁 private ip 可以對應到外部 ip
+i 下一個步驟應該是要製作 SSL 憑證，讓SSL可以運作
+i 下一個步驟可以開始寫程式把 trello json to csv 寫出來了
+
+== coding 1013 12:21
+google cloud platform 安裝 apt-get 碰到困難
+因此改用這個安裝方法
+sudo yum groupinstall 'Development Tools'
+應該就可以把apt-get安裝完成了
+
+## 安裝dart到debian
+sudo apt-get update
+sudo apt-get install apt-transport-https
+sudo sh -c 'curl https://dl-ssl.google.com/linux/linux_signing_key.pub
+| apt-key add -'
+sudo sh -c 'curl
+https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_stable.list
+> /etc/apt/sources.list.d/dart_stable.list'
+sudo apt-get update
+sudo sh -c 'curl
+https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_unstable.list
+> /etc/apt/sources.list.d/dart_unstable.list'
+sudo apt-get install dart
+
+##安裝git
+sudo apt update
+sudo apt install git
+
+##複製專案
+git clone https://github.com/bohachu/cameoFlowServer.git
+
+##更新專案檔案
+git pull
+
+##
+export PATH="$PATH:/usr/lib/dart/bin"
+echo 'export PATH="$PATH:/usr/lib/dart/bin"' >> ~/.profile
+
+
+Bowen Chiu <cbh@cameo.tw>
+2019年10月19日 下午11:00 (20 小時前)
+寄給 我
+
+== start 1019 21:56 coding
+這個範例是將 csv to ajax 最簡單的方法，可以輸出看看
+https://datatables.net/examples/ajax/simple.html
+
+這一行有問題
+["","","","","","",[Eline][佳福廖素慧][36][2020/9/30]","","05_報價1","black"],
+其他已經可以跑
+
+-- html --
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Client Side jQuery DataTables</title>
+    <!--引用css-->
+    <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css"
+rel="stylesheet"/>
+</head>
+<body>
+
+<table class="display" id="myTable" style="width:100%">
+    <thead>
+    <tr>
+        <th>a</th>
+        <th>b</th>
+        <th>c</th>
+        <th>d</th>
+        <th>e</th>
+        <th>f</th>
+        <th>g</th>
+        <th>h</th>
+        <th>i</th>
+        <th>j</th>
+    </tr>
+    </thead>
+</table>
+
+<!--引用jQuery-->
+<script src="https://code.jquery.com/jquery-3.3.1.js"
+type="text/javascript"></script>
+<!--引用dataTables.js-->
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"
+type="text/javascript"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#myTable').DataTable({
+            "ajax": "data.txt"
+        });
+    });
+</script>
+</body>
+</html>
+
+-- ajax txt: （list 最後一行不可以有逗點) --
+
+{
+    "data":
+    [
+        ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"],
+        ["a2", "b2", "c2", "d2", "e2", "f2", "g2", "h2", "i2", "j2"]
+    ]
+}
+
+
+== start 1019 13:57 coding
+現在要判斷如何運用 datatables sample 比較好的範例在哪, 要適合Cameo Flow產品的
+關鍵字：datatables tutorial
+找到這個網頁裡面有很好的範例
+//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css
+//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js
+
+https://code.jquery.com/jquery-3.3.1.js
+https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js
+
+<script src="jquery-1.6.1.js"></script>
+<script src="my_jquery.js"></script>
+
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"></script>
+
+bootstrap 4 起始者範例
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+Bowen Chiu <cbh@cameo.tw>
+2019年10月19日 下午11:07 (20 小時前)
+寄給 我
+
+== +i 2019 23:02
++ 已經可以用 ajax array 展示
+i 下次要能夠改用動態 trello 拖拉之後動態顯示html datatables
+
+001 http://aaa.bbb.ccc.ddd/cameoFlow.html
+002 接手的是 dart server, 偵測到網址之後，開始進行 data.ajax 檔案轉換
+003 dart server : 讀取遠端 trello json file
+004 dart server : json to data.ajax, and save file
+005 dart server : 返回靜態檔案 cameoFlow.html 接著立刻讀取 data.ajax 成為動態 table 呈現
+
+
+Bowen Chiu <cbh@cameo.tw>
+上午10:21 (8 小時前)
+寄給 我
+
+== start coding 2019 1020 08:56
+為了可以要遠端使用，第一個步驟是遠端讀取 trello json file 要能運作 port 80 web server
++已經可以動態抓取local ip
++已經可以遠端抓trello json
++已經可以compute engine跑起來不會當機 out of memory
+i 下一個動態產生 data.ajax 陣列檔案放在 bss/data.ajax
+i 然後讓 bss/index.html 可以放入一個簡單的 datatables
+i 然後讓 bss/index.html 真的導入 data.ajax 動態可以讀取
