@@ -1,11 +1,9 @@
 import 'package:shelf/shelf_io.dart' as io;
 import 'package:shelf_static/shelf_static.dart';
 
-import 'jclang.dart';
-
 void mainStaticWeb() {
   print("staticWeb.dart/mainStaticWeb");
-  mainJclang();
+  //mainJclang();
   bss();
   //webixSamples();
   //stylishDemo();
