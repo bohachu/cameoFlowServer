@@ -12,7 +12,7 @@ void mainStaticWeb() {
 
 void bss() {
   String strHost = '10.140.0.4'; // mapping to public ip: http://104.155.215.104:80 , localhost or 127.0.0.1 can not work
-  int intPort = 80;
+  int intPort = 8083;
   var handler =
   createStaticHandler('bss/', defaultDocument: 'index.html');
   print('bss at http://$strHost:$intPort/');
