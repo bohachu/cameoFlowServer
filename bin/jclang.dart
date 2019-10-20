@@ -1,9 +1,11 @@
 //import 'trelloData.dart';
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:logging/logging.dart';
 
 import 'fetchTrello.dart';
+
 final Logger log = Logger('staticWeb.dart');
 
 void initLog() {
@@ -57,6 +59,7 @@ void loopEachCard(Map mapJson) {
   }
   strOutput += ']}';
   log.fine('jclang.dart/loopEachCard/lstCards.length:${lstCards.length}');
+  File('bss/data.ajax').writeAsString(strOutput);
 }
 
 void processEachCardAjax(Map mapCard) {
