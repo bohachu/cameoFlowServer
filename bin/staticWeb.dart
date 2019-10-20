@@ -1,14 +1,32 @@
 import 'package:shelf/shelf_io.dart' as io;
 import 'package:shelf_static/shelf_static.dart';
-
 import 'jclang.dart';
 
 void mainStaticWeb() {
   print("staticWeb.dart/mainStaticWeb");
   mainJclang();
+  bss();
   //webixSamples();
   //stylishDemo();
   //adminLteDemo();
+}
+
+void bss() {
+  String strHost = '10.140.0.4'; // mapping to public ip: http://104.155.215.104:80 , localhost or 127.0.0.1 can not work
+  int intPort = 80˚;
+  var handler =
+  createStaticHandler('bss/', defaultDocument: 'index.html');
+  print('bss at http://$strHost:$intPort/');
+  io.serve(handler, '$strHost', intPort);
+}
+
+void adminLteDemo() {
+  String strHost = '10.140.0.4'; // mapping to public ip: http://104.155.215.104:80 , localhost or 127.0.0.1 can not work
+  int intPort = 80;
+  var handler =
+  createStaticHandler('AdminLTE-master/', defaultDocument: 'index.html');
+  print('adminLteDemo at http://$strHost:$intPort/');
+  io.serve(handler, '$strHost', intPort);
 }
 
 void webixSamples() {
@@ -30,11 +48,3 @@ void stylishDemo() {
   io.serve(handler, '$strHost', intPort);
 }
 
-void adminLteDemo() {
-  String strHost = '10.140.0.4'; // mapping to public ip: http://104.155.215.104:80 , localhost or 127.0.0.1 can not work
-  int intPort=80;
-  var handler =
-  createStaticHandler('AdminLTE-master/', defaultDocument: 'index.html');
-  print('adminLteDemo at http://$strHost:$intPort/');
-  io.serve(handler, '$strHost', intPort);
-}
