@@ -4,7 +4,6 @@ import 'dart:convert';
 import 'package:logging/logging.dart';
 
 import 'fetchTrello.dart';
-
 final Logger log = Logger('staticWeb.dart');
 
 void initLog() {
@@ -34,6 +33,7 @@ List lstIdValue = [];
 String strOutput = '';
 
 void mainJclang() async {
+  initLog();
   log.fine('jclang.dart/mainJclang/String strJson=await fetchTrello();');
   String strJson = await fetchTrello();
   log.fine('jclang.dart/mainJclang/Map mapJson = json.decode(strJson);');
