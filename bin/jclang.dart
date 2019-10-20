@@ -136,6 +136,9 @@ String processLabels(Map mapCard, strName) {
 
 String processSecondTier(Map mapCard, String strName, String strKey) {
   String strResult = mapCard[strKey] ?? '';
+  if (strResult.contains("[Eline][佳福廖素慧][36][2020/9/30]")) {
+    strResult = "Eline Todo";
+  }
   if (strResult != null) {
     //print('jclang.dart/strResult,$strName,$strResult');
   }
