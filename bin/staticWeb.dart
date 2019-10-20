@@ -28,6 +28,7 @@ void bss() async {
   int intPort = 8083;
   var handler = createStaticHandler('bss/', defaultDocument: 'index.html');
   print('bss at http://$strHost:$intPort/');
+  print('bss public ip: http://35.221.219.153:8083/ ')
   io.serve(handler, '$strHost', intPort);
 }
 
