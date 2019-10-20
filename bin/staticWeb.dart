@@ -1,9 +1,11 @@
 import 'package:shelf/shelf_io.dart' as io;
 import 'package:shelf_static/shelf_static.dart';
 
+import 'jclang.dart';
+
 void mainStaticWeb() {
   print("staticWeb.dart/mainStaticWeb");
-  //mainJclang();
+  mainJclang();
   bss();
   //webixSamples();
   //stylishDemo();
@@ -11,7 +13,7 @@ void mainStaticWeb() {
 }
 
 void bss() {
-  String strHost = '10.140.0.4'; // mapping to public ip: http://104.155.215.104:80 , localhost or 127.0.0.1 can not work
+  String strHost = '10.140.0.4'; //'10.140.0.4';//mapping to public ip http://35.221.219.153:8083  , localhost or 127.0.0.1 can not work on google compute engine
   int intPort = 8083;
   var handler =
   createStaticHandler('bss/', defaultDocument: 'index.html');

@@ -1,4 +1,7 @@
-import 'trelloData.dart';
+//import 'trelloData.dart';
+import 'dart:convert';
+
+import 'fetchTrello.dart';
 
 /*
 jclang v1.6
@@ -14,24 +17,20 @@ add 階段 /cards/idList
 add 產品類別 /cards/customFieldItems/idValue idCustomField=="*a129"
 replace /cards/customFieldItems/idValue /customFields/options/value/text ../id
 replace /lists/id /lists/name
-
-priority list
-3*
-1h load csv to datatable
-1h import datatable to bootstrap theme
-1h save csv to file system
-1h
-2*
-1*
-
 */
 
 List lstIdValue = [];
 String strOutput = '';
 
-void mainJclang() {
-  print('jclang.dart/mainJclang');
-  Map mapJson = getTrelloData();
+void mainJclang() async {
+  print('jclang.dart/mainJclang/String strJson=await fetchTrello();');
+  String strJson = await fetchTrello();
+  print('jclang.dart/mainJclang/Map mapJson = json.decode(strJson);');
+  /*
+  String strFetchTrello = await FetchTrello.fetchTrello();
+  print('server.dart/strFetchTrello:\n$strFetchTrello');
+   */
+  Map mapJson = json.decode(strJson);
   loopEachCard(mapJson);
   replaceIdValueToText(mapJson);
   replaceListsId(mapJson);

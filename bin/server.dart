@@ -4,7 +4,6 @@ import 'package:args/args.dart';
 import 'package:shelf/shelf.dart' as shelf;
 import 'package:shelf/shelf_io.dart' as io;
 
-import 'fetchTrello.dart';
 import 'staticWeb.dart';
 
 // For Google Cloud Run, set _hostname to '0.0.0.0'.
@@ -38,15 +37,5 @@ void mainOriginalShelf(List<String> args) async {
 }
 
 Future<shelf.Response> _echoRequest(shelf.Request request) async {
-  String strFetchTrello = await FetchTrello.fetchTrello();
-  print('server.dart/strFetchTrello:\n$strFetchTrello');
   return shelf.Response.ok('Request for "${request.url}"');
-  //TODO:
-  // how to server static files?
-  // Serve Flutter web project built files?
-  // server: Use crontab or scheduling tools to trigger Trello API fetch data (1 min)
-  // server: call Trello API to get JSON files, and put JSON on a static web site
-  // client: HTTP get static JSON file from remote web site
-  // client: Generate Charts and show
-  // client: Use reload button to refresh data to latest changes.
 }
