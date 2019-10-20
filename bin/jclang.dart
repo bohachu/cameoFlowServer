@@ -1,7 +1,18 @@
 //import 'trelloData.dart';
 import 'dart:convert';
 
+import 'package:logging/logging.dart';
+
 import 'fetchTrello.dart';
+
+final Logger log = Logger('staticWeb.dart');
+
+void initLog() {
+  Logger.root.level = Level.ALL; // defaults to Level.INFO
+  Logger.root.onRecord.listen((record) {
+    print('${record.level.name}: ${record.time}: ${record.message}');
+  });
+}
 
 /*
 jclang v1.6
@@ -23,9 +34,9 @@ List lstIdValue = [];
 String strOutput = '';
 
 void mainJclang() async {
-  print('jclang.dart/mainJclang/String strJson=await fetchTrello();');
+  log.fine('jclang.dart/mainJclang/String strJson=await fetchTrello();');
   String strJson = await fetchTrello();
-  print('jclang.dart/mainJclang/Map mapJson = json.decode(strJson);');
+  log.fine('jclang.dart/mainJclang/Map mapJson = json.decode(strJson);');
   /*
   String strFetchTrello = await FetchTrello.fetchTrello();
   print('server.dart/strFetchTrello:\n$strFetchTrello');
@@ -38,13 +49,13 @@ void mainJclang() async {
 }
 
 void loopEachCard(Map mapJson) {
-  print('jclang.dart/loopEachCard');
+  log.fine('jclang.dart/loopEachCard');
   List lstCards = mapJson['cards'];
   strOutput += '{"data":[\n';
   for (int i = 0; i < lstCards.length; i++) {
     Map mapCard = lstCards[i];
     processEachCardAjax(mapCard);
-    print('jclang.dart/loopEachCard/i:$i');
+    log.fine('jclang.dart/loopEachCard/i:$i');
   }
   strOutput += ']}';
 }
