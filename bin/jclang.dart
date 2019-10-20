@@ -1,9 +1,7 @@
 //import 'trelloData.dart';
 import 'dart:convert';
 import 'dart:io';
-
 import 'package:logging/logging.dart';
-
 import 'fetchTrello.dart';
 
 final Logger log = Logger('staticWeb.dart');
@@ -39,14 +37,11 @@ void mainJclang() async {
   log.fine('jclang.dart/mainJclang/String strJson=await fetchTrello();');
   String strJson = await fetchTrello();
   log.fine('jclang.dart/mainJclang/Map mapJson = json.decode(strJson);');
-  /*
-  String strFetchTrello = await FetchTrello.fetchTrello();
-  print('server.dart/strFetchTrello:\n$strFetchTrello');
-   */
   Map mapJson = json.decode(strJson);
   loopEachCard(mapJson);
   replaceIdValueToText(mapJson);
   replaceListsId(mapJson);
+  await File('bss/data.ajax').writeAsString(strOutput);
 }
 
 void loopEachCard(Map mapJson) {
@@ -61,7 +56,6 @@ void loopEachCard(Map mapJson) {
       0, strOutput.length - 2); //delete last comma (ajax format can not accept)
   strOutput += ']}';
   log.fine('jclang.dart/loopEachCard/lstCards.length:${lstCards.length}');
-  File('bss/data.ajax').writeAsString(strOutput);
 }
 
 void processEachCardAjax(Map mapCard) {
