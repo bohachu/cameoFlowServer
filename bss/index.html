@@ -206,33 +206,30 @@
             <div class="container-fluid">
                 <div>
                     優先權表格
-                       
-                    <table class="display" id="myTable" style="width:100%">
+                    <table class="display" id="myBigTable" style="width:100%">
                         <thead>
                         <tr>
-                            <th>a</th>
-                            <th>b</th>
-                            <th>c</th>
-                            <th>d</th>
-                            <th>e</th>
-                            <th>f</th>
-                            <th>g</th>
-                            <th>h</th>
-                            <th>i</th>
-                            <th>j</th>
+                            <th>客源</th>
+                            <th>起始日</th>
+                            <th>案件名稱</th>
+                            <th>金額</th>
+                            <th>交期</th>
+                            <th>人員</th>
+                            <th>優先次序</th>
+                            <!--<th>客戶</th>-->
+                            <th>階段</th>
+                            <th>產品類別</th>
                         </tr>
                         </thead>
                     </table>
-
                     <!--引用jQuery-->
                     <script src="https://code.jquery.com/jquery-3.3.1.js" type="text/javascript"></script>
                     <!--引用dataTables.js-->
                     <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"
                             type="text/javascript"></script>
-
                     <script type="text/javascript">
                         $(document).ready(function () {
-                            $('#myTable').DataTable({
+                            $('#myBigTable').DataTable({
                                 "ajax": "data.ajax"
                             });
                         });

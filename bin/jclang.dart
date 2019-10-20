@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:logging/logging.dart';
 import 'fetchTrello.dart';
+import 'date.dart';
 
 final Logger log = Logger('staticWeb.dart');
 
@@ -61,19 +62,30 @@ void loopEachCard(Map mapJson) {
 void processEachCardAjax(Map mapCard) {
   strOutput += '[';
   strOutput += '"' + processIdValue(mapCard, '客源', '3a1b') + '",';
-  strOutput += '"' + processIdValue(mapCard, '人員', 'f3f0') + '",';
-  strOutput += '"' + processIdValue(mapCard, '產品類別', 'a129') + '",';
   strOutput +=
-      '"' + processCustomFieldItems(mapCard, '起始日', 'value', 'date') + '",';
+      '"' + getDate(processCustomFieldItems(mapCard, '起始日', 'value', 'date')) +
+          '",';
+  strOutput += '"' + processSecondTier(mapCard, '案件名稱', 'name') + '",';
   strOutput +=
       '"' + processCustomFieldItems(mapCard, '金額', 'value', 'number') + '",';
-  strOutput +=
-      '"' + processCustomFieldItems(mapCard, '客戶', 'value', 'text') + '",';
-  strOutput += '"' + processSecondTier(mapCard, '案件名稱', 'name') + '",';
-  strOutput += '"' + processSecondTier(mapCard, '交期', 'due') + '",';
+  strOutput += '"' + getDate(processSecondTier(mapCard, '交期', 'due')) + '",';
+  strOutput += '"' + processIdValue(mapCard, '人員', 'f3f0') + '",';
+  strOutput += '"' + abbreviation(processLabels(mapCard, '優先次序')) + '",';
+  //strOutput += '"' + processCustomFieldItems(mapCard, '客戶', 'value', 'text') + '",';
   strOutput += '"' + processSecondTier(mapCard, '階段', 'idList') + '",';
-  strOutput += '"' + processLabels(mapCard, '優先次序') + '"';
+  strOutput += '"' + processIdValue(mapCard, '產品類別', 'a129') + '"';
   strOutput += '],\n';
+}
+
+String abbreviation(String strColor) {
+  /*
+  if(strColor=='yellow') return 'YE';
+  if(strColor=='black') return 'BL';
+  if(strColor=='red') return 'RE';
+  if(strColor=='green') return 'GR';
+  if(strColor=='pink') return 'PI';
+   */
+  return strColor;
 }
 
 void processEachCardCsv(Map mapCard) {
