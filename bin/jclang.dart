@@ -45,7 +45,6 @@ void mainJclang() async {
   loopEachCard(mapJson);
   replaceIdValueToText(mapJson);
   replaceListsId(mapJson);
-  print(strOutput);
 }
 
 void loopEachCard(Map mapJson) {
@@ -55,9 +54,9 @@ void loopEachCard(Map mapJson) {
   for (int i = 0; i < lstCards.length; i++) {
     Map mapCard = lstCards[i];
     processEachCardAjax(mapCard);
-    log.fine('jclang.dart/loopEachCard/i:$i');
   }
   strOutput += ']}';
+  log.fine('jclang.dart/loopEachCard/lstCards.length:${lstCards.length}');
 }
 
 void processEachCardAjax(Map mapCard) {
@@ -124,7 +123,7 @@ String processLabels(Map mapCard, strName) {
       strResult = null;
     }
     if (strResult != null) {
-      print('jclang.dart/$strName,$strResult');
+      //print('jclang.dart/$strName,$strResult');
     }
   }
   return strResult;
@@ -133,7 +132,7 @@ String processLabels(Map mapCard, strName) {
 String processSecondTier(Map mapCard, String strName, String strKey) {
   String strResult = mapCard[strKey] ?? '';
   if (strResult != null) {
-    print('jclang.dart/strResult,$strName,$strResult');
+    //print('jclang.dart/strResult,$strName,$strResult');
   }
   return strResult;
 }
@@ -151,7 +150,7 @@ String processCustomFieldItems(Map mapCard,
       strResult = '';
     }
     if (strResult != '') {
-      print('jclang.dart/processCustomFieldItems,$strName,$strResult');
+      //print('jclang.dart/processCustomFieldItems,$strName,$strResult');
       break;
     }
   }
@@ -166,8 +165,7 @@ String processIdValue(Map mapCard, String strName, String strEndsWith) {
     String strIdCustomField = lstCustomFieldItems[i]['idCustomField'];
     if (strIdCustomField.endsWith(strEndsWith)) {
       strResult = strIdValue;
-      print(
-          'jclang.dart/processEachCard/strName:$strName,strIdValue:$strIdValue,strIdCustomField:$strIdCustomField');
+      //print('jclang.dart/processEachCard/strName:$strName,strIdValue:$strIdValue,strIdCustomField:$strIdCustomField');
     }
   }
   lstIdValue.add(strResult);

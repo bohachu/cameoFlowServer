@@ -25,13 +25,6 @@ Future<String> getIp() async {
 
 void bss() async {
   String strHost = await getIp();
-  print('staticWeb.dart/bss/getIp:' + strHost);
-
-  /*
-  String strHost = str
-      'localhost'; //'10.140.0.4';//mapping to public ip http://35.221.219.153:8083  , localhost or 127.0.0.1 can not work on google compute engine
-
-   */
   int intPort = 8083;
   var handler = createStaticHandler('bss/', defaultDocument: 'index.html');
   print('bss at http://$strHost:$intPort/');
