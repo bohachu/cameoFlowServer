@@ -57,6 +57,8 @@ void loopEachCard(Map mapJson) {
     Map mapCard = lstCards[i];
     processEachCardAjax(mapCard);
   }
+  strOutput = strOutput.substring(
+      0, strOutput.length - 2); //delete last comma (ajax format can not accept)
   strOutput += ']}';
   log.fine('jclang.dart/loopEachCard/lstCards.length:${lstCards.length}');
   File('bss/data.ajax').writeAsString(strOutput);
