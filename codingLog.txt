@@ -1,3 +1,13 @@
+== start coding 20191021 09:07 15min ==
+. 研究線上試算表的可能性，要能夠輸入金額，處理點點表
+. 取得初步成果 datatables 其實很適合試算表輸入作業，只是要先製作很好的表格 gui 需要事先設計
+  https://datatables.net/examples/api/form.html
+. https://datatables.net/examples/basic_init/state_save.html 這個可以記住目前分頁以及一次顯示幾筆狀態，下次重現
+. 垂直與橫向捲動都可以 https://datatables.net/examples/basic_init/scroll_xy.html
+. 數字三位一撇：https://datatables.net/examples/basic_init/comma-decimal.html
+. 多國語言改變顯示： https://datatables.net/examples/basic_init/language.html
+. 多國語言可以用 json 傳入 https://datatables.net/examples/advanced_init/language_file.html
+
 == start coding 20191020 19:09 ==
 . 往後的研發記錄可以直接在這邊追蹤，應該比起 gmail 回報研發記錄簿更方便才對
 . 要有地方可以記錄 todo 的內容
