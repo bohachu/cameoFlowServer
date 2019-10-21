@@ -1,6 +1,9 @@
 == start coding 20191021 22:41 25min,55min ==
 . 因為已經知道 datatables 很好用，所以現在可以找變色以及打點的可能性，做出點點表的外觀
 . 以下可以用 td 直接輸入點點 ●●●●● 又可以變顏色 color 又可以指定 td class 是 pink 的方法
+
+http://live.datatables.net/qojatije/1/edit?html,css,js,console,output
+
           <tr>
             <td class="pink">Ashton Cox</td>
             <td>Technical Author</td>
