@@ -1,3 +1,34 @@
+== start coding 20191021 22:41 25min,55min ==
+. 因為已經知道 datatables 很好用，所以現在可以找變色以及打點的可能性，做出點點表的外觀
+. 以下可以用 td 直接輸入點點 ●●●●● 又可以變顏色 color 又可以指定 td class 是 pink 的方法
+          <tr>
+            <td class="pink">Ashton Cox</td>
+            <td>Technical Author</td>
+            <td>San Francisco</td>
+            <td>66</td>
+            <td>2009/01/12</td>
+            <td>$4,800</td>
+          </tr>
+
+$(document).ready( function () {
+            $('#example').DataTable({
+                "iDisplayLength": 100,
+                "bFilter": false,
+                "aaSorting" : [[2, "desc"]],
+                "fnRowCallback": function( nRow, aData, iDisplayIndex, iDisplayIndexFull ) {
+                    $('td.pink').css('color', 'Pink');
+                    if ( aData[0] == "aaAshton Cox" )
+                    {
+                        $('td', nRow).css('background-color', 'Red');
+                    }
+                    else if ( aData[1] == "Sales Assistant" )
+                    {
+                        $('td', nRow).css('background-color', 'Orange');
+                    }
+                }
+            });
+});
+
 == start coding 20191021 09:07 15min ==
 . 研究線上試算表的可能性，要能夠輸入金額，處理點點表
 . 取得初步成果 datatables 其實很適合試算表輸入作業，只是要先製作很好的表格 gui 需要事先設計
