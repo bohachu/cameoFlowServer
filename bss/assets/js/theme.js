@@ -8,6 +8,7 @@
         if ($(".sidebar").hasClass("toggled")) {
             $('.sidebar .collapse').collapse('hide');
         }
+        ;
     });
 
     // Close any open menu accordions when window is resized below 768px
@@ -15,6 +16,7 @@
         if ($(window).width() < 768) {
             $('.sidebar .collapse').collapse('hide');
         }
+        ;
     });
 
     // Prevent the content wrapper from scrolling when the fixed side navigation hovered over

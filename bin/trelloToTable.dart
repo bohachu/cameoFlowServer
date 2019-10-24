@@ -33,7 +33,7 @@ void main() async {
   loopEachCard(mapJson);
   replaceIdValueToText(mapJson);
   replaceListsId(mapJson);
-  await File('bss/data.ajax').writeAsString(strOut);
+  await File('bss/trelloTable.ajax').writeAsString(strOut);
   staticWebServer('bss/', 8083);
 }
 
