@@ -1,17 +1,20 @@
 import 'dart:io';
-
 import 'package:shelf/shelf_io.dart' as io;
 import 'package:shelf_static/shelf_static.dart';
-
-import 'jclang.dart';
+import 'trelloToTable.dart';
 
 void mainStaticWeb() {
   print("staticWeb.dart/mainStaticWeb");
-  mainJclang();
-  bss();
   //webixSamples();
   //stylishDemo();
   //adminLteDemo();
+}
+
+void staticWebServer(String strWebPath, int intPort) async {
+  String strHost = await getIp();
+  var handler = createStaticHandler(strWebPath, defaultDocument: 'index.html');
+  print('$strWebPath serve at http://$strHost:$intPort/');
+  io.serve(handler, '$strHost', intPort);
 }
 
 Future<String> getIp() async {
@@ -23,18 +26,9 @@ Future<String> getIp() async {
   }
 }
 
-void bss() async {
-  String strHost = await getIp();
-  int intPort = 8083;
-  var handler = createStaticHandler('bss/', defaultDocument: 'index.html');
-  print('bss at http://$strHost:$intPort/');
-  print('bss public ip: http://35.221.219.153:8083/ ');
-  io.serve(handler, '$strHost', intPort);
-}
-
 void adminLteDemo() {
-  String strHost =
-      '10.140.0.4'; // mapping to public ip: http://104.155.215.104:80 , localhost or 127.0.0.1 can not work
+  // mapping to public ip: http://104.155.215.104:80 , localhost or 127.0.0.1 can not work
+  String strHost = '10.140.0.4';
   int intPort = 80;
   var handler =
   createStaticHandler('AdminLTE-master/', defaultDocument: 'index.html');

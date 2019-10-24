@@ -1,3 +1,15 @@
+== start coding 20191024 10:10 60min ==
+. 現在已經可以做出打點了，可以規劃線上編輯器，未來可以有機會 refactoring 為任意編輯 trello to dart ui
+. 目前點點表的數字也要可以產生
+
+== start coding 20191021 09:36 15min ==
+. 繼續觀賞 datatables 種種好用的功能
+. 按照人名或階段排序 row https://datatables.net/examples/advanced_init/row_grouping.html
+. footer加總總金額：https://datatables.net/examples/advanced_init/footer_callback.html
+. 多重條件篩選搜尋：https://datatables.net/examples/api/multi_filter.html
+. 多重條件下拉搜尋：https://datatables.net/examples/api/multi_filter_select.html
+. 下拉更多內容顯示：https://datatables.net/examples/api/row_details.html
+
 == start coding 20191021 09:07 15min ==
 . 研究線上試算表的可能性，要能夠輸入金額，處理點點表
 . 取得初步成果 datatables 其實很適合試算表輸入作業，只是要先製作很好的表格 gui 需要事先設計
@@ -17,7 +29,6 @@
 . trello 已經把 todo 弄好了 https://trello.com/b/zARWAN43/cameo-flow
 
 ==
-
 cameo flow 研發記錄簿
 收件匣
 x
