@@ -16,7 +16,6 @@ replace /lists/id /lists/name
 
 import 'dart:convert';
 import 'dart:io';
-
 import 'date.dart';
 import 'fetchTrello.dart';
 import 'log.dart';
@@ -26,7 +25,6 @@ List lstIdValue = [];
 String strOut = '';
 
 void main() async {
-  initLog();
   log('trelloToTable.dart/mainJclang/String strJson=await fetchTrello();');
   String strJson = await fetchTrello();
   log('trelloToTable.dart/mainJclang/Map mapJson = json.decode(strJson);');

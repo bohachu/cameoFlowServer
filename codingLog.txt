@@ -1,3 +1,12 @@
+== start coding 20191026 12:46 20min ==
+. 讀取檔案，然後要可以做陣列轉換
+. 已經可以印出資料了
+FINE: 2019-10-26 13:06:24.408346: name:Fanny, light:green, step:01_釐清客戶需求
+FINE: 2019-10-26 13:06:24.408375: name:Roger, light:green, step:01_釐清客戶需求
+FINE: 2019-10-26 13:06:24.408392: name:Roger, light:green, step:01_釐清客戶需求
+FINE: 2019-10-26 13:06:24.408410: name:Elton, light:green, step:01_釐清客戶需求
+FINE: 2019-10-26 13:06:24.408424: name:Elton, light:green, step:01_釐清客戶需求
+
 == start coding 20191026 12:17 8min ==
 . 要能算出來陣列，基於目前的 tableTrello.ajax 計算出來
 

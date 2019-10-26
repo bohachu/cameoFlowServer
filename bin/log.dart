@@ -9,6 +9,12 @@ void initLog() {
   });
 }
 
+bool isInit = false;
 void log(strContent) {
+  if (isInit == false) {
+    isInit = true;
+    initLog();
+  }
   logger.fine(strContent);
 }
+
