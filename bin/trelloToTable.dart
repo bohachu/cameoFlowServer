@@ -20,7 +20,7 @@ import 'dart:io';
 import 'date.dart';
 import 'fetchTrello.dart';
 import 'log.dart';
-import 'staticWeb.dart';
+import 'serverStatic.dart';
 
 List lstIdValue = [];
 String strOut = '';
@@ -34,8 +34,8 @@ void main() async {
   loopEachCard(mapJson);
   replaceIdValueToText(mapJson);
   replaceListsId(mapJson);
-  await File('bss/trelloTable.ajax').writeAsString(strOut);
-  staticWebServer('bss/', 8083);
+  await File('bss/tableTrello.ajax').writeAsString(strOut);
+  serverStatic('bss/', 8083);
   log('trelloToTable.dart/main: http://192.168.1.5:8083/threeLightNumber.html');
 }
 

@@ -4,14 +4,10 @@ import 'package:args/args.dart';
 import 'package:shelf/shelf.dart' as shelf;
 import 'package:shelf/shelf_io.dart' as io;
 
-import 'staticWeb.dart';
+import 'serverStatic.dart';
 
 // For Google Cloud Run, set _hostname to '0.0.0.0'.
 const _hostname = 'localhost';
-
-void main(List<String> args) async {
-  mainStaticWeb();
-}
 
 void mainOriginalShelf(List<String> args) async {
   var parser = ArgParser()..addOption('port', abbr: 'p');

@@ -1,7 +1,8 @@
 import 'package:intl/intl.dart';
+import 'log.dart';
 
 void main() {
-  print(getDate('2019-10-31T04:00:00.000Z'));
+  log(getDate('2019-10-31T04:00:00.000Z'));
 }
 
 String getDate(String strIso8601) {
