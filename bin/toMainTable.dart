@@ -25,20 +25,20 @@ List lstIdValue = [];
 String strOut = '';
 
 void main() async {
-  log('trelloToTable.dart/mainJclang/String strJson=await fetchTrello();');
+  log('toMainTable.dart/mainJclang/String strJson=await fetchTrello();');
   String strJson = await fetchTrello();
-  log('trelloToTable.dart/mainJclang/Map mapJson = json.decode(strJson);');
+  log('toMainTable.dart/mainJclang/Map mapJson = json.decode(strJson);');
   Map mapJson = json.decode(strJson);
   loopEachCard(mapJson);
   replaceIdValueToText(mapJson);
   replaceListsId(mapJson);
-  await File('bss/tableTrello.ajax').writeAsString(strOut);
+  await File('bss/tableTrello.json').writeAsString(strOut);
   serverStatic('bss/', 8083);
-  log('trelloToTable.dart/main: http://192.168.1.5:8083/threeLightNumber.html');
+  log('toMainTable.dart/main: http://192.168.1.5:8083/threeLightNumber.html');
 }
 
 void loopEachCard(Map mapJson) {
-  log('trelloToTable.dart/loopEachCard');
+  log('toMainTable.dart/loopEachCard');
   List lstCards = mapJson['cards'];
   strOut += '{"data":[\n';
   for (int i = 0; i < lstCards.length; i++) {
@@ -49,7 +49,7 @@ void loopEachCard(Map mapJson) {
       0, strOut.length - 2); //delete last comma (ajax format can not accept)
   strOut += ']}';
   log(
-      'trelloToTable.dart/loopEachCard/lstCards.length:${lstCards.length}');
+      'toMainTable.dart/loopEachCard/lstCards.length:${lstCards.length}');
 }
 
 void processEachCardAjax(Map mapCard) {
