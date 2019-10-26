@@ -1,8 +1,17 @@
-==
+== start coding 22:14 15min ==
+. refactoring 讓程式碼可重用性更高
+
+== start coding 21:09 60min ==
 . 已經可以排出顏色
         if((j-1)%3==0){lstTable[i][j] = '🍏' * lstTable[i][j];}
         if((j-1)%3==1){lstTable[i][j] = '🍋' * lstTable[i][j];}
         if((j-1)%3==2){lstTable[i][j] = '🍅' * lstTable[i][j];}
+. http://live.datatables.net/wunayolu/1/edit
+. next: 最右邊加總
+. next: 最下面加總
+. next: 最上面有中文標題
+. next: 另外一個大表：算出案件金額表
+. next: 整合到 admin gui
 
 == start coding 20191026 17:04 45min ==
 . 接下去就要每個 row 跑，應該有五輪 5 6 7 8 9 然後可以接著睡覺
