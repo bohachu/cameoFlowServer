@@ -16,29 +16,31 @@ replace /lists/id /lists/name
 
 import 'dart:convert';
 import 'dart:io';
+
 import 'date.dart';
 import 'fetchTrello.dart';
-import 'staticWeb.dart';
 import 'log.dart';
+import 'staticWeb.dart';
 
 List lstIdValue = [];
 String strOut = '';
 
 void main() async {
   initLog();
-  log.fine('trelloToTable.dart/mainJclang/String strJson=await fetchTrello();');
+  log('trelloToTable.dart/mainJclang/String strJson=await fetchTrello();');
   String strJson = await fetchTrello();
-  log.fine('trelloToTable.dart/mainJclang/Map mapJson = json.decode(strJson);');
+  log('trelloToTable.dart/mainJclang/Map mapJson = json.decode(strJson);');
   Map mapJson = json.decode(strJson);
   loopEachCard(mapJson);
   replaceIdValueToText(mapJson);
   replaceListsId(mapJson);
   await File('bss/trelloTable.ajax').writeAsString(strOut);
   staticWebServer('bss/', 8083);
+  log('trelloToTable.dart/main: http://192.168.1.5:8083/threeLightNumber.html');
 }
 
 void loopEachCard(Map mapJson) {
-  log.fine('trelloToTable.dart/loopEachCard');
+  log('trelloToTable.dart/loopEachCard');
   List lstCards = mapJson['cards'];
   strOut += '{"data":[\n';
   for (int i = 0; i < lstCards.length; i++) {
@@ -48,7 +50,7 @@ void loopEachCard(Map mapJson) {
   strOut = strOut.substring(
       0, strOut.length - 2); //delete last comma (ajax format can not accept)
   strOut += ']}';
-  log.fine(
+  log(
       'trelloToTable.dart/loopEachCard/lstCards.length:${lstCards.length}');
 }
 
