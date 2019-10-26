@@ -22,7 +22,23 @@ Map convertTableTrelloToThreeLight(Map map) {
     String strLight = lst[i][6];
     String strStep = lst[i][7];
     if (strName.length > 0) {
-      log('name:$strName, light:$strLight, step:$strStep');
+      addCounter(strName, strStep, strLight);
     }
   }
+  log('tableTrelloToThreeLight.dart/mapNameStepLight:$mapNameStepLight');
+}
+
+Map mapNameStepLight = {};
+
+void addCounter(String strName, String strStep, String strLight) {
+  if (mapNameStepLight[strName] == null) {
+    mapNameStepLight[strName] = {};
+    }
+  if (mapNameStepLight[strName][strStep] == null) {
+    mapNameStepLight[strName][strStep] = {};
+  }
+  if (mapNameStepLight[strName][strStep][strLight] == null) {
+    mapNameStepLight[strName][strStep][strLight] = 0;
+  }
+  mapNameStepLight[strName][strStep][strLight] += 1;
 }
