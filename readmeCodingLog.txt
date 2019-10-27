@@ -1,4 +1,42 @@
-todo
+== start coding 20191027 21:44 60min ==
+開始規劃 adminlte 要隱藏的部分
+hide "Customize AdminLTE"
+hide "Notifications"
+hide "Messages"
+modify "AdminLTE 3" "習慣領域全壘打"
+hide "menu/Alexander Pierce"
+hide "menu/Dashboard"
+hide "menu/Widgets"
+hide "menu/Layout Options"
+hide "menu/Charts"
+hide "menu/UI Elements"
+hide "menu/Forms"
+hide "menu/Tables"
+hide "menu/EXAMPLES"
+hide "menu/Calendar"
+modify "Gallery" "全壘打流程表"
+hide "menu/Mailbox"
+hide "menu/Pages"
+hide "menu/Extras"
+hide "menu/MISCELLANEOUS"
+modify "menu/Documentation" "財務報表"
+hide "menu/MULTI LEVEL EXAMPLE"
+hide "menu/Level 1"
+hide "menu/LABELS"
+hide "menu/Important"
+hide "menu/Warning"
+hide "menu/Information"
+modify "Home" "首頁"
+modify "Contact" "聯絡我們"
+modify "Search" "搜尋"
+
+已經確定每個 data.html like  的檔案都會完全複製一份相同 menu 這點傷腦筋
+但是意外找到 pdfmake 這個套件很好用，而且支援中文 it is great
+
+
+
+==
+
 3* 系統面：adminlte 介面隱藏不需要的東西，可以用試算表隱藏 hidelang
 3* 系統面：adminlte 把英文介面改為中文介面，用一個試算表來改，不需要動到原本的 html: i18nlang
 3* 系統面：如何讓 reload 多張圖表不需要開關 dart server
