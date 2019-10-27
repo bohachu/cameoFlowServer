@@ -34,7 +34,6 @@ void main() async {
   replaceListsId(mapJson);
   await File('bss/tableTrello.json').writeAsString(strOut);
   serverStatic('bss/', 8083);
-  log('toMainTable.dart/main: http://192.168.1.5:8083/threeLightNumber.html');
 }
 
 void loopEachCard(Map mapJson) {
