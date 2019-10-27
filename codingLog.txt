@@ -1,3 +1,7 @@
+== start coding 20191027 10:40 60min ==
+剛剛不太順利的原因是採用 bootstrap studio 改來改去改不出我要的東西，還會消失不見table
+現在改用 adminlte 看看效果
+
 == start coding 20191027 08:57 60min ==
 待辦方案有這些
 

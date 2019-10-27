@@ -32,8 +32,15 @@ void main() async {
   loopEachCard(mapJson);
   replaceIdValueToText(mapJson);
   replaceListsId(mapJson);
+  /*
   await File('bss/tableTrello.json').writeAsString(strOut);
   serverStatic('bss/', 8083);
+   */
+
+  // file:///Users/cameo/WebstormProjects/cameoFlowServer/adminlte/pages/tables/data.html
+  await File('adminlte/pages/tables/tableTrello.json').writeAsString(strOut);
+  serverStatic('adminlte/', 8083);
+  log('http://192.168.1.5:8083/pages/tables/data.html');
 }
 
 void loopEachCard(Map mapJson) {
