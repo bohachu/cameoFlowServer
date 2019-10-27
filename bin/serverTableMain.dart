@@ -25,9 +25,9 @@ List lstIdValue = [];
 String strOut = '';
 
 void main() async {
-  log('toTableMain.dart/mainJclang/String strJson=await fetchTrello();');
+  log('serverTableMain.dart/mainJclang/String strJson=await fetchTrello();');
   String strJson = await fetchTrello();
-  log('toTableMain.dart/mainJclang/Map mapJson = json.decode(strJson);');
+  log('serverTableMain.dart/mainJclang/Map mapJson = json.decode(strJson);');
   Map mapJson = json.decode(strJson);
   loopEachCard(mapJson);
   replaceIdValueToText(mapJson);
@@ -40,11 +40,10 @@ void main() async {
   // file:///Users/cameo/WebstormProjects/cameoFlowServer/adminlte/pages/tables/data.html
   await File('adminlte/pages/tables/tableTrello.json').writeAsString(strOut);
   serverStatic('adminlte/', 8083);
-  log('http://192.168.1.5:8083/pages/tables/data.html');
 }
 
 void loopEachCard(Map mapJson) {
-  log('toTableMain.dart/loopEachCard');
+  log('serverTableMain.dart/loopEachCard');
   List lstCards = mapJson['cards'];
   strOut += '{"data":[\n';
   for (int i = 0; i < lstCards.length; i++) {
@@ -54,7 +53,7 @@ void loopEachCard(Map mapJson) {
   strOut = strOut.substring(
       0, strOut.length - 2); //delete last comma (ajax format can not accept)
   strOut += ']}';
-  log('toTableMain.dart/loopEachCard/lstCards.length:${lstCards.length}');
+  log('serverTableMain.dart/loopEachCard/lstCards.length:${lstCards.length}');
 }
 
 void processEachCardAjax(Map mapCard) {

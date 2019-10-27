@@ -1,3 +1,14 @@
+== start 15:28 51min ==
+15:28 pandas共學課程已經開了，現在要讓第一張表也可以捲動
+15:38 第一張表已經可以捲動
+現在要讓 income 表格也放入 html 第三個表單
+15:55 stop
+
+== start 20191027 14:48 15 min ==
+看一下 pandas 是不是有靈感可以簡化我們的工作
+還有看一下 pandas dart, pandas udemy
+開課： https://www.udemy.com/course/data-analysis-with-pandas/
+
 == start coding 20191027 10:40 60min ==
 剛剛不太順利的原因是採用 bootstrap studio 改來改去改不出我要的東西，還會消失不見table
 現在改用 adminlte 看看效果

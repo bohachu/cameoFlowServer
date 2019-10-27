@@ -10,7 +10,7 @@ void main() async {
   Map mapNameStepDot = toNameStepField(mapTableTrello, 6);
   List lstTable = toTable(mapNameStepDot);
   String strJson = jsonEncode(toSymbol(lstTable));
-  log('toTableDot.dart/strJson:$strJson');
+  log('tableDot.dart/strJson:$strJson');
   await File('adminlte/pages/tables/tableDot.json').writeAsString('{"data":\n $strJson \n}');
 }
 

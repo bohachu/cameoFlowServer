@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'log.dart';
 import 'dart:convert';
 import 'readFile.dart';
@@ -10,16 +12,18 @@ void main() async {
   String strJson = jsonEncode(lstTable);
   log(mapNameStepIncome);
   log(strJson);
+  await File('adminlte/pages/tables/tableStepIncome.json').writeAsString('{"data":\n $strJson \n}');
 }
 
 List toTable(Map mapNameStepLight) {
+  int intStepNum=16;
   List lstOut = [];
   for (var e in mapNameStepLight.entries) {
     String strName = e.key;
     List lstRow = [];
-    for (int i = 0; i < 16; i++) lstRow.add(0);
-    Map map16Steps = e.value;
-    for (String strStep in map16Steps.keys) {
+    for (int i = 0; i < intStepNum; i++) lstRow.add(0);
+    Map mapSteps = e.value;
+    for (String strStep in mapSteps.keys) {
       int intStep2Digit = int.parse(strStep.substring(0, 2));
       lstRow[intStep2Digit - 1] = mapNameStepLight[strName][strStep];
     }
