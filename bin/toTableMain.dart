@@ -54,8 +54,7 @@ void loopEachCard(Map mapJson) {
   strOut = strOut.substring(
       0, strOut.length - 2); //delete last comma (ajax format can not accept)
   strOut += ']}';
-  log(
-      'toTableMain.dart/loopEachCard/lstCards.length:${lstCards.length}');
+  log('toTableMain.dart/loopEachCard/lstCards.length:${lstCards.length}');
 }
 
 void processEachCardAjax(Map mapCard) {
