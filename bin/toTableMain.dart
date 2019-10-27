@@ -25,9 +25,9 @@ List lstIdValue = [];
 String strOut = '';
 
 void main() async {
-  log('toMainTable.dart/mainJclang/String strJson=await fetchTrello();');
+  log('toTableMain.dart/mainJclang/String strJson=await fetchTrello();');
   String strJson = await fetchTrello();
-  log('toMainTable.dart/mainJclang/Map mapJson = json.decode(strJson);');
+  log('toTableMain.dart/mainJclang/Map mapJson = json.decode(strJson);');
   Map mapJson = json.decode(strJson);
   loopEachCard(mapJson);
   replaceIdValueToText(mapJson);
@@ -44,7 +44,7 @@ void main() async {
 }
 
 void loopEachCard(Map mapJson) {
-  log('toMainTable.dart/loopEachCard');
+  log('toTableMain.dart/loopEachCard');
   List lstCards = mapJson['cards'];
   strOut += '{"data":[\n';
   for (int i = 0; i < lstCards.length; i++) {
@@ -55,7 +55,7 @@ void loopEachCard(Map mapJson) {
       0, strOut.length - 2); //delete last comma (ajax format can not accept)
   strOut += ']}';
   log(
-      'toMainTable.dart/loopEachCard/lstCards.length:${lstCards.length}');
+      'toTableMain.dart/loopEachCard/lstCards.length:${lstCards.length}');
 }
 
 void processEachCardAjax(Map mapCard) {

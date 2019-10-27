@@ -1,7 +1,7 @@
 import 'log.dart';
 import 'dart:convert';
 import 'readFile.dart';
-import 'mainTableConverter.dart';
+import 'tableMainConverter.dart';
 
 void main() async {
   Map mapTableTrello = await readTableTrelloAjax();
