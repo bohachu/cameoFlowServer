@@ -1,3 +1,63 @@
+== start 20191027 60min ==
+16:49 開始
+首先要把財務儀表板的輸入工具，方法要選定
+'2019執行表'!AC17:AC24,'2019執行表'!AH28:AH35
+Sam (洪伯昇)
+Elton (侯世璟)
+Eline(陳盈伶)
+Alec (盧鵬仁)
+Vicky (何芷婷)
+kevin (黃俞凱)
+Roger (李乃廷)
+Fanny (李芳樺)
+
+'2019執行表'!AH28:AH35
+86.23
+272.0932
+584.242
+459.9828
+80.5
+385.037
+478.057
+289.9238
+
+最方便的輸入工具應該還是 google sheet 因為可以自由的打入公式
+也可以自由的產生圖表
+現在比較麻煩的事情是
+怎樣讓 google sheet 插入 html 而且顯示非常好看
+尤其是圖表
+
+自動發布網頁可以看到以下圖表內容，採用網頁方式呈現
+https://docs.google.com/spreadsheets/d/e/2PACX-1vRg_fpCrsPniHYLw1B4_dAP_J_8KLIkJMr0WCFZiJqesiPpOo6IOQ1EcWy_LpUmWYpvWtDKYgWC1SN8/pubhtml?gid=1436246321&single=true
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRg_fpCrsPniHYLw1B4_dAP_J_8KLIkJMr0WCFZiJqesiPpOo6IOQ1EcWy_LpUmWYpvWtDKYgWC1SN8/pubhtml?gid=1436246321&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+
+17:15 財務儀表板也都可以看了，超棒的！
+
+todo 財務儀表板:
+doing 16:51 3* 如何輸入數字？挑選工具
+doing 16:51 3* 如何展示在網頁上面？挑選工具
+
+todo 系統面:
+done 3* 第一張圖 layout 怎樣不會跑版？
+done 3* 整合多張圖表到 admin gui
+3* 如何讓 reload 多張圖表不需要開關 dart server
+1* 多個公司登入介面
+
+todo refactoring:
+done 1* 萬一未來14階段擴充到16階段要改變哪些東西
+
+todo 點點表:
+3* 最上面有中文標題
+2* 最右邊加總
+2* 最下面加總
+
+todo 階段收入表:
+done 3* 最上面有中文標題
+2* 右邊要有個人加總
+2* 下面要有階段加總
+1* 下面要有簽約前金額加總
+
 == start 15:28 51min ==
 15:28 pandas共學課程已經開了，現在要讓第一張表也可以捲動
 15:38 第一張表已經可以捲動
@@ -17,8 +77,8 @@
 待辦方案有這些
 
 todo 系統面:
-3* 第一張圖 layout 怎樣不會跑版？
-3* 整合多張圖表到 admin gui
+done 3* 第一張圖 layout 怎樣不會跑版？
+done 3* 整合多張圖表到 admin gui
 3* 如何讓 reload 多張圖表不需要開關 dart server
 1* 多個公司登入介面
 
