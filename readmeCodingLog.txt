@@ -1,3 +1,47 @@
+== start coding 20191028 09:00 15min ==
+jsonp trello javascript 實驗
+
+var url = "https://trello.com/b/SsiyOdgK/傢櫥環中.json";
+$.getJSON(url, function(data){
+  console.log(data);
+});
+
+09:08 jsonp 實驗成功，完全可以運作！
+
+已經發問 icdsoft apache 是不是可以產生帳號密碼，如果可以製作簡單的帳號密碼 script 就能夠產生使用者了
+這樣就可以讓 javascript 完全在瀏覽器上面運作了
+真是太驚人了！
+
+== start logging
+fuse theme 這個 trello like 強大到爆漿，一定要用！！！
+http://angular-material.fusetheme.com/apps/scrumboard/boards/50b77a29/untitled-board
+
+== start logging 20191028 00:07 15min ==
+這是 trello like task board for javascript 很好用，可以橫向捲軸
+https://alexodes.github.io/Taskboard/#board
+
+angular 有對話訊息，有todo、行事曆，全部都有作用
+https://themeforest.net/item/egret-angular-4-material-design-admin-template/20161805
+http://demos.ui-lib.com/egret-doc/#overview
+Egret - Angular 8+ Material Design Admin Template
+by mh_rafi in Admin Templates
+Multiple Layouts
+Multiple Angular material Themes
+Pre Made Angular apps.
+
+這個有看板法，很有趣的demo，地圖有Leaflet
+Primer - Angular & React Material Design Admin Template
+by iamnyasha in Admin Templates
+Angular & React Versions
+Material design
+RTL Support
+
+找到很美的 pie chart
+https://swimlane.github.io/ngx-charts/#/ngx-charts/pie-chart
+
+之所以想要用 angular 的原因：
+可重用元件的設計應該比較周詳，至少不會每個 html 都重複
+
 == start coding 20191027 21:44 60min ==
 開始規劃 adminlte 要隱藏的部分
 hide "Customize AdminLTE"
@@ -32,8 +76,6 @@ modify "Search" "搜尋"
 
 已經確定每個 data.html like  的檔案都會完全複製一份相同 menu 這點傷腦筋
 但是意外找到 pdfmake 這個套件很好用，而且支援中文 it is great
-
-
 
 ==
 
