@@ -1,16 +1,28 @@
-~~ todo list ~~
-1h 數字靠右而且三位一撇
-2h known 運用 $('.header').load("header.html"); 側邊欄改可重用 系統面：adminlte 介面隱藏不需要的東西，可以用試算表隱藏 hidelang
-1h known 直接改中文字串無法重用 系統面：adminlte 把英文介面改為中文介面，用一個試算表來改，不需要動到原本的 html: i18nlang
+== start coding 20191029 10:54 45min ==
+在總表之前要能執行 .dart.js
+11:26 testDartJs.dart已經可以運作
+
 3h known 運用 jsonp 達成直接 load trello：系統面：如何讓 reload 多張圖表不需要開關 dart server, dart to js, and then use jsonp
 var url = "https://trello.com/b/SsiyOdgK/傢櫥環中.json";
 $.getJSON(url, function(data){
   console.log(data);
 });
-known 1* 系統面：多個公司登入介面: 已經可以用 icdsoft 辦到帳號密碼功能
+
+結論：
++ testDartJs.dart 簡單的替換可以運作，也就是往後可以用 dart dom 在本專案操作沒問題
+i 沒有成功讓 jsonp 可以呼叫，其實想一想，應該改用 server side json 動態生成也不錯啦，哈哈哈，只要解決幾分鐘更新問題即可喔喔喔
+
+~~ todo list ~~
+1h 數字靠右而且三位一撇
+2h known 運用 $('.header').load("header.html"); 側邊欄改可重用 系統面：adminlte 介面隱藏不需要的東西，可以用試算表隱藏 hidelang
+1h known 直接改中文字串無法重用 系統面：adminlte 把英文介面改為中文介面，用一個試算表來改，不需要動到原本的 html: i18nlang
 caro 3* 點點表：最上面有中文標題
 use js sum 2* 階段收入表：右邊要有個人加總, 階段收入表：下面要有階段加總
 use js sum 1* 階段收入表：下面要有簽約前金額加總
+
+~~
+done known 1* 系統面：多個公司登入介面: 已經可以用 icdsoft 辦到帳號密碼功能
+
 
 == 20191029 09:09 40min ==
 很好奇編譯為 javascript 的可讀性（程式碼），所以來編譯看看
