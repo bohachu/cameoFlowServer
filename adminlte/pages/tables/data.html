@@ -722,35 +722,31 @@
           </div>
           <!-- /.card -->
 
-          <script defer src="/dartJs/testDartJs.dart.js"></script>
           <script type="text/javascript">
-              var globalStr1 = "太棒了這是全域變數";
-          </script>
-
-          <div id="testDartJs">testDartJs from Bowen Chiu HTML</div>
-          <script type="text/javascript">
-              console.log('globalStr1');
-              console.log(globalStr1);
-              console.log(globalStr2);
-              $(document).ready(function () {
-                  $('#tableTrello').DataTable({
-                      "scrollX": true,
-                      "scrollY": true,
-                      "data": "tableTrello.json",
-                      columns: [
-                          {title: "客源"},
-                          {title: "起始日"},
-                          {title: "案件名稱"},
-                          {title: "金額"},
-                          {title: "交期"},
-                          {title: "人員"},
-                          {title: "優先次序"},
-                          {title: "階段"},
-                          {title: "產品類別"},
-                      ]
+              function jsTableTrello(lstData) {
+                  $(document).ready(function () {
+                      $('#tableTrello').DataTable({
+                          "scrollX": true,
+                          "scrollY": true,
+                          "data": lstData,
+                          columns: [
+                              {title: "客源"},
+                              {title: "起始日"},
+                              {title: "案件名稱"},
+                              {title: "金額"},
+                              {title: "交期"},
+                              {title: "人員"},
+                              {title: "優先次序"},
+                              {title: "階段"},
+                              {title: "產品類別"},
+                          ]
+                      });
                   });
-              });
+              }
           </script>
+          <script defer src="/dartJs/testDartJs.dart.js"></script>
+          <div id="testDartJs">testDartJs from Bowen Chiu HTML</div>
+
           <!-- cameoFlow card001 end -->
 
           <!-- cameoFlow card002 start -->

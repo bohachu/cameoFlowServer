@@ -1,3 +1,9 @@
+== start coding 20191029 17:50 60min ==
+17:50 試試看 dart to js alert
+YES!!! 成功
+
+17:51 呼叫看看其他功能
+
 == start coding 20191029 16:30 60min ==
 這是可以運作的
           <script type="text/javascript">
