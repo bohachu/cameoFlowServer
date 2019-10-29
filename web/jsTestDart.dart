@@ -1,31 +1,18 @@
+import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'dart:html';
 import 'dart:js';
-
-final String globalStr2 = "wawa dart";
+import 'jsTableMain.dart';
 
 void main() async {
-  //context.callMethod('alert', ['Hello from Dart!']);
-
-  var obj = JsObject(context['Object']);
-  obj['greeting'] = 'Hello';
-  obj['greet'] = (name) => "${obj['greeting']} $name";
-  var message = obj.callMethod('greet', ['JavaScript']);
-  context['console'].callMethod('log', [message]);
-
-  context.callMethod('jsTableTrello', [JsObject.jsify(lstData)]);
-
-  print('testDartJs.dart/001:::${DateTime
-      .now()
-      .second}');
-  http.Response response = await http.get('https://trello.com/b/SsiyOdgK/%E5%82%A2%E6%AB%A5%E7%92%B0%E4%B8%AD.json');
-  querySelector('#testDartJs').text = '!!! 1029 1640 Bowen Chiu DART to JS WORK!!! Your Dart app is running.';
-  print('testDartJs.dart/002:::${DateTime
-      .now()
-      .second}');
+  String strOut = await getTrelloTable();
+  List lstData = json.decode(strOut)['data'];
+  context['console'].callMethod('log', ['001']);
+  context.callMethod('funcTableTrello', [JsObject.jsify(lstData)]);
+  context['console'].callMethod('log', ['002']);
 }
 
-final List lstData = [
+final List lstSample = [
   ["", "", "範例 [建案名稱][客戶名稱]", "", "", "", "green", "01_釐清客戶需求", ""],
   ["", "", "範例 [建案名稱][客戶名稱]", "", "", "", "green", "01_釐清客戶需求", ""],
   ["舊客", "", "王麗君", "", "", "Fanny", "green", "01_釐清客戶需求", ""],

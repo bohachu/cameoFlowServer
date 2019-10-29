@@ -3,6 +3,21 @@
 YES!!! 成功
 
 17:51 呼叫看看其他功能
+18:12 dart to dataTables 成功
+
+備用的未來測試
+  //context.callMethod('alert', ['Hello from Dart!']);
+
+  var obj = JsObject(context['Object']);
+  obj['greeting'] = 'Hello';
+  obj['greet'] = (name) => "${obj['greeting']} $name";
+  var message = obj.callMethod('greet', ['JavaScript']);
+  context['console'].callMethod('log', [message]);
+
+18:46 已經完全成功了，可以從 dart load trello json , to table, to javascript, to datatables
++ 艱辛的路，但是通了
+i debugger 似乎不能運作, 可以單一專案來最簡單看看運作方法
+i bin web 兩邊的專案檔案無法 share 會是個問題
 
 == start coding 20191029 16:30 60min ==
 這是可以運作的
