@@ -87,6 +87,8 @@ build/scss/plugins/_toastr.scss
 composer.json
 dart/date.dart.js
 dart/jsMain.dart.js
+dart/webStorage.dart.js
+dart/webStorage.html
 dist/css/adminlte.css
 dist/css/adminlte.css.map
 dist/css/adminlte.min.css
