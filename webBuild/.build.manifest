@@ -86,6 +86,7 @@ build/scss/plugins/_sweetalert2.scss
 build/scss/plugins/_toastr.scss
 composer.json
 dart/date.dart.js
+dart/jsMain.dart.js
 dist/css/adminlte.css
 dist/css/adminlte.css.map
 dist/css/adminlte.min.css
