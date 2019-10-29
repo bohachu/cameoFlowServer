@@ -709,9 +709,6 @@
           <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" type="text/javascript"></script>
           <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" type="text/javascript"></script>
 
-          <script defer src="/dartJs/testDartJs.dart.js"></script>
-          <div id="testDartJs">testDartJs from Bowen Chiu HTML</div>
-
           <!-- bowen chiu cameoFlow card001 start -->
           <div class="card">
             <div class="card-header">
@@ -724,12 +721,22 @@
             <!-- /.card-body -->
           </div>
           <!-- /.card -->
+
+          <script defer src="/dartJs/testDartJs.dart.js"></script>
           <script type="text/javascript">
+              var globalStr1 = "太棒了這是全域變數";
+          </script>
+
+          <div id="testDartJs">testDartJs from Bowen Chiu HTML</div>
+          <script type="text/javascript">
+              console.log('globalStr1');
+              console.log(globalStr1);
+              console.log(globalStr2);
               $(document).ready(function () {
                   $('#tableTrello').DataTable({
                       "scrollX": true,
                       "scrollY": true,
-                      "ajax": "tableTrello.json",
+                      "data": "tableTrello.json",
                       columns: [
                           {title: "客源"},
                           {title: "起始日"},

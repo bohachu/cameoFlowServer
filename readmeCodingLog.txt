@@ -1,3 +1,55 @@
+== start coding 20191029 16:30 60min ==
+這是可以運作的
+          <script type="text/javascript">
+            var url = "https://trello.com/b/SsiyOdgK/傢櫥環中.json";
+            console.log("data.html/$.getJSON");
+            $.getJSON(url, function(data){
+              console.log(data);
+            });
+          </script>
+16:57 技術上已經可以讀取 dart ，問題是要怎麼省四秒的反應時間，同時兼顧 icdsoft 可以運作嗎？
+其實還是要有自己的 server 比較好，這樣就可以動態調整各種可能性
+
+結論：
+為了要避免自己用密碼系統的麻煩
+試試看用靜態檔案四秒更新的方式運作看看，未來可以用瀏覽器儲存 cache 的方式進行加速與更新作業，就不用四秒等待時間了
+
+17:02 替換大表變成動態 load dartJs json
+
+http://dartdoc.takyam.com/articles/js-dart-interop/
+js:
+var Point = function(x, y) {
+  this.x = x;
+  this.y = y;
+};
+
+~~
+
+dart
+var point = new JsObject(context['Point'], [3, 4]);
+
+~~
+
+import 'dart:js';
+main() => context.callMethod('alert', ['Hello from Dart!']);
+
+~~
+
+import 'dart:js';
+
+main() {
+  var object = JsObject(context['Object']);
+  object['greeting'] = 'Hello';
+  object['greet'] = (name) => "${object['greeting']} $name";
+  var message = object.callMethod('greet', ['JavaScript']);
+  context['console'].callMethod('log', [message]);
+}
+
+~~
+var jsMap = JsObject.jsify({'a': 1, 'b': 2});
+var jsArray = JsObject.jsify([1, 2, 3]);
+
+
 == start coding 20191029 10:54 45min ==
 在總表之前要能執行 .dart.js
 11:26 testDartJs.dart已經可以運作
