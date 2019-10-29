@@ -1,3 +1,59 @@
+~~ todo list ~~
+1h 數字靠右而且三位一撇
+2h known 運用 $('.header').load("header.html"); 側邊欄改可重用 系統面：adminlte 介面隱藏不需要的東西，可以用試算表隱藏 hidelang
+1h known 直接改中文字串無法重用 系統面：adminlte 把英文介面改為中文介面，用一個試算表來改，不需要動到原本的 html: i18nlang
+3h known 運用 jsonp 達成直接 load trello：系統面：如何讓 reload 多張圖表不需要開關 dart server, dart to js, and then use jsonp
+var url = "https://trello.com/b/SsiyOdgK/傢櫥環中.json";
+$.getJSON(url, function(data){
+  console.log(data);
+});
+known 1* 系統面：多個公司登入介面: 已經可以用 icdsoft 辦到帳號密碼功能
+caro 3* 點點表：最上面有中文標題
+use js sum 2* 階段收入表：右邊要有個人加總, 階段收入表：下面要有階段加總
+use js sum 1* 階段收入表：下面要有簽約前金額加總
+
+== 20191029 09:09 40min ==
+很好奇編譯為 javascript 的可讀性（程式碼），所以來編譯看看
+09:13 答案已經很確定是不可行，原因是 34 lines to 7000 lines 實在差異太大了
+09:39 花了25分鐘寫好一個addBottomSum的小程式碼可以運作，還算不錯
+現在準備計算右邊的東西
+09:50 花另外10分鐘寫好 addRightSum的小程式碼可以運作，自己很喜歡
+done 22:47 use js sum 2* 點點表：最右邊加總, 點點表：最下面加總
+
+== 20191028 22:32 30min ==
+known 可重用 reuse jquery load 命令的寫法
+header.html
+
+<div class="nav">
+<div class="container">
+<ul class="pull-left">
+<li><a href="#">Blogs</a></li>
+<li><a href="#">About</a></li>
+    </ul>
+<ul class="pull-right">
+<li><a href="#">Ask a question</a></li>
+<li><a href="#">Links</a></li>
+    </ul>
+  </div>
+</div>
+
+~~
+
+index.html:
+<div class="header"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="script.js"></script>
+
+~~
+
+script.js:
+$(document).ready(function(){
+  $('.header').load("header.html");
+});
+
+
+
 == start coding 20191028 09:00 15min ==
 jsonp trello javascript 實驗
 
@@ -82,7 +138,6 @@ modify "Search" "搜尋"
 3* 系統面：adminlte 介面隱藏不需要的東西，可以用試算表隱藏 hidelang
 3* 系統面：adminlte 把英文介面改為中文介面，用一個試算表來改，不需要動到原本的 html: i18nlang
 3* 系統面：如何讓 reload 多張圖表不需要開關 dart server
-1* 系統面：多個公司登入介面
 3* 點點表：最上面有中文標題
 2* 點點表：最右邊加總
 2* 點點表：最下面加總

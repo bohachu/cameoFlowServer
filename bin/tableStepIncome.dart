@@ -9,6 +9,8 @@ void main() async {
   Map mapTableTrello = await readTableTrelloAjax();
   Map mapNameStepIncome = toNameStepField(mapTableTrello, 3);
   List lstTable = toTable(mapNameStepIncome);
+  lstTable = addBottomSum(lstTable);
+  lstTable = addRightSum(lstTable);
   String strJson = jsonEncode(lstTable);
   log(mapNameStepIncome);
   log(strJson);
@@ -31,4 +33,43 @@ List toTable(Map mapNameStepLight) {
     lstOut.add(lstRow);
   }
   return lstOut;
+}
+
+final String i18nSum = "總計";
+
+List addBottomSum(List lst) {
+  int intRowLength = lst.length;
+  int intColumnLength = lst[0].length;
+  List lstOut = [];
+  for (int intColumn = 0; intColumn < intColumnLength; intColumn++) {
+    int intSum = 0;
+    bool isStringSoNoAdd = false;
+    for (int intRow = 0; intRow < intRowLength; intRow++) {
+      if (lst[intRow][intColumn] is String) {
+        lstOut.add(i18nSum);
+        isStringSoNoAdd = true;
+        break;
+      }
+      intSum += lst[intRow][intColumn];
+    }
+    if (isStringSoNoAdd == false) lstOut.add(intSum);
+  }
+  lst.add(lstOut);
+  return lst;
+}
+
+List addRightSum(List lst) {
+  int intRowLength = lst.length;
+  int intColumnLength = lst[0].length;
+  for (int intRow = 0; intRow < intRowLength; intRow++) {
+    int intSum = 0;
+    for (int intColumn = 0; intColumn < intColumnLength; intColumn++) {
+      if (lst[intRow][intColumn] is String) {
+        continue;
+      }
+      intSum += lst[intRow][intColumn];
+    }
+    lst[intRow].add(intSum);
+  }
+  return lst;
 }
