@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'log.dart';
 import 'dart:convert';
 import 'readFile.dart';

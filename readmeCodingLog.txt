@@ -1,15 +1,19 @@
+~~ todo list ~~
+2* 1h 點點表：最上面有中文標題
+2* 1h 階段收入表：下面要有簽約前金額加總
+1* 1h 數字靠右而且三位一撇
+1* 2h known 運用 $('.header').load("header.html"); 側邊欄改可重用 系統面：adminlte 介面隱藏不需要的東西，可以用試算表隱藏 hidelang
+1* 1h known 直接改中文字串無法重用 系統面：adminlte 把英文介面改為中文介面，用一個試算表來改，不需要動到原本的 html: i18nlang
+
+== 20191029 22:08
+三張表都改為動態資料了，非常棒啊啊啊
+剛剛學到了 import 裡面如果有一些不能 js 編譯的東西，會造成無法編譯的錯誤 404 找不到檔案 .js 無法生成的問題
+done use js sum 2* 階段收入表：右邊要有個人加總, 階段收入表：下面要有階段加總
 
 == 20191029 20:34 ==
 想要透過十分鐘研究一下為什麼瀏覽器，無法在本機執行呢？
 20:50 找到解決方案 open /Applications/Google\ Chrome.app --args --allow-file-access-from-files
 20:55 整理
-~~ todo list ~~
-1h 數字靠右而且三位一撇
-2h known 運用 $('.header').load("header.html"); 側邊欄改可重用 系統面：adminlte 介面隱藏不需要的東西，可以用試算表隱藏 hidelang
-1h known 直接改中文字串無法重用 系統面：adminlte 把英文介面改為中文介面，用一個試算表來改，不需要動到原本的 html: i18nlang
-caro 3* 點點表：最上面有中文標題
-use js sum 2* 階段收入表：右邊要有個人加總, 階段收入表：下面要有階段加總
-use js sum 1* 階段收入表：下面要有簽約前金額加總
 
 == 18:59
 解決 debugger 的問題了，超棒的！！！
