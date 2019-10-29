@@ -1,3 +1,16 @@
+
+== 20191029 20:34 ==
+想要透過十分鐘研究一下為什麼瀏覽器，無法在本機執行呢？
+20:50 找到解決方案 open /Applications/Google\ Chrome.app --args --allow-file-access-from-files
+20:55 整理
+~~ todo list ~~
+1h 數字靠右而且三位一撇
+2h known 運用 $('.header').load("header.html"); 側邊欄改可重用 系統面：adminlte 介面隱藏不需要的東西，可以用試算表隱藏 hidelang
+1h known 直接改中文字串無法重用 系統面：adminlte 把英文介面改為中文介面，用一個試算表來改，不需要動到原本的 html: i18nlang
+caro 3* 點點表：最上面有中文標題
+use js sum 2* 階段收入表：右邊要有個人加總, 階段收入表：下面要有階段加總
+use js sum 1* 階段收入表：下面要有簽約前金額加總
+
 == 18:59
 解決 debugger 的問題了，超棒的！！！
 現在只剩下 bin web 兩邊專案檔案彼此 share 的問題而已了
@@ -21,8 +34,8 @@ YES!!! 成功
 
 18:46 已經完全成功了，可以從 dart load trello json , to table, to javascript, to datatables
 + 艱辛的路，但是通了
-i debugger 似乎不能運作, 可以單一專案來最簡單看看運作方法
-i bin web 兩邊的專案檔案無法 share 會是個問題
+done i debugger 似乎不能運作, 可以單一專案來最簡單看看運作方法
+done i bin web 兩邊的專案檔案無法 share 會是個問題
 
 == start coding 20191029 16:30 60min ==
 這是可以運作的
