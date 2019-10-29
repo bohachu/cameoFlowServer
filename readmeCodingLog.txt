@@ -1,3 +1,8 @@
+== 18:59
+解決 debugger 的問題了，超棒的！！！
+現在只剩下 bin web 兩邊專案檔案彼此 share 的問題而已了
+如果全部刪除 bin 那也就沒有這個問題了
+
 == start coding 20191029 17:50 60min ==
 17:50 試試看 dart to js alert
 YES!!! 成功
