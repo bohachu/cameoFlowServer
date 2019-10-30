@@ -1,6 +1,4 @@
-//import 'dart:js';
 import 'dart:convert';
-
 import 'tableTrello.dart';
 import 'tableDot.dart';
 import 'tableStepIncome.dart';
