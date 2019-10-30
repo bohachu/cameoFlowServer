@@ -1,17 +1,35 @@
+~~ todo list ~~
+
+3* menu bar 介面拿掉不需要的部分，只留下想要的東西，並且中文化
+2* 1h 點點表：最上面有中文標題
+2* 1h 階段收入表：下面要有簽約前金額加總
+1* 1h 數字靠右而且三位一撇
+1* 2h known 運用 $('.header').load("header.html"); 側邊欄改可重用 系統面：adminlte 介面隱藏不需要的東西，可以用試算表隱藏 hidelang
+1* 1h known 直接改中文字串無法重用 系統面：adminlte 把英文介面改為中文介面，用一個試算表來改，不需要動到原本的 html: i18nlang
+
+
+
 點子，app store 全球程式碼片段銷售元件，有 source code 有 project 立刻可以用
 
 可以共用的程式碼來看看
 日期格式轉換
 文章、影片、可共用元件示範、網站直接Demo：全部合起來 1 USD
 
-dataTables sumRight, sumBottom
+賣一個模板 USD 1 超級便宜的模板，而且附帶所有 source code, 以及講解網站 jsfiddle 可以用
+jsbin 可以用
+
+
 3* dataTables emoji
+3* trello to csv
+3* adminLTE with dart language editor
+2* dataTables library sumRight, sumBottom
+2* dataTables with dart language
+
+dart call js, js call dart
 dart profiling time measurement
 dart log
 dart storage database
 trello to json
-3* trello to csv
-dart call js, js call dart
 
 js call dart:
 ~~ .dart source code ~~
@@ -22,14 +40,6 @@ context['jsCallDart'] = (map) {
 ~~ .js source code ~~
 jsCallDart({'param': 'value'});
 
-~~ todo list ~~
-
-3* menu bar 介面拿掉不需要的部分，只留下想要的東西，並且中文化
-2* 1h 點點表：最上面有中文標題
-2* 1h 階段收入表：下面要有簽約前金額加總
-1* 1h 數字靠右而且三位一撇
-1* 2h known 運用 $('.header').load("header.html"); 側邊欄改可重用 系統面：adminlte 介面隱藏不需要的東西，可以用試算表隱藏 hidelang
-1* 1h known 直接改中文字串無法重用 系統面：adminlte 把英文介面改為中文介面，用一個試算表來改，不需要動到原本的 html: i18nlang
 
 == 20191029 23:00 20min
 storage test!
