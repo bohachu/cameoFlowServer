@@ -2,23 +2,35 @@
 function format(d) {
   // `d` is the original data object for the row
   return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
-    '<td>Full name:</td>' +
-    '<td>' + d.name + '</td>' +
+    '<td>備註1：</td>' +
+    '<td>' + d.備註1 + '</td>' +
     '</tr>' +
     '<tr>' +
-    '<td>Extension number:</td>' +
-    '<td>' + d.extn + '</td>' +
+    '<td>備註2：</td>' +
+    '<td>' + d.備註2 + '</td>' +
     '</tr>' +
     '<tr>' +
-    '<td>Extra info:</td>' +
-    '<td>And any further details here (images etc)...</td>' +
+    '<td>備註3：</td>' +
+    '<td>' + d.備註3 + '</td>' +
     '</tr>' +
     '</table>';
 }
 
+/*
+"id": "1",
+  "客源": "設計師",
+  "起始日": "2019/11/02",
+  "案件名稱": "Ken Huang for Bowen Chiu case",
+  "金額": "2005023",
+  "交期": "2019/12/05",
+  "人員": "Bowen Chiu",
+  "優先次序": "yellow",
+  "階段": "01_尚未簽約",
+  "產品類別": "桌子"
+*/
 $(document).ready(function () {
-  var table = $('#example').DataTable({
-    "ajax": "childRows.json",
+  var table = $('#tableTrelloChildRows').DataTable({
+    "ajax": "tableTrelloChildRows.json",
     "columns": [
       {
         "className": 'details-control',
@@ -26,16 +38,21 @@ $(document).ready(function () {
         "data": null,
         "defaultContent": ''
       },
-      {"data": "name"},
-      {"data": "position"},
-      {"data": "office"},
-      {"data": "salary"}
+      {"data": "客源"},
+      {"data": "起始日"},
+      {"data": "案件名稱"},
+      {"data": "金額"},
+      {"data": "交期"},
+      {"data": "人員"},
+      {"data": "優先次序"},
+      {"data": "階段"},
+      {"data": "產品類別"},
     ],
     "order": [[1, 'asc']]
   });
 
   // Add event listener for opening and closing details
-  $('#example tbody').on('click', 'td.details-control', function () {
+  $('#tableTrelloChildRows tbody').on('click', 'td.details-control', function () {
     var tr = $(this).closest('tr');
     var row = table.row(tr);
 
