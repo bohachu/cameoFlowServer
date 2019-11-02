@@ -1,18 +1,20 @@
 import 'commonConverter.dart';
 
 List tableDot(List lstTableTrello) {
-  Map map = toNameStepField(lstTableTrello, 6);
+  int intStepColumnIndexTodo = 7;
+  Map map = toNameStepField(lstTableTrello, intStepColumnIndexTodo);
   List lstTable = toTable(map);
   return toSymbol(lstTable);
 }
 
 List toTable(Map mapTableDot) {
-  int intStepNum = 16;
+  int intMaxStepNumTodo = 16;
   List lstOut = [];
   for (var e in mapTableDot.entries) {
     String strName = e.key;
     List lstRow = [];
-    for (int i = 0; i < intStepNum * 3; i++) lstRow.add(0);
+    for (int i = 0; i < intMaxStepNumTodo * 3; i++)
+      lstRow.add(0);
     Map mapSteps = e.value;
     for (String strStep in mapSteps.keys) {
       int intStep2Digit = int.parse(strStep.substring(0, 2));

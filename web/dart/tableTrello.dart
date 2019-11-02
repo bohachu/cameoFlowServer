@@ -30,6 +30,7 @@ void loopEachCard(Map mapJson) {
 
 void processEachCardAjax(Map mapCard) {
   strOut += '[';
+  strOut += '"id",';
   strOut += '"' + processIdValue(mapCard, '客源', '3a1b') + '",';
   strOut += '"' + getDate(getCustomFieldItems(mapCard, '起始日', 'value', 'date')) + '",';
   strOut += '"' + processSecondTier(mapCard, '案件名稱', 'name') + '",';

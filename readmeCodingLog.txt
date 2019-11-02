@@ -1,6 +1,9 @@
 == 22:03
-next todo: 把 child rows 的資料表示法，直接做出總表外觀
 22:09 先看一下 fuse 有沒有開合資料可以顯示: 看起來也是沒有適合的，可見 datatables 真的是很強
+22:23 已經成功可以開合九個元素的表單，child rows for trello table 外觀已經成功了
+23:00 已經可以使用 javascript debugger 可以比對 table 前後變數消失的差異
+23:31 已經可以沒有 bugs 顯示開合的內容，但是因為原始資料是 array 這下麻煩了，要新增刪除 column name 都會發生 index number 跳動！往後應該改 map
+1h next 將資料來源改為 map, 並且修改相對應的程式碼，然後新增三個備註欄位在原始資料提供方
 
 == start coding 20191102 16:29 30min ==
 16:29 doing 3* 3h 總表：yellow是店長要關注的，搜尋出來之後有十筆，備註最近三則的顯示
