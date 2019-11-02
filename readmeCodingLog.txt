@@ -1,30 +1,47 @@
+== 點子: uxBot: ui ux bot refactoring
+
+server:
+static web server: shelf_static
+cross domain javascript proxy: dart shelf_proxy
+pandas
+id password management(and automation api)
+selenium
+總店與分店權限架構
+金流銷售架構
+
+client:
+bootstrap studio
+bootstrap rwd theme (like adminLte)
+dart
+datatables
+javascript
+localStorage
+online dartpad editor
+
+== HD全壘打 ==
+3* 3h 總表：yellow是店長要關注的，搜尋出來之後有十筆，備註最近三則的顯示
+3* 2h 簽約：將報價2(階段6)做一個footer的表格顯示總計（只差將報價6之前全部加總）
+3* 1h 簽約：簽約前報價，個人合計
+3* 4h 分店：文心店整合到系統內，變成另外一張 web page: 故意實驗讓文心帳號密碼，環中帳號密碼，故意區分、總店人員、環中人員、文心人員
+2* 1h 總表：debug 報價3 在 trello 已經消失，但是 trello.json 還有
+2* 3h 總表：bug 黑單 已經掉單了，封存這個卡片，但是在 web 總表還在（封存的卡片會有個close字樣），案件名稱叫做：[Alec][顧淑美][未知][未知]，封存要變黑球
+2* 3h 總表：在哪個階段已經掉單，哪個是封存，要計算有幾筆掉單（掉單率），只要加總所有的案件每個階段掉單的比率就可以了，越接近後面才掉單，成本會更高。鼓勵在前面的階段掉單會比較好
+2* 2h 點點：做點點表的右邊合計，以及下面合計（不看封存的，不看沒有標記 green yellow pink）
+2* 3h 點點：掉單要做掉單的統計（點點表）：綠色、黃色、紅色、🎱黑色（多一個黑色🎱顯示掉單情形）
+2* 1h 點點：階段要三個column合併，變成一個階段
+2* 2h 分店：總店可以全部看，其他兩個只能看自己的
+1* 1h 總表：讓總表的 yellow 變成黃檸檬icon（其他相對顏色也要改）
+1* 3h 總表：掉單率的表，讓總表可以換算過去顯示（需要 ken 文巧協助設計 google sheet)
+1* 2h 總表：讓總表可以記憶上一次搜尋的結果字串，還有上一次的排序的按鈕 column 下次就可以自由的 load 最後一次的情形，不需要再重複搜尋
+1* ?? 指標要能顯示在畫面上，變成各種指標的：財務、人才、流程、客戶
+1* 1h 總表：數字三位一撇
+1* 1h 選單：menu bar 介面拿掉不需要的部分，只留下想要的東西，並且中文化
+
 == 1031 17:23 剛剛已經確定
 Cross-Origin Read Blocking (CORB) blocked cross-origin response
 這個很難突破，還是需要靠 server side proxy 來幫忙轉發爬蟲請求的樣子
 trello 應該是特別有支援 jsonp
 一個比較好的 server side jsonp 支援，應該是固定儲存靜態檔案抓完之後儲存，而且都用 cache，原則上五分鐘才會更新一次
-
-== HD全壘打 == 最小可行版本： 每家店每個星期必看的表 ==
-3* 1h debug 報價3 在 trello 已經消失，但是 trello.json 還有
-3* 3h bug 黑單 已經掉單了，封存這個卡片，但是在 web 總表還在（封存的卡片會有個close字樣），案件名稱叫做：[Alec][顧淑美][未知][未知]
-3* 3h 在哪個階段已經掉單，哪個是封存，要計算有幾筆掉單（掉單率），只要加總所有的案件每個階段掉單的比率就可以了，越接近後面才掉單，成本會更高。鼓勵在前面的階段掉單會比較好
-1* 3h 掉單率的表，讓總表可以換算過去顯示（需要 ken 文巧協助設計 google sheet)
-3* 3h yellow是店長要關注的，搜尋出來之後有十筆，備註最近三則的顯示
-1* 2h 讓總表可以記憶上一次搜尋的結果字串，還有上一次的排序的按鈕 column 下次就可以自由的 load 最後一次的情形，不需要再重複搜尋
-
-?? 指標要能顯示在畫面上，變成各種指標的：財務、人才、流程、客戶
-3* 2h 將報價2(階段6)做一個footer的表格顯示總計（只差將報價6之前全部加總）
-3* 1h 簽約前報價，個人合計
-3* 2h 做點點表的右邊合計，以及下面合計（不看封存的，不看沒有標記 green yellow pink）
-3* 3h 掉單要做掉單的統計（點點表）：綠色、黃色、紅色、🎱黑色（多一個黑色🎱顯示掉單情形）
-1* 1h 數字三位一撇
-2* 1h 階段要三個column合併，變成一個階段
-2* 4h 文心店整合到系統內，變成另外一張 web page: 故意實驗讓文心帳號密碼，環中帳號密碼，故意區分
-  總店人員
-  環中人員
-  文心人員
-  總店可以全部看，其他兩個只能看自己的
-1* menu bar 介面拿掉不需要的部分，只留下想要的東西，並且中文化
 
 ~~ todo list ~~
 
@@ -34,8 +51,6 @@ double 1* 1h 數字靠右而且三位一撇
 done 1* 2h known 運用 $('.header').load("header.html"); 側邊欄改可重用 系統面：adminlte 介面隱藏不需要的東西，可以用試算表隱藏 hidelang
 pending 1* 1h known 直接改中文字串無法重用 系統面：adminlte 把英文介面改為中文介面，用一個試算表來改，不需要動到原本的 html: i18nlang
 
-
-
 點子，app store 全球程式碼片段銷售元件，有 source code 有 project 立刻可以用
 
 可以共用的程式碼來看看
@@ -44,7 +59,6 @@ pending 1* 1h known 直接改中文字串無法重用 系統面：adminlte 把�
 
 賣一個模板 USD 1 超級便宜的模板，而且附帶所有 source code, 以及講解網站 jsfiddle 可以用
 jsbin 可以用
-
 
 3* dataTables emoji
 3* trello to csv
