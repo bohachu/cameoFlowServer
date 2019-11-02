@@ -1,8 +1,12 @@
+== 22:03
+next todo: 把 child rows 的資料表示法，直接做出總表外觀
+22:09 先看一下 fuse 有沒有開合資料可以顯示: 看起來也是沒有適合的，可見 datatables 真的是很強
+
 == start coding 20191102 16:29 30min ==
 16:29 doing 3* 3h 總表：yellow是店長要關注的，搜尋出來之後有十筆，備註最近三則的顯示
 首先要可以讓大表能夠顯示備註，所以要搜尋備註的寫法
 16:41 Child rows (show extra / detailed information)
-
+22:01 已經確定 tableTrello 總表的資料表示法，跟 childRows 資料表示法，兩者之間不相容，所以，如果要做下一個階段，那就是要把 child rows 的資料表示法，直接做出總表外觀
 
 == HD全壘打 ==
 3* 2h 簽約：將報價2(階段6)做一個footer的表格顯示總計（只差將報價6之前全部加總）
