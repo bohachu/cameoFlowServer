@@ -720,6 +720,84 @@
           <script defer src="../../dart/jsMain.dart.js"></script>
           <!-- cameoFlow load dart end -->
 
+          <!-- bowen chiu cameoFlow card000 start -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">案件總表Child Rows</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <table id="tableTrelloChildRows" class="table table-bordered table-hover" width="100%"></table>
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+          <script type="text/javascript">
+              function funcTableTrelloChildRows(lstData) {
+                  $(document).ready(function () {
+                      $('#tableTrelloChildRows').DataTable({
+                          stateSave: true,
+                          destroy: true,
+                          "scrollX": true,
+                          "scrollY": true,
+                          "data": lstData,
+                          columns: [
+                              {
+                                  "className": 'details-control',
+                                  "orderable": false,
+                                  "data": null,
+                                  "defaultContent": ''
+                              },
+                              {title: "客源"},
+                              {title: "起始日"},
+                              {title: "案件名稱"},
+                              {title: "金額"},
+                              {title: "交期"},
+                              {title: "人員"},
+                              {title: "優先次序"},
+                              {title: "階段"},
+                              {title: "產品類別"},
+                          ]
+                      });
+                  });
+
+                  function format(d) {
+                      // `d` is the original data object for the row
+                      return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
+                          '<tr>' +
+                          '<td>Full name:</td>' +
+                          '<td>' + d.客源 + '</td>' +
+                          '</tr>' +
+                          '<tr>' +
+                          '<td>Extension number:</td>' +
+                          '<td>' + d.起始日 + '</td>' +
+                          '</tr>' +
+                          '<tr>' +
+                          '<td>Extra info:</td>' +
+                          '<td>And any further details here (images etc)...</td>' +
+                          '</tr>' +
+                          '</table>';
+                  }
+
+                  // Add event listener for opening and closing details
+                  $('#tableTrelloChildRows tbody').on('click', 'td.details-control', function () {
+                      var tr = $(this).closest('tr');
+                      var row = table.row(tr);
+
+                      if (row.child.isShown()) {
+                          // This row is already open - close it
+                          row.child.hide();
+                          tr.removeClass('shown');
+                      } else {
+                          // Open this row
+                          row.child(format(row.data())).show();
+                          tr.addClass('shown');
+                      }
+                  });
+              }
+          </script>
+          <!-- cameoFlow card000 end -->
+
           <!-- bowen chiu cameoFlow card001 start -->
           <div class="card">
             <div class="card-header">
@@ -737,6 +815,7 @@
               function funcTableTrello(lstData) {
                   $(document).ready(function () {
                       $('#tableTrello').DataTable({
+                          stateSave: true,
                           destroy: true,
                           "scrollX": true,
                           "scrollY": true,
@@ -774,6 +853,7 @@
               function funcTableDot(lstData) {
                   $(document).ready(function () {
                       var table = $('#tableDot').removeAttr('width').DataTable({
+                          stateSave: true,
                           destroy: true,
                           "scrollX": true,
                           "scrollY": true,
@@ -857,6 +937,7 @@
               function funcTableStepIncome(lstData) {
                   $(document).ready(function () {
                       $('#tableStepIncome').DataTable({
+                          stateSave: true,
                           destroy: true,
                           "scrollX": true,
                           "scrollY": true,

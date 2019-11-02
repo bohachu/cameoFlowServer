@@ -23,6 +23,7 @@ void main() async {
 }
 
 void updateTables(lstTrelloTable){
+  context.callMethod('funcTableTrelloChildRows', [JsObject.jsify(lstTrelloTable)]);
   context.callMethod('funcTableTrello', [JsObject.jsify(lstTrelloTable)]);
   context.callMethod('funcTableDot', [JsObject.jsify(tableDot(lstTrelloTable))]);
   context.callMethod('funcTableStepIncome', [JsObject.jsify(tableStepIncome(lstTrelloTable))]);
