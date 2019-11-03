@@ -1,17 +1,5 @@
-== 22:03
-22:09 先看一下 fuse 有沒有開合資料可以顯示: 看起來也是沒有適合的，可見 datatables 真的是很強
-22:23 已經成功可以開合九個元素的表單，child rows for trello table 外觀已經成功了
-23:00 已經可以使用 javascript debugger 可以比對 table 前後變數消失的差異
-23:31 已經可以沒有 bugs 顯示開合的內容，但是因為原始資料是 array 這下麻煩了，要新增刪除 column name 都會發生 index number 跳動！往後應該改 map
-1h next 將資料來源改為 map, 並且修改相對應的程式碼，然後新增三個備註欄位在原始資料提供方
-
-== start coding 20191102 16:29 30min ==
-16:29 doing 3* 3h 總表：yellow是店長要關注的，搜尋出來之後有十筆，備註最近三則的顯示
-首先要可以讓大表能夠顯示備註，所以要搜尋備註的寫法
-16:41 Child rows (show extra / detailed information)
-22:01 已經確定 tableTrello 總表的資料表示法，跟 childRows 資料表示法，兩者之間不相容，所以，如果要做下一個階段，那就是要把 child rows 的資料表示法，直接做出總表外觀
-
-== HD全壘打 ==
+== todo HD全壘打 ==
+doing 3* 3h 總表：yellow是店長要關注的，搜尋出來之後有十筆，備註最近三則的顯示
 3* 2h 簽約：將報價2(階段6)做一個footer的表格顯示總計（只差將報價6之前全部加總）
 3* 1h 簽約：簽約前報價，個人合計
 3* 4h 分店：文心店整合到系統內，變成另外一張 web page: 故意實驗讓文心帳號密碼，環中帳號密碼，故意區分、總店人員、環中人員、文心人員
@@ -28,6 +16,22 @@
 1* ?? 指標要能顯示在畫面上，變成各種指標的：財務、人才、流程、客戶
 1* 1h 總表：數字三位一撇
 1* 1h 選單：menu bar 介面拿掉不需要的部分，只留下想要的東西，並且中文化
+
+== 20191103 18:51 start coding
+18:56 要找出備註最新欄位在哪
+
+== 22:03
+22:09 先看一下 fuse 有沒有開合資料可以顯示: 看起來也是沒有適合的，可見 datatables 真的是很強
+22:23 已經成功可以開合九個元素的表單，child rows for trello table 外觀已經成功了
+23:00 已經可以使用 javascript debugger 可以比對 table 前後變數消失的差異
+23:31 已經可以沒有 bugs 顯示開合的內容，但是因為原始資料是 array 這下麻煩了，要新增刪除 column name 都會發生 index number 跳動！往後應該改 map
+1h next 將資料來源改為 map, 並且修改相對應的程式碼，然後新增三個備註欄位在原始資料提供方
+
+== start coding 20191102 16:29 30min ==
+16:29 doing 3* 3h 總表：yellow是店長要關注的，搜尋出來之後有十筆，備註最近三則的顯示
+首先要可以讓大表能夠顯示備註，所以要搜尋備註的寫法
+16:41 Child rows (show extra / detailed information)
+22:01 已經確定 tableTrello 總表的資料表示法，跟 childRows 資料表示法，兩者之間不相容，所以，如果要做下一個階段，那就是要把 child rows 的資料表示法，直接做出總表外觀
 
 == 點子: uxBot: ui ux bot refactoring
 server:
