@@ -22,10 +22,25 @@ void loopEachCard(Map mapJson) {
   strOut += '{"data":[\n';
   for (int i = 0; i < lstCards.length; i++) {
     Map mapCard = lstCards[i];
-    processEachCardAjax(mapCard);
+    processEachCardAjaxObjects(mapCard);
   }
   strOut = strOut.substring(0, strOut.length - 2); //delete last comma (ajax format can not accept)
   strOut += ']}';
+}
+
+void processEachCardAjaxObjects(Map mapCard) {
+  strOut += '{';
+  strOut += '"id":"+",';
+  strOut += '"客源":"${processIdValue(mapCard, '客源', '3a1b')}",';
+  strOut += '"起始日":"${getDate(getCustomFieldItems(mapCard, '起始日', 'value', 'date'))}",';
+  strOut += '"案件名稱":"${processSecondTier(mapCard, '案件名稱', 'name')}",';
+  strOut += '"金額":"${getCustomFieldItems(mapCard, '金額', 'value', 'number')}",';
+  strOut += '"交期":"${getDate(processSecondTier(mapCard, '交期', 'due'))}",';
+  strOut += '"人員":"${processIdValue(mapCard, '人員', 'f3f0')}",';
+  strOut += '"優先次序":"${processLabels(mapCard, '優先次序')}",';
+  strOut += '"階段":"${processSecondTier(mapCard, '階段', 'idList')}",';
+  strOut += '"產品類別":"${processIdValue(mapCard, '產品類別', 'a129')}"';
+  strOut += '},\n';
 }
 
 void processEachCardAjax(Map mapCard) {

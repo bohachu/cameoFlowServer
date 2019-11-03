@@ -26,21 +26,21 @@ function funcTableTrello(lstData) {
       "data": lstData,
       columns: [
         {
-          title: "id",
+          data: "id",
           "className": 'details-control',
           "orderable": false,
           "data": null,
           "defaultContent": ''
         },
-        {title: "客源"},
-        {title: "起始日"},
-        {title: "案件名稱"},
-        {title: "金額"},
-        {title: "交期"},
-        {title: "人員"},
-        {title: "優先次序"},
-        {title: "階段"},
-        {title: "產品類別"},
+        {data: "客源"},
+        {data: "起始日"},
+        {data: "案件名稱"},
+        {data: "金額"},
+        {data: "交期"},
+        {data: "人員"},
+        {data: "優先次序"},
+        {data: "階段"},
+        {data: "產品類別"},
       ]
     });
 
