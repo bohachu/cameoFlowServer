@@ -1,24 +1,20 @@
-Map toNameStepField(List lst, intFieldIndex) {
-  int intNameIndexTodo = 6;
-  int intStepIndexTodo = 8;
+Map toNameStepField(List lst, String strColumnName) {
   Map mapNameStepField = {};
   for (int i = 0; i < lst.length; i++) {
-    String strName = lst[i][intNameIndexTodo];
-    String strStep = lst[i][intStepIndexTodo];
-    if (strName.length > 0 && lst[i][intFieldIndex] != '') {
-      var fieldValue = lst[i][intFieldIndex];
-      addCounter(mapNameStepField, strName, strStep, fieldValue, intFieldIndex);
+    String strName = lst[i]['人員'];
+    String strStep = lst[i]['階段'];
+    if (strName.length > 0 && lst[i][strColumnName] != '') {
+      var fieldValue = lst[i][strColumnName];
+      addCounter(mapNameStepField, strName, strStep, fieldValue, strColumnName);
     }
   }
   return mapNameStepField;
 }
 
-void addCounter(Map mapNameStepField, String strName, String strStep, var varFieldValue, intFieldIndex) {
-  int intIncomeIndexTodo = 4;
-  int intLightIndexTodo = 7;
+void addCounter(Map mapNameStepField, String strName, String strStep, var varFieldValue, String strColumnName) {
   if (mapNameStepField[strName] == null) mapNameStepField[strName] = {};
-  if (intFieldIndex == intIncomeIndexTodo) addCounterIncome(mapNameStepField, strName, strStep, varFieldValue);
-  if (intFieldIndex == intLightIndexTodo) addCounterLight(mapNameStepField, strName, strStep, varFieldValue);
+  if (strColumnName == '金額') addCounterIncome(mapNameStepField, strName, strStep, varFieldValue);
+  if (strColumnName == '優先次序') addCounterLight(mapNameStepField, strName, strStep, varFieldValue);
 }
 
 void addCounterIncome(Map mapNameStepField, String strName, String strStep, String strFieldValue) {

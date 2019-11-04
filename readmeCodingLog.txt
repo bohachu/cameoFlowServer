@@ -1,8 +1,39 @@
+== start coding 60min 20191104 23:38 ==
+00:46 寫完 dart flatten 功能，也能把 cards lists actions 全部打平成功，未來這些 json file 都非常好用！可以再轉 datatables 欄位容易太多了
+
+現在要把 actions 讀出來，打平變成JSON
+def flatten_json(nested_json, exclude=['']):
+    """Flatten json object with nested keys into a single level.
+        Args:
+            nested_json: A nested json object.
+            exclude: Keys to exclude from output.
+        Returns:
+            The flattened json object if successful, None otherwise.
+    """
+    out = {}
+
+    def flatten(x, name='', exclude=exclude):
+        if type(x) is dict:
+            for a in x:
+                if a not in exclude: flatten(x[a], name + a + '_')
+        elif type(x) is list:
+            i = 0
+            for a in x:
+                flatten(a, name + str(i) + '_')
+                i += 1
+        else:
+            out[name[:-1]] = x
+
+    flatten(nested_json)
+    return out
+
 == start coding 60min 20191103 21:42 ==
 運用了許多 pandas 的觀念，應該可以很容易處理 actions 裡面的東西，結合到cards裡面才對
 今天看看能不能把備註欄位加上去
 首先要 refactoring 把 datatables 變成 ajax object, 然後才能加上備註欄位資料
 22:13 大表總表解決轉換了，花了 30min refactoring
+22:40 剩下兩個表也解決 refactoring ok
+next: 要把actions讀取出來之後，join到原本的cards底下，才能變成備註三個欄位
 
 == todo HD全壘打 ==
 doing 3* 3h 總表：yellow是店長要關注的，搜尋出來之後有十筆，備註最近三則的顯示

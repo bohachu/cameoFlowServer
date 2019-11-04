@@ -1,19 +1,22 @@
 import 'commonConverter.dart';
 
 List tableDot(List lstTableTrello) {
-  int intStepColumnIndexTodo = 7;
-  Map map = toNameStepField(lstTableTrello, intStepColumnIndexTodo);
+  Map map = toNameStepField(lstTableTrello, '優先次序');
   List lstTable = toTable(map);
   return toSymbol(lstTable);
 }
 
+int howManySteps() {
+  return 16;
+}
+
 List toTable(Map mapTableDot) {
-  int intMaxStepNumTodo = 16;
+  int intHowManySteps = howManySteps();
   List lstOut = [];
   for (var e in mapTableDot.entries) {
     String strName = e.key;
     List lstRow = [];
-    for (int i = 0; i < intMaxStepNumTodo * 3; i++)
+    for (int i = 0; i < intHowManySteps * 3; i++)
       lstRow.add(0);
     Map mapSteps = e.value;
     for (String strStep in mapSteps.keys) {
@@ -29,7 +32,7 @@ List toTable(Map mapTableDot) {
 }
 
 List toSymbol(List lstTable) {
-  //🍋🍀🍄🍏🍎🍊🍅🍑🍓🍒
+  //🍋🍀🍄🍏🍎🍊🍅🍑🍓🍒🎱
   for (int i = 0; i < lstTable.length; i++) {
     for (int j = 0; j < lstTable[i].length; j++) {
       if (lstTable[i][j] is int) {

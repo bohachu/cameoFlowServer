@@ -1,7 +1,6 @@
 import 'dart:convert';
 import 'date.dart';
 import 'httpGet.dart';
-import 'log.dart';
 
 List lstIdValue = [];
 String strOut = '';

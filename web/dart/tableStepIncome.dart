@@ -1,8 +1,7 @@
 import 'commonConverter.dart';
 
 List tableStepIncome(List lstTableTrello) {
-  int intStepIncomeColumnNum = 4;
-  Map map = toNameStepField(lstTableTrello, intStepIncomeColumnNum);
+  Map map = toNameStepField(lstTableTrello, '金額');
   List lstTable = toTable(map);
   lstTable = addBottomSum(lstTable);
   lstTable = addRightSum(lstTable);
