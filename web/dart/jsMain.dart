@@ -14,7 +14,9 @@ void main() async {
   }
   List lstTrelloTable = (await tableTrello())['data'];
   window.localStorage['tableTrello'] = jsonEncode(lstTrelloTable);
-  updateTables(lstTrelloTable);
+
+  //因為如果有下面這個更新螢幕（從網路讀取資料之後五秒左右更新datatables），就會造成備註欄位出錯，所以暫時不要更新
+  //updateTables(lstTrelloTable);
 }
 
 void updateTables(lstTrelloTable){

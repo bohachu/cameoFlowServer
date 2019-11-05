@@ -3,15 +3,15 @@ function format(d) {
   // `d` is the original data object for the row
   return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
     '<td>備註1：</td>' +
-    '<td>這裡要放備註001這裡要放備註001這裡要放備註001</td>' +
+    '<td>' + d['備註1'] + '</td>' +
     '</tr>' +
     '<tr>' +
     '<td>備註2：</td>' +
-    '<td>這裡要放備註002這裡要放備註002這裡要放備註002</td>' +
+    '<td>' + d['備註2'] + '</td>' +
     '</tr>' +
     '<tr>' +
     '<td>備註3：</td>' +
-    '<td>這裡要放備註003這裡要放備註003這裡要放備註003</td>' +
+    '<td>' + d['備註3'] + '</td>' +
     '</tr>' +
     '</table>';
 }
