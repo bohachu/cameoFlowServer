@@ -1,34 +1,39 @@
 import 'dart:convert';
 import 'date.dart';
 import 'httpGet.dart';
+import 'json_actions.dart';
 
 List lstIdValue = [];
-String strOut = '';
 
 Future<Map> tableTrello() async {
-  strOut = '';
   String strJson = await httpGetTrello();
   Map mapJson = json.decode(strJson);
-  loopEachCard(mapJson);
-  replaceIdValueToText(mapJson);
-  replaceListsId(mapJson);
+  String strOut = loopEachCard(mapJson);
+  strOut = replaceIdValueToText(mapJson, strOut);
+  strOut = replaceListsId(mapJson, strOut);
   Map map = json.decode(strOut);
   return map;
 }
 
-void loopEachCard(Map mapJson) {
+String loopEachCard(Map mapJson) {
+  String strOut = '';
+  Map mapDataText = getDataText();
   List lstCards = mapJson['cards'];
   strOut += '{"data":[\n';
   for (int i = 0; i < lstCards.length; i++) {
     Map mapCard = lstCards[i];
-    processEachCardAjaxObjects(mapCard);
+    strOut += processEachCard(mapCard, mapDataText);
   }
   strOut = strOut.substring(0, strOut.length - 2); //delete last comma (ajax format can not accept)
   strOut += ']}';
+  return strOut;
 }
 
-void processEachCardAjaxObjects(Map mapCard) {
+String processEachCard(Map mapCard, Map mapDataText) {
+  String strOut = '';
+  String strId = mapCard['id'];
   strOut += '{';
+  strOut += addActions(strId, mapDataText);
   strOut += '"id":"+",';
   strOut += '"客源":"${processIdValue(mapCard, '客源', '3a1b')}",';
   strOut += '"起始日":"${getDate(getCustomFieldItems(mapCard, '起始日', 'value', 'date'))}",';
@@ -40,33 +45,41 @@ void processEachCardAjaxObjects(Map mapCard) {
   strOut += '"階段":"${processSecondTier(mapCard, '階段', 'idList')}",';
   strOut += '"產品類別":"${processIdValue(mapCard, '產品類別', 'a129')}"';
   strOut += '},\n';
+  return strOut;
 }
 
-void processEachCardAjax(Map mapCard) {
-  strOut += '[';
-  strOut += '"id",';
-  strOut += '"' + processIdValue(mapCard, '客源', '3a1b') + '",';
-  strOut += '"' + getDate(getCustomFieldItems(mapCard, '起始日', 'value', 'date')) + '",';
-  strOut += '"' + processSecondTier(mapCard, '案件名稱', 'name') + '",';
-  strOut += '"' + getCustomFieldItems(mapCard, '金額', 'value', 'number') + '",';
-  strOut += '"' + getDate(processSecondTier(mapCard, '交期', 'due')) + '",';
-  strOut += '"' + processIdValue(mapCard, '人員', 'f3f0') + '",';
-  strOut += '"' + processLabels(mapCard, '優先次序') + '",';
-  strOut += '"' + processSecondTier(mapCard, '階段', 'idList') + '",';
-  strOut += '"' + processIdValue(mapCard, '產品類別', 'a129') + '"';
-  strOut += '],\n';
+Map getDataText() {
+  Map mapDataText = {};
+  json_actions.forEach((k, v) {
+    List lst = k.split('_');
+    if (lst[1] == 'data' && lst[2] == 'text') {
+      //todo 這邊可以優化為 key = cardId, value =[備註1..., 備註2..., 備註3...], 而非只是單一值
+      mapDataText[json_actions[lst[0] + '_' + 'data' + '_' + 'card' + '_' + 'id']] = v;
+    }
+  });
+  return mapDataText;
 }
 
-void replaceListsId(Map mapJson) {
+String addActions(String strCardId, Map mapDataText) {
+  String strOut = '';
+  int intCnt = 1;
+  String strDataText = mapDataText[strCardId];
+  if (strDataText == '' || strDataText == null) return '';
+  strOut += '"備註$intCnt:":"${strDataText.replaceAll('\n', '')}",';
+  return strOut;
+}
+
+String replaceListsId(Map mapJson, strOut) {
   List lstLists = mapJson['lists'] ?? [];
   for (int i = 0; i < lstLists.length; i++) {
     String strId = lstLists[i]['id'] ?? '';
     String strName = lstLists[i]['name'] ?? '';
     strOut = strOut.replaceAll(strId, strName);
   }
+  return strOut;
 }
 
-void replaceIdValueToText(Map mapJson) {
+String replaceIdValueToText(Map mapJson, String strOut) {
   List lstCustomFields = mapJson['customFields'] ?? [];
   for (int i = 0; i < lstCustomFields.length; i++) {
     List lstOptions = lstCustomFields[i]['options'] ?? [];
@@ -78,6 +91,7 @@ void replaceIdValueToText(Map mapJson) {
       }
     }
   }
+  return strOut;
 }
 
 String processLabels(Map mapCard, strName) {

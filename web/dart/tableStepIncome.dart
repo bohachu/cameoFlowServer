@@ -33,7 +33,7 @@ List addBottomSum(List lst) {
   int intColumnLength = lst[0].length;
   List lstOut = [];
   for (int intColumn = 0; intColumn < intColumnLength; intColumn++) {
-    int intSum = 0;
+    double doubleSum = 0;
     bool isStringSoNoAdd = false;
     for (int intRow = 0; intRow < intRowLength; intRow++) {
       if (lst[intRow][intColumn] is String) {
@@ -41,9 +41,9 @@ List addBottomSum(List lst) {
         isStringSoNoAdd = true;
         break;
       }
-      intSum += lst[intRow][intColumn];
+      doubleSum += lst[intRow][intColumn];
     }
-    if (isStringSoNoAdd == false) lstOut.add(intSum);
+    if (isStringSoNoAdd == false) lstOut.add(doubleSum);
   }
   lst.add(lstOut);
   return lst;
@@ -53,14 +53,14 @@ List addRightSum(List lst) {
   int intRowLength = lst.length;
   int intColumnLength = lst[0].length;
   for (int intRow = 0; intRow < intRowLength; intRow++) {
-    int intSum = 0;
+    double doubleSum = 0;
     for (int intColumn = 0; intColumn < intColumnLength; intColumn++) {
       if (lst[intRow][intColumn] is String) {
         continue;
       }
-      intSum += lst[intRow][intColumn];
+      doubleSum += lst[intRow][intColumn];
     }
-    lst[intRow].add(intSum);
+    lst[intRow].add(doubleSum);
   }
   return lst;
 }

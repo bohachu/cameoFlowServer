@@ -1,3 +1,8 @@
+== start coding 60min 20191105 21:19 ==
+stackedit 功能可以找另外替代方案，原因線上展示麻煩
+22:02 已經找到列印pdf功能，甚至還可以點選link看到線上影片，很好用，未來可以多運用之，也可以印書面
+現在要把 actions.json 讀取完畢之後，加入備註欄位
+
 == start coding 60min 20191104 23:38 ==
 00:46 寫完 dart flatten 功能，也能把 cards lists actions 全部打平成功，未來這些 json file 都非常好用！可以再轉 datatables 欄位容易太多了
 

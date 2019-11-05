@@ -25,7 +25,7 @@ Map flatten_json(var lstOrMap) {
 Future writeJson(String strTag, Map mapJson) async {
   List lstCards = mapJson[strTag];
   Map map = flatten_json(lstCards);
-  await File('json/' + strTag + '.json').writeAsString(json.encode(map));
+  await File('web/dart/json_' + strTag + '.dart').writeAsString('Map json_' + strTag + '=' + json.encode(map) + ';');
 }
 
 Future main() async {

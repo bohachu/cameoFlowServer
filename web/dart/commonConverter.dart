@@ -18,9 +18,9 @@ void addCounter(Map mapNameStepField, String strName, String strStep, var varFie
 }
 
 void addCounterIncome(Map mapNameStepField, String strName, String strStep, String strFieldValue) {
-  if (mapNameStepField[strName][strStep] == null) mapNameStepField[strName][strStep] = 0;
-  int intFieldValue = int.parse(strFieldValue);
-  mapNameStepField[strName][strStep] += intFieldValue;
+  if (mapNameStepField[strName][strStep] == null) mapNameStepField[strName][strStep] = 0.0;
+  double doubleFieldValue = double.parse(strFieldValue);
+  mapNameStepField[strName][strStep] += doubleFieldValue;
 }
 
 void addCounterLight(Map mapNameStepField, String strName, String strStep, String strFieldValue) {
