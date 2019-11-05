@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'date.dart';
+import 'flattenJson.dart';
 import 'httpGet.dart';
-import 'json_actions.dart';
 
 List lstIdValue = [];
 
@@ -17,7 +17,8 @@ Future<Map> tableTrello() async {
 
 String loopEachCard(Map mapJson) {
   String strOut = '';
-  Map mapDataText = getDataText();
+  Map json_actions = flatten_json(mapJson['actions']);
+  Map mapDataText = getDataText(json_actions);
   List lstCards = mapJson['cards'];
   strOut += '{"data":[\n';
   for (int i = 0; i < lstCards.length; i++) {
@@ -48,13 +49,17 @@ String processEachCard(Map mapCard, Map mapDataText) {
   return strOut;
 }
 
-Map getDataText() {
+Map getDataText(Map json_actions) {
   Map mapDataText = {};
   json_actions.forEach((k, v) {
     List lst = k.split('_');
     if (lst[1] == 'data' && lst[2] == 'text') {
-      //todo 這邊可以優化為 key = cardId, value =[備註1..., 備註2..., 備註3...], 而非只是單一值
-      mapDataText[json_actions[lst[0] + '_' + 'data' + '_' + 'card' + '_' + 'id']] = v;
+      String strKey = lst[0] + '_' + 'data' + '_' + 'card' + '_' + 'id';
+      if (mapDataText[json_actions[strKey]] == null) {
+        mapDataText[json_actions[strKey]] = [v];
+      } else {
+        mapDataText[json_actions[strKey]].add(v);
+      }
     }
   });
   return mapDataText;
@@ -63,9 +68,12 @@ Map getDataText() {
 String addActions(String strCardId, Map mapDataText) {
   String strOut = '';
   int intCnt = 1;
-  String strDataText = mapDataText[strCardId];
-  if (strDataText == '' || strDataText == null) return '';
-  strOut += '"備註$intCnt:":"${strDataText.replaceAll('\n', '')}",';
+  List lstDataText = mapDataText[strCardId];
+  if (lstDataText == null || lstDataText == []) return '';
+  for (String strDataText in lstDataText) {
+    strOut += '"備註$intCnt":"${strDataText.replaceAll('\n', '')}",';
+    intCnt += 1;
+  }
   return strOut;
 }
 
