@@ -6,7 +6,9 @@ import 'httpGet.dart';
 List lstIdValue = [];
 
 Future<Map> tableTrello() async {
+  //print('tableTrello.dart/001:${DateTime.now()}');
   String strJson = await httpGetTrello();
+  //print('tableTrello.dart/002:${DateTime.now()}');
   Map mapJson = json.decode(strJson);
   String strOut = loopEachCard(mapJson);
   strOut = replaceIdValueToText(mapJson, strOut);
@@ -69,10 +71,14 @@ String addActions(String strCardId, Map mapDataText) {
   String strOut = '';
   int intCnt = 1;
   List lstDataText = mapDataText[strCardId];
-  if (lstDataText == null || lstDataText == []) return '';
-  for (String strDataText in lstDataText) {
-    strOut += '"備註$intCnt":"${strDataText.replaceAll('\n', '')}",';
-    intCnt += 1;
+  if(lstDataText!=null && lstDataText!=[]) {
+    for (String strDataText in lstDataText) {
+      strOut += '"備註$intCnt":"${strDataText.replaceAll('\n', '')}",';
+      intCnt += 1;
+    }
+  }
+  for(int i=intCnt;i<=3;i++){
+    strOut += '"備註$i":"",';
   }
   return strOut;
 }

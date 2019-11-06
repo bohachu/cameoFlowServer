@@ -18,7 +18,8 @@ List toTable(Map mapNameStepLight) {
     Map mapSteps = e.value;
     for (String strStep in mapSteps.keys) {
       int intStep2Digit = int.parse(strStep.substring(0, 2));
-      lstRow[intStep2Digit - 1] = mapNameStepLight[strName][strStep];
+      double d=mapNameStepLight[strName][strStep];
+      lstRow[intStep2Digit - 1] = d;
     }
     lstRow.insert(0, strName);
     lstOut.add(lstRow);
@@ -43,7 +44,7 @@ List addBottomSum(List lst) {
       }
       doubleSum += lst[intRow][intColumn];
     }
-    if (isStringSoNoAdd == false) lstOut.add(doubleSum);
+    if (isStringSoNoAdd == false) lstOut.add(doubleSum.toStringAsFixed(1));
   }
   lst.add(lstOut);
   return lst;
@@ -60,7 +61,7 @@ List addRightSum(List lst) {
       }
       doubleSum += lst[intRow][intColumn];
     }
-    lst[intRow].add(doubleSum);
+    lst[intRow].add(doubleSum.toStringAsFixed(1));
   }
   return lst;
 }
