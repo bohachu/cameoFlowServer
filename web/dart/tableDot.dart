@@ -6,10 +6,6 @@ List tableDot(List lstTableTrello) {
   return toSymbol(lstTable);
 }
 
-int howManySteps() {
-  return 16;
-}
-
 List toTable(Map mapTableDot) {
   int intHowManySteps = howManySteps();
   List lstOut = [];
@@ -23,7 +19,7 @@ List toTable(Map mapTableDot) {
       int intStep2Digit = int.parse(strStep.substring(0, 2));
       lstRow[(intStep2Digit - 1) * 3 + 0] = mapSteps[strStep]['green'] ?? 0;
       lstRow[(intStep2Digit - 1) * 3 + 1] = mapSteps[strStep]['yellow'] ?? 0;
-      lstRow[(intStep2Digit - 1) * 3 + 2] = mapSteps[strStep]['pink'] ?? 0;
+      lstRow[(intStep2Digit - 1) * 3 + 2] = mapSteps[strStep]['red'] ?? 0;
     }
     lstRow.insert(0, strName);
     lstOut.add(lstRow);

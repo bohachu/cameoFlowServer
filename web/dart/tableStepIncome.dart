@@ -1,25 +1,25 @@
 import 'commonConverter.dart';
 
 List tableStepIncome(List lstTableTrello) {
-  Map map = toNameStepField(lstTableTrello, '金額');
-  List lstTable = toTable(map);
+  Map mapNameStepMoney = toNameStepField(lstTableTrello, '金額');
+  List lstTable = toTable(mapNameStepMoney);
   lstTable = addBottomSum(lstTable);
   lstTable = addRightSum(lstTable);
   lstTable = addBottomSixSum(lstTable);
   return lstTable;
 }
 
-List toTable(Map mapNameStepLight) {
-  int intStepNum = 16;
+List toTable(Map mapNameStepMoney) {
+  int intStepNum = howManySteps();
   List lstOut = [];
-  for (var e in mapNameStepLight.entries) {
+  for (var e in mapNameStepMoney.entries) {
     String strName = e.key;
     List lstRow = [];
     for (int i = 0; i < intStepNum; i++) lstRow.add(0);
     Map mapSteps = e.value;
     for (String strStep in mapSteps.keys) {
       int intStep2Digit = int.parse(strStep.substring(0, 2));
-      double d = mapNameStepLight[strName][strStep];
+      double d = mapNameStepMoney[strName][strStep];
       double d2 = double.parse(d.toStringAsFixed(1));
       lstRow[intStep2Digit - 1] = d2;
     }

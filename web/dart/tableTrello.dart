@@ -35,9 +35,9 @@ String loopEachCard(Map mapJson, Map mapNameId) {
   strOut += '{"data":[\n';
   for (int i = 0; i < lstCards.length; i++) {
     Map mapCard = lstCards[i];
-    if (mapCard['closed'] != true) {
-      strOut += processEachCard(mapCard, mapDataText, mapNameId);
-    }
+    //if (mapCard['closed'] != true) {
+    strOut += processEachCard(mapCard, mapDataText, mapNameId);
+    //}
   }
   strOut = strOut.substring(0, strOut.length - 2); //delete last comma (ajax format can not accept)
   strOut += ']}';
@@ -70,7 +70,12 @@ String processEachCard(Map mapCard, Map mapDataText, Map mapNameId) {
   strOut += '"人員":"${processIdValue(mapCard, '人員', mapNameId['人員'])}",';
   strOut += '"優先次序":"${processLabels(mapCard, '優先次序')}",';
   strOut += '"階段":"${processSecondTier(mapCard, '階段', 'idList')}",';
-  strOut += '"產品類別":"${processIdValue(mapCard, '產品類別', mapNameId['產品類別'])}"';
+  strOut += '"產品類別":"${processIdValue(mapCard, '產品類別', mapNameId['產品類別'])}",';
+  if (mapCard['closed'] == true) {
+    strOut += '"關案":"🎱"';
+  } else {
+    strOut += '"關案":"🏐"';
+  }
   strOut += '},\n';
   return strOut;
 }
@@ -96,13 +101,13 @@ String addActions(String strCardId, Map mapDataText) {
   String strOut = '';
   int intCnt = 1;
   List lstDataText = mapDataText[strCardId];
-  if(lstDataText!=null && lstDataText!=[]) {
+  if (lstDataText != null && lstDataText != []) {
     for (String strDataText in lstDataText) {
       strOut += '"備註$intCnt":"${strDataText.replaceAll('\n', '')}",';
       intCnt += 1;
     }
   }
-  for(int i=intCnt;i<=3;i++){
+  for (int i = intCnt; i <= 3; i++) {
     strOut += '"備註$i":"",';
   }
   return strOut;

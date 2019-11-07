@@ -41,6 +41,7 @@ function funcTableTrello(lstData) {
         {data: "優先次序"},
         {data: "階段"},
         {data: "產品類別"},
+        {data: "關案"},
       ]
     });
 

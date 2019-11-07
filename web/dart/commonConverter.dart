@@ -3,7 +3,7 @@ Map toNameStepField(List lst, String strColumnName) {
   for (int i = 0; i < lst.length; i++) {
     String strName = lst[i]['人員'];
     String strStep = lst[i]['階段'];
-    if (strName.length > 0 && lst[i][strColumnName] != '') {
+    if (strName.length > 0 && lst[i][strColumnName] != '' && lst[i]['關案'] == '🏐') {
       var fieldValue = lst[i][strColumnName];
       addCounter(mapNameStepField, strName, strStep, fieldValue, strColumnName);
     }
@@ -27,4 +27,8 @@ void addCounterLight(Map mapNameStepField, String strName, String strStep, Strin
   if (mapNameStepField[strName][strStep] == null) mapNameStepField[strName][strStep] = {};
   if (mapNameStepField[strName][strStep][strFieldValue] == null) mapNameStepField[strName][strStep][strFieldValue] = 0;
   mapNameStepField[strName][strStep][strFieldValue] += 1;
+}
+
+int howManySteps() {
+  return 15;
 }
