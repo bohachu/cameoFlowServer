@@ -25,7 +25,9 @@ String loopEachCard(Map mapJson) {
   strOut += '{"data":[\n';
   for (int i = 0; i < lstCards.length; i++) {
     Map mapCard = lstCards[i];
-    strOut += processEachCard(mapCard, mapDataText);
+    if (mapCard['closed'] != true) {
+      strOut += processEachCard(mapCard, mapDataText);
+    }
   }
   strOut = strOut.substring(0, strOut.length - 2); //delete last comma (ajax format can not accept)
   strOut += ']}';
@@ -57,10 +59,11 @@ Map getDataText(Map json_actions) {
     List lst = k.split('_');
     if (lst[1] == 'data' && lst[2] == 'text') {
       String strKey = lst[0] + '_' + 'data' + '_' + 'card' + '_' + 'id';
+      String strDate = json_actions[lst[0] + '_' + 'date'];
       if (mapDataText[json_actions[strKey]] == null) {
-        mapDataText[json_actions[strKey]] = [v];
+        mapDataText[json_actions[strKey]] = [getDateTime(strDate) + ',' + v];
       } else {
-        mapDataText[json_actions[strKey]].add(v);
+        mapDataText[json_actions[strKey]].add(getDateTime(strDate) + ',' + v);
       }
     }
   });
