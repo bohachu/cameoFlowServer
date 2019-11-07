@@ -29,8 +29,6 @@ List toTable(Map mapNameStepLight) {
   return lstOut;
 }
 
-final String i18nSum = "總計";
-
 List addBottomSum(List lst) {
   int intRowLength = lst.length;
   int intColumnLength = lst[0].length;
@@ -40,7 +38,7 @@ List addBottomSum(List lst) {
     bool isStringSoNoAdd = false;
     for (int intRow = 0; intRow < intRowLength; intRow++) {
       if (lst[intRow][intColumn] is String) {
-        lstOut.add(i18nSum);
+        lstOut.add('🌞');
         isStringSoNoAdd = true;
         break;
       }
@@ -79,8 +77,8 @@ List addBottomSixSum(List lst) {
     }
     doubleSum += lst[intRowLength - 1][intColumn];
   }
-  List lstRow = ['總計簽約前', double.parse(doubleSum.toStringAsFixed(1))];
-  for (int i = 0; i < intColumnLength - 2; i++)
+  List lstRow = ['🌻', '', '', '', '', '', double.parse(doubleSum.toStringAsFixed(1))];
+  for (int i = 0; i < intColumnLength - 7; i++)
     lstRow.add('');
   lst.add(lstRow);
   return lst;

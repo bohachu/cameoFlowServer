@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:html';
 import 'date.dart';
 import 'flattenJson.dart';
 import 'httpGet.dart';
@@ -7,17 +8,26 @@ List lstIdValue = [];
 
 Future<Map> tableTrello() async {
   //print('tableTrello.dart/001:${DateTime.now()}');
-  String strJson = await httpGetTrello();
-  //print('tableTrello.dart/002:${DateTime.now()}');
+  String strJson = await httpGetTrello(getTrelloUrl());
   Map mapJson = json.decode(strJson);
-  String strOut = loopEachCard(mapJson);
+  Map mapNameId = customFields(mapJson);
+  String strOut = loopEachCard(mapJson, mapNameId);
   strOut = replaceIdValueToText(mapJson, strOut);
   strOut = replaceListsId(mapJson, strOut);
   Map map = json.decode(strOut);
   return map;
 }
 
-String loopEachCard(Map mapJson) {
+String getTrelloUrl() {
+  String strUrl1 = 'trello.com/b/SsiyOdgK/%E5%82%A2%E6%AB%A5%E7%92%B0%E4%B8%AD.json'; //環中店
+  String strUrl2 = 'trello.com/b/A6nWPs97/%E5%82%A2%E6%AB%A5%E6%96%87%E5%BF%83.json'; //文心店
+  String strUrl = window.location.href;
+  if (strUrl.contains(strUrl1)) return 'https://' + strUrl1;
+  if (strUrl.contains(strUrl2)) return 'https://' + strUrl2;
+  return 'https://' + strUrl1;
+}
+
+String loopEachCard(Map mapJson, Map mapNameId) {
   String strOut = '';
   Map json_actions = flatten_json(mapJson['actions']);
   Map mapDataText = getDataText(json_actions);
@@ -26,7 +36,7 @@ String loopEachCard(Map mapJson) {
   for (int i = 0; i < lstCards.length; i++) {
     Map mapCard = lstCards[i];
     if (mapCard['closed'] != true) {
-      strOut += processEachCard(mapCard, mapDataText);
+      strOut += processEachCard(mapCard, mapDataText, mapNameId);
     }
   }
   strOut = strOut.substring(0, strOut.length - 2); //delete last comma (ajax format can not accept)
@@ -34,21 +44,33 @@ String loopEachCard(Map mapJson) {
   return strOut;
 }
 
-String processEachCard(Map mapCard, Map mapDataText) {
+Map customFields(mapJson) {
+  List lstCustomFields = mapJson['customFields'];
+  Map mapResult = {};
+  for (int i = 0; i < lstCustomFields.length; i++) {
+    Map map = lstCustomFields[i];
+    if (map['name'] == '人員') mapResult['人員'] = map['id'];
+    if (map['name'] == '客源') mapResult['客源'] = map['id'];
+    if (map['name'] == '產品類別') mapResult['產品類別'] = map['id'];
+  }
+  return mapResult;
+}
+
+String processEachCard(Map mapCard, Map mapDataText, Map mapNameId) {
   String strOut = '';
   String strId = mapCard['id'];
   strOut += '{';
   strOut += addActions(strId, mapDataText);
   strOut += '"id":"+",';
-  strOut += '"客源":"${processIdValue(mapCard, '客源', '3a1b')}",';
+  strOut += '"客源":"${processIdValue(mapCard, '客源', mapNameId['客源'])}",';
   strOut += '"起始日":"${getDate(getCustomFieldItems(mapCard, '起始日', 'value', 'date'))}",';
   strOut += '"案件名稱":"${processSecondTier(mapCard, '案件名稱', 'name')}",';
   strOut += '"金額":"${getCustomFieldItems(mapCard, '金額', 'value', 'number')}",';
   strOut += '"交期":"${getDate(processSecondTier(mapCard, '交期', 'due'))}",';
-  strOut += '"人員":"${processIdValue(mapCard, '人員', 'f3f0')}",';
+  strOut += '"人員":"${processIdValue(mapCard, '人員', mapNameId['人員'])}",';
   strOut += '"優先次序":"${processLabels(mapCard, '優先次序')}",';
   strOut += '"階段":"${processSecondTier(mapCard, '階段', 'idList')}",';
-  strOut += '"產品類別":"${processIdValue(mapCard, '產品類別', 'a129')}"';
+  strOut += '"產品類別":"${processIdValue(mapCard, '產品類別', mapNameId['產品類別'])}"';
   strOut += '},\n';
   return strOut;
 }
