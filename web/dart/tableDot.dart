@@ -1,9 +1,13 @@
 import 'commonConverter.dart';
+import 'sum.dart';
 
 List tableDot(List lstTableTrello) {
   Map map = toNameStepField(lstTableTrello, '優先次序');
   List lstTable = toTable(map);
-  return toSymbol(lstTable);
+  lstTable = toSymbol(lstTable);
+  lstTable = addBottomSum(lstTable);
+  lstTable = addRightSum(lstTable);
+  return lstTable;
 }
 
 List toTable(Map mapTableDot) {

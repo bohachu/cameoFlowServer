@@ -74,6 +74,7 @@ function funcTableDot(lstData) {
         {title: "FY"},
         {title: "FR"},
         {title: "FB"},
+        {title: "S"},
       ]
     });
   });

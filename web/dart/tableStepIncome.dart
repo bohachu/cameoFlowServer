@@ -1,4 +1,5 @@
 import 'commonConverter.dart';
+import 'sum.dart';
 
 List tableStepIncome(List lstTableTrello) {
   Map mapNameStepMoney = toNameStepField(lstTableTrello, '金額');
@@ -27,43 +28,6 @@ List toTable(Map mapNameStepMoney) {
     lstOut.add(lstRow);
   }
   return lstOut;
-}
-
-List addBottomSum(List lst) {
-  int intRowLength = lst.length;
-  int intColumnLength = lst[0].length;
-  List lstOut = [];
-  for (int intColumn = 0; intColumn < intColumnLength; intColumn++) {
-    double doubleSum = 0;
-    bool isStringSoNoAdd = false;
-    for (int intRow = 0; intRow < intRowLength; intRow++) {
-      if (lst[intRow][intColumn] is String) {
-        lstOut.add('🌞');
-        isStringSoNoAdd = true;
-        break;
-      }
-      doubleSum += lst[intRow][intColumn];
-    }
-    if (isStringSoNoAdd == false) lstOut.add(double.parse(doubleSum.toStringAsFixed(1)));
-  }
-  lst.add(lstOut);
-  return lst;
-}
-
-List addRightSum(List lst) {
-  int intRowLength = lst.length;
-  int intColumnLength = lst[0].length;
-  for (int intRow = 0; intRow < intRowLength; intRow++) {
-    double doubleSum = 0;
-    for (int intColumn = 0; intColumn < intColumnLength; intColumn++) {
-      if (lst[intRow][intColumn] is String) {
-        continue;
-      }
-      doubleSum += lst[intRow][intColumn];
-    }
-    lst[intRow].add(double.parse(doubleSum.toStringAsFixed(1)));
-  }
-  return lst;
 }
 
 List addBottomSixSum(List lst) {
