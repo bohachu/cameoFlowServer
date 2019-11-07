@@ -1,6 +1,9 @@
 function funcTableStepIncome(lstData) {
   $(document).ready(function () {
     $('#tableStepIncome').DataTable({
+      language: {
+        url: "datatablesI18n.json"
+      },
       stateSave: true,
       destroy: true,
       "scrollX": true,

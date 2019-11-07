@@ -19,6 +19,9 @@ function format(d) {
 function funcTableTrello(lstData) {
   $(document).ready(function () {
     var table = $('#tableTrello').DataTable({
+      language: {
+        url: "datatablesI18n.json"
+      },
       stateSave: true,
       destroy: true,
       "scrollX": true,

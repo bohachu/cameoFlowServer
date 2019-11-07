@@ -1,6 +1,9 @@
 function funcTableDot(lstData) {
   $(document).ready(function () {
     var table = $('#tableDot').removeAttr('width').DataTable({
+      language: {
+        url: "datatablesI18n.json"
+      },
       stateSave: true,
       destroy: true,
       "scrollX": true,
