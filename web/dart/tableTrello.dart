@@ -58,10 +58,15 @@ Map customFields(mapJson) {
 
 String processEachCard(Map mapCard, Map mapDataText, Map mapNameId) {
   String strOut = '';
-  String strId = mapCard['id'];
+  String strCardId = mapCard['id'];
   strOut += '{';
-  strOut += addActions(strId, mapDataText);
-  strOut += '"id":"+",';
+  strOut += addActions(strCardId, mapDataText);
+  List lstDataText = mapDataText[strCardId];
+  if (lstDataText != null && lstDataText != []) {
+    strOut += '"canOpen":"⤵",';
+  } else {
+    strOut += '"canOpen":"",';
+  }
   strOut += '"客源":"${processIdValue(mapCard, '客源', mapNameId['客源'])}",';
   strOut += '"起始日":"${getDate(getCustomFieldItems(mapCard, '起始日', 'value', 'date'))}",';
   strOut += '"案件名稱":"${processSecondTier(mapCard, '案件名稱', 'name')}",';

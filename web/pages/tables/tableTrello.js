@@ -28,13 +28,7 @@ function funcTableTrello(lstData) {
       "scrollY": true,
       "data": lstData,
       columns: [
-        {
-          data: "id",
-          "className": 'details-control',
-          "orderable": false,
-          "data": null,
-          "defaultContent": ''
-        },
+        {data: "canOpen", "className": 'details-control2'},
         {data: "客源"},
         {data: "起始日"},
         {data: "案件名稱"},
@@ -47,12 +41,21 @@ function funcTableTrello(lstData) {
         {data: "關案"},
       ]
     });
+    /*
+      columns: [
+        {
+          data: "openClose",
+          "className": 'details-control',
+          "orderable": false,
+          "data": null,
+          "defaultContent": ''
+        },
+     */
 
     // Add event listener for opening and closing details
-    $('#tableTrello tbody').on('click', 'td.details-control', function () {
+    $('#tableTrello tbody').on('click', 'td.details-control2', function () {
       var tr = $(this).closest('tr');
       var row = table.row(tr);
-
       if (row.child.isShown()) {
         // This row is already open - close it
         row.child.hide();
@@ -63,6 +66,5 @@ function funcTableTrello(lstData) {
         tr.addClass('shown');
       }
     });
-
   });
 }

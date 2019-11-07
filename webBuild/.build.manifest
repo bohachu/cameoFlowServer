@@ -584,6 +584,7 @@ pages/tables/childRows.html
 pages/tables/childRows.js
 pages/tables/childRows.json
 pages/tables/data.html
+pages/tables/datatablesI18n.json
 pages/tables/jsgrid.html
 pages/tables/simple.html
 pages/tables/tableDot.js
