@@ -1,17 +1,25 @@
-== start coding 29191108 05:00 ==
-05:51 done 2* 如果沒有備註文字的，完全不需要打開變成加號
-
 == todo HD全壘打 ==
-2* 1h 選單：menu bar 介面拿掉不需要的部分，只留下想要的東西，並且中文化
+3* 1h 整併 data.html 最新成果加入
+2* 2h 讓第一次的顯示速度變快
+2* 2h 整理讓 source code 可重用性更高，可以用在不同場合
+1* 1h black顏色需要處理，不要營收表不要加總
 1* 1h 總表：讓總表的 yellow 變成黃檸檬icon（其他相對顏色也要改）
 1* 1h 點點：階段要三個column合併，變成一個階段
 1* 2h 分店：總店可以全部看，其他兩個只能看自己的
-help: 需要文巧幫忙，關案 archive，有可能是掉案，也有可能是不要該卡片（該卡片只是實驗的格式卡片，並不是有人員與金額的，例如 範例 [建案名稱][客戶名稱] ），所以最好是卡片改黑色之後才 archive 這樣比較可以統計正確的數字
-help: 1* 3h 總表：掉單率的表，讓總表可以換算過去顯示（需要 ken 文巧協助設計 google sheet)
-help: 1* ?? 指標要能顯示在畫面上，變成各種指標的：財務、人才、流程、客戶
-help: 需要文巧幫忙：Trello資料錯誤: 環中，顏色 pink blue black 意義是什麼？目前我們沒有處理這三種顏色喔，意義待確認
-help: 需要文巧幫忙：Trello資料錯誤: 文心，試算表文心的圖表URL尚未取得，因此google sheet財務報表現在是放環中的google sheet，需要文心財務報表google sheet URL
-help: 需要文巧幫忙：Trello資料錯誤: 文心，07_簽約之後，有許多金額並不是用「萬元」作為單位，混合了「萬元」跟「一元」的單位，造成數字加總有問題，需要更正Trello金額欄位
+
+pending help: 需要文巧幫忙，關案 archive，有可能是掉案，也有可能是不要該卡片（該卡片只是實驗的格式卡片，並不是有人員與金額的，例如 範例 [建案名稱][客戶名稱] ），所以最好是卡片改黑色之後才 archive 這樣比較可以統計正確的數字
+pending help: 1* 3h 總表：掉單率的表，讓總表可以換算過去顯示（需要 ken 文巧協助設計 google sheet)
+pending help: 1* ?? 指標要能顯示在畫面上，變成各種指標的：財務、人才、流程、客戶
+pending help: 需要文巧幫忙：Trello資料錯誤: 文心，試算表文心的圖表URL尚未取得，因此google sheet財務報表現在是放環中的google sheet，需要文心財務報表google sheet URL
+done help: 需要文巧幫忙：Trello資料錯誤: 環中，顏色 pink blue black 意義是什麼？目前我們沒有處理這三種顏色喔，意義待確認
+done help: 需要文巧幫忙：Trello資料錯誤: 文心，07_簽約之後，有許多金額並不是用「萬元」作為單位，混合了「萬元」跟「一元」的單位，造成數字加總有問題，需要更正Trello金額欄位
+
+== start coding 20191108 20:46 屏東案 datatables ==
+美麗的邊緣下捲 https://jsfiddle.net/Vimalan/2koex0bt/6/
+google cloud storage 速度傳輸 0.01 USD, 1T=10USD
+
+== start coding 29191108 05:00 ==
+05:51 done 2* 如果沒有備註文字的，完全不需要打開變成加號
 
 == start coding 20191107 21:02 ==
 done 2* 3h 點點：掉單要做掉單的統計（點點表）：綠色、黃色、紅色、🎱黑色（多一個黑色🎱顯示掉單情形）
