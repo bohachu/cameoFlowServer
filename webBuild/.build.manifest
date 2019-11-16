@@ -88,12 +88,13 @@ composer.json
 dart/.DS_Store
 dart/date.dart.js
 dart/jsMain.dart.js
-dart/test.json
 dist/css/adminlte.css
 dist/css/adminlte.css.map
 dist/css/adminlte.min.css
 dist/css/adminlte.min.css.map
 dist/img/AdminLTELogo.png
+dist/img/HDLogo.png
+dist/img/Ken.png
 dist/img/avatar.png
 dist/img/avatar04.png
 dist/img/avatar2.png

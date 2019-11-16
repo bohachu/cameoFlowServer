@@ -1,3 +1,10 @@
+HD Flow v1116 Release Notes
+https://www.cameo.tw/adminlte/pages/tables/data.html?strUrl=trello.com/b/SsiyOdgK/%E5%82%A2%E6%AB%A5%E7%92%B0%E4%B8%AD.json
+001 更新左邊的開合按鈕變成 i 字樣
+002 點點圖已經對齊格子寬度，並且已經有十五階段文字標題（感恩佳珞）
+003 重新加入高速度Cache只需要第一次載入之後，往後每次都是從Cache讀取（然後自動更新Cache）
+004 務必按下 Windows: Ctrl+F5 瀏覽器才會更新程式碼，Mac: Cmd+Shift+R
+
 done 21:47, 20191116 21:47 3* 1h 整併 data.html 最新成果加入
 done 21:58, 20191116 21:48 2* 2h 讓第一次的顯示速度變快
 
