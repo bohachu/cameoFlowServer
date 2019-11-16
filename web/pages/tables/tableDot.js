@@ -1,6 +1,33 @@
 function funcTableDot(lstData) {
   $(document).ready(function () {
     var table = $('#tableDot').removeAttr('width').DataTable({
+      "ordering": false,
+      language: {
+        url: "datatablesI18n.json"
+      },
+      stateSave: true,
+      destroy: true,
+      "scrollX": true,
+      "scrollY": true,
+      "data": lstData,
+      columnDefs: [
+        {
+          "targets": [0],
+          "width": "50px"
+        },
+        {
+          "targets": "_all",
+          "width": "24px"
+        }
+      ]
+    });
+  });
+}
+
+/*
+function funcTableDot(lstData) {
+  $(document).ready(function () {
+    var table = $('#tableDot').removeAttr('width').DataTable({
       language: {
         url: "datatablesI18n.json"
       },
@@ -82,3 +109,4 @@ function funcTableDot(lstData) {
     });
   });
 }
+*/

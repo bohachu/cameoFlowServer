@@ -8,23 +8,17 @@ import 'httpGet.dart';
 
 void main() async {
   window.console.log('jsMain.dart 001');
-
-  /* 舊資料 cache web local storage 可能產生資料版本錯誤
-  if (window.localStorage['tableTrello'] != null) {
-    List lstTrelloTable = jsonDecode(window.localStorage['tableTrello']);
-    updateTables(lstTrelloTable);
+  List lstTrelloTable;
+  if (window.localStorage[getTrelloUrl()] != null) {
+    lstTrelloTable = jsonDecode(window.localStorage[getTrelloUrl()]);
+  } else {
+    lstTrelloTable = (await tableTrello())['data'];
+    window.localStorage[getTrelloUrl()] = jsonEncode(lstTrelloTable);
   }
-   */
-
-  List lstTrelloTable = (await tableTrello())['data'];
-  window.localStorage['tableTrello'] = jsonEncode(lstTrelloTable);
-
-  //pending 因為如果有下面這個更新螢幕（從網路讀取資料之後五秒左右更新datatables），就會造成備註欄位出錯，所以暫時不要更新
   updateTables(lstTrelloTable);
-
 }
 
-void updateTables(lstTrelloTable){
+void updateTables(lstTrelloTable) {
   context.callMethod('funcTableTrello', [JsObject.jsify(lstTrelloTable)]);
   context.callMethod('funcTableDot', [JsObject.jsify(tableDot(lstTrelloTable))]);
   context.callMethod('funcTableStepIncome', [JsObject.jsify(tableStepIncome(lstTrelloTable))]);
