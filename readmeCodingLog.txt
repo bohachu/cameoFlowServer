@@ -1,3 +1,8 @@
+== start coding 20191117 19:43 ==
+. 想要加入 PWA 功能讓手機跟電腦都可以有 icon
+
+==
+
 HD Flow v1116 Release Notes
 https://www.cameo.tw/adminlte/pages/tables/data.html?strUrl=trello.com/b/SsiyOdgK/%E5%82%A2%E6%AB%A5%E7%92%B0%E4%B8%AD.json
 001 更新左邊的開合按鈕變成 i 字樣
@@ -10,7 +15,10 @@ done 21:58, 20191116 21:48 2* 2h 讓第一次的顯示速度變快
 
 == todo HD全壘打 ==
 2* 2h 整理讓 source code 可重用性更高，可以用在不同場合
-1* 1h black顏色需要處理，不要營收表不要加總
+2* 1h black顏色需要處理，不要營收表不要加總
+1* 1h 讓左邊的收合分店不需要收合選單
+1* 1h 讓左邊側邊欄預設是合併的
+1* 1h 讓右上角的無用的對話視窗可以隱藏
 1* 1h 總表：讓總表的 yellow 變成黃檸檬icon（其他相對顏色也要改）
 1* 1h 點點：階段要三個column合併，變成一個階段
 1* 2h 分店：總店可以全部看，其他兩個只能看自己的

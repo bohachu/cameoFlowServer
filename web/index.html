@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+  <link rel="manifest" crossorigin="use-credentials" href="manifest.json">
+  <link
+    rel='apple-touch-icon'
+    sizes='192x192'
+    href='icons/192.png'
+  />
+  <link
+    rel='apple-touch-startup-image'
+    href='icons/1024.png'
+    media='(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)'
+  />
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>AdminLTE 3 | Dashboard</title>
@@ -1347,5 +1360,16 @@
 <script src="dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
+
+<script>
+    if ('serviceWorker' in navigator) {
+        console.log("Will service worker register?");
+        navigator.serviceWorker.register('service-worker.js').then(function (reg) {
+            console.log("Yes it did.");
+        }).catch(function (err) {
+            console.log("No it didn't. This happened: ", err)
+        });
+    }
+</script>
 </body>
 </html>
