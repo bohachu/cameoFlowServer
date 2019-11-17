@@ -1,5 +1,13 @@
 == start coding 20191117 19:43 ==
 . 想要加入 PWA 功能讓手機跟電腦都可以有 icon
+. 新增 icons 想要為 PWA 做點學習
+. add minifest.json
+. add service-worker.js
+. modify index.html
++ 電腦已經可以 chrome 加入桌面 icon
+i 手機 apple 無法作用
++ 手機 apple 發現 safari 其實可以把任意網址加入桌面鏈結
+20:47 休息
 
 ==
 
