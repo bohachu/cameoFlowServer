@@ -1,3 +1,152 @@
+== 20191124 12:17 stop coding
+mac chrome disable cors
+12:16 解決 utf-8 encoding 問題
+  var response = await http.get(strUrl);
+  String strUtf8=utf8.decode(response.bodyBytes);
+
+== 20191124 10:47 cdc coding logs
+已經把 cdc hdFlow 兩個路徑獨立出來了，往後可以交互參照共用元件也沒有問題
+11:16 已經可以 reportDisease.html 抓取 json file from url 並且 console log 顯示（可惜是亂碼，還要找找原因）
+todo 可以用 debugger 看看抓回來是中文還是亂碼，然後做一些判斷
+Content-type: application/json; charset=utf-8
+
+== 20191124 10:14 疾管署 coding logs
+第一個是要用 json 重現所有疾管署的登革熱欄位
+為了要可以做到這件事情，要先有原始畫面
+https://docs.google.com/spreadsheets/d/1ZtWrPpgUG19375ozuzeMMbuGONyKQc2mY6mmJXD_8y4/edit#gid=1054066465
+
+第一類 無附加資訊42個病的試算表：模組相同、但欄位底下的選項(主要症狀)會不同
+https://docs.google.com/spreadsheets/d/1yNS2iINF8Ib_0vVZ5NFrlOn6uWigeNa4k7D_SzHwMG0/edit#gid=840589437
+
+第二類 有附加資訊32個病的試算表：（已完成：登革熱、淋病、梅毒、流感併發重症這4個病不用再做）各疾病通報欄位要看各個頁籤
+***11/22 lele再補已經做好病的畫面URL
+https://docs.google.com/spreadsheets/d/1ZtWrPpgUG19375ozuzeMMbuGONyKQc2mY6mmJXD_8y4/edit#gid=1054066465
+
+要能讀取 reportDisease登革熱.json 之後，可以迴圈列出：
+先印出來所有的東西，然後才處理轉換
+
+
+== 20191123 2356 json生成html的程式碼怎麼寫？
+
+先要可以產生Form元件，就算沒有排很美麗，而是只有從上到下，也可以
+可以讓Form元件切割為三欄、兩欄、一欄
+流水下去的時候，如果三欄
+
+== 20191123 23:36 下一個任務應該就是 dart 可以拿到 editor.get() 的資料之後，往後端伺服器傳送寫入，產生 .json 檔案寫入之後，就可以讀出變成網頁了，這需要後台有一個 file server 接收才可以
+
+how to 後台 file server?
+let us think
+
+寫入伺服器端：
+http://cameo.tw/cdc/writeJson?strFileName=登革熱.json&strJson=[{"key":"value"}]
+
+寫入之後，JSON要拿資料可以在這邊拿取：
+http://cameo.tw/cdc/json/登革熱.json
+
+編輯的方法：
+http://cameo.tw/cdc/editJson?strFileName=登革熱.json
+就會讀取這個檔案來在網頁編輯 /cdc/json/登革熱.json
+最好的方式是每隔幾秒就自動寫入伺服器端，全自動儲存
+或者有鍵盤事件之後就全自動儲存也很好
+編輯之後有一個按鈕可以按下去之後瀏覽 html 視窗
+
+看HTML的方法，不同的 .json 會有不同的通報畫面，總共會有七十四種疾病：
+http://cameo.tw/cdc/reportDisease.html?strJson=登革熱.json
+
+七十四種疾病的列表，可以隨時點選 link 過去看：
+http://cameo.tw/cdc/diseaseList.html
+作法：將 json 底下的所有檔案列出來，並且產生動態 html url 就可以列出已經有的檔案名稱來看了
+
+== 20191123 23:00 這段程式碼可以用按鈕拿到 json (當然也就可以送出到網路上面了）
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- when using the mode "code", it's important to specify charset utf-8 -->
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
+    <link href="jsoneditor/dist/jsoneditor.min.css" rel="stylesheet" type="text/css">
+    <script src="jsoneditor/dist/jsoneditor.min.js"></script>
+</head>
+<body>
+<p>
+    <button onclick="setJSON();">Set JSON</button>
+    <button onclick="getJSON();">Get JSON</button>
+</p>
+<div id="jsoneditor" style="width: 400px; height: 400px;"></div>
+
+<script>
+    // create the editor
+    var container = document.getElementById("jsoneditor");
+    var editor = new JSONEditor(container);
+
+    // set json
+    function setJSON () {
+        var json = {
+            "Array": [1, 2, 3],
+            "Boolean": true,
+            "Null": null,
+            "Number": 123,
+            "Object": {"a": "b", "c": "d"},
+            "String": "Hello World"
+        };
+        editor.set(json);
+    }
+
+    // get json
+    function getJSON() {
+        var json = editor.get();
+        alert(JSON.stringify(json, null, 2));
+    }
+</script>
+</body>
+</html>
+
+
+To set JSON data in the editor:
+
+var json = {
+    "Array": [1, 2, 3],
+    "Boolean": true,
+    "Null": null,
+    "Number": 123,
+    "Object": {"a": "b", "c": "d"},
+    "String": "Hello World"
+};
+editor.set(json);
+To get JSON data from the editor:
+
+20191123 23:25
+只要用這一行程式碼就可以拿到 純文字的 json text
+var strJson = editor.get();
+
+
+== coding logs 20191121 22:33 ==
+bowen chiu 雖然心情上面非常生氣疾管署科長的官腔反應，但是念在她90%的時間都是不錯的工作者，我想也就讓這個心情停留在短短一天之內消化。
+
+74疾病的英文表單
+https://docs.google.com/spreadsheets/d/1uswuCaLjLrFjkwwfvOkleTfkmiwhccR2EEcuOu89Xw0/edit#gid=2110494187
+
+這是目前整理的資訊和素材。
+
+疾病畫面總共74個，分為兩類：無附加資訊欄位使用共同模組42個、有附加資訊有各別欄位32個
+
+目標要做74個這種畫面，HTML畫面[以登革熱畫面做為模板]：
+https://cameo.tw/cdc/20190909/pages/2.1Report_dengue.html
+
+畫面HTML資料夾：
+https://drive.google.com/drive/folders/1zd59r1CoM-02vO0dA0JjsUSH6rsY50Fh?usp=sharing
+
+第一類 無附加資訊42個病的試算表：模組相同、但欄位底下的選項(主要症狀)會不同
+https://docs.google.com/spreadsheets/d/1yNS2iINF8Ib_0vVZ5NFrlOn6uWigeNa4k7D_SzHwMG0/edit#gid=840589437
+
+第二類 有附加資訊32個病的試算表：（已完成：登革熱、淋病、梅毒、流感併發重症這4個病不用再做）各疾病通報欄位要看各個頁籤
+***11/22 lele再補已經做好病的畫面URL
+https://docs.google.com/spreadsheets/d/1ZtWrPpgUG19375ozuzeMMbuGONyKQc2mY6mmJXD_8y4/edit#gid=1054066465
+
+下面這塊樂樂會需要有技術夥伴和Harry一起幫忙釐清會比較快：
+「可能可以在找到人之前, 先行規劃是否有一些共用元件的命名原則 e.g. 長一個資料表, id要叫什麼以及是否74個有階層關係, 有高階的/抽象的第一階版型, 以簡併與共用一些版型」
+
 == start coding 20191117 19:43 ==
 . 想要加入 PWA 功能讓手機跟電腦都可以有 icon
 . 新增 icons 想要為 PWA 做點學習
