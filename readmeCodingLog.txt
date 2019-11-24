@@ -1,3 +1,6 @@
+== 20191124 21:14 30min start coding ==
+現在要開始讓片段片段可以產生 html code 嵌入到 reportDisease.html 裡面去
+
 == 20191124 12:17 stop coding
 mac chrome disable cors
 12:16 解決 utf-8 encoding 問題

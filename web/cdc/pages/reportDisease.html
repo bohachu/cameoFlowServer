@@ -13,9 +13,6 @@
 </head>
 
 <body>
-
-<script defer src="../dart/jsCdc.dart.js"></script>
-
 <div id="reportDiseaseNav"></div>
 
 <!-- Right Part -->
@@ -417,79 +414,11 @@
               </div>
             </div>
           </div>
-          <div class="row ml-1 mr-1">
-            <div class="col-lg-6">
-              <div class="form-group">
-                <label class="fs-0 font-weight-bold text-black">臨床症狀</label><br/>
-                <label class="fs-0" for="name">有無症狀</label><br/>
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input class="custom-control-input" id="customRadioInline4" type="radio"
-                         name="customRadioInline2">
-                  <label class="custom-control-label fs-0" for="customRadioInline4">有</label>
-                </div>
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input class="custom-control-input" id="customRadioInline5" type="radio"
-                         name="customRadioInline2">
-                  <label class="custom-control-label fs-0" for="customRadioInline5">無</label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row pl-5 pr-5 pt-4 pb-4" style="background-color: #F2F2F2">
-            <div class="form-check form-check-inline col-md-4 pb-2">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox888" value="option1">
-              <label class="form-check-label fs-0" for="inlineCheckbox888">出血症狀</label>
-            </div>
-            <div class="form-check form-check-inline col-md-4 pb-2">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox892" value="option2">
-              <label class="form-check-label fs-0" for="inlineCheckbox892">後眼窩痛</label>
-            </div>
-            <div class="form-check form-check-inline col-md-3 pb-2">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox896" value="option3">
-              <label class="form-check-label fs-0" for="inlineCheckbox896">頭痛</label>
-            </div>
-            <div class="form-check form-check-inline col-md-4 pb-2">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox900" value="option3">
-              <label class="form-check-label fs-0" for="inlineCheckbox900">白血球減少</label>
-            </div>
-            <div class="form-check form-check-inline col-md-4 pb-2">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox904" value="option2">
-              <label class="form-check-label fs-0" for="inlineCheckbox904">皮疹/紅疹/出疹</label>
-            </div>
-            <div class="form-check form-check-inline col-md-3 pb-2">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox908" value="option3">
-              <label class="form-check-label fs-0" for="inlineCheckbox908">發燒(38度以上)</label>
-            </div>
-            <div class="form-check form-check-inline col-md-4 pb-2">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox912" value="option3">
-              <label class="form-check-label fs-0" for="inlineCheckbox912">關節痛</label>
-            </div>
-            <div class="form-check form-check-inline col-md-4 pb-2">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox916" value="option2">
-              <label class="form-check-label fs-0" for="inlineCheckbox916">血壓帶試驗陽性</label>
-            </div>
-            <div class="form-check form-check-inline col-md-3 pb-2">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox920" value="option3">
-              <label class="form-check-label fs-0" for="inlineCheckbox920">肌肉痛</label>
-            </div>
-            <div class="form-check form-check-inline col-md-4 pb-2">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox924" value="option3">
-              <label class="form-check-label fs-0" for="inlineCheckbox924">嘔吐</label>
-            </div>
-            <div class="form-check form-check-inline col-md-4 pb-2">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox928" value="option2">
-              <label class="form-check-label fs-0" for="inlineCheckbox928">噁心</label>
-            </div>
-            <div class="form-check form-check-inline col-md-3 pb-2">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox932" value="option3">
-              <label class="form-check-label fs-0" for="inlineCheckbox932">骨頭痛</label>
-            </div>
-            <div class="form-check form-check-inline col-md-8 pb-2">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox936" value="option2">
-              <label class="form-check-label fs-0" for="inlineCheckbox936">其他症狀</label>
-              <input class="text-secondary ml-3 p-1" type="text" value="輸入內容">
-            </div>
-          </div>
+
+          <div id="reportDiseaseDartHtml"></div>
+          <script defer src="../dart/jsCdc.dart.js"></script>
+
+
           <div class="ml-3 mt-3 mb-2 font-weight-bold">警示徵象</div>
           <div class="ml-3 mr-10 mb-3">腹部疼痛及壓痛、粘膜出血、持續性嘔吐、是睡、躁動不安、臨床上體液積蓄（腹水、胸水...）、肝臟腫大超過肋骨下緣2公分、血比容增加伴隨血小板急速下降
           </div>
