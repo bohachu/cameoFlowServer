@@ -1,3 +1,13 @@
+== 20191126 11:10 50m start coding ==
+todo radio 的 list 數量要動態
+todo radio 裡面的 id 編號命名要動態
+
+== 20191126 7:48 60min start coding ==
+要讓所有的程式碼片段可以產生出我們要的東西，然後比對排版差異在哪
+先做一次全面複製、插入，然後再一一區分片段
+08:41 已經用 strHtml1 to strHtml14 取代
+接下來的階段就是要用 json 生成 html 看看中間怎麼做？
+
 == 20191124 21:14 30min start coding ==
 現在要開始讓片段片段可以產生 html code 嵌入到 reportDisease.html 裡面去
 
@@ -10,7 +20,7 @@ mac chrome disable cors
 == 20191124 10:47 cdc coding logs
 已經把 cdc hdFlow 兩個路徑獨立出來了，往後可以交互參照共用元件也沒有問題
 11:16 已經可以 reportDisease.html 抓取 json file from url 並且 console log 顯示（可惜是亂碼，還要找找原因）
-todo 可以用 debugger 看看抓回來是中文還是亂碼，然後做一些判斷
+done 可以用 debugger 看看抓回來是中文還是亂碼，然後做一些判斷
 Content-type: application/json; charset=utf-8
 
 == 20191124 10:14 疾管署 coding logs
