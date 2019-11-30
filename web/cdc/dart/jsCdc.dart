@@ -33,6 +33,29 @@ void main() async {
    */
   strHtml0 = templateRadio(lst[0]);
 
+  /*
+  {
+  "type": "checkbox",
+  "title": "Json001 主要症狀",
+  "list": [
+  "出血症狀",
+  "皮疹/紅疹/出疹",
+  "肌肉痛",
+  "後眼窩痛",
+  "發燒",
+  "嘔吐",
+  "頭痛",
+  "關節痛",
+  "噁心",
+  "白血球減少",
+  "血壓帶試驗陽性",
+  "骨頭痛"
+  ],
+  "input": "其他症狀"
+  },
+  */
+  strHtml1 = templateCheckbox(lst[1]);
+
   /* radio 2
   {
     "type": "radio",
@@ -60,6 +83,8 @@ void main() async {
   },
    */
   strHtml3 = templateRadio(lst[3]);
+
+  strHtml12 =  templateCheckbox(lst[7]);
 
   querySelector('#reportDiseaseDartHtml').setInnerHtml(
       strHtml0 +
@@ -91,13 +116,22 @@ String templateRadio(Map map) {
 
   String strTitle = map['title'];
   String strText = map['text'];
-  String strTip = map['tip']; //todo
-  List lstList = map['list'];
 
-  String strRadioList='';
+  String strTip = map['tip'];
+  String strHtmlTip = '';
+  if (strTip != null) {
+    strHtmlTip = '''
+      <span tooltip=$strTip flow="right">
+        <i class="fas fa-exclamation-circle" style="color: #00a65a;"></i>
+      </span>
+    ''';
+  }
+
+  List lstList = map['list'];
+  String strList = '';
   int intRandomId = Random().nextInt(99999);
   for (int i = 0; i < lstList.length; i++) {
-    strRadioList += '''
+    strList += '''
                 <div class="custom-control custom-radio custom-control-inline">
                   <input class="custom-control-input" id="customRadioInline${intRandomId + i}" type="radio"
                          name="customRadioInline$intRandomId">
@@ -110,8 +144,8 @@ String templateRadio(Map map) {
           <div class="row ml-1 mr-1">
               <div class="form-group">
                 <label class="fs-0 font-weight-bold text-black">$strTitle</label><br/>
-                <div class="ml-1 mb-1">$strText</div>
-                $strRadioList
+                <div class="ml-1 mb-1">$strText $strHtmlTip</div>
+                  $strList
               </div>
           </div>
     ''';
@@ -119,8 +153,46 @@ String templateRadio(Map map) {
   return strHtml;
 }
 
+String templateCheckbox(Map map) {
+  String strType = map['type'];
+  if (strType != 'checkbox') return '';
+  String strTitle = map['title'];
+  String strHtml = '';
+  String strInput = map['input'];
+
+  List lstList = map['list'];
+  String strList = '';
+  int intRandomId = Random().nextInt(99999);
+  for (int i = 0; i < lstList.length; i++) {
+    strList += '''
+            <div class="form-check form-check-inline col-md-3 pb-2">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox${intRandomId + i}" value="option${intRandomId}">
+              <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId + i}">${lstList[i]}</label>
+            </div>
+    ''';
+  }
+  strInput = '''            
+  <div class="form-check form-check-inline col-md-8 pb-2">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox${intRandomId+200}" value="option${intRandomId}">
+    <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId+200}">$strInput</label>
+    <input class="text-secondary ml-3 p-1" type="text" value="輸入內容">
+  </div>
+  ''';
+
+  strHtml = '''
+          <div class="row pl-5 pr-5 pt-4 pb-4" style="background-color: #F2F2F2">
+            $strList
+            $strInput
+          </div>
+          ''';
+
+  return strHtml;
+}
+
 String strHtml0 = '';
 
+String strHtml1 = '';
+/*
 String strHtml1 = '''
           <div class="row pl-5 pr-5 pt-4 pb-4" style="background-color: #F2F2F2">
             <div class="form-check form-check-inline col-md-4 pb-2">
@@ -178,6 +250,7 @@ String strHtml1 = '''
             </div>
           </div>
           ''';
+ */
 
 /*
 String strHtml2 = '''
@@ -410,6 +483,9 @@ String strHtml11 = '''
             </div>
           </div>
 ''';
+
+String strHtml12='';
+/*
 String strHtml12 = '''
           <div class="custom-control custom-checkbox ml-3 mb-2">
             <input class="custom-control-input" id="customCheck1139" type="checkbox">
@@ -447,6 +523,8 @@ String strHtml12 = '''
             </div>
           </div>
 ''';
+ */
+
 String strHtml13 = '''
           <div class="mt-8 mb-4">
             <button type="button" class="btn pl-3 pr-3 text-white ml-3"

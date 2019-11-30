@@ -1,6 +1,71 @@
+14:51 radio 的全部轉換看看 radio ok
+14:59 現在可以先改 checkbox
+15:39 checkbox ok, 現在開始弄 select
+todo checkbox 有可能沒有 input 其他欄位，要修正
+todo select 欄位製作之前，可能要能夠讓 json 合併變成同一個檔案之後，比較方便進行編輯作業
+
+== start coding 20191128 14:21 ==
+18:48 接下去要編號所有的 radio 把全部的 radio 都弄成動態生成
+radio
+
+
+checkbox
+select
+h2
+
+~~
+
+[疾管署] 給泊寰 74疾病相關的資料文件都統一放在這個資料夾以便後續查找喔 謝謝
+收件匣
+x
+
+Goldie Chen
+11月22日 週五 上午10:24 (6 天前)
+寄給 all、 曹一撇
+
+疾管署 和74疾病有關的資料文件都統一放在這個資料夾
+以便後續查找喔 謝謝
+
+(20) 74個疾病畫面：
+https://drive.google.com/drive/folders/1dOi53RPfn0TJ3QjU1w9D-yfvGlVEcBgP
+
+～～
+
+這是目前整理的資訊和素材。
+
+疾病畫面總共74個，分為兩類：無附加資訊欄位使用共同模組42個、有附加資訊有各別欄位32個
+
+目標要做74個這種畫面，HTML畫面[以登革熱畫面做為模板]：
+https://cameo.tw/cdc//20190909/pages/2.1Report_dengue.html
+畫面HTML資料夾：
+https://drive.google.com/drive/folders/1zd59r1CoM-02vO0dA0JjsUSH6rsY50Fh?usp=sharing
+
+第一類 無附加資訊42個病的試算表：模組相同、但欄位底下的選項(主要症狀)會不同
+https://docs.google.com/spreadsheets/d/1yNS2iINF8Ib_0vVZ5NFrlOn6uWigeNa4k7D_SzHwMG0/edit#gid=840589437
+
+第二類 有附加資訊32個病的試算表：（已完成：登革熱、淋病、梅毒、流感併發重症這4個病不用再做）各疾病通報欄位要看各個頁籤
+***11/22 lele再補已經做好病的畫面URL
+https://docs.google.com/spreadsheets/d/1ZtWrPpgUG19375ozuzeMMbuGONyKQc2mY6mmJXD_8y4/edit#gid=1054066465
+
+下面這塊樂樂會需要有技術夥伴和Harry一起幫忙釐清會比較快：
+「可能可以在找到人之前, 先行規劃是否有一些共用元件的命名原則 e.g. 長一個資料表, id要叫什麼
+以及是否74個有階層關係, 有高階的/抽象的第一階版型, 以簡併與共用一些版型」
+
+
+
+
+== 20191127 18:38 20m start coding ==
+18:48 done radio 加入 tips
+18:48 接下去要編號所有的 radio 把全部的 radio 都弄成動態生成
+radio
+checkbox
+select
+h2
+
+
 == 20191126 11:10 50m start coding ==
-todo radio 的 list 數量要動態
-todo radio 裡面的 id 編號命名要動態
+done radio 的 list 數量要動態
+done radio 裡面的 id 編號命名要動態
 
 == 20191126 7:48 60min start coding ==
 要讓所有的程式碼片段可以產生出我們要的東西，然後比對排版差異在哪
