@@ -31,7 +31,7 @@ void main() async {
     ]
   },
    */
-  strHtml0 = templateRadio(lst[0]);
+  strHtml0 = jsonToHtmlRadio(lst[0]);
 
   /*
   {
@@ -54,7 +54,7 @@ void main() async {
   "input": "其他症狀"
   },
   */
-  strHtml1 = templateCheckbox(lst[1]);
+  strHtml1 = jsonToHtmlCheckbox(lst[1]);
 
   /* radio 2
   {
@@ -67,7 +67,7 @@ void main() async {
     ]
   },
    */
-  strHtml2 = templateRadio(lst[2]);
+  strHtml2 = jsonToHtmlRadio(lst[2]);
 
   /* radio 3
   {
@@ -82,9 +82,9 @@ void main() async {
     ]
   },
    */
-  strHtml3 = templateRadio(lst[3]);
+  strHtml3 = jsonToHtmlRadio(lst[3]);
 
-  strHtml12 =  templateCheckbox(lst[7]);
+  strHtml12 = jsonToHtmlCheckbox(lst[7]);
 
   querySelector('#reportDiseaseDartHtml').setInnerHtml(
       strHtml0 +
@@ -110,14 +110,13 @@ void updateTables(lstTrelloTable) {
 }
 */
 
-String templateRadio(Map map) {
+String jsonToHtmlRadio(Map map) {
   String strType = map['type'];
-  if (strType != 'radio') return '';
-
   String strTitle = map['title'];
   String strText = map['text'];
-
   String strTip = map['tip'];
+
+  if (strType != 'radio') return '';
   String strHtmlTip = '';
   if (strTip != null) {
     strHtmlTip = '''
@@ -133,7 +132,7 @@ String templateRadio(Map map) {
   for (int i = 0; i < lstList.length; i++) {
     strList += '''
                 <div class="custom-control custom-radio custom-control-inline">
-                  <input class="custom-control-input" id="customRadioInline${intRandomId + i}" type="radio"
+                  <input type="radio" class="custom-control-input" id="customRadioInline${intRandomId + i}" 
                          name="customRadioInline$intRandomId">
                   <label class="custom-control-label fs-0" for="customRadioInline${intRandomId + i}">${lstList[i]}</label>
                 </div>
@@ -153,34 +152,34 @@ String templateRadio(Map map) {
   return strHtml;
 }
 
-String templateCheckbox(Map map) {
+String jsonToHtmlCheckbox(Map map) {
   String strType = map['type'];
-  if (strType != 'checkbox') return '';
   String strTitle = map['title'];
-  String strHtml = '';
   String strInput = map['input'];
-
   List lstList = map['list'];
+  
+  if (strType != 'checkbox') return '';
+  String strHtml = '';
   String strList = '';
   int intRandomId = Random().nextInt(99999);
   for (int i = 0; i < lstList.length; i++) {
     strList += '''
-            <div class="form-check form-check-inline col-md-3 pb-2">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox${intRandomId + i}" value="option${intRandomId}">
+            <div class="form-check form-check-inline pb-2">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox${intRandomId + i}" value="option${intRandomId + i}">
               <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId + i}">${lstList[i]}</label>
             </div>
     ''';
   }
   strInput = '''            
-  <div class="form-check form-check-inline col-md-8 pb-2">
-    <input class="form-check-input" type="checkbox" id="inlineCheckbox${intRandomId+200}" value="option${intRandomId}">
-    <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId+200}">$strInput</label>
+  <div class="form-check form-check-inline pb-2">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox${intRandomId + 200}" value="option${intRandomId}">
+    <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId + 200}">$strInput</label>
     <input class="text-secondary ml-3 p-1" type="text" value="輸入內容">
   </div>
   ''';
 
   strHtml = '''
-          <div class="row pl-5 pr-5 pt-4 pb-4" style="background-color: #F2F2F2">
+          <div class="row pl-4 pr-4 pt-4 pb-4" style="background-color: #F2F2F2">
             $strList
             $strInput
           </div>
@@ -484,7 +483,7 @@ String strHtml11 = '''
           </div>
 ''';
 
-String strHtml12='';
+String strHtml12 = '';
 /*
 String strHtml12 = '''
           <div class="custom-control custom-checkbox ml-3 mb-2">

@@ -1,8 +1,69 @@
+20191130 18:36
+todo list:
+3* 20m h2 coding
+3* 20m h3 coding
+1* 15m select 欄位製作之前，可能要能夠讓 json 合併變成同一個檔案之後，比較方便進行編輯作業
+2* 40m select coding
+2* 20m input coding
+2* 20m date coding
+2* 20m addRecord coding
+2* 60m 直接掃描一個完整的 json file 純動態產生 html
+2* 15m checkbox 有可能沒有 input 其他欄位，要修正
+2* 60m 拆分兩個 json 變成可以 import json file 動態產生 html
+2* 30m 納入 梅毒 json 進行測試
+2* 30m 納入 鼠疫 json 進行測試
+2* 30m 動態網址測試 http://cameo.tw/cdc/reportDiseaseAll.html?strJsonFile=reportDisease鼠疫_caro.json 就可以看到完成的結果
+
+== 20191130 17:04 1h start coding ==
+17:06 先確定現在用的 bootstrap 版本號碼: Bootstrap (v4.3.1)
+17:09 COOL: 已經確定 bootstrap 4 可以直接學習，所以根據我想要的東西，全部都重新學習，就可以避免陷阱，要能看懂每一行 bootstrap 命令，就可以自在組合了
+done bootstrap 如何用拖拉的方式做出我要的畫面？不要受限於現在已經有的畫面元件？
+
+todo 學習每一個有用到的 bootstrap 命令：https://www.w3schools.com/bootstrap4/
+todo angularDart 是不是可以讓整個 coding 速度加快？元件化？
+17:11 學習 angularDart 把可以用的部分抓下來參考
+17:26 大概知道 angularDart 應該是可以用，但還無法融入現在的設計，原因是：顯示元件google material與bootstrap 不知道是否相容
+
+data(.json) + template(.html) + bootstrapCss ==logic(.dart)==> finalHtml
+
+17:44 大概看完 angular and vue, 確定未來使用 vue 是比較容易入門的選擇，瞬間可以導入
+但是現在因為沒有辦法讓 bootstrap 元件很容易跟 vue 結合，還不太熟悉
+所以目前還是讓我自己組合元件撰寫 logic 轉換器比較簡單
+
+17:46 要先學會 radio 相關的所有 bootstrap 命令是怎麼一回事，這樣才不會被牽著鼻子跑
+Bootstrap has a wide range of responsive margin and padding utility classes. They work for all breakpoints:
+
+xs (<=576px), sm (>=576px), md (>=768px), lg (>=992px) or xl (>=1200px))
+The classes are used in the format:
+{property}{sides}-{size} for xs & {property}{sides}-{breakpoint}-{size} for sm, md, lg, and xl.
+m - sets margin
+p - sets padding
+t - sets margin-top or padding-top
+b - sets margin-bottom or padding-bottom
+l - sets margin-left or padding-left
+r - sets margin-right or padding-right
+x - sets both padding-left and padding-right or margin-left and margin-right
+y - sets both padding-top and padding-bottom or margin-top and margin-bottom
+blank - sets a margin or padding on all 4 sides of the element
+0 - sets margin or padding to 0
+1 - sets margin or padding to .25rem (4px if font-size is 16px)
+2 - sets margin or padding to .5rem (8px if font-size is 16px)
+3 - sets margin or padding to 1rem (16px if font-size is 16px)
+4 - sets margin or padding to 1.5rem (24px if font-size is 16px)
+5 - sets margin or padding to 3rem (48px if font-size is 16px)
+auto - sets margin to auto
+
+刪除了一些 col-md 這類的 checkbox 描述，讓流動性更好了，不會再發生奇怪斷行，真是太好了
+
+18:20 + i
++ 學習了 bootstrap 排版系統的一些命令，並且可以自由的進行排版
++ vue 應該是個很有趣的東西，可以進一步實驗並且運用，輕量化讓工作變簡單的可能性是有的
+
+
+
 14:51 radio 的全部轉換看看 radio ok
 14:59 現在可以先改 checkbox
 15:39 checkbox ok, 現在開始弄 select
-todo checkbox 有可能沒有 input 其他欄位，要修正
-todo select 欄位製作之前，可能要能夠讓 json 合併變成同一個檔案之後，比較方便進行編輯作業
 
 == start coding 20191128 14:21 ==
 18:48 接下去要編號所有的 radio 把全部的 radio 都弄成動態生成
