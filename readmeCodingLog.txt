@@ -1,18 +1,122 @@
-20191130 18:36
 todo list:
+debug 60m 梅毒、鼠疫，還有一些元件欄位沒有正確顯示，要核對
+debug 60m 排版問題：有三個元件在 one row 的目前沒有辦法，都是直接斷行，要改為 one row
+debug 30m 縣市、國家，字體粗體不一樣 input 元件
+debug 50m date (無法彈跳視窗 popup datepicker window，原因不明）,這個已經有錯誤訊息在 debug 視窗可以看
+
+== 20191130 23:19 總算成功了，可以顯示 strDiseaseName ==
+done 納入 梅毒 json 進行測試
+done 納入 鼠疫 json 進行測試
+done 動態網址測試 http://cameo.tw/cdc/reportDiseaseAll.html?strJsonFile=reportDisease鼠疫_caro.json 就可以看到完成的結果
+
+== RegExp 23:09 成功了 ==
+void main() {
+  String str = "reportDisease鼠疫_caro.json";
+  RegExp reg = new RegExp(r"reportDisease([^\u0000]+)(_[^\u0000]+)");
+  Iterable<Match> matches = reg.allMatches(str);
+  for (Match m in matches) {
+    print('group0');
+    print(m.group(0));
+    print('group1');
+    print(m.group(1));
+    print('group2');
+    print(m.group(2));
+  }
+}
+～～ output
+group0
+reportDisease鼠疫_caro.json
+group1
+鼠疫
+group2
+_caro.json
+～～
+
+== 20191130 21:44 1h coding ==
+21:48 done addRecord / 2* 20m addRecord coding
+
+鼠疫、梅毒，json file 測試網址在此
+https://drive.google.com/drive/u/0/folders/1gkyKcLt0kuJxlp6mEsPoZEzTCmGW-oiJ
+
+看來得先做 url 變換測試才能任意切換測試檔案了
+22:33 已經可以切換三種病
+  http://localhost:53322/cdc/pages/reportDisease.html?strReportDiseaseJsonFile=../json/reportDisease登革熱_bowen.json
+  http://localhost:53322/cdc/pages/reportDisease.html?strReportDiseaseJsonFile=../json/reportDisease鼠疫_caro.json
+  http://localhost:53322/cdc/pages/reportDisease.html?strReportDiseaseJsonFile=../json/reportDisease梅毒_caro.json
+但是病的名稱尚未顯示正確，所以還要改病名稱
+
+2.1 提取中文字符
+首先来看个提取中文字符的例子
+用到了RegExp类和迭代Match
+
+void main() {
+  String str = "Dart中文社区";
+  RegExp reg = new RegExp(r"[\u4e00-\u9fa5]+");
+  Iterable<Match> matches = reg.allMatches(str);
+
+  for (Match m in matches) {
+    print(m.group(0));
+  }
+}
+运行结果：
+
+中文社区
+2.2 网络小说内容页采集（提取）
+可能之前的例子实用性不高
+那么现在来个网络小说采集的例子
+采集数据的过程也就几行代码，不多做解释
+
+import 'dart:io';
+
+void main() {
+  new HttpClient().getUrl(Uri.parse("http://www.biquge.la/book/32/24387.html"))
+  .then((HttpClientRequest request) => request.close())
+  .then((HttpClientResponse response) {
+      response.transform(new SystemEncoding().decoder).listen((requestText) {
+        //此时已经请求到HTML格式网页数据
+        //print(requestText);
+
+        //不区分大小写，匹配在<div class="con_top">标签中的标题
+        //因为匹配的的数据中有需要转义的""双引号，所以字符串没有用"r"修饰符
+        //提取的是书名，定位唯一位置，因此没有使用allMatches函数
+        Match match = new RegExp("booktitle\\s+=\\s+"(.*)".*readtitle\\s+=\\s+"\\s+(.*)"").firstMatch(requestText);
+
+        if(match != null) {
+          //分组1为书名，分组2为章节名
+          print("书名：${match.group(1)}\n章节：${match.group(2)}");
+        }
+      });
+  });
+}
+booktitle\s+=\s+”(.*)”.*readtitle\s+=\s+”\s+(.*)”
+
+booktitle        #匹配字符串
+\s+              #源码中，=赋值的时候，前后可能有空字符
+=                #匹配=
+\s+              #源码中，=赋值的时候，前后可能有空字符
+"(.*)"           #双引号内为group(1)，书名
+.*               #查看源码可以知道，booktile和readtitle两个字符串之间没有换行符
+readtitle        #匹配字符串
+\s+              #源码中，=赋值的时候，前后可能有空字符
+=                #匹配=
+\s+              #源码中，=赋值的时候，前后可能有空字符
+"\s+(.*)"        #双引号内为group(2)，章节名
+
+
+
+
+
+== 20191130 18:54
+done 12min 30m 建構一個可以對比模板的掃描程式碼
+19:06 to 19:15 done 9m select 欄位製作之前，可能要能夠讓 json 合併變成同一個檔案之後，比較方便進行編輯作業
 3* 20m h2 coding
-3* 20m h3 coding
-1* 15m select 欄位製作之前，可能要能夠讓 json 合併變成同一個檔案之後，比較方便進行編輯作業
-2* 40m select coding
-2* 20m input coding
-2* 20m date coding
-2* 20m addRecord coding
-2* 60m 直接掃描一個完整的 json file 純動態產生 html
-2* 15m checkbox 有可能沒有 input 其他欄位，要修正
-2* 60m 拆分兩個 json 變成可以 import json file 動態產生 html
-2* 30m 納入 梅毒 json 進行測試
-2* 30m 納入 鼠疫 json 進行測試
-2* 30m 動態網址測試 http://cameo.tw/cdc/reportDiseaseAll.html?strJsonFile=reportDisease鼠疫_caro.json 就可以看到完成的結果
+19:36 done h2 h3 以及 radio null, checkbox null, checkbox 最後沒有其他欄位，都已經修正
+19:47 done select
+19:56 done input
+20:18 done date (無法彈跳視窗 popup datepicker window，原因不明）
+
+==
+20191130 18:36
 
 == 20191130 17:04 1h start coding ==
 17:06 先確定現在用的 bootstrap 版本號碼: Bootstrap (v4.3.1)

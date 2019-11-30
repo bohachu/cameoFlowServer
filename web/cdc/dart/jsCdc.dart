@@ -5,120 +5,167 @@ import '../../common/dart/httpGet.dart';
 import 'dart:js';
 import 'package:http/http.dart';
 
+String jsonToHtmlAddRecord(Map map) {
+  String strType = map['type'];
+  String strTitle = map['title'] ?? '';
+  if (strType != 'addRecord') return '';
+  String strHtml = '''
+    <a href="#">$strTitle</a><br/>
+  ''';
+  return strHtml;
+}
+
 void main() async {
-  window.console.log('jsCdc.dart 001');
-  String strJson = await httpGet('../json/reportDisease登革熱.json');
-  List lst = jsonDecode(strJson);
-
-  final NodeValidatorBuilder nodeValidator = NodeValidatorBuilder.common()
-    ..allowElement('a', attributes: ['href'])
-    ..allowElement('div', attributes: ['style'])
-    ..allowElement('img', attributes: ['src'])
-    ..allowElement('button', attributes: ['style'])
-    ..allowElement('input', attributes: ['data-options'])
-    ..allowElement('span', attributes: ['flow', 'tooltip'])
-    ..allowElement('i', attributes: ['style'])
-    ..allowHtml5();
-
-  /* radio 0
-  lst[0]=={
-    "type": "radio",
-    "title": "臨床症狀 Json1",
-    "text": "有無症狀 Json1",
-    "list": [
-      "有 Json1",
-      "無 Json1"
-    ]
-  },
-   */
-  strHtml0 = jsonToHtmlRadio(lst[0]);
-
+  window.console.log('jsCdc.dart/main()');
+  Map map = getUriParameters();
+  String strReportDiseaseJsonFile = map['strReportDiseaseJsonFile'];
+  String strJson = '';
+  if (strReportDiseaseJsonFile == null) {
+    strReportDiseaseJsonFile = '../json/reportDisease登革熱_bowen.json';
+  } else {
+    strReportDiseaseJsonFile = Uri.decodeFull(strReportDiseaseJsonFile);
+  }
   /*
-  {
-  "type": "checkbox",
-  "title": "Json001 主要症狀",
-  "list": [
-  "出血症狀",
-  "皮疹/紅疹/出疹",
-  "肌肉痛",
-  "後眼窩痛",
-  "發燒",
-  "嘔吐",
-  "頭痛",
-  "關節痛",
-  "噁心",
-  "白血球減少",
-  "血壓帶試驗陽性",
-  "骨頭痛"
-  ],
-  "input": "其他症狀"
-  },
+  http://localhost:53322/cdc/pages/reportDisease.html?strReportDiseaseJsonFile=../json/reportDisease登革熱_bowen.json
+  http://localhost:53322/cdc/pages/reportDisease.html?strReportDiseaseJsonFile=../json/reportDisease鼠疫_caro.json
+  http://localhost:53322/cdc/pages/reportDisease.html?strReportDiseaseJsonFile=../json/reportDisease梅毒_caro.json
   */
-  strHtml1 = jsonToHtmlCheckbox(lst[1]);
-
-  /* radio 2
-  {
-    "type": "radio",
-    "title": "Json002 警示癥象",
-    "text": "腹部疼痛及壓痛、持續性嘔吐、臨床上體液蓄積（腹水、胸水……）、黏膜出血、嗜睡/躁動不安、肝臟腫大超出肋骨下緣2公分、血比容增加（上升20%）伴隨血小板急速下降",
-    "list": [
-      "有(符合以上任一項)",
-      "無"
-    ]
-  },
-   */
-  strHtml2 = jsonToHtmlRadio(lst[2]);
-
-  /* radio 3
-  {
-    "type": "radio",
-    "title": "Json003 通報時檢驗資料",
-    "text": "登革熱快速檢驗結果",
-    "tip": "．本檢驗結果必須為使用具有衛生福利部醫療器材許可證之登革熱NS1快速檢驗試劑之檢驗結果",
-    "list": [
-      "NS1陽性",
-      "NS1陰性",
-      "未確定"
-    ]
-  },
-   */
-  strHtml3 = jsonToHtmlRadio(lst[3]);
-
-  strHtml12 = jsonToHtmlCheckbox(lst[7]);
-
-  querySelector('#reportDiseaseDartHtml').setInnerHtml(
-      strHtml0 +
-          strHtml1 +
-          strHtml2 +
-          strHtml3 +
-          strHtml4 +
-          strHtml5 +
-          strHtml6 +
-          strHtml7 +
-          strHtml8 +
-          strHtml9 +
-          strHtml10 +
-          strHtml11 +
-          strHtml12 +
-          strHtml13,
-      validator: nodeValidator);
+  window.console.log('jsCdc.dart/strReportDiseaseJsonFile: $strReportDiseaseJsonFile');
+  strJson = await httpGet(strReportDiseaseJsonFile);
+  String strDiseaseName = getDiseaseName(strReportDiseaseJsonFile);
+  List lstJson = jsonDecode(strJson);
+  String strHtml = await scanJsonToHtml(lstJson);
+  setInnerHtml(strHtml, strDiseaseName);
 }
 
-/*
-void updateTables(lstTrelloTable) {
-  context.callMethod('funcReportDiseaseJsonToHtml', [JsObject.jsify(lstTrelloTable)]);
+String getDiseaseName(String strReportDiseaseJsonFile) {
+  //strReportDiseaseJsonFile="reportDisease鼠疫_caro.json"
+  RegExp reg = RegExp(r"reportDisease([^\u0000]+)(_[^\u0000]+)");
+  Iterable<Match> matches = reg.allMatches(strReportDiseaseJsonFile);
+  String strDiseaseName = matches.elementAt(0).group(1);
+  return strDiseaseName;
 }
-*/
+
+void setInnerHtml(String strHtml, String strDiseaseName) {
+  final NodeValidatorBuilder nodeValidator = NodeValidatorBuilder.common()
+    ..allowElement('a', attributes: ['href'])..allowElement('div', attributes: ['style'])..allowElement('img', attributes: ['src'])..allowElement('button', attributes: ['style'])..allowElement('input', attributes: ['data-options'])..allowElement('span', attributes: ['flow', 'tooltip'])..allowElement('i', attributes: ['style'])
+    ..allowHtml5();
+  querySelector('#reportDiseaseDartHtml').setInnerHtml(strHtml, validator: nodeValidator);
+  querySelector('#strDiseaseName').setInnerHtml('您所選取要通報的疾病為：$strDiseaseName');
+}
+
+Future<String> scanJsonToHtml(List lstJson) async {
+  Map mapTypeToFunction = {
+    'radio': jsonToHtmlRadio,
+    'checkbox': jsonToHtmlCheckbox,
+    'json': jsonToHtmlImportJson,
+    'h2': jsonToHtmlH2,
+    'h3': jsonToHtmlH3,
+    'select': jsonToHtmlSelect,
+    'input': jsonToHtmlInput,
+    'date': jsonToHtmlDate,
+    'addRecord': jsonToHtmlAddRecord,
+  };
+  String strHtml = '';
+  for (int i = 0; i < lstJson.length; i++) {
+    String strType = lstJson[i]['type'];
+    if (mapTypeToFunction[strType] != null) {
+      strHtml += await mapTypeToFunction[strType](lstJson[i]);
+    }
+  }
+  return strHtml;
+}
+
+String jsonToHtmlDate(Map map) {
+  String strType = map['type'];
+  String strTitle = map['title'] ?? '';
+  if (strType != 'date') return '';
+  int intRandomId = Random().nextInt(99999);
+  String strHtml = '''
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="fs-0" for="datepicker$intRandomId">$strTitle</label>
+                <input class="form-control datetimepicker text-secondary flatpickr-input active" id="datepicker$intRandomId" type="text" value="年/月/日" data-options="{&quot;dateFormat&quot;:&quot;y/m/d&quot;}" placeholder="y/m/d" readonly="readonly">
+              </div>
+            </div>  
+            ''';
+  return strHtml;
+}
+
+String jsonToHtmlInput(Map map) {
+  String strType = map['type'];
+  String strTitle = map['title'] ?? '';
+  if (strType != 'input') return '';
+  int intRandomId = Random().nextInt(99999);
+  String strHtml = '''
+  <div class="col-lg-3">
+    <div class="form-group">
+      <label class="fs-0" for="name$intRandomId">$strTitle</label>
+      <input class="form-control text-secondary" id="name$intRandomId" type="text" value="輸入內容">
+    </div>
+  </div>
+          ''';
+  return strHtml;
+}
+
+String jsonToHtmlSelect(Map map) {
+  String strType = map['type'];
+  String strTitle = map['title'] ?? '';
+  List lstList = map['list'];
+
+  if (strType != 'select') return '';
+  String strHtml = '';
+  String strList = '';
+  int intRandomId = Random().nextInt(99999);
+  strList += '<option>輸入內容</option>';
+  for (int i = 0; i < lstList.length; i++) {
+    strList += '<option>${lstList[i]}</option>';
+  }
+  strHtml = '''
+          <div class="col-lg-6">
+          <label class="fs-0" for="formControlSelect${intRandomId}">$strTitle</label><br/>
+          <select class="form-control text-secondary" id="formControlSelect${intRandomId}">
+            $strList
+          </select>
+          </div>
+          ''';
+  return strHtml;
+}
+
+String jsonToHtmlH2(Map map) {
+  String strHtml = '';
+  String strType = map['type'];
+  String strTitle = map['title'];
+  if (strType != 'h2') return '';
+  strHtml = '''<hr/><label class="fs-1 font-weight-bold text-black">$strTitle</label><br/>''';
+  return strHtml;
+}
+
+String jsonToHtmlH3(Map map) {
+  String strHtml = '';
+  String strType = map['type'];
+  String strTitle = map['title'];
+  if (strType != 'h3') return '';
+  strHtml = '''<label class="fs-0 font-weight-bold text-black">$strTitle</label><br/>''';
+  return strHtml;
+}
+
+Future<String> jsonToHtmlImportJson(Map map) async {
+  String strJson = await httpGet(map['file']);
+  List lstJson = jsonDecode(strJson);
+  String strHtml = await scanJsonToHtml(lstJson);
+  return strHtml;
+}
 
 String jsonToHtmlRadio(Map map) {
   String strType = map['type'];
-  String strTitle = map['title'];
-  String strText = map['text'];
-  String strTip = map['tip'];
+  String strTitle = map['title'] ?? '';
+  String strText = map['text'] ?? '';
+  String strTip = map['tip'] ?? '';
 
   if (strType != 'radio') return '';
   String strHtmlTip = '';
-  if (strTip != null) {
+  if (strTip != '') {
     strHtmlTip = '''
       <span tooltip=$strTip flow="right">
         <i class="fas fa-exclamation-circle" style="color: #00a65a;"></i>
@@ -154,10 +201,10 @@ String jsonToHtmlRadio(Map map) {
 
 String jsonToHtmlCheckbox(Map map) {
   String strType = map['type'];
-  String strTitle = map['title'];
-  String strInput = map['input'];
+  String strTitle = map['title'] ?? '';
+  String strInput = map['input'] ?? '';
   List lstList = map['list'];
-  
+
   if (strType != 'checkbox') return '';
   String strHtml = '';
   String strList = '';
@@ -170,18 +217,22 @@ String jsonToHtmlCheckbox(Map map) {
             </div>
     ''';
   }
-  strInput = '''            
-  <div class="form-check form-check-inline pb-2">
-    <input class="form-check-input" type="checkbox" id="inlineCheckbox${intRandomId + 200}" value="option${intRandomId}">
-    <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId + 200}">$strInput</label>
-    <input class="text-secondary ml-3 p-1" type="text" value="輸入內容">
-  </div>
-  ''';
+
+  String strHtmlInput = '';
+  if (strInput != '') {
+    strHtmlInput = '''            
+    <div class="form-check form-check-inline pb-2">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox${intRandomId + 200}" value="option${intRandomId}">
+      <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId + 200}">$strInput</label>
+      <input class="text-secondary ml-3 p-1" type="text" value="輸入內容">
+    </div>
+    ''';
+  }
 
   strHtml = '''
           <div class="row pl-4 pr-4 pt-4 pb-4" style="background-color: #F2F2F2">
             $strList
-            $strInput
+            $strHtmlInput
           </div>
           ''';
 
