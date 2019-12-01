@@ -7,7 +7,7 @@ refactorong 運用 cpd 降低重複次數
 現在挑戰 cpd 20
 pmd cpd --minimum-tokens 20 --files ./jsCdc.dart --language dart
 13:48 done refactoring h2 h3
-
+stop coding 13:56
 
 == 20191201 11:03 不得了！我們終於有 duplicated code 殺手工具了！
 pmd cpd --minimum-tokens 40 --files ./jsCdc.dart --language dart
