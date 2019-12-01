@@ -1,8 +1,31 @@
+== 20191201 12:58
+jsCdc.dart 247 lines
+refactorong 運用 cpd 降低重複次數
+13:19 已經完成 class refactoring radio 現在開始弄 checkbox
+13:31 checkbox 也已經 refactoring to class
+13:40 done: pmd cpd --minimum-tokens 40 --files ./jsCdc.dart --language dart
+現在挑戰 cpd 20
+pmd cpd --minimum-tokens 20 --files ./jsCdc.dart --language dart
+13:48 done refactoring h2 h3
+
+
+== 20191201 11:03 不得了！我們終於有 duplicated code 殺手工具了！
+pmd cpd --minimum-tokens 40 --files ./jsCdc.dart --language dart
+pmd cpd --minimum-tokens 20 --files ./jsCdc.dart --language html
+
 todo list:
 debug 60m 梅毒、鼠疫，還有一些元件欄位沒有正確顯示，要核對
 debug 60m 排版問題：有三個元件在 one row 的目前沒有辦法，都是直接斷行，要改為 one row
 debug 30m 縣市、國家，字體粗體不一樣 input 元件
 debug 50m date (無法彈跳視窗 popup datepicker window，原因不明）,這個已經有錯誤訊息在 debug 視窗可以看
+todo h4 tag
+todo radio with input
+todo radio with tip
+todo radio with date
+todo checkbox with list pair : input or checkbox
+todo h2 with text
+
+
 
 == 20191130 23:19 總算成功了，可以顯示 strDiseaseName ==
 done 納入 梅毒 json 進行測試
