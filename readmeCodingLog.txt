@@ -1,3 +1,36 @@
+== start coding 20191201 17:04 ==
+done 17:14 已經支援 梅毒 h4 tag
+接下去是處理梅毒 list input checkbox 混搭
+todo checkbox with list pair : input or checkbox
+http://localhost:53322/cdc/pages/reportDisease.html?strReportDiseaseJsonFile=../json/reportDisease梅毒_caro.json
+http://localhost:53322/cdc/pages/reportDisease.html?strReportDiseaseJsonFile=../json/reportDisease登革熱_bowen.json
+http://localhost:53322/cdc/pages/reportDisease.html?strReportDiseaseJsonFile=../json/reportDisease鼠疫_caro.json
+
+~~
+
+todo list:
+
+3*
+todo radio with input
+todo radio with tip
+todo radio with date
+todo h2 with text
+todo add h4 tag
+
+2*
+debug 60m 排版問題：有三個元件在 one row 的目前沒有辦法，都是直接斷行，要改為 one row
+
+1*
+debug 50m date (無法彈跳視窗 popup datepicker window，原因不明）,這個已經有錯誤訊息在 debug 視窗可以看
+debug 30m 縣市、國家，字體粗體不一樣 input 元件
+debug 60m 梅毒、鼠疫，還有一些元件欄位沒有正確顯示，要核對
+
+== 20191201 15:21
+可能要讓所有的 buildHtml 都變成 class
+15:59 已經可以讓 mapping to instance 作用，不需要轉換 mapping function
+16:48 duplicate code 清乾淨， line 276, v.s. 舊程式碼 line 247 增加了三十行，但是更乾淨容易找錯誤是有可能的
+16:57 經過清理， line 261 是目前成果，大概增加十幾行，應該非常值得,已經 refactoring 完畢準備進入下一輪 coding
+
 == 20191201 12:58
 jsCdc.dart 247 lines
 refactorong 運用 cpd 降低重複次數
@@ -13,17 +46,6 @@ stop coding 13:56
 pmd cpd --minimum-tokens 40 --files ./jsCdc.dart --language dart
 pmd cpd --minimum-tokens 20 --files ./jsCdc.dart --language html
 
-todo list:
-debug 60m 梅毒、鼠疫，還有一些元件欄位沒有正確顯示，要核對
-debug 60m 排版問題：有三個元件在 one row 的目前沒有辦法，都是直接斷行，要改為 one row
-debug 30m 縣市、國家，字體粗體不一樣 input 元件
-debug 50m date (無法彈跳視窗 popup datepicker window，原因不明）,這個已經有錯誤訊息在 debug 視窗可以看
-todo h4 tag
-todo radio with input
-todo radio with tip
-todo radio with date
-todo checkbox with list pair : input or checkbox
-todo h2 with text
 
 
 
