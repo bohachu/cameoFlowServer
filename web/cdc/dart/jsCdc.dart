@@ -7,34 +7,29 @@ class JsonToHtmlAddRecord extends JsonToHtml {
   String getTags() => '<a href="#">$strTitle</a><br/>';
 }
 
-/*
-http://localhost:53322/cdc/pages/reportDisease.html?strReportDiseaseJsonFile=../json/reportDisease登革熱_bowen.json
-http://localhost:53322/cdc/pages/reportDisease.html?strReportDiseaseJsonFile=../json/reportDisease鼠疫_caro.json
-http://localhost:53322/cdc/pages/reportDisease.html?strReportDiseaseJsonFile=../json/reportDisease梅毒_caro.json
-*/
 void main() async {
   window.console.log('jsCdc.dart/main()');
   Map map = getUriParameters();
-  String strReportDiseaseJsonFile = map['strReportDiseaseJsonFile'];
+  String strDiseaseFile = map['strDiseaseFile'];
   String strJson = '';
-  if (strReportDiseaseJsonFile == null) {
-    //strReportDiseaseJsonFile = '../json/reportDisease登革熱_bowen.json';
-    strReportDiseaseJsonFile = '../json/reportDisease梅毒_caro.json';
+  if (strDiseaseFile == null) {
+    strDiseaseFile = '../json/disease_登革熱.json';
+    //strDiseaseFile = '../json/disease_梅毒.json';
+    //strDiseaseFile='../json/disease_鼠疫.json';
   } else {
-    strReportDiseaseJsonFile = Uri.decodeFull(strReportDiseaseJsonFile);
+    strDiseaseFile = Uri.decodeFull(strDiseaseFile);
   }
-  window.console
-      .log('jsCdc.dart/strReportDiseaseJsonFile: $strReportDiseaseJsonFile');
-  strJson = await httpGet(strReportDiseaseJsonFile);
-  String strDiseaseName = getDiseaseName(strReportDiseaseJsonFile);
+  window.console.log('jsCdc.dart/strDiseaseFile: $strDiseaseFile');
+  strJson = await httpGet(strDiseaseFile);
+  String strDiseaseName = getDiseaseName(strDiseaseFile);
   List lstJson = jsonDecode(strJson);
   String strHtml = await scanJsonToHtml(lstJson);
   setInnerHtml(strHtml, strDiseaseName);
 }
 
 String getDiseaseName(String strReportDiseaseJsonFile) {
-  //strReportDiseaseJsonFile="reportDisease鼠疫_caro.json"
-  RegExp reg = RegExp(r"reportDisease([^\u0000]+)(_[^\u0000]+)");
+  //strReportDiseaseJsonFile="disease_鼠疫.json"
+  RegExp reg = RegExp(r"disease_([^\u0000]+)(.json)");
   Iterable<Match> matches = reg.allMatches(strReportDiseaseJsonFile);
   String strDiseaseName = matches.elementAt(0).group(1);
   return strDiseaseName;
@@ -50,13 +45,13 @@ void setInnerHtml(String strHtml, String strDiseaseName) {
     ..allowElement('span', attributes: ['flow', 'tooltip'])
     ..allowElement('i', attributes: ['style'])
     ..allowHtml5();
-  querySelector('#reportDiseaseDartHtml')
-      .setInnerHtml(strHtml, validator: nodeValidator);
+  querySelector('#reportDiseaseDartHtml').setInnerHtml(strHtml, validator: nodeValidator);
   querySelector('#strDiseaseName').setInnerHtml('您所選取要通報的疾病為：$strDiseaseName');
 }
 
 Future<String> scanJsonToHtml(List lstJson) async {
   Map mapTypeToCode = {
+    'diseaseName': JsonToHtmlDiseaseName(),
     'radio': JsonToHtmlRadio(),
     'checkbox': JsonToHtmlCheckbox(),
     'json': JsonToHtmlImportJson(),
@@ -78,7 +73,7 @@ Future<String> scanJsonToHtml(List lstJson) async {
 }
 
 class JsonToHtmlDate extends JsonToHtml {
-  String getTags() {
+  static String getHtmlDate(int intRandomId, String strTitle) {
     return '''
             <div class="col-lg-4">
               <div class="form-group">
@@ -88,6 +83,8 @@ class JsonToHtmlDate extends JsonToHtml {
             </div>  
             ''';
   }
+
+  String getTags() => getHtmlDate(intRandomId, strTitle);
 }
 
 class JsonToHtmlInput extends JsonToHtml {
@@ -106,9 +103,9 @@ class JsonToHtmlInput extends JsonToHtml {
 class JsonToHtmlSelect extends JsonToHtmlRadio {
   String getListTemplate(int i) => '<option>${lstList[i]}</option>';
 
-  buildAllHtml() {
+  buildHtmlAll() {
     strList = '<option>輸入內容</option>' + strList;
-    strHtml = '''
+    strHtmlAll = '''
           <div class="col-lg-6">
           <label class="fs-0" for="formControlSelect${intRandomId}">$strTitle</label><br/>
           <select class="form-control text-secondary" id="formControlSelect${intRandomId}">
@@ -122,11 +119,13 @@ class JsonToHtmlSelect extends JsonToHtmlRadio {
 class JsonToHtml {
   String strType = '';
   String strTitle = '';
+  String strText = '';
   int intRandomId;
 
   init(Map map) {
-    strType = map['type'];
-    strTitle = map['title'];
+    strType = map['type'] ?? '';
+    strTitle = map['title'] ?? '';
+    strText = map['text'] ?? '';
     intRandomId = Random().nextInt(999999);
   }
 
@@ -138,19 +137,31 @@ class JsonToHtml {
   String getTags() => '<div>Overrides html content here</div>';
 }
 
+class JsonToHtmlDiseaseName extends JsonToHtml {
+  String getTags() => strTitle;
+}
+
 class JsonToHtmlH2 extends JsonToHtml {
-  String getTags() =>
-      '<hr/><label class="fs-2 font-weight-bold text-black">$strTitle</label><br/>';
+  final strFontSize = 'fs-2';
+  final strHr = '<hr/>';
+
+  String getTags() {
+    String strResult = '$strHr<label class="$strFontSize font-weight-bold text-black">$strTitle</label><br/>';
+    if (strText != null && strText != '') {
+      strResult += '<label class="fs-0">$strText</label><br/>';
+    }
+    return strResult;
+  }
 }
 
 class JsonToHtmlH3 extends JsonToHtmlH2 {
-  String getTags() =>
-      '<hr/><label class="fs-1 font-weight-bold text-black">$strTitle</label><br/>';
+  final strFontSize = 'fs-1';
+  final strHr = '';
 }
 
 class JsonToHtmlH4 extends JsonToHtmlH2 {
-  String getTags() =>
-      '<hr/><label class="fs-0 font-weight-bold text-black">$strTitle</label><br/>';
+  final strFontSize = 'fs-0';
+  final strHr = '';
 }
 
 class JsonToHtmlImportJson {
@@ -163,21 +174,23 @@ class JsonToHtmlImportJson {
 }
 
 class JsonToHtmlRadio extends JsonToHtml {
-  String strText;
   String strTip;
   String strHtmlTip;
   String strList;
   List lstList;
-  String strHtml;
+  String strHtmlAll;
+  String strDate;
+  String strHtmlDate;
 
   init(Map map) {
     super.init(map);
-    strText = map['text'] ?? '';
     strTip = map['tip'] ?? '';
     strHtmlTip = '';
     strList = '';
     lstList = map['list'];
-    strHtml = '';
+    strHtmlAll = '';
+    strDate = map['date'];
+    strHtmlDate = '';
   }
 
   void buildTip() {
@@ -204,60 +217,91 @@ class JsonToHtmlRadio extends JsonToHtml {
                 </div>
   ''';
 
-  buildAllHtml() {
-    strHtml = '''
+  buildHtmlAll() {
+    strHtmlAll = '''
           <div class="row ml-1 mr-1">
-              <div class="form-group">
-                <label class="fs-0 font-weight-bold text-black">$strTitle</label><br/>
-                <div class="ml-1 mb-1">$strText $strHtmlTip</div>
-                  $strList
-              </div>
+            <div class="form-group">
+              <label class="fs-0 font-weight-bold text-black">$strTitle</label><br/>
+              <div class="ml-1 mb-1">$strText $strHtmlTip</div>
+                $strList
+            </div>
+            $strHtmlDate
           </div>
     ''';
   }
 
   void buildInput() {}
 
+  void buildDate() {
+    if (strDate != null && strDate != '') {
+      strHtmlDate = JsonToHtmlDate.getHtmlDate(intRandomId, strDate);
+    }
+  }
+
   String getHtml(Map map) {
     init(map);
     buildTip();
     buildList();
     buildInput();
-    buildAllHtml();
-    return strHtml;
+    buildDate();
+    buildHtmlAll();
+    return strHtmlAll;
   }
 }
 
 class JsonToHtmlCheckbox extends JsonToHtmlRadio {
-  String strInput = '';
-  String strHtmlInput = '';
+  String strInput;
+  String strHtmlInput;
 
   init(Map map) {
     super.init(map);
     strInput = map['input'] ?? '';
+    strHtmlInput = '';
   }
 
-  String getListTemplate(int i) => '''
-    <div class="form-check form-check-inline pb-2">
-    <input class="form-check-input" type="checkbox" id="inlineCheckbox${intRandomId + i}" value="option${intRandomId + i}">
-    <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId + i}">${lstList[i]}</label>
-    </div>
-  ''';
+  String getListTemplate(int i) {
+    if (lstList[i] is String) {
+      return getCheckboxWithLabel(i, lstList[i]);
+    }
+    if (lstList[i] is List) {
+      String strCheckboxType = lstList[i][0];
+      if (strCheckboxType == 'checkbox') {
+        return getCheckboxWithLabel(i, lstList[i][1]);
+      }
+      if (strCheckboxType == 'input') {
+        return getInputWithLabel(lstList[i][1]);
+      }
+    }
+    return '';
+  }
+
+  String getCheckboxWithLabel(int i, String strLabel) {
+    return '''
+      <div class="form-check form-check-inline pb-2">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox${intRandomId + i}" value="option${intRandomId + i}">
+        <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId + i}">${strLabel}</label>
+      </div>
+    ''';
+  }
+
+  String getInputWithLabel(String strLabel) {
+    return '''
+      <div class="form-check form-check-inline pb-2">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox${intRandomId + 200}" value="option${intRandomId}">
+        <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId + 200}">$strLabel</label>
+        <input class="text-secondary ml-3 p-1" type="text" value="輸入內容">
+      </div>
+    ''';
+  }
 
   void buildInput() {
     if (strInput != '') {
-      strHtmlInput = '''            
-    <div class="form-check form-check-inline pb-2">
-      <input class="form-check-input" type="checkbox" id="inlineCheckbox${intRandomId + 200}" value="option${intRandomId}">
-      <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId + 200}">$strInput</label>
-      <input class="text-secondary ml-3 p-1" type="text" value="輸入內容">
-    </div>
-    ''';
+      strHtmlInput = getInputWithLabel(strInput);
     }
   }
 
-  void buildAllHtml() {
-    strHtml = '''
+  void buildHtmlAll() {
+    strHtmlAll = '''
           <div class="row pl-4 pr-4 pt-4 pb-4" style="background-color: #F2F2F2">
             $strList
             $strHtmlInput

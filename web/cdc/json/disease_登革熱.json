@@ -1,5 +1,9 @@
 [
   {
+    "type": "diseaseName",
+    "title": "登革熱"
+  },
+  {
     "type": "radio",
     "title": "臨床症狀",
     "text": "有無症狀",
@@ -49,7 +53,7 @@
   },
   {
     "type": "json",
-    "file": "../json/reportDisease流行病學資料_bowen.json"
+    "file": "../json/disease_流行病學資料.json"
   },
   {
     "type": "h2",

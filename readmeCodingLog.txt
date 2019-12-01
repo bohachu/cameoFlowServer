@@ -1,3 +1,71 @@
+可以參考如何撰寫JSON格式：
+http://35.221.219.153:8080/cdc/json/disease_登革熱.json
+http://35.221.219.153:8080/cdc/json/disease_梅毒.json
+http://35.221.219.153:8080/cdc/json/disease_鼠疫.json
+
+Chrome Plugin: Advanced REST client (ARC) 可以編輯 JSON 並且用 POST 方式寫入伺服器：
+http://35.221.219.153:8083/
+
+預覽JSON轉換後的HTML可以用類似下面的網址達成（修改底線之後的疾病名稱即可）：
+http://35.221.219.153:8080/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_登革熱.json
+http://35.221.219.153:8080/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_梅毒.json
+http://35.221.219.153:8080/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_鼠疫.json
+
+== todo list ==
+
+2*
+建構七十四個疾病的大表，並且派工給不同的夥伴
+
+1*
+getDiseaseName 要改為讀取檔案 json diseaseName 欄位而不是 .json 檔案名稱的解析方法
+debug 50m date (無法彈跳視窗 popup datepicker window，原因不明）,這個已經有錯誤訊息在 debug 視窗可以看
+debug 30m 縣市、國家，字體粗體不一樣 input 元件
+debug 60m 排版問題：有三個元件在 one row 的目前沒有辦法，都是直接斷行，要改為 one row
+
+==20191202 01:16==
+很可惜 ace editor 失敗了
+但是 ARC chrome plugin 可以達到相同功能
+
+==
+
+mac chrome disable cors
+open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security
+file:///Users/cameo/WebstormProjects/cameoFlowServer/web/cdc/jsoneditor/html/jsonEditor.html
+done dart server and js 部署在 google compute platform
+done 測試 chrome post 寫入檔案 post 要能成功
+
+== start coding 20191201 21:00 dart web server
+21:40 done 可以運用 dart server serve static file
+22:32 done dart echo server 與 static file server 共存
+22:32 done 運用 dart server HTTP POST 儲存 JSON 檔案
+
+==
+
+20:30 要在遠端建立一個 cgi 是可以動態寫入 file 的，可以放在哪？ google? cameo.tw?
+寫一個簡單的 dart server 可以在
+
+== 20191201 19:38 start coding 1h ==
+設法建立七十四個疾病可以編輯也可以預覽畫面的編輯空間區域
+ <!-- load a custom version of Ace editor -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js"></script>
+  <!-- load the minimalist version of JSONEditor, which doesn't have Ace embedded -->
+  <link href="../dist/jsoneditor.css" rel="stylesheet" type="text/css">
+  <script src="../dist/jsoneditor-minimalist.js"></script>
+  view-source:file:///Users/cameo/node_modules/jsoneditor/examples/08_custom_ace.html
+
+==
+
+18:47 doing radio with date
+18:58 done radio with date
+18:58 done, and pass doing radio with tip
+18:59 h2 with text
+19:11 done h2 with text
+19:13 doing debug 60m 梅毒、鼠疫，還有一些元件欄位沒有正確顯示，要核對
+19:20 done 完成鼠疫與梅毒的檢驗，確定欄位都有正確顯示了
+
+== start coding 20191201 18:21 1h ==
+18:44 done 已經完成混搭 checkbox with input
+
 == start coding 20191201 17:04 ==
 done 17:14 已經支援 梅毒 h4 tag
 接下去是處理梅毒 list input checkbox 混搭
@@ -7,23 +75,8 @@ http://localhost:53322/cdc/pages/reportDisease.html?strReportDiseaseJsonFile=../
 http://localhost:53322/cdc/pages/reportDisease.html?strReportDiseaseJsonFile=../json/reportDisease鼠疫_caro.json
 
 ~~
-
-todo list:
-
-3*
-todo radio with input
-todo radio with tip
-todo radio with date
-todo h2 with text
-todo add h4 tag
-
-2*
-debug 60m 排版問題：有三個元件在 one row 的目前沒有辦法，都是直接斷行，要改為 one row
-
-1*
-debug 50m date (無法彈跳視窗 popup datepicker window，原因不明）,這個已經有錯誤訊息在 debug 視窗可以看
-debug 30m 縣市、國家，字體粗體不一樣 input 元件
-debug 60m 梅毒、鼠疫，還有一些元件欄位沒有正確顯示，要核對
+done radio with input
+done add h4 tag
 
 == 20191201 15:21
 可能要讓所有的 buildHtml 都變成 class

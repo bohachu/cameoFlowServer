@@ -23,7 +23,7 @@ Future<String> httpGet(String strUrl) async {
 }
 
 Map getUriParameters() {
-  // http://cameo.tw/cdc/pages/reportDisease.html?strReportDiseaseJsonFile="../json/reportDisease登革熱_bowen.json"
+  // http://cameo.tw/cdc/pages/reportDisease.html?strReportDiseaseJsonFile="../json/disease_登革熱.json"
   String strUri = window.location.href;
   Uri uri = Uri.dataFromString(strUri);
   return uri.queryParameters;
