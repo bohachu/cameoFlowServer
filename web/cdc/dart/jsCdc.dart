@@ -45,7 +45,8 @@ void setInnerHtml(String strHtml, String strDiseaseName) {
     ..allowElement('span', attributes: ['flow', 'tooltip'])
     ..allowElement('i', attributes: ['style'])
     ..allowHtml5();
-  querySelector('#reportDiseaseDartHtml').setInnerHtml(strHtml, validator: nodeValidator);
+  querySelector('#reportDiseaseDartHtml')
+      .setInnerHtml(strHtml, validator: nodeValidator);
   querySelector('#strDiseaseName').setInnerHtml('您所選取要通報的疾病為：$strDiseaseName');
 }
 
@@ -146,7 +147,8 @@ class JsonToHtmlH2 extends JsonToHtml {
   final strHr = '<hr/>';
 
   String getTags() {
-    String strResult = '$strHr<label class="$strFontSize font-weight-bold text-black">$strTitle</label><br/>';
+    String strResult =
+        '$strHr<label class="$strFontSize font-weight-bold text-black">$strTitle</label><br/>';
     if (strText != null && strText != '') {
       strResult += '<label class="fs-0">$strText</label><br/>';
     }
