@@ -1,3 +1,25 @@
+== 設法用 vue component 架構把 jsCdc.dart 的東西開放為可以修改的 html 元件
+20191208 00:08 已經把 vue 納入整體架構裡面可以使用了，也開始運用 vue component 了，現在就是要把 vue 學習比較熟悉，這樣才可以運用自如
+todo 注意 datepicker 還是有很多問題，會造成 print 錯誤，這點要進行錯誤修正
+另外：vue component 的使用真的是超級容易，很簡單，很好學習，值得推廣
+
+最單純的就是 H2
+class JsonToHtmlH2 extends JsonToHtml {
+  final strFontSize = 'fs-2';
+  final strHr = '<hr/>';
+
+  String getTags() {
+    String strResult =
+        '$strHr<label class="$strFontSize font-weight-bold text-black">$strTitle</label><br/>';
+    if (strText != null && strText != '') {
+      strResult += '<label class="fs-0">$strText</label><br/>';
+    }
+    return strResult;
+  }
+}
+
+==
+
 可以參考如何撰寫JSON格式：
 http://35.221.219.153:8080/cdc/json/disease_登革熱.json
 http://35.221.219.153:8080/cdc/json/disease_梅毒.json

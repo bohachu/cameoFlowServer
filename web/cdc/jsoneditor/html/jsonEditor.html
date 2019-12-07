@@ -3,6 +3,8 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>CAMEO JsonShow</title>
+  <script src="https://bgrins.github.io/filereader.js/filereader.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
 
 
   <!--
@@ -20,6 +22,7 @@
       })();
   </script>
   -->
+
 
   <!-- load a custom version of Ace editor -->
   <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js"></script>-->
@@ -48,10 +51,13 @@
   </style>
 </head>
 <body>
-<button id="buttonSavePreview">儲存JSON並預覽HTML</button>
-<button id="buttonGoReferenceRat">參考鼠疫JSON</button>
-<button id="buttonGoReferenceHot">參考登革熱JSON</button>
-<button id="buttonGoReferencePoison">參考梅毒JSON</button>
+<button id="buttonSave">儲存JSON到電腦</button>
+<input type="button" onclick="window.open('http://35.221.219.153:8080/cdc/json/disease_登革熱.json')" value="登革熱JSON"/>
+<input type="button" onclick="window.open('http://35.221.219.153:8080/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_登革熱.json')" value="登革熱HTML"/>
+<input type="button" onclick="window.open('http://35.221.219.153:8080/cdc/json/disease_鼠疫.json')" value="鼠疫JSON"/>
+<input type="button" onclick="window.open('http://35.221.219.153:8080/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_鼠疫.json')" value="鼠疫HTML"/>
+<input type="button" onclick="window.open('http://35.221.219.153:8080/cdc/json/disease_梅毒.json')" value="梅毒JSON"/>
+<input type="button" onclick="window.open('http://35.221.219.153:8080/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_梅毒.json')" value="梅毒HTML"/>
 <button id="buttonAbout">卡米爾 CAMEO JsonShow</button>
 <div id="jsoneditor" style="width:100%;height:700px"></div>
 <script>
@@ -148,13 +154,27 @@
 
     const editor = new JSONEditor(container, options, json)
 
-    document.getElementById('buttonSavePreview').onclick = function () {
-        const json = editor.get()
-        alert(JSON.stringify(json, null, 2))
-    }
     document.getElementById('buttonAbout').onclick = function () {
         const json = editor.get()
         alert("CAMEO JsonShow v1.0 前臺由 Google Dart 語言撰寫，後臺由 Google Dart 語言撰寫：「人人寫程式爆發自由力」")
+    }
+    // Save a JSON document
+    document.getElementById('buttonSave').onclick = function () {
+        // Save Dialog
+        let fname = window.prompt("Save as...", "disease_疾病名稱.json")
+
+        // Check json extension in file name
+        if (fname.indexOf(".") === -1) {
+            fname = fname + ".json"
+        } else {
+            if (fname.split('.').pop().toLowerCase() === "json") {
+                // Nothing to do
+            } else {
+                fname = fname.split('.')[0] + ".json"
+            }
+        }
+        const blob = new Blob([editor.getText()], {type: 'application/json;charset=utf-8'})
+        saveAs(blob, fname)
     }
 </script>
 

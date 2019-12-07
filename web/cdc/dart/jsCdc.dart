@@ -4,7 +4,7 @@ import 'dart:html';
 import '../../common/dart/httpGet.dart';
 
 class JsonToHtmlAddRecord extends JsonToHtml {
-  String getTags() => '<a href="#">$strTitle</a><br/>';
+  Future<String> getTags() async => '<a href="#">$strTitle</a><br/>';
 }
 
 void main() async {
@@ -45,8 +45,7 @@ void setInnerHtml(String strHtml, String strDiseaseName) {
     ..allowElement('span', attributes: ['flow', 'tooltip'])
     ..allowElement('i', attributes: ['style'])
     ..allowHtml5();
-  querySelector('#reportDiseaseDartHtml')
-      .setInnerHtml(strHtml, validator: nodeValidator);
+  querySelector('#reportDiseaseDartHtml').setInnerHtml(strHtml, validator: nodeValidator);
   querySelector('#strDiseaseName').setInnerHtml('您所選取要通報的疾病為：$strDiseaseName');
 }
 
@@ -85,11 +84,11 @@ class JsonToHtmlDate extends JsonToHtml {
             ''';
   }
 
-  String getTags() => getHtmlDate(intRandomId, strTitle);
+  Future<String> getTags() async => getHtmlDate(intRandomId, strTitle);
 }
 
 class JsonToHtmlInput extends JsonToHtml {
-  String getTags() {
+  Future<String> getTags() async {
     return '''
   <div class="col-lg-3">
     <div class="form-group">
@@ -130,29 +129,31 @@ class JsonToHtml {
     intRandomId = Random().nextInt(999999);
   }
 
-  String getHtml(Map map) {
+  Future<String> getHtml(Map map) async {
     init(map);
     return getTags();
   }
 
-  String getTags() => '<div>Overrides html content here</div>';
+  Future<String> getTags() async {
+    return '<div>Overrides html content here</div>';
+  }
 }
 
 class JsonToHtmlDiseaseName extends JsonToHtml {
-  String getTags() => strTitle;
+  Future<String> getTags() async => strTitle;
 }
 
 class JsonToHtmlH2 extends JsonToHtml {
   final strFontSize = 'fs-2';
   final strHr = '<hr/>';
 
-  String getTags() {
-    String strResult =
-        '$strHr<label class="$strFontSize font-weight-bold text-black">$strTitle</label><br/>';
-    if (strText != null && strText != '') {
-      strResult += '<label class="fs-0">$strText</label><br/>';
-    }
-    return strResult;
+  Future<String> getTags() async {
+    Map map = {'strTitle': '$strTitle', 'strFontSize': '$strFontSize', 'strHr': '$strHr'};
+    String strHtml = await httpGet('../template/h2.html');
+    map.forEach((k, v) {
+      strHtml = strHtml.replaceAll('\$' + k, v);
+    });
+    return strHtml;
   }
 }
 
@@ -240,7 +241,7 @@ class JsonToHtmlRadio extends JsonToHtml {
     }
   }
 
-  String getHtml(Map map) {
+  Future<String> getHtml(Map map) async {
     init(map);
     buildTip();
     buildList();

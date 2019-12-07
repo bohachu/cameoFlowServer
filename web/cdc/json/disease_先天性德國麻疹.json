@@ -1,0 +1,66 @@
+[
+  {
+    "type": "diseaseName",
+    "title": "先天性德國麻疹"
+  },
+  {
+    "type": "radio",
+    "title": "臨床症狀",
+    "text": "有無症狀",
+    "list": [
+      "有",
+      "無"
+    ]
+  },
+  {
+    "type": "checkbox",
+    "title": "主要症狀",
+    "list": [
+      "小腦症",
+      "心智發育遲緩",
+      "先天性心臟病",
+      "先天性白內障",
+      "先天性青光眼",
+      "色素性視網膜病",
+      "血小板數量過低",
+      "肝臟腫大",
+      "肺動脈瓣狹窄",
+      "長骨放射線透度異常",
+      "閉塞性黃疸",
+      "紫斑",
+      "開放性動脈導管",
+      "腦膜腦炎",
+      "聽力障礙",
+      "脾臟腫大"
+    ],
+    "input": "其他症狀"
+  },
+  {
+    "type": "checkbox",
+    "title": "此為病例調查表之臨床症狀部分",
+    "list": [
+      "先天性白內障(congenital cataracts)",
+      "先天性青光眼(congenital glaucoma)",
+      "先天性心臟病(congenital heart disease)",
+      "如有勾選『先天性心臟病』，常見：",
+      "開放性心臟導管",
+      "肺動脈瓣狹窄",
+      "聽力障礙(hearing loss)",
+      "色素性視網膜病(pigmentary retinopathy)",
+      "血小板數量過低(low platelet count)",
+      "其他異常",
+      "閉塞性黃疸(jaundice)(24小時內發生)",
+      "紫斑(purpura)",
+      "長骨放射線透度異常(long bone radiolucencies)",
+      "腦膜腦炎(meningoencephaliis)",
+      "脾腫大(enlarged spleen)",
+      "小腦症(microcephaly)",
+      "心智發育遲緩(mental retardation)",
+      "肝腫大(enlarged liver)"
+    ]
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_流行病學資料.json"
+  }
+]

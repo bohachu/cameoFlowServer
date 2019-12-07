@@ -1,0 +1,159 @@
+[
+  {
+    "type": "diseaseName",
+    "title": "IPD"
+  },
+  {
+    "type": "radio",
+    "title": "臨床症狀",
+    "text": "有無症狀",
+    "list": [
+      "有",
+      "無"
+    ]
+  },
+  {
+    "type": "checkbox",
+    "title": "主要症狀",
+    "list": [
+      "肺炎",
+      "敗血症",
+      "溶血性尿毒症候群",
+      "關節炎",
+      "腦膜炎",
+      "骨髓炎",
+      "心包膜炎",
+      "腹膜炎",
+      "菌血症(Bacteremia)",
+      "其他"
+    ]
+  },
+  {
+    "type": "h2",
+    "title": "通報時檢驗資料錄"
+  },
+  {
+    "type": "checkbox",
+    "title": "醫院自行檢驗結果：自下列何種採檢部位培養出肺炎鏈球菌(Streptococcus pneumoniae)：(必填欄位)",
+    "list": [
+      "血液(Blood",
+      "肋膜液(Pleural fluid)",
+      "腦脊髓液(CSF)",
+      "關節液(Synovial fluid)",
+      "骨髓(Bone marrow)",
+      "心包膜液(Pericardial fluid)",
+      "腹膜液(Peritoneal fluid)",
+      "其他正常無菌組織"
+    ]
+  },
+  {
+    "type": "checkbox",
+    "title": "如勾選其他正常無菌組織(請描述種類)：",
+    "list": [
+      [
+        "input",
+        "採檢日期：(必填欄位)"
+      ],
+      [
+        "input",
+        "檢驗結果報告日期：(必填欄位)"
+      ]
+    ]
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_流行病學資料.json"
+  },
+  {
+    "type": "h3",
+    "title": "通報疾病相關NIIS接種紀錄"
+  },
+  {
+    "type": "checkbox",
+    "list": [
+      [
+        "input",
+        "疫苗名稱"
+      ],
+      [
+        "input",
+        "接種劑次"
+      ],
+      [
+        "input",
+        "接種日期"
+      ]
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "個案是否具有潛在疾病？",
+    "list": [
+      "否",
+      "是，請勾選下列疾病：（可複選）"
+    ]
+  },
+  {
+    "type": "h3",
+    "title": "1. 免疫健全者(Immunocompetent persons)"
+  },
+  {
+    "type": "checkbox",
+    "title": "1. 免疫健全者(Immunocompetent persons)",
+    "list": [
+      "(1)慢性心臟疾病(Chronic heart disease)：含先天發紺性心臟病及心臟衰竭，但高血壓除外",
+      "(2)慢性肺臟病(Chronic lung disease，但氣喘除外)",
+      "(3)糖尿病(Diabetes mellitus)",
+      "(4)腦脊髓液滲漏(Cerebrospinal fluid leaks)",
+      "(5)人工耳植入者(Cochlear implant)",
+      "(6)酗酒(Alcoholism)",
+      "(7)慢性肝病，包含肝硬化(Chronic liver disease, including cirrhosis)",
+      "(8)抽煙(Cigarette smoking)"
+    ]
+  },
+  {
+    "type": "h3",
+    "title": "2. 脾臟功能缺損(Persons with functional or anatomic asplenia)"
+  },
+  {
+    "type": "checkbox",
+    "title": "2. 脾臟功能缺損(Persons with functional or anatomic asplenia)",
+    "list": [
+      "(1)先天性或後天性無脾，脾功能失調，或脾切除(Congenital or acquired  asplenia, splenic dysfunction, or splenectomy)",
+      "(2)鐮刀型紅血球疾病及血紅素病(Sickle cell disease and other hemoglobinopathies)"
+    ]
+  },
+  {
+    "type": "h3",
+    "title": "3. 免疫功能缺損者(Immunocompromised persons)"
+  },
+  {
+    "type": "checkbox",
+    "title": "3. 免疫功能缺損者(Immunocompromised persons)",
+    "list": [
+      "((1)先天性免疫功能不全(Congenital immunodeficiencies)",
+      "((2)後天性免疫功能不全及HIV感染(Acquired immunodeficiencies and HIV infection)",
+      "((3)慢性腎病變（包含腎病症候群）(Chronic renal failure, including nephrotic syndrome)",
+      "((4)白血病(Leukemias)",
+      "((5)淋巴瘤(Lymphomas)",
+      "((6)霍奇金病(Hodgkin disease)",
+      "((7)廣泛惡性腫瘤(Generalized malignancy)",
+      "((8)使用免疫抑製藥物治療的疾病(含長期全身性皮質類固醇或放射治療)",
+      "((9)器官移植(Solid organ transplantation)",
+      "((10)多發性骨髓瘤(Multiple myeloma)"
+    ]
+  },
+  {
+    "type": "h3",
+    "title": "4. 其他重大疾病"
+  },
+  {
+    "type": "checkbox",
+    "list": [
+      [
+        "input",
+        "如勾選其他重大疾病(請描述種類)："
+      ]
+    ]
+  }
+]

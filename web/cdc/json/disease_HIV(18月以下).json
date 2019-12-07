@@ -1,0 +1,255 @@
+[
+  {
+    "type": "diseaseName",
+    "title": "HIV(18月以下)"
+  },
+  {
+    "type": "h3",
+    "title": "通報疾病",
+    "text": "需無任何HIV通報紀錄，始得通報HIV"
+  },
+  {
+    "type": "radio",
+    "title": "有無症狀",
+    "list": [
+      "有",
+      "無"
+    ]
+  },
+  {
+    "type": "checkbox",
+    "title": "主要症狀",
+    "list": [
+    ],
+    "input": "其他"
+  },
+  {
+    "type": "h2",
+    "title": "通報時檢驗資料"
+  },
+  {
+    "type": "h3",
+    "title": "HIV確診定義"
+  },
+  {
+    "type": "h4",
+    "title": "出生通報母子垂直感染疑似個案",
+    "text": "「新生兒之生母為人類免疫缺乏病毒感染者」或「新生兒之生母臨產時為快速檢測法及抗體篩檢檢測陽性者」時，則「生母資料」中的「身份證字號」、「媽媽姓名」、「國籍」為必填欄位。"
+  },
+  {
+    "type": "checkbox",
+    "list": [
+      [
+        "checkbox",
+        "新生兒以快速檢測法及抗體篩檢檢測呈陽性者。"
+      ],
+      [
+        "checkbox",
+        "新生兒之生母為人類免疫缺乏病毒感染者。"
+      ],
+      [
+        "checkbox",
+        "新生兒之生母臨產時為快速檢測法及抗體篩檢檢測陽性者。"
+      ]
+    ]
+  },
+  {
+    "type": "h4",
+    "title": "分子生物學核酸檢測(NAT)陽性"
+  },
+  {
+    "type": "date",
+    "title": "檢驗日期"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位代碼)"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位)"
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_流行病學資料.json"
+  },
+  {
+    "type": "h2",
+    "title": "感染危險因子"
+  },
+  {
+    "type": "checkbox",
+    "list": [
+      [
+        "checkbox",
+        "接受輸血者 (需經愛滋病毒基因序列比對符合且經衛生福利部愛滋病防治及感染者權益保障會臨床檢驗組專家會議確認 )"
+      ],
+      [
+        "checkbox",
+        "母子垂直感染 "
+      ],
+      [
+        "input",
+        "不詳"
+      ],
+      [
+        "input",
+        "其他"
+      ]
+    ]
+  },
+  {
+    "type": "h2",
+    "title": "個案生母資料"
+  },
+  {
+    "type": "input",
+    "title": "姓名"
+  },
+  {
+    "type": "input",
+    "title": "身分證字號"
+  },
+  {
+    "type": "radio",
+    "title": "國籍",
+    "list": [
+      "本國籍",
+      "外國籍"
+    ]
+  },
+  {
+    "type": "date",
+    "title": "出生日期"
+  },
+  {
+    "type": "radio",
+    "title": "本次孕程中是否有使用雞尾酒療法",
+    "list": [
+      "是",
+      "否",
+      "不詳"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "本次生產中是否注射AZT",
+    "list": [
+      "是",
+      "否",
+      "不詳"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "本次生產方式",
+    "list": [
+      "自然產",
+      "剖腹產",
+      "不詳"
+    ]
+  },
+  {
+    "type": "input",
+    "title": "本次生產醫院"
+  },
+  {
+    "type": "h2",
+    "title": "個案狀況維護與補充資料"
+  },
+  {
+    "type": "h3",
+    "title": "個案資料"
+  },
+  {
+    "type": "input",
+    "title": "出生體重"
+  },
+  {
+    "type": "input",
+    "title": "出生健康狀況"
+  },
+  {
+    "type": "input",
+    "title": "請詳述"
+  },
+  {
+    "type": "radio",
+    "title": "＊出生後是否曾接受案母哺育母乳（列為必填）",
+    "list": [
+      "是",
+      "否",
+      "不詳"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "＊出生6-12小時內是否給予預防性投藥",
+    "list": [
+      "是",
+      "否",
+      "不詳"
+    ]
+  },
+  {
+    "type": "h4",
+    "title": "藥名及劑量"
+  },
+  {
+    "type": "h4",
+    "text": "Retrovir"
+  },
+  {
+    "type": "input",
+    "title": "劑量(mg)"
+  },
+  {
+    "type": "input",
+    "title": "Q(H)"
+  },
+  {
+    "type": "input",
+    "title": "服用天數(days)"
+  },
+  {
+    "type": "h4",
+    "text": "Viramune"
+  },
+  {
+    "type": "input",
+    "title": "劑量(mg)"
+  },
+  {
+    "type": "input",
+    "title": "Q(H)"
+  },
+  {
+    "type": "input",
+    "title": "服用天數(days)"
+  },
+  {
+    "type": "h4",
+    "text": "3TC"
+  },
+  {
+    "type": "input",
+    "title": "劑量(mg)"
+  },
+  {
+    "type": "input",
+    "title": "Q(H)"
+  },
+  {
+    "type": "input",
+    "title": "服用天數(days)"
+  },
+  {
+    "type": "radio",
+    "title": "採檢項目",
+    "list": [
+      "PCR",
+      "ELISA"
+    ],
+    "date": "抽血日期"
+  }
+]

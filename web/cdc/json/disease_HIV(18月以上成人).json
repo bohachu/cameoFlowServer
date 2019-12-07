@@ -1,0 +1,485 @@
+[
+  {
+    "type": "diseaseName",
+    "title": "HIV(18月以上成人)"
+  },
+  {
+    "type": "h3",
+    "title": "通報疾病",
+    "text": "需無任何HIV通報紀錄，始得通報HIV"
+  },
+  {
+    "type": "radio",
+    "title": "有無症狀",
+    "list": [
+      "有",
+      "無"
+    ]
+  },
+  {
+    "type": "checkbox",
+    "title": "主要症狀",
+    "list": [
+    ],
+    "input": "其他"
+  },
+  {
+    "type": "h2",
+    "title": "通報時檢驗資料"
+  },
+  {
+    "type": "h3",
+    "title": "HIV確診定義"
+  },
+  {
+    "type": "h3",
+    "title": "HIV-1及2抗體確認檢驗方法陽性"
+  },
+  {
+    "type": "h4",
+    "title": "HIV-1及2抗體確認檢驗方法"
+  },
+  {
+    "type": "checkbox",
+    "list": [
+      [
+        "checkbox",
+        "西方墨點法"
+      ],
+      [
+        "checkbox",
+        "抗體免疫層析確認檢驗"
+      ],
+      [
+        "input",
+        "其他"
+      ]
+    ]
+  },
+  {
+    "type": "date",
+    "title": "檢驗日期"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位代碼)"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位)"
+  },
+  {
+    "type": "h3",
+    "title": "分子生物學核酸檢測(NAT)陽性"
+  },
+  {
+    "type": "date",
+    "title": "檢驗日期"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位代碼)"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位)"
+  },
+  {
+    "type": "h3",
+    "title": "是否為急性感染判斷"
+  },
+  {
+    "type": "radio",
+    "list": [
+      "前180天內(含本次)任一檢驗結果為[陰性或未確定]",
+      "前180天內(含本次)無相關檢驗結果"
+    ]
+  },
+  {
+    "type": "h4",
+    "title": "抗體篩檢檢測(EIA或PA)"
+  },
+  {
+    "type": "date",
+    "title": "檢驗日期"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位代碼)"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位)"
+  },
+  {
+    "type": "select",
+    "title": "檢驗結果",
+    "list": [
+      "陰性",
+      "未確定"
+    ]
+  },
+  {
+    "type": "h4",
+    "title": "抗原/抗體複合型檢測(combo)"
+  },
+  {
+    "type": "date",
+    "title": "檢驗日期"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位代碼)"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位)"
+  },
+  {
+    "type": "select",
+    "title": "檢驗結果",
+    "list": [
+      "陰性",
+      "未確定"
+    ]
+  },
+  {
+    "type": "h4",
+    "title": "西方墨點法"
+  },
+  {
+    "type": "date",
+    "title": "檢驗日期"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位代碼)"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位)"
+  },
+  {
+    "type": "select",
+    "title": "檢驗結果",
+    "list": [
+      "陰性",
+      "未確定"
+    ]
+  },
+  {
+    "type": "h4",
+    "title": "抗體免疫層析確認檢驗"
+  },
+  {
+    "type": "date",
+    "title": "檢驗日期"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位代碼)"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位)"
+  },
+  {
+    "type": "select",
+    "title": "檢驗結果",
+    "list": [
+      "陰性",
+      "未確定"
+    ]
+  },
+  {
+    "type": "h4",
+    "title": "分子生物學核酸檢測"
+  },
+  {
+    "type": "date",
+    "title": "檢驗日期"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位代碼)"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位)"
+  },
+  {
+    "type": "select",
+    "title": "檢驗結果",
+    "list": [
+      "陰性",
+      "未確定"
+    ]
+  },
+  {
+    "type": "h4",
+    "title": "HIV抗原p24篩檢"
+  },
+  {
+    "type": "date",
+    "title": "檢驗日期"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位代碼)"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位)"
+  },
+  {
+    "type": "select",
+    "title": "檢驗結果",
+    "list": [
+      "陰性",
+      "未確定"
+    ]
+  },
+  {
+    "type": "h4",
+    "title": "中和試驗(NT)"
+  },
+  {
+    "type": "date",
+    "title": "檢驗日期"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位代碼)"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位)"
+  },
+  {
+    "type": "select",
+    "title": "檢驗結果",
+    "list": [
+      "陰性",
+      "未確定"
+    ]
+  },
+  {
+    "type": "h3",
+    "title": "HIV抗原p24篩檢陽性，且進行中和試驗確認陽性"
+  },
+  {
+    "type": "h4",
+    "title": "HIV抗原p24篩檢"
+  },
+  {
+    "type": "date",
+    "title": "檢驗日期"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位代碼)"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位)"
+  },
+  {
+    "type": "h4",
+    "title": "HIV抗原p24中和試驗"
+  },
+  {
+    "type": "date",
+    "title": "檢驗日期"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位代碼)"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位)"
+  },
+  {
+    "type": "h3",
+    "title": "是否為急性感染判斷"
+  },
+  {
+    "type": "radio",
+    "list": [
+      "前180天內(含本次)任一檢驗結果為[陰性或未確定]",
+      "前180天內(含本次)無相關檢驗結果"
+    ]
+  },
+  {
+    "type": "h4",
+    "title": "抗體篩檢檢測(EIA或PA)"
+  },
+  {
+    "type": "date",
+    "title": "檢驗日期"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位代碼)"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位)"
+  },
+  {
+    "type": "select",
+    "title": "檢驗結果",
+    "list": [
+      "陰性",
+      "未確定"
+    ]
+  },
+  {
+    "type": "h4",
+    "title": "抗原/抗體複合型檢測(combo)"
+  },
+  {
+    "type": "date",
+    "title": "檢驗日期"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位代碼)"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位)"
+  },
+  {
+    "type": "select",
+    "title": "檢驗結果",
+    "list": [
+      "陰性",
+      "未確定"
+    ]
+  },
+  {
+    "type": "h4",
+    "title": "西方墨點法"
+  },
+  {
+    "type": "date",
+    "title": "檢驗日期"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位代碼)"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位)"
+  },
+  {
+    "type": "select",
+    "title": "檢驗結果",
+    "list": [
+      "陰性",
+      "未確定"
+    ]
+  },
+  {
+    "type": "h4",
+    "title": "抗體免疫層析確認檢驗"
+  },
+  {
+    "type": "date",
+    "title": "檢驗日期"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位代碼)"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位)"
+  },
+  {
+    "type": "select",
+    "title": "檢驗結果",
+    "list": [
+      "陰性",
+      "未確定"
+    ]
+  },
+  {
+    "type": "h4",
+    "title": "分子生物學核酸檢測"
+  },
+  {
+    "type": "date",
+    "title": "檢驗日期"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位代碼)"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位)"
+  },
+  {
+    "type": "select",
+    "title": "檢驗結果",
+    "list": [
+      "陰性",
+      "未確定"
+    ]
+  },
+  {
+    "type": "h4",
+    "title": "HIV抗原p24篩檢"
+  },
+  {
+    "type": "date",
+    "title": "檢驗日期"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位代碼)"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位)"
+  },
+  {
+    "type": "select",
+    "title": "檢驗結果",
+    "list": [
+      "陰性",
+      "未確定"
+    ]
+  },
+  {
+    "type": "h4",
+    "title": "中和試驗(NT)"
+  },
+  {
+    "type": "date",
+    "title": "檢驗日期"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位代碼)"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位(檢驗單位)"
+  },
+  {
+    "type": "select",
+    "title": "檢驗結果",
+    "list": [
+      "陰性",
+      "未確定"
+    ]
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_流行病學資料.json"
+  }
+]

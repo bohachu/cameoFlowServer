@@ -1,0 +1,188 @@
+[
+  {
+    "type": "diseaseName",
+    "title": "先天性梅毒"
+  },
+  {
+    "type": "radio",
+    "title": "臨床症狀",
+    "text": "有無症狀",
+    "list": [
+      "有",
+      "無"
+    ]
+  },
+  {
+    "type": "checkbox",
+    "title": "主要症狀",
+    "list": [
+      "肝臟腫大",
+      "脾臟腫大",
+      "扁平濕疣",
+      "鼻塞伴黏性或血性分泌物",
+      "皮膚黏膜病變",
+      "非病毒性肝炎引起之黃疸",
+      "腎病症候群或營養不良引起之水腫",
+      "假性麻痺",
+      "影像學上可見長骨異常"
+    ],
+    "input": "其他症狀"
+  },
+  {
+    "type": "h2",
+    "title": "通報時檢驗資料",
+    "text": ""
+  },
+  {
+    "type": "h3",
+    "title": "特異性梅毒螺旋體試驗"
+  },
+  {
+    "type": "checkbox",
+    "list": [
+      [
+        "input",
+        "TPHA 效價=1:"
+      ],
+      [
+        "input",
+        "TPPA 效價=1:"
+      ],
+      [
+        "checkbox",
+        "FTA-abs(+)"
+      ],
+      [
+        "checkbox",
+        "TPLA(+)"
+      ],
+      [
+        "checkbox",
+        "EIA(+)"
+      ],
+      [
+        "checkbox",
+        "CIA(+)/CMIA(+)"
+      ]
+    ]
+  },
+  {
+    "type": "h3",
+    "title": "非特異性梅毒螺旋體試驗"
+  },
+  {
+    "type": "checkbox",
+    "list": [
+      [
+        "input",
+        "RPR(+) 效價=1:"
+      ],
+      [
+        "input",
+        "VDRL(+) 效價=1:"
+      ]
+    ]
+  },
+  {
+    "type": "h3",
+    "title": "臨床檢體(病灶滲出液、組織、胎盤、臍帶、屍體、鼻腔分泌物等)以下列方式檢測出梅毒螺旋體："
+  },
+  {
+    "type": "checkbox",
+    "list": [
+      "暗視野顯微鏡",
+      "螢光抗體檢驗",
+      "核酸檢驗"
+    ]
+  },
+  {
+    "type": "h3",
+    "title": "血清學特異性梅毒螺旋體 IgM 試驗"
+  },
+  {
+    "type": "checkbox",
+    "list": [
+      [
+        "checkbox",
+        "lgM ElA(+)"
+      ],
+      [
+        "checkbox",
+        "lgM FTA-abs(+)"
+      ],
+      [
+        "input",
+        "VDRL(+) 效價=1:"
+      ]
+    ]
+  },
+  {
+    "type": "h3",
+    "title": "嬰兒腦脊髓液細胞計數和生化檢查異常情形"
+  },
+  {
+    "type": "radio",
+    "list": [
+      "年齡未滿1個月： >15 WBC/microL, protein > 120 mg/dL",
+      "年齡1個月以上： >5 WBC/microL, protein > 40 mg/dL",
+      "皆不符合"
+    ]
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_流行病學資料.json"
+  },
+  {
+    "type": "h3",
+    "title": "個案生母資料"
+  },
+  {
+    "type": "checkbox",
+    "list": [
+      [
+        "input",
+        "身份證統一編號/外來人口之居留證統一證號"
+      ],
+      [
+        "input",
+        "姓名"
+      ]
+    ]
+  },
+  {
+    "type": "h3",
+    "title": "其生母為梅毒個案，但生產時未治療、尚未完成治療、治療狀況不明或已接受治療但RPR/VDRL效價尚未呈現4倍以上下降"
+  },
+  {
+    "type": "radio",
+    "list": [
+      "是",
+      "否",
+      "不詳"
+    ]
+  },
+  {
+    "type": "h3",
+    "title": "其生母之梅毒病史不清楚"
+  },
+  {
+    "type": "radio",
+    "list": [
+      "是",
+      "否",
+      "不詳"
+    ]
+  },
+  {
+    "type": "h3",
+    "title": "個案VDRL效價是否大於母親生產時效價之四倍以上"
+  },
+  {
+    "type": "radio",
+    "list": [
+      "是",
+      "否",
+      "不詳"
+    ]
+  }
+]
