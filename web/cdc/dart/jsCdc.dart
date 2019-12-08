@@ -2,6 +2,7 @@ import 'dart:math';
 import 'dart:convert';
 import 'dart:html';
 import '../../common/dart/httpGet.dart';
+import 'dart:js';
 
 class JsonToHtmlAddRecord extends JsonToHtml {
   Future<String> getTags() async => '<a href="#">$strTitle</a><br/>';
@@ -9,6 +10,11 @@ class JsonToHtmlAddRecord extends JsonToHtml {
 
 void main() async {
   window.console.log('jsCdc.dart/main()');
+
+  //20191209 00:31 dart to vue, call javascript function
+  List lst=['來自Dart to Vue的呼喊'];
+  context.callMethod('funcCompButton', [JsObject.jsify(lst)]);
+
   Map map = getUriParameters();
   String strDiseaseFile = map['strDiseaseFile'];
   String strJson = '';

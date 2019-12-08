@@ -4,8 +4,27 @@
 2* debug 60m 排版問題：有三個元件在 one row 的目前沒有辦法，都是直接斷行，要改為 one row
 1* getDiseaseName 要改為讀取檔案 json diseaseName 欄位而不是 .json 檔案名稱的解析方法
 1* debug 30m 縣市、國家，字體粗體不一樣 input 元件
-
 ==
+
+22:03 60m watch video about vue
+
+決定要做哪些事情
+10m 亂數座位表
+done 15m buy vue theme
+
+20191208 2159 good: 找到很好的一個東西
+buy vue theme
+https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-2/dashboard/analytics
+確實是可以拿來學習的資源
+
+== todo list ==
+2* radio + input 無法正確顯示
+1* 要有一個清單可以知道所有元件的用法 h2 radio select checkbox 有哪些正確用法
+2* debug 60m 排版問題：有三個元件在 one row 的目前沒有辦法，都是直接斷行，要改為 one row
+1* getDiseaseName 要改為讀取檔案 json diseaseName 欄位而不是 .json 檔案名稱的解析方法
+1* debug 30m 縣市、國家，字體粗體不一樣 input 元件
+==
+
 done 3* debug 50m date (無法彈跳視窗 popup datepicker window，原因不明）,這個已經有錯誤訊息在 debug 視窗可以看
 done 2* 注意 datepicker 還是有很多問題，會造成 print 錯誤，這點要進行錯誤修正
 done flatpickr.min.js:2 Error: Invalid date  Invalid date
