@@ -1,9 +1,26 @@
+== todo list ==
+2* radio + input 無法正確顯示
+1* 要有一個清單可以知道所有元件的用法 h2 radio select checkbox 有哪些正確用法
+2* debug 60m 排版問題：有三個元件在 one row 的目前沒有辦法，都是直接斷行，要改為 one row
+1* getDiseaseName 要改為讀取檔案 json diseaseName 欄位而不是 .json 檔案名稱的解析方法
+1* debug 30m 縣市、國家，字體粗體不一樣 input 元件
+
+==
+done 3* debug 50m date (無法彈跳視窗 popup datepicker window，原因不明）,這個已經有錯誤訊息在 debug 視窗可以看
+done 2* 注意 datepicker 還是有很多問題，會造成 print 錯誤，這點要進行錯誤修正
+done flatpickr.min.js:2 Error: Invalid date  Invalid date
+done 18:39 已經全面改為 input 讓日期的錯誤不會跑在 chrome debug 視窗了
+
 == start coding 20191208 1641 60m ==
 . cdc 希望可以將整個開發測試移植到 codesandbox, 所以要先確定最小版本可以上到 github 的有哪些，然後建立全新的 cdc 路徑, 共編程式碼
+18:17 已經努力過了，有幾個缺點很致命
+. 首頁其實不知道應該怎麼設定 .js ? index.html ? 次頁測試無法進入
+. 編輯 package.json 速度無敵慢，打字大概十五秒才有反應
+. 硬刪除一些東西才有辦法跑，沒辦法讓完整的 lib 跟著整個專案跑，引用別的專案會出問題（未來一定會用到）
+. 碰到問題的時候能夠支援的很少，所以感覺類似玩具，可以實驗一些玩具程式碼，但是碰到真正專案會沒辦法用
 
 == 設法用 vue component 架構把 jsCdc.dart 的東西開放為可以修改的 html 元件
 20191208 00:08 已經把 vue 納入整體架構裡面可以使用了，也開始運用 vue component 了，現在就是要把 vue 學習比較熟悉，這樣才可以運用自如
-todo 注意 datepicker 還是有很多問題，會造成 print 錯誤，這點要進行錯誤修正
 另外：vue component 的使用真的是超級容易，很簡單，很好學習，值得推廣
 
 最單純的就是 H2
@@ -36,10 +53,8 @@ http://35.221.219.153:8080/cdc/pages/reportDisease.html?strDiseaseFile=../json/d
 http://35.221.219.153:8080/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_梅毒.json
 http://35.221.219.153:8080/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_鼠疫.json
 
-== todo list ==
-
 2*
-建構七十四個疾病的大表，並且派工給不同的夥伴
+done 建構七十四個疾病的大表，並且派工給不同的夥伴
 
 1*
 getDiseaseName 要改為讀取檔案 json diseaseName 欄位而不是 .json 檔案名稱的解析方法

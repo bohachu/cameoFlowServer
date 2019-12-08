@@ -143,9 +143,13 @@
           </div>
           <div class="col-lg-6">
             <div class="form-group">
+              <label class="fs-0" for="name147">出生年月日</label>
+              <input class="form-control text-secondary" id="name147" type="text" value="年/月/日">
+              <!--
               <label class="fs-0" for="datepicker591">出生年月日</label>
               <input class="form-control datetimepicker text-secondary" id="datepicker591" type="text" value="年/月/日"
                      data-options='{"dateFormat":"y/m/d"}'>
+               -->
             </div>
           </div>
         </div>
@@ -281,20 +285,24 @@
           <div class="row ml-1 mr-1">
             <div class="col-lg-6">
               <div class="form-group">
-                <label class="fs-0" for="name">轉至院所名稱</label>
+                <label class="fs-0" for="name729">轉至院所名稱</label>
                 <input class="form-control text-secondary" id="name729" type="text" value="輸入內容">
               </div>
             </div>
             <div class="col-lg-6">
               <div class="form-group">
+                <label class="fs-0" for="name294">轉院日期</label>
+                <input class="form-control text-secondary" id="name294" type="text" value="年/月/日">
+                <!--
                 <label class="fs-0" for="datepicker735">轉院日期</label>
                 <input class="form-control datetimepicker text-secondary" id="datepicker735" type="text" value="年/月/日"
                        data-options='{"dateFormat":"y/m/d"}'>
+                -->
               </div>
             </div>
             <div class="col-lg-6">
               <div class="form-group">
-                <label class="fs-0" for="name">轉院原因</label>
+                <label class="fs-0" for="name742">轉院原因</label>
                 <input class="form-control text-secondary" id="name742" type="text" value="輸入內容">
               </div>
             </div>
@@ -318,9 +326,13 @@
         <div class="row ml-1 mr-1">
           <div class="col-lg-6">
             <div class="form-group">
+              <label class="fs-0" for="name329">死亡日期</label>
+              <input class="form-control text-secondary" id="name329" type="text" value="年/月/日">
+              <!--
               <label class="fs-0" for="datepicker766">死亡日期</label>
               <input class="form-control datetimepicker text-secondary" id="datepicker766" type="text" value="年/月/日"
                      data-options='{"dateFormat":"y/m/d"}'>
+              -->
             </div>
           </div>
         </div>
@@ -387,9 +399,16 @@
             <div class="col-lg-6">
               <div class="form-group">
                 <label class="fs-0 font-weight-bold text-black">相關日期</label><br/>
+
+                <label class="fs-0" for="name403">發病日期</label>
+                <input class="form-control text-secondary" id="name403" type="text" value="年/月/日">
+
+                <!--
                 <label class="fs-0" for="datepicker835">發病日期</label>
                 <input class="form-control datetimepicker text-secondary" id="datepicker835" type="text" value="年/月/日"
                        data-options='{"dateFormat":"y/m/d"}'>
+                       -->
+
               </div>
             </div>
             <div class="col-lg-3 pt-6">
@@ -408,16 +427,28 @@
           <div class="row ml-1 mr-1">
             <div class="col-lg-6">
               <div class="form-group">
+
+                <label class="fs-0" for="name431">診斷日期</label>
+                <input class="form-control text-secondary" id="name431" type="text" value="年/月/日">
+
+                <!--
                 <label class="fs-0" for="datepicker856">診斷日期</label>
                 <input class="form-control datetimepicker text-secondary" id="datepicker856" type="text" value="年/月/日"
                        data-options='{"dateFormat":"y/m/d"}'>
+                       -->
+
               </div>
             </div>
             <div class="col-lg-6">
               <div class="form-group">
+                <label class="fs-0" for="name444">診斷日期</label>
+                <input class="form-control text-secondary" id="name444" type="text" value="年/月/日">
+
+                <!--
                 <label class="fs-0" for="datepicker863">報告日期</label>
                 <input class="form-control datetimepicker text-secondary" id="datepicker863" type="text" value="年/月/日"
                        data-options='{"dateFormat":"y/m/d"}'>
+                       -->
               </div>
             </div>
           </div>
@@ -443,11 +474,13 @@
 <script src="../assets/lib/flatpickr/flatpickr.min.js"></script>
 
 <script>
-    $(document).ready(function () {
-        var h = $("#parent").height();
-        console.log(h);
-        $("#child").height(h);
-    });
+    /*
+      $(document).ready(function () {
+          var h = $("#parent").height();
+          console.log(h);
+          $("#child").height(h);
+      });
+     */
 
     const peopleFalse = document.getElementById('people-false');
     const peopleTrue = document.getElementById('people-true');

@@ -77,11 +77,22 @@ class JsonToHtmlDate extends JsonToHtml {
     return '''
             <div class="col-lg-4">
               <div class="form-group">
-                <label class="fs-0" for="datepicker$intRandomId">$strTitle</label>
-                <input class="form-control datetimepicker text-secondary flatpickr-input active" id="datepicker$intRandomId" type="text" value="年/月/日" data-options="{&quot;dateFormat&quot;:&quot;y/m/d&quot;}" placeholder="y/m/d" readonly="readonly">
+                <label class="fs-0" for="name$intRandomId">$strTitle</label>
+                <input class="form-control text-secondary" id="name$intRandomId" type="text" value="年/月/日">
               </div>
-            </div>  
+            </div>
+    ''';
+
+    /*
+    return '''
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="fs-0" for="datepicker$intRandomId">$strTitle</label>
+                <input class="form-control datetimepicker text-secondary flatpickr-input active" id="datepicker$intRandomId" type="text" data-options="{&quot;dateFormat&quot;:&quot;y/m/d&quot;}" placeholder="y/m/d" readonly="readonly">
+              </div>
+            </div>
             ''';
+     */
   }
 
   Future<String> getTags() async => getHtmlDate(intRandomId, strTitle);
