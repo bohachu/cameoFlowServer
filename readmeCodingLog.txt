@@ -1,3 +1,6 @@
+== start coding 20191208 1641 60m ==
+. cdc 希望可以將整個開發測試移植到 codesandbox, 所以要先確定最小版本可以上到 github 的有哪些，然後建立全新的 cdc 路徑, 共編程式碼
+
 == 設法用 vue component 架構把 jsCdc.dart 的東西開放為可以修改的 html 元件
 20191208 00:08 已經把 vue 納入整體架構裡面可以使用了，也開始運用 vue component 了，現在就是要把 vue 學習比較熟悉，這樣才可以運用自如
 todo 注意 datepicker 還是有很多問題，會造成 print 錯誤，這點要進行錯誤修正
