@@ -12,7 +12,7 @@ void main() async {
   window.console.log('jsCdc.dart/main()');
 
   //20191209 00:31 dart to vue, call javascript function
-  List lst=['來自Dart to Vue的呼喊'];
+  List lst = ['來自Dart to Vue的呼喊'];
   context.callMethod('funcCompButton', [JsObject.jsify(lst)]);
 
   Map map = getUriParameters();
@@ -229,13 +229,22 @@ class JsonToHtmlRadio extends JsonToHtml {
     }
   }
 
-  String getListTemplate(int i) => '''
+  String getListTemplate(int i) {
+    List lstMapReplace = [
+      {'\${intRandomId + i}': '${intRandomId + i}'},
+      {'\$intRandomId': '$intRandomId'},
+      {'\${lstList[i]}': '${lstList[i]}'},
+    ];
+    return '''
                 <div class="custom-control custom-radio custom-control-inline">
                   <input type="radio" class="custom-control-input" id="customRadioInline${intRandomId + i}" 
                          name="customRadioInline$intRandomId">
-                  <label class="custom-control-label fs-0" for="customRadioInline${intRandomId + i}">${lstList[i]}</label>
+                  <label class="custom-control-label fs-0" for="customRadioInline${intRandomId + i}">
+                    ${lstList[i]}
+                  </label>
                 </div>
-  ''';
+    ''';
+  }
 
   buildHtmlAll() {
     strHtmlAll = '''

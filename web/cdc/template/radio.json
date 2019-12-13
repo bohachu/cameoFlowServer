@@ -1,0 +1,25 @@
+{
+  "strSkeleton": [
+    "<div class=\"row ml-1 mr-1\">",
+    "  <div class=\"form-group\">",
+    "  <label class=\"fs-0 font-weight-bold text-black\">$strTitle</label><br/>",
+    "    <div class=\"ml-1 mb-1\">$strText $strHtmlTip</div>",
+    "      $strList",
+    "    </div>",
+    "    $strHtmlDate",
+    "</div>"
+  ],
+  "strHtmlTip": [
+    "<span tooltip=$strTip flow=\"right\">",
+    "  <i class=\"fas fa-exclamation-circle\" style=\"color: #00a65a;\"></i>",
+    "</span>"
+  ],
+  "strList": [
+    "<div class=\"custom-control custom-radio custom-control-inline\">",
+    "  <input type=\"radio\" class=\"custom-control-input\" id=\"customRadioInline${intRandomId + i}\" name=\"customRadioInline$intRandomId\">",
+    "  <label class=\"custom-control-label fs-0\" for=\"customRadioInline${intRandomId + i}\">",
+    "    ${lstList[i]}",
+    "  </label>",
+    "</div>"
+  ]
+}
