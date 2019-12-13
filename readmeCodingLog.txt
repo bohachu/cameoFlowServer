@@ -1,3 +1,5 @@
+20191213 0750 要把 vue html + dart data 結合在一起
+
 == todo list ==
 2* radio + input 無法正確顯示
 1* 要有一個清單可以知道所有元件的用法 h2 radio select checkbox 有哪些正確用法
