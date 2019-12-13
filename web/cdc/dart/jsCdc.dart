@@ -235,6 +235,9 @@ class JsonToHtmlRadio extends JsonToHtml {
       {'\$intRandomId': '$intRandomId'},
       {'\${lstList[i]}': '${lstList[i]}'},
     ];
+
+    String strOuterHtml=querySelector('.radio_strSkeleton').outerHtml;
+
     return '''
                 <div class="custom-control custom-radio custom-control-inline">
                   <input type="radio" class="custom-control-input" id="customRadioInline${intRandomId + i}" 
