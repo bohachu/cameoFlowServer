@@ -1,3 +1,22 @@
+== start 20191214 0753
+來製作 h2 tags
+
+void main() {
+  String str = "reportDisease鼠疫_caro.json";
+  RegExp reg = new RegExp(r"reportDisease([^\u0000]+)(_[^\u0000]+)");
+  Iterable<Match> matches = reg.allMatches(str);
+  for (Match m in matches) {
+    print('group0');
+    print(m.group(0));
+    print('group1');
+    print(m.group(1));
+    print('group2');
+    print(m.group(2));
+  }
+}
+
+
+
 20191213 0750 要把 vue html + dart data 結合在一起
 
 == todo list ==

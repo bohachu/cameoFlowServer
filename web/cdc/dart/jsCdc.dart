@@ -13,7 +13,7 @@ void main() async {
 
   //20191209 00:31 dart to vue, call javascript function
   List lst = ['來自Dart to Vue的呼喊'];
-  context.callMethod('funcCompButton', [JsObject.jsify(lst)]);
+  context.callMethod('funcJson2Html', [JsObject.jsify(lst)]);
 
   Map map = getUriParameters();
   String strDiseaseFile = map['strDiseaseFile'];
@@ -48,7 +48,7 @@ void setInnerHtml(String strHtml, String strDiseaseName) {
     ..allowElement('img', attributes: ['src'])
     ..allowElement('button', attributes: ['style'])
     ..allowElement('input', attributes: ['data-options'])
-    ..allowElement('span', attributes: ['flow', 'tooltip'])
+    ..allowElement('span', attributes: ['flow', 'tooltip', 'style'])
     ..allowElement('i', attributes: ['style'])
     ..allowHtml5();
   querySelector('#reportDiseaseDartHtml').setInnerHtml(strHtml, validator: nodeValidator);
@@ -165,12 +165,16 @@ class JsonToHtmlH2 extends JsonToHtml {
   final strHr = '<hr/>';
 
   Future<String> getTags() async {
-    Map map = {'strTitle': '$strTitle', 'strFontSize': '$strFontSize', 'strHr': '$strHr'};
-    String strHtml = await httpGet('../template/h2.html');
+    Map map = {
+      '\$strTitle': '$strTitle',
+      '\$strFontSize': '$strFontSize',
+      '\$strHr': '$strHr',
+    };
+    String strOuterHtml = querySelector('.h2').outerHtml;
     map.forEach((k, v) {
-      strHtml = strHtml.replaceAll('\$' + k, v);
+      strOuterHtml = strOuterHtml.replaceAll(k, v);
     });
-    return strHtml;
+    return strOuterHtml;
   }
 }
 
@@ -236,7 +240,7 @@ class JsonToHtmlRadio extends JsonToHtml {
       {'\${lstList[i]}': '${lstList[i]}'},
     ];
 
-    String strOuterHtml=querySelector('.radio_strSkeleton').outerHtml;
+    String strOuterHtml = querySelector('.radio_strSkeleton').outerHtml;
 
     return '''
                 <div class="custom-control custom-radio custom-control-inline">

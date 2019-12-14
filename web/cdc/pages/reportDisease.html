@@ -14,10 +14,32 @@
 
 <body>
 
-<div id="vue-components">
-  <button-counter></button-counter>
-  <button-counter></button-counter>
-  <button-counter></button-counter>
+<div class="json2Html" style="display:none">
+  <span class="h2">
+    $strHr
+    <label class="$strFontSize font-weight-bold text-black">$strTitle</label>
+    <br/>
+  </span>
+
+  <div class="radio_strSkeleton row ml-1 mr-1">
+    <div class="form-group">
+      <label class="fs-0 font-weight-bold text-black">$strTitle</label><br/>
+      <div class="ml-1 mb-1">$strText $strHtmlTip</div>
+      $strList
+    </div>
+    $strHtmlDate
+  </div>
+
+  <span class="radio_strHtmlTip" tooltip="$strTip" flow="right">
+      <i class="fas fa-exclamation-circle" style="color: #00a65a;"></i>
+  </span>
+
+  <div class="radio_strList custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="customRadioInline${intRandomId[i]}" name="customRadioInline${intRandomId}">
+    <label class="custom-control-label fs-0" for="customRadioInline${intRandomId[i]}">
+      ${lstList[i]}
+    </label>
+  </div>
 </div>
 
 <div id="reportDiseaseNav"></div>
@@ -454,7 +476,7 @@
 
           <div id="reportDiseaseDartHtml"></div>
           <script defer src="../dart/jsCdc.dart.js"></script>
-          <script defer src="../js/compButton.js"></script>
+          <script defer src="../js/json2Html.js"></script>
         </div>
       </div>
     </div>
@@ -462,7 +484,7 @@
   <div id="reportDiseaseFooter"></div>
 </main>
 
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="../assets/js/jquery.min.js"></script>
 <script src="../assets/js/bootstrap.js"></script>
 <script src="../assets/lib/stickyfilljs/stickyfill.min.js"></script>
@@ -502,27 +524,6 @@
 <script>$(function () {
   $('#reportDiseaseFooter').load('reportDiseaseFooter.html');
 });</script>
-
-
-<div class="radio_strSkeleton row ml-1 mr-1">
-  <div class="form-group">
-    <label class="fs-0 font-weight-bold text-black">$strTitle</label><br/>
-    <div class="ml-1 mb-1">$strText $strHtmlTip</div>
-    $strList
-  </div>
-  $strHtmlDate
-</div>
-
-<span class="radio_strHtmlTip" tooltip="$strTip" flow="right">
-      <i class="fas fa-exclamation-circle" style="color: #00a65a;"></i>
-</span>
-
-<div class="radio_strList custom-control custom-radio custom-control-inline">
-  <input type="radio" class="custom-control-input" id="customRadioInline$intRandomId$i" name="customRadioInline$intRandomId">
-  <label class="custom-control-label fs-0" for="customRadioInline$intRandomId$i">
-    ${lstList[i]}
-  </label>
-</div>
 
 </body>
 </html>
