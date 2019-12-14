@@ -59,13 +59,14 @@ Future<String> scanJsonToHtml(List lstJson) async {
   for (int i = 0; i < lstJson.length; i++) {
     String strType = lstJson[i]['type'];
     Map map = lstJson[i];
-    strHtml += await mapTypeToCode[strType].initGetTags(map);
+    strHtml += await mapTypeToCode[strType].getHtml(map);
   }
   return strHtml;
 }
 
 class JsonToHtmlDate extends JsonToHtml {
-  static String getHtmlDate(int intRandomId, String strTitle) => replaceAll('.JsonToHtmlDate_getHtmlDate', {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId'});
+  static String getHtmlDate(int intRandomId, String strTitle) =>
+      replaceAll('.JsonToHtmlDate_getHtmlDate', {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId'});
 
   Future<String> getTags() async => getHtmlDate(intRandomId, strTitle);
 }
@@ -96,7 +97,7 @@ class JsonToHtml {
     intRandomId = Random().nextInt(999999);
   }
 
-  Future<String> initGetTags(Map map) async {
+  Future<String> getHtml(Map map) async {
     init(map);
     return getTags();
   }
@@ -199,7 +200,7 @@ class JsonToHtmlRadio extends JsonToHtml {
     }
   }
 
-  Future<String> initGetTags(Map map) async {
+  Future<String> getHtml(Map map) async {
     init(map);
     buildTip();
     buildList();

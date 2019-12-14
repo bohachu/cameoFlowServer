@@ -1,3 +1,15 @@
+== start 20191214 17:10 已經把所有重要待辦轉移到 trello 各種主題的 board
+應該說，現在疾管署的題目已經可以公開給精誠做進一步修改了
+我們可以公開在 google platform
+可能要有一個修改檔案的上傳檔案方法會比較妥當
+要簡單一點可以改，最簡單應該是用 github 修改吧我猜
+anyway
+我們可以先發布一個版本再說
+
+==
+
+total lines 255 lines 行
+
 20191214 1147 done duplicated code
 pmd cpd --files ./jsCdc.dart --language dart --minimum-tokens 20
 已經把全部的html變成reportDisease.html
