@@ -1,0 +1,169 @@
+[
+  {
+    "type": "diseaseName",
+    "title": "鉤端"
+  },
+  {
+    "type": "radio",
+    "title": "臨床症狀",
+    "text": "有無症狀",
+    "list": [
+      "有",
+      "無"
+    ]
+  },
+  {
+    "type": "checkbox",
+    "title": "主要症狀",
+    "list": [
+      "肌肉痛",
+      "發燒",
+      "黃疸",
+      "腹痛",
+      "腹瀉",
+      "頭痛",
+      "結膜充血",
+      "急性腎功能不全",
+      "全身倦怠",
+      "腦膜炎",
+      "尿量減少",
+      "無菌性腦膜炎",
+      "蛋白尿",
+      "無尿",
+      "腸道出血",
+      "肺部出血"
+    ],
+    "input": "其他"
+  },
+  {
+    "type": "h2",
+    "title": "流行病學資料"
+  },
+  {
+    "type": "select",
+    "title": "職業",
+    "list": [
+      "學生",
+      "工程師",
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "旅遊史",
+    "list": [
+      "有",
+      "無"
+    ]
+  },
+  {
+    "type": "checkbox",
+    "title": "旅遊史類別",
+    "list": [
+      "國內旅遊史",
+      "國外旅遊史",
+      "外籍人士國外居住史"
+    ]
+  },
+  {
+    "type": "h3",
+    "title": "國內旅遊史"
+  },
+  {
+    "type": "input",
+    "title": "縣市"
+  },
+  {
+    "type": "date",
+    "title": "起始日期"
+  },
+  {
+    "type": "date",
+    "title": "結束日期"
+  },
+  {
+    "type": "addRecord",
+    "title": "＋ 新增一筆國內旅遊史"
+  },
+  {
+    "type": "h3",
+    "title": "國外旅遊史"
+  },
+  {
+    "type": "input",
+    "title": "國家"
+  },
+  {
+    "type": "date",
+    "title": "起始日期"
+  },
+  {
+    "type": "date",
+    "title": "結束日期"
+  },
+  {
+    "type": "date",
+    "title": "移民署入境日期"
+  },
+  {
+    "type": "date",
+    "title": "移民署最後離境國"
+  },
+  {
+    "type": "addRecord",
+    "title": "＋ 新增一筆國外旅遊史"
+  },
+  {
+    "type": "h3",
+    "title": "外籍人士國外居住史"
+  },
+  {
+    "type": "input",
+    "title": "國家"
+  },
+  {
+    "type": "date",
+    "title": "離境日期"
+  },
+  {
+    "type": "date",
+    "title": "入境日期"
+  },
+  {
+    "type": "addRecord",
+    "title": "＋ 新增一筆國外居住史"
+  },
+  {
+    "type": "radio",
+    "title": "動物接觸史",
+    "list": [
+      "有",
+      "無"
+    ]
+  },
+  {
+    "type": "select",
+    "title": "接觸動物種類",
+    "list": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "type": "input",
+    "title": "接觸動物"
+  },
+  {
+    "type": "input",
+    "title": "野外活動"
+  },
+  {
+    "type": "date",
+    "title": "污染的環境"
+  }
+]

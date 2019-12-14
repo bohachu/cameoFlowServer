@@ -1,3 +1,120 @@
+== todo list ==
+2* radio + input , radio with input 無法正確顯示
+2* debug 60m 排版問題：有三個元件在 one row 的目前沒有辦法，都是直接斷行，要改為 one row
+1* 要有一個清單可以知道所有元件的用法 h2 radio select checkbox 有哪些正確用法
+1* debug 30m 縣市、國家，字體粗體不一樣 input 元件
+
+Dear Lele, Haha
+
+泊寰已經把所有的 HTML 外觀全部都集中在 reportDisease.html 並且壓縮在下面這個 folder:
+
+reportDisease.html Dart HTML 74疾病程式碼可以修改HTML外觀更好看（運用 chrome web server
+plugin 就可以預覽）
+https://drive.google.com/drive/folders/1UjARU_GKfflMzeNZvhJW-_ATsfh1APOI?usp=sharing
+
+原本七十四個疾病的HTML外觀程式碼是寫在 Dart 程式設計語言裡面
+但是現在已經獨立出來方便其他人（harry 精誠）修改HTML
+所有 74 疾病的外觀，HTML元件都寫在這邊可以直接修改以及預覽
+在 localhost 本機的 chrome web server plugin 就可以預覽看到畫面成果
+
+Todo for lele and haha 派工表
+
+001 6h harry 要請 html 程式設計師 harry 或其他夥伴，看一下，自動產生疾病表單時，表單網頁下面斷行太多的，要用
+bootstrap 語法做適當的 grid system
+優化https://cythilya.github.io/2015/04/07/bootstrap-grid-system/
+002 74*0.2h lele haha
+七十四個疾病的元件，目前JSON尚未完全能夠表達，所以必須發明新的JSON元件名稱寫法，這個必須透過盤點七十四畫面，才知道缺少什麼
+003 1h bowen 目前已經知道 radio with input 元件尚未 coding, json 已經有了但是 radio
+with input 無法正確顯示, 這未來要撰寫 dart 增添大概一小時
+004 要有一個 JSON 撰寫語法清單可以知道所有元件的用法 h2 radio select checkbox 有哪些正確用法
+
+～～ 主要的 HTML 顯示元件如下（可修改 reportDisease.html）～～
+
+<div class="jsCdc.dart" style="display:none">
+  <span class="JsonToHtmlH2">
+    $strHr
+    <label class="$strFontSize font-weight-bold text-black">$strTitle</label>
+    <br/>
+  </span>
+
+  <div class="JsonToHtmlRadio_buildHtmlAll row ml-1 mr-1">
+    <div class="form-group">
+      <label class="fs-0 font-weight-bold text-black">$strTitle</label><br/>
+      <div class="ml-1 mb-1">$strText $strHtmlTip</div>
+      $strList
+    </div>
+    $strHtmlDate
+  </div>
+
+  <span class="JsonToHtmlRadio_buildTip" tooltip="$strTip" flow="right">
+      <i class="fas fa-exclamation-circle" style="color: #00a65a;"></i>
+  </span>
+
+  <div class="JsonToHtmlRadio_getListTemplate custom-control
+custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input"
+id="customRadioInline${intRandomId + i}"
+           name="customRadioInline$intRandomId">
+    <label class="custom-control-label fs-0"
+for="customRadioInline${intRandomId + i}">
+      ${lstList[i]}
+    </label>
+  </div>
+
+  <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check
+form-check-inline pb-2">
+    <input class="form-check-input" type="checkbox"
+id="inlineCheckbox${intRandomId + i}" value="option${intRandomId +
+i}">
+    <label class="form-check-label fs-0"
+for="inlineCheckbox${intRandomId + i}">${strLabel}</label>
+  </div>
+
+  <div class="JsonToHtmlCheckbox_getInputWithLabel form-check
+form-check-inline pb-2">
+    <input class="form-check-input" type="checkbox"
+id="inlineCheckbox${intRandomId + 200}" value="option${intRandomId}">
+    <label class="form-check-label fs-0"
+for="inlineCheckbox${intRandomId + 200}">$strLabel</label>
+    <input class="text-secondary ml-3 p-1" type="text" value="輸入內容">
+  </div>
+
+  <div class="JsonToHtmlCheckbox_buildHtmlAll row pl-4 pr-4 pt-4 pb-4"
+style="background-color: #F2F2F2">
+    $strList
+    $strHtmlInput
+  </div>
+
+  <span class="JsonToHtmlAddRecord_getTags"><a
+href="#">$strTitle</a><br/></span>
+
+  <div class="JsonToHtmlDate_getHtmlDate col-lg-4">
+    <div class="form-group">
+      <label class="fs-0" for="name66$intRandomId">$strTitle</label>
+      <input class="form-control text-secondary"
+id="name66$intRandomId" type="text" value="年/月/日">
+    </div>
+  </div>
+
+  <div class="JsonToHtmlInput_getTags col-lg-3">
+    <div class="form-group">
+      <label class="fs-0" for="name73$intRandomId">$strTitle</label>
+      <input class="form-control text-secondary"
+id="name73$intRandomId" type="text" value="輸入內容">
+    </div>
+  </div>
+
+  <div class="JsonToHtmlSelect_buildHtmlAll col-lg-6">
+    <label class="fs-0"
+for="formControlSelect${intRandomId}">$strTitle</label><br/>
+    <select class="form-control text-secondary"
+id="formControlSelect${intRandomId}">
+      $strList
+    </select>
+  </div>
+
+</div>
+
 == start 20191214 17:10 已經把所有重要待辦轉移到 trello 各種主題的 board
 應該說，現在疾管署的題目已經可以公開給精誠做進一步修改了
 我們可以公開在 google platform
@@ -5,6 +122,15 @@
 要簡單一點可以改，最簡單應該是用 github 修改吧我猜
 anyway
 我們可以先發布一個版本再說
+bohachu@instance-3:~/cameoFlowServer$ cat go
+ps -C dart -o pid=|xargs kill -9
+dart bin/cdc/jsonServer.dart &
+已經發佈一個版本了
+http://35.221.219.153:8080/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_%E9%BC%A0%E7%96%AB.json
+
+其實開發者用自己的 chrome web server 就可以測試開發了
+所以不需要上傳到我們這個平台上面
+ok
 
 ==
 
@@ -47,13 +173,8 @@ void main() {
 
 20191213 0750 要把 vue html + dart data 結合在一起
 
-== todo list ==
-2* radio + input 無法正確顯示
-1* 要有一個清單可以知道所有元件的用法 h2 radio select checkbox 有哪些正確用法
-2* debug 60m 排版問題：有三個元件在 one row 的目前沒有辦法，都是直接斷行，要改為 one row
-1* getDiseaseName 要改為讀取檔案 json diseaseName 欄位而不是 .json 檔案名稱的解析方法
-1* debug 30m 縣市、國家，字體粗體不一樣 input 元件
 ==
+done 1* getDiseaseName 要改為讀取檔案 json diseaseName 欄位而不是 .json 檔案名稱的解析方法
 
 22:03 60m watch video about vue
 

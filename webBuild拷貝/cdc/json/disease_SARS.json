@@ -1,0 +1,539 @@
+[
+  {
+    "type": "diseaseName",
+    "title": "SARS"
+  },
+  {
+    "type": "radio",
+    "title": "臨床症狀",
+    "text": "有無症狀",
+    "list": [
+      "有",
+      "無"
+    ]
+  },
+  {
+    "type": "checkbox",
+    "title": "主要症狀",
+    "list": [
+      "皮疹/紅疹/出疹",
+      "肌肉酸痛",
+      "呼吸困難",
+      "肺炎",
+      "咳嗽",
+      "流鼻水",
+      "畏寒/寒顫",
+      "食慾不振",
+      "喉嚨痛",
+      "發燒",
+      "腹痛",
+      "腹瀉",
+      "嘔吐",
+      "頭痛",
+      "關節痛",
+      "噁心",
+      "支氣管炎",
+      "呼吸急促",
+      "氣喘",
+      "頭暈",
+      "全身倦怠",
+      "骨頭痛"
+    ],
+    "input": "其他症狀"
+  },
+  {
+    "type": "checkbox",
+    "title": "臨床症狀 (以下條件須皆符合)",
+    "list": [
+      "1.發燒（≧38℃）",
+      "2.一種或以上的下呼吸道症狀（咳嗽、呼吸困難、呼吸短促）",
+      "3.放射線診斷學上與肺炎或呼吸窘迫症候群一致的肺浸潤證據或屍體解剖的發現與肺炎或呼吸窘迫症候群的病理學一致而無其他可確定的致病因",
+      "4.無其他可替代的診斷能完全解釋疾病"
+    ]
+  },
+  {
+    "type": "h2",
+    "title": "通報時檢驗資料"
+  },
+  {
+    "type": "h3",
+    "title": "(1)CBC/DC"
+  },
+  {
+    "type": "date",
+    "title": "日期"
+  },
+  {
+    "type": "input",
+    "title": "WBC(10^3)"
+  },
+  {
+    "type": "input",
+    "title": "Seg(%)"
+  },
+  {
+    "type": "input",
+    "title": "Lym(%)"
+  },
+  {
+    "type": "input",
+    "title": "Plate(10^3)"
+  },
+  {
+    "type": "input",
+    "title": "Mono(%)"
+  },
+  {
+    "type": "input",
+    "title": "RBC(10^6)"
+  },
+  {
+    "type": "input",
+    "title": "Hb(g/dL)"
+  },
+  {
+    "type": "input",
+    "title": "MCV(fL)"
+  },
+  {
+    "type": "input",
+    "title": "備註說明"
+  },
+  {
+    "type": "h3",
+    "title": "(2)Biochem"
+  },
+  {
+    "type": "date",
+    "title": "日期"
+  },
+  {
+    "type": "input",
+    "title": "Sugar(mg/dL)"
+  },
+  {
+    "type": "input",
+    "title": "BUN(mg/dL)"
+  },
+  {
+    "type": "input",
+    "title": "CPK(IU/L)"
+  },
+  {
+    "type": "input",
+    "title": "LDH(IU/L)"
+  },
+  {
+    "type": "input",
+    "title": "CRP(mg/L)"
+  },
+  {
+    "type": "input",
+    "title": "GOT(IU/L)"
+  },
+  {
+    "type": "input",
+    "title": "GPT(IU/L)"
+  },
+  {
+    "type": "input",
+    "title": "Na(meq/L)"
+  },
+  {
+    "type": "input",
+    "title": "K(meq/L)"
+  },
+  {
+    "type": "input",
+    "title": "備註說明"
+  },
+  {
+    "type": "h3",
+    "title": "(3)ABG： (如有呼吸異常症狀)"
+  },
+  {
+    "type": "date",
+    "title": "日期"
+  },
+  {
+    "type": "input",
+    "title": "PH"
+  },
+  {
+    "type": "input",
+    "title": "PCO2(mmHg)"
+  },
+  {
+    "type": "input",
+    "title": "PO2(mmHg)"
+  },
+  {
+    "type": "input",
+    "title": "O2Sat(%)"
+  },
+  {
+    "type": "input",
+    "title": "備註說明"
+  },
+  {
+    "type": "h2",
+    "title": "流行病學資料"
+  },
+  {
+    "type": "h3",
+    "title": "SARS編號：1234567"
+  },
+  {
+    "type": "input",
+    "title": "服務機關"
+  },
+  {
+    "type": "radio",
+    "title": "偷渡客",
+    "list": [
+      "是",
+      "否"
+    ]
+  },
+  {
+    "type": "select",
+    "title": "職業",
+    "list": [
+      "學生",
+      "工程師",
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "type": "input",
+    "title": "職業詳細說明"
+  },
+  {
+    "type": "radio",
+    "title": "旅遊史",
+    "list": [
+      "有",
+      "無"
+    ]
+  },
+  {
+    "type": "checkbox",
+    "title": "旅遊史類別",
+    "list": [
+      "國內旅遊史",
+      "國外旅遊史",
+      "外籍人士國外居住史"
+    ]
+  },
+  {
+    "type": "h3",
+    "title": "國內旅遊史"
+  },
+  {
+    "type": "input",
+    "title": "縣市"
+  },
+  {
+    "type": "date",
+    "title": "起始日期"
+  },
+  {
+    "type": "date",
+    "title": "結束日期"
+  },
+  {
+    "type": "addRecord",
+    "title": "＋ 新增一筆國內旅遊史"
+  },
+  {
+    "type": "h3",
+    "title": "國外旅遊史"
+  },
+  {
+    "type": "input",
+    "title": "國家"
+  },
+  {
+    "type": "date",
+    "title": "起始日期"
+  },
+  {
+    "type": "date",
+    "title": "結束日期"
+  },
+  {
+    "type": "addRecord",
+    "title": "＋ 新增一筆國外旅遊史"
+  },
+  {
+    "type": "h3",
+    "title": "旅遊史：過去二星期內是否曾經旅行？(縣市別或國名，請擇一填寫)"
+  },
+  {
+    "type": "date",
+    "title": "日期"
+  },
+  {
+    "type": "select",
+    "title": "縣市別",
+    "list": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "type": "select",
+    "title": "國名(大陸地區請填省份)",
+    "list": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "type": "select",
+    "title": "大陸地區省份",
+    "list": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "type": "addRecord",
+    "title": "＋ 新增一筆過去二星期內旅遊史"
+  },
+  {
+    "type": "h3",
+    "title": "國外居住史"
+  },
+  {
+    "type": "input",
+    "title": "國家"
+  },
+  {
+    "type": "date",
+    "title": "離境日期"
+  },
+  {
+    "type": "date",
+    "title": "入境日期"
+  },
+  {
+    "type": "addRecord",
+    "title": "＋ 新增一筆國外居住史"
+  },
+  {
+    "type": "radio",
+    "title": "動物接觸史",
+    "list": [
+      "有",
+      "無"
+    ]
+  },
+  {
+    "type": "select",
+    "title": "接觸動物種類",
+    "list": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "接觸史：過去二星期內是否曾經與疑似SARS個案接觸史？",
+    "list": [
+      "有",
+      "無"
+    ]
+  },
+  {
+    "type": "input",
+    "title": "如勾選『有』，則請說明"
+  },
+  {
+    "type": "h3",
+    "title": "發病前10日，具有下列任一個條件："
+  },
+  {
+    "type": "checkbox",
+    "list": [
+      [
+        "checkbox",
+        "1.有SARS流行地區(經WHO宣佈)之旅遊史"
+      ],
+      [
+        "checkbox",
+        "2.有SARS確定病例之接觸史"
+      ],
+      [
+        "checkbox",
+        "3.有與SARS病毒實驗室相關之暴露史"
+      ],
+      [
+        "checkbox",
+        "4.無前述三項流行病學暴露史，但臨床上極度懷疑為SARS者"
+      ]
+    ]
+  },
+  {
+    "type": "h3",
+    "title": "您在最近兩星期內是否到過任何醫院或診所就診，探視病人，訪友，洽公或接受健康檢查等？並註明曾經去過醫院之病房號碼及樓層"
+  },
+  {
+    "type": "date",
+    "title": "日期"
+  },
+  {
+    "type": "input",
+    "title": "醫院/診所名稱"
+  },
+  {
+    "type": "input",
+    "title": "目的"
+  },
+  {
+    "type": "input",
+    "title": "棟別/樓層"
+  },
+  {
+    "type": "input",
+    "title": "病房號"
+  },
+  {
+    "type": "input",
+    "title": "訪友/病人名字"
+  },
+  {
+    "type": "input",
+    "title": "備註說明"
+  },
+  {
+    "type": "addRecord",
+    "title": "＋ 新增一筆紀錄"
+  },
+  {
+    "type": "h3",
+    "title": "被通報前之其他就診醫療機構"
+  },
+  {
+    "type": "input",
+    "title": "醫院代碼"
+  },
+  {
+    "type": "input",
+    "title": "醫院名稱"
+  },
+  {
+    "type": "h3",
+    "title": "慢性病史"
+  },
+  {
+    "type": "checkbox",
+    "list": [
+      [
+        "checkbox",
+        "糖尿病"
+      ],
+      [
+        "checkbox",
+        "COPD"
+      ],
+      [
+        "checkbox",
+        "ESRD"
+      ],
+      [
+        "checkbox",
+        "慢性肝病"
+      ],
+      [
+        "checkbox",
+        "Malignancy"
+      ],
+      [
+        "checkbox",
+        "Immunologic Disease"
+      ],
+      [
+        "input",
+        "其他"
+      ]
+    ]
+  },
+  {
+    "type": "h2",
+    "title": "個案狀況維護與補充資料"
+  },
+  {
+    "type": "h3",
+    "title": "發病史：(如：日期、事件及症狀等)"
+  },
+  {
+    "type": "date",
+    "title": "日期"
+  },
+  {
+    "type": "input",
+    "title": "說明"
+  },
+  {
+    "type": "input",
+    "title": "(備註說明)"
+  },
+  {
+    "type": "addRecord",
+    "title": "＋ 新增一筆發病史"
+  },
+  {
+    "type": "h3",
+    "title": "生命徵兆：(BT：記錄當日最高度數之體溫)"
+  },
+  {
+    "type": "date",
+    "title": "日期"
+  },
+  {
+    "type": "input",
+    "title": "BT(°C)"
+  },
+  {
+    "type": "input",
+    "title": "PR(次/min)"
+  },
+  {
+    "type": "input",
+    "title": "PR(次/min)"
+  },
+  {
+    "type": "input",
+    "title": "RR(次/min)"
+  },
+  {
+    "type": "input",
+    "title": "BP(mmg) 收縮壓："
+  },
+  {
+    "type": "input",
+    "title": "BP(mmg) 舒張壓："
+  },
+  {
+    "type": "input",
+    "title": "(備註說明)"
+  }
+]

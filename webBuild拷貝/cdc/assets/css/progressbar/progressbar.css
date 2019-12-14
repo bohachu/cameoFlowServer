@@ -1,0 +1,128 @@
+/* .container {
+    width: 600px;
+    margin: 100px auto; 
+} */
+
+.pbar {
+  counter-reset: step;
+}
+
+.pbar li {
+  list-style-type: none;
+  width: 25%;
+  float: left;
+  font-size: 12px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: #7d7d7d;
+}
+
+.pbar li:before {
+  width: 30px;
+  height: 30px;
+  content: '';
+  /* counter-increment: step; */
+  line-height: 30px;
+  border: 2px solid #7d7d7d;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.pbar li:after {
+  width: 100%;
+  height: 2px;
+  content: '';
+  position: absolute;
+  background-color: #7d7d7d;
+  top: 15px;
+  left: -50%;
+  z-index: -1;
+}
+
+.pbar li:first-child:after {
+  content: none;
+}
+
+/* 未啟動狀態 */
+
+.pbar li {
+  color: green;
+}
+
+.pbar li:before {
+  border-color: #55b776;
+}
+
+.pbar li + li:after {
+  background-color: #55b776;
+}
+
+.pbar li + li.changeColor:after {
+  background-color: #d1d1d1;
+}
+
+/* 啟動狀態 */
+.pbar li.active:before {
+  border-color: #55b776;
+  background-color: #55b776;
+  color: #fff;
+}
+
+.pbar li.active.changeColor:before {
+  border-color: #d1d1d1;
+  background-color: #d1d1d1;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.round {
+  position: relative;
+}
+
+.round label {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+
+.round label:after {
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 6px;
+  left: 4px;
+  opacity: 0;
+  position: absolute;
+  top: 6px;
+  transform: rotate(-45deg);
+  width: 12px;
+}
+
+.round input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.round input[type="checkbox"]:checked + label {
+  background-color: #66bb6a;
+  border-color: #66bb6a;
+}
+
+.round input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}

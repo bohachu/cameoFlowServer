@@ -1,0 +1,311 @@
+[
+  {
+    "type": "diseaseName",
+    "title": "AIDS"
+  },
+  {
+    "type": "h4",
+    "title": "需為HIV通報個案，始得通報AIDS"
+  },
+  {
+    "type": "radio",
+    "title": "臨床症狀",
+    "text": "有無症狀",
+    "list": [
+      "有",
+      "無"
+    ]
+  },
+  {
+    "type": "h2",
+    "title": "臨床症狀診斷依據",
+    "tip": "備註說明：.僅適用於年齡6歲以下個案。 Only among children aged <6 years.僅適用於年齡滿1個月後診斷之個案。 Onset at age >1 month.僅適用於年齡滿6歲（含）以上個案。 Only among adults, adolescents, and children aged ≥6 years."
+  },
+  {
+    "type": "radio",
+    "title": "念珠菌症(支氣管、氣管、或肺) Candidiasis of bronchi, trachea, or lungs",
+    "list": [
+      "是",
+      "否",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "念珠菌症(食道) Candidiasis, esophageal ",
+    "list": [
+      "是",
+      "否",
+      "疑似",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "珠狀孢子蟲病（散佈性或肺外部位）Coccidioidomycosis, disseminated or extrapulmonary",
+    "list": [
+      "是",
+      "否",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "隱球菌症（肺外） Cryptococcosis, extrapulmonary",
+    "list": [
+      "是",
+      "否",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "隱孢子蟲症(慢性腸炎)(一個月以上) Cryptosporidiosis, chronic intestinal (greater than 1 month's duration)",
+    "list": [
+      "是",
+      "否",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "巨細胞病毒症（肝臟、脾臟或淋巴結以外）** Cytomegalovirus disease (other than liver, spleen, or nodes)** ",
+    "list": [
+      "是",
+      "否",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "巨細胞病毒性視網膜炎 Cytomegalovirus retinitis (with loss of vision)",
+    "list": [
+      "是",
+      "否",
+      "疑似",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "愛滋病毒性腦病變 Encephalopathy, HIV-related",
+    "list": [
+      "是",
+      "否",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "單純性庖疹病毒感染：慢性潰瘍（一個月以上）或支氣管炎、肺炎及食道炎**Herpes simplex: chronic ulcer(s) greater than 1 month's duration); or bronchitis, pneumonitis, or esophagitis ,pneumonitis or esophagitis**",
+    "list": [
+      "是",
+      "否",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "組織胞漿菌症(散佈性或肺以外部位) Histoplasmosis, disseminated or extrapulmonary",
+    "list": [
+      "是",
+      "否",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "等孢子蟲症（慢性腸炎）（一個月以上）Isosporiasis, chronic intestinal (greater than 1 month's duration)",
+    "list": [
+      "是",
+      "否",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "卡波西氏肉瘤 Kaposi's sarcoma",
+    "list": [
+      "是",
+      "否",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "勃克氏淋巴瘤 Lymphoma, Burkitt's(or equivalent term)",
+    "list": [
+      "是",
+      "否",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "青黴菌感染（散佈性或肺外部位）Penicilliosis marneffei, disseminated or extrapulmonary",
+    "list": [
+      "是",
+      "否",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "淋巴瘤(免疫芽細胞) Lymphoma, immunoblastic (or equivalent term) ",
+    "list": [
+      "是",
+      "否",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "淋巴瘤(腦部之初發性) Lymphoma, primary, of brain",
+    "list": [
+      "是",
+      "否",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "散佈性或肺外部位禽型分枝桿菌群或堪薩斯分枝桿菌感染 Mycobacterium avium complex or M. kansasii, disseminated or extrapulmonary",
+    "list": [
+      "是",
+      "否",
+      "疑似",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "肺結核*** M. tuberculosis infection, pulmonary***",
+    "list": [
+      "是",
+      "否",
+      "疑似",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "肺外結核 M. tuberculosis infection, extrapulmonary ",
+    "list": [
+      "是",
+      "否",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "其他種類或未確定種類的分枝桿菌引起的散佈性或肺外部位感染 Mycobacterium, other species or unidentified species, disseminated or extrapulmonary",
+    "list": [
+      "是",
+      "否",
+      "疑似",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "一年之內復發的肺炎*** Pneumonia, recurrent (more than one episode in a 1-year period)***",
+    "list": [
+      "是",
+      "否",
+      "疑似",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "肺囊蟲肺炎 Pneumocystis carinii (jiroveci) pneumonia",
+    "list": [
+      "是",
+      "否",
+      "疑似",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "進行性多發性白質腦病變 Progressive multifocal leukoencephalopathy",
+    "list": [
+      "是",
+      "否",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "沙門氏菌血症(再發性) Salmonella septicemia, recurrent",
+    "list": [
+      "是",
+      "否",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "腦部弓蟲症** Toxoplasmosis of brain**",
+    "list": [
+      "是",
+      "否",
+      "疑似",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "HIV引起的消耗性症候群 Wasting syndrome due to HIV",
+    "list": [
+      "是",
+      "否",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "侵犯性的子宮頸癌*** Cervical cancer, invasive***",
+    "list": [
+      "是",
+      "否",
+      "疑似",
+      "待補"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "多重或復發的細菌感染* Bacterial infections, multiple or recurrent* ",
+    "list": [
+      "是",
+      "否",
+      "待補"
+    ]
+  },
+  {
+    "type": "h3",
+    "title": "其他症狀"
+  },
+  {
+    "type": "input",
+    "title": "其他症狀"
+  },
+  {
+    "type": "h2",
+    "title": "通報時檢驗資料"
+  },
+  {
+    "type": "checkbox",
+    "list": [
+      "排除急性初期感染(急性初期感染定義：分子生物學核酸檢測陽性且該檢測前180天內任一初篩檢驗或HIV-1及2抗體確認檢驗方法結果是陰性或不確定者)。"
+    ]
+  },
+  {
+    "type": "input",
+    "title": "CD4值或比例符合檢驗條件(若有CD4值請填具此欄位) ，CD4= "
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_流行病學資料.json"
+  }
+]

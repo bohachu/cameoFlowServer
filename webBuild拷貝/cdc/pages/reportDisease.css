@@ -1,0 +1,223 @@
+.navbar-nav {
+  height: 47px;
+}
+
+.nav-item .d-flex:hover {
+  filter: invert(54%) sepia(29%) saturate(888%) hue-rotate(67deg) brightness(96%) contrast(88%);
+}
+
+.nav-item-child {
+  background-color: #dddddd;
+}
+
+a.sidebar {
+  text-decoration: none;
+}
+
+li.sidebar:hover,
+li.sidebar:active {
+  background-color: #E2E2E2 !important;
+  border-left: 10px solid #00a65a !important;
+}
+
+.login-time {
+  font-size: 12px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.login-time2 {
+  font-size: 12px;
+  position: absolute;
+  bottom: 5px;
+}
+
+.user-dropdown-menu {
+  width: 250px;
+  text-align: center;
+}
+
+.user-dropdown-item {
+  border-bottom: 1px solid #E2E2E2;
+  padding: 10px 0;
+  background-color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.user-dropdown-item:hover {
+  background-color: #00a65a !important;
+  color: #fff;
+}
+
+.user-dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.title {
+  width: 100%;
+  justify-content: space-between;
+}
+
+h5.title {
+  font-size: 20px;
+  color: #488B66;
+}
+
+.line {
+  display: inline-block;
+  width: 85%;
+  border-top: 1px solid #488B66;
+  vertical-align: middle;
+  margin-left: 16px;
+}
+
+.state-bar {
+  width: 100%;
+}
+
+
+.state-bar .row .col-4 {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #F2F2F2;
+  color: #488B66;
+}
+
+/* START TOOLTIP STYLES */
+[tooltip] {
+  position: relative;
+  /* opinion 1 */
+}
+
+/* Applies to all tooltips */
+[tooltip]::before,
+[tooltip]::after {
+  text-transform: none;
+  /* opinion 2 */
+  font-size: .9em;
+  /* opinion 3 */
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  display: none;
+  opacity: 0;
+}
+
+[tooltip]::before {
+  content: '';
+  border: 5px solid transparent;
+  /* opinion 4 */
+  z-index: 1001;
+  /* absurdity 1 */
+}
+
+[tooltip]::after {
+  content: attr(tooltip);
+  /* magic! */
+
+  /* most of the rest of this is opinion */
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+
+  /*
+Let the content set the size of the tooltips
+but this will also keep them from being obnoxious
+*/
+  min-width: 300px;
+  padding: 1ch 1.5ch;
+  border-radius: .3ch;
+  box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
+  background: #333;
+  color: #fff;
+  z-index: 1000;
+  white-space: pre;
+}
+
+/* Make the tooltips respond to hover */
+[tooltip]:hover::before,
+[tooltip]:hover::after {
+  display: block;
+}
+
+/* don't show empty tooltips */
+[tooltip='']::before,
+[tooltip='']::after {
+  display: none !important;
+}
+
+/* FLOW: RIGHT */
+[tooltip][flow^="right"]::before {
+  top: 50%;
+  border-left-width: 0;
+  border-right-color: #333;
+  right: calc(0em - 5px);
+  transform: translate(.5em, -50%);
+}
+
+[tooltip][flow^="right"]::after {
+  top: 50%;
+  left: calc(100% + 5px);
+  transform: translate(.5em, -50%);
+}
+
+/* KEYFRAMES */
+@keyframes tooltips-vert {
+  to {
+    opacity: .9;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes tooltips-horz {
+  to {
+    opacity: .9;
+    transform: translate(0, -50%);
+  }
+}
+
+[tooltip][flow^="left"]:hover::before,
+[tooltip][flow^="left"]:hover::after,
+[tooltip][flow^="right"]:hover::before,
+[tooltip][flow^="right"]:hover::after {
+  animation: tooltips-horz 300ms ease-out forwards;
+}
+
+[tooltip][flow^="left"]:hover::before,
+[tooltip][flow^="left"]:hover::after {
+  margin-top: 20px;
+}
+
+#tip-list {
+  background-color: #F2F2F2;
+  padding: 10px;
+  list-style: none;
+  border-radius: 5px;
+}
+
+#tip-list.none {
+  display: none;
+}
+
+.hr {
+  margin: 0;
+}
+
+.kind.active {
+  border-bottom: 2px solid #000;
+  font-weight: bold;
+}
+
+.kind {
+  cursor: pointer;
+}
+
+/* .kind-show-1, */
+.kind-show-2,
+.kind-show-3,
+.kind-show-4,
+.kind-show-5 {
+  display: none;
+}

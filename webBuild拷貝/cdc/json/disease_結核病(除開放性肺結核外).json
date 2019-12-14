@@ -1,0 +1,27 @@
+[
+  {
+    "type": "diseaseName",
+    "title": "結核病(除開放性肺結核外)"
+  },
+  {
+    "type": "checkbox",
+    "title": "主要症狀",
+    "list": [
+      "其他"
+    ],
+    "input": "其他"
+  },
+  {
+    "type": "radio",
+    "title": "臨床症狀",
+    "text": "有無症狀",
+    "list": [
+      "有",
+      "無"
+    ]
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_流行病學資料.json"
+  }
+]

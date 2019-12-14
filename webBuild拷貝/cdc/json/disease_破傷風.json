@@ -1,0 +1,88 @@
+[
+  {
+    "type": "diseaseName",
+    "title": "破傷風"
+  },
+  {
+    "type": "radio",
+    "title": "臨床症狀",
+    "text": "有無症狀",
+    "list": [
+      "有",
+      "無"
+    ]
+  },
+  {
+    "type": "checkbox",
+    "title": "主要症狀",
+    "list": [
+      "角弓反張",
+      "痙攣",
+      "腹部僵硬"
+    ]
+  },
+  {
+    "type": "checkbox",
+    "title": "臨床症狀",
+    "list": [
+      "全身肌肉僵直(rigidity of muscles)",
+      "牙關緊閉(trismus)",
+      "痙攣(spasm or convulsion)",
+      "角弓反張(optisthotonus)",
+      "痛性之肌肉收縮（最初在咬肌及頸部肌肉，而後為軀幹肌肉）",
+      "臉部表情出現「痙笑」（risus sardonicus）",
+      "其他"
+    ],
+    "input": "如有勾選『其他』，則請描述："
+  },
+  {
+    "type": "radio",
+    "title": "臨床症狀",
+    "text": "是否有傷口",
+    "list": [
+      "有",
+      "無",
+      "不知"
+    ]
+  },
+  {
+    "type": "checkbox",
+    "title": "傷口種類",
+    "list": [
+      "穿刺傷",
+      "割傷",
+      "擦傷",
+      "灼/燙傷",
+      "褥瘡",
+      "動物咬傷",
+      "未說明傷口種類",
+      "其他"
+    ],
+    "input": "如有勾選『其他』，則請描述："
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_流行病學資料.json"
+  },
+  {
+    "type": "h3",
+    "title": "通報疾病相關NIIS接種紀錄"
+  },
+  {
+    "type": "checkbox",
+    "list": [
+      [
+        "input",
+        "疫苗名稱"
+      ],
+      [
+        "input",
+        "接種劑次"
+      ],
+      [
+        "input",
+        "接種日期"
+      ]
+    ]
+  }
+]

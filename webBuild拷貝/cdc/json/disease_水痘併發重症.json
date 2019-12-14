@@ -1,0 +1,237 @@
+[
+  {
+    "type": "diseaseName",
+    "title": "水痘併發重症(無檢核、有附加、人工研判)"
+  },
+  {
+    "type": "radio",
+    "title": "臨床症狀",
+    "text": "有無症狀",
+    "list": [
+      "有",
+      "無"
+    ]
+  },
+  {
+    "type": "checkbox",
+    "title": "主要症狀",
+    "list": [
+      "肺炎",
+      "敗血症",
+      "腦炎",
+      "骨和關節之感染(osteomyelitis or septic arthritis)",
+      "中毒休克症候群(toxic shock syndrome)",
+      "胎兒異常(birth defects/congenital abnormalities)",
+      "出生低體重(small for gestational age)",
+      "依皮節分布瘢痕性的皮膚病變及色素沉澱",
+      "先天性眼睛異常或缺陷(ocular abnormalities/defects)",
+      "先天性腦部及中樞神經異常或缺陷(CNS abnormalities)",
+      "先天性四肢骨骼或肌肉異常或缺陷(limb hypoplasia)",
+      "急性發作，出現符合水痘表現之皮疹",
+      "小腦性共濟失調",
+      "雷氏綜合症候群",
+      "其他併發症",
+      "蜂窩性組織炎",
+      "壞死性筋膜炎"
+    ],
+    "input": "其他"
+  },
+  {
+    "type": "radio",
+    "title": "通報時檢驗資料",
+    "text": "醫院實驗室自行診斷依據",
+    "list": [
+      "血清 VZV IgM陽性",
+      "血清 VZV IgG於急性期與恢復期，抗體顯著上升"
+    ],
+    "input": "臨床檢體PCR陽性，檢體來源："
+  },
+  {
+    "type": "h2",
+    "title": "流行病學資料"
+  },
+  {
+    "type": "select",
+    "title": "職業",
+    "list": [
+      "學生",
+      "工程師",
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "旅遊史",
+    "list": [
+      "有",
+      "無"
+    ]
+  },
+  {
+    "type": "checkbox",
+    "title": "旅遊史類別",
+    "list": [
+      "國內旅遊史",
+      "國外旅遊史",
+      "國外居住史"
+    ]
+  },
+  {
+    "type": "h3",
+    "title": "國內旅遊史"
+  },
+  {
+    "type": "input",
+    "title": "縣市"
+  },
+  {
+    "type": "date",
+    "title": "起始日期"
+  },
+  {
+    "type": "date",
+    "title": "結束日期"
+  },
+  {
+    "type": "addRecord",
+    "title": "＋ 新增一筆國內旅遊史"
+  },
+  {
+    "type": "h3",
+    "title": "國外旅遊史"
+  },
+  {
+    "type": "input",
+    "title": "國家別"
+  },
+  {
+    "type": "date",
+    "title": "起始日期"
+  },
+  {
+    "type": "date",
+    "title": "結束日期"
+  },
+  {
+    "type": "addRecord",
+    "title": "＋ 新增一筆國外旅遊史"
+  },
+  {
+    "type": "date",
+    "title": "移民署入境日期"
+  },
+  {
+    "type": "date",
+    "title": "移民署最後離境國"
+  },
+  {
+    "type": "h3",
+    "title": "國外居住史"
+  },
+  {
+    "type": "input",
+    "title": "國家別"
+  },
+  {
+    "type": "date",
+    "title": "離境日期"
+  },
+  {
+    "type": "date",
+    "title": "入境日期"
+  },
+  {
+    "type": "addRecord",
+    "title": "＋ 新增一筆國外居住史"
+  },
+  {
+    "type": "radio",
+    "title": "動物接觸史",
+    "list": [
+      "有",
+      "無"
+    ]
+  },
+  {
+    "type": "select",
+    "title": "接觸動物種類",
+    "list": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "type": "h3",
+    "title": "通報疾病相關NIIS接種紀錄"
+  },
+  {
+    "type": "input",
+    "title": "疫苗名稱"
+  },
+  {
+    "type": "input",
+    "title": "接種劑次"
+  },
+  {
+    "type": "input",
+    "title": "接種日期"
+  },
+  {
+    "type": "h3",
+    "title": "請確認病人是否有下列高危險群組?"
+  },
+  {
+    "type": "checkbox",
+    "title": "請確認病人是否有下列高危險群組?",
+    "text": "有無症狀",
+    "list": [
+      [
+        "checkbox",
+        "孕婦"
+      ],
+      [
+        "checkbox",
+        "小於1歲之嬰兒"
+      ],
+      [
+        "checkbox",
+        "成人"
+      ],
+      [
+        "input",
+        "免疫缺陷或低下者，病名："
+      ],
+      [
+        "input",
+        "其他："
+      ],
+      [
+        "checkbox",
+        "並非高危險族群"
+      ]
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "是否為先天性水痘症候群(Congential Varicella Syndrome)通報? (必填欄位)",
+    "list": [
+      "否",
+      "是"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "病人(新生兒)，請確認是否有下列危險因子",
+    "list": [
+      "母親於孕期曾感染水痘",
+      "母親於孕期曾接觸水痘患者",
+      "無上述危險因子"
+    ],
+    "input": "出生缺陷或其他懷疑原因："
+  }
+]

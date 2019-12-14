@@ -1,0 +1,35 @@
+[
+  {
+    "type": "diseaseName",
+    "title": "小兒麻痺"
+  },
+  {
+    "type": "radio",
+    "title": "臨床症狀",
+    "text": "有無症狀",
+    "list": [
+      "有",
+      "無"
+    ]
+  },
+  {
+    "type": "checkbox",
+    "title": "主要症狀",
+    "list": [
+      "肌肉痛",
+      "發燒",
+      "腹瀉",
+      "嘔吐",
+      "鼻炎",
+      "僵硬",
+      "頸部僵硬",
+      "頭痛",
+      "噁心"
+    ],
+    "input": "其他症狀"
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_流行病學資料有疫苗.json"
+  }
+]

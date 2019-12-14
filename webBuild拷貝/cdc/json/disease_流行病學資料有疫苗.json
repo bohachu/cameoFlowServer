@@ -1,0 +1,152 @@
+[
+  {
+    "type": "h2",
+    "title": "流行病學資料"
+  },
+  {
+    "type": "select",
+    "title": "職業",
+    "list": [
+      "學生",
+      "工程師",
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "type": "radio",
+    "title": "旅遊史",
+    "list": [
+      "有",
+      "無"
+    ]
+  },
+  {
+    "type": "checkbox",
+    "title": "旅遊史類別",
+    "list": [
+      "國內旅遊史",
+      "國外旅遊史",
+      "外籍人士國外居住史"
+    ]
+  },
+  {
+    "type": "h3",
+    "title": "國內旅遊史"
+  },
+  {
+    "type": "input",
+    "title": "縣市"
+  },
+  {
+    "type": "date",
+    "title": "起始日期"
+  },
+  {
+    "type": "date",
+    "title": "結束日期"
+  },
+  {
+    "type": "addRecord",
+    "title": "＋ 新增一筆國內旅遊史"
+  },
+  {
+    "type": "h3",
+    "title": "國外旅遊史"
+  },
+  {
+    "type": "input",
+    "title": "國家別"
+  },
+  {
+    "type": "date",
+    "title": "起始日期"
+  },
+  {
+    "type": "date",
+    "title": "結束日期"
+  },
+  {
+    "type": "addRecord",
+    "title": "＋ 新增一筆國外旅遊史"
+  },
+  {
+    "type": "date",
+    "title": "移民署入境日期"
+  },
+  {
+    "type": "input",
+    "title": "移民署最後離境國"
+  },
+  {
+    "type": "h3",
+    "title": "國外居住史"
+  },
+  {
+    "type": "input",
+    "title": "國家別"
+  },
+  {
+    "type": "date",
+    "title": "離境日期"
+  },
+  {
+    "type": "date",
+    "title": "入境日期"
+  },
+  {
+    "type": "addRecord",
+    "title": "＋ 新增一筆國外居住史"
+  },
+  {
+    "type": "radio",
+    "title": "動物接觸史",
+    "list": [
+      "有",
+      "無"
+    ]
+  },
+  {
+    "type": "select",
+    "title": "接觸動物種類",
+    "list": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "type": "h3",
+    "title": "疫苗接種史"
+  },
+  {
+    "type": "checkbox",
+    "list": [
+      [
+        "input",
+        "疫苗名稱"
+      ],
+      [
+        "input",
+        "疫苗接種劑次"
+      ],
+      [
+        "input",
+        "疫苗接種日期"
+      ]
+    ]
+  },
+  {
+    "type": "checkbox",
+    "list": [
+      [
+        "input",
+        "疫苗名稱"
+      ]
+    ]
+  }
+]  
+
