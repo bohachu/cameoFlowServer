@@ -33,8 +33,6 @@ void main() {
   }
 }
 
-
-
 20191213 0750 要把 vue html + dart data 結合在一起
 
 == todo list ==
