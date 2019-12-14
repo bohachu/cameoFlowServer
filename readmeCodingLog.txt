@@ -1,3 +1,7 @@
+20191214 1147 done duplicated code
+pmd cpd --files ./jsCdc.dart --language dart --minimum-tokens 20
+已經把全部的html變成reportDisease.html
+
 1014 done    'h2': JsonToHtmlH2(),
 done    'h3': JsonToHtmlH3(),
 done    'h4': JsonToHtmlH4(),
