@@ -1,7 +1,7 @@
 function funcJson2Html(lstDart) {
   Vue.component('button-counter', {
     data: function () {
-      console.log("json2Html.js/funcJson2Html")
+      console.log("canDelete_json2Html.js/funcJson2Html")
       return {
         count: 0
       }

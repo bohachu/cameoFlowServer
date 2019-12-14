@@ -11,10 +11,6 @@ class JsonToHtmlAddRecord extends JsonToHtml {
 void main() async {
   window.console.log('jsCdc.dart/main()');
 
-  //20191209 00:31 dart to vue, call javascript function
-  List lst = ['來自Dart to Vue的呼喊'];
-  context.callMethod('funcJson2Html', [JsObject.jsify(lst)]);
-
   Map map = getUriParameters();
   String strDiseaseFile = map['strDiseaseFile'];
   String strJson = '';
