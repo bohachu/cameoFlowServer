@@ -30,16 +30,18 @@
     $strHtmlDate
   </div>
 
-  <span class="radio_strHtmlTip" tooltip="$strTip" flow="right">
+  <span class="radio_strTip" tooltip="$strTip" flow="right">
       <i class="fas fa-exclamation-circle" style="color: #00a65a;"></i>
   </span>
 
   <div class="radio_strList custom-control custom-radio custom-control-inline">
-    <input type="radio" class="custom-control-input" id="customRadioInline${intRandomId[i]}" name="customRadioInline${intRandomId}">
-    <label class="custom-control-label fs-0" for="customRadioInline${intRandomId[i]}">
+    <input type="radio" class="custom-control-input" id="customRadioInline${intRandomId + i}"
+           name="customRadioInline$intRandomId">
+    <label class="custom-control-label fs-0" for="customRadioInline${intRandomId + i}">
       ${lstList[i]}
     </label>
   </div>
+
 </div>
 
 <div id="reportDiseaseNav"></div>

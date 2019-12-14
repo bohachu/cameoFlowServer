@@ -1,3 +1,17 @@
+1014 done    'h2': JsonToHtmlH2(),
+done    'h3': JsonToHtmlH3(),
+done    'h4': JsonToHtmlH4(),
+done    'diseaseName': JsonToHtmlDiseaseName(),
+done    'json': JsonToHtmlImportJson(),
+
+    'radio': JsonToHtmlRadio(),
+
+    'checkbox': JsonToHtmlCheckbox(),
+    'select': JsonToHtmlSelect(),
+    'input': JsonToHtmlInput(),
+    'date': JsonToHtmlDate(),
+    'addRecord': JsonToHtmlAddRecord(),
+
 == start 20191214 0753
 來製作 h2 tags
 

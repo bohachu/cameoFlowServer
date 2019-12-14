@@ -2,7 +2,7 @@ import 'dart:math';
 import 'dart:convert';
 import 'dart:html';
 import '../../common/dart/httpGet.dart';
-import 'dart:js';
+import '../../common/dart/stringUtil.dart';
 
 class JsonToHtmlAddRecord extends JsonToHtml {
   Future<String> getTags() async => '<a href="#">$strTitle</a><br/>';
@@ -38,16 +38,7 @@ String getDiseaseName(String strReportDiseaseJsonFile) {
 }
 
 void setInnerHtml(String strHtml, String strDiseaseName) {
-  final NodeValidatorBuilder nodeValidator = NodeValidatorBuilder.common()
-    ..allowElement('a', attributes: ['href'])
-    ..allowElement('div', attributes: ['style'])
-    ..allowElement('img', attributes: ['src'])
-    ..allowElement('button', attributes: ['style'])
-    ..allowElement('input', attributes: ['data-options'])
-    ..allowElement('span', attributes: ['flow', 'tooltip', 'style'])
-    ..allowElement('i', attributes: ['style'])
-    ..allowHtml5();
-  querySelector('#reportDiseaseDartHtml').setInnerHtml(strHtml, validator: nodeValidator);
+  querySelector('#reportDiseaseDartHtml').setInnerHtml(strHtml, treeSanitizer: NodeTreeSanitizer.trusted);
   querySelector('#strDiseaseName').setInnerHtml('您所選取要通報的疾病為：$strDiseaseName');
 }
 
@@ -166,11 +157,7 @@ class JsonToHtmlH2 extends JsonToHtml {
       '\$strFontSize': '$strFontSize',
       '\$strHr': '$strHr',
     };
-    String strOuterHtml = querySelector('.h2').outerHtml;
-    map.forEach((k, v) {
-      strOuterHtml = strOuterHtml.replaceAll(k, v);
-    });
-    return strOuterHtml;
+    return replaceAll(querySelector('.h2').outerHtml, map);
   }
 }
 
@@ -215,11 +202,8 @@ class JsonToHtmlRadio extends JsonToHtml {
 
   void buildTip() {
     if (strTip != '') {
-      strHtmlTip = '''
-      <span tooltip=$strTip flow="right">
-        <i class="fas fa-exclamation-circle" style="color: #00a65a;"></i>
-      </span>
-    ''';
+      String strHtml = querySelector('.radio_strTip').outerHtml;
+      strHtmlTip = replaceAll(strHtml, {'\$strTip': '$strTip'});
     }
   }
 
@@ -229,37 +213,20 @@ class JsonToHtmlRadio extends JsonToHtml {
     }
   }
 
-  String getListTemplate(int i) {
-    List lstMapReplace = [
-      {'\${intRandomId + i}': '${intRandomId + i}'},
-      {'\$intRandomId': '$intRandomId'},
-      {'\${lstList[i]}': '${lstList[i]}'},
-    ];
-
-    String strOuterHtml = querySelector('.radio_strSkeleton').outerHtml;
-
-    return '''
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" class="custom-control-input" id="customRadioInline${intRandomId + i}" 
-                         name="customRadioInline$intRandomId">
-                  <label class="custom-control-label fs-0" for="customRadioInline${intRandomId + i}">
-                    ${lstList[i]}
-                  </label>
-                </div>
-    ''';
-  }
+  String getListTemplate(int i) => replaceAll(querySelector('.radio_strList').outerHtml, {
+        '\${intRandomId + i}': '${intRandomId + i}',
+        '\$intRandomId': '$intRandomId',
+        '\${lstList[i]}': '${lstList[i]}',
+      });
 
   buildHtmlAll() {
-    strHtmlAll = '''
-          <div class="row ml-1 mr-1">
-            <div class="form-group">
-              <label class="fs-0 font-weight-bold text-black">$strTitle</label><br/>
-              <div class="ml-1 mb-1">$strText $strHtmlTip</div>
-                $strList
-            </div>
-            $strHtmlDate
-          </div>
-    ''';
+    strHtmlAll = replaceAll(querySelector('.radio_strSkeleton').outerHtml, {
+      '\$strTitle': '$strTitle',
+      '\$strText': '$strText',
+      '\$strHtmlTip': '$strHtmlTip',
+      '\$strList': '$strList',
+      '\$strHtmlDate': '$strHtmlDate',
+    });
   }
 
   void buildInput() {}
