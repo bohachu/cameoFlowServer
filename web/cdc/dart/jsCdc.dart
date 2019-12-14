@@ -59,7 +59,7 @@ Future<String> scanJsonToHtml(List lstJson) async {
   for (int i = 0; i < lstJson.length; i++) {
     String strType = lstJson[i]['type'];
     Map map = lstJson[i];
-    strHtml += await mapTypeToCode[strType].getHtml(map);
+    strHtml += await mapTypeToCode[strType].initGetTags(map);
   }
   return strHtml;
 }
@@ -96,7 +96,7 @@ class JsonToHtml {
     intRandomId = Random().nextInt(999999);
   }
 
-  Future<String> getHtml(Map map) async {
+  Future<String> initGetTags(Map map) async {
     init(map);
     return getTags();
   }
@@ -199,7 +199,7 @@ class JsonToHtmlRadio extends JsonToHtml {
     }
   }
 
-  Future<String> getHtml(Map map) async {
+  Future<String> initGetTags(Map map) async {
     init(map);
     buildTip();
     buildList();
