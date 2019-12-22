@@ -1,0 +1,16 @@
+[
+  {
+    "type": "file",
+    "file": "../json/compHeader.json"
+  },
+  {
+    "type": "searchResultList",
+    "title": "${listSearchResult[i]['title']}",
+    "link": "${listSearchResult[i]['link']}",
+    "summary": "${listSearchResult[i]['summary']}"
+  },
+  {
+    "type": "file",
+    "file": "../json/compFooter.json"
+  }
+]

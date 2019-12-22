@@ -1,0 +1,41 @@
+[
+  {
+    "type": "image",
+    "title": "教育百科LOGO",
+    "file": "../img/logoPedia.png"
+  },
+  {
+    "type": "menuItem",
+    "title": "網站導覽",
+    "link": "https://pedia.cloud.edu.tw/Home/WebsiteMap"
+  },
+  {
+    "type": "menuItem",
+    "title": "教育雲入口網",
+    "link": "http://cloud.edu.tw/"
+  },
+  {
+    "type": "menuItem",
+    "title": "索引選單",
+    "link": "http://pedia.cloud.edu.tw/"
+  },
+  {
+    "type": "menuItem",
+    "title": "投稿區",
+    "link": "https://pedia.cloud.edu.tw/Stroke/Advice"
+  },
+  {
+    "type": "menuItem",
+    "title": "生字表",
+    "link": "https://pedia.cloud.edu.tw/Bookmark/Textword?semester=11"
+  },
+  {
+    "type": "menuItem",
+    "title": "2019新增詞條",
+    "link": "https://pedia.cloud.edu.tw/Campaign/Reward"
+  },
+  {
+    "type": "file",
+    "file": "../json/compSearchBar.json"
+  }
+]

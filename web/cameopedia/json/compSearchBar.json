@@ -1,0 +1,10 @@
+[
+  {
+    "type": "input",
+    "title": "輸入想要搜尋的字詞"
+  },
+  {
+    "type": "button",
+    "title": "搜尋"
+  }
+]

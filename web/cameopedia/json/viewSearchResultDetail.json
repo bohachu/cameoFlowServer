@@ -1,0 +1,86 @@
+[
+  {
+    "type": "file",
+    "file": "../json/compHeader.json"
+  },
+  {
+    "type": "h1",
+    "title": "詞條名稱",
+    "text": "$strKeyword"
+  },
+  {
+    "type": "h2",
+    "title": "讀音",
+    "text": "$strZhuyin"
+  },
+  {
+    "type": "sound",
+    "title": "播放",
+    "file": "$strFileSoundZhuyin"
+  },
+  {
+    "type": "button",
+    "title": "開啟關聯"
+  },
+  {
+    "type": "button",
+    "title": "列入蒐藏"
+  },
+  {
+    "type": "button",
+    "title": "QRCode"
+  },
+  {
+    "type": "select",
+    "title": "切換來源",
+    "list": [
+      "教育部國語小字典",
+      "教育部國語辭典簡編本",
+      "教育部重編國語辭典修訂本",
+      "教育部客家語辭典",
+      "教育部閩南語辭典",
+      "教育部成語典",
+      "教育部教育Wiki"
+    ]
+  },
+  {
+    "type": "file",
+    "file": "../json/compDetail教育部國語小字典.json"
+  },
+  {
+    "type": "file",
+    "file": "../json/compDetail教育部國語辭典簡編本.json"
+  },
+  {
+    "type": "file",
+    "file": "../json/compDetail教育部重編國語辭典修訂本.json"
+  },
+  {
+    "type": "file",
+    "file": "../json/compDetail教育部客家語辭典.json"
+  },
+  {
+    "type": "file",
+    "file": "../json/compDetail教育部閩南語辭典.json"
+  },
+  {
+    "type": "file",
+    "file": "../json/compDetail教育部成語典.json"
+  },
+  {
+    "type": "file",
+    "file": "../json/compDetail教育部教育Wiki.json"
+  },
+  {
+    "type": "file",
+    "file": "../json/comp筆順.json"
+  },
+  {
+    "type": "file",
+    "file": "../json/comp詞條功能.json"
+  },
+  {
+    "type": "file",
+    "file": "../json/compFooter.json"
+  }
+]

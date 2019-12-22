@@ -1,0 +1,10 @@
+[
+  {
+    "type": "file",
+    "file": "../json/compHeader.json"
+  },
+  {
+    "type": "file",
+    "file": "../json/compFooter.json"
+  }
+]
