@@ -4,7 +4,7 @@
   },
   {
     "type": "select",
-    "title": "職業",
+    "title": "<span style=\"color:red\">＊</span>職業",
     "list": [
       "學生",
       "工程師",
@@ -33,7 +33,7 @@
   },
   {
     "type": "h3",
-    "title": "國內旅遊史"
+    "title": "<span style=\"color:red\">＊</span>國內旅遊史"
   },
   {
     "type": "input",
@@ -53,7 +53,7 @@
   },
   {
     "type": "h3",
-    "title": "國外旅遊史"
+    "title": "<span style=\"color:red\">＊</span>國外旅遊史"
   },
   {
     "type": "input",

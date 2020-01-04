@@ -5,7 +5,7 @@
   },
   {
     "type": "select",
-    "title": "職業",
+    "title": "<span style=\"color:red\">＊</span>職業",
     "list": [
       "學生",
       "工程師",
@@ -17,7 +17,7 @@
   },
   {
     "type": "radio",
-    "title": "<p style='font-size: 20px; color: #000; font-weight: bold;'>旅遊史</p>",
+    "title": "<p style='font-size: 20px; color: #000; font-weight: bold;'><span style=\"color:red\">＊</span>旅遊史</p>",
     "list": [
       "有",
       "無"
@@ -25,7 +25,7 @@
   },
   {
     "type": "checkbox",
-    "title": "旅遊史類別",
+    "title": "<span style=\"color:red\">＊</span>旅遊史類別",
     "list": [
       "國內旅遊史",
       "國外旅遊史",
@@ -34,19 +34,19 @@
   },
   {
     "type": "h3",
-    "title": "國內旅遊史"
+    "title": "<span style=\"color:red\">＊</span>國內旅遊史"
   },
   {
     "type": "input",
-    "title": "縣市"
+    "title": "<span style=\"color:red\">＊</span>縣市"
   },
   {
     "type": "date",
-    "title": "起始日期"
+    "title": "<span style=\"color:red\">＊</span>起始日期"
   },
   {
     "type": "date",
-    "title": "結束日期"
+    "title": "<span style=\"color:red\">＊</span>結束日期"
   },
   {
     "type": "addRecord",
@@ -54,19 +54,19 @@
   },
   {
     "type": "h3",
-    "title": "國外旅遊史"
+    "title": "<span style=\"color:red\">＊</span>國外旅遊史"
   },
   {
     "type": "input",
-    "title": "國家別"
+    "title": "<span style=\"color:red\">＊</span>國家別"
   },
   {
     "type": "date",
-    "title": "起始日期"
+    "title": "<span style=\"color:red\">＊</span>起始日期"
   },
   {
     "type": "date",
-    "title": "結束日期"
+    "title": "<span style=\"color:red\">＊</span>結束日期"
   },
   {
     "type": "addRecord",
@@ -82,19 +82,19 @@
   },
   {
     "type": "h3",
-    "title": "國外居住史"
+    "title": "<span style=\"color:red\">＊</span>國外居住史"
   },
   {
     "type": "input",
-    "title": "國家別"
+    "title": "<span style=\"color:red\">＊</span>國家別"
   },
   {
     "type": "date",
-    "title": "離境居住國日期"
+    "title": "<span style=\"color:red\">＊</span>離境居住國日期"
   },
   {
     "type": "date",
-    "title": "入境我國日期"
+    "title": "<span style=\"color:red\">＊</span>入境我國日期"
   },
   {
     "type": "addRecord",
