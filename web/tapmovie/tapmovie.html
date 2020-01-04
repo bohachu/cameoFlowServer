@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body style="padding:0px 0px;margin: 0px 0px;" bgcolor="black">
+
+<video id="idVideo" height="100%" autoplay="autoplay" playsinline>
+  <source src="river.mp4" type="video/mp4"/>
+</video>
+
+<script>
+  $(document).ready(function () {
+      var player = $('#idVideo').get(0);
+      $('#gettime').click(function () {
+        if (player) {
+          current_time = player.currentTime;
+          $('#showtime').html(current_time + " seconds");
+          player.currentTime = current_time + 10;
+        }
+      });
+    }
+  );
+
+  $("#idVideo").click(function () {
+    //console.log(this);
+    if (this.paused) {
+      this.play();
+    }
+  });
+
+  handleClick = function (e) {
+    console.log("Good timed click: " + videoElement.currentTime);
+    console.log("Mouse-X: " + (e.offsetX));
+    console.log("Mouse-Y: " + (e.offsetY));
+    if (e.offsetX < 100) {
+      videoElement.pause();
+      videoElement.currentTime = 3;
+      videoElement.play();
+      console.log("001 Mouse-X: " + (e.offsetX));
+    }
+    if (e.offsetX > 500) {
+      videoElement.pause();
+      videoElement.currentTime = 18;
+      videoElement.play();
+      console.log("002 Mouse-X: " + (e.offsetX));
+    }
+  }
+  videoElement = $('#idVideo').get(0);
+  videoElement.addEventListener("mousedown", handleClick, false);
+
+</script>
+</body>
+</html>
