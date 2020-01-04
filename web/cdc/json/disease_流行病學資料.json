@@ -5,7 +5,19 @@
   },
   {
     "type": "select",
-    "title": "<span style=\"color:red\">＊</span>職業",
+    "title": "<span style=\"color:red\">＊</span>高風險職業<a href=\"https://docs.google.com/spreadsheets/d/1ZtWrPpgUG19375ozuzeMMbuGONyKQc2mY6mmJXD_8y4/edit#gid=344074476\">\uD83D\uDD06</a>",
+    "list": [
+      "學生",
+      "工程師",
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "type": "select",
+    "title": "<span style=\"color:red\">＊</span>其他職業<a href=\"codingMemo.html?strMemo=當高風險職業選擇「其他職業」才動態顯示此欄位\">\uD83D\uDD06</a>",
     "list": [
       "學生",
       "工程師",
@@ -37,8 +49,14 @@
     "title": "<span style=\"color:red\">＊</span>國內旅遊史"
   },
   {
-    "type": "input",
-    "title": "<span style=\"color:red\">＊</span>縣市"
+    "type": "select",
+    "title": "<span style=\"color:red\">＊</span>縣市<a href=\"codingMemo.html?strMemo=縣市資料請搜尋Google關鍵字：內政部民政司 地方行政區域簡介\">\uD83D\uDD06</a>",
+    "list": [
+      "臺北市",
+      "新北市",
+      "3",
+      "4"
+    ]
   },
   {
     "type": "date",
@@ -58,7 +76,7 @@
   },
   {
     "type": "input",
-    "title": "<span style=\"color:red\">＊</span>國家別"
+    "title": "<span style=\"color:red\">＊</span>國家"
   },
   {
     "type": "date",
@@ -73,20 +91,12 @@
     "title": "＋ 新增一筆國外旅遊史"
   },
   {
-    "type": "date",
-    "title": "移民署入境日期"
-  },
-  {
-    "type": "input",
-    "title": "移民署最後離境國"
-  },
-  {
     "type": "h3",
     "title": "<span style=\"color:red\">＊</span>國外居住史"
   },
   {
     "type": "input",
-    "title": "<span style=\"color:red\">＊</span>國家別"
+    "title": "<span style=\"color:red\">＊</span>國家"
   },
   {
     "type": "date",
@@ -117,5 +127,21 @@
       "3",
       "4"
     ]
+  },
+  {
+    "type": "input",
+    "title": "<span style=\"color:red\">＊</span>其他接觸動物<a href=\"codingMemo.html?strMemo=當接觸動物種類選擇「其他接觸動物」才動態顯示此欄位\">\uD83D\uDD06</a>"
+  },
+  {
+    "type": "h3",
+    "title": "個案生母資料"
+  },
+  {
+    "type": "input",
+    "title": "姓名"
+  },
+  {
+    "type": "input",
+    "title": "身份證統一編號/外來人口之居留證統一證號<a href=\"codingMemo.html?strMemo=當個案ID為AA時顯示並為必填\">\uD83D\uDD06</a>"
   }
 ]

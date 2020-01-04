@@ -79,7 +79,7 @@ class JsonToHtmlSelect extends JsonToHtmlRadio {
   String getListTemplate(int i) => '<option>${lstList[i]}</option>';
 
   buildHtmlAll() {
-    strList = '<option>輸入內容</option>' + strList;
+    strList = '<option>請選擇</option>' + strList;
     strHtmlAll = replaceAll('.JsonToHtmlSelect_buildHtmlAll', {'\$intRandomId': '$intRandomId', '\$strTitle': '$strTitle', '\$strList': '$strList'});
   }
 }

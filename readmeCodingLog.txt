@@ -1,3 +1,8 @@
+== 20200104 17:34 ==
+17:34 start coding 1h ~ 18:10 stop coding go tv
+20:58 start coding
+00:09 stop coding
+
 == 20200104 12:09 ==
 12:10 正在聽兔兔進行作業朗讀
 13:02 準備出門了～ 吃飯

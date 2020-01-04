@@ -125,28 +125,20 @@
     "title": "＋ 新增一筆國外旅遊史"
   },
   {
-    "type": "date",
-    "title": "移民署入境日期"
-  },
-  {
-    "type": "date",
-    "title": "移民署最後離境國"
-  },
-  {
     "type": "h3",
     "title": "國外居住史"
   },
   {
     "type": "input",
-    "title": "國家別"
+    "title": "國家"
   },
   {
     "type": "date",
-    "title": "離境日期"
+    "title": "離境居住國日期"
   },
   {
     "type": "date",
-    "title": "入境日期"
+    "title": "入境我國日期"
   },
   {
     "type": "addRecord",

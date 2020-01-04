@@ -126,11 +126,11 @@
   },
   {
     "type": "date",
-    "title": "離境日期"
+    "title": "離境居住國日期"
   },
   {
     "type": "date",
-    "title": "入境日期"
+    "title": "入境我國日期"
   },
   {
     "type": "addRecord",
