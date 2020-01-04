@@ -1,26 +1,24 @@
-[
-  {
+[{
     "type": "diseaseName",
-    "title": "HIV(18月以上成人)"
-  },
-  {
-    "type": "h3",
-    "title": "通報疾病",
-    "text": "需無任何HIV通報紀錄，始得通報HIV"
+    "title": ""
   },
   {
     "type": "radio",
-    "title": "有無症狀",
+    "title": "臨床症狀",
+    "text": "有無症狀",
     "list": [
       "有",
       "無"
     ]
   },
   {
+    "type": "h4",
+    "title": "<span style='color: #5E6E82; font-weight: 500;'>主要症狀</span>"
+  },
+  {
     "type": "checkbox",
     "title": "主要症狀",
-    "list": [
-    ],
+    "list": [],
     "input": "其他"
   },
   {
@@ -33,11 +31,7 @@
   },
   {
     "type": "h3",
-    "title": "HIV-1及2抗體確認檢驗方法陽性"
-  },
-  {
-    "type": "h4",
-    "title": "HIV-1及2抗體確認檢驗方法"
+    "title": "<input type='checkbox'> HIV-1及2抗體確認檢驗方法陽性"
   },
   {
     "type": "checkbox",
@@ -57,42 +51,50 @@
     ]
   },
   {
-    "type": "date",
-    "title": "檢驗日期"
-  },
-  {
-    "type": "input",
-    "title": "檢驗單位(檢驗單位代碼)"
-  },
-  {
-    "type": "input",
-    "title": "檢驗單位(檢驗單位)"
-  },
-  {
-    "type": "h3",
-    "title": "分子生物學核酸檢測(NAT)陽性"
+    "type": "h4",
+    "title": "HIV-1及2抗體確認檢驗方法"
   },
   {
     "type": "date",
-    "title": "檢驗日期"
+    "title": "檢驗日期/檢驗單位"
   },
   {
     "type": "input",
-    "title": "檢驗單位(檢驗單位代碼)"
+    "title": "<br>"
   },
   {
     "type": "input",
-    "title": "檢驗單位(檢驗單位)"
+    "title": "<br>"
   },
   {
     "type": "h3",
-    "title": "是否為急性感染判斷"
+    "title": "<input type='checkbox'> 分子生物學核酸檢測(NAT)陽性"
+  },
+  {
+    "type": "date",
+    "title": "檢驗日期/檢驗單位"
+  },
+  {
+    "type": "input",
+    "title": "<br>"
+  },
+  {
+    "type": "input",
+    "title": "<br>"
+  },
+  {
+    "type": "radio",
+    "title": "",
+    "text": "<span style='color: black; font-weight: bold;'>是否為急性感染判斷</span>",
+    "tip": "勾選前項[分子生物學核酸檢測(NAT)陽性]時，本項需填答，供判斷個案是否為急性感染。",
+    "list": [
+
+    ]
   },
   {
     "type": "radio",
     "list": [
-      "前180天內(含本次)任一檢驗結果為[陰性或未確定]",
-      "前180天內(含本次)無相關檢驗結果"
+      "前180天內(含本次)任一檢驗結果為[陰性或未確定] <span class='JsonToHtmlRadio_buildTip' tooltip='勾選前項[分子生物學核酸檢測(NAT)陽性]時，本項需填答，供判斷個案是否為急性感染。' flow='right'><i class='fas fa-exclamation-circle' style='color: #00a65a;'></i></span>"
     ]
   },
   {
@@ -101,15 +103,15 @@
   },
   {
     "type": "date",
-    "title": "檢驗日期"
+    "title": "最近一次檢驗日期/檢驗單位"
   },
   {
     "type": "input",
-    "title": "檢驗單位(檢驗單位代碼)"
+    "title": "<br>"
   },
   {
     "type": "input",
-    "title": "檢驗單位(檢驗單位)"
+    "title": "<br>"
   },
   {
     "type": "select",
@@ -125,15 +127,13 @@
   },
   {
     "type": "date",
-    "title": "檢驗日期"
-  },
-  {
+    "title": "最近一次檢驗日期/檢驗單位"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位代碼)"
-  },
-  {
+    "title": "<br>"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位)"
+    "title": "<br>"
   },
   {
     "type": "select",
@@ -149,15 +149,13 @@
   },
   {
     "type": "date",
-    "title": "檢驗日期"
-  },
-  {
+    "title": "最近一次檢驗日期/檢驗單位"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位代碼)"
-  },
-  {
+    "title": "<br>"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位)"
+    "title": "<br>"
   },
   {
     "type": "select",
@@ -173,15 +171,13 @@
   },
   {
     "type": "date",
-    "title": "檢驗日期"
-  },
-  {
+    "title": "最近一次檢驗日期/檢驗單位"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位代碼)"
-  },
-  {
+    "title": "<br>"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位)"
+    "title": "<br>"
   },
   {
     "type": "select",
@@ -197,15 +193,13 @@
   },
   {
     "type": "date",
-    "title": "檢驗日期"
-  },
-  {
+    "title": "最近一次檢驗日期/檢驗單位"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位代碼)"
-  },
-  {
+    "title": "<br>"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位)"
+    "title": "<br>"
   },
   {
     "type": "select",
@@ -221,17 +215,14 @@
   },
   {
     "type": "date",
-    "title": "檢驗日期"
-  },
-  {
+    "title": "最近一次檢驗日期/檢驗單位"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位代碼)"
-  },
-  {
+    "title": "<br>"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位)"
-  },
-  {
+    "title": "<br>"
+  }, {
     "type": "select",
     "title": "檢驗結果",
     "list": [
@@ -245,17 +236,14 @@
   },
   {
     "type": "date",
-    "title": "檢驗日期"
-  },
-  {
+    "title": "最近一次檢驗日期/檢驗單位"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位代碼)"
-  },
-  {
+    "title": "<br>"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位)"
-  },
-  {
+    "title": "<br>"
+  }, {
     "type": "select",
     "title": "檢驗結果",
     "list": [
@@ -264,8 +252,14 @@
     ]
   },
   {
+    "type": "radio",
+    "list": [
+      "前180天內(含本次) 無相關檢驗結果 <span class='JsonToHtmlRadio_buildTip' tooltip='無抗體篩檢檢測、抗原/抗體複合型檢測、HIV-1及2抗體確認檢驗方法、分子生物學核酸檢測HIV抗原p24篩檢或中和試驗等檢驗結果。' flow='right'><i class='fas fa-exclamation-circle' style='color: #00a65a;'></i></span>"
+    ]
+  },
+  {
     "type": "h3",
-    "title": "HIV抗原p24篩檢陽性，且進行中和試驗確認陽性"
+    "title": "<input type='checkbox'> HIV抗原p24篩檢陽性，且進行中和試驗確認陽性 <span class='JsonToHtmlRadio_buildTip' tooltip='若同時有進行HIV-1及2抗體確認檢驗方法且結果為陽性者，請確認已勾選上方[HIV-1及2抗體確認檢驗方法陽性]選項。' flow='right'><i class='fas fa-exclamation-circle' style='color: #00a65a;'></i></span>"
   },
   {
     "type": "h4",
@@ -273,15 +267,13 @@
   },
   {
     "type": "date",
-    "title": "檢驗日期"
-  },
-  {
+    "title": "檢驗日期/檢驗單位"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位代碼)"
-  },
-  {
+    "title": "<br>"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位)"
+    "title": "<br>"
   },
   {
     "type": "h4",
@@ -289,25 +281,27 @@
   },
   {
     "type": "date",
-    "title": "檢驗日期"
-  },
-  {
+    "title": "檢驗日期/檢驗單位"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位代碼)"
-  },
-  {
+    "title": "<br>"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位)"
+    "title": "<br>"
   },
   {
-    "type": "h3",
-    "title": "是否為急性感染判斷"
+    "type": "radio",
+    "title": "",
+    "text": "<span style='color: black; font-weight: bold;'>是否為急性感染判斷</span>",
+    "tip": "勾選前項[HIV抗原p24篩檢陽性，且進行中和試驗確認陽性]時，本項需填答，供判斷個案是否為急性感染。",
+    "list": [
+
+    ]
   },
   {
     "type": "radio",
     "list": [
-      "前180天內(含本次)任一檢驗結果為[陰性或未確定]",
-      "前180天內(含本次)無相關檢驗結果"
+      "前180天內(含本次)任一檢驗結果為[陰性或未確定] <span class='JsonToHtmlRadio_buildTip' tooltip='無抗體篩檢檢測、抗原/抗體複合型檢測、HIV-1及2抗體確認檢驗方法、分子生物學核酸檢測HIV抗原p24篩檢或中和試驗等檢驗結果。' flow='right'><i class='fas fa-exclamation-circle' style='color: #00a65a;'></i></span>"
     ]
   },
   {
@@ -316,15 +310,13 @@
   },
   {
     "type": "date",
-    "title": "檢驗日期"
-  },
-  {
+    "title": "最近一次檢驗日期/檢驗單位"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位代碼)"
-  },
-  {
+    "title": "<br>"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位)"
+    "title": "<br>"
   },
   {
     "type": "select",
@@ -340,15 +332,13 @@
   },
   {
     "type": "date",
-    "title": "檢驗日期"
-  },
-  {
+    "title": "最近一次檢驗日期/檢驗單位"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位代碼)"
-  },
-  {
+    "title": "<br>"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位)"
+    "title": "<br>"
   },
   {
     "type": "select",
@@ -364,15 +354,13 @@
   },
   {
     "type": "date",
-    "title": "檢驗日期"
-  },
-  {
+    "title": "最近一次檢驗日期/檢驗單位"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位代碼)"
-  },
-  {
+    "title": "<br>"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位)"
+    "title": "<br>"
   },
   {
     "type": "select",
@@ -388,15 +376,13 @@
   },
   {
     "type": "date",
-    "title": "檢驗日期"
-  },
-  {
+    "title": "最近一次檢驗日期/檢驗單位"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位代碼)"
-  },
-  {
+    "title": "<br>"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位)"
+    "title": "<br>"
   },
   {
     "type": "select",
@@ -412,15 +398,13 @@
   },
   {
     "type": "date",
-    "title": "檢驗日期"
-  },
-  {
+    "title": "最近一次檢驗日期/檢驗單位"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位代碼)"
-  },
-  {
+    "title": "<br>"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位)"
+    "title": "<br>"
   },
   {
     "type": "select",
@@ -433,49 +417,45 @@
   {
     "type": "h4",
     "title": "HIV抗原p24篩檢"
-  },
-  {
+  }, {
     "type": "date",
-    "title": "檢驗日期"
-  },
-  {
+    "title": "最近一次檢驗日期/檢驗單位"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位代碼)"
-  },
-  {
+    "title": "<br>"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位)"
-  },
-  {
+    "title": "<br>"
+  }, {
     "type": "select",
     "title": "檢驗結果",
     "list": [
       "陰性",
       "未確定"
     ]
-  },
-  {
+  }, {
     "type": "h4",
     "title": "中和試驗(NT)"
-  },
-  {
+  }, {
     "type": "date",
-    "title": "檢驗日期"
-  },
-  {
+    "title": "最近一次檢驗日期/檢驗單位"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位代碼)"
-  },
-  {
+    "title": "<br>"
+  }, {
     "type": "input",
-    "title": "檢驗單位(檢驗單位)"
-  },
-  {
+    "title": "<br>"
+  }, {
     "type": "select",
     "title": "檢驗結果",
     "list": [
       "陰性",
       "未確定"
+    ]
+  }, {
+    "type": "radio",
+    "list": [
+      "前180天內(含本次) 無相關檢驗結果 <span class='JsonToHtmlRadio_buildTip' tooltip='無抗體篩檢檢測、抗原/抗體複合型檢測、HIV-1及2抗體確認檢驗方法、分子生物學核酸檢測HIV抗原p24篩檢或中和試驗等檢驗結果。' flow='right'><i class='fas fa-exclamation-circle' style='color: #00a65a;'></i></span>"
     ]
   },
   {

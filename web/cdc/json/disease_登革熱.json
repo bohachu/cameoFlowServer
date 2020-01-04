@@ -1,7 +1,6 @@
-[
-  {
+[{
     "type": "diseaseName",
-    "title": "登革熱"
+    "title": "<span class='ml-3'>登革熱<span>"
   },
   {
     "type": "radio",

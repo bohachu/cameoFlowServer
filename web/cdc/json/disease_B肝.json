@@ -1,7 +1,6 @@
-[
-  {
+[{
     "type": "diseaseName",
-    "title": "B肝"
+    "title": ""
   },
   {
     "type": "radio",
@@ -11,6 +10,10 @@
       "有",
       "無"
     ]
+  },
+  {
+    "type": "h4",
+    "title": "<span style='color: #5E6E82; font-weight: 500;'>主要症狀</span>"
   },
   {
     "type": "checkbox",
@@ -54,13 +57,20 @@
   },
   {
     "type": "radio",
-    "title": "通報時檢驗資料",
-    "text": "本項檢測應由疾病管制署傳染病認可檢驗機構檢驗",
+    "title": "本項檢測應由疾病管制署傳染病認可檢驗機構檢驗",
+    "text": "血清學B型肝炎表面抗原(HbsAg)抗原檢測：",
     "list": [
       "陽性",
       "陰性",
       "無檢驗"
-    ],
-    "input": "ALT 檢驗值："
+    ]
+  },
+  {
+    "type": "input",
+    "title": "ALT 檢驗值："
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_流行病學資料有疫苗.json"
   }
 ]

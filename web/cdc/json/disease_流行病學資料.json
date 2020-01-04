@@ -17,7 +17,7 @@
   },
   {
     "type": "radio",
-    "title": "旅遊史",
+    "title": "<p style='font-size: 20px; color: #000; font-weight: bold;'>旅遊史</p>",
     "list": [
       "有",
       "無"
@@ -29,7 +29,7 @@
     "list": [
       "國內旅遊史",
       "國外旅遊史",
-      "外籍人士國外居住史"
+      "國外居住史"
     ]
   },
   {
@@ -90,11 +90,11 @@
   },
   {
     "type": "date",
-    "title": "離境日期"
+    "title": "離境居住國日期"
   },
   {
     "type": "date",
-    "title": "入境日期"
+    "title": "入境我國日期"
   },
   {
     "type": "addRecord",
@@ -112,7 +112,7 @@
     "type": "select",
     "title": "接觸動物種類",
     "list": [
-      "1",
+      "其它接觸動物",
       "2",
       "3",
       "4"

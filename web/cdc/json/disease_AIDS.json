@@ -1,7 +1,6 @@
-[
-  {
+[{
     "type": "diseaseName",
-    "title": "AIDS"
+    "title": "<span class='ml-3'>AIDS<span>"
   },
   {
     "type": "h4",
@@ -15,6 +14,10 @@
       "有",
       "無"
     ]
+  },
+  {
+    "type": "input",
+    "title": "主要症狀"
   },
   {
     "type": "h2",
@@ -302,7 +305,11 @@
   },
   {
     "type": "input",
-    "title": "CD4值或比例符合檢驗條件(若有CD4值請填具此欄位) ，CD4= "
+    "title": "CD4值 <span style='color: red;'>(若有CD4值請填具此欄位)</span>"
+  },
+  {
+    "type": "input",
+    "title": "<br>或CD4比例"
   },
   {
     "type": "json",
