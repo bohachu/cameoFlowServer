@@ -1,3 +1,6 @@
+== 20200105 08:55 ==
+08:55 start coding
+
 == 20200104 17:34 ==
 17:34 start coding 1h ~ 18:10 stop coding go tv
 20:58 start coding

@@ -4,6 +4,10 @@
     "title": "流行病學資料"
   },
   {
+    "type": "h3",
+    "title": "職業"
+  },
+  {
     "type": "select",
     "title": "<span style=\"color:red\">＊</span>高風險職業<a href=\"https://docs.google.com/spreadsheets/d/1ZtWrPpgUG19375ozuzeMMbuGONyKQc2mY6mmJXD_8y4/edit#gid=344074476\">\uD83D\uDD06</a>",
     "list": [
@@ -28,8 +32,11 @@
     ]
   },
   {
+    "type": "h3",
+    "title": "<span style=\"color:red\">＊</span>旅遊史"
+  },
+  {
     "type": "radio",
-    "title": "<p style='font-size: 20px; color: #000; font-weight: bold;'><span style=\"color:red\">＊</span>旅遊史</p>",
     "list": [
       "有",
       "無"
@@ -45,7 +52,7 @@
     ]
   },
   {
-    "type": "h3",
+    "type": "h4",
     "title": "<span style=\"color:red\">＊</span>國內旅遊史"
   },
   {
@@ -71,7 +78,7 @@
     "title": "＋ 新增一筆國內旅遊史"
   },
   {
-    "type": "h3",
+    "type": "h4",
     "title": "<span style=\"color:red\">＊</span>國外旅遊史"
   },
   {
@@ -91,7 +98,7 @@
     "title": "＋ 新增一筆國外旅遊史"
   },
   {
-    "type": "h3",
+    "type": "h4",
     "title": "<span style=\"color:red\">＊</span>國外居住史"
   },
   {
@@ -111,8 +118,11 @@
     "title": "＋ 新增一筆國外居住史"
   },
   {
+    "type": "h3",
+    "title": "動物接觸史"
+  },
+  {
     "type": "radio",
-    "title": "動物接觸史",
     "list": [
       "有",
       "無"
@@ -133,7 +143,11 @@
     "title": "<span style=\"color:red\">＊</span>其他接觸動物<a href=\"codingMemo.html?strMemo=當接觸動物種類選擇「其他接觸動物」才動態顯示此欄位\">\uD83D\uDD06</a>"
   },
   {
-    "type": "h3",
+    "type": "h2",
+    "title": "個案狀況維護與補充資料"
+  },
+  {
+    "type": "h4",
     "title": "個案生母資料"
   },
   {

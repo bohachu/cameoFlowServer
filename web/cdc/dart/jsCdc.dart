@@ -88,12 +88,14 @@ class JsonToHtml {
   String strType = '';
   String strTitle = '';
   String strText = '';
+  String strTip = '';
   int intRandomId;
 
   init(Map map) {
     strType = map['type'] ?? '';
     strTitle = map['title'] ?? '';
     strText = map['text'] ?? '';
+    strTip = map['tip'] ?? '';
     intRandomId = Random().nextInt(999999);
   }
 
@@ -108,7 +110,8 @@ class JsonToHtml {
 }
 
 class JsonToHtmlDiseaseName extends JsonToHtml {
-  Future<String> getTags() async => strTitle;
+  //Future<String> getTags() async => strTitle;
+  Future<String> getTags() async => ''; //return empty string, 不要顯示小小的疾病名稱，因為上方已經有根據底線檔案名稱顯示了
 }
 
 class JsonToHtmlH2 extends JsonToHtml {
@@ -116,11 +119,22 @@ class JsonToHtmlH2 extends JsonToHtml {
   final strHr = '<hr/>';
 
   Future<String> getTags() async {
+    String strHtmlTip = '';
+
+    if (strTip != '' && strTip != null) {
+      strHtmlTip = '''
+      <span class="JsonToHtmlH2_tip" tooltip="$strTip" flow="right">
+      <i class="fas fas fa-info-circle" style="color: #00a65a;"></i>
+      </span>''';
+    }
+
     Map map = {
       '\$strTitle': '$strTitle',
       '\$strFontSize': '$strFontSize',
       '\$strHr': '$strHr',
+      '\$strHtmlTip': '$strHtmlTip',
     };
+
     return replaceAll('.JsonToHtmlH2', map);
   }
 }
