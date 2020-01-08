@@ -3,9 +3,15 @@
     "title": "<span class='ml-3'>退伍軍人病<span>"
   },
   {
+    "type": "h2",
+    "title": "臨床症狀<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "h4",
+    "title": "有無症狀<span style=\"color:red\">*</span>"
+  },
+  {
     "type": "radio",
-    "title": "臨床症狀",
-    "text": "有無症狀",
     "list": [
       "有",
       "無"
@@ -13,11 +19,10 @@
   },
   {
     "type": "h4",
-    "title": "<span style='color: #5E6E82; font-weight: 500;'>主要症狀</span>"
+    "title": "主要症狀<span style=\"color:red\">*</span>"
   },
   {
     "type": "checkbox",
-    "title": "主要症狀",
     "list": [
       "肌肉酸痛",
       "呼吸困難",
@@ -32,7 +37,7 @@
       "頭暈",
       "全身倦怠"
     ],
-    "input": "其他"
+    "input": "其他症狀<span style=\"color:red\">*</span>"
   },
   {
     "type": "json",
