@@ -4,23 +4,8 @@
     "title": "梅毒"
   },
   {
-    "type": "h2",
-    "title": "臨床症狀"
-  },
-  {
-    "type": "h4",
-    "title": "有無症狀<span style=\"color:red\">*</span>"
-  },
-  {
-    "type": "radio",
-    "list": [
-      "有",
-      "無"
-    ]
-  },
-  {
-    "type": "h4",
-    "title": "主要症狀<span style=\"color:red\">*</span>"
+    "type": "json",
+    "file": "../json/disease_臨床症狀到主要症狀.json"
   },
   {
     "type": "checkbox",
@@ -42,8 +27,11 @@
       "禿髮",
       "扁平濕疣",
       "丘疹"
-    ],
-    "input": "其他症狀"
+    ]
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_其他症狀.json"
   },
   {
     "type": "h2",

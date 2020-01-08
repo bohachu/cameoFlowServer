@@ -4,23 +4,8 @@
     "title": "先天性梅毒"
   },
   {
-    "type": "h2",
-    "title": "臨床症狀"
-  },
-  {
-    "type": "h4",
-    "title": "有無症狀<span style=\"color:red\">*</span>"
-  },
-  {
-    "type": "radio",
-    "list": [
-      "有",
-      "無"
-    ]
-  },
-  {
-    "type": "h4",
-    "title": "主要症狀<span style=\"color:red\">*</span>"
+    "type": "json",
+    "file": "../json/disease_臨床症狀到主要症狀.json"
   },
   {
     "type": "checkbox",
@@ -34,8 +19,11 @@
       "腎病症候群或營養不良引起之水腫",
       "假性麻痺",
       "影像學上可見長骨異常"
-    ],
-    "input": "其他症狀"
+    ]
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_其他症狀.json"
   },
   {
     "type": "h2",
@@ -123,7 +111,8 @@
   {
     "type": "h4",
     "title": "5. 腦脊髓液性病研究實驗室試驗<span style=\"color:red\">*</span>"
-  }, {
+  },
+  {
     "type": "checkbox",
     "list": [
       [
