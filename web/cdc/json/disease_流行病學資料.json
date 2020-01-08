@@ -9,7 +9,7 @@
   },
   {
     "type": "select",
-    "title": "<span style=\"color:red\">＊</span>高風險職業<a href=\"https://docs.google.com/spreadsheets/d/1ZtWrPpgUG19375ozuzeMMbuGONyKQc2mY6mmJXD_8y4/edit#gid=344074476\">\uD83D\uDD06</a>",
+    "title": "高風險職業<span style=\"color:red\">*</span><a href=\"https://docs.google.com/spreadsheets/d/1ZtWrPpgUG19375ozuzeMMbuGONyKQc2mY6mmJXD_8y4/edit#gid=344074476\">\uD83D\uDD06</a>",
     "list": [
       "學生",
       "工程師",
@@ -21,7 +21,7 @@
   },
   {
     "type": "select",
-    "title": "<span style=\"color:red\">＊</span>其他職業<a href=\"codingMemo.html?strMemo=當高風險職業選擇「其他職業」才動態顯示此欄位\">\uD83D\uDD06</a>",
+    "title": "其他職業<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=當高風險職業選擇「其他職業」才動態顯示此欄位\">\uD83D\uDD06</a>",
     "list": [
       "學生",
       "工程師",
@@ -33,7 +33,7 @@
   },
   {
     "type": "h3",
-    "title": "<span style=\"color:red\">＊</span>旅遊史"
+    "title": "旅遊史<span style=\"color:red\">*</span>"
   },
   {
     "type": "radio",
@@ -44,7 +44,7 @@
   },
   {
     "type": "checkbox",
-    "title": "<span style=\"color:red\">＊</span>旅遊史類別",
+    "title": "旅遊史類別<span style=\"color:red\">*</span>",
     "list": [
       "國內旅遊史",
       "國外旅遊史",
@@ -53,11 +53,11 @@
   },
   {
     "type": "h4",
-    "title": "<span style=\"color:red\">＊</span>國內旅遊史"
+    "title": "國內旅遊史<span style=\"color:red\">*</span>"
   },
   {
     "type": "select",
-    "title": "<span style=\"color:red\">＊</span>縣市<a href=\"codingMemo.html?strMemo=縣市資料請搜尋Google關鍵字：內政部民政司 地方行政區域簡介\">\uD83D\uDD06</a>",
+    "title": "縣市<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=縣市資料請搜尋Google關鍵字：內政部民政司 地方行政區域簡介\">\uD83D\uDD06</a>",
     "list": [
       "臺北市",
       "新北市",
@@ -67,11 +67,11 @@
   },
   {
     "type": "date",
-    "title": "<span style=\"color:red\">＊</span>起始日期"
+    "title": "起始日期<span style=\"color:red\">*</span>"
   },
   {
     "type": "date",
-    "title": "<span style=\"color:red\">＊</span>結束日期"
+    "title": "結束日期<span style=\"color:red\">*</span>"
   },
   {
     "type": "addRecord",
@@ -79,19 +79,19 @@
   },
   {
     "type": "h4",
-    "title": "<span style=\"color:red\">＊</span>國外旅遊史"
+    "title": "國外旅遊史<span style=\"color:red\">*</span>"
   },
   {
     "type": "input",
-    "title": "<span style=\"color:red\">＊</span>國家"
+    "title": "國家<span style=\"color:red\">*</span>"
   },
   {
     "type": "date",
-    "title": "<span style=\"color:red\">＊</span>起始日期"
+    "title": "起始日期<span style=\"color:red\">*</span>"
   },
   {
     "type": "date",
-    "title": "<span style=\"color:red\">＊</span>結束日期"
+    "title": "結束日期<span style=\"color:red\">*</span>"
   },
   {
     "type": "addRecord",
@@ -99,19 +99,19 @@
   },
   {
     "type": "h4",
-    "title": "<span style=\"color:red\">＊</span>國外居住史"
+    "title": "國外居住史<span style=\"color:red\">*</span>"
   },
   {
     "type": "input",
-    "title": "<span style=\"color:red\">＊</span>國家"
+    "title": "國家<span style=\"color:red\">*</span>"
   },
   {
     "type": "date",
-    "title": "<span style=\"color:red\">＊</span>離境居住國日期"
+    "title": "離境居住國日期<span style=\"color:red\">*</span>"
   },
   {
     "type": "date",
-    "title": "<span style=\"color:red\">＊</span>入境我國日期"
+    "title": "入境我國日期<span style=\"color:red\">*</span>"
   },
   {
     "type": "addRecord",
@@ -140,7 +140,7 @@
   },
   {
     "type": "input",
-    "title": "<span style=\"color:red\">＊</span>其他接觸動物<a href=\"codingMemo.html?strMemo=當接觸動物種類選擇「其他接觸動物」才動態顯示此欄位\">\uD83D\uDD06</a>"
+    "title": "其他接觸動物<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=當接觸動物種類選擇「其他接觸動物」才動態顯示此欄位\">\uD83D\uDD06</a>"
   },
   {
     "type": "h2",

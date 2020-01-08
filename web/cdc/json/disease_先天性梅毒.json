@@ -1,11 +1,18 @@
-[{
+[
+  {
     "type": "diseaseName",
-    "title": ""
+    "title": "先天性梅毒"
+  },
+  {
+    "type": "h2",
+    "title": "臨床症狀"
+  },
+  {
+    "type": "h4",
+    "title": "有無症狀<span style=\"color:red\">*</span>"
   },
   {
     "type": "radio",
-    "title": "臨床症狀",
-    "text": "有無症狀",
     "list": [
       "有",
       "無"
@@ -13,11 +20,10 @@
   },
   {
     "type": "h4",
-    "title": "<span style='color: #5E6E82; font-weight: 500;'>主要症狀</span>"
+    "title": "主要症狀<span style=\"color:red\">*</span>"
   },
   {
     "type": "checkbox",
-    "title": "主要症狀",
     "list": [
       "肝臟腫大",
       "脾臟腫大",
@@ -33,12 +39,11 @@
   },
   {
     "type": "h2",
-    "title": "通報時檢驗資料",
-    "text": ""
+    "title": "通報時檢驗資料"
   },
   {
-    "type": "h3",
-    "title": "1. 特異性梅毒螺旋體試驗"
+    "type": "h4",
+    "title": "1. 特異性梅毒螺旋體試驗<span style=\"color:red\">*</span>"
   },
   {
     "type": "checkbox",
@@ -70,8 +75,8 @@
     ]
   },
   {
-    "type": "h3",
-    "title": "2. 非特異性梅毒螺旋體試驗"
+    "type": "h4",
+    "title": "2. 非特異性梅毒螺旋體試驗<span style=\"color:red\">*</span>"
   },
   {
     "type": "checkbox",
@@ -87,8 +92,8 @@
     ]
   },
   {
-    "type": "h3",
-    "title": "3. 臨床檢體(病灶滲出液、組織、胎盤、臍帶、屍體、鼻腔分泌物等)以下列方式檢測出梅毒螺旋體："
+    "type": "h4",
+    "title": "3. 臨床檢體(病灶滲出液、組織、胎盤、臍帶、屍體、鼻腔分泌物等)以下列方式檢測出梅毒螺旋體：<span style=\"color:red\">*</span>"
   },
   {
     "type": "checkbox",
@@ -99,8 +104,8 @@
     ]
   },
   {
-    "type": "h3",
-    "title": "4. 血清學特異性梅毒螺旋體 IgM 試驗"
+    "type": "h4",
+    "title": "4. 血清學特異性梅毒螺旋體 IgM 試驗<span style=\"color:red\">*</span>"
   },
   {
     "type": "checkbox",
@@ -112,16 +117,12 @@
       [
         "checkbox",
         "lgM FTA-abs(+)"
-      ],
-      [
-        "input",
-        "VDRL(+) 效價=1:"
       ]
     ]
   },
   {
-    "type": "h3",
-    "title": "5. 腦脊髓液性病研究實驗室試驗"
+    "type": "h4",
+    "title": "5. 腦脊髓液性病研究實驗室試驗<span style=\"color:red\">*</span>"
   }, {
     "type": "checkbox",
     "list": [
@@ -132,8 +133,8 @@
     ]
   },
   {
-    "type": "h3",
-    "title": "6. 嬰兒腦脊髓液細胞計數和生化檢查異常情形"
+    "type": "h4",
+    "title": "6. 嬰兒腦脊髓液細胞計數和生化檢查異常情形<span style=\"color:red\">*</span>"
   },
   {
     "type": "radio",
@@ -148,20 +149,8 @@
     "file": "../json/disease_流行病學資料.json"
   },
   {
-    "type": "h3",
-    "title": "個案生母資料"
-  },
-  {
-    "type": "input",
-    "title": "身份證統一編號/外來人口之居留證統一證號"
-  },
-  {
-    "type": "input",
-    "title": "<br>姓名"
-  },
-  {
-    "type": "h3",
-    "title": "<span style='color: #5E6E82; font-weight: 500;'>其生母為梅毒個案，但生產時未治療、尚未完成治療、治療狀況不明或已接受治療但RPR/VDRL效價尚未呈現4倍以上下降</span>"
+    "type": "h4",
+    "title": "<span style='color: #5E6E82; font-weight: 500;'>其生母為梅毒個案，但生產時未治療、尚未完成治療、治療狀況不明或已接受治療但RPR/VDRL效價尚未呈現4倍以上下降<span style=\"color:red\">*</span></span>"
   },
   {
     "type": "radio",
@@ -172,8 +161,8 @@
     ]
   },
   {
-    "type": "h3",
-    "title": "<span style='color: #5E6E82; font-weight: 500;'>其生母之梅毒病史不清楚</span>"
+    "type": "h4",
+    "title": "<span style='color: #5E6E82; font-weight: 500;'>其生母之梅毒病史不清楚<span style=\"color:red\">*</span></span>"
   },
   {
     "type": "radio",
@@ -184,8 +173,8 @@
     ]
   },
   {
-    "type": "h3",
-    "title": "<span style='color: #5E6E82; font-weight: 500;'>個案VDRL效價是否大於母親生產時效價之四倍以上</span>"
+    "type": "h4",
+    "title": "<span style='color: #5E6E82; font-weight: 500;'>個案VDRL效價是否大於母親生產時效價之四倍以上<span style=\"color:red\">*</span></span>"
   },
   {
     "type": "radio",
