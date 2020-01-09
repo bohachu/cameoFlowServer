@@ -1,7 +1,8 @@
-start coding 20200109 14:17
+== start coding 20200109 14:17 ==
 http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_%E6%A2%85%E6%AF%92.json
 ?strDiseaseFile=../json/disease_梅毒.json
-
+小太陽在此
+<a href="疾管署建議：按下放大鏡之後的醫院搜尋介面畫面抓圖（彈出搜尋元件），精誠夥伴請提供給疾管署做確認">🔆</a>
 
 == 20200105 08:55 ==
 08:55 start coding
