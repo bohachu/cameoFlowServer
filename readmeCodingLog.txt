@@ -1,3 +1,8 @@
+start coding 20200109 14:17
+http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_%E6%A2%85%E6%AF%92.json
+?strDiseaseFile=../json/disease_梅毒.json
+
+
 == 20200105 08:55 ==
 08:55 start coding
 
