@@ -38,7 +38,7 @@ String getDiseaseName(String strReportDiseaseJsonFile) {
 
 void setInnerHtml(String strHtml, String strDiseaseName) {
   querySelector('#reportDiseaseDartHtml').setInnerHtml(strHtml, treeSanitizer: NodeTreeSanitizer.trusted);
-  querySelector('#strDiseaseName').setInnerHtml('您所選取要通報的疾病為：$strDiseaseName');
+  querySelector('#strDiseaseName').setInnerHtml('通報疾病：$strDiseaseName');
 }
 
 Future<String> scanJsonToHtml(List lstJson) async {
