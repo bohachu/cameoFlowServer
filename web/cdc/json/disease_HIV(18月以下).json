@@ -3,17 +3,20 @@
     "title": ""
   },
   {
-    "type": "radio",
+    "type": "h2",
     "title": "臨床症狀",
-    "text": "有無症狀",
+    "tip": "需無任何HIV通報紀錄，始得通報HIV"
+  },
+  {
+    "type": "h4",
+    "title": "有無症狀<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "radio",
     "list": [
       "有",
       "無"
     ]
-  },
-  {
-    "type": "h4",
-    "title": "<span style='color: #5E6E82; font-weight: 500;'>主要症狀</span>"
   },
   {
     "type": "checkbox",
@@ -27,16 +30,12 @@
   },
   {
     "type": "h3",
-    "title": "HIV確診定義"
+    "title": "HIV確診定義<span style=\"color:red\">*</span>"
   },
   {
-    "type": "radio",
-    "title": "",
-    "text": "<span style='color: black; font-weight: bold;'><input type='checkbox'> 出生通報母子垂直感染疑似個案</span>",
-    "tip": "「新生兒之生母為人類免疫缺乏病毒感染者」或「新生兒之生母臨產時為快速檢測法及抗體篩檢檢測陽性者」時，則「生母資料」中的「身份證字號」、「媽媽姓名」、「國籍」為必填欄位。",
-    "list": [
-
-    ]
+    "type": "h3",
+    "title": "<input type='checkbox'> 出生通報母子垂直感染疑似個案",
+    "tip": "「新生兒之生母為人類免疫缺乏病毒感染者」或「新生兒之生母臨產時為快速檢測法及抗體篩檢檢測陽性者」時，則「生母資料」中的「身份證字號」、「媽媽姓名」、「國籍」為必填欄位。"
   },
   {
     "type": "checkbox",
@@ -56,7 +55,7 @@
     ]
   },
   {
-    "type": "h4",
+    "type": "h3",
     "title": "<input type='checkbox'> 分子生物學核酸檢測(NAT)陽性"
   },
   {
@@ -65,31 +64,164 @@
   },
   {
     "type": "input",
-    "title": "檢驗單位(檢驗單位代碼)"
+    "title": "檢驗單位代碼"
   },
   {
     "type": "input",
-    "title": "檢驗單位(檢驗單位)"
-  },
-  {
-    "type": "json",
-    "file": "../json/disease_流行病學資料.json"
+    "title": "檢驗單位"
   },
   {
     "type": "h2",
+    "title": "流行病學資料"
+  },
+  {
+    "type": "h3",
+    "title": "職業"
+  },
+  {
+    "type": "select",
+    "title": "高風險職業<span style=\"color:red\">*</span><a href=\"https://docs.google.com/spreadsheets/d/1ZtWrPpgUG19375ozuzeMMbuGONyKQc2mY6mmJXD_8y4/edit#gid=344074476\">\uD83D\uDD06</a>",
+    "list": [
+      "學生",
+      "工程師",
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "type": "select",
+    "title": "其他職業<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=當高風險職業選擇「其他職業」才動態顯示此欄位\">\uD83D\uDD06</a>",
+    "list": [
+      "學生",
+      "工程師",
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "type": "h3",
+    "title": "旅遊史<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "radio",
+    "list": [
+      "有",
+      "無"
+    ]
+  },
+  {
+    "type": "checkbox",
+    "title": "旅遊史類別<span style=\"color:red\">*</span>",
+    "list": [
+      "國內旅遊史",
+      "國外旅遊史",
+      "國外居住史"
+    ]
+  },
+  {
+    "type": "h4",
+    "title": "國內旅遊史<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "select",
+    "title": "縣市<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=縣市資料請搜尋Google關鍵字：內政部民政司 地方行政區域簡介\">\uD83D\uDD06</a>",
+    "list": [
+      "臺北市",
+      "新北市",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "type": "date",
+    "title": "起始日期<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "date",
+    "title": "結束日期<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "addRecord",
+    "title": "＋ 新增一筆國內旅遊史"
+  },
+  {
+    "type": "h4",
+    "title": "國外旅遊史<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "input",
+    "title": "國家<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "date",
+    "title": "起始日期<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "date",
+    "title": "結束日期<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "addRecord",
+    "title": "＋ 新增一筆國外旅遊史"
+  },
+  {
+    "type": "h4",
+    "title": "國外居住史<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "input",
+    "title": "國家<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "date",
+    "title": "離境居住國日期<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "date",
+    "title": "入境我國日期<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "addRecord",
+    "title": "＋ 新增一筆國外居住史"
+  },
+  {
+    "type": "h3",
+    "title": "動物接觸史"
+  },
+  {
+    "type": "radio",
+    "list": [
+      "有",
+      "無"
+    ]
+  },
+  {
+    "type": "select",
+    "title": "接觸動物種類",
+    "list": [
+      "其它接觸動物",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "type": "input",
+    "title": "其他接觸動物<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=當接觸動物種類選擇「其他接觸動物」才動態顯示此欄位\">\uD83D\uDD06</a>"
+  },
+  {
+    "type": "h3",
     "title": "感染危險因子"
   },
   {
     "type": "checkbox",
     "list": [
-      [
-        "checkbox",
-        "接受輸血者 (需經愛滋病毒基因序列比對符合且經衛生福利部愛滋病防治及感染者權益保障會臨床檢驗組專家會議確認 )"
-      ],
-      [
-        "checkbox",
-        "母子垂直感染 "
-      ],
+      "接受輸血者 <span class='JsonToHtmlRadio_buildTip' tooltip='接受輸血者，需經愛滋病毒基因序列比對符合且經衛生福利部愛滋病防治及感染者權益保障會臨床檢驗組專家會議確認' flow='right'><i class='fas fas fa-info-circle' style='color: #00a65a;'></i></span>",
+      "母子垂直感染 ",
       [
         "input",
         "不詳"
@@ -101,20 +233,20 @@
     ]
   },
   {
-    "type": "h2",
+    "type": "h3",
     "title": "個案生母資料"
   },
   {
     "type": "input",
-    "title": "姓名"
+    "title": "姓名<span style=\"color:red\">*</span>"
   },
   {
     "type": "input",
-    "title": "身分證字號"
+    "title": "身份證統一編號/外來人口之居留證統一證號<a href=\"codingMemo.html?strMemo=當個案ID為AA時顯示並為必填\">\uD83D\uDD06</a>"
   },
   {
     "type": "radio",
-    "title": "國籍",
+    "title": "國籍<span style=\"color:red\">*</span>",
     "list": [
       "本國籍",
       "外國籍"
@@ -153,7 +285,7 @@
   },
   {
     "type": "input",
-    "title": "本次生產醫院"
+    "title": "<span style=\"color:#000000; font-weight: 700;\">本次生產醫院</span>"
   },
   {
     "type": "h2",
@@ -177,7 +309,7 @@
   },
   {
     "type": "radio",
-    "title": "＊出生後是否曾接受案母哺育母乳（列為必填）",
+    "title": "＊出生後是否曾接受案母哺育母乳<span style=\"color:red\">*</span>",
     "list": [
       "是",
       "否",
@@ -186,7 +318,7 @@
   },
   {
     "type": "radio",
-    "title": "＊出生6-12小時內是否給予預防性投藥",
+    "title": "＊出生6-12小時內是否給予預防性投藥<span style=\"color:red\">*</span>",
     "list": [
       "是",
       "否",
@@ -199,7 +331,7 @@
   },
   {
     "type": "h4",
-    "text": "Retrovir"
+    "title": "Retrovir"
   },
   {
     "type": "input",
@@ -215,7 +347,7 @@
   },
   {
     "type": "h4",
-    "text": "Viramune"
+    "title": "Viramune"
   },
   {
     "type": "input",
@@ -231,7 +363,7 @@
   },
   {
     "type": "h4",
-    "text": "3TC"
+    "title": "3TC"
   },
   {
     "type": "input",
