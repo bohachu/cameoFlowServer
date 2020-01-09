@@ -39,7 +39,7 @@
   },
   {
     "type": "h3",
-    "title": "1. 未曾接受梅毒治療或病史不清楚者<span style=\"color:red\">*</span>",
+    "title": "<input type='checkbox'> 1. 未曾接受梅毒治療或病史不清楚者<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=下面四個選項為四則一必填\">\uD83D\uDD06</a>",
     "tip": "＊(1)及(2)皆須填寫，其中RPR、VDRL至少擇一，且TPHA、TPPA、FTA-abs(+)、TPLA(+)、 EIA(+)、CIA(+)/CMIA(+)至少擇一。"
   },
   {
@@ -90,7 +90,7 @@
   },
   {
     "type": "h3",
-    "title": "2. 臨床檢體（病灶滲出液、組織等）以下列方法檢測出梅毒螺旋體<span style=\"color:red\">*</span>"
+    "title": "<input type='checkbox'> 2. 臨床檢體（病灶滲出液、組織等）以下列方法檢測出梅毒螺旋體<span style=\"color:red\">*</span>"
   },
   {
     "type": "checkbox",
@@ -102,7 +102,7 @@
   },
   {
     "type": "h3",
-    "title": "3. 腦脊髓液性病研究實驗室試驗<span style=\"color:red\">*</span>"
+    "title": "<input type='checkbox'> 3. 腦脊髓液性病研究實驗室試驗<span style=\"color:red\">*</span>"
   },
   {
     "type": "checkbox",
@@ -115,7 +115,7 @@
   },
   {
     "type": "h3",
-    "title": "4. 曾經接受梅毒治療者<span style=\"color:red\">*</span>"
+    "title": "<input type='checkbox'> 4. 曾經接受梅毒治療者<span style=\"color:red\">*</span>"
   },
   {
     "type": "h4",
@@ -124,13 +124,155 @@
   {
     "type": "checkbox",
     "list": [
-      "效價≧4倍上升",
+      "RPR效價≧4倍上升",
       "VDRL效價≧ 4倍上升"
     ]
   },
   {
-    "type": "json",
-    "file": "../json/disease_流行病學資料.json"
+    "type": "h2",
+    "title": "流行病學資料"
+  },
+  {
+    "type": "h4",
+    "title": "個案生母資料<a href=\"codingMemo.html?strMemo=當個案ID為AA時顯示並為必填\">\uD83D\uDD06</a>"
+  },
+  {
+    "type": "input",
+    "title": "姓名"
+  },
+  {
+    "type": "input",
+    "title": "身份證統一編號/外來人口之居留證統一證號"
+  },
+  {
+    "type": "h3",
+    "title": "職業"
+  },
+  {
+    "type": "select",
+    "title": "高風險職業<span style=\"color:red\">*</span><a href=\"https://docs.google.com/spreadsheets/d/1ZtWrPpgUG19375ozuzeMMbuGONyKQc2mY6mmJXD_8y4/edit#gid=344074476\">\uD83D\uDD06</a>",
+    "list": [
+      "學生",
+      "工程師",
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "type": "select",
+    "title": "其他職業<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=當高風險職業選擇「其他職業」才動態顯示此欄位\">\uD83D\uDD06</a>",
+    "list": [
+      "學生",
+      "工程師",
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "type": "h3",
+    "title": "旅遊史<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=點選有無之後，會連動調整展開選項\">\uD83D\uDD06</a>"
+  },
+  {
+    "type": "radio",
+    "list": [
+      "有",
+      "無"
+    ]
+  },
+  {
+    "type": "h4",
+    "title": "<input type='checkbox'> 國內旅遊史<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "select",
+    "title": "縣市<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=縣市資料請搜尋Google關鍵字：內政部民政司 地方行政區域簡介\">\uD83D\uDD06</a>",
+    "list": [
+      "臺北市",
+      "新北市",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "type": "date",
+    "title": "起始日期<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "date",
+    "title": "結束日期<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "addRecord",
+    "title": "＋ 新增一筆國內旅遊史"
+  },
+  {
+    "type": "h4",
+    "title": "<input type='checkbox'> 國外旅遊史<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "input",
+    "title": "國家<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "date",
+    "title": "起始日期<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "date",
+    "title": "結束日期<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "addRecord",
+    "title": "＋ 新增一筆國外旅遊史"
+  },
+  {
+    "type": "h4",
+    "title": "<input type='checkbox'> 國外居住史<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "input",
+    "title": "國家<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "date",
+    "title": "離境居住國日期<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "date",
+    "title": "入境我國日期<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "addRecord",
+    "title": "＋ 新增一筆國外居住史"
+  },
+  {
+    "type": "h3",
+    "title": "動物接觸史"
+  },
+  {
+    "type": "radio",
+    "list": [
+      "有",
+      "無"
+    ]
+  },
+  {
+    "type": "select",
+    "title": "接觸動物種類",
+    "list": [
+      "其它接觸動物",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "type": "input",
+    "title": "其他接觸動物<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=當接觸動物種類選擇「其他接觸動物」才動態顯示此欄位\">\uD83D\uDD06</a>"
   },
   {
     "type": "h4",
