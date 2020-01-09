@@ -1,0 +1,22 @@
+[
+  {
+    "type": "date",
+    "title": "日期"
+  },
+  {
+  "type": "input",
+  "title": "檢驗單位代碼"
+  },
+  {
+  "type": "input",
+  "title": "檢驗單位"
+  },
+  {
+    "type": "select",
+    "title": "檢驗結果",
+    "list": [
+      "陰性",
+      "未確定"
+    ]
+  }
+]
