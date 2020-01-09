@@ -1,0 +1,52 @@
+[
+  {
+    "type": "diseaseName",
+    "title": "急性病毒性A型肝炎"
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_臨床症狀到主要症狀.json"
+  },
+  {
+    "type": "checkbox",
+    "list": [
+      "大便變成白色或比平常顏色淡許多",
+      "皮疹/紅疹/出疹",
+      "皮膚癢",
+      "食慾不振",
+      "茶色小便",
+      "發燒",
+      "黃疸",
+      "腹痛",
+      "嘔吐",
+      "頭痛",
+      "關節痛",
+      "噁心",
+      "全身倦怠",
+      "腹部不舒服"
+    ]
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_其他症狀.json"
+  },
+  {
+    "type": "radio",
+    "title": "通報時檢驗資料",
+    "text": "血清學A型肝炎IgM抗體(IgM anti-HAV)檢測<span style=\"color:red\">*</span>",
+    "tip": "本項檢測應由疾病管制署傳染病認可檢驗機構檢驗",
+    "list": [
+      "陽性",
+      "陰性",
+      "無檢驗"
+    ]
+  },
+  {
+    "type": "input",
+    "title": "ALT 檢驗值："
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_流行病學資料.json"
+  }
+]
