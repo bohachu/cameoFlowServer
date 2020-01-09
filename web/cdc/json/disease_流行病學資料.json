@@ -11,20 +11,12 @@
     "type": "select",
     "title": "高風險職業<span style=\"color:red\">*</span><a href=\"https://docs.google.com/spreadsheets/d/1ZtWrPpgUG19375ozuzeMMbuGONyKQc2mY6mmJXD_8y4/edit#gid=344074476\">\uD83D\uDD06</a>",
     "list": [
+      "---高風險職業---",
       "學生",
       "工程師",
       "1",
       "2",
-      "3",
-      "4"
-    ]
-  },
-  {
-    "type": "select",
-    "title": "其他職業<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=當高風險職業選擇「其他職業」才動態顯示此欄位\">\uD83D\uDD06</a>",
-    "list": [
-      "學生",
-      "工程師",
+      "---其他職業---",
       "1",
       "2",
       "3",
@@ -33,7 +25,7 @@
   },
   {
     "type": "h3",
-    "title": "旅遊史<span style=\"color:red\">*</span>"
+    "title": "旅遊史<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=點選有無之後，會連動調整展開選項\">\uD83D\uDD06</a>"
   },
   {
     "type": "radio",
@@ -43,17 +35,8 @@
     ]
   },
   {
-    "type": "checkbox",
-    "title": "旅遊史類別<span style=\"color:red\">*</span>",
-    "list": [
-      "國內旅遊史",
-      "國外旅遊史",
-      "國外居住史"
-    ]
-  },
-  {
     "type": "h4",
-    "title": "國內旅遊史<span style=\"color:red\">*</span>"
+    "title": "<input type='checkbox'> 國內旅遊史<span style=\"color:red\">*</span>"
   },
   {
     "type": "select",
@@ -79,7 +62,7 @@
   },
   {
     "type": "h4",
-    "title": "國外旅遊史<span style=\"color:red\">*</span>"
+    "title": "<input type='checkbox'> 國外旅遊史<span style=\"color:red\">*</span>"
   },
   {
     "type": "input",
@@ -99,7 +82,7 @@
   },
   {
     "type": "h4",
-    "title": "國外居住史<span style=\"color:red\">*</span>"
+    "title": "<input type='checkbox'> 國外居住史<span style=\"color:red\">*</span>"
   },
   {
     "type": "input",
@@ -148,7 +131,7 @@
   },
   {
     "type": "h4",
-    "title": "個案生母資料"
+    "title": "個案生母資料<a href=\"codingMemo.html?strMemo=當個案ID為AA時顯示並為必填\">\uD83D\uDD06</a>"
   },
   {
     "type": "input",
@@ -156,6 +139,6 @@
   },
   {
     "type": "input",
-    "title": "身份證統一編號/外來人口之居留證統一證號<a href=\"codingMemo.html?strMemo=當個案ID為AA時顯示並為必填\">\uD83D\uDD06</a>"
+    "title": "身份證統一編號/外來人口之居留證統一證號"
   }
 ]
