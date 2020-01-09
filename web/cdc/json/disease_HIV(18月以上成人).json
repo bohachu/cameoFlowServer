@@ -67,9 +67,9 @@
     "title": "檢驗單位"
   },
   {
-    "type": "h3",
-    "title": "<input type='checkbox'> 分子生物學核酸檢測(NAT)陽性"
-  },
+  "type": "h3",
+  "title": "<input type='checkbox'> 分子生物學核酸檢測(NAT)陽性"
+},
   {
     "type": "date",
     "title": "檢驗日期"
