@@ -187,26 +187,17 @@
   },
   {
     "type": "h3",
-    "title": "職業"
+    "title": "職業<span style=\"color:red\">*</span><a href=\"https://docs.google.com/spreadsheets/d/11fnorqGalLlV-YU-tVuK0a_pyi5UFEXKnpuzJvi8hFA/edit#gid=344074476\">\uD83D\uDD06</a>"
   },
   {
     "type": "select",
-    "title": "高風險職業<span style=\"color:red\">*</span><a href=\"https://docs.google.com/spreadsheets/d/1ZtWrPpgUG19375ozuzeMMbuGONyKQc2mY6mmJXD_8y4/edit#gid=344074476\">\uD83D\uDD06</a>",
     "list": [
+      "---高風險職業---",
       "學生",
       "工程師",
       "1",
       "2",
-      "3",
-      "4"
-    ]
-  },
-  {
-    "type": "select",
-    "title": "其他職業<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=當高風險職業選擇「其他職業」才動態顯示此欄位\">\uD83D\uDD06</a>",
-    "list": [
-      "學生",
-      "工程師",
+      "---其他職業---",
       "1",
       "2",
       "3",
