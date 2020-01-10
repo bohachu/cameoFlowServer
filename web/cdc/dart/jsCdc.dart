@@ -270,6 +270,10 @@ class JsonToHtmlRadio extends JsonToHtml {
   }
 }
 
+class JsonToHtmlRadioCol6 extends JsonToHtmlRadio{
+
+}
+
 class JsonToHtmlCheckbox extends JsonToHtmlRadio {
   String strInput;
   String strHtmlInput;
