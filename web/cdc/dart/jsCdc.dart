@@ -58,8 +58,12 @@ Future<String> scanJsonToHtml(List lstJson) async {
     'selectBig':JsonToHtmlSelectCol6(),
     'selectSmall':JsonToHtmlSelectCol3(),
     'input': JsonToHtmlInput(),
+<<<<<<<<< Temporary merge branch 1
+    'inputBig': JsonToHtmlInputCOl6(),
+=========
     'inputBig':JsonToHtmlInputCol6(),
     'inputSmall':JsonToHtmlInputCol3(),
+>>>>>>>>> Temporary merge branch 2
     'date': JsonToHtmlDate(),
     'dateBig':JsonToHtmlDateCol6(),
     'dateSmall':JsonToHtmlDateCol3(),
@@ -114,8 +118,14 @@ class JsonToHtmlInput extends JsonToHtml {
       {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId'});
 }
 
+<<<<<<<<< Temporary merge branch 1
+class JsonToHtmlInputCOl6 extends JsonToHtml {
+  Future<String> getTags() async => replaceAll('.JsonToHtmlInputCol6_getTags',
+      {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId'});
+=========
 class JsonToHtmlInputCol6 extends JsonToHtml {
   Future<String> getTags() async => replaceAll('.JsonToHtmlInputCol6_getTags', {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId'});
+>>>>>>>>> Temporary merge branch 2
 }
 
 class JsonToHtmlInputCol3 extends JsonToHtml {
