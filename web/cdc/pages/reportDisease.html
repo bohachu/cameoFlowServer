@@ -71,6 +71,48 @@
     $strHtmlInput
   </div>
 
+  <!-- 比較大的 checkbox 文字 (製造) -->
+  <div class="JsonToHtmlCheckboxCol6_getCheckboxWithLabel form-check form-check-inline pb-2 col-6 m-0">
+    <input class="form-check-input" type="checkbox" id="inlineCheckboxCol6${intRandomId + i}"
+           value="option${intRandomId + i}">
+    <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId + i}">${strLabel}</label>
+  </div>
+
+  <!-- 比較大的 checkbox 文字 + input text (製造) -->
+  <div class="JsonToHtmlCheckboxCol6_getInputWithLabel form-check form-check-inline pb-2 col-6 mr-0">
+    <input class="form-check-input" type="checkbox" id="inlineCheckboxCol6${intRandomId + 200}"
+           value="option${intRandomId}">
+    <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId + 200}">$strLabel</label>
+    <input class="text-secondary ml-3" type="text" placeholder="輸入內容">
+  </div>
+
+  <!-- 比較大的灰色框部分 -->
+  <div class="JsonToHtmlCheckboxCol6_buildHtmlAll pl-4 pr-4" style="background-color: #FFFFFF">
+    $strList
+    $strHtmlInput
+  </div>
+
+  <!-- 比較小的 checkbox 文字 (製造) -->
+  <div class="JsonToHtmlCheckboxCol3_getCheckboxWithLabel form-check form-check-inline pb-2 col-3 m-0">
+    <input class="form-check-input" type="checkbox" id="inlineCheckboxCol3${intRandomId + i}"
+           value="option${intRandomId + i}">
+    <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId + i}">${strLabel}</label>
+  </div>
+
+  <!-- 比較小的 checkbox 文字 + input text (製造) -->
+  <div class="JsonToHtmlCheckboxCol3_getInputWithLabel form-check form-check-inline pb-2 col-3 mr-0">
+    <input class="form-check-input" type="checkbox" id="inlineCheckboxCol3{intRandomId + 200}"
+           value="option${intRandomId}">
+    <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId + 200}">$strLabel</label>
+    <input class="text-secondary ml-1" type="text" placeholder="輸入內容">
+  </div>
+
+  <!-- 比較小的灰色框部分 -->
+  <div class="JsonToHtmlCheckboxCol3_buildHtmlAll pl-4 pr-4" style="background-color: #FFFFFF">
+    $strList
+    $strHtmlInput
+  </div>
+
   <!-- ＋ 新增一筆國內旅遊史 等文字 -->
   <br>
   <p class="JsonToHtmlAddRecord_getTags ml-3" style="clear: both;"><a href="#">$strTitle</a></p><br>

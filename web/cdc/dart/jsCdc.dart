@@ -46,6 +46,8 @@ Future<String> scanJsonToHtml(List lstJson) async {
     'diseaseName': JsonToHtmlDiseaseName(),
     'radio': JsonToHtmlRadio(),
     'checkbox': JsonToHtmlCheckbox(),
+    'checkboxBig': JsonToHtmlCheckboxCol6(),
+    'checkboxSmall':JsonToHtmlCheckboxCol3(),
     'json': JsonToHtmlImportJson(),
     'h2': JsonToHtmlH2(),
     'h3': JsonToHtmlH3(),
@@ -308,5 +310,46 @@ class JsonToHtmlCheckbox extends JsonToHtmlRadio {
 
   void buildHtmlAll() {
     strHtmlAll = replaceAll('.JsonToHtmlCheckbox_buildHtmlAll', {'\$strList': '$strList', '\$strHtmlInput': '$strHtmlInput'});
+  }
+}
+
+class JsonToHtmlCheckboxCol6 extends JsonToHtmlCheckbox {
+
+  @override
+  String getCheckboxWithLabel(int i, String strLabel) =>
+      replaceAll('.JsonToHtmlCheckboxCol6_getCheckboxWithLabel', {'\${intRandomId + i}': '${intRandomId + i}', '\${strLabel}': '${strLabel}'});
+
+  @override
+  String getInputWithLabel(String strLabel) => replaceAll('.JsonToHtmlCheckboxCol6_getInputWithLabel',
+      {'\${intRandomId + 200}': '${intRandomId + 200}', '\${intRandomId}': '${intRandomId}', '\$strLabel': '$strLabel'});
+
+  @override
+  void buildHtmlAll() {
+    strHtmlAll = replaceAll('.JsonToHtmlCheckboxCol6_buildHtmlAll', {'\$strList': '$strList', '\$strHtmlInput': '$strHtmlInput'});
+  }
+}
+
+class JsonToHtmlCheckboxCol3 extends JsonToHtmlCheckbox {
+
+  @override
+  String getCheckboxWithLabel(int i, String strLabel) =>
+      replaceAll('.JsonToHtmlCheckboxCol3_getCheckboxWithLabel', {
+        '\${intRandomId + i}': '${intRandomId + i}',
+        '\${strLabel}': '${strLabel}'
+      });
+
+  @override
+  String getInputWithLabel(String strLabel) =>
+      replaceAll('.JsonToHtmlCheckboxCol3_getInputWithLabel',
+          {
+            '\${intRandomId + 200}': '${intRandomId + 200}',
+            '\${intRandomId}': '${intRandomId}',
+            '\$strLabel': '$strLabel'
+          });
+
+  @override
+  void buildHtmlAll() {
+    strHtmlAll = replaceAll('.JsonToHtmlCheckboxCol3_buildHtmlAll',
+        {'\$strList': '$strList', '\$strHtmlInput': '$strHtmlInput'});
   }
 }
