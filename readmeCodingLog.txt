@@ -1,4 +1,11 @@
-test push from bowen 20100110
+?strDiseaseFile=../json/disease_急性病毒性A型肝炎.json
+http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_AIDS.json
+
+== start coding 20100110 17:11 ==
+17:11 輸入內容 要修改為 輸入數字
+done A肝：ALT檢驗值：欄位內容請由「輸入內容」修改為「輸入數字」
+done B肝：通報時檢驗資料：ALT檢驗值的欄位內容請由「輸入內容」修改為「輸入數字」
+done C肝：通報時檢驗資料：ALT檢驗值的欄位內容請由「輸入內容」修改為「輸入數字」
 
 == start coding 20200110 12:00 ==
 http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_AIDS.json

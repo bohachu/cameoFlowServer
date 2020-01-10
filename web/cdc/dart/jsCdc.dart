@@ -110,8 +110,13 @@ class JsonToHtmlDateCol3 extends JsonToHtml {
 }
 
 class JsonToHtmlInput extends JsonToHtml {
-  Future<String> getTags() async => replaceAll('.JsonToHtmlInput_getTags',
-      {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId'});
+  Future<String> getTags() async {
+    if(strText==null || strText==''){
+      strText='輸入文字';
+    }
+    return replaceAll('.JsonToHtmlInput_getTags',
+        {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId','\$strText': '$strText'});
+  }
 }
 
 class JsonToHtmlInputCol6 extends JsonToHtml {
