@@ -52,6 +52,7 @@ Future<String> scanJsonToHtml(List lstJson) async {
     'h4': JsonToHtmlH4(),
     'select': JsonToHtmlSelect(),
     'input': JsonToHtmlInput(),
+    'inputBig':JsonToHtmlInputCOl6(),
     'date': JsonToHtmlDate(),
     'addRecord': JsonToHtmlAddRecord(),
   };
@@ -73,6 +74,10 @@ class JsonToHtmlDate extends JsonToHtml {
 
 class JsonToHtmlInput extends JsonToHtml {
   Future<String> getTags() async => replaceAll('.JsonToHtmlInput_getTags', {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId'});
+}
+
+class JsonToHtmlInputCOl6 extends JsonToHtml {
+  Future<String> getTags() async => replaceAll('.JsonToHtmlInputCol6_getTags', {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId'});
 }
 
 class JsonToHtmlSelect extends JsonToHtmlRadio {
