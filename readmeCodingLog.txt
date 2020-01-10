@@ -1,3 +1,5 @@
+test push from bowen 20100110
+
 == start coding 20200110 12:00 ==
 http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_AIDS.json
 
