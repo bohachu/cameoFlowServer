@@ -197,7 +197,7 @@
         <li class="breadcrumb-item active" aria-current="page" style="color: #00a65a">新增通報單</li>
       </ol>
     </nav>
-    <div class="card-header">
+    <div class="card-header pb-0">
       <div class="state-bar">
         <div class="row">
           <div class="col-4" onclick="location.href='#state1';" style="cursor: pointer;">
@@ -222,14 +222,16 @@
         </div>
       </div>
     </div>
-    <div class="card ml-6" style=" -webkit-box-shadow: 0 0 0 0, 0 0 0 0; box-shadow: 0 0 0 0, 0 0 0 0;">
+    <div class="card ml-6 pt-0" style=" -webkit-box-shadow: 0 0 0 0, 0 0 0 0; box-shadow: 0 0 0 0, 0 0 0 0;">
       <!-- card body -->
-      <div class="card-body">
+      <div class="card-body pt-0">
+        <!--
         <div class="row align-items-center mb-3">
           <div class="col-6 col-sm-auto d-flex align-items-center title">
             <h1 class="fs-0 mb-0 py-2 py-xl-0" style="color: #0F7742"><b>新增通報單</b></h1>
           </div>
         </div>
+        -->
         <h5 class="title font-weight-bold mt-3" id="state1">通報單位資料</h5>
         <form>
           <div class="row m-1">
@@ -564,12 +566,19 @@
         </form>
         <h5 class="title font-weight-bold mt-1" id="state3">通報疾病資料</h5>
         <div class="card-body pb-0 pt-0">
-          <div class="card-header0 pl-3 pr-3 pt-1">
-            <ul class="nav nav-pills card-header-tabs" style="color: #526B5E; border-color: #526B5E;">
-              <li class="nav-item">
-                <a class="nav-link active" style="background-color: #E2E2E2; color: #526B5E; border-color: #526B5E;"
-                   href="#">選擇疾病</a>
-              </li>
+          <div class="row ml-0 mr-0 mb-1">
+            <!--
+            <div class="col-2">
+              <button type="button" class="btn text-darkgreen mt-1 ml-0 mr-0 pl-2 pr-2 pt-1 pb-1" style="background-color:#E2E2E2">選擇疾病
+              </button>
+            </div>
+            -->
+            <div class="mt-1 ml-0 mr-0 pl-0 pr-0 col-1">
+              <ul class="nav nav-pills card-header-tabs" style="color: #526B5E; border-color: #526B5E;">
+                <li class="nav-item">
+                  <a class="nav-link active" style="background-color: #E2E2E2; color: #526B5E; border-color: #526B5E;"
+                     href="#">選擇疾病</a>
+                </li>
               <!--
             <li class="nav-item ml-3">
               <a class="nav-link" style="color: #526B5E; border:1px solid #526B5E;" href="#">依法定傳染疾病類別</a>
@@ -585,12 +594,16 @@
                 <a class="dropdown-item" href="#">Separated link</a>
               </div>
             </li>
-             -->
+                       -->
            </ul>
-         </div>
+            </div>
+          <div class="col-2">
+            <button type="button" class="btn text-white mt-1 ml-0 mr-0 pl-4 pr-4 pt-1 pb-2" style="background-color:#018E4F">下一步
+            </button>
+          </div>
+          </div>
+
          <div class="card-body p-0">
-           <button type="button" class="btn text-white mt-2 ml-1 pl-4 pr-4" style="background-color:#018E4F">下一步
-           </button>
            <div id="strDiseaseName" class="fs-2 mt-3 mb-3">通報疾病：登革熱</div>
            <div class="row">
              <div class="col-lg-6">
