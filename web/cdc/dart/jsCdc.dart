@@ -51,9 +51,14 @@ Future<String> scanJsonToHtml(List lstJson) async {
     'h3': JsonToHtmlH3(),
     'h4': JsonToHtmlH4(),
     'select': JsonToHtmlSelect(),
+    'selectBig':JsonToHtmlSelectCol6(),
+    'selectSmall':JsonToHtmlSelectCol3(),
     'input': JsonToHtmlInput(),
-    'inputBig':JsonToHtmlInputCOl6(),
+    'inputBig':JsonToHtmlInputCol6(),
+    'inputSmall':JsonToHtmlInputCol3(),
     'date': JsonToHtmlDate(),
+    'dateBig':JsonToHtmlDateCol6(),
+    'dateSmall':JsonToHtmlDateCol3(),
     'addRecord': JsonToHtmlAddRecord(),
   };
   String strHtml = '';
@@ -72,20 +77,53 @@ class JsonToHtmlDate extends JsonToHtml {
   Future<String> getTags() async => getHtmlDate(intRandomId, strTitle);
 }
 
+class JsonToHtmlDateCol6 extends JsonToHtml {
+  static String getHtmlDate(int intRandomId, String strTitle) =>
+      replaceAll('.JsonToHtmlDateCol6_getHtmlDate', {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId'});
+
+  Future<String> getTags() async => getHtmlDate(intRandomId, strTitle);
+}
+
+class JsonToHtmlDateCol3 extends JsonToHtml {
+  static String getHtmlDate(int intRandomId, String strTitle) =>
+      replaceAll('.JsonToHtmlDateCol3_getHtmlDate', {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId'});
+
+  Future<String> getTags() async => getHtmlDate(intRandomId, strTitle);
+}
+
 class JsonToHtmlInput extends JsonToHtml {
   Future<String> getTags() async => replaceAll('.JsonToHtmlInput_getTags', {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId'});
 }
 
-class JsonToHtmlInputCOl6 extends JsonToHtml {
+class JsonToHtmlInputCol6 extends JsonToHtml {
   Future<String> getTags() async => replaceAll('.JsonToHtmlInputCol6_getTags', {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId'});
+}
+
+class JsonToHtmlInputCol3 extends JsonToHtml {
+  Future<String> getTags() async => replaceAll('.JsonToHtmlInputCol3_getTags', {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId'});
 }
 
 class JsonToHtmlSelect extends JsonToHtmlRadio {
   String getListTemplate(int i) => '<option>${lstList[i]}</option>';
-
   buildHtmlAll() {
     strList = '<option>請選擇</option>' + strList;
     strHtmlAll = replaceAll('.JsonToHtmlSelect_buildHtmlAll', {'\$intRandomId': '$intRandomId', '\$strTitle': '$strTitle', '\$strList': '$strList'});
+  }
+}
+
+class JsonToHtmlSelectCol6 extends JsonToHtmlRadio {
+  String getListTemplate(int i) => '<option>${lstList[i]}</option>';
+  buildHtmlAll() {
+    strList = '<option>請選擇</option>' + strList;
+    strHtmlAll = replaceAll('.JsonToHtmlSelectCol6_buildHtmlAll', {'\$intRandomId': '$intRandomId', '\$strTitle': '$strTitle', '\$strList': '$strList'});
+  }
+}
+
+class JsonToHtmlSelectCol3 extends JsonToHtmlRadio {
+  String getListTemplate(int i) => '<option>${lstList[i]}</option>';
+  buildHtmlAll() {
+    strList = '<option>請選擇</option>' + strList;
+    strHtmlAll = replaceAll('.JsonToHtmlSelectCol3_buildHtmlAll', {'\$intRandomId': '$intRandomId', '\$strTitle': '$strTitle', '\$strList': '$strList'});
   }
 }
 

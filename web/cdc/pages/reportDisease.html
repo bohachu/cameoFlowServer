@@ -81,6 +81,18 @@
     <input class="form-control text-secondary" id="name66$intRandomId" type="text" placeholder="年/月/日">
   </div>
 
+  <!-- 比較大的選擇日期 -->
+  <div class="JsonToHtmlDateCol6_getHtmlDate form-group col-6" style="float: left;">
+    <label class="fs-0" for="nameCol6$intRandomId">$strTitle</label>
+    <input class="form-control text-secondary" id="nameCol6$intRandomId" type="text" placeholder="年/月/日">
+  </div>
+
+  <!-- 選擇日期 -->
+  <div class="JsonToHtmlDateCol3_getHtmlDate form-group col-3" style="float: left;">
+    <label class="fs-0" for="nameCol3$intRandomId">$strTitle</label>
+    <input class="form-control text-secondary" id="nameCol3$intRandomId" type="text" placeholder="年/月/日">
+  </div>
+
   <!-- 輸入文字 -->
   <div class="JsonToHtmlInput_getTags col-lg-4" style="float: left;">
     <div class="form-group">
@@ -97,6 +109,14 @@
     </div>
   </div>
 
+  <!-- 比較小的輸入文字 -->
+  <div class="JsonToHtmlInputCol3_getTags col-lg-3" style="float: left;">
+    <div class="form-group">
+      <label class="fs-0" for="name31$intRandomId">$strTitle</label>
+      <input class="form-control text-secondary" id="name31$intRandomId" type="text" placeholder="輸入內容">
+    </div>
+  </div>
+
   <!-- 下拉選單 -->
   <div class="JsonToHtmlSelect_buildHtmlAll col-lg-4 mb-3" style="float: left;">
     <label class="fs-0" for="formControlSelect${intRandomId}">$strTitle</label><br/>
@@ -104,6 +124,23 @@
       $strList
     </select>
   </div>
+
+  <!-- 比較大的下拉選單 -->
+  <div class="JsonToHtmlSelectCol6_buildHtmlAll col-lg-6 mb-3" style="float: left;">
+    <label class="fs-0" for="formControlSelectCol6${intRandomId}">$strTitle</label><br/>
+    <select class="form-control text-secondary" id="formControlSelectCol6${intRandomId}">
+      $strList
+    </select>
+  </div>
+
+  <!-- 比較小的下拉選單 -->
+  <div class="JsonToHtmlSelectCol3_buildHtmlAll col-lg-3 mb-3" style="float: left;">
+    <label class="fs-0" for="formControlSelectCol3${intRandomId}">$strTitle</label><br/>
+    <select class="form-control text-secondary" id="formControlSelectCol3${intRandomId}">
+      $strList
+    </select>
+  </div>
+
 </div>
 
 
