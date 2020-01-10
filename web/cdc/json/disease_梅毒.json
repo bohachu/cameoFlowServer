@@ -34,14 +34,6 @@
     "file": "../json/disease_其他症狀.json"
   },
   {
-    "type": "htmlSource",
-    "text": "<a href=\"www.google.com\">隨便什麼tags都可以放，但是要變成一行比較難過一點</a>"
-  },
-  {
-    "type": "htmlFile",
-    "file": "htmlFileTest.html"
-  },
-  {
     "type": "h2",
     "title": "通報時檢驗資料"
   },
