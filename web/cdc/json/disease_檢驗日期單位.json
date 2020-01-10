@@ -1,18 +1,18 @@
 [
   {
-    "type": "date",
+    "type": "dateSmall",
     "title": "日期"
   },
   {
-  "type": "input",
+  "type": "inputSmall",
   "title": "檢驗單位代碼"
   },
   {
-  "type": "input",
+  "type": "inputSmall",
   "title": "檢驗單位"
   },
   {
-    "type": "select",
+    "type": "selectSmall",
     "title": "檢驗結果",
     "list": [
       "陰性",

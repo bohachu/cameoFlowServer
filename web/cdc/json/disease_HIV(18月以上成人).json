@@ -261,7 +261,7 @@
     "title": "感染危險因子"
   },
   {
-    "type": "checkbox",
+    "type": "checkboxSmall",
     "list": [
      "接受輸血者 <span class='JsonToHtmlRadio_buildTip' tooltip='接受輸血者，需經愛滋病毒基因序列比對符合且經衛生福利部愛滋病防治及感染者權益保障會臨床檢驗組專家會議確認' flow='right'><i class='fas fas fa-info-circle' style='color: #00a65a;'></i></span>",
       "母子垂直感染",
