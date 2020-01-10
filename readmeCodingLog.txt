@@ -1,4 +1,6 @@
 == start coding 20200110 12:00 ==
+http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_AIDS.json
+
 新增加兩種用法，第一種是直接把HTML tags打在JSON file
 第二種用法是獨立一個檔案放在 cdc/pages/XXX.html 然後放入 tags打在JSON file
   {

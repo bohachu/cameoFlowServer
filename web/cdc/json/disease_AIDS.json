@@ -1,4 +1,5 @@
-[{
+[
+  {
     "type": "diseaseName",
     "title": "AIDS"
   },
@@ -21,7 +22,7 @@
   {
     "type": "h4",
     "title": "臨床症狀診斷依據",
-    "tip": "備註說明：*僅適用於年齡6歲以下個案。 Only among children aged <6 years.<br/> **僅適用於年齡滿1個月後診斷之個案。 Onset at age >1 month.<br/> ***僅適用於年齡滿6歲（含）以上個案。 Only among adults, adolescents, and children aged ≥6 years. "
+    "tip": "備註說明：*僅適用於年齡6歲以下個案。 Only among children aged <6 years.\n **僅適用於年齡滿1個月後診斷之個案。 Onset at age >1 month.\n ***僅適用於年齡滿6歲（含）以上個案。 \nOnly among adults, adolescents, and children aged ≥6 years. "
   },
   {
     "type": "radio",
