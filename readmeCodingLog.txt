@@ -1,8 +1,27 @@
+== start coding 20200110 12:00 ==
+新增加兩種用法，第一種是直接把HTML tags打在JSON file
+第二種用法是獨立一個檔案放在 cdc/pages/XXX.html 然後放入 tags打在JSON file
+  {
+    "type": "htmlSource",
+    "text": "<a href=\"www.google.com\">隨便什麼tags都可以放，但是要變成一行比較難過一點</a>"
+  },
+  {
+    "type": "htmlFile",
+    "file": "htmlFileTest.html"
+  },
+
+
 == start coding 20200109 14:17 ==
 http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_%E6%A2%85%E6%AF%92.json
+
 ?strDiseaseFile=../json/disease_梅毒.json
+
 小太陽在此
 <a href="疾管署建議：按下放大鏡之後的醫院搜尋介面畫面抓圖（彈出搜尋元件），精誠夥伴請提供給疾管署做確認">🔆</a>
+
+AIDS斷行
+臨床症狀診斷依據
+http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_AIDS.json
 
 == 20200105 08:55 ==
 08:55 start coding

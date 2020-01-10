@@ -30,14 +30,16 @@ void main() async {
 }
 
 String getDiseaseName(String strReportDiseaseJsonFile) {
-  RegExp reg = RegExp(r"disease_([^\u0000]+)(.json)"); //strReportDiseaseJsonFile="disease_鼠疫.json"
+  RegExp reg = RegExp(
+      r"disease_([^\u0000]+)(.json)"); //strReportDiseaseJsonFile="disease_鼠疫.json"
   Iterable<Match> matches = reg.allMatches(strReportDiseaseJsonFile);
   String strDiseaseName = matches.elementAt(0).group(1);
   return strDiseaseName;
 }
 
 void setInnerHtml(String strHtml, String strDiseaseName) {
-  querySelector('#reportDiseaseDartHtml').setInnerHtml(strHtml, treeSanitizer: NodeTreeSanitizer.trusted);
+  querySelector('#reportDiseaseDartHtml')
+      .setInnerHtml(strHtml, treeSanitizer: NodeTreeSanitizer.trusted);
   querySelector('#strDiseaseName').setInnerHtml('通報疾病：$strDiseaseName');
 }
 
@@ -52,9 +54,11 @@ Future<String> scanJsonToHtml(List lstJson) async {
     'h4': JsonToHtmlH4(),
     'select': JsonToHtmlSelect(),
     'input': JsonToHtmlInput(),
-    'inputBig':JsonToHtmlInputCOl6(),
+    'inputBig': JsonToHtmlInputCOl6(),
     'date': JsonToHtmlDate(),
     'addRecord': JsonToHtmlAddRecord(),
+    'htmlSource': JsonToHtmlSource(),
+    'htmlFile': JsonToHtmlFile(),
   };
   String strHtml = '';
   for (int i = 0; i < lstJson.length; i++) {
@@ -65,19 +69,33 @@ Future<String> scanJsonToHtml(List lstJson) async {
   return strHtml;
 }
 
+class JsonToHtmlSource extends JsonToHtml {
+  Future<String> getTags() async => this.strText;
+}
+
+class JsonToHtmlFile extends JsonToHtml {
+  Future<String> getTags() async {
+    String strHtml = await httpGet(map['file']);
+    return strHtml;
+  }
+}
+
 class JsonToHtmlDate extends JsonToHtml {
-  static String getHtmlDate(int intRandomId, String strTitle) =>
-      replaceAll('.JsonToHtmlDate_getHtmlDate', {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId'});
+  static String getHtmlDate(int intRandomId, String strTitle) => replaceAll(
+      '.JsonToHtmlDate_getHtmlDate',
+      {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId'});
 
   Future<String> getTags() async => getHtmlDate(intRandomId, strTitle);
 }
 
 class JsonToHtmlInput extends JsonToHtml {
-  Future<String> getTags() async => replaceAll('.JsonToHtmlInput_getTags', {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId'});
+  Future<String> getTags() async => replaceAll('.JsonToHtmlInput_getTags',
+      {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId'});
 }
 
 class JsonToHtmlInputCOl6 extends JsonToHtml {
-  Future<String> getTags() async => replaceAll('.JsonToHtmlInputCol6_getTags', {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId'});
+  Future<String> getTags() async => replaceAll('.JsonToHtmlInputCol6_getTags',
+      {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId'});
 }
 
 class JsonToHtmlSelect extends JsonToHtmlRadio {
@@ -85,7 +103,11 @@ class JsonToHtmlSelect extends JsonToHtmlRadio {
 
   buildHtmlAll() {
     strList = '<option>請選擇</option>' + strList;
-    strHtmlAll = replaceAll('.JsonToHtmlSelect_buildHtmlAll', {'\$intRandomId': '$intRandomId', '\$strTitle': '$strTitle', '\$strList': '$strList'});
+    strHtmlAll = replaceAll('.JsonToHtmlSelect_buildHtmlAll', {
+      '\$intRandomId': '$intRandomId',
+      '\$strTitle': '$strTitle',
+      '\$strList': '$strList'
+    });
   }
 }
 
@@ -95,6 +117,7 @@ class JsonToHtml {
   String strText = '';
   String strTip = '';
   int intRandomId;
+  Map map = {};
 
   init(Map map) {
     strType = map['type'] ?? '';
@@ -102,6 +125,7 @@ class JsonToHtml {
     strText = map['text'] ?? '';
     strTip = map['tip'] ?? '';
     intRandomId = Random().nextInt(999999);
+    this.map = map;
   }
 
   Future<String> getHtml(Map map) async {
@@ -116,7 +140,8 @@ class JsonToHtml {
 
 class JsonToHtmlDiseaseName extends JsonToHtml {
   //Future<String> getTags() async => strTitle;
-  Future<String> getTags() async => ''; //return empty string, 不要顯示小小的疾病名稱，因為上方已經有根據底線檔案名稱顯示了
+  Future<String> getTags() async =>
+      ''; //return empty string, 不要顯示小小的疾病名稱，因為上方已經有根據底線檔案名稱顯示了
 }
 
 class JsonToHtmlH2 extends JsonToHtml {
@@ -185,7 +210,8 @@ class JsonToHtmlRadio extends JsonToHtml {
 
   void buildTip() {
     if (strTip != '') {
-      strHtmlTip = replaceAll('.JsonToHtmlRadio_buildTip', {'\$strTip': '$strTip'});
+      strHtmlTip =
+          replaceAll('.JsonToHtmlRadio_buildTip', {'\$strTip': '$strTip'});
     }
   }
 
@@ -195,7 +221,8 @@ class JsonToHtmlRadio extends JsonToHtml {
     }
   }
 
-  String getListTemplate(int i) => replaceAll('.JsonToHtmlRadio_getListTemplate', {
+  String getListTemplate(int i) =>
+      replaceAll('.JsonToHtmlRadio_getListTemplate', {
         '\${intRandomId + i}': '${intRandomId + i}',
         '\$intRandomId': '$intRandomId',
         '\${lstList[i]}': '${lstList[i]}',
@@ -257,10 +284,17 @@ class JsonToHtmlCheckbox extends JsonToHtmlRadio {
   }
 
   String getCheckboxWithLabel(int i, String strLabel) =>
-      replaceAll('.JsonToHtmlCheckbox_getCheckboxWithLabel', {'\${intRandomId + i}': '${intRandomId + i}', '\${strLabel}': '${strLabel}'});
+      replaceAll('.JsonToHtmlCheckbox_getCheckboxWithLabel', {
+        '\${intRandomId + i}': '${intRandomId + i}',
+        '\${strLabel}': '${strLabel}'
+      });
 
-  String getInputWithLabel(String strLabel) => replaceAll('.JsonToHtmlCheckbox_getInputWithLabel',
-      {'\${intRandomId + 200}': '${intRandomId + 200}', '\${intRandomId}': '${intRandomId}', '\$strLabel': '$strLabel'});
+  String getInputWithLabel(String strLabel) =>
+      replaceAll('.JsonToHtmlCheckbox_getInputWithLabel', {
+        '\${intRandomId + 200}': '${intRandomId + 200}',
+        '\${intRandomId}': '${intRandomId}',
+        '\$strLabel': '$strLabel'
+      });
 
   void buildInput() {
     if (strInput != '') {
@@ -269,6 +303,7 @@ class JsonToHtmlCheckbox extends JsonToHtmlRadio {
   }
 
   void buildHtmlAll() {
-    strHtmlAll = replaceAll('.JsonToHtmlCheckbox_buildHtmlAll', {'\$strList': '$strList', '\$strHtmlInput': '$strHtmlInput'});
+    strHtmlAll = replaceAll('.JsonToHtmlCheckbox_buildHtmlAll',
+        {'\$strList': '$strList', '\$strHtmlInput': '$strHtmlInput'});
   }
 }
