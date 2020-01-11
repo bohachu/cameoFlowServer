@@ -88,11 +88,11 @@
   },
   {
     "type": "inputBig",
-    "title": "姓名"
+    "title": "姓名<span style=\"color:red\">*</span>"
   },
   {
     "type": "inputBig",
-    "title": "身分證統一編號/外來人口之居留證統一證號"
+    "title": "身分證統一編號/外來人口之居留證統一證號<span style=\"color:red\">*</span>"
   },
   {
     "type": "htmlSource",
