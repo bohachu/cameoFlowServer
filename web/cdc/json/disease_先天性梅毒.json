@@ -151,7 +151,7 @@
   },
   {
     "type": "h4",
-    "title": "<span style='color: #5E6E82; font-weight: 500;'>其生母為梅毒個案，但生產時未治療、尚未完成治療、治療狀況不明或已接受治療但RPR/VDRL效價尚未呈現4倍以上下降<span style=\"color:red\">*</span></span>"
+    "title": "<span style='color: #333333; font-weight: 500;'>其生母為梅毒個案，但生產時未治療、尚未完成治療、治療狀況不明或已接受治療但RPR/VDRL效價尚未呈現4倍以上下降<span style=\"color:red\">*</span></span>"
   },
   {
     "type": "radio",
@@ -163,7 +163,7 @@
   },
   {
     "type": "h4",
-    "title": "<span style='color: #5E6E82; font-weight: 500;'>其生母之梅毒病史不清楚<span style=\"color:red\">*</span></span>"
+    "title": "<span style='color: #333333; font-weight: 500;'>其生母之梅毒病史不清楚<span style=\"color:red\">*</span></span>"
   },
   {
     "type": "radio",
@@ -175,7 +175,7 @@
   },
   {
     "type": "h4",
-    "title": "<span style='color: #5E6E82; font-weight: 500;'>個案VDRL效價是否大於母親生產時效價之四倍以上<span style=\"color:red\">*</span></span>"
+    "title": "<span style='color: #333333; font-weight: 500;'>個案VDRL效價是否大於母親生產時效價之四倍以上<span style=\"color:red\">*</span></span>"
   },
   {
     "type": "radio",
