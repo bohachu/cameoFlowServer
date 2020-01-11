@@ -20,14 +20,14 @@ todo disease_HIV(18月以下) 職業 select 放在標題右邊就好了
 todo disease_HIV(18月以下) 動物接觸史 有 無 放在標題右邊就好了
 todo 是否進行愛滋病毒篩檢 篩檢日期* 個案是否懷孕 妊娠週數* to col-3
 
-http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_急性病毒性A型肝炎.json
-http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_急性病毒性B型肝炎.json
-http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_急性病毒性C型肝炎.json
-http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_HIV(18月以上成人).json
-http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_HIV(18月以下).json
-http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_AIDS.json
-http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_先天性梅毒.json
-http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_梅毒.json
+https://cameo.tw/cdc/v20200111/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_急性病毒性A型肝炎.json
+https://cameo.tw/cdc/v20200111/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_急性病毒性B型肝炎.json
+https://cameo.tw/cdc/v20200111/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_急性病毒性C型肝炎.json
+https://cameo.tw/cdc/v20200111/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_HIV(18月以上成人).json
+https://cameo.tw/cdc/v20200111/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_HIV(18月以下).json
+https://cameo.tw/cdc/v20200111/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_AIDS.json
+https://cameo.tw/cdc/v20200111/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_先天性梅毒.json
+https://cameo.tw/cdc/v20200111/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_梅毒.json
 
 
 == start coding 20200111 14:19 ==
