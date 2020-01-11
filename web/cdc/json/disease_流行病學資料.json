@@ -113,14 +113,18 @@
     "title": "動物接觸史"
   },
   {
-    "type": "radio",
+    "type": "htmlSource",
+    "text": "<div class=\"row\">"
+  },
+  {
+    "type": "radioNormal",
     "list": [
       "有",
       "無"
     ]
   },
   {
-    "type": "selectBig",
+    "type": "select",
     "title": "接觸動物種類",
     "list": [
       "其它接觸動物",
@@ -130,7 +134,11 @@
     ]
   },
   {
-    "type": "inputBig",
+    "type": "input",
     "title": "其他接觸動物<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=當接觸動物種類選擇「其他接觸動物」才動態顯示此欄位\">\uD83D\uDD06</a>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div>"
   }
 ]
