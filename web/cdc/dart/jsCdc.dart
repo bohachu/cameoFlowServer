@@ -47,6 +47,9 @@ Future<String> scanJsonToHtml(List lstJson) async {
   Map mapTypeToCode = {
     'diseaseName': JsonToHtmlDiseaseName(),
     'radio': JsonToHtmlRadio(),
+    'radioBig': JsonToHtmlRadioCol6(),
+    'radioNormal': JsonToHtmlRadioCol4(),
+    'radioSmall': JsonToHtmlRadioCol3(),
     'checkbox': JsonToHtmlCheckbox(),
     'checkboxBig': JsonToHtmlCheckboxCol6(),
     'checkboxSmall':JsonToHtmlCheckboxCol3(),
@@ -298,6 +301,44 @@ class JsonToHtmlRadio extends JsonToHtml {
 
 class JsonToHtmlRadioCol6 extends JsonToHtmlRadio{
 
+  @override
+  buildHtmlAll() {
+    strHtmlAll = replaceAll('.JsonToHtmlRadioCol6_buildHtmlAll', {
+      '\$strTitle': '$strTitle',
+      '\$strText': '$strText',
+      '\$strHtmlTip': '$strHtmlTip',
+      '\$strList': '$strList',
+      '\$strHtmlDate': '$strHtmlDate',
+    });
+  }
+}
+
+class JsonToHtmlRadioCol4 extends JsonToHtmlRadio{
+
+  @override
+  buildHtmlAll() {
+    strHtmlAll = replaceAll('.JsonToHtmlRadioCol4_buildHtmlAll', {
+      '\$strTitle': '$strTitle',
+      '\$strText': '$strText',
+      '\$strHtmlTip': '$strHtmlTip',
+      '\$strList': '$strList',
+      '\$strHtmlDate': '$strHtmlDate',
+    });
+  }
+}
+
+class JsonToHtmlRadioCol3 extends JsonToHtmlRadio{
+
+  @override
+  buildHtmlAll() {
+    strHtmlAll = replaceAll('.JsonToHtmlRadioCol3_buildHtmlAll', {
+      '\$strTitle': '$strTitle',
+      '\$strText': '$strText',
+      '\$strHtmlTip': '$strHtmlTip',
+      '\$strList': '$strList',
+      '\$strHtmlDate': '$strHtmlDate',
+    });
+  }
 }
 
 class JsonToHtmlCheckbox extends JsonToHtmlRadio {
