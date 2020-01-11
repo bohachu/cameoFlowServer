@@ -31,7 +31,11 @@
     "file": "../json/disease_其他症狀.json"
   },
   {
-    "type": "radio",
+    "type": "htmlSource",
+    "text": "<div class=\"row\">"
+  },
+  {
+    "type": "radioBig",
     "title": "通報時檢驗資料",
     "text": "血清學A型肝炎IgM抗體(IgM anti-HAV)檢測<span style=\"color:red\">*</span>",
     "tip": "本項檢測應由疾病管制署傳染病認可檢驗機構檢驗",
@@ -42,9 +46,13 @@
     ]
   },
   {
-    "type": "input",
+    "type": "inputBig",
     "title": "ALT 檢驗值：",
     "text": "輸入數字"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div>"
   },
   {
     "type": "json",
