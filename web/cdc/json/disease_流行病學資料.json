@@ -32,19 +32,12 @@
     ]
   },
   {
-    "type": "h3",
-    "title": "旅遊史<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=點選有無之後，會連動調整展開選項\">\uD83D\uDD06</a>"
-  },
-  {
-    "type": "radio",
-    "list": [
-      "有",
-      "無"
-    ]
+    "type": "htmlFile",
+    "file": "旅遊史.html"
   },
   {
     "type": "h4",
-    "title": "<input type='checkbox'> 國內旅遊史<span style=\"color:red\">*</span>"
+    "title": "<input type='checkbox'> 國內旅遊史<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面\">\uD83D\uDD06</a>"
   },
   {
     "type": "select",
@@ -70,7 +63,7 @@
   },
   {
     "type": "h4",
-    "title": "<input type='checkbox'> 國外旅遊史<span style=\"color:red\">*</span>"
+    "title": "<input type='checkbox'> 國外旅遊史<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面\">\uD83D\uDD06</a>"
   },
   {
     "type": "input",
@@ -90,7 +83,7 @@
   },
   {
     "type": "h4",
-    "title": "<input type='checkbox'> 國外居住史<span style=\"color:red\">*</span>"
+    "title": "<input type='checkbox'> 國外居住史<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面\">\uD83D\uDD06</a>"
   },
   {
     "type": "input",

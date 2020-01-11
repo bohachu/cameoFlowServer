@@ -1,23 +1,24 @@
 done 3* 急性病毒性A型肝炎 其他症狀 階層怪怪的，下面輸入框可以移動上來
 done start 17:14 急性病毒性A型肝炎 無發病日 排版怪怪的有點上面
 done 17:22 急性病毒性A型肝炎 血清學A型肝炎IgM抗體(IgM anti-HAV)檢測 and ALT 檢驗值: 合併同一個 row
+done 17:25 急性病毒性A型肝炎 國內旅遊史, 加入小太陽說明勾選會展開下面的選單
+done 17:30 3* HIV(18月以上成人) 主要症狀 then 其他症狀 上下排版怪怪的
+done 17:37 2* HIV(18月以上成人) 檢驗日期 檢驗單位 to col6 , for HIV-1及2抗體確認檢驗方法陽性 for 分子生物學核酸檢測(NAT)陽性 for HIV抗原p24篩檢
+done 17:40 2* HIV(18月以上成人) 診斷醫生 通報單位地址 通報單登錄者姓名 通報者聯絡電話: col-3 四次
+done 17:44 2* disease_HIV(18月以下) 向右一點點，跟下面對齊：相關日期 發病日期*
+done disease_HIV(18月以下) 主要症狀 其他症狀 改為元件的方案
+done disease_HIV(18月以下) 國籍 右邊的 出生日期，應該改小放在接近一點的地方
+done disease_HIV(18月以下) 本次生產中是否注射AZT 排版靠了右邊怪怪的
 
-todo 急性病毒性A型肝炎 國內旅遊史, 加入小太陽說明勾選會展開下面的選單
-todo 3* HIV(18月以上成人) 主要症狀 then 其他症狀 上下排版怪怪的
-todo 2* HIV(18月以上成人) 檢驗日期 檢驗單位 to col6 , for HIV-1及2抗體確認檢驗方法陽性 for 分子生物學核酸檢測(NAT)陽性 for HIV抗原p24篩檢
-todo 2* HIV(18月以上成人) 診斷醫生 通報單位地址 通報單登錄者姓名 通報者聯絡電話: col-3 四次
-todo 2* disease_HIV(18月以下) 向右一點點，跟下面對齊：相關日期 發病日期*
-todo disease_HIV(18月以下) 主要症狀 其他症狀 改為元件的方案
-todo disease_HIV(18月以下) 國籍 右邊的 出生日期，應該改小放在接近一點的地方
-todo disease_HIV(18月以下) 本次生產中是否注射AZT 排版靠了右邊怪怪的
-todo disease_HIV(18月以下) 旅遊史 有 無 應該放在標題右邊 radio 就好了
+done 18:30 disease_HIV(18月以下) 旅遊史 有 無 應該放在標題右邊 radio 就好了
+done 18:30 disease_HIV(18月以下) ＊出生後是否曾接受案母哺育母乳* and ＊出生6-12小時內是否給予預防性投藥*: to col-4
+done 18:31 disease_HIV(18月以下) 採檢項目 抽血日期 to col-4
+pass todo 先天性梅毒 其生母之梅毒病史不清楚* 個案VDRL效價是否大於母親生產時效價之四倍以上* to col-6
+done 梅毒 最下面增添 h2 標題 個案狀況維護與補充資料
+
 todo disease_HIV(18月以下) 職業 select 放在標題右邊就好了
 todo disease_HIV(18月以下) 動物接觸史 有 無 放在標題右邊就好了
-todo disease_HIV(18月以下) ＊出生後是否曾接受案母哺育母乳* and ＊出生6-12小時內是否給予預防性投藥*: to col-4
-todo disease_HIV(18月以下) 採檢項目 抽血日期 to col-4
-todo 先天性梅毒 其生母之梅毒病史不清楚* 個案VDRL效價是否大於母親生產時效價之四倍以上* to col-6
 todo 是否進行愛滋病毒篩檢 篩檢日期* 個案是否懷孕 妊娠週數* to col-3
-todo 梅毒 最下面增添 h2 標題 個案狀況維護與補充資料
 
 http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_急性病毒性A型肝炎.json
 http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_急性病毒性B型肝炎.json
