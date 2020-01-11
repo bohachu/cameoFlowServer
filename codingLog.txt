@@ -1,7 +1,9 @@
 http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_AIDS.json
 
 == 20200111 10:55 ==
-
+動物代碼表可以參考之前精誠夥伴已經盤點過的「代碼表」試算表清單如下
+https://docs.google.com/spreadsheets/d/1PsMy-qKZjy7WyOQSvkHWtLmuSCJo7CrbfsG_BGTKjH8/edit#gid=929685471
+https://docs.google.com/spreadsheets/d/1i-ODM-vL3LtplBQ815M-1DbUNeDAFiyAc0KY0phLUDI/edit#gid=1481342151
 
 ==
 

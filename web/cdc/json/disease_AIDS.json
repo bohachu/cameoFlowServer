@@ -302,17 +302,17 @@
     "tip": "急性初期感染定義：\n分子生物學核酸檢測陽性且該檢測前180天內任一初篩檢驗\n或HIV-1及2抗體確認檢驗方法結果是陰性或不確定者。"
   },
   {
-    "type": "checkbox",
+    "type": "checkboxBig",
     "list": [
       "排除急性初期感染(急性初期感染定義：分子生物學核酸檢測陽性且該檢測前180天內任一初篩檢驗或HIV-1及2抗體確認檢驗方法結果是陰性或不確定者)。"
     ]
   },
   {
-    "type": "input",
+    "type": "inputBig",
     "title": "CD4值 <span style='color: red;'>(若有CD4值請填具此欄位)</span>"
   },
   {
-    "type": "input",
+    "type": "inputBig",
     "title": "或CD4比例"
   },
   {
