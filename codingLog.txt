@@ -1,9 +1,14 @@
 == start coding 20200111 14:19 ==
+http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_急性病毒性A型肝炎.json
+http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_HIV(18月以上成人).json
+http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_HIV(18月以下).json
 
-http://localhost:53322/cdc/pages/reportDisease.html?disease_HIV(18月以上成人).json
-http://localhost:53322/cdc/pages/reportDisease.html?disease_HIV(18月以下).json
-http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_%E6%A2%85%E6%AF%92.json
 http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_AIDS.json
+
+先天性梅毒
+http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_%E5%85%88%E5%A4%A9%E6%80%A7%E6%A2%85%E6%AF%92.json
+梅毒
+http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_%E6%A2%85%E6%AF%92.json
 
 == 20200111 10:55 ==
 動物代碼表可以參考之前精誠夥伴已經盤點過的「代碼表」試算表清單如下
