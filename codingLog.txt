@@ -1,3 +1,10 @@
+http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_AIDS.json
+
+== 20200111 10:55 ==
+
+
+==
+
 ?strDiseaseFile=../json/disease_急性病毒性A型肝炎.json
 http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_AIDS.json
 
