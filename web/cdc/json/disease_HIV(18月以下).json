@@ -26,7 +26,7 @@
     "type": "checkbox",
     "title": "主要症狀",
     "list": [],
-    "input": "其他"
+    "input": "其他症狀"
   },
   {
     "type": "h2",
