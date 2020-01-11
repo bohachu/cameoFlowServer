@@ -273,7 +273,8 @@
           <div class="row m-1">
             <div class="col-lg-6">
               <div class="form-group">
-                <label class="fs-0" for="first-name">通報單位名稱<a href="codingMemo.html?strMemo=001 疾管署與卡米爾當面討論之後建議：按下放大鏡之後的醫院搜尋介面畫面已經做在精誠動態雛形，因此，可以用抓圖方式（彈出搜尋元件），精誠夥伴請提供給疾管署做確認。<br/>002 如果通報單位非醫院，要變成「非反灰」可自行輸入。">🔆</a></label>
+                <label class="fs-0" for="first-name">通報單位名稱<a
+                  href="codingMemo.html?strMemo=001 疾管署與卡米爾當面討論之後建議：按下放大鏡之後的醫院搜尋介面畫面已經做在精誠動態雛形，因此，可以用抓圖方式（彈出搜尋元件），精誠夥伴請提供給疾管署做確認。<br/>002 如果通報單位非醫院，要變成「非反灰」可自行輸入。">🔆</a></label>
                 <div class="d-flex">
                   <input class="form-control text-secondary" style="background-color: #F2F2F2;" id="first-name"
                          type="text" value="國立臺灣大學醫學院附設醫院">
@@ -324,7 +325,7 @@
             </div>
           </div>
         </form>
-        <h5 class="title font-weight-bold mt-1" id="state2">個案資料</h5>
+        <h5 class="title font-weight-bold mt-3" id="state2">個案資料</h5>
         <form>
           <div class="row m-1">
             <div class="col-lg-6">
@@ -540,142 +541,113 @@
                      data-options='{"dateFormat":"y/m/d"}'>
               -->
                 </div>
+              </div>
             </div>
-          </div>
-          <div class="row ml-1 mr-1 mt-2">
-            <div class="col-lg-3">
-              <div class="form-group">
-                <label class="fs-0" for="name">個案是否死亡<span style="color:red">*</span></label><br/>
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input class="custom-control-input" id="customRadioInline752" type="radio"
-                         name="customRadioInline1">
-                  <label class="custom-control-label fs-0" for="customRadioInline752">是</label>
+            <div class="row ml-1 mr-1 mt-2">
+              <div class="col-lg-3">
+                <div class="form-group">
+                  <label class="fs-0" for="name">個案是否死亡<span style="color:red">*</span></label><br/>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input class="custom-control-input" id="customRadioInline752" type="radio"
+                           name="customRadioInline1">
+                    <label class="custom-control-label fs-0" for="customRadioInline752">是</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input class="custom-control-input" id="customRadioInline756" type="radio"
+                           name="customRadioInline1">
+                    <label class="custom-control-label fs-0" for="customRadioInline756">否</label>
+                  </div>
                 </div>
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input class="custom-control-input" id="customRadioInline756" type="radio"
-                         name="customRadioInline1">
-                  <label class="custom-control-label fs-0" for="customRadioInline756">否</label>
+              </div>
+              <div class="col-lg-3">
+                <div class="form-group">
+                  <label class="fs-0" for="name329">死亡日期<a href="codingMemo.html?strMemo=按選擇日期時，月份要顯示為本月份">🔆</a></label>
+                  <input class="form-control text-secondary" id="name329" type="text" value="年/月/日">
+                  <!--
+              <label class="fs-0" for="datepicker766">死亡日期</label>
+              <input class="form-control datetimepicker text-secondary" id="datepicker766" type="text" value="年/月/日"
+                     data-options='{"dateFormat":"y/m/d"}'>
+              -->
                 </div>
               </div>
             </div>
-            <div class="col-lg-3">
-              <div class="form-group">
-                <label class="fs-0" for="name329">死亡日期<a href="codingMemo.html?strMemo=按選擇日期時，月份要顯示為本月份">🔆</a></label>
-                <input class="form-control text-secondary" id="name329" type="text" value="年/月/日">
-                <!--
-            <label class="fs-0" for="datepicker766">死亡日期</label>
-            <input class="form-control datetimepicker text-secondary" id="datepicker766" type="text" value="年/月/日"
-                   data-options='{"dateFormat":"y/m/d"}'>
-            -->
+            <div class="row ml-1 mr-1">
+              <div class="col-lg-3">
+                <div class="form-group">
+                  <label class="fs-0" for="name">死亡原因</label>
+                  <span tooltip="．請填寫死亡證書所記載內容：請填寫原因，如有多項原因，請以逗號分開" flow="right"><i class="fas fas fa-info-circle"
+                                                                                    style="color: #00a65a;"></i></span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="row ml-1 mr-1">
-            <div class="col-lg-3">
-              <div class="form-group">
-                <label class="fs-0" for="name">死亡原因</label>
-                <span tooltip="．請填寫死亡證書所記載內容：請填寫原因，如有多項原因，請以逗號分開" flow="right"><i class="fas fas fa-info-circle"
-                                                              style="color: #00a65a;"></i></span>
+            <div class="row ml-1 mr-1 mb-3">
+              <div class="col-3">
+                <label class="fs-0 ml-2">甲</label>
+                <input class="form-control text-secondary ml-2" type="text" value="請填寫原因">
+              </div>
+              <div class="col-3">
+                <label class="fs-0 ml-2">乙</label>
+                <input class="form-control text-secondary ml-2" type="text" value="請填寫原因">
+              </div>
+              <div class="col-3">
+                <label class="fs-0 ml-2">丙</label>
+                <input class="form-control text-secondary ml-2" type="text" value="請填寫原因">
+              </div>
+              <div class="col-3">
+                <label class="fs-0 ml-2">丁</label>
+                <input class="form-control text-secondary ml-2" type="text" value="請填寫原因">
               </div>
             </div>
-          </div>
-          <div class="row ml-1 mr-1 mb-3">
-            <div class="col-3">
-              <label class="fs-0 ml-2">甲</label>
-              <input class="form-control text-secondary ml-2" type="text" value="請填寫原因">
-            </div>
-            <div class="col-3">
-              <label class="fs-0 ml-2">乙</label>
-              <input class="form-control text-secondary ml-2" type="text" value="請填寫原因">
-            </div>
-            <div class="col-3">
-              <label class="fs-0 ml-2">丙</label>
-              <input class="form-control text-secondary ml-2" type="text" value="請填寫原因">
-            </div>
-            <div class="col-3">
-              <label class="fs-0 ml-2">丁</label>
-              <input class="form-control text-secondary ml-2" type="text" value="請填寫原因">
-            </div>
-          </div>
         </form>
-        <h5 class="title font-weight-bold mt-1" id="state3">通報疾病資料</h5>
-        <div class="card-body pb-0 pt-0">
-          <div class="row ml-0 mr-0 mb-1">
-            <!--
-            <div class="col-2">
-              <button type="button" class="btn text-darkgreen mt-1 ml-0 mr-0 pl-2 pr-2 pt-1 pb-1" style="background-color:#E2E2E2">選擇疾病
-              </button>
-            </div>
-            -->
-            <div class="mt-1 ml-0 mr-0 pl-0 pr-0 col-1">
-              <ul class="nav nav-pills card-header-tabs" style="color: #526B5E; border-color: #526B5E;">
-                <li class="nav-item">
-                  <a class="nav-link active" style="background-color: #E2E2E2; color: #526B5E; border-color: #526B5E;"
-                     href="#">選擇疾病</a>
-                </li>
-              <!--
-            <li class="nav-item ml-3">
-              <a class="nav-link" style="color: #526B5E; border:1px solid #526B5E;" href="#">依法定傳染疾病類別</a>
-            </li>
-            <li class="nav-item dropdown ml-3">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                 aria-expanded="false" style="color: rgb(93, 145, 118); border:1px solid #526B5E;">依傳染途徑</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#" style="color: #526B5E">Action</a>
-                <a class="dropdown-item" href="#" style="color: #526B5E">Another action</a>
-                <a class="dropdown-item" href="#" style="color: #526B5E">Something else here</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
-              </div>
-            </li>
-                       -->
-           </ul>
-            </div>
+        <h5 class="title font-weight-bold mt-4" id="state3">通報疾病資料</h5>
+        <div class="row">
           <div class="col-2">
-            <button type="button" class="btn text-white mt-1 ml-2 mr-0 pl-4 pr-4 pt-1 pb-2" style="background-color:#018E4F">下一步
-            </button>
+            <button type="button" class="btn text-white" style="background-color:#018E4F">選擇疾病</button>
           </div>
+          <div class="col-2">
+            <button type="button" class="btn text-white" style="background-color:#018E4F">下一步</button>
           </div>
-
-         <div class="card-body p-0">
-           <div id="strDiseaseName" class="fs-2 mt-3 mb-3">通報疾病：登革熱</div>
-           <div class="row">
-             <div class="col-lg-3">
-               <div class="form-group">
-                 <label class="fs-2 font-weight-bold text-black">相關日期</label><br/>
-                 <label class="fs-0" for="name403">發病日期<span style="color:red">*</span></label>
-                 <input class="form-control text-secondary" id="name403" type="text" value="年/月/日">
-               </div>
-             </div>
-             <div class="col-lg-3 mt-7">
-               <div class="custom-control custom-radio custom-control-inline">
-                 <input class="custom-control-input" id="customRadioInline841" type="radio"
-                        name="customRadioInline3">
-                 <label class="custom-control-label fs-0" for="customRadioInline841">無發病日</label>
-               </div>
-             </div>
-           </div>
-           <div class="row">
-             <div class="col-lg-3">
-               <div class="form-group">
-                 <label class="fs-0" for="name431">診斷日期<span style="color:red">*</span></label>
-                 <input class="form-control text-secondary" id="name431" type="text" value="年/月/日">
-               </div>
-             </div>
-             <div class="col-lg-3">
-               <div class="form-group">
-                 <label class="fs-0" for="name444">報告日期<span style="color:red">*</span></label>
-                 <span tooltip="依傳染病防治法規定向當地主管機關報告傳染病個案之日期" flow="left"><i class="fas fa-info-circle" style="color: #00a65a;"></i></span>
-                 <input class="form-control text-secondary" id="name444" type="text" value="年/月/日">
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-       <div id="reportDiseaseDartHtml"></div>
-     </div>
-   </div>
- </main>
+          <div class="col-3">
+            <div id="strDiseaseName" class="fs-1">通報疾病：登革熱</div>
+          </div>
+        </div>
+        <div class="row mt-3">
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <label class="fs-2 font-weight-bold text-black">相關日期</label><br/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <label class="fs-0">發病日期<span style="color:red">*</span></label>
+            <input class="form-control text-secondary" type="text" value="年/月/日">
+          </div>
+          <div class="col-3">
+            <div class="custom-control custom-radio custom-control-inline">
+              <input class="custom-control-input" type="radio" name="customRadioInline3">
+              <label class="custom-control-label fs-0">無發病日</label>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="form-group">
+              <label class="fs-0">診斷日期<span style="color:red">*</span></label>
+              <input class="form-control text-secondary" type="text" value="年/月/日">
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="form-group">
+              <label class="fs-0">報告日期<span style="color:red">*</span></label>
+              <span tooltip="依傳染病防治法規定向當地主管機關報告傳染病個案之日期" flow="left"><i class="fas fa-info-circle" style="color: #00a65a;"></i></span>
+              <input class="form-control text-secondary" type="text" value="年/月/日">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="reportDiseaseDartHtml"></div>
+    </div>
+</div>
+</main>
 </div>
 
 <div id="reportDiseaseFooter"></div>
@@ -693,32 +665,32 @@
 <script src="../assets/lib/flatpickr/flatpickr.min.js"></script>
 
 <script>
- const peopleFalse = document.getElementById('people-false');
- const peopleTrue = document.getElementById('people-true');
- const peopleUnit = document.getElementById('people-unit');
+  const peopleFalse = document.getElementById('people-false');
+  const peopleTrue = document.getElementById('people-true');
+  const peopleUnit = document.getElementById('people-unit');
 
- peopleFalse.addEventListener('click', function () {
-   peopleUnit.disabled = true;
- });
+  peopleFalse.addEventListener('click', function () {
+    peopleUnit.disabled = true;
+  });
 
- peopleTrue.addEventListener('click', function () {
-   peopleUnit.disabled = false;
- });
+  peopleTrue.addEventListener('click', function () {
+    peopleUnit.disabled = false;
+  });
 
- $(function () {
-   $('#reportDiseaseHeader').load('reportDiseaseHeader.html');
- });
- $(function () {
-   $('#reportDiseaseNav').load('reportDiseaseNav.html');
- });
- $(function () {
-   $('#reportDiseaseFooter').load('reportDiseaseFooter.html');
- });
+  $(function () {
+    $('#reportDiseaseHeader').load('reportDiseaseHeader.html');
+  });
+  $(function () {
+    $('#reportDiseaseNav').load('reportDiseaseNav.html');
+  });
+  $(function () {
+    $('#reportDiseaseFooter').load('reportDiseaseFooter.html');
+  });
 
- // function getValue() {
- //   const sampleValue = document.getElementById("formControlSelect${intRandomId}").value;
- //   console.log(sampleValue);
- // }
+  // function getValue() {
+  //   const sampleValue = document.getElementById("formControlSelect${intRandomId}").value;
+  //   console.log(sampleValue);
+  // }
 
 </script>
 
