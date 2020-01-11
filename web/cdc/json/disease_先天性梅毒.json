@@ -138,15 +138,15 @@
     "title": "流行病學資料"
   },
   {
-    "type": "h3",
+    "type": "h4",
     "title": "個案生母資料<a href=\"codingMemo.html?strMemo=當個案ID為AA時顯示並為必填\">\uD83D\uDD06</a>"
   },
   {
-    "type": "input",
+    "type": "inputBig",
     "title": "姓名"
   },
   {
-    "type": "input",
+    "type": "inputBig",
     "title": "身分證統一編號/外來人口之居留證統一證號"
   },
   {
@@ -186,11 +186,8 @@
     ]
   },
   {
-    "type": "h3",
-    "title": "職業<span style=\"color:red\">*</span><a href=\"https://docs.google.com/spreadsheets/d/11fnorqGalLlV-YU-tVuK0a_pyi5UFEXKnpuzJvi8hFA/edit#gid=344074476\">\uD83D\uDD06</a>"
-  },
-  {
     "type": "select",
+    "title": "<span class=\"fs-1\"><span style=\"color:black\">職業</span><span style=\"color:red\">*</span><a href=\"https://docs.google.com/spreadsheets/d/11fnorqGalLlV-YU-tVuK0a_pyi5UFEXKnpuzJvi8hFA/edit#gid=344074476\">\uD83D\uDD06</a></span>",
     "list": [
       "---高風險職業---",
       "學生",
@@ -286,7 +283,11 @@
     "title": "動物接觸史"
   },
   {
-    "type": "radio",
+    "type": "htmlSource",
+    "text": "<div class=\"row\">"
+  },
+  {
+    "type": "radioNormal",
     "list": [
       "有",
       "無"
@@ -294,7 +295,7 @@
   },
   {
     "type": "select",
-    "title": "接觸動物種類",
+    "title": "接觸動物種類<a href=\"https://docs.google.com/spreadsheets/d/1PsMy-qKZjy7WyOQSvkHWtLmuSCJo7CrbfsG_BGTKjH8/edit#gid=715655781&range=A1\">\uD83D\uDD06</a>",
     "list": [
       "其它接觸動物",
       "2",
@@ -305,5 +306,9 @@
   {
     "type": "input",
     "title": "其他接觸動物<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=當接觸動物種類選擇「其他接觸動物」才動態顯示此欄位\">\uD83D\uDD06</a>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div>"
   }
 ]
