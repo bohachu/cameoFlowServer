@@ -200,7 +200,7 @@ class JsonToHtmlH2 extends JsonToHtml {
 
     if (strTip != '' && strTip != null) {
       strHtmlTip = '''
-      <span class="JsonToHtmlH2_tip" tooltip="$strTip" flow="right">
+      <span class="JsonToHtmlH2_tip fs-0" style="font-weight:400" tooltip="$strTip" flow="right">
       <i class="fas fas fa-info-circle" style="color: #00a65a;"></i>
       </span>''';
     }
