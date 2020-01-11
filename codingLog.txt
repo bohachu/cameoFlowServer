@@ -1,3 +1,5 @@
+http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_%E6%A2%85%E6%AF%92.json
+
 http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_AIDS.json
 
 == 20200111 10:55 ==
