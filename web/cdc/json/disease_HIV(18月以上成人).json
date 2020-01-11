@@ -35,7 +35,7 @@
   },
   {
     "type": "h3",
-    "title": "HIV確診定義<span style=\"color:red\">*</span>"
+    "title": "HIV確診定義<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=下面三個選項為三則一必填\">\uD83D\uDD06</a>"
   },
   {
     "type": "h3",
@@ -68,7 +68,8 @@
   },
   {
   "type": "h3",
-  "title": "<input type='checkbox'> 分子生物學核酸檢測(NAT)陽性"
+  "title": "<input type='checkbox'> 分子生物學核酸檢測(NAT)陽性",
+  "tip": "若同時有進行HIV-1及2抗體確認檢驗方法且結果為陽性者，請確認已勾選上方[HIV-1及2抗體確認檢驗方法陽性]選項"
 },
   {
     "type": "date",
@@ -80,7 +81,7 @@
   },
   {
     "type": "h3",
-    "title": "是否為急性感染判斷",
+    "title": "是否為急性感染判斷<a href=\"codingMemo.html?strMemo=勾選前項[分子生物學核酸檢測(NAT)陽性]時，會連動調整展開選項\">\uD83D\uDD06</a>",
     "tip": "勾選前項[分子生物學核酸檢測(NAT)陽性]時，本項需填答，供判斷個案是否為急性感染。"
   },
   {
@@ -156,7 +157,7 @@
     "title": "<input type='checkbox'> HIV抗原p24篩檢陽性，且進行中和試驗確認陽性 <span class='JsonToHtmlRadio_buildTip' tooltip='若同時有進行HIV-1及2抗體確認檢驗方法且結果為陽性者，請確認已勾選上方[HIV-1及2抗體確認檢驗方法陽性]選項' flow='right'><i class='fas fas fa-info-circle' style='color: #00a65a;'></i></span>"
   },
   {
-    "type": "h3",
+    "type": "h4",
     "title": "HIV抗原p24篩檢"
   },
   {
@@ -168,7 +169,7 @@
     "title": "檢驗單位"
   },
   {
-    "type": "h3",
+    "type": "h4",
     "title": "HIV抗原p24中和試驗"
   },
   {
@@ -181,7 +182,7 @@
   },
   {
     "type": "h3",
-    "title": "是否為急性感染判斷",
+    "title": "是否為急性感染判斷<a href=\"codingMemo.html?strMemo=勾選前項[HIV抗原p24篩檢陽性，且進行中和試驗確認陽性]時，會連動調整展開選項\">\uD83D\uDD06</a>",
     "tip": "勾選前項[HIV抗原p24篩檢陽性，且進行中和試驗確認陽性]時，本項需填答，供判斷個案是否為急性感染。"
   },
   {

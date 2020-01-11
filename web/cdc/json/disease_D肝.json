@@ -49,7 +49,8 @@
   },
   {
     "type": "input",
-    "title": "ALT 檢驗值："
+    "title": "ALT 檢驗值：",
+    "text": "輸入數字"
   },
   {
     "type": "h4",

@@ -41,7 +41,8 @@
   },
   {
     "type": "input",
-    "title": "1. ALT 檢驗值："
+    "title": "1. ALT 檢驗值：",
+    "text": "輸入數字"
   },
   {
     "type": "radio",
