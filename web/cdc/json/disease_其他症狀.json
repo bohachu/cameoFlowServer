@@ -1,7 +1,6 @@
 [
   {
-    "type": "input",
-    "title": "<span class=\"ml-3\"><input class=\"form-check-input\" type=\"checkbox\">其他症狀<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=說明打勾之後，必填星號以及輸入文字框就要出現，要做連動做設計\">\uD83D\uDD06</a></span>",
-    "text": "輸入文字"
+    "type": "htmlFile",
+    "file": "其他症狀.html"
   }
 ]
