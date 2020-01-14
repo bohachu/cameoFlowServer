@@ -5,10 +5,6 @@
   },
   {
   "type": "inputSmall",
-  "title": "檢驗單位代碼"
-  },
-  {
-  "type": "inputSmall",
   "title": "檢驗單位"
   },
   {
@@ -18,5 +14,13 @@
       "陰性",
       "未確定"
     ]
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"row\">"
   }
 ]

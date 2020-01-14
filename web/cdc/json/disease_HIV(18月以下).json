@@ -67,11 +67,11 @@
   },
   {
     "type": "input",
-    "title": "檢驗單位代碼"
+    "title": "檢驗單位"
   },
   {
     "type": "input",
-    "title": "檢驗單位"
+    "title": "檢驗單位代碼<a href=\"codingMemo.html?strMemo=檢驗單位代碼請依輸入之檢驗單位，系統自動帶入\">\uD83D\uDD06</a>"
   },
   {
     "type": "addRecord",
@@ -301,10 +301,6 @@
     "title": "個案狀況維護與補充資料"
   },
   {
-    "type": "h3",
-    "title": "個案資料"
-  },
-  {
     "type": "input",
     "title": "出生體重"
   },
@@ -347,7 +343,11 @@
     "title": "藥名及劑量"
   },
   {
-    "type": "h4",
+    "type": "htmlSource",
+    "text": "<div class=\"row\">"
+  },
+  {
+    "type": "checkbox",
     "title": "Retrovir"
   },
   {
@@ -363,7 +363,15 @@
     "title": "服用天數(days)"
   },
   {
-    "type": "h4",
+    "type": "htmlSource",
+    "text": "</div>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"row\">"
+  },
+  {
+    "type": "checkbox",
     "title": "Viramune"
   },
   {
@@ -379,7 +387,15 @@
     "title": "服用天數(days)"
   },
   {
-    "type": "h4",
+    "type": "htmlSource",
+    "text": "</div>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"row\">"
+  },
+  {
+    "type": "checkbox",
     "title": "3TC"
   },
   {
@@ -393,6 +409,10 @@
   {
     "type": "input",
     "title": "服用天數(days)"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div>"
   },
   {
     "type": "htmlSource",

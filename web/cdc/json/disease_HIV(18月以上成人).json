@@ -79,7 +79,7 @@
   },
   {
     "type": "h3",
-    "title": "是否為急性感染判斷<a href=\"codingMemo.html?strMemo=勾選前項[分子生物學核酸檢測(NAT)陽性]時，會連動調整展開選項\">\uD83D\uDD06</a>",
+    "title": "是否為急性感染判斷<a href=\"codingMemo.html?strMemo=001勾選前項[分子生物學核酸檢測(NAT)陽性]時，會連動調整展開選項002以下所有題目的「檢驗單位」要把代碼自動帶入，並記在資料庫\">\uD83D\uDD06</a>",
     "tip": "勾選前項[分子生物學核酸檢測(NAT)陽性]時，本項需填答，供判斷個案是否為急性感染。"
   },
   {
@@ -87,6 +87,10 @@
     "list": [
       "前180天內(含本次)任一檢驗結果為[陰性或未確定] <span class='JsonToHtmlRadio_buildTip' tooltip='選擇此項請續填檢驗結果。' flow='right'><i class='fas fas fa-info-circle' style='color: #00a65a;'></i></span>"
     ]
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"row\">"
   },
   {
     "type": "h4",
