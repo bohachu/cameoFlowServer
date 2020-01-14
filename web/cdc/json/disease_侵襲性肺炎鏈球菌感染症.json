@@ -46,7 +46,7 @@
     ]
   },
   {
-    "type": "h4",
+    "type": "input",
     "title": "如勾選其他正常無菌組織(請描述種類)：<span style=\"color:red\">*</span>"
   },
   {
