@@ -54,15 +54,19 @@
     "title": "<input type='checkbox'> 國外旅遊史<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面\">\uD83D\uDD06</a>"
   },
   {
-    "type": "input",
+    "type": "inputSmall",
     "title": "國家<span style=\"color:red\">*</span>"
   },
   {
-    "type": "date",
+    "type": "inputSmall",
+    "title": "次級行政區<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "dateSmall",
     "title": "起始日期<span style=\"color:red\">*</span>"
   },
   {
-    "type": "date",
+    "type": "dateSmall",
     "title": "結束日期<span style=\"color:red\">*</span>"
   },
   {
@@ -74,15 +78,19 @@
     "title": "<input type='checkbox'> 國外居住史<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面\">\uD83D\uDD06</a>"
   },
   {
-    "type": "input",
+    "type": "inputSmall",
     "title": "國家<span style=\"color:red\">*</span>"
   },
   {
-    "type": "date",
+    "type": "inputSmall",
+    "title": "次級行政區<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "dateSmall",
     "title": "離境居住國日期<span style=\"color:red\">*</span>"
   },
   {
-    "type": "date",
+    "type": "dateSmall",
     "title": "入境我國日期<span style=\"color:red\">*</span>"
   },
   {

@@ -305,19 +305,26 @@
     "title": "通報時檢驗資料"
   },
   {
-    "type": "checkboxBig",
+    "type": "checkbox",
+    "tip": "急性初期感染定義：\n分子生物學核酸檢測陽性且該檢測前180天內任一初篩檢驗\n或HIV-1及2抗體確認檢驗方法結果是陰性或不確定者。",
     "list": [
-      "排除急性初期感染"
-    ],
-    "tip": "急性初期感染定義：\n分子生物學核酸檢測陽性且該檢測前180天內任一初篩檢驗\n或HIV-1及2抗體確認檢驗方法結果是陰性或不確定者。"
+      [
+        "checkbox",
+        "排除急性初期感染"
+      ]
+    ]
+  },
+  {
+    "type": "h4",
+    "title": "CD4值或比例符合檢驗條件<span style=\"color:red\">*</span>"
   },
   {
     "type": "inputBig",
-    "title": "CD4值 <span style='color: red;'>(若有CD4值請填具此欄位)</span>"
+    "title": "CD4值(若有CD4值請填具此欄位) <span style='color: red;'></span>"
   },
   {
     "type": "inputBig",
-    "title": "或CD4比例"
+    "title": "CD4比例"
   },
   {
     "type": "json",
