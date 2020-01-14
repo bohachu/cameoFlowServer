@@ -314,10 +314,10 @@
   },
   {
     "type": "htmlSource",
-    "text": "<div class=\"row\">"
+    "text": "<div class=\"row pl-3\">"
   },
   {
-    "type": "radioSmall",
+    "type": "radio",
     "title": "＊出生後是否曾接受案母哺育母乳<span style=\"color:red\">*</span>",
     "list": [
       "是",
@@ -326,7 +326,7 @@
     ]
   },
   {
-    "type": "radioSmall",
+    "type": "radio",
     "title": "＊出生6-12小時內是否給予預防性投藥<span style=\"color:red\">*</span>",
     "list": [
       "是",
@@ -344,22 +344,22 @@
   },
   {
     "type": "htmlSource",
-    "text": "<div class=\"row\">"
+    "text": "<div class=\"row pl-3\">"
   },
   {
-    "type": "checkbox",
-    "title": "Retrovir"
+    "type": "h4",
+    "title": "<div class=\"col-2 pl-3 pt-4\"><b>Retrovir</b></div>"
   },
   {
-    "type": "input",
+    "type": "inputSmall",
     "title": "劑量(mg)"
   },
   {
-    "type": "input",
+    "type": "inputSmall",
     "title": "Q(H)"
   },
   {
-    "type": "input",
+    "type": "inputSmall",
     "title": "服用天數(days)"
   },
   {
@@ -368,22 +368,22 @@
   },
   {
     "type": "htmlSource",
-    "text": "<div class=\"row\">"
+    "text": "<div class=\"row pl-3\">"
   },
   {
-    "type": "checkbox",
-    "title": "Viramune"
+    "type": "h4",
+    "title": "<div class=\"col-2 pl-3 pt-4\"><b>Viramune</b></div>"
   },
   {
-    "type": "input",
+    "type": "inputSmall",
     "title": "劑量(mg)"
   },
   {
-    "type": "input",
+    "type": "inputSmall",
     "title": "Q(H)"
   },
   {
-    "type": "input",
+    "type": "inputSmall",
     "title": "服用天數(days)"
   },
   {
@@ -392,22 +392,22 @@
   },
   {
     "type": "htmlSource",
-    "text": "<div class=\"row\">"
+    "text": "<div class=\"row pl-3\">"
   },
   {
-    "type": "checkbox",
-    "title": "3TC"
+    "type": "h4",
+    "title": "<div class=\"col-2 pl-3 pt-4\"><b>3TC</b></div>"
   },
   {
-    "type": "input",
+    "type": "inputSmall",
     "title": "劑量(mg)"
   },
   {
-    "type": "input",
+    "type": "inputSmall",
     "title": "Q(H)"
   },
   {
-    "type": "input",
+    "type": "inputSmall",
     "title": "服用天數(days)"
   },
   {
@@ -416,7 +416,7 @@
   },
   {
     "type": "htmlSource",
-    "text": "<div class=\"row\">"
+    "text": "<div class=\"row pl-3\">"
   },
   {
     "type": "radioSmall",

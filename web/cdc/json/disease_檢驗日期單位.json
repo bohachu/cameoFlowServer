@@ -4,8 +4,8 @@
     "title": "日期"
   },
   {
-  "type": "inputSmall",
-  "title": "檢驗單位"
+    "type": "inputSmall",
+    "title": "檢驗單位"
   },
   {
     "type": "selectSmall",

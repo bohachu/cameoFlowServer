@@ -8,6 +8,10 @@ https://cameo.tw/cdc/v20200111/cdc/pages/reportDisease.html
 
 06:21 done ALT 輸入數字：修改完畢
 
+~~
+
+?strDiseaseFile=../json/disease_HIV(18月以下).json
+
 ==
 
 done 3* 急性病毒性A型肝炎 其他症狀 階層怪怪的，下面輸入框可以移動上來
