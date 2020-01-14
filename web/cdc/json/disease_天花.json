@@ -4,13 +4,8 @@
     "title": "天花"
   },
   {
-    "type": "radio",
-    "title": "臨床症狀",
-    "text": "有無症狀",
-    "list": [
-      "有",
-      "無"
-    ]
+    "type": "json",
+    "file": "../json/disease_臨床症狀到主要症狀.json"
   },
   {
     "type": "h3",

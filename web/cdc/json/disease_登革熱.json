@@ -3,17 +3,11 @@
     "title": "<span class='ml-3'>登革熱<span>"
   },
   {
-    "type": "radio",
-    "title": "臨床症狀",
-    "text": "有無症狀",
-    "list": [
-      "有",
-      "無"
-    ]
+    "type": "json",
+    "file": "../json/disease_臨床症狀到主要症狀.json"
   },
   {
     "type": "checkbox",
-    "title": "主要症狀",
     "list": [
       "出血症狀",
       "皮疹/紅疹/出疹",
@@ -27,8 +21,11 @@
       "白血球減少",
       "血壓帶試驗陽性",
       "骨頭痛"
-    ],
-    "input": "其他症狀"
+    ]
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_其他症狀.json"
   },
   {
     "type": "radio",
