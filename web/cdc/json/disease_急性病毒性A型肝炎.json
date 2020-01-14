@@ -46,7 +46,7 @@
     ]
   },
   {
-    "type": "inputBig",
+    "type": "input",
     "title": "ALT 檢驗值：",
     "text": "輸入數字"
   },

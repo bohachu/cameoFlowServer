@@ -27,8 +27,11 @@
     "input": "其他症狀"
   },
   {
+    "type": "h4",
+    "title":"經醫師臨床診斷「排除慢性肝炎急性發作或其他原因引起之肝功能異常發炎」：<span style=\"color:red\">*</span>"
+  },
+  {
     "type": "radio",
-    "text": "經醫師臨床診斷「排除慢性肝炎急性發作或其他原因引起之肝功能異常發炎」：<span style=\"color:red\">*</span>",
     "list": [
       "是",
       "否",
