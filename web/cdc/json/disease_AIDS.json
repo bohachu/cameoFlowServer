@@ -302,15 +302,14 @@
   },
   {
     "type": "h2",
-    "title": "通報時檢驗資料"
+    "title": "通報時檢驗資料",
   },
   {
     "type": "checkbox",
-    "tip": "急性初期感染定義：\n分子生物學核酸檢測陽性且該檢測前180天內任一初篩檢驗\n或HIV-1及2抗體確認檢驗方法結果是陰性或不確定者。",
     "list": [
       [
         "checkbox",
-        "排除急性初期感染"
+        "排除急性初期感染<span tooltip=\"急性初期感染定義：\n分子生物學核酸檢測陽性且該檢測前180天內任一初篩檢驗\n或HIV-1及2抗體確認檢驗方法結果是陰性或不確定者。\" flow=\"left\"><i class=\"fas fa-exclamation-circle\" style=\"color: #00a65a;\"></i></span>"
       ]
     ]
   },
