@@ -1,3 +1,15 @@
+== start coding 20200115 ==
+06:09 asana 抓一個任務開始執行
+
+http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_%E6%80%A5%E6%80%A7%E7%97%85%E6%AF%92%E6%80%A7A%E5%9E%8B%E8%82%9D%E7%82%8E.json
+
+https://cameo.tw/cdc/v20200111/cdc/pages/reportDisease.html
+?strDiseaseFile=../json/disease_急性病毒性A型肝炎.json
+
+06:21 done ALT 輸入數字：修改完畢
+
+==
+
 done 3* 急性病毒性A型肝炎 其他症狀 階層怪怪的，下面輸入框可以移動上來
 done start 17:14 急性病毒性A型肝炎 無發病日 排版怪怪的有點上面
 done 17:22 急性病毒性A型肝炎 血清學A型肝炎IgM抗體(IgM anti-HAV)檢測 and ALT 檢驗值: 合併同一個 row
