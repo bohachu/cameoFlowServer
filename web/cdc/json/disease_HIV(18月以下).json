@@ -82,18 +82,6 @@
     "title": "流行病學資料"
   },
   {
-    "type": "h4",
-    "title": "個案生母資料<a href=\"codingMemo.html?strMemo=當個案ID為AA時顯示並為必填\">\uD83D\uDD06</a>"
-  },
-  {
-    "type": "inputBig",
-    "title": "姓名<span style=\"color:red\">*</span>"
-  },
-  {
-    "type": "inputBig",
-    "title": "身分證統一編號/外來人口之居留證統一證號<span style=\"color:red\">*</span>"
-  },
-  {
     "type": "htmlSource",
     "text": "<div class=\"row\">"
   },
@@ -295,6 +283,18 @@
         "其他"
       ]
     ]
+  },
+  {
+    "type": "h4",
+    "title": "個案生母資料<a href=\"codingMemo.html?strMemo=當個案ID為AA時顯示並為必填\">\uD83D\uDD06</a>"
+  },
+  {
+    "type": "inputBig",
+    "title": "案母姓名<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "inputBig",
+    "title": "案母身分證統一編號/外來人口之居留證統一證號<span style=\"color:red\">*</span>"
   },
   {
     "type": "h2",

@@ -4,18 +4,6 @@
     "title": "流行病學資料"
   },
   {
-    "type": "h3",
-    "title": "個案生母資料<a href=\"codingMemo.html?strMemo=當個案ID為AA時顯示並為必填\">\uD83D\uDD06</a>"
-  },
-  {
-    "type": "inputBig",
-    "title": "姓名"
-  },
-  {
-    "type": "inputBig",
-    "title": "身分證統一編號/外來人口之居留證統一證號"
-  },
-  {
     "type": "select",
     "title": "<span class=\"fs-1\"><span style=\"color:black\">職業</span><span style=\"color:red\">*</span><a href=\"https://docs.google.com/spreadsheets/d/11fnorqGalLlV-YU-tVuK0a_pyi5UFEXKnpuzJvi8hFA/edit#gid=344074476\">\uD83D\uDD06</a></span>",
     "list": [
@@ -133,5 +121,17 @@
   {
     "type": "htmlSource",
     "text": "</div>"
+  },
+  {
+    "type": "h3",
+    "title": "個案生母資料<a href=\"codingMemo.html?strMemo=當個案ID為AA時顯示並為必填\">\uD83D\uDD06</a>"
+  },
+  {
+    "type": "inputBig",
+    "title": "姓名姓名"
+  },
+  {
+    "type": "inputBig",
+    "title": "姓名身分證統一編號/外來人口之居留證統一證號"
   }
 ]
