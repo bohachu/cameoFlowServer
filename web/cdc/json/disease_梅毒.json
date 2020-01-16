@@ -142,7 +142,7 @@
   },
   {
     "type": "htmlSource",
-    "text": "<div class=\"row ml-1\">"
+    "text": "<div class=\"row ml\">"
   },
   {
     "type": "radioSmall",
@@ -162,7 +162,7 @@
   },
   {
     "type": "htmlSource",
-    "text": "<div class=\"row ml-1\">"
+    "text": "<div class=\"row ml\">"
   },
   {
     "type": "radioSmall",
