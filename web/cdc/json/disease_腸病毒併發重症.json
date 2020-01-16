@@ -42,6 +42,14 @@
     "file": "../json/disease_流行病學資料.json"
   },
   {
+    "type": "json",
+    "file": "../json/disease_個案生母資料.json"
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_個案生母資料.json"
+  },
+  {
     "type": "radio",
     "title": "個案狀況維護與補充資料",
     "text": "癒後：",

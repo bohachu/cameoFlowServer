@@ -106,6 +106,14 @@
     "file": "../json/disease_流行病學資料.json"
   },
   {
+    "type": "json",
+    "file": "../json/disease_個案生母資料.json"
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_個案生母資料.json"
+  },
+  {
     "type": "h2",
     "title": "病例屬高危險群：（可複選）"
   },

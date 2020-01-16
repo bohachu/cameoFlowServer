@@ -56,6 +56,14 @@
     "file": "../json/disease_流行病學資料.json"
   },
   {
+    "type": "json",
+    "file": "../json/disease_個案生母資料.json"
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_個案生母資料.json"
+  },
+  {
     "type": "radio",
     "title": "抗病毒藥物開立：(必填欄位)",
     "list": [
