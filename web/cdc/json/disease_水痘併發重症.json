@@ -34,150 +34,40 @@
     "file": "../json/disease_其他症狀.json"
   },
   {
-    "type": "radio",
-    "title": "通報時檢驗資料",
-    "text": "醫院實驗室自行診斷依據",
-    "list": [
-      "血清 VZV IgM陽性",
-      "血清 VZV IgG於急性期與恢復期，抗體顯著上升"
-    ],
-    "input": "臨床檢體PCR陽性，檢體來源："
-  },
-  {
     "type": "h2",
-    "title": "流行病學資料"
+    "title": "通報時檢驗資料"
   },
   {
-    "type": "select",
-    "title": "職業",
-    "list": [
-      "學生",
-      "工程師",
-      "1",
-      "2",
-      "3",
-      "4"
-    ]
-  },
-  {
-    "type": "radio",
-    "title": "旅遊史",
-    "list": [
-      "有",
-      "無"
-    ]
+    "type": "h3",
+    "title": "醫院實驗室自行診斷依據"
   },
   {
     "type": "checkbox",
-    "title": "旅遊史類別",
     "list": [
-      "國內旅遊史",
-      "國外旅遊史",
-      "國外居住史"
+      [
+        "checkbox",
+        "血清 VZV IgM陽性"
+      ],
+      [
+        "checkbox",
+        "血清 VZV IgG於急性期與恢復期，抗體顯著上升"
+      ],
+      [
+        "input",
+        "臨床檢體PCR陽性，檢體來源<a href=\"codingMemo.html?strMemo=勾選此項者，檢體來源必填；若「臨床檢體PCR陽性」未勾選，此欄位不可填寫\">\uD83D\uDD06</a>"
+      ]
     ]
   },
   {
-    "type": "h3",
-    "title": "國內旅遊史"
-  },
-  {
-    "type": "input",
-    "title": "縣市"
-  },
-  {
-    "type": "date",
-    "title": "起始日期"
-  },
-  {
-    "type": "date",
-    "title": "結束日期"
-  },
-  {
-    "type": "addRecord",
-    "title": "＋ 新增一筆國內旅遊史"
+    "type": "json",
+    "file": "../json/disease_流行病學資料.json"
   },
   {
     "type": "h3",
-    "title": "國外旅遊史"
-  },
-  {
-    "type": "input",
-    "title": "國家"
-  },
-  {
-    "type": "date",
-    "title": "起始日期"
-  },
-  {
-    "type": "date",
-    "title": "結束日期"
-  },
-  {
-    "type": "addRecord",
-    "title": "＋ 新增一筆國外旅遊史"
-  },
-  {
-    "type": "h3",
-    "title": "國外居住史"
-  },
-  {
-    "type": "input",
-    "title": "國家"
-  },
-  {
-    "type": "date",
-    "title": "離境居住國日期"
-  },
-  {
-    "type": "date",
-    "title": "入境我國日期"
-  },
-  {
-    "type": "addRecord",
-    "title": "＋ 新增一筆國外居住史"
-  },
-  {
-    "type": "radio",
-    "title": "動物接觸史",
-    "list": [
-      "有",
-      "無"
-    ]
-  },
-  {
-    "type": "select",
-    "title": "接觸動物種類",
-    "list": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ]
-  },
-  {
-    "type": "h3",
-    "title": "通報疾病相關NIIS接種紀錄"
-  },
-  {
-    "type": "input",
-    "title": "疫苗名稱"
-  },
-  {
-    "type": "input",
-    "title": "接種劑次"
-  },
-  {
-    "type": "input",
-    "title": "接種日期"
-  },
-  {
-    "type": "h3",
-    "title": "請確認病人是否有下列高危險群組?"
+    "title": "請確認病人是否有下列高危險群組<a href=\"codingMemo.html?strMemo=001若個案為住院或死亡時，此題必填其一；若不為住院或死亡個案時，此項目不可填寫。002勾選「免疫缺陷或低下者」，病名必填。003勾選「其他」，其他欄位必填\">\uD83D\uDD06</a>"
   },
   {
     "type": "checkbox",
-    "title": "請確認病人是否有下列高危險群組?",
-    "text": "有無症狀",
     "list": [
       [
         "checkbox",
@@ -193,11 +83,11 @@
       ],
       [
         "input",
-        "免疫缺陷或低下者，病名："
+        "免疫缺陷或低下者，病名"
       ],
       [
         "input",
-        "其他："
+        "其他"
       ],
       [
         "checkbox",
@@ -206,21 +96,43 @@
     ]
   },
   {
+    "type": "h3",
+    "title": "是否為先天性水痘症候群(Congential Varicella Syndrome)通報<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=若個案為水痘併發症之住院或死亡個案，則此題不可答案為是；若個案不為水痘併發症之住院或死亡個案，則此題可為是\">\uD83D\uDD06</a>"
+  },
+  {
     "type": "radio",
-    "title": "是否為先天性水痘症候群(Congential Varicella Syndrome)通報? (必填欄位)",
     "list": [
       "否",
       "是"
     ]
   },
   {
-    "type": "radio",
-    "title": "病人(新生兒)，請確認是否有下列危險因子",
+    "type": "h3",
+    "title": "病人(新生兒)，請確認是否有下列危險因子<a href=\"codingMemo.html?strMemo=001若上題為是時，此題危險因子必選其一；若不為是時，此項目不可填寫。002勾選「出生缺陷或其他懷疑原因」時，其他懷疑原因必填\">\uD83D\uDD06</a>"
+  },
+  {
+    "type": "checkbox",
     "list": [
-      "母親於孕期曾感染水痘",
-      "母親於孕期曾接觸水痘患者",
-      "無上述危險因子"
-    ],
-    "input": "出生缺陷或其他懷疑原因："
+      [
+        "checkbox",
+        "母親於孕期曾感染水痘"
+      ],
+      [
+        "checkbox",
+        "母親於孕期曾接觸水痘患者"
+      ],
+      [
+        "input",
+        "出生缺陷或其他懷疑原因"
+      ],
+      [
+        "checkbox",
+        "無上述危險因子"
+      ]
+    ]
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_個案生母資料.json"
   }
 ]
