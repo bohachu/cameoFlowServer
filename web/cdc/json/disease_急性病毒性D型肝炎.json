@@ -36,7 +36,7 @@
   },
   {
     "type": "htmlSource",
-    "text": "<div class=\"row\">"
+    "text": "<div class=\"row ml-1\">"
   },
   {
     "type": "checkbox",

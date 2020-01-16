@@ -89,12 +89,20 @@
     ]
   },
   {
+    "type": "htmlSource",
+    "text": "<div class=\"row pl-3\">"
+  },
+  {
     "type": "h4",
-    "title": "抗體篩檢檢測(EIA或PA)"
+    "title": "<div class=\"col-2 pl-3 pt-4\"><b>抗體篩檢檢測(EIA或PA)</b></div>"
   },
   {
     "type": "json",
     "file": "../json/disease_檢驗日期單位.json"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div>"
   },
   {
     "type": "h4",

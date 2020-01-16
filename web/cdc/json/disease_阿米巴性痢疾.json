@@ -28,70 +28,106 @@
     "title": "通報時檢驗資料"
   },
   {
-    "type": "checkbox",
-    "list": [
-      "糞便鏡檢發現疑似痢疾阿米巴"
-    ]
+    "type": "htmlSource",
+    "text": "<div class=\"row ml-1\">"
   },
   {
     "type": "checkbox",
     "list": [
-      "組織病理切片檢查發現痢疾阿米巴"
+      [
+        "checkbox",
+        "糞便鏡檢發現疑似痢疾阿米巴"
+      ],
+      [
+        "checkbox",
+        "組織病理切片檢查發現痢疾阿米巴<a href=\"codingMemo.html?strMemo=勾選此項者病理專科醫師姓名必填\">\uD83D\uDD06</a>"
+      ]
     ]
   },
   {
-    "type": "input",
+    "type": "inputSmall",
     "title": "研判病理專科醫生"
   },
   {
+    "type": "htmlSource",
+    "text": "</div>"
+  },
+  {
     "type": "checkbox",
     "list": [
-      "二次血清學檢查顯示痢疾阿米巴抗體效價升高"
+      "二次血清學檢查顯示痢疾阿米巴抗體效價升高<a href=\"codingMemo.html?strMemo=勾選此項者二次血清檢查的抗體效價及檢驗方式必填\n\n\">\uD83D\uDD06</a>"
     ]
   },
   {
-    "type": "input",
+    "type": "htmlSource",
+    "text": "<div class=\"row ml-1\">"
+  },
+  {
+    "type": "inputSmall",
     "title": "第一次抗體效價為"
   },
   {
-    "type": "date",
+    "type": "dateSmall",
     "title": "檢測日期為"
   },
   {
-    "type": "input",
+    "type": "inputSmall",
     "title": "第二次抗體效價為"
   },
   {
-    "type": "date",
+    "type": "dateSmall",
     "title": "檢測日期為"
   },
   {
-    "type": "input",
+    "type": "inputSmall",
     "title": "檢驗方式"
   },
   {
+    "type": "htmlSource",
+    "text": "</div>"
+  },
+  {
     "type": "checkbox",
     "list": [
-      "超音波或電腦斷層診斷為肝膿瘍，且血清學檢查顯示陽性之痢疾阿米巴抗體者"
+      "超音波或電腦斷層診斷為肝膿瘍，且血清學檢查顯示陽性之痢疾阿米巴抗體者<a href=\"codingMemo.html?strMemo=勾選此項者抗體效價及檢驗方法必填\n\">\uD83D\uDD06</a>"
     ]
   },
   {
-    "type": "input",
+    "type": "htmlSource",
+    "text": "<div class=\"row ml-1\">"
+  },
+  {
+    "type": "inputSmall",
     "title": "抗體效價"
   },
   {
-    "type": "input",
+    "type": "inputSmall",
     "title": "檢驗方法"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"row ml-1\">"
   },
   {
     "type": "checkbox",
     "list": [
-      "其他醫院檢查結果"
+      [
+        "input",
+        "其他醫院檢查結果，原因"
+      ]
     ]
   },
   {
-    "type": "input",
-    "title": "原因"
+    "type": "htmlSource",
+    "text": "</div>"
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_流行病學資料.json"
   },
   {
     "type": "radio",
@@ -102,15 +138,7 @@
     ]
   },
   {
-    "type": "json",
-    "file": "../json/disease_流行病學資料.json"
-  },
-  {
-    "type": "json",
-    "file": "../json/disease_個案生母資料.json"
-  },
-  {
-    "type": "h2",
+    "type": "h4",
     "title": "病例屬高危險群：（可複選）"
   },
   {
@@ -122,5 +150,9 @@
       "(4)長期照護矯正機關（構）之住民或工作人員",
       "(5)外籍勞工"
     ]
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_個案生母資料.json"
   }
 ]
