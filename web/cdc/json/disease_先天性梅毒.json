@@ -31,7 +31,7 @@
   },
   {
     "type": "h4",
-    "title": "<input type='checkbox'> 1. 特異性梅毒螺旋體試驗<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=下面五個選項為五則一必填，需要有動態收合排版的效果，前面checkbox打勾才會出現子選項\">\uD83D\uDD06</a>"
+    "title": "<input class='form-check-input mt-1' type='checkbox'> 1. 特異性梅毒螺旋體試驗<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=下面五個選項為五則一必填，需要有動態收合排版的效果，前面checkbox打勾才會出現子選項\">\uD83D\uDD06</a>"
   },
   {
     "type": "checkbox",
@@ -64,7 +64,7 @@
   },
   {
     "type": "h4",
-    "title": "<input type='checkbox'> 2. 非特異性梅毒螺旋體試驗<span style=\"color:red\">*</span>"
+    "title": "<input class='form-check-input mt-1' type='checkbox'> 2. 非特異性梅毒螺旋體試驗<span style=\"color:red\">*</span>"
   },
   {
     "type": "checkbox",
@@ -81,7 +81,7 @@
   },
   {
     "type": "h4",
-    "title": "<input type='checkbox'> 3. 臨床檢體(病灶滲出液、組織、胎盤、臍帶、屍體、鼻腔分泌物等)以下列方式檢測出梅毒螺旋體：<span style=\"color:red\">*</span>"
+    "title": "<input class='form-check-input mt-1' type='checkbox'> 3. 臨床檢體(病灶滲出液、組織、胎盤、臍帶、屍體、鼻腔分泌物等)以下列方式檢測出梅毒螺旋體：<span style=\"color:red\">*</span>"
   },
   {
     "type": "checkbox",
@@ -93,7 +93,7 @@
   },
   {
     "type": "h4",
-    "title": "<input type='checkbox'> 4. 血清學特異性梅毒螺旋體 IgM 試驗<span style=\"color:red\">*</span>"
+    "title": "<input class='form-check-input mt-1' type='checkbox'> 4. 血清學特異性梅毒螺旋體 IgM 試驗<span style=\"color:red\">*</span>"
   },
   {
     "type": "checkbox",
@@ -110,7 +110,7 @@
   },
   {
     "type": "h4",
-    "title": "<input type='checkbox'>5. 腦脊髓液性病研究實驗室試驗<span style=\"color:red\">*</span>"
+    "title": "<input class='form-check-input mt-1' type='checkbox'>5. 腦脊髓液性病研究實驗室試驗<span style=\"color:red\">*</span>"
   },
   {
     "type": "checkbox",

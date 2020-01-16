@@ -39,7 +39,7 @@
   },
   {
     "type": "h3",
-    "title": "<input type='checkbox'> 1. 未曾接受梅毒治療或病史不清楚者<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=下面四個選項為四則一必填\">\uD83D\uDD06</a>",
+    "title": "<input class='form-check-input mt-1' type='checkbox'> 1. 未曾接受梅毒治療或病史不清楚者<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=下面四個選項為四則一必填\">\uD83D\uDD06</a>",
     "tip": "＊(1)及(2)皆須填寫，其中RPR、VDRL至少擇一，\n且TPHA、TPPA、FTA-abs(+)、TPLA(+)、 EIA(+)、CIA(+)/CMIA(+)至少擇一。"
   },
   {
@@ -90,7 +90,7 @@
   },
   {
     "type": "h3",
-    "title": "<input type='checkbox'> 2. 臨床檢體（病灶滲出液、組織等）以下列方法檢測出梅毒螺旋體<span style=\"color:red\">*</span>"
+    "title": "<input class='form-check-input mt-1' type='checkbox'> 2. 臨床檢體（病灶滲出液、組織等）以下列方法檢測出梅毒螺旋體<span style=\"color:red\">*</span>"
   },
   {
     "type": "checkbox",
@@ -102,7 +102,7 @@
   },
   {
     "type": "h3",
-    "title": "<input type='checkbox'> 3. 腦脊髓液性病研究實驗室試驗<span style=\"color:red\">*</span>"
+    "title": "<input class='form-check-input mt-1' type='checkbox'> 3. 腦脊髓液性病研究實驗室試驗<span style=\"color:red\">*</span>"
   },
   {
     "type": "checkbox",
@@ -115,7 +115,7 @@
   },
   {
     "type": "h3",
-    "title": "<input type='checkbox'> 4. 曾經接受梅毒治療者<span style=\"color:red\">*</span>"
+    "title": "<input class='form-check-input mt-1' type='checkbox'> 4. 曾經接受梅毒治療者<span style=\"color:red\">*</span>"
   },
   {
     "type": "h4",

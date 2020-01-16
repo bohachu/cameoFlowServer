@@ -25,7 +25,7 @@
   },
   {
     "type": "h4",
-    "title": "<input type='checkbox'> 國內旅遊史<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面\">\uD83D\uDD06</a>"
+    "title": "<input class='form-check-input mt-1' type='checkbox'> 國內旅遊史<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面\">\uD83D\uDD06</a>"
   },
   {
     "type": "select",
@@ -51,7 +51,7 @@
   },
   {
     "type": "h4",
-    "title": "<input type='checkbox'> 國外旅遊史<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面\">\uD83D\uDD06</a>"
+    "title": "<input class='form-check-input mt-1' type='checkbox'> 國外旅遊史<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面\">\uD83D\uDD06</a>"
   },
   {
     "type": "inputSmall",
@@ -75,7 +75,7 @@
   },
   {
     "type": "h4",
-    "title": "<input type='checkbox'> 國外居住史<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面\">\uD83D\uDD06</a>"
+    "title": "<input class='form-check-input mt-1' type='checkbox'> 國外居住史<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面\">\uD83D\uDD06</a>"
   },
   {
     "type": "inputSmall",

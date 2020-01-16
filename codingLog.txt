@@ -1,3 +1,35 @@
+== start coding 20200117 06:00 ==
+?strDiseaseFile=../json/disease_梅毒.json
+
+theme.css 修改theme.css讓勾選方塊可以放大，暫時我們不用操心有陰影的問題，
+因為不放大客戶會跳腳，我們日後可以去找bootstrap 4美美的checkbox css來替換就好了，
+不可以維持原本小小的樣子只是因為我們找不到陰影的替換方法，客戶更在意的是大而不是陰影：
+.form-check-input{
+  zoom:150%;
+}
+
+*.json 因為放大之後有些仍然勾選仍然小小的，必須修正，先找到所有全部的這個小小勾選方塊，可能有兩種單引號與雙引號：
+<input type='checkbox'>
+<input type="checkbox">
+
+*.json 全部取代為大大勾選方塊 with CSS修改的類型class：
+<input class='form-check-input' type='checkbox'>
+<input class="form-check-input" type="checkbox">
+
+jsCdc.dart 因為勾選方框改大了之後會有副作用，標題偏移到左邊，所以要判斷左移 from ml-3 to ml-5
+    if(strTitle.contains("type='checkbox'>")){
+      strMl='ml-5';
+    }
+
+    Map map = {
+      '\$strTitle': '$strTitle',
+      '\$strFontSize': '$strFontSize',
+      '\$strHr': '$strHr',
+      '\$strHtmlTip': '$strHtmlTip',
+      '\$strMl': '$strMl',
+    };
+
+
 == start coding 20200115 ==
 06:09 asana 抓一個任務開始執行
 

@@ -42,7 +42,7 @@
   },
   {
     "type": "h4",
-    "title": "<input type='checkbox'> 接觸動物<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選後，日期為必填，為勾選，日期不可填\">\uD83D\uDD06</a>"
+    "title": "<input class='form-check-input mt-1' type='checkbox'> 接觸動物<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選後，日期為必填，為勾選，日期不可填\">\uD83D\uDD06</a>"
   },
   {
     "type": "dateSmall",
@@ -58,7 +58,7 @@
   },
   {
     "type": "h4",
-    "title": "<input type='checkbox'> 野外活動<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選後，日期為必填，為勾選，日期不可填\">\uD83D\uDD06</a>"
+    "title": "<input class='form-check-input mt-1' type='checkbox'> 野外活動<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選後，日期為必填，為勾選，日期不可填\">\uD83D\uDD06</a>"
   },
   {
     "type": "dateSmall",
@@ -74,7 +74,7 @@
   },
   {
     "type": "h4",
-    "title": "<input type='checkbox'> 污染的環境<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選後，日期為必填，為勾選，日期不可填\">\uD83D\uDD06</a>"
+    "title": "<input class='form-check-input mt-1' type='checkbox'> 污染的環境<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選後，日期為必填，為勾選，日期不可填\">\uD83D\uDD06</a>"
   },
   {
     "type": "dateSmall",

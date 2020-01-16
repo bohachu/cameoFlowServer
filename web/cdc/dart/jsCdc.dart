@@ -195,7 +195,7 @@ class JsonToHtmlDiseaseName extends JsonToHtml {
 class JsonToHtmlH2 extends JsonToHtml {
   final strFontSize = 'fs-2';
   final strHr = '<hr/>';
-
+  String strMl='ml-3';
   Future<String> getTags() async {
     String strHtmlTip = '';
 
@@ -206,11 +206,16 @@ class JsonToHtmlH2 extends JsonToHtml {
       </span>''';
     }
 
+    if(strTitle.contains("type='checkbox'>")){
+      strMl='ml-5';
+    }
+
     Map map = {
       '\$strTitle': '$strTitle',
       '\$strFontSize': '$strFontSize',
       '\$strHr': '$strHr',
       '\$strHtmlTip': '$strHtmlTip',
+      '\$strMl': '$strMl',
     };
 
     return replaceAll('.JsonToHtmlH2', map);

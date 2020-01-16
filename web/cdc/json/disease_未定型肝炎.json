@@ -29,7 +29,7 @@
   },
   {
     "type": "h4",
-    "title": "<input type='checkbox'> (1)血清學A型肝炎IgM抗體(IgM anti-HAV)檢測<span style=\"color:red\">*</span>"
+    "title": "<input class='form-check-input mt-1' type='checkbox'> (1)血清學A型肝炎IgM抗體(IgM anti-HAV)檢測<span style=\"color:red\">*</span>"
   },
   {
     "type": "radio",
@@ -48,7 +48,7 @@
   },
   {
     "type": "h4",
-    "title": "<input type='checkbox'> (2)血清學B型肝炎IgM核心抗體(IgM anti-HBc)檢測<span style=\"color:red\">*</span>"
+    "title": "<input class='form-check-input mt-1' type='checkbox'> (2)血清學B型肝炎IgM核心抗體(IgM anti-HBc)檢測<span style=\"color:red\">*</span>"
   },
   {
     "type": "radio",
@@ -67,7 +67,7 @@
   },
   {
     "type": "h4",
-    "title": "<input type='checkbox'> (3)血清學B型肝炎表面抗原(HBsAg)抗原檢測<span style=\"color:red\">*</span>"
+    "title": "<input class='form-check-input mt-1' type='checkbox'> (3)血清學B型肝炎表面抗原(HBsAg)抗原檢測<span style=\"color:red\">*</span>"
   },
   {
     "type": "radio",
@@ -86,7 +86,7 @@
   },
   {
     "type": "h4",
-    "title": "<input type='checkbox'> (4)血清學C型肝炎病毒抗體(anti-HCV)檢測<span style=\"color:red\">*</span>"
+    "title": "<input class='form-check-input mt-1' type='checkbox'> (4)血清學C型肝炎病毒抗體(anti-HCV)檢測<span style=\"color:red\">*</span>"
   },
   {
     "type": "radio",
@@ -105,15 +105,15 @@
   },
   {
     "type": "h4",
-    "title": "<input type='checkbox'> (5)急性病毒性D、E型肝炎檢驗部分送疾病管制署確認"
+    "title": "<input class='form-check-input mt-1' type='checkbox'> (5)急性病毒性D、E型肝炎檢驗部分送疾病管制署確認"
   },
   {
     "type": "h4",
-    "title": "<input type='checkbox'> (6)已排除排除藥物、中毒性肝炎、自體免疫性肝炎、酒精性肝炎、膽道疾病、心血管疾病（如鬱血性心衰竭、休克等）"
+    "title": "<input class='form-check-input mt-1' type='checkbox'> (6)已排除排除藥物、中毒性肝炎、自體免疫性肝炎、酒精性肝炎、膽道疾病、心血管疾病（如鬱血性心衰竭、休克等）"
   },
   {
     "type": "h4",
-    "title": "<input type='checkbox'> (7) ALT上升2.5倍以上<span style=\"color:red\">*</span>"
+    "title": "<input class='form-check-input mt-1' type='checkbox'> (7) ALT上升2.5倍以上<span style=\"color:red\">*</span>"
   },
   {
     "type": "input",
