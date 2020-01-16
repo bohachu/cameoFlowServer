@@ -33,49 +33,31 @@
     "file": "../json/disease_其他症狀.json"
   },
   {
-    "type": "radio",
-    "title": "醫院自行檢驗資料",
-    "text": "勾選此項者，各選項至少必選一項",
+    "type": "h2",
+    "title": "通報時檢驗資料"
+  },
+  {
+    "type": "h3",
+    "title": "醫院自行檢驗資料"
+  },
+
+  {
+    "type": "checkbox",
     "list": [
       "分離並鑑定出布氏桿菌屬",
       "血清學抗體檢測陽性"
     ]
   },
   {
-    "type": "h2",
-    "title": "流行病學資料"
+    "type": "json",
+    "file": "../json/disease_流行病學資料.json"
   },
   {
-    "type": "select",
-    "title": "職業",
-    "list": [
-      "學生",
-      "工程師",
-      "1",
-      "2",
-      "3",
-      "4"
-    ]
+    "type": "h4",
+    "title": "旅遊期間有食用<a href=\"codingMemo.html?strMemo=勾選有時，再出現下面checkbox選單\">\uD83D\uDD06</a>"
   },
   {
     "type": "radio",
-    "title": "職業為獸醫從業人員",
-    "list": [
-      "是",
-      "否"
-    ]
-  },
-  {
-    "type": "radio",
-    "title": "職業為動物實驗室人員",
-    "list": [
-      "是",
-      "否"
-    ]
-  },
-  {
-    "type": "radio",
-    "title": "旅遊史",
     "list": [
       "有",
       "無"
@@ -83,101 +65,15 @@
   },
   {
     "type": "checkbox",
-    "title": "旅遊史類別",
     "list": [
-      "國內旅遊史",
-      "國外旅遊史",
-      "外籍人士國外居住史"
-    ]
-  },
-  {
-    "type": "h3",
-    "title": "國內旅遊史"
-  },
-  {
-    "type": "input",
-    "title": "縣市"
-  },
-  {
-    "type": "date",
-    "title": "起始日期"
-  },
-  {
-    "type": "date",
-    "title": "結束日期"
-  },
-  {
-    "type": "addRecord",
-    "title": "＋ 新增一筆國內旅遊史"
-  },
-  {
-    "type": "h3",
-    "title": "國外旅遊史"
-  },
-  {
-    "type": "input",
-    "title": "國家"
-  },
-  {
-    "type": "date",
-    "title": "起始日期"
-  },
-  {
-    "type": "date",
-    "title": "結束日期"
-  },
-  {
-    "type": "addRecord",
-    "title": "＋ 新增一筆國外旅遊史"
-  },
-  {
-    "type": "h3",
-    "title": "外籍人士國外居住史"
-  },
-  {
-    "type": "input",
-    "title": "國家"
-  },
-  {
-    "type": "date",
-    "title": "離境居住國日期"
-  },
-  {
-    "type": "date",
-    "title": "入境我國日期"
-  },
-  {
-    "type": "addRecord",
-    "title": "＋ 新增一筆國外居住史"
-  },
-  {
-    "type": "radio",
-    "title": "動物接觸史",
-    "list": [
-      "有",
-      "無"
-    ]
-  },
-  {
-    "type": "select",
-    "title": "接觸動物種類",
-    "list": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ]
-  },
-  {
-    "type": "select",
-    "title": "接觸動物種類",
-    "list": [
-      "無",
-      "有 ;種類(下拉選單)   ",
       "牛奶或羊奶",
       "未煮熟的牛肉或羊肉",
       "起司或乳酪"
     ],
-    "input": "其他"
+    "input": "其他<a href=\"codingMemo.html?strMemo=勾選其他，此欄位必填\">\uD83D\uDD06</a>"
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_個案生母資料.json"
   }
 ]

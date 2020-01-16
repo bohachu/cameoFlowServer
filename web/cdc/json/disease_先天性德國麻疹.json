@@ -33,27 +33,29 @@
     "file": "../json/disease_其他症狀.json"
   },
   {
+    "type": "h4",
+    "title": "此為病例調查表之臨床症狀部分"
+  },
+  {
     "type": "checkbox",
-    "title": "此為病例調查表之臨床症狀部分",
     "list": [
-      "先天性白內障(congenital cataracts)",
-      "先天性青光眼(congenital glaucoma)",
-      "先天性心臟病(congenital heart disease)",
-      "如有勾選『先天性心臟病』，常見：",
-      "開放性心臟導管",
-      "肺動脈瓣狹窄",
-      "聽力障礙(hearing loss)",
-      "色素性視網膜病(pigmentary retinopathy)",
-      "血小板數量過低(low platelet count)",
-      "其他異常",
-      "閉塞性黃疸(jaundice)(24小時內發生)",
-      "紫斑(purpura)",
-      "長骨放射線透度異常(long bone radiolucencies)",
-      "腦膜腦炎(meningoencephaliis)",
-      "脾腫大(enlarged spleen)",
-      "小腦症(microcephaly)",
-      "心智發育遲緩(mental retardation)",
-      "肝腫大(enlarged liver)"
+      "1.先天性白內障(congenital cataracts)",
+      "2.先天性青光眼(congenital glaucoma)",
+      "3.先天性心臟病(congenital heart disease)",
+      "3-1.開放性心臟導管<a href=\"codingMemo.html?strMemo=如有勾選「先天性心臟病」，則跳出3-1及3-2選項，需做連動設計\">\uD83D\uDD06</a>",
+      "3-2.肺動脈瓣狹窄<a href=\"codingMemo.html?strMemo=如有勾選「先天性心臟病」，則跳出3-1及3-2選項，需做連動設計\">\uD83D\uDD06</a>",
+      "4.聽力障礙(hearing loss)",
+      "5.色素性視網膜病(pigmentary retinopathy)",
+      "6.血小板數量過低(low platelet count)",
+      "7.其他異常",
+      "8.閉塞性黃疸(jaundice)(24小時內發生)",
+      "9.紫斑(purpura)",
+      "10.長骨放射線透度異常(long bone radiolucencies)",
+      "11.腦膜腦炎(meningoencephaliis)",
+      "12.脾腫大(enlarged spleen)",
+      "13.小腦症(microcephaly)",
+      "14.心智發育遲緩(mental retardation)",
+      "15.肝腫大(enlarged liver)"
     ]
   },
   {
