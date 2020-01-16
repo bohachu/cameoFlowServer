@@ -105,52 +105,100 @@
     "text": "</div>"
   },
   {
+    "type": "htmlSource",
+    "text": "<div class=\"row pl-3\">"
+  },
+  {
     "type": "h4",
-    "title": "抗原/抗體複合型檢測(combo)"
+    "title": "<div class=\"col-2 pl-3 pt-4\"><b>抗原/抗體複合型檢測(combo)</b></div>"
   },
   {
     "type": "json",
     "file": "../json/disease_檢驗日期單位.json"
   },
   {
+    "type": "htmlSource",
+    "text": "</div>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"row pl-3\">"
+  },
+  {
     "type": "h4",
-    "title": "西方墨點法"
+    "title": "<div class=\"col-2 pl-3 pt-4\"><b>西方墨點法</b></div>"
   },
   {
     "type": "json",
     "file": "../json/disease_檢驗日期單位.json"
   },
   {
+    "type": "htmlSource",
+    "text": "</div>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"row pl-3\">"
+  },
+  {
     "type": "h4",
-    "title": "抗體免疫層析確認檢驗"
+    "title": "<div class=\"col-2 pl-3 pt-4\"><b>抗體免疫層析確認檢驗</b></div>"
   },
   {
     "type": "json",
     "file": "../json/disease_檢驗日期單位.json"
   },
   {
+    "type": "htmlSource",
+    "text": "</div>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"row pl-3\">"
+  },
+  {
     "type": "h4",
-    "title": "分子生物學核酸檢測"
+    "title": "<div class=\"col-2 pl-3 pt-4\"><b>分子生物學核酸檢測</b></div>"
   },
   {
     "type": "json",
     "file": "../json/disease_檢驗日期單位.json"
   },
   {
+    "type": "htmlSource",
+    "text": "</div>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"row pl-3\">"
+  },
+  {
     "type": "h4",
-    "title": "HIV抗原p24篩檢"
+    "title": "<div class=\"col-2 pl-3 pt-4\"><b>HIV抗原p24篩檢</b></div>"
   },
   {
     "type": "json",
     "file": "../json/disease_檢驗日期單位.json"
   },
   {
+    "type": "htmlSource",
+    "text": "</div>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"row pl-3\">"
+  },
+  {
     "type": "h4",
-    "title": "中和試驗(NT)"
+    "title": "<div class=\"col-2 pl-3 pt-4\"><b>中和試驗(NT)</b></div>"
   },
   {
     "type": "json",
     "file": "../json/disease_檢驗日期單位.json"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div>"
   },
   {
     "type": "radio",
