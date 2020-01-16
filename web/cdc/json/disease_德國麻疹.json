@@ -22,8 +22,11 @@
     "file": "../json/disease_其他症狀.json"
   },
   {
+    "type": "h4",
+    "title": "此為病例調查表之臨床症狀部分"
+  },
+  {
     "type": "checkbox",
-    "title": "此為病例調查表之臨床症狀部分",
     "list": [
       "全身出現斑丘疹(maculopapular rash)",
       "發燒(fever)",

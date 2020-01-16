@@ -32,7 +32,7 @@
   },
   {
     "type": "h4",
-    "title": "臨床診斷(必填)"
+    "title": "臨床診斷<span style=\"color:red\">*</span>"
   },
   {
     "type": "checkbox",
