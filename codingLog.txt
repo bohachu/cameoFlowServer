@@ -1,3 +1,13 @@
+== 登革熱 快速檢驗結果 i 莫名其妙斷行 ==
+start coding 20200117 06:12
+
+修改為
+  <!-- 次標題等項目 -->
+  <div class="JsonToHtmlRadio_buildHtmlAll" style="clear: both;">
+    <div class="form-group ml-3">
+      <p class="fs-0 font-weight-bold text-black">$strTitle $strHtmlTip</p>
+      <p class="fs-0" for="name">$strText</p>
+
 == start coding 20200117 06:00 ==
 ?strDiseaseFile=../json/disease_梅毒.json
 
