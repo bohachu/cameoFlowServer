@@ -29,8 +29,8 @@
     "file": "../json/disease_其他症狀.json"
   },
   {
-    "type": "radio",
-    "title": "疑似腸病毒感染併發重症通報條件：",
+    "type": "checkbox",
+    "title": "疑似腸病毒感染併發重症通報條件<span style=\"color:red\">*</span>",
     "list": [
       "1.出現典型的手足口病或疱疹性咽峽炎，同時有肌躍型抽搐(myoclonic jerks)之症狀，或併發腦炎、急性肢體麻痺症候群、急性肝炎、心肌炎、急性心肌病變、心肺衰竭等嚴重病例。",
       "2.無手足口病或疱疹性咽峽炎，但出現呼吸道感染症狀，伴有腦幹腦炎或急性無力脊髓炎，懷疑為腸病毒感染導致者。",
@@ -46,14 +46,28 @@
     "file": "../json/disease_個案生母資料.json"
   },
   {
-    "type": "radio",
-    "title": "個案狀況維護與補充資料",
-    "text": "癒後：",
+    "type": "h2",
+    "title": "個案狀況維護與補充資料"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"row ml-1\">"
+  },
+  {
+    "type": "radioBig",
+    "title": "癒後",
     "list": [
       "住院中",
       "出院",
       "死亡"
-    ],
-    "date": "死亡日期："
+    ]
+  },
+  {
+    "type": "dateBig",
+    "title": "死亡日期<a href=\"codingMemo.html?strMemo=死亡選項若打勾，此欄位為必填\">\uD83D\uDD06</a>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div>"
   }
 ]

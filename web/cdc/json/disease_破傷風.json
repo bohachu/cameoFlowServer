@@ -16,23 +16,30 @@
     ]
   },
   {
+    "type": "h4",
+    "title": "臨床症狀"
+  },
+  {
     "type": "checkbox",
-    "title": "臨床症狀",
     "list": [
       "全身肌肉僵直(rigidity of muscles)",
       "牙關緊閉(trismus)",
       "痙攣(spasm or convulsion)",
       "角弓反張(optisthotonus)",
       "痛性之肌肉收縮（最初在咬肌及頸部肌肉，而後為軀幹肌肉）",
-      "臉部表情出現「痙笑」（risus sardonicus）",
-      "其他"
-    ],
-    "input": "如有勾選『其他』，則請描述："
+      "臉部表情出現「痙笑」（risus sardonicus）"
+    ]
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_其他症狀.json"
+  },
+  {
+    "type": "h4",
+    "title": "是否有傷口"
   },
   {
     "type": "radio",
-    "title": "臨床症狀",
-    "text": "是否有傷口",
     "list": [
       "有",
       "無",
@@ -40,8 +47,11 @@
     ]
   },
   {
+    "type": "h4",
+    "title": "傷口種類"
+  },
+  {
     "type": "checkbox",
-    "title": "傷口種類",
     "list": [
       "穿刺傷",
       "割傷",
@@ -49,10 +59,9 @@
       "灼/燙傷",
       "褥瘡",
       "動物咬傷",
-      "未說明傷口種類",
-      "其他"
+      "未說明傷口種類"
     ],
-    "input": "如有勾選『其他』，則請描述："
+    "input": "其他<a href=\"codingMemo.html?strMemo=說明打勾之後，必填星號以及輸入文字框就要出現，要做連動做設計\">\uD83D\uDD06</a>"
   },
   {
     "type": "json",
@@ -61,26 +70,5 @@
   {
     "type": "json",
     "file": "../json/disease_個案生母資料.json"
-  },
-  {
-    "type": "h3",
-    "title": "通報疾病相關NIIS接種紀錄"
-  },
-  {
-    "type": "checkbox",
-    "list": [
-      [
-        "input",
-        "疫苗名稱"
-      ],
-      [
-        "input",
-        "接種劑次"
-      ],
-      [
-        "input",
-        "接種日期"
-      ]
-    ]
   }
 ]
