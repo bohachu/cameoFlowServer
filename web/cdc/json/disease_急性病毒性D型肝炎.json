@@ -1,11 +1,7 @@
 [
   {
     "type": "diseaseName",
-    "title": "E肝"
-  },
-  {
-    "type": "h2",
-    "title": "臨床症狀"
+    "title": "急性病毒性D型肝炎"
   },
   {
     "type": "json",
@@ -35,23 +31,31 @@
     "file": "../json/disease_其他症狀.json"
   },
   {
-    "type": "checkbox",
-    "list": [
-      "經醫師臨床診斷為急性E型肝炎，且需排除急性A、B、C型肝炎"
-    ]
-  },
-  {
     "type": "h2",
     "title": "通報時檢驗資料"
   },
   {
-    "type": "input",
+    "type": "htmlSource",
+    "text": "<div class=\"row\">"
+  },
+  {
+    "type": "checkbox",
+    "list": [
+      "血清學B型肝炎表面抗原(HBsAg)抗原檢測：陽性"
+    ]
+  },
+  {
+    "type": "inputSmall",
     "title": "ALT 檢驗值：",
     "text": "輸入數字"
   },
   {
+    "type": "htmlSource",
+    "text": "</div>"
+  },
+  {
     "type": "h4",
-    "title": "經醫師臨床診斷為急性E型肝炎，且需排除急性A、B、C型肝炎"
+    "title": "急性病毒性D型肝炎檢驗部分送疾病管制署確認"
   },
   {
     "type": "json",
