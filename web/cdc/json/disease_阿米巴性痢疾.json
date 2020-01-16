@@ -28,39 +28,20 @@
     "title": "通報時檢驗資料"
   },
   {
-    "type": "htmlSource",
-    "text": "<div class=\"row ml-1\">"
+    "type": "h4",
+    "title": "<input class='form-check-input' type='checkbox'>糞便鏡檢發現疑似痢疾阿米巴"
   },
   {
-    "type": "checkbox",
-    "list": [
-      [
-        "checkbox",
-        "糞便鏡檢發現疑似痢疾阿米巴"
-      ],
-      [
-        "checkbox",
-        "組織病理切片檢查發現痢疾阿米巴<a href=\"codingMemo.html?strMemo=勾選此項者病理專科醫師姓名必填\">\uD83D\uDD06</a>"
-      ]
-    ]
+    "type": "h4",
+    "title": "<input class='form-check-input' type='checkbox'>組織病理切片檢查發現痢疾阿米巴<a href=\"codingMemo.html?strMemo=勾選此項者病理專科醫師姓名必填\">\uD83D\uDD06</a>"
   },
   {
     "type": "inputSmall",
     "title": "研判病理專科醫生"
   },
   {
-    "type": "htmlSource",
-    "text": "</div>"
-  },
-  {
-    "type": "checkbox",
-    "list": [
-      "二次血清學檢查顯示痢疾阿米巴抗體效價升高<a href=\"codingMemo.html?strMemo=勾選此項者二次血清檢查的抗體效價及檢驗方式必填\n\n\">\uD83D\uDD06</a>"
-    ]
-  },
-  {
-    "type": "htmlSource",
-    "text": "<div class=\"row ml-1\">"
+    "type": "h4",
+    "title": "<input class='form-check-input' type='checkbox'>二次血清學檢查顯示痢疾阿米巴抗體效價升高<a href=\"codingMemo.html?strMemo=勾選此項者二次血清檢查的抗體效價及檢驗方式必填\n\n\">\uD83D\uDD06</a>"
   },
   {
     "type": "inputSmall",
@@ -83,18 +64,8 @@
     "title": "檢驗方式"
   },
   {
-    "type": "htmlSource",
-    "text": "</div>"
-  },
-  {
-    "type": "checkbox",
-    "list": [
-      "超音波或電腦斷層診斷為肝膿瘍，且血清學檢查顯示陽性之痢疾阿米巴抗體者<a href=\"codingMemo.html?strMemo=勾選此項者抗體效價及檢驗方法必填\n\">\uD83D\uDD06</a>"
-    ]
-  },
-  {
-    "type": "htmlSource",
-    "text": "<div class=\"row ml-1\">"
+    "type": "h4",
+    "title": "<input class='form-check-input' type='checkbox'>超音波或電腦斷層診斷為肝膿瘍，且血清學檢查顯示陽性之痢疾阿米巴抗體者<a href=\"codingMemo.html?strMemo=勾選此項者抗體效價及檢驗方法必填\n\">\uD83D\uDD06</a>"
   },
   {
     "type": "inputSmall",
@@ -105,25 +76,11 @@
     "title": "檢驗方法"
   },
   {
-    "type": "htmlSource",
-    "text": "</div>"
+    "type": "h4",
+    "title": "<input class='form-check-input' type='checkbox'>其他醫院檢查結果，原因："
   },
   {
-    "type": "htmlSource",
-    "text": "<div class=\"row ml-1\">"
-  },
-  {
-    "type": "checkbox",
-    "list": [
-      [
-        "input",
-        "其他醫院檢查結果，原因"
-      ]
-    ]
-  },
-  {
-    "type": "htmlSource",
-    "text": "</div>"
+    "type": "inputSmall"
   },
   {
     "type": "json",
