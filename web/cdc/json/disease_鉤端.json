@@ -33,126 +33,59 @@
     "file": "../json/disease_其他症狀.json"
   },
   {
-    "type": "h2",
-    "title": "流行病學資料"
+    "type": "json",
+    "file": "../json/disease_流行病學資料.json"
   },
   {
-    "type": "select",
-    "title": "職業",
-    "list": [
-      "學生",
-      "工程師",
-      "1",
-      "2",
-      "3",
-      "4"
-    ]
+    "type": "htmlSource",
+    "text": "<div class=\"row ml-1\">"
   },
   {
-    "type": "radio",
-    "title": "旅遊史",
-    "list": [
-      "有",
-      "無"
-    ]
+    "type": "h4",
+    "title": "<input type='checkbox'> 接觸動物<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選後，日期為必填，為勾選，日期不可填\">\uD83D\uDD06</a>"
   },
   {
-    "type": "checkbox",
-    "title": "旅遊史類別",
-    "list": [
-      "國內旅遊史",
-      "國外旅遊史",
-      "外籍人士國外居住史"
-    ]
+    "type": "dateSmall",
+    "title": "接觸動物日期"
   },
   {
-    "type": "h3",
-    "title": "國內旅遊史"
+    "type": "htmlSource",
+    "text": "</div>"
   },
   {
-    "type": "input",
-    "title": "縣市"
+    "type": "htmlSource",
+    "text": "<div class=\"row ml-1\">"
   },
   {
-    "type": "date",
-    "title": "起始日期"
+    "type": "h4",
+    "title": "<input type='checkbox'> 野外活動<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選後，日期為必填，為勾選，日期不可填\">\uD83D\uDD06</a>"
   },
   {
-    "type": "date",
-    "title": "結束日期"
+    "type": "dateSmall",
+    "title": "野外活動日期"
   },
   {
-    "type": "addRecord",
-    "title": "＋ 新增一筆國內旅遊史"
+    "type": "htmlSource",
+    "text": "</div>"
   },
   {
-    "type": "h3",
-    "title": "國外旅遊史"
+    "type": "htmlSource",
+    "text": "<div class=\"row ml-1\">"
   },
   {
-    "type": "input",
-    "title": "國家"
+    "type": "h4",
+    "title": "<input type='checkbox'> 污染的環境<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選後，日期為必填，為勾選，日期不可填\">\uD83D\uDD06</a>"
   },
   {
-    "type": "date",
-    "title": "起始日期"
-  },
-  {
-    "type": "date",
-    "title": "結束日期"
-  },
-  {
-    "type": "addRecord",
-    "title": "＋ 新增一筆國外旅遊史"
-  },
-  {
-    "type": "h3",
-    "title": "外籍人士國外居住史"
-  },
-  {
-    "type": "input",
-    "title": "國家"
-  },
-  {
-    "type": "date",
-    "title": "離境居住國日期"
-  },
-  {
-    "type": "date",
-    "title": "入境我國日期"
-  },
-  {
-    "type": "addRecord",
-    "title": "＋ 新增一筆國外居住史"
-  },
-  {
-    "type": "radio",
-    "title": "動物接觸史",
-    "list": [
-      "有",
-      "無"
-    ]
-  },
-  {
-    "type": "select",
-    "title": "接觸動物種類",
-    "list": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ]
-  },
-  {
-    "type": "input",
-    "title": "接觸動物"
-  },
-  {
-    "type": "input",
-    "title": "野外活動"
-  },
-  {
-    "type": "date",
+    "type": "dateSmall",
     "title": "污染的環境"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div>"
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_個案生母資料.json"
   }
 ]
