@@ -113,21 +113,22 @@ class JsonToHtmlDateCol3 extends JsonToHtml {
 }
 
 class JsonToHtmlInput extends JsonToHtml {
+  String strClassTag='.JsonToHtmlInput_getTags';
   Future<String> getTags() async {
     if(strText==null || strText==''){
       strText='輸入文字';
     }
-    return replaceAll('.JsonToHtmlInput_getTags',
+    return replaceAll(strClassTag,
         {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId','\$strText': '$strText'});
   }
 }
 
-class JsonToHtmlInputCol6 extends JsonToHtml {
-  Future<String> getTags() async => replaceAll('.JsonToHtmlInputCol6_getTags', {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId','\$strText': '$strText'});
+class JsonToHtmlInputCol6 extends JsonToHtmlInput {
+  String strClassTag='.JsonToHtmlInputCol6_getTags';
 }
 
-class JsonToHtmlInputCol3 extends JsonToHtml {
-  Future<String> getTags() async => replaceAll('.JsonToHtmlInputCol3_getTags', {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId','\$strText': '$strText'});
+class JsonToHtmlInputCol3 extends JsonToHtmlInput {
+  String strClassTag='.JsonToHtmlInputCol3_getTags';
 }
 
 class JsonToHtmlSelect extends JsonToHtmlRadio {
