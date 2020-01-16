@@ -66,10 +66,6 @@
     "file": "../json/disease_個案生母資料.json"
   },
   {
-    "type": "json",
-    "file": "../json/disease_個案生母資料.json"
-  },
-  {
     "type": "radio",
     "title": "<p style='font-size: 20px; font-weight: bold; color: #000;'>個案是否具有潛在疾病？<span style=\"color:red\">*</span></p>",
     "list": [
