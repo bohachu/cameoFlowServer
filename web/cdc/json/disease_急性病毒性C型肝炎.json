@@ -1,4 +1,5 @@
-[{
+[
+  {
     "type": "diseaseName",
     "title": "急性病毒性C型肝炎"
   },
@@ -31,7 +32,7 @@
   },
   {
     "type": "h4",
-    "title":"經醫師臨床診斷「排除慢性肝炎急性發作或其他原因引起之肝功能異常發炎」：<span style=\"color:red\">*</span>"
+    "title": "經醫師臨床診斷「排除慢性肝炎急性發作或其他原因引起之肝功能異常發炎」：<span style=\"color:red\">*</span>"
   },
   {
     "type": "radio",
@@ -52,7 +53,7 @@
   },
   {
     "type": "radio",
-    "text": "2. 血清學C型肝炎病毒抗體(anti-HCV)檢測：<span style=\"color:red\">*</span>",
+    "title": "2. 血清學C型肝炎病毒抗體(anti-HCV)檢測：<span style=\"color:red\">*</span>",
     "tip": "本項檢測應由衛生福利部疾病管制署傳染病認可檢驗機構檢驗",
     "list": [
       "曾檢驗陰性，後於一年內轉變成C型肝炎病毒抗體陽性",
@@ -63,7 +64,7 @@
   },
   {
     "type": "radio",
-    "text": "3. 血清C型肝炎病毒核酸檢測：<span style=\"color:red\">*</span>",
+    "title": "3. 血清C型肝炎病毒核酸檢測：<span style=\"color:red\">*</span>",
     "tip": "本項檢測送疾病管制署確認，由疾病管制署傳染病認可檢驗機構檢驗者除外",
     "list": [
       "陽性",

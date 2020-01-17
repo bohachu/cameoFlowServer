@@ -1,5 +1,34 @@
+== Asana: **急性病毒性D型肝炎：ALT檢測值排版不好看 ==
+start 20200117 08:48 to
+
+http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_急性病毒性A型肝炎.json
+ALT 不用改，排版還可以
+
+http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_disease_急性病毒性B型肝炎.json
+問題很大條，根本出不來頁面，JSON 解析有問題 bug
+
+http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_急性病毒性C型肝炎.json
+done ALT i 位置有問題
+
+http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_急性病毒性D型肝炎.json
+ALT 不用改，排版還可以
+
+http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_急性病毒性E型肝炎.json
+ALT 不用改，排版還可以
+done 要加入 i 在「通報時檢驗資料」: 急性病毒性E型肝炎檢驗部分送疾病管制署確認
+
+http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_未定型肝炎.json
+ALT 不用改，排版還可以
+
+~~ 先處理幾個比較簡單的 i 排版問題 ~~
+
+http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_急性病毒性C型肝炎.json
+ALT i 位置有問題
+fixed 應該是要放 radio title 結果 json 寫成 radio text 導致 tip 位置跑版
+
+
 == Asana: **鉤端：下面三個選項排版很醜，需要調整，目前想不到作法 ==
-start 20200117 08:24 to
+start 20200117 08:24 to 08:47
 ?strDiseaseFile=../json/disease_鉤端.json
 
 ~~ disease_鉤端.json ~~

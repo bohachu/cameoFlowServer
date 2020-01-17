@@ -38,16 +38,12 @@
   },
   {
     "type": "h2",
-    "title": "通報時檢驗資料"
+    "title": "通報時檢驗資料<span tooltip=\"急性病毒性E型肝炎檢驗部分送疾病管制署確認\" flow=\"left\"><i class=\"fas fa-info-circle\" style=\"color: #00a65a;\"></i></span>"
   },
   {
     "type": "input",
     "title": "ALT 檢驗值：",
     "text": "輸入數字"
-  },
-  {
-    "type": "h4",
-    "title": "急性病毒性E型肝炎檢驗部分送疾病管制署確認"
   },
   {
     "type": "json",

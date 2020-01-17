@@ -41,7 +41,7 @@
   {
     "type": "radio",
     "title": "通報時檢驗資料",
-    "text": "血清學B型肝炎IgM核心抗體(IgM anti-HBc)檢測：<span style=\"color:red\">*</span>",
+    "text": "<b>血清學B型肝炎IgM核心抗體(IgM anti-HBc)檢測：</b><span style=\"color:red\">*</span>",
     "tip": "本項檢測應由疾病管制署傳染病認可檢驗機構檢驗",
     "list": [
       "陽性",
@@ -51,7 +51,7 @@
   },
   {
     "type": "radio",
-    "text": "血清學B型肝炎表面抗原(HBsAg)抗原檢測：<span style=\"color:red\">*</span>",
+    "title": "血清學B型肝炎表面抗原(HBsAg)抗原檢測：<span style=\"color:red\">*</span>",
     "list": [
       "陽性",
       "陰性",
