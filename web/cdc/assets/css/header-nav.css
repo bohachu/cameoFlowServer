@@ -1,0 +1,132 @@
+/* custom */
+
+.navbar-nav {
+    height: 47.47px;
+}
+
+.nav-item:hover,
+.nav-item-child:hover {
+    cursor: pointer;
+}
+
+/* .nav-item .align-items-center:hover {
+  filter: invert(54%) sepia(29%) saturate(888%) hue-rotate(67deg) brightness(96%) contrast(88%);
+} */
+
+.nav-item-child {
+    background-color: #E2E2E2;
+}
+
+li .sidebar {
+    text-decoration: none;
+    color: #526B5E;
+}
+
+li.sidebar:hover,
+li.sidebar:active {
+    background-color: #E2E2E2 !important;
+    border-left: 10px solid #00a65a !important;
+}
+
+li.sidebar:hover a,
+li.sidebar:active a {
+    color: #00a65a;
+}
+
+.login-time {
+    font-size: 12px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.login-time2 {
+    font-size: 12px;
+    position: absolute;
+    bottom: 5px;
+}
+
+.user-dropdown-menu {
+    width: 250px;
+    text-align: center;
+}
+
+.user-dropdown-item {
+    border-bottom: 1px solid #E2E2E2;
+    padding: 10px 0;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.user-dropdown-item:hover {
+    background-color: #00a65a !important;
+    color: #fff;
+}
+
+.user-dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.header-input:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-item-child-none {
+    display: none;
+}
+
+.nav-child-num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAA039;
+    color: #fff;
+    font-weight: 500;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.nav-item-num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-weight: 500;
+    width: 30px;
+    border-radius: 10px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.unread-indicator::before {
+    position: absolute;
+    content: '';
+    /* right: 0.125rem; */
+    right: 45px;
+    top: 0.5rem;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: -webkit-gradient(linear, left top, left bottom, from(red), to(red));
+    background: -webkit-linear-gradient(red, red);
+    background: -o-linear-gradient(red, red);
+    background: linear-gradient(red, red);
+    border: 2px solid #edf2f9;
+}
+
+.unread-indicator::after {
+    position: absolute;
+    content: '1';
+    color: #fff;
+    font-size: 11px;
+    right: 41px;
+    top: 0.6rem;
+    height: 0.875rem;
+    width: 0.875rem;
+}
+
+/* custom */

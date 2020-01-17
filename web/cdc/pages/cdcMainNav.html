@@ -1,0 +1,115 @@
+<link href="../assets/css/header-nav.css" rel="stylesheet">
+
+<!-- Left Sidebar -->
+<div class="col-13 col-md-3 col-xl-2 bd-sidebar mr-3 p-0"
+    style="float: left; background-color: #F2F2F2; box-shadow:5px 5px 10px #E2E2E2;" id="child">
+    <ul class="navbar-nav flex-column">
+        <li class="nav-item sidebar">
+            <div class="d-flex align-items-center font-weight-bold p-3">
+                <a class="sidebar" href="">首頁</a>
+            </div>
+        </li>
+        <li class="nav-item sidebar" id="diseaseButton">
+            <div class="d-flex align-items-center font-weight-bold pl-3 pt-3 pb-3 pr-1">
+                <a class="sidebar" href="#">新增傳染病個案通報單<i class=" fas fa-sort-down ml-1"
+                        style="font-size: 24px;;"></i></a>
+                <span class="nav-child-num">24</span>
+                <a href="codingMemo.html?strMemo=收合圈圈累積數應該要加總和">🔆</a>
+            </div>
+        </li>
+        <li class="nav-item-child nav-item-child-none" onclick="location.href='https://cameo.tw/cdc/v20200111/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_%E6%A2%85%E6%AF%92.json'">
+            <div class="d-flex align-items-center font-weight-bold p-3">
+                <a class="sidebar">新增個案通報單</a>
+                <span class="nav-child-num">6</span>
+            </div>
+        </li>
+        <li class="nav-item-child nav-item-child-none"
+            onclick="location.href='./2_3_sun_unfinish_list.html'">
+            <div class="d-flex align-items-center font-weight-bold p-3">
+                <a class="sidebar">檢驗陽性待通報</a>
+                <span class="nav-child-num">9</span>
+            </div>
+        </li>
+        <li class="nav-item-child nav-item-child-none" onclick="location.href='./2_2_draft_list.html'">
+            <div class="d-flex align-items-center font-weight-bold p-3">
+                <a class="sidebar">草稿通報單</a>
+                <span class="nav-child-num">9</span>
+            </div>
+        </li>
+        <li class="nav-item sidebar" id="eventButton">
+            <div class="d-flex align-items-center font-weight-bold pl-3 pt-3 pb-3 pr-1">
+                <a class="sidebar" href="#">新增群聚事件通報單<i class=" fas fa-sort-down ml-1" style="font-size: 24px;"></i></a>
+                <span class="nav-child-num">9</span>
+                <a href="codingMemo.html?strMemo=收合圈圈累積數應該要加總和">🔆</a>
+            </div>
+        </li>
+        <li class="nav-item-child nav-item-child-none">
+            <div class="d-flex align-items-center font-weight-bold p-3">
+                <a class="sidebar" href="#">新增事件通報單</a>
+                <span class="nav-child-num">9</span>
+            </div>
+        </li>
+        <li class="nav-item-child nav-item-child-none">
+            <div class="d-flex align-items-center font-weight-bold p-3">
+                <a class="sidebar" href="#">草稿通報單</a>
+                <span class="nav-child-num">9</span>
+            </div>
+        </li>
+        <li class="nav-item sidebar" onclick="location.href='./3_1_report_form_management.html'">
+            <div class="d-flex align-items-center font-weight-bold p-3">
+                <a class="sidebar" href="#">通報單查詢及管理</a>
+            </div>
+        </li>
+        <li class="nav-item sidebar" onclick="location.href='./5_1_wait_permission_list.html'">
+            <div class="d-flex align-items-center font-weight-bold p-3">
+                <a class="sidebar" href="#">待審核案件列表</a>
+            </div>
+        </li>
+        <li class="nav-item sidebar" onclick="location.href='./U2_a1_relation.html'">
+            <div class="d-flex align-items-center font-weight-bold p-3">
+                <a class="sidebar" href="#">傳染病個案主子單標示</a>
+            </div>
+        </li>
+        <li class="nav-item sidebar">
+            <div class="d-flex align-items-center font-weight-bold p-3">
+                <a class="sidebar" href="#">群聚事件主子單標示</a>
+            </div>
+        </li>
+        <li class="nav-item sidebar" onclick="location.href='./1_3_system_announcement.html'">
+            <div class="d-flex align-items-center font-weight-bold p-3">
+                <a class="sidebar" href="#">系統公告</a>
+            </div>
+        </li>
+        <li class="nav-item sidebar" onclick="location.href='./6_1_system_links.html'">
+            <div class="d-flex align-items-center font-weight-bold p-3">
+                <a class="sidebar" href="#">連結其他系統</a>
+            </div>
+        </li>
+    </ul>
+    <p class="ml-3 login-time">於 2019/04/30 09:25:05 登入</p>
+    <p class="ml-3 login-time2">前次於 2019/04/29 13:41:33 登入</p>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        var h = $("#parent").height();
+        console.log(h);
+        $("#child").height(h);
+    });
+
+    const diseaseButton = document.getElementById('diseaseButton');
+    const eventButton = document.getElementById('eventButton');
+    const navItemChild = document.querySelectorAll('.nav-item-child');
+
+    diseaseButton.addEventListener('click', function (e) {
+        navItemChild[0].classList.toggle('nav-item-child-none');
+        navItemChild[1].classList.toggle('nav-item-child-none');
+        navItemChild[2].classList.toggle('nav-item-child-none');
+    })
+
+    eventButton.addEventListener('click', function (e) {
+        navItemChild[3].classList.toggle('nav-item-child-none');
+        navItemChild[4].classList.toggle('nav-item-child-none');
+    })
+</script>
