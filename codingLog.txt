@@ -1,3 +1,12 @@
+== Asana: AIDS：畫面出不來 ==
+start 20200117 16:32
+?strDiseaseFile=../json/disease_AIDS.json
+
+  {
+    "type": "h2",
+    "title": "通報時檢驗資料" （bug 多了一個逗點）
+  },
+
 == Asana: disease_急性病毒性B型肝炎.json 問題很大條，根本出不來頁面，JSON 解析有問題 bug ==
 ?strDiseaseFile=../json/disease_急性病毒性B型肝炎.json
 
