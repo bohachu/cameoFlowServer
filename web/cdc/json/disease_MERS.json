@@ -62,57 +62,8 @@
     ]
   },
   {
-    "type": "checkbox",
-    "list": [
-      [
-        "checkbox",
-        "精神疾病"
-      ],
-      [
-        "checkbox",
-        "神經肌肉疾病"
-      ],
-      [
-        "checkbox",
-        "慢性肺疾(如氣喘、慢性阻塞性肺疾等)"
-      ],
-      [
-        "checkbox",
-        "代謝性疾病(如糖尿病、高血脂等)"
-      ],
-      [
-        "checkbox",
-        "心血管疾病(高血壓除外)"
-      ],
-      [
-        "checkbox",
-        "肝臟疾病(如肝炎、肝硬化等)"
-      ],
-      [
-        "checkbox",
-        "腎臟疾病(如慢性腎功能不全、長期接受血液或腹膜透析等)"
-      ],
-      [
-        "checkbox",
-        "仍在治療中或未治癒之癌症"
-      ],
-      [
-        "checkbox",
-        "因HIV感染或藥物引起之免疫低下"
-      ],
-      [
-        "input",
-        "懷孕，週數<a href=\"codingMemo.html?strMemo=勾選此項者，懷孕週數必填\">\uD83D\uDD06</a>"
-      ],
-      [
-        "input",
-        "其他，其他慢性病<a href=\"codingMemo.html?strMemo=勾選此項者，其他慢性病必填\">\uD83D\uDD06</a>"
-      ],
-      [
-        "input",
-        "備註（200字以內）"
-      ]
-    ]
+    "type": "htmlFile",
+    "file": "disease_MERS_慢性疾病病史勾選區塊.html"
   },
   {
     "type": "json",

@@ -103,17 +103,17 @@
   },
   {
     "type": "htmlSource",
-    "text": "<div class=\"row\">"
+    "text": "<div class=\"row pl-3 pr-3\">"
   },
   {
-    "type": "radioNormal",
+    "type": "radioSmall",
     "list": [
       "有",
       "無"
     ]
   },
   {
-    "type": "select",
+    "type": "selectSmall",
     "title": "接觸動物種類<a href=\"https://docs.google.com/spreadsheets/d/1PsMy-qKZjy7WyOQSvkHWtLmuSCJo7CrbfsG_BGTKjH8/edit#gid=715655781&range=A1\">\uD83D\uDD06</a>",
     "list": [
       "其它接觸動物",
@@ -123,7 +123,7 @@
     ]
   },
   {
-    "type": "input",
+    "type": "inputSmall",
     "title": "其他接觸動物<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=當接觸動物種類選擇「其他接觸動物」才動態顯示此欄位\">\uD83D\uDD06</a>"
   },
   {

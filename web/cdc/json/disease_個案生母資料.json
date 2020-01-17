@@ -4,7 +4,7 @@
     "title": "個案生母資料<a href=\"codingMemo.html?strMemo=當個案ID為AA時顯示並為必填\">\uD83D\uDD06</a>"
   },
   {
-    "type": "inputBig",
+    "type": "inputSmall",
     "title": "案母姓名"
   },
   {

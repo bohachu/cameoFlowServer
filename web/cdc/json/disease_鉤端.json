@@ -37,52 +37,8 @@
     "file": "../json/disease_流行病學資料.json"
   },
   {
-    "type": "htmlSource",
-    "text": "<div class=\"row ml-1\">"
-  },
-  {
-    "type": "h4",
-    "title": "<input class='form-check-input mt-1' type='checkbox'> 接觸動物<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選後，日期為必填，為勾選，日期不可填\">\uD83D\uDD06</a>"
-  },
-  {
-    "type": "dateSmall",
-    "title": "接觸動物日期"
-  },
-  {
-    "type": "htmlSource",
-    "text": "</div>"
-  },
-  {
-    "type": "htmlSource",
-    "text": "<div class=\"row ml-1\">"
-  },
-  {
-    "type": "h4",
-    "title": "<input class='form-check-input mt-1' type='checkbox'> 野外活動<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選後，日期為必填，為勾選，日期不可填\">\uD83D\uDD06</a>"
-  },
-  {
-    "type": "dateSmall",
-    "title": "野外活動日期"
-  },
-  {
-    "type": "htmlSource",
-    "text": "</div>"
-  },
-  {
-    "type": "htmlSource",
-    "text": "<div class=\"row ml-1\">"
-  },
-  {
-    "type": "h4",
-    "title": "<input class='form-check-input mt-1' type='checkbox'> 污染的環境<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選後，日期為必填，為勾選，日期不可填\">\uD83D\uDD06</a>"
-  },
-  {
-    "type": "dateSmall",
-    "title": "污染的環境"
-  },
-  {
-    "type": "htmlSource",
-    "text": "</div>"
+    "type": "htmlFile",
+    "file": "disease_鉤端_動物接觸史下面排緊密一點.html"
   },
   {
     "type": "json",

@@ -127,27 +127,7 @@
     "title": "個案病況追蹤維護"
   },
   {
-    "type": "radioBig",
-    "title": "個案於出院(或通報)後10日內是否病況加重",
-    "list": [
-      "是",
-      "否"
-    ]
-  },
-  {
-    "type": "inputBig",
-    "title": "病況簡要概述(200字以內)<a href=\"codingMemo.html?strMemo=若為是時，病況簡要概述為必填，連動設計\">\uD83D\uDD06</a>"
-  },
-  {
-    "type": "radioBig",
-    "title": "抗病毒藥物開立",
-    "list": [
-      "有",
-      "無"
-    ]
-  },
-  {
-    "type": "dateBig",
-    "title": "開立日<a href=\"codingMemo.html?strMemo=若為有時，開立日為必填，連動設計\">\uD83D\uDD06</a>"
+    "type": "htmlFile",
+    "file": "disease_新型A型流感_個案病況追蹤維護_排版上下緊密一點.html"
   }
 ]
