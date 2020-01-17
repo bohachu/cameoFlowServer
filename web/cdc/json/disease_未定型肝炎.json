@@ -21,7 +21,7 @@
   },
   {
     "type": "h2",
-    "title": "通報時檢驗資料"
+    "title": "通報時檢驗資料<span tooltip=\"血清學A型肝炎IgM抗體(IgM anti-HAV)、\n血清學B型肝炎IgM核心抗體(IgM anti-HBc)、\n血清學C型肝炎病毒抗體(anti-HCV)\n檢測應由疾病管制署傳染病認可檢驗機構檢驗\" flow=\"right\"><i class=\"fas fas fa-info-circle\" style=\"color: #00a65a;\"></i></span>"
   },
   {
     "type": "htmlSource",
@@ -98,10 +98,6 @@
   {
     "type": "htmlSource",
     "text": "</div>"
-  },
-  {
-    "type": "h4",
-    "title": "血清學A型肝炎IgM抗體(IgM anti-HAV)、血清學B型肝炎IgM核心抗體(IgM anti-HBc)、血清學C型肝炎病毒抗體(anti-HCV)檢測應由疾病管制署傳染病認可檢驗機構檢驗"
   },
   {
     "type": "h4",

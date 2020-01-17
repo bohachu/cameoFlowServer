@@ -1,3 +1,19 @@
+== Asana: *未定型肝炎：註解文字，需改成不要粗體，較不明顯，或是換一個排版方式 ==
+
+http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_未定型肝炎.json
+
+刪除
+  {
+    "type": "h4",
+    "title": "血清學A型肝炎IgM抗體(IgM anti-HAV)、血清學B型肝炎IgM核心抗體(IgM anti-HBc)、血清學C型肝炎病毒抗體(anti-HCV)檢測應由疾病管制署傳染病認可檢驗機構檢驗"
+  },
+
+改這個寫法 i
+  {
+    "type": "h2",
+    "title": "通報時檢驗資料<span tooltip=\"血清學A型肝炎IgM抗體(IgM anti-HAV)、\n血清學B型肝炎IgM核心抗體(IgM anti-HBc)、\n血清學C型肝炎病毒抗體(anti-HCV)\n檢測應由疾病管制署傳染病認可檢驗機構檢驗\" flow=\"right\"><i class=\"fas fas fa-info-circle\" style=\"color: #00a65a;\"></i></span>"
+  },
+
 == Asana: **急性病毒性D型肝炎：ALT檢測值排版不好看 ==
 start 20200117 08:48 to
 
