@@ -1,6 +1,33 @@
+?strDiseaseFile=../json/disease_急性病毒性A型肝炎.json
+  {
+    "type": "h2",
+    "title": "通報時檢驗資料"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"row pl-3 pr-3\">"
+  },
+  {
+    "type": "radio",
+    "title": "血清學A型肝炎IgM抗體(IgM anti-HAV)檢測<span style=\"color:red\">*</span>",
+    "tip": "本項檢測應由疾病管制署傳染病認可檢驗機構檢驗",
+    "list": [
+      "陽性",
+      "陰性",
+      "無檢驗"
+    ]
+  },
+
+== 排版亂掉 disease_HIV(18月以下) ==
+http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_HIV(18%E6%9C%88%E4%BB%A5%E4%B8%8B).json
+start coding 20200117 16:42
+
+done
+http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_HIV(18%E6%9C%88%E4%BB%A5%E4%B8%8B).json
+
 == Asana: 18月以上成人 排版有問題，三個合併為四個 ==
 ?strDiseaseFile=../json/disease_HIV(18月以上成人).json
-Bowen電腦有改
+Bowen電腦有改成功，看不出異狀
 
 == Asana: AIDS：畫面出不來 ==
 start 20200117 16:32

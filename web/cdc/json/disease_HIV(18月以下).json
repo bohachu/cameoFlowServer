@@ -98,63 +98,8 @@
     "file": "../json/disease_個案生母資料.json"
   },
   {
-    "type": "htmlSource",
-    "text": "<div class=\"row ml-1\">"
-  },
-  {
-    "type": "radioNormal",
-    "title": "國籍<span style=\"color:red\">*</span>",
-    "list": [
-      "本國籍",
-      "外國籍"
-    ]
-  },
-  {
-    "type": "date",
-    "title": "出生日期"
-  },
-  {
-    "type": "radioNormal",
-    "title": "本次孕程中是否有使用雞尾酒療法",
-    "list": [
-      "是",
-      "否",
-      "不詳"
-    ]
-  },
-  {
-    "type": "htmlSource",
-    "text": "</div>"
-  },
-  {
-    "type": "htmlSource",
-    "text": "<div class=\"row ml-1\">"
-  },
-  {
-    "type": "radioNormal",
-    "title": "本次生產中是否注射AZT",
-    "list": [
-      "是",
-      "否",
-      "不詳"
-    ]
-  },
-  {
-    "type": "radioNormal",
-    "title": "本次生產方式",
-    "list": [
-      "自然產",
-      "剖腹產",
-      "不詳"
-    ]
-  },
-  {
-    "type": "input",
-    "title": "<span style=\"color:#000000; font-weight: 700;\">本次生產醫院</span>"
-  },
-  {
-    "type": "htmlSource",
-    "text": "</div>"
+    "type": "htmlFile",
+    "file": "disease_HIV(18月以下)_國籍_出生日期_孕程_緊密排列.html"
   },
   {
     "type": "h2",
