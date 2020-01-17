@@ -1,3 +1,7 @@
+== Asana: 18月以上成人 排版有問題，三個合併為四個 ==
+?strDiseaseFile=../json/disease_HIV(18月以上成人).json
+Bowen電腦有改
+
 == Asana: AIDS：畫面出不來 ==
 start 20200117 16:32
 ?strDiseaseFile=../json/disease_AIDS.json
