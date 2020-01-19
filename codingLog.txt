@@ -9,7 +9,7 @@ start 20200119 12:09
 . 教學如何啟動 .js: new Vue({el: '#vue_block'}) ，並且增添 <div id="vue_block"> 到 .html 檔案裡面包住所有會運用到元件的區塊
 . 教學如何製作無參數 Vue.component , 把 HTML 片段用元件取代掉 , 注意運用 template `` 兩撇可以中間包斷行 HTML tags 的技巧
 . 教學如何製作有參數 props , 讓 .html 呼叫
-. 如何運用中文變成 attr_中文沒問題:可以中文 tag_name:不可中文 component_name:不可中文 vue_js_file_name_可以打中文.js:可中文
+. 如何運用中文變成 attr_中文沒問題:可以中文 component_name:不可中文 vue_js_file_name_可以打中文.js:可中文
 . 必填與非必填，如何運用布林變數切換元件的紅色星號顯示？
 . 是不是要有小太陽？如何在元件裡面標註小太陽？（元件裡面還有元件）
 . 如何運用 slot 傳遞參數是一大塊 HTML tags 當成參數？
