@@ -1,3 +1,6 @@
+== 20200119 21:17
+pmd cpd --minimum-tokens 100 --files ./reportDisease.html --language html
+
 == 1h vue fighting course ==
 start 20200119 12:09
 . 將沒有Vue元件化的混亂HTML複製一個檔案出來，準備進行元件化手術，避免改到原本的檔案。放在相同的路徑檔名 xxx 最後加入識別 xxx_vue.html
@@ -10,11 +13,18 @@ start 20200119 12:09
 . 教學如何製作無參數 Vue.component , 把 HTML 片段用元件取代掉 , 注意運用 template `` 兩撇可以中間包斷行 HTML tags 的技巧
 . 教學如何製作有參數 props , 讓 .html 呼叫
 . 如何運用中文變成 attr_中文沒問題:可以中文 component_name:不可中文 vue_js_file_name_可以打中文.js:可中文
-. 必填與非必填，如何運用布林變數切換元件的紅色星號顯示？
-. 是不是要有小太陽？如何在元件裡面標註小太陽？（元件裡面還有元件）
+done . 必填與非必填，如何運用布林變數切換元件的紅色星號顯示？
+done . 是不是要有小太陽？如何在元件裡面標註小太陽？（元件裡面還有元件）
+. 刪除重複程式碼 pmd cpd --minimum-tokens 100 --files ./reportDisease.html --language html
+
+~~
+
+pmd cpd --minimum-tokens 3 --files ./test_vue_通報單共用元件.js --language ecmascript
 . 如何運用 slot 傳遞參數是一大塊 HTML tags 當成參數？
 . 如何運用 slot 做到大排版區塊裡面有小區域變化？
+. 製作一個簡單病：退伍軍人病，實驗看看效果
 
+?strDiseaseFile=../json/disease_退伍軍人病.json
 
 == start coding 20200118 21:48 ==
 add vue

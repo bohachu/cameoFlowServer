@@ -269,14 +269,19 @@
             </div>
           </div>
           -->
-          <big_green 標題="天啊好簡單1" 顏色="color:red"></big_green>
-          <big_green 標題="天啊好簡單2" 顏色="color:blue"></big_green>
-          <big_green 標題="天啊好簡單3" 顏色="color:green"></big_green>
+
+          <big_green 標題="天啊Vue好簡單001" 顏色="color:green"></big_green>
 
           <form>
             <div class="row m-1">
-
-              <report_unit_name black_title="通報單位名稱" default_text="國立臺灣大學醫學院附設醫院"></report_unit_name>
+              <title_input
+                標題="通報單位名稱"
+                預設文字="國立臺灣大學醫學院附設醫院"
+                註解="001 疾管署與卡米爾當面討論之後建議：按下放大鏡之後的醫院搜尋介面畫面已經做在精誠動態雛形，因此，可以用抓圖方式（彈出搜尋元件），精誠夥伴請提供給疾管署做確認。<br/>002 如果通報單位非醫院，要變成「非反灰」可自行輸入。"
+                必填嗎="true"
+                灰底嗎="true"
+                搜尋嗎="true"
+              ></title_input>
 
               <div class="col-lg-6">
                 <div class="form-group">
