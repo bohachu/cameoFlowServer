@@ -35,11 +35,11 @@
   },
   {
     "type": "h2",
-    "title": "通報時檢驗資料"
+    "title": "通報時檢驗資料<a href=\"codingMemo.html?strMemo=下面四個選項為四則一必填\">\uD83D\uDD06</a>"
   },
   {
     "type": "h3",
-    "title": "<input class='form-check-input mt-1' type='checkbox'> 1. 未曾接受梅毒治療或病史不清楚者<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=下面四個選項為四則一必填\">\uD83D\uDD06</a>",
+    "title": "<input class='form-check-input mt-1' type='checkbox'> 1. 未曾接受梅毒治療或病史不清楚者",
     "tip": "＊(1)及(2)皆須填寫，其中RPR、VDRL至少擇一，\n且TPHA、TPPA、FTA-abs(+)、TPLA(+)、 EIA(+)、CIA(+)/CMIA(+)至少擇一。"
   },
   {
@@ -47,33 +47,40 @@
     "title": "(1)血清學非特異性梅毒螺旋體試驗"
   },
   {
-    "type": "checkbox",
-    "list": [
-      [
-        "input",
-        "RPR(+)效價=1:"
-      ],
-      [
-        "input",
-        "VDRL(+)效價=1:"
-      ]
-    ]
+    "type": "input",
+    "title": "RPR(+)效價=1:",
+    "text": "輸入數字"
+  },
+  {
+    "type": "input",
+    "title": "VDRL(+)效價=1:",
+    "text": "輸入數字"
   },
   {
     "type": "h4",
     "title": "(2)特異性梅毒螺旋體試驗"
   },
   {
+    "type": "htmlSource",
+    "text": "<div class=\"row pl-3 pr-3\">"
+  },
+  {
+    "type": "input",
+    "title": "TPHA=1:",
+    "text": "輸入數字"
+  },
+  {
+    "type": "input",
+    "title": "TPPA=1:",
+    "text": "輸入數字"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div>"
+  },
+  {
     "type": "checkbox",
     "list": [
-      [
-        "input",
-        "TPHA=1:"
-      ],
-      [
-        "input",
-        "TPPA=1:"
-      ],
       [
         "checkbox",
         "FTA-abs(+)"
@@ -90,7 +97,7 @@
   },
   {
     "type": "h3",
-    "title": "<input class='form-check-input mt-1' type='checkbox'> 2. 臨床檢體（病灶滲出液、組織等）以下列方法檢測出梅毒螺旋體<span style=\"color:red\">*</span>"
+    "title": "<input class='form-check-input mt-1' type='checkbox'> 2. 臨床檢體（病灶滲出液、組織等）以下列方法檢測出梅毒螺旋體"
   },
   {
     "type": "checkbox",
@@ -102,20 +109,16 @@
   },
   {
     "type": "h3",
-    "title": "<input class='form-check-input mt-1' type='checkbox'> 3. 腦脊髓液性病研究實驗室試驗<span style=\"color:red\">*</span>"
+    "title": "<input class='form-check-input mt-1' type='checkbox'> 3. 腦脊髓液性病研究實驗室試驗"
   },
   {
-    "type": "checkbox",
-    "list": [
-      [
-        "input",
-        "CSF-VDRL(+)效價=1:"
-      ]
-    ]
+    "type": "input",
+    "title": "CSF-VDRL(+)效價=1:",
+    "text": "輸入數字"
   },
   {
     "type": "h3",
-    "title": "<input class='form-check-input mt-1' type='checkbox'> 4. 曾經接受梅毒治療者<span style=\"color:red\">*</span>"
+    "title": "<input class='form-check-input mt-1' type='checkbox'> 4. 曾經接受梅毒治療者"
   },
   {
     "type": "h4",
