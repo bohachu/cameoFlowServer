@@ -61,7 +61,7 @@
       "動物咬傷",
       "未說明傷口種類"
     ],
-    "input": "其他<a href=\"codingMemo.html?strMemo=說明打勾之後，必填星號以及輸入文字框就要出現，要做連動做設計\">\uD83D\uDD06</a>"
+    "input": "其他<a href=\"codingMemo.html?strMemo=說明打勾之後，必填星號以及輸入內容框就要出現，要做連動做設計\">\uD83D\uDD06</a>"
   },
   {
     "type": "json",

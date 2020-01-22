@@ -259,7 +259,7 @@
   },
   {
     "type": "inputSmall",
-    "title": "次級行政區<span style=\"color:red\">*</span>"
+    "title": "次級行政區"
   },
   {
     "type": "dateSmall",
@@ -331,7 +331,7 @@
   },
   {
     "type": "inputSmall",
-    "title": "次級行政區<span style=\"color:red\">*</span>"
+    "title": "次級行政區"
   },
   {
     "type": "dateSmall",

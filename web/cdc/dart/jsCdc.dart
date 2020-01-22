@@ -116,7 +116,7 @@ class JsonToHtmlInput extends JsonToHtml {
   String strClassTag='.JsonToHtmlInput_getTags';
   Future<String> getTags() async {
     if(strText==null || strText==''){
-      strText='輸入文字';
+      strText='輸入內容';
     }
     return replaceAll(strClassTag,
         {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId','\$strText': '$strText'});
