@@ -1,3 +1,35 @@
+== 20200125 09:59
+因為 vue 已經可以做到參數化元件，所以我們可以開始製作梅毒或HIV
+?strDiseaseFile=../json/disease_梅毒.json
+?strDiseaseFile=../json/disease_HIV(18月以上成人).json
+12:38 這個視窗應該三十分鐘就要關閉了但是沒有關閉好奇特
+
+12:39 011 HIV成人 縮排對齊子選項欄位.mov
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"row pl-5\">"
+  },
+  {
+    "type": "date",
+    "title": "檢驗日期"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div>"
+  },
+
+下面這個故意用兩個全形空白對齊，不然會上下稍微看出有點錯位
+  {
+    "type": "h4",
+    "title": "HIV抗原p24篩檢　　"
+  },
+
+
+
 == 20200119 21:17
 pmd cpd --minimum-tokens 100 --files ./reportDisease.html --language html
 

@@ -57,6 +57,10 @@
     ]
   },
   {
+    "type": "htmlSource",
+    "text": "<div class=\"row pl-5\">"
+  },
+  {
     "type": "date",
     "title": "檢驗日期"
   },
@@ -65,10 +69,18 @@
     "title": "檢驗單位"
   },
   {
-  "type": "h3",
-  "title": "<input class='form-check-input mt-1' type='checkbox'> 分子生物學核酸檢測(NAT)陽性",
-  "tip": "若同時有進行HIV-1及2抗體確認檢驗方法且結果為陽性者，請確認已勾選上方[HIV-1及2抗體確認檢驗方法陽性]選項"
-},
+    "type": "htmlSource",
+    "text": "</div>"
+  },
+  {
+    "type": "h3",
+    "title": "<input class='form-check-input mt-1' type='checkbox'> 分子生物學核酸檢測(NAT)陽性",
+    "tip": "若同時有進行HIV-1及2抗體確認檢驗方法且結果為陽性者，請確認已勾選上方[HIV-1及2抗體確認檢驗方法陽性]選項"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"row pl-5\">"
+  },
   {
     "type": "date",
     "title": "檢驗日期"
@@ -76,6 +88,10 @@
   {
     "type": "input",
     "title": "檢驗單位"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div>"
   },
   {
     "type": "h3",
@@ -211,8 +227,12 @@
     "title": "<input class='form-check-input mt-1' type='checkbox'> HIV抗原p24篩檢陽性，且進行中和試驗確認陽性 <span class='JsonToHtmlRadio_buildTip fs-0' style=\"font-weight:400\" tooltip='若同時有進行HIV-1及2抗體確認檢驗方法且結果為陽性者，\n請確認已勾選上方[HIV-1及2抗體確認檢驗方法陽性]選項' flow='right'><i class='fas fas fa-info-circle' style='color: #00a65a;'></i></span>"
   },
   {
+    "type": "htmlSource",
+    "text": "<div class=\"row pl-5\">"
+  },
+  {
     "type": "h4",
-    "title": "HIV抗原p24篩檢"
+    "title": "HIV抗原p24篩檢　　"
   },
   {
     "type": "date",
@@ -221,6 +241,14 @@
   {
     "type": "input",
     "title": "檢驗單位"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"row pl-5\">"
   },
   {
     "type": "h4",
@@ -233,6 +261,10 @@
   {
     "type": "input",
     "title": "檢驗單位"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div>"
   },
   {
     "type": "h3",
@@ -322,16 +354,20 @@
   {
     "type": "checkbox",
     "list": [
-      ["checkbox",
+      [
+        "checkbox",
         "接受輸血者 <span class='JsonToHtmlRadio_buildTip' tooltip='接受輸血者，需經愛滋病毒基因序列比對符合且經衛生福利部愛滋病防治及感染者權益保障會臨床檢驗組專家會議確認' flow='right'><i class='fas fas fa-info-circle' style='color: #00a65a;'></i></span>"
       ],
-      ["checkbox",
+      [
+        "checkbox",
         "母子垂直感染"
       ],
-      ["input",
+      [
+        "input",
         "不詳"
       ],
-      ["input",
+      [
+        "input",
         "其他"
       ]
     ]
