@@ -1,6 +1,42 @@
 梅毒與HIV的派工影片如下： .mov
 https://drive.google.com/drive/u/0/folders/1TcjAd-Or10JVDAq8vD46snx_ksy4IFsU
-?strDiseaseFile=../json/disease_HIV(18月以上成人).json
+?strDiseaseFile=../json/disease_梅毒.json
+
+a. 一比幾的輸入框，輸入內容 改 輸入數字。 b. 如果是輸入數字的欄位，checkbox可以刪除:RPR VDRL TPHA TPPA CSF-VDRL
+
+21:34 運用 dart 新增一個元件叫做 InputOneLine 就可以達成一行顯示標題與輸入框的目的
+class InputOneLine extends JsonToHtml {
+  Future<String> getTags() async {
+    return '''
+      $strRowStart
+      <div class="form-group form-inline $strCol">
+        $strTitle <input class="form-control text-secondary" type="text" placeholder="$strText">
+      </div>
+      $strRowEnd
+      ''';
+  }
+}
+
+在JSON裡面可以這樣運用（還可以有彈性 rowStart rowEnd 包裝輸入框在 row 裡面，就不用額外再寫 htmlSource row）：
+  {
+    "rowStart": "<div class=\"row pl-4\">",
+    "type": "InputOneLine",
+    "title": "TPHA=1:",
+    "text": "輸入數字",
+    "col": "col-4"
+  },
+  {
+    "type": "InputOneLine",
+    "title": "TPPA=1:",
+    "text": "輸入數字",
+    "col": "col-4",
+    "rowEnd": "</div>"
+  },
+
+
+
+
+==
 
 done 19:35 009 HIV成人 急性 欄位全部改用 datatables 節省重複標題字串.mov
 好吧，這個項目真的很有趣，原本想要用 datatables 發現彈性很差，因為下拉選單不容易做所以實驗幾分鐘就放棄

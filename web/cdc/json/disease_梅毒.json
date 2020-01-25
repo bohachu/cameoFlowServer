@@ -47,36 +47,36 @@
     "title": "(1)血清學非特異性梅毒螺旋體試驗"
   },
   {
-    "type": "input",
+    "rowStart": "<div class=\"row pl-4\">",
+    "type": "InputOneLine",
     "title": "RPR(+)效價=1:",
-    "text": "輸入數字"
+    "text": "輸入數字",
+    "col": "col-4"
   },
   {
-    "type": "input",
+    "type": "InputOneLine",
     "title": "VDRL(+)效價=1:",
-    "text": "輸入數字"
+    "text": "輸入數字",
+    "col": "col-4",
+    "rowEnd": "</div>"
   },
   {
     "type": "h4",
     "title": "(2)特異性梅毒螺旋體試驗"
   },
   {
-    "type": "htmlSource",
-    "text": "<div class=\"row pl-3 pr-3\">"
-  },
-  {
-    "type": "input",
+    "rowStart": "<div class=\"row pl-4\">",
+    "type": "InputOneLine",
     "title": "TPHA=1:",
-    "text": "輸入數字"
+    "text": "輸入數字",
+    "col": "col-4"
   },
   {
-    "type": "input",
+    "type": "InputOneLine",
     "title": "TPPA=1:",
-    "text": "輸入數字"
-  },
-  {
-    "type": "htmlSource",
-    "text": "</div>"
+    "text": "輸入數字",
+    "col": "col-4",
+    "rowEnd": "</div>"
   },
   {
     "type": "checkbox",
@@ -112,9 +112,12 @@
     "title": "<input class='form-check-input mt-1' type='checkbox'> 3. 腦脊髓液性病研究實驗室試驗"
   },
   {
-    "type": "input",
+    "rowStart": "<div class=\"row pl-4\">",
+    "type": "InputOneLine",
     "title": "CSF-VDRL(+)效價=1:",
-    "text": "輸入數字"
+    "text": "輸入數字",
+    "col": "col-8",
+    "rowEnd": "</div>"
   },
   {
     "type": "h3",
