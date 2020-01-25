@@ -8,6 +8,9 @@ https://drive.google.com/drive/u/0/folders/1TcjAd-Or10JVDAq8vD46snx_ksy4IFsU
 ~~
 
 製作全新元件解決需要一行排版的問題，前面是標題，後面是同一行的checkbox
+往後如果要縮排的元件都可以用 "rowStart": "<div class=\"row pl-6\">", 搭配 "rowEnd": "</div>"
+來決定縮排的 pl-多少號碼 進行縮排，適用所有JSON元件
+
   {
     "rowStart": "<div class=\"row pl-6\">",
     "type": "CheckboxOneLine",
