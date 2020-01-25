@@ -33,7 +33,7 @@
   },
   {
     "type": "h3",
-    "title": "HIV確診定義<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=下面三個選項為三則一必填\">\uD83D\uDD06</a>"
+    "title": "HIV確診定義<span style=\"color:red\">*</span><a href=\"codingMemo_HIV(18月以上成人)001.html\">\uD83D\uDD06</a>"
   },
   {
     "type": "h3",
@@ -95,7 +95,7 @@
   },
   {
     "type": "h3",
-    "title": "是否為急性感染判斷<a href=\"codingMemo.html?strMemo=001勾選前項[分子生物學核酸檢測(NAT)陽性]時，會連動調整展開選項002以下所有題目的「檢驗單位」要把代碼自動帶入，並記在資料庫\">\uD83D\uDD06</a>",
+    "title": "是否為急性感染判斷<a href=\"codingMemo_HIV(18月以上成人)002.html\">\uD83D\uDD06</a>",
     "tip": "勾選前項[分子生物學核酸檢測(NAT)陽性]時，本項需填答，供判斷個案是否為急性感染。"
   },
   {
@@ -268,7 +268,7 @@
   },
   {
     "type": "h3",
-    "title": "是否為急性感染判斷<a href=\"codingMemo.html?strMemo=勾選前項[HIV抗原p24篩檢陽性，且進行中和試驗確認陽性]時，會連動調整展開選項\">\uD83D\uDD06</a>",
+    "title": "是否為急性感染判斷<a href=\"codingMemo_HIV(18月以上成人)003.html\">\uD83D\uDD06</a>",
     "tip": "勾選前項[HIV抗原p24篩檢陽性，且進行中和試驗確認陽性]時，本項需填答，供判斷個案是否為急性感染。"
   },
   {
