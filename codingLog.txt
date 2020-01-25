@@ -1,10 +1,22 @@
+== 20200125 15:50
+15:50 015 HIV成人，感染因子不需要縮排，往左移動階層不需要縮排.mov
+    if (strTitle.contains("type='checkbox'>")) {
+      strMl = 'ml-5 jsCdc_dart_type_checkbox001';
+    } else {
+      strMl = 'ml-3 jsCdc_dart_type_checkbox002';
+    }
+已經解決了，原因是，之前有許多：國內旅遊史、國外旅遊史、國外居住史，前面都突然加入checkbox會讓checkbox
+變成太過左邊，ml-3已經不夠需要 ml-5
+但是程式碼少寫了 else 導致之後的所有 json 標題都會變成 ml-5 才會「感染危險因子」縮排右邊太嚴重異常
+這算是程式碼遺漏考慮的bugs已經修正就可以了
+
 == 20200125 09:59
 因為 vue 已經可以做到參數化元件，所以我們可以開始製作梅毒或HIV
 ?strDiseaseFile=../json/disease_梅毒.json
 ?strDiseaseFile=../json/disease_HIV(18月以上成人).json
 12:38 這個視窗應該三十分鐘就要關閉了但是沒有關閉好奇特
 
-12:39 011 HIV成人 縮排對齊子選項欄位.mov
+done 12:39 011 HIV成人 縮排對齊子選項欄位.mov
   {
     "type": "htmlSource",
     "text": "<div class=\"row pl-5\">"

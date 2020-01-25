@@ -52,20 +52,20 @@ Future<String> scanJsonToHtml(List lstJson) async {
     'radioSmall': JsonToHtmlRadioCol3(),
     'checkbox': JsonToHtmlCheckbox(),
     'checkboxBig': JsonToHtmlCheckboxCol6(),
-    'checkboxSmall':JsonToHtmlCheckboxCol3(),
+    'checkboxSmall': JsonToHtmlCheckboxCol3(),
     'json': JsonToHtmlImportJson(),
     'h2': JsonToHtmlH2(),
     'h3': JsonToHtmlH3(),
     'h4': JsonToHtmlH4(),
     'select': JsonToHtmlSelect(),
-    'selectBig':JsonToHtmlSelectCol6(),
-    'selectSmall':JsonToHtmlSelectCol3(),
+    'selectBig': JsonToHtmlSelectCol6(),
+    'selectSmall': JsonToHtmlSelectCol3(),
     'input': JsonToHtmlInput(),
-    'inputBig':JsonToHtmlInputCol6(),
-    'inputSmall':JsonToHtmlInputCol3(),
+    'inputBig': JsonToHtmlInputCol6(),
+    'inputSmall': JsonToHtmlInputCol3(),
     'date': JsonToHtmlDate(),
-    'dateBig':JsonToHtmlDateCol6(),
-    'dateSmall':JsonToHtmlDateCol3(),
+    'dateBig': JsonToHtmlDateCol6(),
+    'dateSmall': JsonToHtmlDateCol3(),
     'addRecord': JsonToHtmlAddRecord(),
     'htmlSource': JsonToHtmlSource(),
     'htmlFile': JsonToHtmlFile(),
@@ -99,40 +99,47 @@ class JsonToHtmlDate extends JsonToHtml {
 }
 
 class JsonToHtmlDateCol6 extends JsonToHtml {
-  static String getHtmlDate(int intRandomId, String strTitle) =>
-      replaceAll('.JsonToHtmlDateCol6_getHtmlDate', {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId'});
+  static String getHtmlDate(int intRandomId, String strTitle) => replaceAll(
+      '.JsonToHtmlDateCol6_getHtmlDate',
+      {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId'});
 
   Future<String> getTags() async => getHtmlDate(intRandomId, strTitle);
 }
 
 class JsonToHtmlDateCol3 extends JsonToHtml {
-  static String getHtmlDate(int intRandomId, String strTitle) =>
-      replaceAll('.JsonToHtmlDateCol3_getHtmlDate', {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId'});
+  static String getHtmlDate(int intRandomId, String strTitle) => replaceAll(
+      '.JsonToHtmlDateCol3_getHtmlDate',
+      {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId'});
 
   Future<String> getTags() async => getHtmlDate(intRandomId, strTitle);
 }
 
 class JsonToHtmlInput extends JsonToHtml {
-  String strClassTag='.JsonToHtmlInput_getTags';
+  String strClassTag = '.JsonToHtmlInput_getTags';
+
   Future<String> getTags() async {
-    if(strText==null || strText==''){
-      strText='輸入內容';
+    if (strText == null || strText == '') {
+      strText = '輸入內容';
     }
-    return replaceAll(strClassTag,
-        {'\$strTitle': '$strTitle', '\$intRandomId': '$intRandomId','\$strText': '$strText'});
+    return replaceAll(strClassTag, {
+      '\$strTitle': '$strTitle',
+      '\$intRandomId': '$intRandomId',
+      '\$strText': '$strText'
+    });
   }
 }
 
 class JsonToHtmlInputCol6 extends JsonToHtmlInput {
-  String strClassTag='.JsonToHtmlInputCol6_getTags';
+  String strClassTag = '.JsonToHtmlInputCol6_getTags';
 }
 
 class JsonToHtmlInputCol3 extends JsonToHtmlInput {
-  String strClassTag='.JsonToHtmlInputCol3_getTags';
+  String strClassTag = '.JsonToHtmlInputCol3_getTags';
 }
 
 class JsonToHtmlSelect extends JsonToHtmlRadio {
   String getListTemplate(int i) => '<option>${lstList[i]}</option>';
+
   buildHtmlAll() {
     strList = '<option>請選擇</option>' + strList;
     strHtmlAll = replaceAll('.JsonToHtmlSelect_buildHtmlAll', {
@@ -145,17 +152,27 @@ class JsonToHtmlSelect extends JsonToHtmlRadio {
 
 class JsonToHtmlSelectCol6 extends JsonToHtmlRadio {
   String getListTemplate(int i) => '<option>${lstList[i]}</option>';
+
   buildHtmlAll() {
     strList = '<option>請選擇</option>' + strList;
-    strHtmlAll = replaceAll('.JsonToHtmlSelectCol6_buildHtmlAll', {'\$intRandomId': '$intRandomId', '\$strTitle': '$strTitle', '\$strList': '$strList'});
+    strHtmlAll = replaceAll('.JsonToHtmlSelectCol6_buildHtmlAll', {
+      '\$intRandomId': '$intRandomId',
+      '\$strTitle': '$strTitle',
+      '\$strList': '$strList'
+    });
   }
 }
 
 class JsonToHtmlSelectCol3 extends JsonToHtmlRadio {
   String getListTemplate(int i) => '<option>${lstList[i]}</option>';
+
   buildHtmlAll() {
     strList = '<option>請選擇</option>' + strList;
-    strHtmlAll = replaceAll('.JsonToHtmlSelectCol3_buildHtmlAll', {'\$intRandomId': '$intRandomId', '\$strTitle': '$strTitle', '\$strList': '$strList'});
+    strHtmlAll = replaceAll('.JsonToHtmlSelectCol3_buildHtmlAll', {
+      '\$intRandomId': '$intRandomId',
+      '\$strTitle': '$strTitle',
+      '\$strList': '$strList'
+    });
   }
 }
 
@@ -195,7 +212,8 @@ class JsonToHtmlDiseaseName extends JsonToHtml {
 class JsonToHtmlH2 extends JsonToHtml {
   final strFontSize = 'fs-2';
   final strHr = '<hr/>';
-  String strMl='ml-3';
+  String strMl = 'ml-3';
+
   Future<String> getTags() async {
     String strHtmlTip = '';
 
@@ -206,8 +224,10 @@ class JsonToHtmlH2 extends JsonToHtml {
       </span>''';
     }
 
-    if(strTitle.contains("type='checkbox'>")){
-      strMl='ml-5';
+    if (strTitle.contains("type='checkbox'>")) {
+      strMl = 'ml-5 jsCdc_dart_type_checkbox001';
+    } else {
+      strMl = 'ml-3 jsCdc_dart_type_checkbox002';
     }
 
     Map map = {
@@ -310,8 +330,7 @@ class JsonToHtmlRadio extends JsonToHtml {
   }
 }
 
-class JsonToHtmlRadioCol6 extends JsonToHtmlRadio{
-
+class JsonToHtmlRadioCol6 extends JsonToHtmlRadio {
   @override
   buildHtmlAll() {
     strHtmlAll = replaceAll('.JsonToHtmlRadioCol6_buildHtmlAll', {
@@ -324,8 +343,7 @@ class JsonToHtmlRadioCol6 extends JsonToHtmlRadio{
   }
 }
 
-class JsonToHtmlRadioCol4 extends JsonToHtmlRadio{
-
+class JsonToHtmlRadioCol4 extends JsonToHtmlRadio {
   @override
   buildHtmlAll() {
     strHtmlAll = replaceAll('.JsonToHtmlRadioCol4_buildHtmlAll', {
@@ -338,8 +356,7 @@ class JsonToHtmlRadioCol4 extends JsonToHtmlRadio{
   }
 }
 
-class JsonToHtmlRadioCol3 extends JsonToHtmlRadio{
-
+class JsonToHtmlRadioCol3 extends JsonToHtmlRadio {
   @override
   buildHtmlAll() {
     strHtmlAll = replaceAll('.JsonToHtmlRadioCol3_buildHtmlAll', {
@@ -404,23 +421,29 @@ class JsonToHtmlCheckbox extends JsonToHtmlRadio {
 }
 
 class JsonToHtmlCheckboxCol6 extends JsonToHtmlCheckbox {
-
   @override
   String getCheckboxWithLabel(int i, String strLabel) =>
-      replaceAll('.JsonToHtmlCheckboxCol6_getCheckboxWithLabel', {'\${intRandomId + i}': '${intRandomId + i}', '\${strLabel}': '${strLabel}'});
+      replaceAll('.JsonToHtmlCheckboxCol6_getCheckboxWithLabel', {
+        '\${intRandomId + i}': '${intRandomId + i}',
+        '\${strLabel}': '${strLabel}'
+      });
 
   @override
-  String getInputWithLabel(String strLabel) => replaceAll('.JsonToHtmlCheckboxCol6_getInputWithLabel',
-      {'\${intRandomId + 200}': '${intRandomId + 200}', '\${intRandomId}': '${intRandomId}', '\$strLabel': '$strLabel'});
+  String getInputWithLabel(String strLabel) =>
+      replaceAll('.JsonToHtmlCheckboxCol6_getInputWithLabel', {
+        '\${intRandomId + 200}': '${intRandomId + 200}',
+        '\${intRandomId}': '${intRandomId}',
+        '\$strLabel': '$strLabel'
+      });
 
   @override
   void buildHtmlAll() {
-    strHtmlAll = replaceAll('.JsonToHtmlCheckboxCol6_buildHtmlAll', {'\$strList': '$strList', '\$strHtmlInput': '$strHtmlInput'});
+    strHtmlAll = replaceAll('.JsonToHtmlCheckboxCol6_buildHtmlAll',
+        {'\$strList': '$strList', '\$strHtmlInput': '$strHtmlInput'});
   }
 }
 
 class JsonToHtmlCheckboxCol3 extends JsonToHtmlCheckbox {
-
   @override
   String getCheckboxWithLabel(int i, String strLabel) =>
       replaceAll('.JsonToHtmlCheckboxCol3_getCheckboxWithLabel', {
@@ -430,12 +453,11 @@ class JsonToHtmlCheckboxCol3 extends JsonToHtmlCheckbox {
 
   @override
   String getInputWithLabel(String strLabel) =>
-      replaceAll('.JsonToHtmlCheckboxCol3_getInputWithLabel',
-          {
-            '\${intRandomId + 200}': '${intRandomId + 200}',
-            '\${intRandomId}': '${intRandomId}',
-            '\$strLabel': '$strLabel'
-          });
+      replaceAll('.JsonToHtmlCheckboxCol3_getInputWithLabel', {
+        '\${intRandomId + 200}': '${intRandomId + 200}',
+        '\${intRandomId}': '${intRandomId}',
+        '\$strLabel': '$strLabel'
+      });
 
   @override
   void buildHtmlAll() {
