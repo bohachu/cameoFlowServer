@@ -2,6 +2,75 @@
 https://drive.google.com/drive/u/0/folders/1TcjAd-Or10JVDAq8vD46snx_ksy4IFsU
 ?strDiseaseFile=../json/disease_梅毒.json
 
+== 20200126 3:54
+20200126 03:54 !doing 004 梅毒 h2 第一層的checkbox還要更大一點.mov
+.form-check-input{
+  zoom:150%;
+}
+
+checkbox原本一般情況已經放大到150%, 現在把標題h3更進一步放大: 改用這個 checkboxTitle（只有h3會放大175%）
+
+  {
+    "type": "h3",
+    "checkboxTitle": "1. 未曾接受梅毒治療或病史不清楚者",
+    "tip": "＊(1)及(2)皆須填寫，其中RPR、VDRL至少擇一，\n且TPHA、TPPA、FTA-abs(+)、TPLA(+)、 EIA(+)、CIA(+)/CMIA(+)至少擇一。"
+  },
+
+元件程式碼修改如下
+
+class JsonToHtmlH2 extends JsonToHtml {
+  final strFontSize = 'fs-2';
+  final strHr = '<hr/>';
+  String strMl = 'ml-3';
+  String strCheckboxTitle = '';
+
+  init(Map map) {
+    super.init(map);
+    strCheckboxTitle=map['checkboxTitle'] ?? '';
+  }
+
+  Future<String> getTags() async {
+    String strHtmlTip = '';
+
+    if (strTip != '' && strTip != null) {
+      strHtmlTip = '''
+      <span class="JsonToHtmlH2_tip fs-0" style="font-weight:400" tooltip="$strTip" flow="right">
+      <i class="fas fas fa-info-circle" style="color: #00a65a;"></i>
+      </span>''';
+    }
+
+    //20200126 bowen: 如果有checkbox手動寫在JSON標題上面，注意左邊要留白多一點不然會太左邊超出邊界。另外如果沒有手動checkbox則左邊留白別太多
+    if (strTitle.contains("type='checkbox'>")) {
+      strMl = 'ml-5 jsCdc_dart_type_checkbox001';
+    } else {
+      strMl = 'ml-3 jsCdc_dart_type_checkbox002';
+    }
+
+    if(strCheckboxTitle.length>0){
+      String strZoom='zoom:150%';
+      if(strType=='h3') strZoom='zoom:175%';
+      strCheckboxTitle= '''
+        <span><input class="form-check-input mt-1 pt-0" type="checkbox" style="$strZoom"></span>
+        <span class="mt-0 pt-0">$strCheckboxTitle</span>
+      ''';
+      strMl= 'ml-5 jsCdc_dart_type_checkbox003';
+    }
+
+    String strHtml = '''
+      <div class="row $strMl mt-3 $strFontSize font-weight-bold text-black" style="clear: both;">
+        $strTitle
+        $strCheckboxTitle
+        $strHtmlTip
+      </div>
+      <br>
+    ''';
+
+    return strHtml;
+  }
+}
+
+==
+
 a. 一比幾的輸入框，輸入內容 改 輸入數字。 b. 如果是輸入數字的欄位，checkbox可以刪除:RPR VDRL TPHA TPPA CSF-VDRL
 
 21:34 運用 dart 新增一個元件叫做 InputOneLine 就可以達成一行顯示標題與輸入框的目的

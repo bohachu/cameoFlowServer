@@ -37,7 +37,7 @@
   },
   {
     "type": "h3",
-    "title": "<input class='form-check-input mt-1' type='checkbox'> 出生通報母子垂直感染疑似個案",
+    "checkboxTitle": "出生通報母子垂直感染疑似個案",
     "tip": "「新生兒之生母為人類免疫缺乏病毒感染者」或「新生兒之生母臨產時為快速檢測法及抗體篩檢檢測陽性者」時，\n則「生母資料」中的「身分證字號」、「媽媽姓名」、「國籍」為必填欄位。"
   },
   {
@@ -46,7 +46,7 @@
   },
   {
     "type": "h3",
-    "title": "<input class='form-check-input mt-1' type='checkbox'> 分子生物學核酸檢測(NAT)陽性"
+    "checkboxTitle": "分子生物學核酸檢測(NAT)陽性"
   },
   {
     "type": "date",

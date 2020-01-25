@@ -64,7 +64,7 @@
   },
   {
     "type": "h4",
-    "title": "<input class='form-check-input mt-1' type='checkbox'> 2. 非特異性梅毒螺旋體試驗<span style=\"color:red\">*</span>"
+    "checkboxTitle": "2. 非特異性梅毒螺旋體試驗<span style=\"color:red\">*</span>"
   },
   {
     "type": "checkbox",

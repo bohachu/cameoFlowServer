@@ -192,7 +192,7 @@ class JsonToHtml {
   }
 
   Future<String> getHtml(Map map) async {
-    init(map);
+    this.init(map);
     return getTags();
   }
 
@@ -210,6 +210,12 @@ class JsonToHtmlH2 extends JsonToHtml {
   final strFontSize = 'fs-2';
   final strHr = '<hr/>';
   String strMl = 'ml-3';
+  String strCheckboxTitle = '';
+
+  init(Map map) {
+    super.init(map);
+    strCheckboxTitle=map['checkboxTitle'] ?? '';
+  }
 
   Future<String> getTags() async {
     String strHtmlTip = '';
@@ -221,21 +227,33 @@ class JsonToHtmlH2 extends JsonToHtml {
       </span>''';
     }
 
+    //20200126 bowen: 如果有checkbox手動寫在JSON標題上面，注意左邊要留白多一點不然會太左邊超出邊界。另外如果沒有手動checkbox則左邊留白別太多
     if (strTitle.contains("type='checkbox'>")) {
       strMl = 'ml-5 jsCdc_dart_type_checkbox001';
     } else {
       strMl = 'ml-3 jsCdc_dart_type_checkbox002';
     }
 
-    Map map = {
-      '\$strTitle': '$strTitle',
-      '\$strFontSize': '$strFontSize',
-      '\$strHr': '$strHr',
-      '\$strHtmlTip': '$strHtmlTip',
-      '\$strMl': '$strMl',
-    };
+    if(strCheckboxTitle.length>0){
+      String strZoom='zoom:150%';
+      if(strType=='h3') strZoom='zoom:175%';
+      strCheckboxTitle= ''' 
+        <span><input class="form-check-input mt-1 pt-0" type="checkbox" style="$strZoom"></span> 
+        <span class="mt-0 pt-0">$strCheckboxTitle</span>
+      ''';
+      strMl= 'ml-5 jsCdc_dart_type_checkbox003';
+    }
 
-    return replaceAll('.JsonToHtmlH2', map);
+    String strHtml = '''
+      <div class="row $strMl mt-3 $strFontSize font-weight-bold text-black" style="clear: both;">
+        $strTitle
+        $strCheckboxTitle
+        $strHtmlTip
+      </div>
+      <br>
+    ''';
+
+    return strHtml;
   }
 }
 

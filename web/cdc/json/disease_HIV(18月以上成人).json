@@ -37,7 +37,7 @@
   },
   {
     "type": "h3",
-    "title": "<input class='form-check-input mt-1' type='checkbox'> HIV-1及2抗體確認檢驗方法陽性<a href=\"codingMemo_HIV(18月以上成人)001.html\">\uD83D\uDD06</a>"
+    "checkboxTitle": "HIV-1及2抗體確認檢驗方法陽性<a href=\"codingMemo_HIV(18月以上成人)001.html\">\uD83D\uDD06</a>"
   },
   {
     "type": "checkbox",
@@ -74,7 +74,7 @@
   },
   {
     "type": "h3",
-    "title": "<input class='form-check-input mt-1' type='checkbox'> 分子生物學核酸檢測(NAT)陽性<a href=\"codingMemo_HIV(18月以上成人)001.html\">\uD83D\uDD06</a>",
+    "checkboxTitle": "分子生物學核酸檢測(NAT)陽性<a href=\"codingMemo_HIV(18月以上成人)001.html\">\uD83D\uDD06</a>",
     "tip": "若同時有進行HIV-1及2抗體確認檢驗方法且結果為陽性者，請確認已勾選上方[HIV-1及2抗體確認檢驗方法陽性]選項"
   },
   {
@@ -116,7 +116,7 @@
   },
   {
     "type": "h3",
-    "title": "<input class='form-check-input mt-1' type='checkbox'> HIV抗原p24篩檢陽性，且進行中和試驗確認陽性<a href=\"codingMemo_HIV(18月以上成人)001.html\">\uD83D\uDD06</a> <span class='JsonToHtmlRadio_buildTip fs-0' style=\"font-weight:400\" tooltip='若同時有進行HIV-1及2抗體確認檢驗方法且結果為陽性者，\n請確認已勾選上方[HIV-1及2抗體確認檢驗方法陽性]選項' flow='right'><i class='fas fas fa-info-circle' style='color: #00a65a;'></i></span>"
+    "checkboxTitle": "HIV抗原p24篩檢陽性，且進行中和試驗確認陽性<a href=\"codingMemo_HIV(18月以上成人)001.html\">\uD83D\uDD06</a> <span class='JsonToHtmlRadio_buildTip fs-0' style=\"font-weight:400\" tooltip='若同時有進行HIV-1及2抗體確認檢驗方法且結果為陽性者，\n請確認已勾選上方[HIV-1及2抗體確認檢驗方法陽性]選項' flow='right'><i class='fas fas fa-info-circle' style='color: #00a65a;'></i></span>"
   },
   {
     "type": "htmlSource",

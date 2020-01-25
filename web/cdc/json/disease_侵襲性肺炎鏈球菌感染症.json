@@ -75,7 +75,7 @@
   },
   {
     "type": "h3",
-    "title": "<span style='margin-left: 20px;'><input class='form-check-input mt-1' type='checkbox'>1. 免疫健全者(Immunocompetent persons)<span>"
+    "title": "<span style='margin-left: 20px;'><input class='form-check-input mt-1' type='checkbox'>1. 免疫健全者(Immunocompetent persons)</span>"
   },
   {
     "type": "checkbox",
@@ -92,7 +92,7 @@
   },
   {
     "type": "h3",
-    "title": "<span style='margin-left: 20px;'><input class='form-check-input mt-1' type='checkbox'>2. 脾臟功能缺損(Persons with functional or anatomic asplenia)<span>"
+    "title": "<span style='margin-left: 20px;'><input class='form-check-input mt-1' type='checkbox'>2. 脾臟功能缺損(Persons with functional or anatomic asplenia)</span>"
   },
   {
     "type": "checkbox",
@@ -104,7 +104,7 @@
   },
   {
     "type": "h3",
-    "title": "<span style='margin-left: 20px;'><input class='form-check-input mt-1' type='checkbox'>3. 免疫功能缺損者(Immunocompromised persons)<span>"
+    "title": "<span style='margin-left: 20px;'><input class='form-check-input mt-1' type='checkbox'>3. 免疫功能缺損者(Immunocompromised persons)</span>"
   },
   {
     "type": "checkbox",
@@ -124,7 +124,7 @@
   },
   {
     "type": "h3",
-    "title": "<span style='margin-left: 20px;'><input class='form-check-input mt-1' type='checkbox'>4. 其他重大疾病<span>"
+    "title": "<span style='margin-left: 20px;'><input class='form-check-input mt-1' type='checkbox'>4. 其他重大疾病</span>"
   },
   {
     "type": "input",
