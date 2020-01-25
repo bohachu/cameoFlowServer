@@ -2,6 +2,48 @@
 https://drive.google.com/drive/u/0/folders/1TcjAd-Or10JVDAq8vD46snx_ksy4IFsU
 ?strDiseaseFile=../json/disease_梅毒.json
 
+== 20200126 05:32
+!doing 05:32 005 梅毒 向右推縮排，還有讓checkbox項目與標題項目同一行.mov
+
+~~
+
+製作全新元件解決需要一行排版的問題，前面是標題，後面是同一行的checkbox
+  {
+    "rowStart": "<div class=\"row pl-6\">",
+    "type": "CheckboxOneLine",
+    "title": "血清學非特異性梅毒螺旋體試驗:",
+    "list": [
+      "RPR效價≧4倍上升",
+      "VDRL效價≧ 4倍上升"
+    ],
+    "rowEnd": "</div>"
+  },
+
+~~
+
+寫了簡單化的模板元件：來支撐一行標題，同一行後面要有checkbox的排版
+
+class CheckboxOneLine extends JsonToHtml {
+  Future<String> getTags() async {
+    String strList='';
+    for (int i = 0; i < lstList.length; i++) {
+      strList += '''
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox">
+          <label class="form-check-label fs-0">${lstList[i]}</label>
+        </div>
+      ''';
+    }
+    String strHtml='''
+        <b class="pr-3">$strTitle</b>
+        $strList
+    ''';
+    return strHtml;
+  }
+}
+
+~~
+
 == 20200126 3:54
 20200126 03:54 !doing 004 梅毒 h2 第一層的checkbox還要更大一點.mov
 .form-check-input{

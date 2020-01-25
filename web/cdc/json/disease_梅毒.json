@@ -47,7 +47,7 @@
     "title": "(1)血清學非特異性梅毒螺旋體試驗"
   },
   {
-    "rowStart": "<div class=\"row pl-4\">",
+    "rowStart": "<div class=\"row pl-5\">",
     "type": "InputOneLine",
     "title": "RPR(+)效價=1:",
     "text": "輸入數字",
@@ -65,7 +65,7 @@
     "title": "(2)特異性梅毒螺旋體試驗"
   },
   {
-    "rowStart": "<div class=\"row pl-4\">",
+    "rowStart": "<div class=\"row pl-5\">",
     "type": "InputOneLine",
     "title": "TPHA=1:",
     "text": "輸入數字",
@@ -112,7 +112,7 @@
     "checkboxTitle": "3. 腦脊髓液性病研究實驗室試驗"
   },
   {
-    "rowStart": "<div class=\"row pl-4\">",
+    "rowStart": "<div class=\"row pl-5\">",
     "type": "InputOneLine",
     "title": "CSF-VDRL(+)效價=1:",
     "text": "輸入數字",
@@ -124,15 +124,14 @@
     "checkboxTitle": "4. 曾經接受梅毒治療者"
   },
   {
-    "type": "h4",
-    "title": "血清學非特異性梅毒螺旋體試驗"
-  },
-  {
-    "type": "checkbox",
+    "rowStart": "<div class=\"row pl-6\">",
+    "type": "CheckboxOneLine",
+    "title": "血清學非特異性梅毒螺旋體試驗:",
     "list": [
       "RPR效價≧4倍上升",
       "VDRL效價≧ 4倍上升"
-    ]
+    ],
+    "rowEnd": "</div>"
   },
   {
     "type": "json",

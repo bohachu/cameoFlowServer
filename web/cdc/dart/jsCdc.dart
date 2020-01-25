@@ -68,6 +68,7 @@ Future<String> scanJsonToHtml(List lstJson) async {
     'htmlSource': JsonToHtmlSource(),
     'htmlFile': JsonToHtmlFile(),
     'InputOneLine': InputOneLine(),
+    'CheckboxOneLine': CheckboxOneLine()
   };
   String strHtml = '';
   for (int i = 0; i < lstJson.length; i++) {
@@ -78,14 +79,31 @@ Future<String> scanJsonToHtml(List lstJson) async {
   return strHtml;
 }
 
+class CheckboxOneLine extends JsonToHtml {
+  Future<String> getTags() async {
+    String strList='';
+    for (int i = 0; i < lstList.length; i++) {
+      strList += '''
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox">
+          <label class="form-check-label fs-0">${lstList[i]}</label>
+        </div>      
+      ''';
+    }
+    String strHtml='''
+        <b class="pr-3">$strTitle</b>
+        $strList
+    ''';
+    return strHtml;
+  }
+}
+
 class InputOneLine extends JsonToHtml {
   Future<String> getTags() async {
     return '''
-      $strRowStart
       <div class="form-group form-inline $strCol">
-        $strTitle <input class="form-control text-secondary" type="text" placeholder="$strText">
+        <b>$strTitle</b> <input class="form-control text-secondary" type="text" placeholder="$strText">
       </div>    
-      $strRowEnd
       ''';
   }
 }
@@ -176,6 +194,7 @@ class JsonToHtml {
   String strCol = '';
   String strRowStart = '';
   String strRowEnd = '';
+  List lstList=[];
   int intRandomId;
   Map map = {};
 
@@ -187,13 +206,14 @@ class JsonToHtml {
     strCol = map['col'] ?? '';
     strRowStart = map['rowStart'] ?? '';
     strRowEnd = map['rowEnd'] ?? '';
+    lstList = map['list'];
     intRandomId = Random().nextInt(999999);
     this.map = map;
   }
 
   Future<String> getHtml(Map map) async {
     this.init(map);
-    return getTags();
+    return '$strRowStart ${await getTags()} $strRowEnd';
   }
 
   Future<String> getTags() async {
@@ -244,8 +264,9 @@ class JsonToHtmlH2 extends JsonToHtml {
       strMl= 'ml-5 jsCdc_dart_type_checkbox003';
     }
 
+    //h2 h3 h4 mt高度在此設定
     String strHtml = '''
-      <div class="row $strMl mt-3 $strFontSize font-weight-bold text-black" style="clear: both;">
+      <div class="mt-3 font-weight-bold text-black $strMl $strFontSize" style="clear: both;">
         $strTitle
         $strCheckboxTitle
         $strHtmlTip
@@ -277,20 +298,16 @@ class JsonToHtmlImportJson {
 }
 
 class JsonToHtmlRadio extends JsonToHtml {
-  String strTip;
   String strHtmlTip;
   String strList;
-  List lstList;
   String strHtmlAll;
   String strDate;
   String strHtmlDate;
 
   init(Map map) {
     super.init(map);
-    strTip = map['tip'] ?? '';
     strHtmlTip = '';
     strList = '';
-    lstList = map['list'];
     strHtmlAll = '';
     strDate = map['date'];
     strHtmlDate = '';
@@ -332,7 +349,7 @@ class JsonToHtmlRadio extends JsonToHtml {
     }
   }
 
-  Future<String> getHtml(Map map) async {
+  Future<String> getTags() async {
     init(map);
     buildTip();
     buildList();
@@ -421,7 +438,7 @@ class JsonToHtmlCheckbox extends JsonToHtmlRadio {
   }
 
   void buildHtmlAll() {
-    strHtmlAll = replaceAll('.JsonToHtmlCheckbox_buildHtmlAll', {'\$strList': '$strList', '\$strHtmlInput': '$strHtmlInput'});
+    strHtmlAll = replaceAll('.JsonToHtmlCheckbox_buildHtmlAll', {'\$strTitle': '$strTitle', '\$strList': '$strList', '\$strHtmlInput': '$strHtmlInput'});
   }
 }
 
