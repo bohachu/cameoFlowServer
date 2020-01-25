@@ -1,5 +1,165 @@
 梅毒與HIV的派工影片如下： .mov
 https://drive.google.com/drive/u/0/folders/1TcjAd-Or10JVDAq8vD46snx_ksy4IFsU
+?strDiseaseFile=../json/disease_HIV(18月以上成人).json
+
+done 19:35 009 HIV成人 急性 欄位全部改用 datatables 節省重複標題字串.mov
+好吧，這個項目真的很有趣，原本想要用 datatables 發現彈性很差，因為下拉選單不容易做所以實驗幾分鐘就放棄
+然後，用原本的小改，把重複標題拿掉，確實好看很多
+但是上下間隔太高，原本的 json 小改拿掉標題無法縮短高度（嘗試過幾次命令 mt-0 mb-0 pt-0 pb-0 失敗)
+於是乾脆整個用 html bootstrap row col 最簡單的寫法全面改寫
+此時想到要用 vue 元件共用東西，結果大失敗，因為 vue 不知什麼原因，無法跟 jsCdc.dart 同時運作
+最後只能乾脆全部都用應來的 html 寫法，雖然也是共用大元件html，但裡面的小元件（右面三個輸入欄位）無法做到共用只能重複
+但最後的成果仍然很不錯，蠻緊密好看的
+
+<div class="row pl-4 pr-4 pt-1">
+  <div class="col-3">
+    <b></b>
+  </div>
+  <div class="col-3">
+    <b>日期</b>
+  </div>
+  <div class="col-3">
+    <b>檢驗單位</b>
+  </div>
+  <div class="col-3">
+    <b>檢驗結果</b>
+  </div>
+</div>
+
+<div class="row pl-4 pr-4 pt-1">
+  <div class="col-3">
+    <b>抗體篩檢檢測(EIA或PA)</b>
+  </div>
+  <div class="col-3">
+    <input class="form-control text-secondary" type="text" placeholder="年/月/日">
+  </div>
+  <div class="col-3">
+    <input class="form-control text-secondary" type="text" placeholder="輸入內容">
+  </div>
+  <div class="col-3">
+    <select class="form-control text-secondary">
+      <option>請選擇</option>
+      <option>陰性</option>
+      <option>未確定</option>
+    </select>
+  </div>
+</div>
+
+<div class="row pl-4 pr-4 pt-1">
+  <div class="col-3">
+    <b>抗原/抗體複合型檢測(combo)</b>
+  </div>
+  <div class="col-3">
+    <input class="form-control text-secondary" type="text" placeholder="年/月/日">
+  </div>
+  <div class="col-3">
+    <input class="form-control text-secondary" type="text" placeholder="輸入內容">
+  </div>
+  <div class="col-3">
+    <select class="form-control text-secondary">
+      <option>請選擇</option>
+      <option>陰性</option>
+      <option>未確定</option>
+    </select>
+  </div>
+</div>
+
+<div class="row pl-4 pr-4 pt-1">
+  <div class="col-3">
+    <b>西方墨點法</b>
+  </div>
+  <div class="col-3">
+    <input class="form-control text-secondary" type="text" placeholder="年/月/日">
+  </div>
+  <div class="col-3">
+    <input class="form-control text-secondary" type="text" placeholder="輸入內容">
+  </div>
+  <div class="col-3">
+    <select class="form-control text-secondary">
+      <option>請選擇</option>
+      <option>陰性</option>
+      <option>未確定</option>
+    </select>
+  </div>
+</div>
+
+<div class="row pl-4 pr-4 pt-1">
+  <div class="col-3">
+    <b>抗體免疫層析確認檢驗</b>
+  </div>
+  <div class="col-3">
+    <input class="form-control text-secondary" type="text" placeholder="年/月/日">
+  </div>
+  <div class="col-3">
+    <input class="form-control text-secondary" type="text" placeholder="輸入內容">
+  </div>
+  <div class="col-3">
+    <select class="form-control text-secondary">
+      <option>請選擇</option>
+      <option>陰性</option>
+      <option>未確定</option>
+    </select>
+  </div>
+</div>
+
+<div class="row pl-4 pr-4 pt-1">
+  <div class="col-3">
+    <b>分子生物學核酸檢測</b>
+  </div>
+  <div class="col-3">
+    <input class="form-control text-secondary" type="text" placeholder="年/月/日">
+  </div>
+  <div class="col-3">
+    <input class="form-control text-secondary" type="text" placeholder="輸入內容">
+  </div>
+  <div class="col-3">
+    <select class="form-control text-secondary">
+      <option>請選擇</option>
+      <option>陰性</option>
+      <option>未確定</option>
+    </select>
+  </div>
+</div>
+
+<div class="row pl-4 pr-4 pt-1">
+  <div class="col-3">
+    <b>HIV抗原p24篩檢</b>
+  </div>
+  <div class="col-3">
+    <input class="form-control text-secondary" type="text" placeholder="年/月/日">
+  </div>
+  <div class="col-3">
+    <input class="form-control text-secondary" type="text" placeholder="輸入內容">
+  </div>
+  <div class="col-3">
+    <select class="form-control text-secondary">
+      <option>請選擇</option>
+      <option>陰性</option>
+      <option>未確定</option>
+    </select>
+  </div>
+</div>
+
+<div class="row pl-4 pr-4 pt-1">
+  <div class="col-3">
+    <b>中和試驗(NT)</b>
+  </div>
+  <div class="col-3">
+    <input class="form-control text-secondary" type="text" placeholder="年/月/日">
+  </div>
+  <div class="col-3">
+    <input class="form-control text-secondary" type="text" placeholder="輸入內容">
+  </div>
+  <div class="col-3">
+    <select class="form-control text-secondary">
+      <option>請選擇</option>
+      <option>陰性</option>
+      <option>未確定</option>
+    </select>
+  </div>
+</div>
+
+
 
 == 20200125 16:21
 

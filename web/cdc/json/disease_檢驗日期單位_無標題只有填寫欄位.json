@@ -1,0 +1,15 @@
+[
+  {
+    "type": "dateSmall"
+  },
+  {
+    "type": "inputSmall"
+  },
+  {
+    "type": "selectSmall",
+    "list": [
+      "陰性",
+      "未確定"
+    ]
+  }
+]
