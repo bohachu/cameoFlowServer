@@ -2,6 +2,74 @@
 https://drive.google.com/drive/u/0/folders/1TcjAd-Or10JVDAq8vD46snx_ksy4IFsU
 ?strDiseaseFile=../json/disease_梅毒.json
 
+因為這種單行縮排實在太複雜，所以乾脆使用 .html 來排版還比較快速一點， .html 片段：仍然可共用
+是否進行愛滋病毒篩檢（梅毒、淋病：都有這樣的欄位）
+
+  {
+    "type": "htmlFile",
+    "file": "disease_共用_是否進行愛滋病毒篩檢_上下排緊密.html"
+  },
+  {
+    "type": "htmlFile",
+    "file": "disease_梅毒_個案是否懷孕_上下排緊密.html"
+  }
+
+~~ disease_共用_是否進行愛滋病毒篩檢_上下排緊密.html
+
+<span class="pl-4 fs-1 font-weight-bold text-black">是否進行愛滋病毒篩檢</span>
+<div class="row pt-3 pl-6">
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input">
+    <label class="custom-control-label fs-0">
+      是
+    </label>
+  </div>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input">
+    <label class="custom-control-label fs-0">
+      否
+    </label>
+  </div>
+  <label class="fs-0">　　篩檢日期<span style="color:red">*</span>
+    <a href="codingMemo.html?strMemo=若是否進行愛滋病毒篩檢勾選是，此欄位必填，需做連動設計">🔆</a>
+  </label>
+  <input class="col-2 form-control text-secondary" type="text" placeholder="年/月/日">
+</div>
+
+~~ disease_梅毒_個案是否懷孕_上下排緊密.html
+
+<span class="pl-4 fs-1 font-weight-bold text-black">個案是否懷孕</span>
+<div class="row pt-3 pl-6">
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input">
+    <label class="custom-control-label fs-0">
+      是
+    </label>
+  </div>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input">
+    <label class="custom-control-label fs-0">
+      否
+    </label>
+  </div>
+  <label class="fs-0">　　妊娠週數<span style="color:red">*</span>
+    <a href="codingMemo.html?strMemo=若個案是否懷孕勾選是，此欄位必填，需做連動設計">🔆</a>
+  </label>
+  <select class="col-2 form-control text-secondary">
+    <option>請選擇</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+</div>
+
+~~
+
+
+
+
 == 20200126 05:32
 !doing 05:32 005 梅毒 向右推縮排，還有讓checkbox項目與標題項目同一行.mov
 

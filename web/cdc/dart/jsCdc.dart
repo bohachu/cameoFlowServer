@@ -266,12 +266,11 @@ class JsonToHtmlH2 extends JsonToHtml {
 
     //h2 h3 h4 mt高度在此設定
     String strHtml = '''
-      <div class="mt-3 font-weight-bold text-black $strMl $strFontSize" style="clear: both;">
+      <div class="mt-3 mb-3 font-weight-bold text-black $strMl $strFontSize" style="clear: both;">
         $strTitle
         $strCheckboxTitle
         $strHtmlTip
       </div>
-      <br>
     ''';
 
     return strHtml;
