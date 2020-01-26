@@ -59,7 +59,7 @@
   },
   {
     "type":"h3",
-    "title":"感染危險因子"
+    "title":"　感染危險因子"
   },
   {
     "type":"checkbox",
@@ -134,83 +134,15 @@
   },
   {
     "type":"h4",
-    "title":"藥名及劑量"
+    "title":"　藥名及劑量"
+  },
+  {
+    "type": "htmlFile",
+    "file": "disease_HIV(18月以下)_藥名及劑量表格狀可編輯.html"
   },
   {
     "type":"htmlSource",
-    "text":"<div class=\"row pl-3\">"
-  },
-  {
-    "type":"h4",
-    "title":"<div class=\"col-2 pl-3 pt-4\"><b>Retrovir</b></div>"
-  },
-  {
-    "type":"inputSmall",
-    "title":"劑量(mg)"
-  },
-  {
-    "type":"inputSmall",
-    "title":"Q(H)"
-  },
-  {
-    "type":"inputSmall",
-    "title":"服用天數(days)"
-  },
-  {
-    "type":"htmlSource",
-    "text":"</div>"
-  },
-  {
-    "type":"htmlSource",
-    "text":"<div class=\"row pl-3\">"
-  },
-  {
-    "type":"h4",
-    "title":"<div class=\"col-2 pl-3 pt-4\"><b>Viramune</b></div>"
-  },
-  {
-    "type":"inputSmall",
-    "title":"劑量(mg)"
-  },
-  {
-    "type":"inputSmall",
-    "title":"Q(H)"
-  },
-  {
-    "type":"inputSmall",
-    "title":"服用天數(days)"
-  },
-  {
-    "type":"htmlSource",
-    "text":"</div>"
-  },
-  {
-    "type":"htmlSource",
-    "text":"<div class=\"row pl-3\">"
-  },
-  {
-    "type":"h4",
-    "title":"<div class=\"col-2 pl-3 pt-4\"><b>3TC</b></div>"
-  },
-  {
-    "type":"inputSmall",
-    "title":"劑量(mg)"
-  },
-  {
-    "type":"inputSmall",
-    "title":"Q(H)"
-  },
-  {
-    "type":"inputSmall",
-    "title":"服用天數(days)"
-  },
-  {
-    "type":"htmlSource",
-    "text":"</div>"
-  },
-  {
-    "type":"htmlSource",
-    "text":"<div class=\"row pl-3\">"
+    "text":"<div class=\"row pt-3 pl-3\">"
   },
   {
     "type":"radioSmall",
