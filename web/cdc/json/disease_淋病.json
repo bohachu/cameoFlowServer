@@ -65,7 +65,7 @@
     "title": "個案狀況維護與補充資料"
   },
   {
-    "type": "htmlFile",
-    "file": "disease_共用_是否進行愛滋病毒篩檢_上下排緊密.html"
+    "type": "json",
+    "file": "../json/disease_共用_是否進行愛滋病毒篩檢.json"
   }
 ]

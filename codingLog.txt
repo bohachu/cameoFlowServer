@@ -1,14 +1,16 @@
-新增：共用＿動物接觸史_上下緊密變一行.html => 但是尚未修改完成
-試圖：增加幾個元件 => 但是尚未修改完成
-    'TitleOneLine': TitleOneLine(),
-    'RadioOneLineYesNo': RadioOneLineYesNo(),
-    'SelectOneLine': SelectOneLine(),
-
-
-
 梅毒與HIV的派工影片如下： .mov
 https://drive.google.com/drive/u/0/folders/1TcjAd-Or10JVDAq8vD46snx_ksy4IFsU
 ?strDiseaseFile=../json/disease_梅毒.json
+
+動物接觸史、個案生母資料、是否進行愛滋病毒篩檢、個案是否懷孕、有無症狀：全部都已經用 Dart 元件方式改為一行
+    'InputOneLine': InputOneLine(),
+    'CheckboxOneLine': CheckboxOneLine(),
+    'TitleOneLine': TitleOneLine(),
+    'Radio2OptionsOneLine': Radio2OptionsOneLine(),
+    'SelectOneLine': SelectOneLine(),
+    'DateOneLine': DateOneLine(),
+
+==
 
 因為這種單行縮排實在太複雜，所以乾脆使用 .html 來排版還比較快速一點， .html 片段：仍然可共用
 是否進行愛滋病毒篩檢（梅毒、淋病：都有這樣的欄位）

@@ -98,36 +98,23 @@
     "title": "＋ 新增一筆國外居住史"
   },
   {
-    "type": "h3",
-    "title": "動物接觸史"
+    "rowStart": "<div class=\"row pt-3 pl-4\">",
+    "type": "TitleOneLine",
+    "title": "　動物接觸史　"
   },
   {
-    "type": "htmlSource",
-    "text": "<div class=\"row pl-3 pr-3\">"
+    "type": "Radio2OptionsOneLine",
+    "option1": "有",
+    "option2": "無"
   },
   {
-    "type": "radioSmall",
-    "list": [
-      "有",
-      "無"
-    ]
+    "type": "SelectOneLine",
+    "title": "　接觸動物種類<a href=\"https://docs.google.com/spreadsheets/d/1PsMy-qKZjy7WyOQSvkHWtLmuSCJo7CrbfsG_BGTKjH8/edit#gid=715655781&range=A1\">\uD83D\uDD06</a>"
   },
   {
-    "type": "selectSmall",
-    "title": "接觸動物種類<a href=\"https://docs.google.com/spreadsheets/d/1PsMy-qKZjy7WyOQSvkHWtLmuSCJo7CrbfsG_BGTKjH8/edit#gid=715655781&range=A1\">\uD83D\uDD06</a>",
-    "list": [
-      "其它接觸動物",
-      "2",
-      "3",
-      "4"
-    ]
-  },
-  {
-    "type": "inputSmall",
-    "title": "其他接觸動物<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=當接觸動物種類選擇「其他接觸動物」才動態顯示此欄位\">\uD83D\uDD06</a>"
-  },
-  {
-    "type": "htmlSource",
-    "text": "</div>"
+    "type": "InputOneLine",
+    "title": "　其他接觸動物<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=當接觸動物種類選擇「其他接觸動物」才動態顯示此欄位\">\uD83D\uDD06</a>",
+    "text": "輸入內容",
+    "rowEnd": "</div>"
   }
 ]

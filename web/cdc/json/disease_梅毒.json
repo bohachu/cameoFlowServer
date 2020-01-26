@@ -145,11 +145,22 @@
     "title": "個案狀況維護與補充資料"
   },
   {
-    "type": "htmlFile",
-    "file": "disease_共用_是否進行愛滋病毒篩檢_上下排緊密.html"
+    "type": "json",
+    "file": "../json/disease_共用_是否進行愛滋病毒篩檢.json"
   },
   {
-    "type": "htmlFile",
-    "file": "disease_梅毒_個案是否懷孕_上下排緊密.html"
+    "rowStart": "<div class=\"row pt-3 pl-4\">",
+    "type": "TitleOneLine",
+    "title": "　個案是否懷孕　　　　　"
+  },
+  {
+    "type": "Radio2OptionsOneLine",
+    "option1": "是",
+    "option2": "否"
+  },
+  {
+    "type": "SelectOneLine",
+    "title": "　　妊娠週數<span style=\"color:red\">*</span>\n<a href=\"codingMemo.html?strMemo=若個案是否懷孕勾選是，此欄位必填，需做連動設計\">\uD83D\uDD06</a>",
+    "rowEnd": "</div>"
   }
 ]

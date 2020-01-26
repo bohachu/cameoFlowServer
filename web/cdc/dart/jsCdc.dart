@@ -4,6 +4,73 @@ import 'dart:html';
 import '../../common/dart/httpGet.dart';
 import '../../common/dart/stringUtil.dart';
 
+Future<String> scanJsonToHtml(List lstJson) async {
+  Map mapTypeToCode = {
+    'diseaseName': JsonToHtmlDiseaseName(),
+    'radio': JsonToHtmlRadio(),
+    'radioBig': JsonToHtmlRadioCol6(),
+    'radioNormal': JsonToHtmlRadioCol4(),
+    'radioSmall': JsonToHtmlRadioCol3(),
+    'checkbox': JsonToHtmlCheckbox(),
+    'checkboxBig': JsonToHtmlCheckboxCol6(),
+    'checkboxSmall': JsonToHtmlCheckboxCol3(),
+    'json': JsonToHtmlImportJson(),
+    'h2': JsonToHtmlH2(),
+    'h3': JsonToHtmlH3(),
+    'h4': JsonToHtmlH4(),
+    'select': JsonToHtmlSelect(),
+    'selectBig': JsonToHtmlSelectCol6(),
+    'selectSmall': JsonToHtmlSelectCol3(),
+    'input': JsonToHtmlInput(),
+    'inputBig': JsonToHtmlInputCol6(),
+    'inputSmall': JsonToHtmlInputCol3(),
+    'date': JsonToHtmlDate(),
+    'dateBig': JsonToHtmlDateCol6(),
+    'dateSmall': JsonToHtmlDateCol3(),
+    'addRecord': JsonToHtmlAddRecord(),
+    'htmlSource': JsonToHtmlSource(),
+    'htmlFile': JsonToHtmlFile(),
+    'InputOneLine': InputOneLine(),
+    'CheckboxOneLine': CheckboxOneLine(),
+    'TitleOneLine': TitleOneLine(),
+    'Radio2OptionsOneLine': Radio2OptionsOneLine(),
+    'SelectOneLine': SelectOneLine(),
+    'DateOneLine': DateOneLine(),
+  };
+  String strHtml = '';
+  for (int i = 0; i < lstJson.length; i++) {
+    String strType = lstJson[i]['type'];
+    Map map = lstJson[i];
+    strHtml += await mapTypeToCode[strType].getHtml(map);
+  }
+  return strHtml;
+}
+
+class DateOneLine extends JsonToHtml {
+  Future<String> getTags() async {
+    return '''    
+      <label class="pt-2 fs-0">$strTitle</label>
+      <input class="col-2 form-control text-secondary" type="text" placeholder="年/月/日">
+    ''';
+  }
+}
+
+class SelectOneLine extends JsonToHtml {
+  Future<String> getTags() async {
+    return '''    
+      <label class="pt-2 fs-0">$strTitle</label>
+      <select class="col-2 form-control text-secondary">
+        <option>請選擇</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    ''';
+  }
+}
+
 class JsonToHtmlAddRecord extends JsonToHtml {
   Future<String> getTags() async => replaceAll('.JsonToHtmlAddRecord_getTags', {
         '\$strTitle': '$strTitle',
@@ -43,88 +110,32 @@ void setInnerHtml(String strHtml, String strDiseaseName) {
   querySelector('#strDiseaseName').setInnerHtml('通報疾病：$strDiseaseName');
 }
 
-Future<String> scanJsonToHtml(List lstJson) async {
-  Map mapTypeToCode = {
-    'diseaseName': JsonToHtmlDiseaseName(),
-    'radio': JsonToHtmlRadio(),
-    'radioBig': JsonToHtmlRadioCol6(),
-    'radioNormal': JsonToHtmlRadioCol4(),
-    'radioSmall': JsonToHtmlRadioCol3(),
-    'checkbox': JsonToHtmlCheckbox(),
-    'checkboxBig': JsonToHtmlCheckboxCol6(),
-    'checkboxSmall': JsonToHtmlCheckboxCol3(),
-    'json': JsonToHtmlImportJson(),
-    'h2': JsonToHtmlH2(),
-    'h3': JsonToHtmlH3(),
-    'h4': JsonToHtmlH4(),
-    'select': JsonToHtmlSelect(),
-    'selectBig': JsonToHtmlSelectCol6(),
-    'selectSmall': JsonToHtmlSelectCol3(),
-    'input': JsonToHtmlInput(),
-    'inputBig': JsonToHtmlInputCol6(),
-    'inputSmall': JsonToHtmlInputCol3(),
-    'date': JsonToHtmlDate(),
-    'dateBig': JsonToHtmlDateCol6(),
-    'dateSmall': JsonToHtmlDateCol3(),
-    'addRecord': JsonToHtmlAddRecord(),
-    'htmlSource': JsonToHtmlSource(),
-    'htmlFile': JsonToHtmlFile(),
-    'InputOneLine': InputOneLine(),
-    'CheckboxOneLine': CheckboxOneLine(),
-    'TitleOneLine': TitleOneLine(),
-    'RadioOneLineYesNo': RadioOneLineYesNo(),
-    'SelectOneLine': SelectOneLine(),
-  };
-  String strHtml = '';
-  for (int i = 0; i < lstJson.length; i++) {
-    String strType = lstJson[i]['type'];
-    Map map = lstJson[i];
-    strHtml += await mapTypeToCode[strType].getHtml(map);
-  }
-  return strHtml;
-}
-
-class SelectOneLine extends JsonToHtml {
-  Future<String> getTags() async {
-    return '''    
-      <label class="fs-0">　　$strTitle<span style="color:red">*</span>
-        <a href="codingMemo.html?strMemo=$strMemo">🔆</a>
-      </label>
-      <select class="col-2 form-control text-secondary">
-        <option>請選擇</option>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
-    ''';
-  }
-}
 
 class TitleOneLine extends JsonToHtml {
   Future<String> getTags() async {
     return '''
-      <span class="col-3 fs-1 font-weight-bold text-black">$strTitle</span>
+      <span class="pt-1 fs-1 font-weight-bold text-black">$strTitle</span>
     ''';
   }
 }
 
-class RadioOneLineYesNo extends JsonToHtml {
+class Radio2OptionsOneLine extends JsonToHtml {
   Future<String> getTags() async {
+    String strOption1=this.map['option1'] ?? '';
+    String strOption2=this.map['option2'] ?? '';
     return '''
-  <div class="custom-control custom-radio custom-control-inline">
-    <input type="radio" class="custom-control-input">
-    <label class="custom-control-label fs-0">
-      是
-    </label>
-  </div>
-  <div class="custom-control custom-radio custom-control-inline">
-    <input type="radio" class="custom-control-input">
-    <label class="custom-control-label fs-0">
-      否
-    </label>
-  </div>
+      <div class="pt-2 custom-control custom-radio custom-control-inline">
+        <input type="radio" class="custom-control-input">
+        <label class="custom-control-label fs-0">
+          $strOption1
+        </label>
+      </div>
+      <div class="pt-2 custom-control custom-radio custom-control-inline">
+        <input type="radio" class="custom-control-input">
+        <label class="custom-control-label fs-0">
+          $strOption2
+        </label>
+      </div>
     ''';
   }
 }
@@ -264,7 +275,6 @@ class JsonToHtml {
   String strRowStart = '';
   String strRowEnd = '';
   List lstList = [];
-  String strMemo = '';
   int intRandomId;
   Map map = {};
 
@@ -277,7 +287,6 @@ class JsonToHtml {
     strRowStart = map['rowStart'] ?? '';
     strRowEnd = map['rowEnd'] ?? '';
     lstList = map['list'];
-    strMemo = map['memo'];
     intRandomId = Random().nextInt(999999);
     this.map = map;
   }
