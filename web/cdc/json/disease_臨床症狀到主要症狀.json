@@ -4,7 +4,7 @@
     "title": "臨床症狀"
   },
   {
-    "rowStart": "<div class=\"row pt-3 pl-4\">",
+    "rowStart": "<div class=\"row pt-0 pl-4\">",
     "type": "TitleOneLine",
     "title": "　有無症狀<span style=\"color:red\">*</span>　"
   },

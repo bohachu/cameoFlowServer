@@ -1,15 +1,15 @@
 [
   {
-    "type": "diseaseName",
-    "title": "梅毒"
+    "type":"diseaseName",
+    "title":"梅毒"
   },
   {
-    "type": "json",
-    "file": "../json/disease_臨床症狀到主要症狀.json"
+    "type":"json",
+    "file":"../json/disease_臨床症狀到主要症狀.json"
   },
   {
-    "type": "checkbox",
-    "list": [
+    "type":"checkbox",
+    "list":[
       "心臟血管性梅毒",
       "肌肉痛",
       "神經性梅毒",
@@ -30,54 +30,54 @@
     ]
   },
   {
-    "type": "json",
-    "file": "../json/disease_其他症狀.json"
+    "type":"json",
+    "file":"../json/disease_其他症狀.json"
   },
   {
-    "type": "h2",
-    "title": "通報時檢驗資料<a href=\"codingMemo.html?strMemo=下面四個選項為四則一必填\">\uD83D\uDD06</a>"
+    "type":"h2",
+    "title":"通報時檢驗資料<a href=\"codingMemo.html?strMemo=下面四個選項為四則一必填\">\uD83D\uDD06</a>"
   },
   {
-    "type": "h3",
-    "checkboxTitle": "1. 未曾接受梅毒治療或病史不清楚者",
-    "tip": "＊(1)及(2)皆須填寫，其中RPR、VDRL至少擇一，\n且TPHA、TPPA、FTA-abs(+)、TPLA(+)、 EIA(+)、CIA(+)/CMIA(+)至少擇一。"
+    "type":"h3",
+    "checkboxTitle":"1. 未曾接受梅毒治療或病史不清楚者",
+    "tip":"＊(1)及(2)皆須填寫，其中RPR、VDRL至少擇一，\n且TPHA、TPPA、FTA-abs(+)、TPLA(+)、 EIA(+)、CIA(+)/CMIA(+)至少擇一。"
   },
   {
-    "type": "h4",
-    "title": "<span class=\"pl-5\">(1)血清學非特異性梅毒螺旋體試驗</span>"
+    "type":"h4",
+    "title":"<span class=\"pl-5\">(1)血清學非特異性梅毒螺旋體試驗</span>"
   },
   {
-    "rowStart": "<div class=\"row pl-8\">",
-    "type": "InputOneLine",
-    "title": "RPR(+)效價=1:",
-    "text": "輸入數字"
+    "rowStart":"<div class=\"row pl-8\">",
+    "type":"InputOneLine",
+    "title":"RPR(+)效價=1:",
+    "text":"輸入數字"
   },
   {
-    "type": "InputOneLine",
-    "title": "　VDRL(+)效價=1:",
-    "text": "輸入數字",
-    "rowEnd": "</div>"
+    "type":"InputOneLine",
+    "title":"　VDRL(+)效價=1:",
+    "text":"輸入數字",
+    "rowEnd":"</div>"
   },
   {
-    "type": "h4",
-    "title": "<span class=\"pl-5\">(2)特異性梅毒螺旋體試驗</span>"
+    "type":"h4",
+    "title":"<span class=\"pl-5\">(2)特異性梅毒螺旋體試驗</span>"
   },
   {
-    "rowStart": "<div class=\"row pl-8\">",
-    "type": "InputOneLine",
-    "title": "TPHA=1:",
-    "text": "輸入數字"
+    "rowStart":"<div class=\"row pl-8\">",
+    "type":"InputOneLine",
+    "title":"TPHA=1:",
+    "text":"輸入數字"
   },
   {
-    "type": "InputOneLine",
-    "title": "　TPPA=1:",
-    "text": "輸入數字",
-    "rowEnd": "</div>"
+    "type":"InputOneLine",
+    "title":"　TPPA=1:",
+    "text":"輸入數字",
+    "rowEnd":"</div>"
   },
   {
-    "rowStart": "<div class=\"pl-6\">",
-    "type": "checkbox",
-    "list": [
+    "rowStart":"<div class=\"pl-6\">",
+    "type":"checkbox",
+    "list":[
       [
         "checkbox",
         "FTA-abs(+)"
@@ -91,76 +91,76 @@
         "CIA(+)/CMIA(+)"
       ]
     ],
-    "rowEnd": "</div>"
+    "rowEnd":"</div>"
   },
   {
-    "type": "h3",
-    "checkboxTitle": "2. 臨床檢體（病灶滲出液、組織等）以下列方法檢測出梅毒螺旋體"
+    "type":"h3",
+    "checkboxTitle":"2. 臨床檢體（病灶滲出液、組織等）以下列方法檢測出梅毒螺旋體"
   },
   {
-    "rowStart": "<div class=\"row pl-5\">",
-    "type": "checkbox",
-    "list": [
+    "rowStart":"<div class=\"row pl-5\">",
+    "type":"checkbox",
+    "list":[
       "暗視野顯微鏡",
       "螢光抗體檢驗",
       "核酸檢驗"
     ],
-    "rowEnd": "</div>"
+    "rowEnd":"</div>"
   },
   {
-    "type": "h3",
-    "checkboxTitle": "3. 腦脊髓液性病研究實驗室試驗"
+    "type":"h3",
+    "checkboxTitle":"3. 腦脊髓液性病研究實驗室試驗"
   },
   {
-    "rowStart": "<div class=\"row pl-7\">",
-    "type": "InputOneLine",
-    "title": "CSF-VDRL(+)效價=1:",
-    "text": "輸入數字",
-    "rowEnd": "</div>"
+    "rowStart":"<div class=\"row pl-7\">",
+    "type":"InputOneLine",
+    "title":"CSF-VDRL(+)效價=1:",
+    "text":"輸入數字",
+    "rowEnd":"</div>"
   },
   {
-    "type": "h3",
-    "checkboxTitle": "4. 曾經接受梅毒治療者"
+    "type":"h3",
+    "checkboxTitle":"4. 曾經接受梅毒治療者"
   },
   {
-    "rowStart": "<div class=\"row pl-7\">",
-    "type": "CheckboxOneLine",
-    "title": "血清學非特異性梅毒螺旋體試驗:",
-    "list": [
+    "rowStart":"<div class=\"row pl-7\">",
+    "type":"CheckboxOneLine",
+    "title":"血清學非特異性梅毒螺旋體試驗:",
+    "list":[
       "RPR效價≧4倍上升",
       "VDRL效價≧ 4倍上升"
     ],
-    "rowEnd": "</div>"
+    "rowEnd":"</div>"
   },
   {
-    "type": "json",
-    "file": "../json/disease_流行病學資料.json"
+    "type":"json",
+    "file":"../json/disease_流行病學資料.json"
   },
   {
-    "type": "json",
-    "file": "../json/disease_個案生母資料.json"
+    "type":"json",
+    "file":"../json/disease_個案生母資料.json"
   },
   {
-    "type": "h2",
-    "title": "個案狀況維護與補充資料"
+    "type":"h2",
+    "title":"個案狀況維護與補充資料"
   },
   {
-    "type": "json",
-    "file": "../json/disease_共用_是否進行愛滋病毒篩檢.json"
+    "type":"json",
+    "file":"../json/disease_共用_是否進行愛滋病毒篩檢.json"
   },
   {
-    "rowStart": "<div class=\"row pt-3 pl-4\">",
-    "type": "TitleOneLine",
-    "title": "　個案是否懷孕　　　　　"
+    "rowStart":"<div class=\"row pt-3 pl-4\">",
+    "type":"TitleOneLine",
+    "title":"　個案是否懷孕　　　　　"
   },
   {
-    "type": "Radio2OptionsOneLine",
-    "option1": "是",
-    "option2": "否"
+    "type":"Radio2OptionsOneLine",
+    "option1":"是",
+    "option2":"否"
   },
   {
-    "type": "SelectOneLine",
-    "title": "　　妊娠週數<span style=\"color:red\">*</span>\n<a href=\"codingMemo.html?strMemo=若個案是否懷孕勾選是，此欄位必填，需做連動設計\">\uD83D\uDD06</a>",
-    "rowEnd": "</div>"
+    "type":"SelectOneLine",
+    "title":"　　妊娠週數<span style=\"color:red\">*</span>\n<a href=\"codingMemo.html?strMemo=若個案是否懷孕勾選是，此欄位必填，需做連動設計\">\uD83D\uDD06</a>",
+    "rowEnd":"</div>"
   }
 ]
