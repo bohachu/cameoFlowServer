@@ -372,7 +372,7 @@
               <div class="col-lg-3">
                 <div class="form-group">
                   <label class="fs-0" for="country256">國家<a
-                    href="codingMemo.html?strMemo=此欄位要精誠夥伴採用 Partial input 輸入部分國家文字就會把「國家代碼」value完整帶出來，國家的代碼在前面、國家的中文在後面，如果搜尋不到該國家就屬於其他國家直接套用「其他國家」的代碼並且新增這個國家 value。當使用者在國家這個自動完成的輸入框，可以選擇任意國家名稱自動完成輸入，並且自動在前面會把國家代碼輸入系統（自動帶入）。但是如果使用者輸入時選了 其他國家 這個選項時，或者填寫了完全不存在系統的國家時，這個全新的國家名稱會全自動加入系統，然後也會全自動套用一個叫做「其他國家」的代碼標籤。舉例：輸入「阿」時，下方會跳出「AF 阿富汗」、「AL 阿爾巴尼亞」、「DZ 阿爾及利亞」等等都是「阿」開頭的國家，可以直接做點選。若輸入不在國家代碼表的國家名稱，則會自動帶入變成「ZZ 新國家名稱」（ZZ 代表其他國家的代碼）。國家代碼表可參考：https://www.ntbca.gov.tw/singlehtml/269921c87225421e94367815167aee49?cntId=efa281411b4447dc9439bc32ec99929d">🔆</a></label>
+                    href="codingMemo.html?strMemo=001 此欄位要精誠夥伴採用 Partial input 輸入部分國家文字就會把「國家代碼」value完整帶出來，國家的代碼在前面、國家的中文在後面，如果搜尋不到該國家就屬於其他國家直接套用「其他國家」的代碼並且新增這個國家 value。<br/>002 當使用者在國家這個自動完成的輸入框，可以選擇任意國家名稱自動完成輸入，並且自動在前面會把國家代碼輸入系統（自動帶入）。但是如果使用者輸入時選了「其他國家」這個選項時，或者填寫了完全不存在系統的國家時，這個全新的國家名稱會全自動加入系統，然後也會全自動套用一個叫做「其他國家」的代碼標籤。<br/>003 舉例：輸入「阿」時，下方會跳出「AF 阿富汗」、「AL 阿爾巴尼亞」、「DZ 阿爾及利亞」等等都是「阿」開頭的國家，可以直接做點選。若輸入不在國家代碼表的國家名稱，則會自動帶入變成「ZZ 新國家名稱」（ZZ 代表其他國家的代碼）。國家代碼表可參考：https://www.ntbca.gov.tw/singlehtml/269921c87225421e94367815167aee49?cntId=efa281411b4447dc9439bc32ec99929d<br/>004<br/>a.不管輸入國家代碼或國家名稱中文字，都會 autocomplete 進行點選<br/>b.輸入關鍵字為全新國家的名稱，在輸入完畢或離開此欄位的時候，輸入框會出現「ZZ 新國家名稱<br/>c.只要是已經有輸入的「ZZ 新國家名稱」，都可以用 autocomplete 進行點選，除非是完全沒有輸入過的國家名稱，才會再把加入到 ZZ<br/>d.後台資料庫的代碼 ZZ 和新國家名稱是分開兩個欄位做儲存的，因此在統計報表可以統計所有 ZZ 其他國家有哪些">🔆</a></label>
                   <input class="form-control text-secondary" id="name2" type="text" value="輸入內容">
                 </div>
               </div>
@@ -394,7 +394,7 @@
               </div>
               <div class="col-lg-3">
                 <div class="form-group">
-                  <label class="fs-0" for="exampleFormControlSelect1">居住縣市<span style="color:red">*</span><a href="codingMemo.html?strMemo=縣市資料請搜尋Google關鍵字：內政部民政司 地方行政區域簡介">🔆</a></label>
+                  <label class="fs-0" for="exampleFormControlSelect1">居住縣市<span style="color:red">*</span><a href="codingMemo.html?strMemo=縣市資料請參考精誠居佑夥伴手上，由疾管署提供已盤點過居住縣市代碼的試算表">🔆</a></label>
                   <select class="form-control text-secondary" id="exampleFormControlSelect1">
                     <option>請選擇</option>
                     <option>臺北市</option>
@@ -420,7 +420,7 @@
               </div>
               <div class="col-lg-3">
                 <div class="form-group">
-                  <label class="fs-0" for="exampleFormControlSelect3">居住村里</label>
+                  <label class="fs-0" for="exampleFormControlSelect3">居住村里<a href="codingMemo.html?strMemo=居住村里欄位：寫了街道地址後，全自動利用 TGOS Database 自動帶入村里鄰的欄位，請精誠夥伴協助和疾管署夥伴確認可行性。">🔆</a></label>
                   <select class="form-control text-secondary" id="exampleFormControlSelect3">
                     <option>請選擇</option>
                     <option>大安里</option>
@@ -601,6 +601,7 @@
             <div class="col-12">
               <button type="button" class="btn text-white" style="background-color:#018E4F">選擇疾病</button>
               <button type="button" class="btn text-white" style="background-color:#018E4F">下一步</button>
+              <a href="codingMemo.html?strMemo=點選「下一步」：</br>001 顯示上面未填的必填欄位，並用紅色框框起未填欄位。</br>002 頁面最上方的通報單位資料、個案資料、通報疾病資料，三個頁籤要有相對應的驚嘆號說明表示資料是否填寫完成。">🔆</a>
               <div id="strDiseaseName" class="fs-1">通報疾病：登革熱</div>
             </div>
           </div>
@@ -639,6 +640,15 @@
         </div>
         <div id="reportDiseaseDartHtml"></div>
         <div id="通報單備註欄位"></div>
+        <div class="mt-3 mb-3">
+          <button type="button" class="btn pl-3 pr-3 text-white ml-3" style="background-color: #0F7841">確定通報</button>
+          <a href="codingMemo.html?strMemo=點選按鈕，要連動顯示上面未填的必填欄位，並用紅色框框起未填欄位。">🔆</a>
+          <button type="button" class="btn pl-3 pr-3 text-white ml-3" style="background-color: #0F7841">預覽通報單</button>
+          <a href="codingMemo.html?strMemo=點選按鈕，要連動顯示上面未填的必填欄位，並用紅色框框起未填欄位。">🔆</a>
+          <button type="button" class="btn pl-3 pr-3 text-white ml-3" style="background-color: #00a65a">存成草稿</button>
+          <button type="button" class="btn pl-3 pr-3 text-white ml-3" style="background-color: #00a65a">清除重填</button>
+          <a href="codingMemo.html?strMemo=點選按鈕，要連動將該次通報單填答內容清除。">🔆</a>
+        </div>
 
         <urgent_table_expand></urgent_table_expand>
 
