@@ -266,7 +266,7 @@
               <div class="col-lg-6">
                 <div class="form-group">
                   <label class="fs-0" for="first-name">通報單位名稱<a
-                    href="codingMemo.html?strMemo=001 疾管署與卡米爾當面討論之後建議：按下放大鏡之後的醫院搜尋介面畫面已經做在精誠動態雛形，因此，可以用抓圖方式（彈出搜尋元件），精誠夥伴請提供給疾管署做確認。<br/>002 如果通報單位非醫院，要變成「非反灰」可自行輸入。">🔆</a></label>
+                    href="codingMemo.html?strMemo=001 疾管署與卡米爾當面討論之後建議：按下放大鏡之後的醫院搜尋介面畫面已經做在精誠動態雛形，因此，可以用抓圖方式（彈出搜尋元件），精誠夥伴請提供給疾管署做確認。<br/>002 如果通報單位非醫院，要變成「非反灰」可自行輸入。<br/>003 填入單位醫院與非醫院欄位邏輯：<br/>a.填入單位為醫院：則通報單位名稱、通報單位代碼、通報單位地址、通報單登錄者姓名、通報者聯絡電話為自動帶入(反灰)。<br/>b.填入單位為非醫院，則選擇通報單位名稱，用放大鏡搜尋完畢之後：通報單位名稱、通報單位代碼、通報單位地址，是依照搜尋完的結果帶入內容。通報單登錄者姓名、通報者聯絡電話，則維持自動帶入(反灰)。<br/>c.在非醫院通報時，通報單位名稱欄位的預設值要為：「輸入內容」。<br/>004 通報單位名稱，搜尋方式要：<br/>  a.通報單位名稱欄位，打醫院的名稱，要可以有 autocomplete 功能。<br/>  b.打選放大鏡後，視窗畫面的關鍵字搜尋，不用先選擇地區，就可以有 autocomplete 功能。<br/>  c.下面可以先點選，縣市（台北市）、地區（松山區），再點選之後可以出現：醫院列表做點選。">🔆</a></label>
                   <div class="d-flex">
                     <input class="form-control text-secondary" style="background-color: #F2F2F2;" id="first-name"
                            type="text" value="國立臺灣大學醫學院附設醫院">
@@ -315,7 +315,7 @@
             <div class="row m-1">
               <div class="col-lg-6">
                 <div class="form-group">
-                  <label class="fs-0" for="idnum">身分證統一編號/外來人口之居留證統一證號、護照號碼<span style="color:red">*</span></label>
+                  <label class="fs-0" for="idnum">身分證統一編號/外來人口之居留證統一證號、護照號碼<span style="color:red">*</span><a href="codingMemo.html?strMemo=身分證統一編號/外來人口之居留證統一證號、護照號碼，要由第二碼辨識性別後，自動帶入性別的勾選欄位">🔆</a></label>
                   <span tooltip="・無身分證時才能輸入統一證號或護照號碼
 ・新生兒的出生日期~資料修改日小於6個月時，得以「AA」輸入
 ・本國籍人士且無法得知身分證號時使用，得以「BB」輸入
@@ -350,7 +350,7 @@
               </div>
               <div class="col-lg-3">
                 <div class="form-group">
-                  <label class="fs-0" for="name147">出生日期<span style="color:red">*</span><a href="codingMemo.html?strMemo=希望可以快速選擇年份的元件（可以參考精誠易用性動態雛形的元件）">🔆</a></label>
+                  <label class="fs-0" for="name147">出生日期<span style="color:red">*</span><a href="codingMemo.html?strMemo=001 希望可以快速選擇年份的元件（可以參考精誠易用性動態雛形的元件）</br>002 所有的日期欄位邏輯備註在此，請依照下面邏輯連動：</br>a.發病日期 <= 診斷日期  <= 報告日期  <= 今日</br>b. 起始日期 <= 結束日期 <= 今日</br>c. 離境居住國日期 <= 入境我國日前 <= 今日</br>d. 首次入住隔離病房日 <= 轉出隔離病房日 <= 今日</br>e. 首次住 ICU 日 <= 轉出 ICU 日 <= 今日 （待確認）</br>g. 出院日 <= 今日</br>g. 轉院日期 <= 今日</br>h. 出生日期 <= 死亡日期  <= 今日">🔆</a></label>
                   <input class="form-control text-secondary" id="name147" type="text" value="年/月/日">
                 </div>
               </div>
@@ -517,12 +517,18 @@
                     <input class="form-control text-secondary" id="name294" type="text" value="年/月/日">
                   </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-6">
                   <div class="form-group">
-                    <label class="fs-0" for="name729">轉至院所名稱</label>
+                    <label class="fs-0" for="name729">轉至院所名稱<a
+                      href="codingMemo.html?strMemo=001 搜尋功能與通報單位名稱欄位一致，搜尋方式要：<br/>a.通報單位名稱欄位，打醫院的名稱，要可以有 autocomplete 功能。<br/>b.打選放大鏡後，視窗畫面的關鍵字搜尋，不用先選擇地區，就可以有 autocomplete 功能。<br/>c.下面可以先點選，縣市（台北市）、地區（松山區），再點選之後可以出現：醫院列表做點選。">🔆</a></label>
+                    <div class="d-flex">
                     <input class="form-control text-secondary" id="name729" type="text" value="輸入內容">
-                  </div>
+                    <i class="fas fa-search" style="font-size: 20px; margin: auto 0; margin-left: 10px;"></i>
+                    </div>
+                    </div>
                 </div>
+              </div>
+              <div class="row ml-1 mr-1 mt-2">
                 <div class="col-lg-3">
                   <div class="form-group">
                     <label class="fs-0" for="name294">轉院日期</label>
@@ -534,8 +540,6 @@
                 -->
                   </div>
                 </div>
-              </div>
-              <div class="row ml-1 mr-1 mt-2">
                 <div class="col-lg-3">
                   <div class="form-group">
                     <label class="fs-0">個案是否死亡<span style="color:red">*</span></label><br/>
