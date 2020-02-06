@@ -35,7 +35,8 @@
   },
   {
     "type":"h2",
-    "title":"通報時檢驗資料<a href=\"codingMemo.html?strMemo=下面四個選項為四則一必填\">\uD83D\uDD06</a>"
+    "title":"通報時檢驗資料<a href=\"codingMemo.html?strMemo=下列四個選項為四則一必填\">\uD83D\uDD06</a>",
+    "tip":"下列四選項為四則一必填"
   },
   {
     "type":"h3",
