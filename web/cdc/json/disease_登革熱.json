@@ -64,12 +64,15 @@
     "title": "個案狀況維護與補充資料"
   },
   {
-    "type": "radio",
-    "title": "重症診斷條件<a href=\"codingMemo.html?strMemo=如點選有者，產生以下四個選項\">\uD83D\uDD06</a>",
-    "list": [
-      "有",
-      "無"
-    ]
+    "rowStart": "<div class=\"row pt-3 pl-4\">",
+    "type": "TitleOneLineFs0",
+    "title": "重症診斷條件<a href=\"codingMemo.html?strMemo=如點選有者，產生以下四個選項\">\uD83D\uDD06</a>"
+  },
+  {
+    "type": "Radio2OptionsOneLine",
+    "option1": "有",
+    "option2": "無",
+    "rowEnd": "</div>"
   },
   {
     "type": "checkbox",
