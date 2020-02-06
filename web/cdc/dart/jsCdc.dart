@@ -33,6 +33,7 @@ Future<String> scanJsonToHtml(List lstJson) async {
     'InputOneLine': InputOneLine(),
     'CheckboxOneLine': CheckboxOneLine(),
     'TitleOneLine': TitleOneLine(),
+    'TitleOneLineFs0': TitleOneLineFs0(),
     'Radio2OptionsOneLine': Radio2OptionsOneLine(),
     'SelectOneLine': SelectOneLine(),
     'DateOneLine': DateOneLine(),
@@ -115,6 +116,14 @@ class TitleOneLine extends JsonToHtml {
   Future<String> getTags() async {
     return '''
       <span class="pt-1 fs-1 font-weight-bold text-black">$strTitle</span>
+    ''';
+  }
+}
+
+class TitleOneLineFs0 extends JsonToHtml {
+  Future<String> getTags() async {
+    return '''
+      <span class="pt-1 fs-0 font-weight-bold text-black">$strTitle</span>
     ''';
   }
 }
@@ -339,7 +348,7 @@ class JsonToHtmlH2 extends JsonToHtml {
       String strZoom = 'zoom:150%';
       if (strType == 'h3') strZoom = 'zoom:175%';
       strCheckboxTitle = ''' 
-        <span><input class="form-check-input mt-1 pt-0" type="checkbox" style="$strZoom"></span> 
+        <span><input class="form-check-input pretty-h3-checkbox" type="checkbox" style="$strZoom"></span> 
         <span class="mt-0 pt-0">$strCheckboxTitle</span>
       ''';
       strMl = 'ml-5 jsCdc_dart_type_checkbox003';
