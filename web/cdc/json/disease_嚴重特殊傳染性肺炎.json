@@ -1,0 +1,70 @@
+[{
+  "type": "diseaseName",
+  "title": "嚴重特殊傳染性肺炎"
+},
+  {
+    "type": "json",
+    "file": "../json/disease_臨床症狀到主要症狀.json"
+  },
+  {
+    "type": "checkbox",
+    "list": [
+      "呼吸困難",
+      "呼吸急促",
+      "肺炎(Pneumonia)",
+      "X光片顯示肺炎",
+      "肌肉酸痛",
+      "咳嗽",
+      "流鼻水",
+      "喉嚨痛",
+      "發燒",
+      "腹瀉",
+      "嘔吐",
+      "鼻炎",
+      "關節痛",
+      "全身倦怠",
+      "尿量減少",
+      "血尿",
+      "不明原因呼吸性疾病致死"
+    ]
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_其他症狀.json"
+  },
+  {
+    "type": "h2",
+    "title": "通報時檢驗資料"
+  },
+  {
+    "type": "radio",
+    "title": "流感病毒抗原快速篩檢結果",
+    "list": [
+      "陽性",
+      "陰性",
+      "未確定",
+      "未檢驗"
+    ]
+  },
+  {
+    "rowStart": "<div class=\"row pt-3 pl-4\">",
+    "type": "TitleOneLineFs0",
+    "title": "流感病毒抗原快速篩檢結果"
+  },
+  {
+    "type": "Radio4OptionsOneLine",
+    "option1": "陽性",
+    "option2": "陰性",
+    "option3": "未確定",
+    "option4": "未檢驗",
+    "rowEnd": "</div>"
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_流行病學資料.json"
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_個案生母資料.json"
+  }
+]
