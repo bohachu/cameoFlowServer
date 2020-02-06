@@ -125,7 +125,7 @@ h5.title {
 
   /* most of the rest of this is opinion */
   font-family: Helvetica, sans-serif;
-  text-align: center;
+  text-align: left;
 
   /*
 Let the content set the size of the tooltips

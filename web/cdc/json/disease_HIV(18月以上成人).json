@@ -4,9 +4,8 @@
     "title":""
   },
   {
-    "type":"h2",
-    "title":"<span class=\"mt-0 pl-2\">臨床症狀<a href=\"codingMemo.html?strMemo=HIV18月以下、以及HIV18月以上成人，要根據年齡全自動彈出不同的相應欄位而不是製作兩個HTML\">\uD83D\uDD06</a>",
-    "tip":"需無任何HIV通報紀錄，始得通報HIV"
+    "type": "htmlSource",
+    "text": "<div class=\"mt-0 mb-3 text-black ml-3 fs-2 font-weight-bold\" style=\"clear: both;\"><span class=\"mt-0 pl-2\">臨床症狀<a href=\"codingMemo.html?strMemo=HIV18月以下、以及HIV18月以上成人，要根據年齡全自動彈出不同的相應欄位而不是製作兩個HTML\">\uD83D\uDD06</a><span class='JsonToHtmlRadio_buildTip fs-0' style=\"font-weight:400\" tooltip='需為HIV通報個案，始得通報AIDS' flow='right'><i class='fas fas fa-info-circle' style='color: #00a65a;'></i></span></span></div>\n"
   },
   {
     "type":"json",
