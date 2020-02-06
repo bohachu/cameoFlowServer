@@ -1,7 +1,7 @@
 [
   {
     "type": "h2",
-    "title": "臨床症狀"
+    "title": "<span class=\"pl-2\">臨床症狀"
   },
   {
     "rowStart": "<div class=\"row pt-0 pl-4\">",

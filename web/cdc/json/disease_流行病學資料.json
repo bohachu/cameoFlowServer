@@ -1,11 +1,11 @@
 [
   {
     "type": "h2",
-    "title": "流行病學資料"
+    "title": "<span class=\"pl-2\">流行病學資料"
   },
   {
     "type": "select",
-    "title": "<span class=\"fs-1\"><span style=\"color:black\"><b>職業</b></span><span style=\"color:red\">*</span><a href=\"https://docs.google.com/spreadsheets/d/11fnorqGalLlV-YU-tVuK0a_pyi5UFEXKnpuzJvi8hFA/edit#gid=344074476\">\uD83D\uDD06</a></span>",
+    "title": "<span class=\"pt-1 fs-1 font-weight-bold text-black\"><span style=\"color:black\"><b>職業</b></span><span style=\"color:red\">*</span><a href=\"https://docs.google.com/spreadsheets/d/11fnorqGalLlV-YU-tVuK0a_pyi5UFEXKnpuzJvi8hFA/edit#gid=344074476\">\uD83D\uDD06</a></span>",
     "list": [
       "---高風險職業---",
       "學生",
