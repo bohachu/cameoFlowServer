@@ -4,16 +4,8 @@
     "title":""
   },
   {
-    "type":"htmlSource",
-    "text":"<div class=\"mt-0 mb-3 text-black ml-3 fs-2 font-weight-bold\" style=\"clear: both;\"><span class=\"mt-0 pl-2\">臨床症狀<a href=\"codingMemo.html?strMemo=疾病名稱頁面都是顯示「人類免疫缺乏病毒感染(含母子垂直感染疑似個案)」，在相關日期欄位後面的內容，要根據年齡全自動彈出兩個不同的相應欄位（兩個畫面分別為：「人類免疫缺乏病毒感染(含母子垂直感染疑似個案)_18月以上成人」及「人類免疫缺乏病毒感染(含母子垂直感染疑似個案)_18月以下」）。\">\uD83D\uDD06</a><span class='JsonToHtmlRadio_buildTip fs-0' style=\"font-weight:400\" tooltip='需為HIV通報個案，始得通報AIDS' flow='right'><i class='fas fas fa-info-circle' style='color: #00a65a;'></i></span></span></div>\n"
-  },
-  {
-    "type":"json",
-    "file":"../json/disease_共用_有無症狀與主要症狀無星號.json"
-  },
-  {
-    "type":"htmlFile",
-    "file":"其他症狀.html"
+    "type": "htmlFile",
+    "file": "disease_人類免疫缺乏病毒感染(含母子垂直感染疑似個案)_18月以上成人_臨床症狀.html"
   },
   {
     "rowStart":"<div class=\"indent-h2\">",
