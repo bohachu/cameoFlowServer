@@ -1,12 +1,16 @@
 [
   {
-    "rowStart": "<div class=\"row pt-3 pl-4\">",
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h2\"><div class=\"indent-h3\">"
+  },
+  {
+    "rowStart": "<div class=\"row ml-0 pl-0 pt-3\">",
     "type": "TitleOneLine",
-    "title": "　個案生母資料<a href=\"codingMemo.html?strMemo=當個案ID為AA時顯示並為必填\">\uD83D\uDD06</a>"
+    "title": "個案生母資料<a href=\"codingMemo.html?strMemo=當個案ID為AA時顯示並為必填\">\uD83D\uDD06</a>"
   },
   {
     "type": "InputOneLine",
-    "title": "　案母姓名",
+    "title": "案母姓名",
     "text": "輸入內容"
   },
   {
@@ -14,5 +18,9 @@
     "title": "　案母身分證統一編號/外來人口之居留證統一證號",
     "text": "輸入內容",
     "rowEnd": "</div>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div></div>"
   }
 ]

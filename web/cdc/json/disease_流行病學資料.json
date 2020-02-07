@@ -97,19 +97,9 @@
     "comment": "indent-h4 從 「國內旅遊史」 到 「國外居住史」"
   },
   {
-    "type": "htmlSource",
-    "text": "</div>",
-    "comment": "避免一次從 indent h2 跳到 h4"
-  },
-  {
-    "type": "htmlSource",
-    "text": "</div>",
-    "comment": "indent-h2 流行病學資料"
-  },
-  {
-    "rowStart": "<div class=\"row pt-3 pl-4\">",
+    "rowStart": "<div class=\"row ml-0 pl-0 pt-3\">",
     "type": "TitleOneLine",
-    "title": "　動物接觸史　"
+    "title": "動物接觸史　"
   },
   {
     "type": "Radio2OptionsOneLine",
@@ -125,5 +115,15 @@
     "title": "　其他接觸動物<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=當接觸動物種類選擇「其他接觸動物」才動態顯示此欄位\">\uD83D\uDD06</a>",
     "text": "輸入內容",
     "rowEnd": "</div>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div>",
+    "comment": "indent-h3 避免一次從 indent h2 跳到 h4"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div>",
+    "comment": "indent-h2 流行病學資料"
   }
 ]
