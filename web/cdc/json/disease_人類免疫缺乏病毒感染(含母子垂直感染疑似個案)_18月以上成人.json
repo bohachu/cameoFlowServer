@@ -1,35 +1,31 @@
 [
   {
-    "type":"diseaseName",
-    "title":""
+    "type": "diseaseName",
+    "title": ""
   },
   {
-    "type": "htmlSource",
-    "text": "<div class=\"mt-0 mb-3 text-black ml-3 fs-2 font-weight-bold\" style=\"clear: both;\"><span class=\"mt-0 pl-2\">臨床症狀<a href=\"codingMemo.html?strMemo=疾病名稱頁面都是顯示「人類免疫缺乏病毒感染(含母子垂直感染疑似個案)」，在相關日期欄位後面的內容，要根據年齡全自動彈出兩個不同的相應欄位（兩個畫面分別為：「人類免疫缺乏病毒感染(含母子垂直感染疑似個案)_18月以上成人」及「人類免疫缺乏病毒感染(含母子垂直感染疑似個案)_18月以下」）。\">\uD83D\uDD06</a><span class='JsonToHtmlRadio_buildTip fs-0' style=\"font-weight:400\" tooltip='需為HIV通報個案，始得通報AIDS' flow='right'><i class='fas fas fa-info-circle' style='color: #00a65a;'></i></span></span></div>\n"
+    "type": "htmlFile",
+    "file": "disease_人類免疫缺乏病毒感染(含母子垂直感染疑似個案)_18月以上成人_臨床症狀.html"
   },
   {
-    "type":"json",
-    "file":"../json/disease_共用_有無症狀與主要症狀無星號.json"
+    "rowStart": "<div class=\"indent-h2\">",
+    "type": "h2",
+    "title": "通報時檢驗資料"
   },
   {
-    "type":"htmlFile",
-    "file":"其他症狀.html"
+    "rowStart": "<div class=\"indent-h3\">",
+    "type": "h3",
+    "title": "HIV確診定義<span style=\"color:red\">*</span><a href=\"codingMemo_HIV(18月以上成人)001.html\">\uD83D\uDD06</a>",
+    "rowEnd": "</div><!--indent-h3-->"
   },
   {
-    "type":"h2",
-    "title":"通報時檢驗資料"
+    "rowStart": "<div class=\"indent-h4\">",
+    "type": "h4",
+    "checkboxTitle": "HIV-1及2抗體確認檢驗方法陽性<a href=\"codingMemo_HIV(18月以上成人)001.html\">\uD83D\uDD06</a>"
   },
   {
-    "type":"h3",
-    "title":"HIV確診定義<span style=\"color:red\">*</span><a href=\"codingMemo_HIV(18月以上成人)001.html\">\uD83D\uDD06</a>"
-  },
-  {
-    "type":"h3",
-    "checkboxTitle":"HIV-1及2抗體確認檢驗方法陽性<a href=\"codingMemo_HIV(18月以上成人)001.html\">\uD83D\uDD06</a>"
-  },
-  {
-    "type":"checkbox",
-    "list":[
+    "type": "checkbox",
+    "list": [
       [
         "checkbox",
         "西方墨點法"
@@ -45,123 +41,107 @@
     ]
   },
   {
-    "type":"htmlSource",
-    "text":"<div class=\"row pl-5\">"
+    "type": "htmlSource",
+    "text": "<div class=\"row pl-0 ml-0\">"
   },
   {
-    "type":"date",
-    "title":"檢驗日期"
+    "type": "date",
+    "title": "檢驗日期"
   },
   {
-    "type":"input",
-    "title":"檢驗單位"
+    "type": "input",
+    "title": "檢驗單位"
   },
   {
-    "type":"htmlSource",
-    "text":"</div>"
+    "type": "htmlSource",
+    "text": "</div>",
+    "rowEnd": "</div><!--indent-h3-->"
   },
   {
-    "type":"h3",
-    "checkboxTitle":"分子生物學核酸檢測(NAT)陽性<a href=\"codingMemo_HIV(18月以上成人)001.html\">\uD83D\uDD06</a>",
-    "tip":"若同時有進行HIV-1及2抗體確認檢驗方法且結果為陽性者，請確認已勾選上方[HIV-1及2抗體確認檢驗方法陽性]選項"
+    "rowStart": "<div class=\"indent-h4\">",
+    "type": "h4",
+    "checkboxTitle": "分子生物學核酸檢測(NAT)陽性<a href=\"codingMemo_HIV(18月以上成人)001.html\">\uD83D\uDD06</a>",
+    "tip": "若同時有進行HIV-1及2抗體確認檢驗方法且結果為陽性者，請確認已勾選上方[HIV-1及2抗體確認檢驗方法陽性]選項"
   },
   {
-    "type":"htmlSource",
-    "text":"<div class=\"row pl-5\">"
+    "type": "htmlSource",
+    "text": "<div class=\"row pl-0 ml-0\">"
   },
   {
-    "type":"date",
-    "title":"檢驗日期"
+    "type": "date",
+    "title": "檢驗日期"
   },
   {
-    "type":"input",
-    "title":"檢驗單位"
+    "type": "input",
+    "title": "檢驗單位"
   },
   {
-    "type":"htmlSource",
-    "text":"</div>"
+    "type": "htmlSource",
+    "text": "</div>"
   },
   {
-    "type":"h3",
-    "title":"是否為急性感染判斷<a href=\"codingMemo_HIV(18月以上成人)002.html\">\uD83D\uDD06</a>",
-    "tip":"勾選前項[分子生物學核酸檢測(NAT)陽性]時，本項需填答，供判斷個案是否為急性感染。"
+    "type": "h4",
+    "title": "　是否為急性感染判斷<a href=\"codingMemo_HIV(18月以上成人)002.html\">\uD83D\uDD06</a>",
+    "tip": "勾選前項[分子生物學核酸檢測(NAT)陽性]時，本項需填答，供判斷個案是否為急性感染。"
   },
   {
-    "type":"radio",
-    "list":[
+    "type": "radio",
+    "list": [
       "前180天內(含本次)任一檢驗結果為[陰性或未確定] <span class='JsonToHtmlRadio_buildTip' tooltip='選擇此項請續填檢驗結果。' flow='right'><i class='fas fas fa-info-circle' style='color: #00a65a;'></i></span>"
     ]
   },
   {
-    "type":"htmlFile",
-    "file":"disease_HIV(18月以上成人)_是否為急性感染判斷_展開的表單.html"
+    "type": "htmlFile",
+    "file": "disease_HIV(18月以上成人)_是否為急性感染判斷_展開的表單.html"
   },
   {
-    "type":"radio",
-    "list":[
+    "type": "radio",
+    "list": [
       "前180天內(含本次) 無相關檢驗結果 <span class='JsonToHtmlRadio_buildTip' tooltip='無抗體篩檢檢測、抗原/抗體複合型檢測、HIV-1及2抗體確認檢驗方法、分子生物學核酸檢測HIV抗原p24篩檢或中和試驗等檢驗結果。' flow='right'><i class='fas fas fa-info-circle' style='color: #00a65a;'></i></span>"
-    ]
+    ],
+    "rowEnd": "</div><!--indent-->"
   },
   {
-    "type":"h3",
-    "checkboxTitle":"HIV抗原p24篩檢陽性，且進行中和試驗確認陽性<a href=\"codingMemo_HIV(18月以上成人)001.html\">\uD83D\uDD06</a> <span class='JsonToHtmlRadio_buildTip fs-0' style=\"font-weight:400\" tooltip='若同時有進行HIV-1及2抗體確認檢驗方法且結果為陽性者，\n請確認已勾選上方[HIV-1及2抗體確認檢驗方法陽性]選項' flow='right'><i class='fas fas fa-info-circle' style='color: #00a65a;'></i></span>"
+    "rowStart": "<div class=\"indent-h4\">",
+    "type": "h4",
+    "checkboxTitle": "HIV抗原p24篩檢陽性，且進行中和試驗確認陽性<a href=\"codingMemo_HIV(18月以上成人)001.html\">\uD83D\uDD06</a> <span class='JsonToHtmlRadio_buildTip fs-0' style=\"font-weight:400\" tooltip='若同時有進行HIV-1及2抗體確認檢驗方法且結果為陽性者，\n請確認已勾選上方[HIV-1及2抗體確認檢驗方法陽性]選項' flow='right'><i class='fas fas fa-info-circle' style='color: #00a65a;'></i></span>"
   },
   {
-    "type":"htmlFile",
-    "file":"disease_HIV(18月以上成人)_HIV抗原p24篩檢陽性_展開的表單.html"
+    "type": "htmlFile",
+    "file": "disease_HIV(18月以上成人)_HIV抗原p24篩檢陽性_展開的表單.html"
   },
   {
-    "type":"h3",
-    "title":"是否為急性感染判斷<a href=\"codingMemo_HIV(18月以上成人)003.html\">\uD83D\uDD06</a>",
-    "tip":"勾選前項[HIV抗原p24篩檢陽性，且進行中和試驗確認陽性]時，本項需填答，供判斷個案是否為急性感染。"
+    "type": "h4",
+    "title": "　是否為急性感染判斷<a href=\"codingMemo_HIV(18月以上成人)003.html\">\uD83D\uDD06</a>",
+    "tip": "勾選前項[HIV抗原p24篩檢陽性，且進行中和試驗確認陽性]時，本項需填答，供判斷個案是否為急性感染。"
   },
   {
-    "type":"radio",
-    "list":[
+    "type": "radio",
+    "list": [
       "前180天內(含本次)任一檢驗結果為[陰性或未確定] <span class='JsonToHtmlRadio_buildTip' tooltip='選擇此項請續填檢驗結果。' flow='right'><i class='fas fas fa-info-circle' style='color: #00a65a;'></i></span>"
     ]
   },
   {
-    "type":"htmlFile",
-    "file":"disease_HIV(18月以上成人)_是否為急性感染判斷_展開的表單.html"
+    "type": "htmlFile",
+    "file": "disease_HIV(18月以上成人)_是否為急性感染判斷_展開的表單.html"
   },
   {
-    "type":"radio",
-    "list":[
+    "type": "radio",
+    "list": [
       "前180天內(含本次) 無相關檢驗結果 <span class='JsonToHtmlRadio_buildTip' tooltip='無抗體篩檢檢測、抗原/抗體複合型檢測、HIV-1及2抗體確認檢驗方法、分子生物學核酸檢測HIV抗原p24篩檢或中和試驗等檢驗結果。' flow='right'><i class='fas fas fa-info-circle' style='color: #00a65a;'></i></span>"
-    ]
+    ],
+    "rowEnd": "</div><!--indent-h3-->  </div><!--indent-h2-->"
   },
   {
-    "type":"json",
-    "file":"../json/disease_流行病學資料.json"
+    "type": "json",
+    "file": "../json/disease_流行病學資料.json"
   },
   {
-    "type":"h3",
-    "title":"　感染危險因子"
+    "type": "htmlFile",
+    "file": "disease_人類免疫缺乏病毒感染(含母子垂直感染疑似個案)_18月以上成人_感染危險因子.html"
   },
   {
-    "type":"checkbox",
-    "list":[
-      [
-        "checkbox",
-        "接受輸血者 <span class='JsonToHtmlRadio_buildTip' tooltip='接受輸血者，需經愛滋病毒基因序列比對符合且經衛生福利部愛滋病防治及感染者權益保障會臨床檢驗組專家會議確認' flow='right'><i class='fas fas fa-info-circle' style='color: #00a65a;'></i></span>"
-      ],
-      [
-        "checkbox",
-        "母子垂直感染"
-      ],
-      [
-        "input",
-        "不詳"
-      ],
-      [
-        "input",
-        "其他"
-      ]
-    ]
-  },
-  {
-    "type":"json",
-    "file":"../json/disease_個案生母資料.json"
+    "type": "json",
+    "file": "../json/disease_個案生母資料.json"
   }
 ]

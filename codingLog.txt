@@ -1,3 +1,12 @@
+== 20200207 20:37
+打算把
+?strDiseaseFile=../json/disease_人類免疫缺乏病毒感染(含母子垂直感染疑似個案)_18月以上成人.json
+複雜的部分全部展開重新排版
+
+== 20200207 19:34
+?strDiseaseFile=../json/disease_梅毒.json
+?strDiseaseFile=../json/disease_人類免疫缺乏病毒感染(含母子垂直感染疑似個案)_18月以上成人.json
+
 == 20200207 18:11 梅毒 ==
 通報時檢驗資料
 
