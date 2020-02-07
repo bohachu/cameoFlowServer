@@ -1,49 +1,21 @@
 [
   {
-    "type": "htmlFile",
-    "file": "debug.html"
-  },
-  {
     "type": "htmlSource",
-    "text": "<div class=\"indent-h2\">"
-  },
-  {
-    "type": "h2",
-    "title": "<span class=\"pl-2\">流行病學資料"
-  },
-  {
-    "type": "htmlSource",
-    "text": "<div class=\"indent-h3\">"
-  },
-  {
-    "type": "select",
-    "title": "<span class=\"pt-1 fs-1 font-weight-bold text-black\"><span style=\"color:black\"><b>職業</b></span><span style=\"color:red\">*</span><a href=\"https://docs.google.com/spreadsheets/d/11fnorqGalLlV-YU-tVuK0a_pyi5UFEXKnpuzJvi8hFA/edit#gid=344074476\">\uD83D\uDD06</a></span>",
-    "list": [
-      "---高風險職業---",
-      "學生",
-      "工程師",
-      "1",
-      "2",
-      "---其他職業---",
-      "1",
-      "2",
-      "3",
-      "4"
-    ]
-  },
-  {
-    "type": "htmlSource",
-    "text": "</div>",
-    "comment": "indent-h3"
+    "text": "<div class=\"indent-h2 流行病學資料\">"
   },
   {
     "type": "htmlFile",
-    "file": "旅遊史.html"
+    "file": "流行病學資料、職業、旅遊史標題.html"
   },
   {
     "type": "htmlSource",
-    "text": "</div>",
-    "comment": "indent-h2"
+    "text": "<div class=\"indent-h3\">",
+    "comment": "避免一次從 indent h2 跳到 h4"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h4\">",
+    "comment": "從 「國內旅遊史」 到 「國外居住史」"
   },
   {
     "type": "h4",
@@ -118,6 +90,21 @@
   {
     "type": "addRecord",
     "title": "＋ 新增一筆國外居住史"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div>",
+    "comment": "indent-h4 從 「國內旅遊史」 到 「國外居住史」"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div>",
+    "comment": "避免一次從 indent h2 跳到 h4"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div>",
+    "comment": "indent-h2 流行病學資料"
   },
   {
     "rowStart": "<div class=\"row pt-3 pl-4\">",

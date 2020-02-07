@@ -355,7 +355,7 @@ class JsonToHtmlDiseaseName extends JsonToHtml {
 class JsonToHtmlH2 extends JsonToHtml {
   final strFontSize = 'fs-2';
   final strHr = '<hr/>';
-  String strMl = 'ml-3';
+  final strHn = 'h2';
   String strCheckboxTitle = '';
 
   init(Map map) {
@@ -374,11 +374,11 @@ class JsonToHtmlH2 extends JsonToHtml {
     }
 
     //20200126 bowen: 如果有checkbox手動寫在JSON標題上面，注意左邊要留白多一點不然會太左邊超出邊界。另外如果沒有手動checkbox則左邊留白別太多
-    if (strTitle.contains("type='checkbox'>")) {
-      strMl = 'ml-5 jsCdc_dart_type_checkbox001';
-    } else {
-      strMl = 'ml-3 jsCdc_dart_type_checkbox002';
-    }
+//    if (strTitle.contains("type='checkbox'>")) {
+//      strMl = 'ml-5 jsCdc_dart_type_checkbox001';
+//    } else {
+//      strMl = 'ml-3 jsCdc_dart_type_checkbox002';
+//    }
 
     if (strCheckboxTitle.length > 0) {
       String strZoom = 'zoom:150%';
@@ -387,15 +387,17 @@ class JsonToHtmlH2 extends JsonToHtml {
         <span><input class="form-check-input pretty-h3-checkbox" type="checkbox" style="$strZoom"></span> 
         <span class="mt-0 pt-0">$strCheckboxTitle</span>
       ''';
-      strMl = 'ml-5 jsCdc_dart_type_checkbox003';
+      //strMl = 'ml-5 jsCdc_dart_type_checkbox003';
     }
 
     //h2 h3 h4 mt高度在此設定
     String strHtml = '''
-      <div class="mt-3 mb-3 font-weight-bold text-black $strMl $strFontSize" style="clear: both;">
-        $strTitle
-        $strCheckboxTitle
-        $strHtmlTip
+      <div class="indent-$strHn">
+        <div class="row ml-0 pl-0 mt-3 mb-3 font-weight-bold text-black $strFontSize">
+          $strTitle
+          $strCheckboxTitle
+          $strHtmlTip
+        </div>
       </div>
     ''';
 
@@ -406,11 +408,13 @@ class JsonToHtmlH2 extends JsonToHtml {
 class JsonToHtmlH3 extends JsonToHtmlH2 {
   final strFontSize = 'fs-1';
   final strHr = '';
+  final strHn = 'h3';
 }
 
 class JsonToHtmlH4 extends JsonToHtmlH2 {
   final strFontSize = 'fs-0';
   final strHr = '';
+  final strHn = 'h4';
 }
 
 class JsonToHtmlImportJson {
