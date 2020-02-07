@@ -88,9 +88,8 @@
     "text":"</div>"
   },
   {
-    "rowStart":"<div class=\"indent-h4\">",
     "type":"h4",
-    "title":"是否為急性感染判斷<a href=\"codingMemo_HIV(18月以上成人)002.html\">\uD83D\uDD06</a>",
+    "title":"　是否為急性感染判斷<a href=\"codingMemo_HIV(18月以上成人)002.html\">\uD83D\uDD06</a>",
     "tip":"勾選前項[分子生物學核酸檢測(NAT)陽性]時，本項需填答，供判斷個案是否為急性感染。"
   },
   {
@@ -108,7 +107,7 @@
     "list":[
       "前180天內(含本次) 無相關檢驗結果 <span class='JsonToHtmlRadio_buildTip' tooltip='無抗體篩檢檢測、抗原/抗體複合型檢測、HIV-1及2抗體確認檢驗方法、分子生物學核酸檢測HIV抗原p24篩檢或中和試驗等檢驗結果。' flow='right'><i class='fas fas fa-info-circle' style='color: #00a65a;'></i></span>"
     ],
-    "rowEnd":"</div><!--indent-h3-->  </div><!--indent-h4-->"
+    "rowEnd":"</div><!--indent-->"
   },
   {
     "rowStart":"<div class=\"indent-h4\">",
@@ -120,9 +119,8 @@
     "file":"disease_HIV(18月以上成人)_HIV抗原p24篩檢陽性_展開的表單.html"
   },
   {
-    "rowStart":"<div class=\"indent-h4\">",
     "type":"h4",
-    "title":"是否為急性感染判斷<a href=\"codingMemo_HIV(18月以上成人)003.html\">\uD83D\uDD06</a>",
+    "title":"　是否為急性感染判斷<a href=\"codingMemo_HIV(18月以上成人)003.html\">\uD83D\uDD06</a>",
     "tip":"勾選前項[HIV抗原p24篩檢陽性，且進行中和試驗確認陽性]時，本項需填答，供判斷個案是否為急性感染。"
   },
   {
@@ -140,7 +138,7 @@
     "list":[
       "前180天內(含本次) 無相關檢驗結果 <span class='JsonToHtmlRadio_buildTip' tooltip='無抗體篩檢檢測、抗原/抗體複合型檢測、HIV-1及2抗體確認檢驗方法、分子生物學核酸檢測HIV抗原p24篩檢或中和試驗等檢驗結果。' flow='right'><i class='fas fas fa-info-circle' style='color: #00a65a;'></i></span>"
     ],
-    "rowEnd":"</div><!--indent-h4-->  </div><!--indent-h3-->  </div><!--indent-h2-->"
+    "rowEnd":"</div><!--indent-h3-->  </div><!--indent-h2-->"
   },
   {
     "type":"json",
