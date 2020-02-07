@@ -1,8 +1,8 @@
 [
   {
-    "rowStart": "<div class=\"row pt-3 pl-4\">",
+    "rowStart": "<div class=\"row pl-0 ml-0 pt-3\">",
     "type": "TitleOneLine",
-    "title": "　是否進行愛滋病毒篩檢　"
+    "title": "是否進行愛滋病毒篩檢　"
   },
   {
     "type": "Radio2OptionsOneLine",
@@ -11,7 +11,7 @@
   },
   {
     "type": "DateOneLine",
-    "title": "　　篩檢日期<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=若是否進行愛滋病毒篩檢勾選是，此欄位必填，需做連動設計\">\uD83D\uDD06</a>",
+    "title": "　篩檢日期<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=若是否進行愛滋病毒篩檢勾選是，此欄位必填，需做連動設計\">\uD83D\uDD06</a>",
     "rowEnd": "</div>"
   }
 ]

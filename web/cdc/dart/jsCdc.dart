@@ -112,7 +112,6 @@ void setInnerHtml(String strHtml, String strDiseaseName) {
   querySelector('#strDiseaseName').setInnerHtml('通報疾病：$strDiseaseName');
 }
 
-
 class TitleOneLine extends JsonToHtml {
   Future<String> getTags() async {
     return '''
@@ -131,8 +130,8 @@ class TitleOneLineFs0 extends JsonToHtml {
 
 class Radio2OptionsOneLine extends JsonToHtml {
   Future<String> getTags() async {
-    String strOption1=this.map['option1'] ?? '';
-    String strOption2=this.map['option2'] ?? '';
+    String strOption1 = this.map['option1'] ?? '';
+    String strOption2 = this.map['option2'] ?? '';
     return '''
       <div class="pt-1 pl-4 custom-control custom-radio custom-control-inline">
         <input type="radio" class="custom-control-input">
@@ -152,10 +151,10 @@ class Radio2OptionsOneLine extends JsonToHtml {
 
 class Radio4OptionsOneLine extends JsonToHtml {
   Future<String> getTags() async {
-    String strOption1=this.map['option1'] ?? '';
-    String strOption2=this.map['option2'] ?? '';
-    String strOption3=this.map['option3'] ?? '';
-    String strOption4=this.map['option4'] ?? '';
+    String strOption1 = this.map['option1'] ?? '';
+    String strOption2 = this.map['option2'] ?? '';
+    String strOption3 = this.map['option3'] ?? '';
+    String strOption4 = this.map['option4'] ?? '';
     return '''
       <div class="pt-1 pl-4 custom-control custom-radio custom-control-inline">
         <input type="radio" class="custom-control-input">
@@ -355,7 +354,6 @@ class JsonToHtmlDiseaseName extends JsonToHtml {
 class JsonToHtmlH2 extends JsonToHtml {
   final strFontSize = 'fs-2';
   final strHr = '<hr/>';
-  final strHn = 'h2';
   String strCheckboxTitle = '';
 
   init(Map map) {
@@ -392,13 +390,11 @@ class JsonToHtmlH2 extends JsonToHtml {
 
     //h2 h3 h4 mt高度在此設定
     String strHtml = '''
-      <div class="indent-$strHn">
-        <div class="row ml-0 pl-0 mt-3 mb-3 font-weight-bold text-black $strFontSize">
+        <div class="row ml-0 pl-0 mt-2 mb-2 font-weight-bold text-black $strFontSize">
           $strTitle
           $strCheckboxTitle
           $strHtmlTip
         </div>
-      </div>
     ''';
 
     return strHtml;
@@ -408,13 +404,11 @@ class JsonToHtmlH2 extends JsonToHtml {
 class JsonToHtmlH3 extends JsonToHtmlH2 {
   final strFontSize = 'fs-1';
   final strHr = '';
-  final strHn = 'h3';
 }
 
 class JsonToHtmlH4 extends JsonToHtmlH2 {
   final strFontSize = 'fs-0';
   final strHr = '';
-  final strHn = 'h4';
 }
 
 class JsonToHtmlImportJson {

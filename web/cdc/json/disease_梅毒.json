@@ -142,17 +142,25 @@
     "file":"../json/disease_個案生母資料.json"
   },
   {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h2\">"
+  },
+  {
     "type":"h2",
     "title":"個案狀況維護與補充資料"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h3\">"
   },
   {
     "type":"json",
     "file":"../json/disease_共用_是否進行愛滋病毒篩檢.json"
   },
   {
-    "rowStart":"<div class=\"row pt-3 pl-4\">",
+    "rowStart":"<div class=\"row pt-3 pl-0 ml-0\">",
     "type":"TitleOneLine",
-    "title":"　個案是否懷孕　　　　　"
+    "title":"個案是否懷孕　　　　　"
   },
   {
     "type":"Radio2OptionsOneLine",
@@ -161,7 +169,11 @@
   },
   {
     "type":"SelectOneLine",
-    "title":"　　妊娠週數<span style=\"color:red\">*</span>\n<a href=\"codingMemo.html?strMemo=若個案是否懷孕勾選是，此欄位必填，需做連動設計\">\uD83D\uDD06</a>",
+    "title":"妊娠週數<span style=\"color:red\">*</span>\n<a href=\"codingMemo.html?strMemo=若個案是否懷孕勾選是，此欄位必填，需做連動設計\">\uD83D\uDD06</a>",
     "rowEnd":"</div>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div></div>"
   }
 ]

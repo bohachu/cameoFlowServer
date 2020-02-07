@@ -97,7 +97,7 @@
     "comment": "indent-h4 從 「國內旅遊史」 到 「國外居住史」"
   },
   {
-    "rowStart": "<div class=\"row ml-0 pl-0 pt-3\">",
+    "rowStart": "<div class=\"row ml-0 pl-0\">",
     "type": "TitleOneLine",
     "title": "動物接觸史　"
   },
