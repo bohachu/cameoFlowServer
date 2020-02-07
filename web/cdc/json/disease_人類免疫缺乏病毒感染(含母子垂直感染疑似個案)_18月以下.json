@@ -65,10 +65,12 @@
     "file":"disease_HIV(18月以下)_國籍_出生日期_孕程_緊密排列.html"
   },
   {
+    "rowStart": "<div class=\"indent-h2\">",
     "type":"h2",
     "title":"個案狀況維護與補充資料"
   },
   {
+    "rowStart": "<div class=\"indent-h3\">",
     "type":"input",
     "title":"出生體重"
   },
@@ -116,19 +118,21 @@
   },
   {
     "type":"htmlSource",
-    "text":"<div class=\"row pt-3 pl-3\">"
+    "text":"<div class=\"row pl-0 ml-0 pt-3\">"
   },
   {
-    "type":"radioSmall",
-    "title":"採檢項目",
-    "list":[
-      "PCR",
-      "ELISA"
-    ]
+    "type": "TitleOneLineFs0",
+    "title": "　採檢項目"
   },
   {
-    "type":"dateSmall",
-    "title":"抽血日期"
+    "type":"Radio2OptionsOneLine",
+    "option1": "PCR",
+    "option2": "ELISA"
+  },
+  {
+    "type":"DateOneLine",
+    "title":"　　抽血日期",
+    "rowEnd": "</div><!--indent-h3> </div><!--indent-h2>"
   },
   {
     "type":"htmlSource",
