@@ -48,10 +48,10 @@
   {
     "rowStart": "<div class=\"indent-h4\">",
     "type":"h4",
-    "title":"<span class=\"pl-5\">(1)血清學非特異性梅毒螺旋體試驗</span>"
+    "title":"(1)血清學非特異性梅毒螺旋體試驗"
   },
   {
-    "rowStart":"<div class=\"row pl-8\">",
+    "rowStart":"<div class=\"row pl-5\">",
     "type":"InputOneLine",
     "title":"RPR(+)效價=1:",
     "text":"輸入數字"
@@ -64,10 +64,10 @@
   },
   {
     "type":"h4",
-    "title":"<span class=\"pl-5\">(2)特異性梅毒螺旋體試驗</span>"
+    "title":"(2)特異性梅毒螺旋體試驗"
   },
   {
-    "rowStart":"<div class=\"row pl-8\">",
+    "rowStart":"<div class=\"row pl-5\">",
     "type":"InputOneLine",
     "title":"TPHA=1:",
     "text":"輸入數字"
@@ -79,7 +79,7 @@
     "rowEnd":"</div>"
   },
   {
-    "rowStart":"<div class=\"pl-6\">",
+    "rowStart":"<div class=\"pl-4\">",
     "type":"checkbox",
     "list":[
       [
@@ -103,7 +103,7 @@
     "checkboxTitle":"2. 臨床檢體（病灶滲出液、組織等）以下列方法檢測出梅毒螺旋體"
   },
   {
-    "rowStart":"<div class=\"row pl-5\">",
+    "rowStart":"<div class=\"indent-h4\">",
     "type":"checkbox",
     "list":[
       "暗視野顯微鏡",
@@ -118,7 +118,7 @@
     "checkboxTitle":"3. 腦脊髓液性病研究實驗室試驗"
   },
   {
-    "rowStart":"<div class=\"row pl-7\">",
+    "rowStart":"<div class=\"indent-h4\">",
     "type":"InputOneLine",
     "title":"CSF-VDRL(+)效價=1:",
     "text":"輸入數字",
@@ -130,7 +130,7 @@
     "checkboxTitle":"4. 曾經接受梅毒治療者"
   },
   {
-    "rowStart":"<div class=\"row pl-7\">",
+    "rowStart":"<div class=\"indent-h4\">",
     "type":"CheckboxOneLine",
     "title":"血清學非特異性梅毒螺旋體試驗:",
     "list":[
