@@ -1,3 +1,8 @@
+== 20200207 18:11 梅毒 ==
+通報時檢驗資料
+
+==
+
 梅毒與HIV的派工影片如下： .mov
 https://drive.google.com/drive/u/0/folders/1TcjAd-Or10JVDAq8vD46snx_ksy4IFsU
 ?strDiseaseFile=../json/disease_梅毒.json

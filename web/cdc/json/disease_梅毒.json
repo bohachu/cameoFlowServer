@@ -34,16 +34,19 @@
     "file":"../json/disease_其他症狀.json"
   },
   {
+    "rowStart": "<div class=\"indent-h2\">",
     "type":"h2",
-    "title":"通報時檢驗資料<a href=\"codingMemo.html?strMemo=下列四個選項為四則一必填\">\uD83D\uDD06</a>",
-    "tip":"下列四選項為四則一必填"
+    "title":"通報時檢驗資料<a href=\"codingMemo.html?strMemo=下列四個選項為四擇一必填\">\uD83D\uDD06</a>",
+    "tip":"下列四選項為四擇一必填"
   },
   {
+    "rowStart": "<div class=\"indent-h3\">",
     "type":"h3",
     "checkboxTitle":"1. 未曾接受梅毒治療或病史不清楚者",
     "tip":"＊(1)及(2)皆須填寫，其中RPR、VDRL至少擇一，\n且TPHA、TPPA、FTA-abs(+)、TPLA(+)、 EIA(+)、CIA(+)/CMIA(+)至少擇一。"
   },
   {
+    "rowStart": "<div class=\"indent-h4\">",
     "type":"h4",
     "title":"<span class=\"pl-5\">(1)血清學非特異性梅毒螺旋體試驗</span>"
   },
@@ -92,9 +95,10 @@
         "CIA(+)/CMIA(+)"
       ]
     ],
-    "rowEnd":"</div>"
+    "rowEnd":"</div>  </div><!--indent-h4:(1)血清學非特異性梅毒螺旋體試驗-->  </div><!--indent-h3:1. 未曾接受梅毒治療或病史不清楚者-->"
   },
   {
+    "rowStart": "<div class=\"indent-h3\">",
     "type":"h3",
     "checkboxTitle":"2. 臨床檢體（病灶滲出液、組織等）以下列方法檢測出梅毒螺旋體"
   },
@@ -106,9 +110,10 @@
       "螢光抗體檢驗",
       "核酸檢驗"
     ],
-    "rowEnd":"</div>"
+    "rowEnd":"</div>  </div><!--indent-h3-->"
   },
   {
+    "rowStart": "<div class=\"indent-h3\">",
     "type":"h3",
     "checkboxTitle":"3. 腦脊髓液性病研究實驗室試驗"
   },
@@ -117,9 +122,10 @@
     "type":"InputOneLine",
     "title":"CSF-VDRL(+)效價=1:",
     "text":"輸入數字",
-    "rowEnd":"</div>"
+    "rowEnd":"</div>  </div><!--indent-h3-->"
   },
   {
+    "rowStart": "<div class=\"indent-h3\">",
     "type":"h3",
     "checkboxTitle":"4. 曾經接受梅毒治療者"
   },
@@ -131,7 +137,7 @@
       "RPR效價≧4倍上升",
       "VDRL效價≧ 4倍上升"
     ],
-    "rowEnd":"</div>"
+    "rowEnd":"</div>  </div><!--indent-h3-->  </div><!--indent-h2-->"
   },
   {
     "type":"json",
