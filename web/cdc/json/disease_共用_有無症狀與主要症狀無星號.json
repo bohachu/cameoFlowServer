@@ -2,7 +2,7 @@
   {
     "rowStart":"<div class=\"row pt-0 pl-4\">",
     "type":"TitleOneLine",
-    "title":"　有無症狀<span style=\"color:red\">*</span>　"
+    "title":"有無症狀<span style=\"color:red\">*</span>　"
   },
   {
     "type":"Radio2OptionsOneLine",
@@ -12,6 +12,6 @@
   },
   {
     "type":"h3",
-    "title":"　主要症狀"
+    "title":"主要症狀"
   }
 ]
