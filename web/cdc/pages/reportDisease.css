@@ -1,3 +1,26 @@
+.流行病學資料{
+  background-color: #0e5b44;
+}
+
+.旅遊史{
+  background-color: #0c85d0;
+}
+.indent-h1 {
+  margin-left: 0px;
+}
+
+.indent-h2 {
+  margin-left: 0px;
+}
+
+.indent-h3 {
+  margin-left: 24px;
+}
+
+.indent-h4 {
+  margin-left: 48px;
+}
+
 .pretty-h3-checkbox {
   zoom: 175%;
   margin-left: -13px;
