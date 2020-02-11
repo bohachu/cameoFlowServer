@@ -18,8 +18,9 @@
     "comment": "從 「國內旅遊史」 到 「國外居住史」"
   },
   {
-    "type": "h4",
-    "title": "<input class='form-check-input mt-1' type='checkbox'> 國內旅遊史<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面\">\uD83D\uDD06</a>"
+    "type": "htmlSource",
+    "text": "<div class=\"JsonToHtmlCheckbox_buildHtmlAll row pl-0 ml-0 mt-2 mb-0\" style=\"background-color: #FFFFFF\">\n      <b></b>\n      <div class=\"JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0\">\n        <input class=\"form-check-input\" type=\"checkbox\">\n        <label class=\"form-check-label font-weight-bold fs-0\">國內旅遊史<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面\">\uD83D\uDD06</a></label>\n      </div>\n    </div>",
+    "comment": "國內旅遊史標題"
   },
   {
     "type": "select",
@@ -44,8 +45,9 @@
     "title": "＋ 新增一筆國內旅遊史"
   },
   {
-    "type": "h4",
-    "title": "<input class='form-check-input mt-1' type='checkbox'> 國外旅遊史<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面\">\uD83D\uDD06</a>"
+    "type": "htmlSource",
+    "text": "<div class=\"JsonToHtmlCheckbox_buildHtmlAll row pl-0 ml-0 mt-2 mb-0\" style=\"background-color: #FFFFFF\">\n      <b></b>\n      <div class=\"JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0\">\n        <input class=\"form-check-input\" type=\"checkbox\">\n        <label class=\"form-check-label font-weight-bold fs-0\">國外旅遊史<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面\">\uD83D\uDD06</a></label>\n      </div>\n    </div>",
+    "comment": "國外旅遊史標題"
   },
   {
     "type": "inputSmall",
@@ -68,8 +70,9 @@
     "title": "＋ 新增一筆國外旅遊史"
   },
   {
-    "type": "h4",
-    "title": "<input class='form-check-input mt-1' type='checkbox'> 國外居住史<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面\">\uD83D\uDD06</a>"
+    "type": "htmlSource",
+    "text": "<div class=\"JsonToHtmlCheckbox_buildHtmlAll row pl-0 ml-0 mt-2 mb-0\" style=\"background-color: #FFFFFF\">\n      <b></b>\n      <div class=\"JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0\">\n        <input class=\"form-check-input\" type=\"checkbox\">\n        <label class=\"form-check-label font-weight-bold fs-0\">國外居住史<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面\">\uD83D\uDD06</a></label>\n      </div>\n    </div>",
+    "comment": "國外居住史標題"
   },
   {
     "type": "inputSmall",
