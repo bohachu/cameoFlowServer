@@ -65,77 +65,7 @@
     "file":"disease_HIV(18月以下)_個案生母資料_出生日期_孕程_緊密排列.html"
   },
   {
-    "rowStart": "<div class=\"indent-h2\">",
-    "type":"h2",
-    "title":"個案狀況維護與補充資料"
-  },
-  {
-    "rowStart": "<div class=\"indent-h3\">",
-    "type":"input",
-    "title":"出生體重"
-  },
-  {
-    "type":"input",
-    "title":"出生健康狀況"
-  },
-  {
-    "type":"input",
-    "title":"請詳述"
-  },
-  {
-    "type":"htmlSource",
-    "text":"<div class=\"row pl-3\">"
-  },
-  {
-    "type":"radio",
-    "title":"＊出生後是否曾接受案母哺育母乳<span style=\"color:red\">*</span>",
-    "list":[
-      "是",
-      "否",
-      "不詳"
-    ]
-  },
-  {
-    "type":"radio",
-    "title":"＊出生6-12小時內是否給予預防性投藥<span style=\"color:red\">*</span>",
-    "list":[
-      "是",
-      "否",
-      "不詳"
-    ]
-  },
-  {
-    "type":"htmlSource",
-    "text":"</div>"
-  },
-  {
-    "type":"h4",
-    "title":"　藥名及劑量"
-  },
-  {
-    "type": "htmlFile",
-    "file": "disease_HIV(18月以下)_藥名及劑量表格狀可編輯.html"
-  },
-  {
-    "type":"htmlSource",
-    "text":"<div class=\"row pl-0 ml-0 pt-3\">"
-  },
-  {
-    "type": "TitleOneLineFs0",
-    "title": "　採檢項目"
-  },
-  {
-    "type":"Radio2OptionsOneLine",
-    "option1": "PCR",
-    "option2": "ELISA"
-  },
-  {
-    "type":"DateOneLine",
-    "title":"　　抽血日期",
-    "rowEnd": "</div><!--indent-h3> </div><!--indent-h2>"
-  },
-  {
-    "type":"htmlSource",
-    "text":"</div>"
+    "type":"htmlFile",
+    "file":"disease_人類免疫缺乏病毒感染(含母子垂直感染疑似個案)_18月以下_個案狀況維護與補充資料.html"
   }
 ]
