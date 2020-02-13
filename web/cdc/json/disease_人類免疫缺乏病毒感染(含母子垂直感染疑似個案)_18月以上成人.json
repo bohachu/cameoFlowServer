@@ -73,7 +73,7 @@
   },
   {
     "type": "input",
-    "title": "檢驗單位"
+    "title": "檢驗單位<a href=\"codingMemo.html?strMemo=檢驗單位代碼請依輸入之檢驗單位，系統自動帶入\">\uD83D\uDD06</a>"
   },
   {
     "type": "htmlSource",

@@ -32,16 +32,20 @@
     "checkboxTitle":"分子生物學核酸檢測(NAT)陽性"
   },
   {
+    "type": "htmlSource",
+    "text": "<div class=\"row pl-0 ml-0\">"
+  },
+  {
     "type":"date",
     "title":"檢驗日期"
   },
   {
     "type":"input",
-    "title":"檢驗單位"
+    "title":"檢驗單位<a href=\"codingMemo.html?strMemo=檢驗單位代碼請依輸入之檢驗單位，系統自動帶入\">\uD83D\uDD06</a>"
   },
   {
-    "type":"input",
-    "title":"檢驗單位代碼<a href=\"codingMemo.html?strMemo=檢驗單位代碼請依輸入之檢驗單位，系統自動帶入\">\uD83D\uDD06</a>"
+    "type": "htmlSource",
+    "text": "</div>"
   },
   {
     "type":"addRecord",
@@ -57,12 +61,8 @@
     "file": "disease_人類免疫缺乏病毒感染(含母子垂直感染疑似個案)_18月以上成人_感染危險因子.html"
   },
   {
-    "type":"json",
-    "file":"../json/disease_個案生母資料.json"
-  },
-  {
     "type":"htmlFile",
-    "file":"disease_HIV(18月以下)_國籍_出生日期_孕程_緊密排列.html"
+    "file":"disease_HIV(18月以下)_個案生母資料_出生日期_孕程_緊密排列.html"
   },
   {
     "rowStart": "<div class=\"indent-h2\">",
