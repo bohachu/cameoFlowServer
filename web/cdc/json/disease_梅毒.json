@@ -130,7 +130,7 @@
     "checkboxTitle":"4. 曾經接受梅毒治療者"
   },
   {
-    "rowStart":"<div class=\"indent-h4\">",
+    "rowStart":"<div class=\"indent-h4 row mt-2 mb-2\">",
     "type":"CheckboxOneLine",
     "title":"血清學非特異性梅毒螺旋體試驗:",
     "list":[
@@ -164,7 +164,7 @@
     "file":"../json/disease_共用_是否進行愛滋病毒篩檢.json"
   },
   {
-    "rowStart":"<div class=\"row pt-3 pl-0 ml-0\">",
+    "rowStart":"<div class=\"row pb-1 pl-0 ml-0\">",
     "type":"TitleOneLine",
     "title":"個案是否懷孕　　　　　"
   },

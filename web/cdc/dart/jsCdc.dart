@@ -133,13 +133,13 @@ class Radio2OptionsOneLine extends JsonToHtml {
     String strOption1 = this.map['option1'] ?? '';
     String strOption2 = this.map['option2'] ?? '';
     return '''
-      <div class="pt-1 pl-4 custom-control custom-radio custom-control-inline">
+      <div class="pt-2 pl-4 custom-control custom-radio custom-control-inline">
         <input type="radio" class="custom-control-input">
         <label class="custom-control-label fs-0">
           $strOption1
         </label>
       </div>
-      <div class="pt-1 pl-4 custom-control custom-radio custom-control-inline">
+      <div class="pt-2 pl-4 custom-control custom-radio custom-control-inline">
         <input type="radio" class="custom-control-input">
         <label class="custom-control-label fs-0">
           $strOption2
