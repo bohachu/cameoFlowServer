@@ -8,11 +8,6 @@
     "file": "disease_後天免疫缺乏症候群_臨床症狀.html"
   },
   {
-    "type":"h4",
-    "title":"臨床症狀診斷依據<a href=\"codingMemo.html?strMemo=依據不同年齡層，顯示不同星號的欄位，動態出現\">\uD83D\uDD06</a>",
-    "tip":"備註說明：*僅適用於年齡6歲以下個案。 Only among children aged <6 years.\n **僅適用於年齡滿1個月後診斷之個案。 Onset at age >1 month.\n ***僅適用於年齡滿6歲（含）以上個案。 \nOnly among adults, adolescents, and children aged ≥6 years. "
-  },
-  {
     "type":"htmlSource",
     "text":"<div class=\"row\">"
   },
