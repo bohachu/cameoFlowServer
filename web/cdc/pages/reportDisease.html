@@ -15,8 +15,8 @@
 </head>
 
 <body>
-<div class="jsCdc.dart" style="display: none;">
 
+<div class="jsCdc.dart" style="display: none;">
   <!-- 次標題等項目 -->
   <div class="JsonToHtmlRadio_buildHtmlAll" style="clear: both;">
     <div class="form-group ml-3">
@@ -219,6 +219,7 @@
   <div id="reportDiseaseNav"></div>
 
   <div id="vue_block">
+    <!-- {{message}}  {{message}} -->
     <main class="py-md-s pl-md-4" id="top">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -325,14 +326,14 @@
               </div>
               <div class="col-lg-3">
                 <div class="form-group">
-                  <label class="fs-0" for="name2">個案姓名<span style="color:red">*</span></label>
-                  <input class="form-control text-secondary" id="name2" type="text" value="輸入內容">
+                  <label class="fs-0" for="name329">個案姓名<span style="color:red">*</span></label>
+                  <input class="form-control text-secondary" id="name2330" type="text" value="輸入內容">
                 </div>
               </div>
               <div class="col-lg-3">
                 <div class="form-group">
                   <label class="fs-0" for="name185">姓名羅馬拼音</label>
-                  <input class="form-control text-secondary" id="name2" type="text" value="輸入內容">
+                  <input class="form-control text-secondary" id="name2336" type="text" value="輸入內容">
                 </div>
               </div>
               <div class="col-lg-3">
@@ -491,31 +492,31 @@
                 <div class="col-lg-3">
                   <div class="form-group">
                     <label class="fs-0" for="name294">首次入住隔離病房日</label>
-                    <input class="form-control text-secondary" id="name294" type="text" value="年/月/日">
+                    <input class="form-control text-secondary" type="text" value="年/月/日">
                   </div>
                 </div>
                 <div class="col-lg-3">
                   <div class="form-group">
                     <label class="fs-0" for="name294">轉出隔離病房日</label>
-                    <input class="form-control text-secondary" id="name294" type="text" value="年/月/日">
+                    <input class="form-control text-secondary" type="text" value="年/月/日">
                   </div>
                 </div>
                 <div class="col-lg-3">
                   <div class="form-group">
                     <label class="fs-0" for="name294">首次住ICU日<a href="https://docs.google.com/spreadsheets/d/11fnorqGalLlV-YU-tVuK0a_pyi5UFEXKnpuzJvi8hFA/edit#gid=1054066465">🔆</a></label>
-                    <input class="form-control text-secondary" id="name294" type="text" value="年/月/日">
+                    <input class="form-control text-secondary" type="text" value="年/月/日">
                   </div>
                 </div>
                 <div class="col-lg-3">
                   <div class="form-group">
                     <label class="fs-0" for="name294">轉出ICU日</label>
-                    <input class="form-control text-secondary" id="name294" type="text" value="年/月/日">
+                    <input class="form-control text-secondary" type="text" value="年/月/日">
                   </div>
                 </div>
                 <div class="col-lg-3">
                   <div class="form-group">
                     <label class="fs-0" for="name294">出院日</label>
-                    <input class="form-control text-secondary" id="name294" type="text" value="年/月/日">
+                    <input class="form-control text-secondary" type="text" value="年/月/日">
                   </div>
                 </div>
                 <div class="col-lg-6">
@@ -533,7 +534,7 @@
                 <div class="col-lg-3">
                   <div class="form-group">
                     <label class="fs-0" for="name294">轉院日期</label>
-                    <input class="form-control text-secondary" id="name294" type="text" value="年/月/日">
+                    <input class="form-control text-secondary" type="text" value="年/月/日">
                     <!--
                 <label class="fs-0" for="datepicker735">轉院日期</label>
                 <input class="form-control datetimepicker text-secondary" id="datepicker735" type="text" value="年/月/日"
@@ -642,7 +643,10 @@
             </div>
           </div>
         </div>
+
+        <vue_str_html_first></vue_str_html_first>
         <div id="reportDiseaseDartHtml"></div>
+
         <div id="通報單備註欄位"></div>
         <div class="mt-3 mb-3">
           <button type="button" class="btn pl-3 pr-3 text-white ml-3" style="background-color: #0F7841">確定通報</button>
@@ -653,8 +657,6 @@
           <button type="button" class="btn pl-3 pr-3 text-white ml-3" style="background-color: #FAA039">清除重填</button>
           <a href="codingMemo.html?strMemo=點選按鈕，要連動將該次通報單填答內容清除。">🔆</a>
         </div>
-
-        <urgent_table_expand></urgent_table_expand>
       </div>
     </main>
   </div>
@@ -672,6 +674,7 @@
 <script src="../assets/lib/prismjs/prism.js"></script>
 <script src="../assets/js/theme.js"></script>
 <script src="../assets/lib/flatpickr/flatpickr.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="reportDisease.js"></script>
 

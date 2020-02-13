@@ -1,3 +1,45 @@
+== 20200213 23:44 dart vue 已經製作好同時能使用的架構了（耶！） ==
+001 ?strDiseaseFile= 後面參數可以接 .json 檔案並且給 dart 處理運作，展開 .json 檔案
+002 &strHtmlFirst= 後面參數可以接 .html 檔案，並且丟給 reportDisease.js 進行 vuejs 的元件與模板處理
+
+003 舉例如下，可以運用這個網址進行測試
+http://localhost:53322/cdc/pages/reportDisease.html?strDiseaseFile=../json/disease_%E5%BE%8C%E5%A4%A9%E5%85%8D%E7%96%AB%E7%BC%BA%E4%B9%8F%E7%97%87%E5%80%99%E7%BE%A4.json&strHtmlFirst=disease_vue_%E5%BE%8C%E5%A4%A9%E5%85%8D%E7%96%AB%E7%BC%BA%E4%B9%8F%E7%97%87%E5%80%99%E7%BE%A4_%E8%87%A8%E5%BA%8A%E7%97%87%E7%8B%80.html
+
+004 在 reportDisease.html 裡面，會先顯示 vue 處理的動態檔案 strHtmlFirst 指定的 .html，然後才會處理 dart 的動態檔案 .json
+        <vue_str_html_first></vue_str_html_first>
+        <div id="reportDiseaseDartHtml"></div>
+
+005 可以參考 disease_vue_後天免疫缺乏症候群_臨床症狀.html,裡面就會包有自己定義的 <vue_radio> 這個標籤的使用方法
+    <div>
+      bowen start 這是 vue 起始測試的區域
+      vue_radio 001 <vue_radio></vue_radio>
+      vue_radio 002 <vue_radio></vue_radio>
+      vue_radio 003 <vue_radio></vue_radio>
+      vue_radio 004 <vue_radio></vue_radio>
+      vue_radio 005 <vue_radio></vue_radio>
+      bowen end 這是 vue 結束測試的區域
+    </div>
+
+006 <vue_radio> 這個可重用元件定義在以下的檔案 reportDisease.js
+    Vue.component("vue_radio", {
+      template:`
+        <div class="col-2">
+          <div class="JsonToHtmlRadio_getListTemplate custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input">
+            <label class="custom-control-label fs-0"></label>
+          </div>
+        </div>
+      `
+    })
+
+007 往後擴充 vue 元件的順序：
+  a. 如果 .json 檔案不夠好用，可以在 xxx.json 檔案的前面嵌入 yyy.html 裡面運用 vue component 撰寫
+  b. 先在 reportDisease.js 裡面寫好自己想要的多種全新 vue 元件，舉例而言類似 Vue.component("vue_radio", {
+  c. 接下去就可以在 yyy.html 裡面撰寫運用新元件的任意 HTML Source Code
+  d. 測試的時候記得網址要指定 reportDisease.html?strDiseaseFile=xxx.json&strHtmlFirst=yyy.html
+  e. 要注意網頁顯示的時候： yyy.html 的內容會出現在前面，而 xxx.json 內容會出現在後面
+  f. yyy.html 呼叫 reportDisease.js 裡面的元件時，可以帶 props 參數沒有問題，可以參考 vue 官方教學文件
+
 == 20200207 22:36
 ?strDiseaseFile=../json/disease_人類免疫缺乏病毒感染(含母子垂直感染疑似個案)_18月以下.json
 done 23:36 finish
