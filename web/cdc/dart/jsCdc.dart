@@ -35,6 +35,7 @@ Future<String> scanJsonToHtml(List lstJson) async {
     'TitleOneLine': TitleOneLine(),
     'TitleOneLineFs0': TitleOneLineFs0(),
     'Radio2OptionsOneLine': Radio2OptionsOneLine(),
+    'Radio3OptionsOneLine': Radio3OptionsOneLine(),
     'Radio4OptionsOneLine': Radio4OptionsOneLine(),
     'SelectOneLine': SelectOneLine(),
     'DateOneLine': DateOneLine(),
@@ -143,6 +144,34 @@ class Radio2OptionsOneLine extends JsonToHtml {
         <input type="radio" class="custom-control-input">
         <label class="custom-control-label fs-0">
           $strOption2
+        </label>
+      </div>
+    ''';
+  }
+}
+
+class Radio3OptionsOneLine extends JsonToHtml {
+  Future<String> getTags() async {
+    String strOption1 = this.map['option1'] ?? '';
+    String strOption2 = this.map['option2'] ?? '';
+    String strOption3 = this.map['option3'] ?? '';
+    return '''
+      <div class="pt-1 pl-4 custom-control custom-radio custom-control-inline">
+        <input type="radio" class="custom-control-input">
+        <label class="custom-control-label fs-0">
+          $strOption1
+        </label>
+      </div>
+      <div class="pt-1 pl-4 custom-control custom-radio custom-control-inline">
+        <input type="radio" class="custom-control-input">
+        <label class="custom-control-label fs-0">
+          $strOption2
+        </label>
+      </div>
+      <div class="pt-1 pl-4 custom-control custom-radio custom-control-inline">
+        <input type="radio" class="custom-control-input">
+        <label class="custom-control-label fs-0">
+          $strOption3
         </label>
       </div>
     ''';

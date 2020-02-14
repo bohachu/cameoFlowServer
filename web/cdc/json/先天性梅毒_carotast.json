@@ -25,43 +25,36 @@
     "type": "json",
     "file": "../json/disease_其他症狀.json"
   },
-
-
-
   {
     "rowStart": "<div class=\"indent-h2\">",
     "type":"h2",
-    "title":"通報時檢驗資料<a href=\"codingMemo.html?strMemo=下面五個選項為五則一必填，需要有動態收合排版的效果，前面checkbox打勾才會出現子選項\">\uD83D\uDD06</a>",
+    "title":"通報時檢驗資料<a href=\"codingMemo.html?strMemo=下列四個選項為四擇一必填\">\uD83D\uDD06</a>",
     "tip":"下列四選項為五擇一必填"
   },
   {
     "rowStart": "<div class=\"indent-h3\">",
     "type":"h3",
-    "checkboxTitle":"1. 特異性梅毒螺旋體試驗<span style=\"color:red\">*</span>"
+    "checkboxTitle":"1. 特異性梅毒螺旋體試驗<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=下面五個選項為五則一必填，需要有動態收合排版的效果，前面checkbox打勾才會出現子選項\">\uD83D\uDD06</a>"
   },
   {
-    "rowStart":"<div class=\"indent-h4 row\">",
+    "rowStart":"<div class=\"indent-h4\">",
     "type":"InputOneLine",
-    "title":"TPHA效價=1:",
+    "title":"TPHA=1:",
     "text":"輸入數字"
   },
   {
     "type":"InputOneLine",
-    "title":"　TPPA效價=1:",
+    "title":"　TPPA=1:",
     "text":"輸入數字",
     "rowEnd":"</div>"
   },
   {
-    "rowStart":"<div class=\"indent-h4\">",
+    "rowStart":"<div class=\"pl-4\">",
     "type":"checkbox",
     "list":[
       [
         "checkbox",
         "FTA-abs(+)"
-      ],
-      [
-        "checkbox",
-        "TPLA(+)"
       ],
       [
         "checkbox",
@@ -80,7 +73,7 @@
     "title":"2. 非特異性梅毒螺旋體試驗<span style=\"color:red\">*</span>"
   },
   {
-    "rowStart":"<div class=\"indent-h4 row\">",
+    "rowStart":"<div class=\"indent-h4\">",
     "type":"InputOneLine",
     "title":"RPR(+)效價=1:",
     "text":"輸入數字"
@@ -94,7 +87,7 @@
   {
     "rowStart": "<div class=\"indent-h3\">",
     "type":"h3",
-    "checkboxTitle":"3. 臨床檢體(病灶滲出液、組織、胎盤、臍帶、屍體、鼻腔分泌物等)以下列方式檢測出梅毒螺旋體<span style=\"color:red\">*</span>"
+    "checkboxTitle":"3. 臨床檢體(病灶滲出液、組織、胎盤、臍帶、屍體、鼻腔分泌物等)以下列方式檢測出梅毒螺旋體：<span style=\"color:red\">*</span>"
   },
   {
     "rowStart":"<div class=\"indent-h4\">",
@@ -123,7 +116,7 @@
   {
     "rowStart": "<div class=\"indent-h3\">",
     "type":"h3",
-    "checkboxTitle":"5. 腦脊髓液性病研究實驗室試驗<span style=\"color:red\">*</span>"
+    "checkboxTitle":"5. 腦脊髓液性病研究實驗室試驗"
   },
   {
     "rowStart":"<div class=\"indent-h4\">",
@@ -135,60 +128,20 @@
   {
     "rowStart": "<div class=\"indent-h3\">",
     "type":"h3",
-    "title":"6. 嬰兒腦脊髓液細胞計數和生化檢查異常情形<span style=\"color:red\">*</span>"
+    "checkboxTitle":"6. 嬰兒腦脊髓液細胞計數和生化檢查異常情形<span style=\"color:red\">*</span>"
   },
-
-
   {
     "rowStart":"<div class=\"indent-h4\">",
-    "type":"Radio3OptionsOneLine",
-    "option1":"年齡未滿1個月： >15 WBC/microL, protein > 120 mg/dL",
-    "option2":"年齡1個月以上： >5 WBC/microL, protein > 40 mg/dL",
-    "option3":"皆不符合",
+    "type": "radio",
+    "list": [
+      "年齡未滿1個月： >15 WBC/microL, protein > 120 mg/dL",
+      "年齡1個月以上： >5 WBC/microL, protein > 40 mg/dL",
+      "皆不符合"
+    ],
     "rowEnd":"</div>  </div><!--indent-h3-->  </div><!--indent-h2-->"
   },
   {
-    "type": "json",
-    "file": "../json/disease_流行病學資料.json"
-  },
-  {
-    "type": "json",
-    "file": "../json/disease_個案生母資料.json"
-  },
-  {
-    "type": "h4",
-    "title": "<span style='color: #333333; font-weight: 500;'>其生母為梅毒個案，但生產時未治療、尚未完成治療、治療狀況不明或已接受治療但RPR/VDRL效價尚未呈現4倍以上下降<span style=\"color:red\">*</span></span>"
-  },
-  {
-    "type": "radio",
-    "list": [
-      "是",
-      "否",
-      "不詳"
-    ]
-  },
-  {
-    "type": "h4",
-    "title": "<span style='color: #333333; font-weight: 500;'>其生母之梅毒病史不清楚<span style=\"color:red\">*</span></span>"
-  },
-  {
-    "type": "radio",
-    "list": [
-      "是",
-      "否",
-      "不詳"
-    ]
-  },
-  {
-    "type": "h4",
-    "title": "<span style='color: #333333; font-weight: 500;'>個案VDRL效價是否大於母親生產時效價之四倍以上<span style=\"color:red\">*</span></span>"
-  },
-  {
-    "type": "radio",
-    "list": [
-      "是",
-      "否",
-      "不詳"
-    ]
+    "type":"json",
+    "file":"../json/disease_流行病學資料.json"
   }
 ]
