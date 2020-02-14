@@ -43,12 +43,12 @@
     "rowStart":"<div class=\"indent-h4 row\">",
     "type":"InputOneLine",
     "title":"TPHA效價=1:",
-    "text":"輸入數字"
+    "text":"輸入數字，80×2的n次方"
   },
   {
     "type":"InputOneLine",
     "title":"　TPPA效價=1:",
-    "text":"輸入數字",
+    "text":"輸入數字，80×2的n次方",
     "rowEnd":"</div>"
   },
   {
@@ -77,18 +77,18 @@
   {
     "rowStart": "<div class=\"indent-h3\">",
     "type":"h3",
-    "title":"2. 非特異性梅毒螺旋體試驗<span style=\"color:red\">*</span>"
+    "checkboxTitle":"2. 非特異性梅毒螺旋體試驗<span style=\"color:red\">*</span>"
   },
   {
     "rowStart":"<div class=\"indent-h4 row\">",
     "type":"InputOneLine",
     "title":"RPR(+)效價=1:",
-    "text":"輸入數字"
+    "text":"輸入數字，2的n次方"
   },
   {
     "type":"InputOneLine",
     "title":"　VDRL(+)效價=1:",
-    "text":"輸入數字",
+    "text":"輸入數字，2的n次方",
     "rowEnd":"</div><!--indent-h4-->  </div><!--indent-h3:2. 非特異性梅毒螺旋體試驗-->"
   },
   {
@@ -129,16 +129,15 @@
     "rowStart":"<div class=\"indent-h4\">",
     "type":"InputOneLine",
     "title":"CSF-VDRL(+)效價=1:",
-    "text":"輸入數字",
+    "text":"輸入數字，2的n次方",
     "rowEnd":"</div>  </div><!--indent-h3-->"
   },
   {
     "rowStart": "<div class=\"indent-h3\">",
     "type":"h3",
-    "title":"6. 嬰兒腦脊髓液細胞計數和生化檢查異常情形<span style=\"color:red\">*</span>"
+    "title":"6. 個案腦脊髓液細胞計數和生化檢查異常情形",
+    "tip":"此選項為研判所需欄位"
   },
-
-
   {
     "rowStart":"<div class=\"indent-h4\">",
     "type":"Radio3OptionsOneLine",
@@ -152,43 +151,7 @@
     "file": "../json/disease_流行病學資料.json"
   },
   {
-    "type": "json",
-    "file": "../json/disease_個案生母資料.json"
-  },
-  {
-    "type": "h4",
-    "title": "<span style='color: #333333; font-weight: 500;'>其生母為梅毒個案，但生產時未治療、尚未完成治療、治療狀況不明或已接受治療但RPR/VDRL效價尚未呈現4倍以上下降<span style=\"color:red\">*</span></span>"
-  },
-  {
-    "type": "radio",
-    "list": [
-      "是",
-      "否",
-      "不詳"
-    ]
-  },
-  {
-    "type": "h4",
-    "title": "<span style='color: #333333; font-weight: 500;'>其生母之梅毒病史不清楚<span style=\"color:red\">*</span></span>"
-  },
-  {
-    "type": "radio",
-    "list": [
-      "是",
-      "否",
-      "不詳"
-    ]
-  },
-  {
-    "type": "h4",
-    "title": "<span style='color: #333333; font-weight: 500;'>個案VDRL效價是否大於母親生產時效價之四倍以上<span style=\"color:red\">*</span></span>"
-  },
-  {
-    "type": "radio",
-    "list": [
-      "是",
-      "否",
-      "不詳"
-    ]
+    "type":"htmlFile",
+    "file":"disease_先天性梅毒_個案生母資料.html"
   }
 ]
