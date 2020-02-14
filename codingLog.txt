@@ -1,3 +1,19 @@
+001 在 reportDisease.html 有九個區塊可以動態產生HTML，第一個區塊是 strDiseaseFile 相容於以前的網址
+        <div id="strDiseaseFile"></div>
+        <vue_01></vue_01>
+        <div id="json_02"></div>
+        <vue_03></vue_03>
+        <div id="json_04"></div>
+        <vue_05></vue_05>
+        <div id="json_06"></div>
+        <vue_07></vue_07>
+        <div id="json_08"></div>
+002 vue_01 這個區塊在網址可以指定任意 .html 檔案名稱，並且裡面可以包 vue 元件的標籤
+003 vue 元件 template 可以製作在 reportDisease.js 裡面，已經有示範 vue_radio
+004 json_02 開始的變數區塊可以任意指定 .json 檔案給 dart 交叉處理
+005 網址變數參數如下：
+?strDiseaseFile=../json/disease_後天免疫缺乏症候群.json&vue_01=vue_01_後天免疫缺乏症候群_臨床症狀.html&vue_03=vue_03_後天免疫缺乏症候群_臨床症狀.html
+
 == 20200213 23:44 dart vue 已經製作好同時能使用的架構了（耶！） ==
 001 ?strDiseaseFile= 後面參數可以接 .json 檔案並且給 dart 處理運作，展開 .json 檔案
 002 &strHtmlFirst= 後面參數可以接 .html 檔案，並且丟給 reportDisease.js 進行 vuejs 的元件與模板處理
