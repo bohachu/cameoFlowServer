@@ -81,21 +81,33 @@ class JsonToHtmlAddRecord extends JsonToHtml {
 
 void main() async {
   window.console.log('jsCdc.dart/main()');
+  await processJsonId('strDiseaseFile');
+  await processJsonId('json_02');
+  await processJsonId('json_04');
+  await processJsonId('json_06');
+  await processJsonId('json_08');
+}
 
+Future processJsonId(String strJsonId) async {
   Map map = getUriParameters();
-  String strDiseaseFile = map['strDiseaseFile'];
+  String strJsonFileName = map[strJsonId];
   String strJson = '';
-  if (strDiseaseFile == null) {
-    strDiseaseFile = '../json/disease_登革熱.json';
+  if (strJsonFileName == null) {
+    if (strJsonId == "strDiseaseFile") {
+      strJsonFileName = '../json/disease_登革熱.json';
+    }
+    if (strJsonId.startsWith("json_")) {
+      return;
+    }
   } else {
-    strDiseaseFile = Uri.decodeFull(strDiseaseFile);
+    strJsonFileName = Uri.decodeFull(strJsonFileName);
   }
-  window.console.log('jsCdc.dart/strDiseaseFile: $strDiseaseFile');
-  strJson = await httpGet(strDiseaseFile);
-  String strDiseaseName = getDiseaseName(strDiseaseFile);
+  window.console.log('jsCdc.dart/strJsonFileName: $strJsonFileName');
+  strJson = await httpGet(strJsonFileName);
+  String strDiseaseName = getDiseaseName(strJsonFileName);
   List lstJson = jsonDecode(strJson);
   String strHtml = await scanJsonToHtml(lstJson);
-  setInnerHtml(strHtml, strDiseaseName);
+  setInnerHtml(strHtml, strDiseaseName, strJsonId);
 }
 
 String getDiseaseName(String strReportDiseaseJsonFile) {
@@ -106,8 +118,8 @@ String getDiseaseName(String strReportDiseaseJsonFile) {
   return strDiseaseName;
 }
 
-void setInnerHtml(String strHtml, String strDiseaseName) {
-  querySelector('#reportDiseaseDartHtml')
+void setInnerHtml(String strHtml, String strDiseaseName, String strJsonId) {
+  querySelector('#$strJsonId')
       .setInnerHtml(strHtml, treeSanitizer: NodeTreeSanitizer.trusted);
   querySelector('#strDiseaseName').setInnerHtml('通報疾病：$strDiseaseName');
 }
