@@ -406,10 +406,12 @@ class JsonToHtmlH2 extends JsonToHtml {
   final strFontSize = 'fs-2';
   final strHr = '<hr/>';
   String strCheckboxTitle = '';
+  String strRadioTitle = '';
 
   init(Map map) {
     super.init(map);
     strCheckboxTitle = map['checkboxTitle'] ?? '';
+    strRadioTitle = map['radioTitle'] ?? '';
   }
 
   Future<String> getTags() async {
@@ -439,11 +441,22 @@ class JsonToHtmlH2 extends JsonToHtml {
       //strMl = 'ml-5 jsCdc_dart_type_checkbox003';
     }
 
+    if (strRadioTitle.length > 0) {
+      String strZoom = 'zoom:150%';
+      if (strType == 'h3') strZoom = 'zoom:175%';
+      strRadioTitle = ''' 
+        <span><input class="radio-inline" type="radio" style="$strZoom"></span> 
+        <span class="mt-0 pt-0">$strRadioTitle</span>
+      ''';
+      //strMl = 'ml-5 jsCdc_dart_type_checkbox003';
+    }
+
     //h2 h3 h4 mt高度在此設定
     String strHtml = '''
         <div class="row ml-0 pl-0 mt-0 mb-2 font-weight-bold text-black $strFontSize">
           $strTitle
           $strCheckboxTitle
+          $strRadioTitle
           $strHtmlTip
         </div>
     ''';

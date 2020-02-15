@@ -42,7 +42,7 @@
   {
     "rowStart": "<div class=\"indent-h3\">",
     "type":"h3",
-    "checkboxTitle":"1. 未曾接受梅毒治療或病史不清楚者",
+    "radioTitle":"1. 未曾接受梅毒治療或病史不清楚者",
     "tip":"＊(1)及(2)皆須填寫，其中RPR、VDRL至少擇一，\n且TPHA、TPPA、FTA-abs(+)、TPLA(+)、 EIA(+)、CIA(+)/CMIA(+)至少擇一。"
   },
   {
@@ -100,7 +100,7 @@
   {
     "rowStart": "<div class=\"indent-h3\">",
     "type":"h3",
-    "checkboxTitle":"2. 臨床檢體（病灶滲出液、組織等）以下列方法檢測出梅毒螺旋體"
+    "radioTitle":"2. 臨床檢體（病灶滲出液、組織等）以下列方法檢測出梅毒螺旋體"
   },
   {
     "rowStart":"<div class=\"indent-h4\">",
@@ -115,7 +115,7 @@
   {
     "rowStart": "<div class=\"indent-h3\">",
     "type":"h3",
-    "checkboxTitle":"3. 腦脊髓液性病研究實驗室試驗"
+    "radioTitle":"3. 腦脊髓液性病研究實驗室試驗"
   },
   {
     "rowStart":"<div class=\"indent-h4\">",
@@ -127,7 +127,7 @@
   {
     "rowStart": "<div class=\"indent-h3\">",
     "type":"h3",
-    "checkboxTitle":"4. 曾經接受梅毒治療者"
+    "radioTitle":"4. 曾經接受梅毒治療者"
   },
   {
     "rowStart":"<div class=\"indent-h4 row mt-2 mb-2\">",
