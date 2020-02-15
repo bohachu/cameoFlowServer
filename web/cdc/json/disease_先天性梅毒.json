@@ -41,14 +41,16 @@
   },
   {
     "rowStart":"<div class=\"indent-h4 row\">",
-    "type":"InputOneLine",
+    "type":"InputOneLineCol",
     "title":"TPHA效價=1:",
-    "text":"輸入數字，80×2的n次方"
+    "text":"輸入數字，80×2的n次方",
+    "col": "col-4"
   },
   {
-    "type":"InputOneLine",
+    "type":"InputOneLineCol",
     "title":"　TPPA效價=1:",
     "text":"輸入數字，80×2的n次方",
+    "col": "col-4",
     "rowEnd":"</div>"
   },
   {

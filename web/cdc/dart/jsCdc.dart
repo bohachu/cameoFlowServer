@@ -31,6 +31,7 @@ Future<String> scanJsonToHtml(List lstJson) async {
     'htmlSource': JsonToHtmlSource(),
     'htmlFile': JsonToHtmlFile(),
     'InputOneLine': InputOneLine(),
+    'InputOneLineCol': InputOneLineCol(),
     'CheckboxOneLine': CheckboxOneLine(),
     'TitleOneLine': TitleOneLine(),
     'TitleOneLineFs0': TitleOneLineFs0(),
@@ -254,7 +255,14 @@ class InputOneLine extends JsonToHtml {
   }
 }
 
-
+class InputOneLineCol extends JsonToHtml {
+  Future<String> getTags() async {
+    return '''
+      <div class="pt-1 fs-0  text-black"><b>$strTitle</b></div>
+      <input class="$strCol form-control text-secondary ml-2 mb-2" type="text" placeholder="$strText">    
+      ''';
+  }
+}
 
 class JsonToHtmlSource extends JsonToHtml {
   Future<String> getTags() async => this.strText;
