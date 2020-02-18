@@ -6,7 +6,7 @@
 
   {
     "type": "htmlSource",
-    "text": "<div class=\"mt-0 mb-2 text-black fs-2 font-weight-bold\" style=\"clear: both;\"><span class=\"mt-0\">臨床症狀</span></div>\n"
+    "text": "<div class=\"mt-3 mb-0 text-black fs-2 font-weight-bold\" style=\"clear: both;\"><span class=\"mt-0\">臨床症狀</span></div>\n"
   },
   {
     "type": "htmlSource",

@@ -403,6 +403,7 @@ class JsonToHtmlDiseaseName extends JsonToHtml {
 }
 
 class JsonToHtmlH2 extends JsonToHtml {
+  final strmt = 'mt-3';
   final strFontSize = 'fs-2';
   final strHr = '<hr/>';
   String strCheckboxTitle = '';
@@ -453,7 +454,7 @@ class JsonToHtmlH2 extends JsonToHtml {
 
     //h2 h3 h4 mt高度在此設定
     String strHtml = '''
-        <div class="row ml-0 pl-0 mt-0 mb-2 font-weight-bold text-black $strFontSize">
+        <div class="row ml-0 pl-0 $strmt mb-2 font-weight-bold text-black $strFontSize">
           $strTitle
           $strCheckboxTitle
           $strRadioTitle
@@ -466,11 +467,13 @@ class JsonToHtmlH2 extends JsonToHtml {
 }
 
 class JsonToHtmlH3 extends JsonToHtmlH2 {
+  final strmt = 'mt-0';
   final strFontSize = 'fs-1';
   final strHr = '';
 }
 
 class JsonToHtmlH4 extends JsonToHtmlH2 {
+  final strmt = 'mt-0';
   final strFontSize = 'fs-0';
   final strHr = '';
 }
