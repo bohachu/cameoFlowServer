@@ -32,7 +32,7 @@
     "rowStart": "<div class=\"indent-h2\">",
     "type":"h2",
     "title":"通報時檢驗資料<a href=\"codingMemo.html?strMemo=下面五個選項為五則一必填，需要有動態收合排版的效果，前面checkbox打勾才會出現子選項\">\uD83D\uDD06</a>",
-    "tip":"下列四選項為五擇一必填"
+    "tip":"下列五選項為五擇一必填"
   },
   {
     "rowStart": "<div class=\"indent-h3\">",

@@ -258,7 +258,7 @@ class InputOneLine extends JsonToHtml {
 class InputOneLineCol extends JsonToHtml {
   Future<String> getTags() async {
     return '''
-      <div class="pt-1 fs-0  text-black"><b>$strTitle</b></div>
+      <label class="pt-1 fs-0 mt-1 text-black">$strTitle</label>
       <input class="$strCol form-control text-secondary ml-2 mb-2" type="text" placeholder="$strText">    
       ''';
   }
