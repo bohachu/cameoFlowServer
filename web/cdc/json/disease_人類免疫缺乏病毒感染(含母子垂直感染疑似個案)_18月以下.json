@@ -15,7 +15,7 @@
   {
     "rowStart": "<div class=\"indent-h3\">",
     "type":"h3",
-    "title":"HIV確診定義<span style=\"color:red\">*</span>"
+    "title":"HIV確診定義<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=如果直接勾選「出生通報母子垂直感染疑似個案」項下的任一選項，系統要自動將「出生通報母子垂直感染疑似個案」勾選起來。\">\uD83D\uDD06</a>"
   },
   {
     "rowStart": "<div class=\"indent-h4\">",
@@ -41,7 +41,7 @@
   },
   {
     "type":"input",
-    "title":"檢驗單位<a href=\"codingMemo.html?strMemo=檢驗單位代碼請依輸入之檢驗單位，系統自動帶入\">\uD83D\uDD06</a>"
+    "title":"檢驗單位<a href=\"codingMemo.html?strMemo=檢驗單位代碼請依輸入之檢驗單位，系統自動紀錄其檢驗單位代碼，並記錄到資料庫裡。\">\uD83D\uDD06</a>"
   },
   {
     "type": "htmlSource",
