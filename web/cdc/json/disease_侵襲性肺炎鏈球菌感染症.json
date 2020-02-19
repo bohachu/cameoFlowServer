@@ -25,12 +25,18 @@
     "file": "../json/disease_其他症狀.json"
   },
   {
-    "type": "h2",
-    "title": "通報時檢驗資料"
+    "rowStart": "<div class=\"indent-h2\">",
+    "type":"h2",
+    "title":"通報時檢驗資料"
   },
   {
-    "type": "h4",
-    "title": "醫院自行檢驗結果：自下列何種採檢部位培養出肺炎鏈球菌(Streptococcus pneumoniae)：<span style=\"color:red\">*</span>"
+    "rowStart": "<div class=\"indent-h3\">",
+    "type":"h3",
+    "title":"醫院自行檢驗結果：自下列何種採檢部位培養出肺炎鏈球菌(Streptococcus pneumoniae)<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h4\">"
   },
   {
     "type": "checkbox",
@@ -41,21 +47,12 @@
       "關節液(Synovial fluid)",
       "骨髓(Bone marrow)",
       "心包膜液(Pericardial fluid)",
-      "腹膜液(Peritoneal fluid)",
-      "其他正常無菌組織"
+      "腹膜液(Peritoneal fluid)"
     ]
   },
   {
-    "type": "input",
-    "title": "如勾選其他正常無菌組織(請描述種類)：<span style=\"color:red\">*</span>"
-  },
-  {
-    "type": "date",
-    "title": "採檢日期：<span style=\"color:red\">*</span>"
-  },
-  {
-    "type": "date",
-    "title": "檢驗結果報告日期：<span style=\"color:red\">*</span>"
+    "type": "htmlFile",
+    "file": "disease_侵襲性肺炎鏈球菌感染症_其他症狀.html"
   },
   {
     "type": "json",
@@ -66,29 +63,50 @@
     "file": "../json/disease_個案生母資料.json"
   },
   {
-    "type": "radio",
-    "title": "<p style='font-size: 20px; font-weight: bold; color: #000;'>個案是否具有潛在疾病？<span style=\"color:red\">*</span></p>",
-    "list": [
-      "否",
-      "是，請勾選下列疾病：（可複選）"
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h2\">"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h3\">"
+  },
+  {
+    "rowStart":"<div class=\"row pb-1 pl-0 ml-0\">",
+    "type":"TitleOneLine",
+    "title":"個案是否具有潛在疾病<span style=\"color:red\">*</span>"
+  },
+  {
+    "type":"Radio2OptionsOneLine",
+    "option1":"否",
+    "option2":"是，請勾選下列疾病(可複選)："
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "1. 免疫健全者(Immunocompetent persons)"
     ]
   },
   {
-    "type": "h3",
-    "title": "<span style='margin-left: 20px;'><input class='form-check-input mt-1' type='checkbox'>1. 免疫健全者(Immunocompetent persons)</span>"
+    "rowStart":"<div class=\"indent-h5\">",
+    "type":"checkbox",
+    "list":[
+      "慢性心臟疾病(Chronic heart disease)：含先天發紺性心臟病及心臟衰竭，但高血壓除外"
+    ]
   },
   {
     "type": "checkbox",
     "list": [
-      "(1)慢性心臟疾病(Chronic heart disease)：含先天發紺性心臟病及心臟衰竭，但高血壓除外",
-      "(2)慢性肺臟病(Chronic lung disease，但氣喘除外)",
-      "(3)糖尿病(Diabetes mellitus)",
-      "(4)腦脊髓液滲漏(Cerebrospinal fluid leaks)",
-      "(5)人工耳植入者(Cochlear implant)",
-      "(6)酗酒(Alcoholism)",
-      "(7)慢性肝病，包含肝硬化(Chronic liver disease, including cirrhosis)",
-      "(8)抽煙(Cigarette smoking)"
-    ]
+      "慢性心臟疾病(Chronic heart disease)：含先天發紺性心臟病及心臟衰竭，但高血壓除外",
+      "慢性肺臟病(Chronic lung disease，但氣喘除外)",
+      "糖尿病(Diabetes mellitus)",
+      "腦脊髓液滲漏(Cerebrospinal fluid leaks)",
+      "人工耳植入者(Cochlear implant)",
+      "酗酒(Alcoholism)",
+      "慢性肝病，包含肝硬化(Chronic liver disease, including cirrhosis)",
+      "抽煙(Cigarette smoking)"
+    ],
+    "rowEnd":"</div><!--indent-h5-->  </div><!--indent-h4-->"
   },
   {
     "type": "h3",
