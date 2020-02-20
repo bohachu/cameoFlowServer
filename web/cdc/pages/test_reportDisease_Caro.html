@@ -246,7 +246,8 @@
           </div>
           <div class="col-4" onclick="location.href='#state2';" style="cursor: pointer;">
             個案資料
-            <span tooltip="．資料未填寫完成" flow="left"><i class="fas fa-exclamation-circle" style="color: #00a65a;"></i></span>
+            <span tooltip="．資料未填寫完成" flow="left"><i class="fas fa-exclamation-circle"
+                                                    style="color: #00a65a;"></i></span>
           </div>
           <div class="col-4" onclick="location.href='#state3';" style="cursor: pointer;">
             通報疾病資料
@@ -304,8 +305,6 @@
             </div>
 
 
-
-
             <div class="col-lg-6">
               <div class="form-group">
                 <label class="fs-0" for="address">通報單位地址<span style="color:red">*</span></label>
@@ -355,7 +354,7 @@
                        value="Wang Da Ming">
               </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-2">
               <div class="form-group">
                 <label class="fs-0" for="gender">性別</label></br>
                 <div class="custom-control custom-radio custom-control-inline">
@@ -368,15 +367,84 @@
                 </div>
               </div>
             </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="fs-0" for="name147">出生日期<span style="color:red">*</span><a
+                  href="codingMemo.html?strMemo=希望可以快速選擇年份的元件（可以參考精誠易用性動態雛形的元件）">🔆</a></label>
+              </div>
+                <div class="col-lg-4">
+                <label class="pt-2 fs-0">前</label>
+              <select class="col-1 form-control text-secondary">
+                <option>請選擇</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+              <label class="pt-2 fs-0">年</label>
+              <select class="col-1 form-control text-secondary">
+                <option>請選擇</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+              <label class="pt-2 fs-0">月</label>
+              <select class="col-1 form-control text-secondary">
+                <option>請選擇</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+              <label class="pt-2 fs-0">日</label>
+              </div>
+            </div>
+
+              <label class="pt-2 fs-0">前</label>
+              <select class="col-1 form-control text-secondary">
+                <option>請選擇</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+              <label class="pt-2 fs-0">年</label>
+              <select class="col-1 form-control text-secondary">
+                <option>請選擇</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+              <label class="pt-2 fs-0">月</label>
+              <select class="col-1 form-control text-secondary">
+                <option>請選擇</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+              <label class="pt-2 fs-0">日</label>
+
+
             <div class="col-lg-3">
               <div class="form-group">
-                <label class="fs-0" for="name147">出生日期<span style="color:red">*</span><a href="codingMemo.html?strMemo=希望可以快速選擇年份的元件（可以參考精誠易用性動態雛形的元件）">🔆</a></label>
+                <label class="fs-0" for="name147">出生日期<span style="color:red">*</span><a
+                  href="codingMemo.html?strMemo=希望可以快速選擇年份的元件（可以參考精誠易用性動態雛形的元件）">🔆</a></label>
                 <input class="form-control text-secondary" id="name147" type="text" value="年/月/日">
               </div>
             </div>
             <div class="col-lg-3">
               <div class="form-group">
-                <label class="fs-0" for="name">國籍<a href="codingMemo.html?strMemo=相依性欄位連動，如：填寫「非本國籍」則須填寫「國家」連動效果必須參考試算表「通報單整合(有附加資訊疾病)定稿版V1 」">🔆</a></label><br/>
+                <label class="fs-0" for="name">國籍<a
+                  href="codingMemo.html?strMemo=相依性欄位連動，如：填寫「非本國籍」則須填寫「國家」連動效果必須參考試算表「通報單整合(有附加資訊疾病)定稿版V1 」">🔆</a></label><br/>
                 <div class="custom-control custom-radio custom-control-inline">
                   <input class="custom-control-input" id="customRadioInline601" type="radio"
                          name="customRadioInlineGroup601">
@@ -391,7 +459,8 @@
             </div>
             <div class="col-lg-3">
               <div class="form-group">
-                <label class="fs-0" for="country256">國家<a href="codingMemo.html?strMemo=此欄位要精誠夥伴採用 Partial input 輸入部分國家文字就會把「國家代碼」value完整帶出來，國家的代碼在前面、國家的中文在後面，如果搜尋不到該國家就屬於其他國家直接套用「其他國家」的代碼並且新增這個國家 value">🔆</a></label>
+                <label class="fs-0" for="country256">國家<a
+                  href="codingMemo.html?strMemo=此欄位要精誠夥伴採用 Partial input 輸入部分國家文字就會把「國家代碼」value完整帶出來，國家的代碼在前面、國家的中文在後面，如果搜尋不到該國家就屬於其他國家直接套用「其他國家」的代碼並且新增這個國家 value">🔆</a></label>
                 <input class="form-control text-secondary" style="background-color: #F2F2F2" id="country256" type="text"
                        value="非本國籍個案填寫">
               </div>
@@ -403,18 +472,21 @@
                 <label class="fs-0" for="name620">手機<span style="color:red">*</span></label>
                 <input class="form-control text-secondary" id="name620" type="text" value="輸入內容">
               </div>
-              <a href="#">＋ 新增一筆手機號碼</a><a href="codingMemo.html?strMemo=001 按新增時會出現填寫輸入框。002 新增的輸入框需要在右邊有一個動態小叉叉，讓使用者可以刪掉資料。">🔆</a>
+              <a href="#">＋ 新增一筆手機號碼</a><a
+              href="codingMemo.html?strMemo=001 按新增時會出現填寫輸入框。002 新增的輸入框需要在右邊有一個動態小叉叉，讓使用者可以刪掉資料。">🔆</a>
             </div>
             <div class="col-lg-6 mb-3">
               <div class="form-group">
                 <label class="fs-0" for="name628">聯絡電話(公司或個人住家)<span style="color:red">*</span></label>
                 <input class="form-control text-secondary" id="name628" type="text" value="輸入內容">
               </div>
-              <a href="#">＋ 新增一筆聯絡電話</a><a href="codingMemo.html?strMemo=001 按新增時會出現填寫輸入框。002 新增的輸入框需要在右邊有一個動態小叉叉，讓使用者可以刪掉資料。">🔆</a>
+              <a href="#">＋ 新增一筆聯絡電話</a><a
+              href="codingMemo.html?strMemo=001 按新增時會出現填寫輸入框。002 新增的輸入框需要在右邊有一個動態小叉叉，讓使用者可以刪掉資料。">🔆</a>
             </div>
             <div class="col-lg-3">
               <div class="form-group">
-                <label class="fs-0" for="exampleFormControlSelect1">居住縣市<span style="color:red">*</span><a href="codingMemo.html?strMemo=縣市資料請搜尋Google關鍵字：內政部民政司 地方行政區域簡介">🔆</a></label>
+                <label class="fs-0" for="exampleFormControlSelect1">居住縣市<span style="color:red">*</span><a
+                  href="codingMemo.html?strMemo=縣市資料請搜尋Google關鍵字：內政部民政司 地方行政區域簡介">🔆</a></label>
                 <select class="form-control text-secondary" id="exampleFormControlSelect1">
                   <option>請選擇</option>
                   <option>臺北市</option>
@@ -521,7 +593,8 @@
               </div>
               <div class="col-lg-3">
                 <div class="form-group">
-                  <label class="fs-0" for="name294">首次住ICU日<a href="https://docs.google.com/spreadsheets/d/11fnorqGalLlV-YU-tVuK0a_pyi5UFEXKnpuzJvi8hFA/edit#gid=1054066465">🔆</a></label>
+                  <label class="fs-0" for="name294">首次住ICU日<a
+                    href="https://docs.google.com/spreadsheets/d/11fnorqGalLlV-YU-tVuK0a_pyi5UFEXKnpuzJvi8hFA/edit#gid=1054066465">🔆</a></label>
                   <input class="form-control text-secondary" id="name294" type="text" value="年/月/日">
                 </div>
               </div>
@@ -573,7 +646,8 @@
               </div>
               <div class="col-lg-3">
                 <div class="form-group">
-                  <label class="fs-0" for="name329">死亡日期<a href="codingMemo.html?strMemo=按選擇日期時，月份要顯示為本月份">🔆</a></label>
+                  <label class="fs-0" for="name329">死亡日期<a
+                    href="codingMemo.html?strMemo=按選擇日期時，月份要顯示為本月份">🔆</a></label>
                   <input class="form-control text-secondary" id="name329" type="text" value="年/月/日">
                   <!--
               <label class="fs-0" for="datepicker766">死亡日期</label>
@@ -588,7 +662,7 @@
                 <div class="form-group">
                   <label class="fs-0" for="name">死亡原因</label>
                   <span tooltip="．請填寫死亡證書所記載內容：輸入內容，如有多項原因，請以逗號分開" flow="right"><i class="fas fas fa-info-circle"
-                                                                                    style="color: #00a65a;"></i></span>
+                                                                                   style="color: #00a65a;"></i></span>
                 </div>
               </div>
             </div>
@@ -647,7 +721,8 @@
           <div class="col-3">
             <div class="form-group">
               <label class="fs-0">報告日期<span style="color:red">*</span></label>
-              <span tooltip="依傳染病防治法規定向當地主管機關報告傳染病個案之日期" flow="left"><i class="fas fa-info-circle" style="color: #00a65a;"></i></span>
+              <span tooltip="依傳染病防治法規定向當地主管機關報告傳染病個案之日期" flow="left"><i class="fas fa-info-circle"
+                                                                        style="color: #00a65a;"></i></span>
               <input class="form-control text-secondary" type="text" value="年/月/日">
             </div>
           </div>
