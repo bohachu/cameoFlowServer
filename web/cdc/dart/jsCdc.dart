@@ -129,7 +129,7 @@ void setInnerHtml(String strHtml, String strDiseaseName, String strJsonId) {
 class TitleOneLine extends JsonToHtml {
   Future<String> getTags() async {
     return '''
-      <span class="pt-1 fs-1 font-weight-bold text-black">$strTitle</span>
+      <span class="pt-1 fs-1 pb-1 font-weight-bold text-black">$strTitle</span>
     ''';
   }
 }

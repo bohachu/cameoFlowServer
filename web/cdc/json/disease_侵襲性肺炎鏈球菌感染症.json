@@ -41,13 +41,13 @@
   {
     "type": "checkbox",
     "list": [
-      "血液(Blood)",
-      "肋膜液(Pleural fluid)",
-      "腦脊髓液(CSF)",
-      "關節液(Synovial fluid)",
-      "骨髓(Bone marrow)",
-      "心包膜液(Pericardial fluid)",
-      "腹膜液(Peritoneal fluid)"
+      "血液",
+      "肋膜液",
+      "腦脊髓液",
+      "關節液",
+      "骨髓",
+      "心包膜液",
+      "腹膜液"
     ]
   },
   {
@@ -73,7 +73,7 @@
   {
     "rowStart":"<div class=\"row pb-1 pl-0 ml-0\">",
     "type":"TitleOneLine",
-    "title":"個案是否具有潛在疾病<span style=\"color:red\">*</span>"
+    "title":"個案是否具有潛在疾病<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=如果直接勾選「1. 免疫健全者(Immunocompetent persons)」「2. 脾臟功能缺損(Persons with functional or anatomic asplenia)」「3. 免疫功能缺損者(Immunocompromised persons)」項下的任一選項，系統要自動將「1. 免疫健全者(Immunocompetent persons)」「2. 脾臟功能缺損(Persons with functional or anatomic asplenia)」「3. 免疫功能缺損者(Immunocompromised persons)」勾選起來。\">\uD83D\uDD06</a>"
   },
   {
     "type":"Radio2OptionsOneLine",
@@ -92,60 +92,184 @@
     "type":"checkbox",
     "list":[
       "慢性心臟疾病(Chronic heart disease)：含先天發紺性心臟病及心臟衰竭，但高血壓除外"
-    ]
+    ],
+    "rowEnd": "</div> <!--indent-h5-->"
   },
   {
-    "type": "checkbox",
-    "list": [
-      "慢性心臟疾病(Chronic heart disease)：含先天發紺性心臟病及心臟衰竭，但高血壓除外",
-      "慢性肺臟病(Chronic lung disease，但氣喘除外)",
-      "糖尿病(Diabetes mellitus)",
-      "腦脊髓液滲漏(Cerebrospinal fluid leaks)",
-      "人工耳植入者(Cochlear implant)",
-      "酗酒(Alcoholism)",
-      "慢性肝病，包含肝硬化(Chronic liver disease, including cirrhosis)",
+    "rowStart":"<div class=\"indent-h5\">",
+    "type":"checkbox",
+    "list":[
+      "慢性肺臟病(Chronic lung disease，但氣喘除外)"
+    ],
+    "rowEnd": "</div> <!--indent-h5-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h5\">",
+    "type":"checkbox",
+    "list":[
+      "糖尿病(Diabetes mellitus)"
+    ],
+    "rowEnd": "</div> <!--indent-h5-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h5\">",
+    "type":"checkbox",
+    "list":[
+      "腦脊髓液滲漏(Cerebrospinal fluid leaks)"
+    ],
+    "rowEnd": "</div> <!--indent-h5-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h5\">",
+    "type":"checkbox",
+    "list":[
+      "人工耳植入者(Cochlear implant)"
+    ],
+    "rowEnd": "</div> <!--indent-h5-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h5\">",
+    "type":"checkbox",
+    "list":[
+      "酗酒(Alcoholism)"
+    ],
+    "rowEnd": "</div> <!--indent-h5-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h5\">",
+    "type":"checkbox",
+    "list":[
+      "慢性肝病，包含肝硬化(Chronic liver disease, including cirrhosis)"
+    ],
+    "rowEnd": "</div> <!--indent-h5-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h5\">",
+    "type":"checkbox",
+    "list":[
       "抽煙(Cigarette smoking)"
     ],
-    "rowEnd":"</div><!--indent-h5-->  </div><!--indent-h4-->"
+    "rowEnd": "</div> <!--indent-h5--> </div><!--indent-h4-->"
   },
   {
-    "type": "h3",
-    "title": "<span style='margin-left: 20px;'><input class='form-check-input mt-1' type='checkbox'>2. 脾臟功能缺損(Persons with functional or anatomic asplenia)</span>"
-  },
-  {
-    "type": "checkbox",
-    "title": "2. 脾臟功能缺損(Persons with functional or anatomic asplenia)",
-    "list": [
-      "(1)先天性或後天性無脾，脾功能失調，或脾切除(Congenital or acquired  asplenia, splenic dysfunction, or splenectomy)",
-      "(2)鐮刀型紅血球疾病及血紅素病(Sickle cell disease and other hemoglobinopathies)"
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "2. 脾臟功能缺損(Persons with functional or anatomic asplenia)"
     ]
   },
   {
-    "type": "h3",
-    "title": "<span style='margin-left: 20px;'><input class='form-check-input mt-1' type='checkbox'>3. 免疫功能缺損者(Immunocompromised persons)</span>"
+    "rowStart":"<div class=\"indent-h5\">",
+    "type":"checkbox",
+    "list":[
+      "先天性或後天性無脾，脾功能失調，或脾切除(Congenital or acquired  asplenia, splenic dysfunction, or splenectomy)"
+    ],
+    "rowEnd": "</div> <!--indent-h5-->"
   },
   {
-    "type": "checkbox",
-    "title": "3. 免疫功能缺損者(Immunocompromised persons)",
-    "list": [
-      "(1)先天性免疫功能不全(Congenital immunodeficiencies)",
-      "(2)後天性免疫功能不全及HIV感染(Acquired immunodeficiencies and HIV infection)",
-      "(3)慢性腎病變（包含腎病症候群）(Chronic renal failure, including nephrotic syndrome)",
-      "(4)白血病(Leukemias)",
-      "(5)淋巴瘤(Lymphomas)",
-      "(6)霍奇金病(Hodgkin disease)",
-      "(7)廣泛惡性腫瘤(Generalized malignancy)",
-      "(8)使用免疫抑製藥物治療的疾病(含長期全身性皮質類固醇或放射治療)",
-      "(9)器官移植(Solid organ transplantation)",
-      "(10)多發性骨髓瘤(Multiple myeloma)"
+    "rowStart":"<div class=\"indent-h5\">",
+    "type":"checkbox",
+    "list":[
+      "鐮刀型紅血球疾病及血紅素病(Sickle cell disease and other hemoglobinopathies)"
+    ],
+    "rowEnd": "</div> <!--indent-h5--> </div><!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "3. 免疫功能缺損者(Immunocompromised persons)"
     ]
   },
   {
-    "type": "h3",
-    "title": "<span style='margin-left: 20px;'><input class='form-check-input mt-1' type='checkbox'>4. 其他重大疾病</span>"
+    "rowStart":"<div class=\"indent-h5\">",
+    "type":"checkbox",
+    "list":[
+      "先天性免疫功能不全(Congenital immunodeficiencies)"
+    ],
+    "rowEnd": "</div> <!--indent-h5-->"
   },
   {
-    "type": "input",
-    "title": "如勾選其他重大疾病(請描述種類)："
+    "rowStart":"<div class=\"indent-h5\">",
+    "type":"checkbox",
+    "list":[
+      "後天性免疫功能不全及HIV感染(Acquired immunodeficiencies and HIV infection)"
+    ],
+    "rowEnd": "</div> <!--indent-h5-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h5\">",
+    "type":"checkbox",
+    "list":[
+      "慢性腎病變（包含腎病症候群）(Chronic renal failure, including nephrotic syndrome)"
+    ],
+    "rowEnd": "</div> <!--indent-h5-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h5\">",
+    "type":"checkbox",
+    "list":[
+      "白血病(Leukemias)"
+    ],
+    "rowEnd": "</div> <!--indent-h5-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h5\">",
+    "type":"checkbox",
+    "list":[
+      "淋巴瘤(Lymphomas)"
+    ],
+    "rowEnd": "</div> <!--indent-h5-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h5\">",
+    "type":"checkbox",
+    "list":[
+      "霍奇金病(Hodgkin disease)"
+    ],
+    "rowEnd": "</div> <!--indent-h5-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h5\">",
+    "type":"checkbox",
+    "list":[
+      "廣泛惡性腫瘤(Generalized malignancy)"
+    ],
+    "rowEnd": "</div> <!--indent-h5-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h5\">",
+    "type":"checkbox",
+    "list":[
+      "使用免疫抑製藥物治療的疾病(含長期全身性皮質類固醇或放射治療)"
+    ],
+    "rowEnd": "</div> <!--indent-h5-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h5\">",
+    "type":"checkbox",
+    "list":[
+      "器官移植(Solid organ transplantation)"
+    ],
+    "rowEnd": "</div> <!--indent-h5-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h5\">",
+    "type":"checkbox",
+    "list":[
+      "多發性骨髓瘤(Multiple myeloma)"
+    ],
+    "rowEnd": "</div> <!--indent-h5--> </div><!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\"> <div class=\"row ml-0 pl-0 mb-2\">",
+    "type":"checkbox",
+    "list":[
+      "4. 其他重大疾病"
+    ]
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"col-6 ml-3 pl-0 mb-2\">\n    <input class=\"form-control text-secondary\" type=\"text\" placeholder=\"輸入內容\">\n  </div></div> </div><!--indent-h4--> </div><!--indent-h3--> </div><!--indent-h2-->"
   }
 ]
