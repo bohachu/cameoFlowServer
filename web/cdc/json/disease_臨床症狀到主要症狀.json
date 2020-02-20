@@ -24,6 +24,14 @@
     "rowEnd": "</div>"
   },
   {
+    "type": "htmlSource",
+    "text": "</div> <!-- indent-h3 有無症狀 -->"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h3\">"
+  },
+  {
     "type": "h3",
     "title": "主要症狀<span style=\"color:red\">*</span>"
   },

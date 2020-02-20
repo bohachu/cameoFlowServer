@@ -27,50 +27,8 @@
     ]
   },
   {
-    "type": "json",
-    "file": "../json/disease_其他症狀.json"
-  },
-  {
-    "type": "h4",
-    "title": "經醫師臨床診斷「排除慢性肝炎急性發作或其他原因引起之肝功能異常發炎」：<span style=\"color:red\">*</span>"
-  },
-  {
-    "type": "radio",
-    "list": [
-      "是",
-      "否",
-      "通報醫師研判為不明"
-    ]
-  },
-  {
-    "type": "h2",
-    "title": "通報時檢驗資料"
-  },
-  {
-    "type": "input",
-    "title": "1. ALT 檢驗值：",
-    "text": "輸入數字"
-  },
-  {
-    "type": "radio",
-    "title": "2. 血清學C型肝炎病毒抗體(anti-HCV)檢測：<span style=\"color:red\">*</span>",
-    "tip": "本項檢測應由衛生福利部疾病管制署傳染病認可檢驗機構檢驗",
-    "list": [
-      "曾檢驗陰性，後於一年內轉變成C型肝炎病毒抗體陽性",
-      "單一次檢驗陽性",
-      "陰性",
-      "無檢驗"
-    ]
-  },
-  {
-    "type": "radio",
-    "title": "3. 血清C型肝炎病毒核酸檢測：<span style=\"color:red\">*</span>",
-    "tip": "本項檢測送疾病管制署確認，由疾病管制署傳染病認可檢驗機構檢驗者除外",
-    "list": [
-      "陽性",
-      "陰性",
-      "無檢驗"
-    ]
+    "type": "htmlFile",
+    "file": "disease_急性病毒性C型肝炎_其他症狀到通報時檢驗.html"
   },
   {
     "type": "json",

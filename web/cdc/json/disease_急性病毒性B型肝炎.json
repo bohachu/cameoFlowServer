@@ -26,42 +26,8 @@
     ]
   },
   {
-    "type": "json",
-    "file": "../json/disease_其他症狀.json"
-  },
-  {
-    "type": "radio",
-    "title": "經醫師臨床診斷「排除慢性肝炎急性發作或其他原因引起之肝功能異常發炎」：<span style=\"color:red\">*</span>",
-    "list": [
-      "是",
-      "否",
-      "通報醫師研判為不明"
-    ]
-  },
-  {
-    "type": "radio",
-    "title": "通報時檢驗資料",
-    "text": "<b>血清學B型肝炎IgM核心抗體(IgM anti-HBc)檢測：</b><span style=\"color:red\">*</span>",
-    "tip": "本項檢測應由疾病管制署傳染病認可檢驗機構檢驗",
-    "list": [
-      "陽性",
-      "陰性",
-      "無檢驗"
-    ]
-  },
-  {
-    "type": "radio",
-    "title": "血清學B型肝炎表面抗原(HBsAg)抗原檢測：<span style=\"color:red\">*</span>",
-    "list": [
-      "陽性",
-      "陰性",
-      "無檢驗"
-    ]
-  },
-  {
-    "type": "input",
-    "title": "ALT 檢驗值：",
-    "text": "輸入數字"
+    "type": "htmlFile",
+    "file": "disease_急性病毒性B型肝炎_其他症狀到通報時檢驗.html"
   },
   {
     "type": "json",
