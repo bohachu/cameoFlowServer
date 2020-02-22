@@ -20,101 +20,12 @@
     ]
   },
   {
-    "type": "h2",
-    "title": "通報時檢驗資料<span tooltip=\"血清學A型肝炎IgM抗體(IgM anti-HAV)、\n血清學B型肝炎IgM核心抗體(IgM anti-HBc)、\n血清學C型肝炎病毒抗體(anti-HCV)\n檢測應由疾病管制署傳染病認可檢驗機構檢驗\" flow=\"right\"><i class=\"fas fas fa-info-circle\" style=\"color: #00a65a;\"></i></span>"
+    "type": "json",
+    "file": "../json/disease_其他症狀.json"
   },
   {
-    "type": "htmlSource",
-    "text": "<div class=\"row ml-1\">"
-  },
-  {
-    "type": "h4",
-    "title": "<input class='form-check-input mt-1' type='checkbox'> (1)血清學A型肝炎IgM抗體(IgM anti-HAV)檢測<span style=\"color:red\">*</span>"
-  },
-  {
-    "type": "radio",
-    "list": [
-      "陽性",
-      "陰性"
-    ]
-  },
-  {
-    "type": "htmlSource",
-    "text": "</div>"
-  },
-  {
-    "type": "htmlSource",
-    "text": "<div class=\"row ml-1\">"
-  },
-  {
-    "type": "h4",
-    "title": "<input class='form-check-input mt-1' type='checkbox'> (2)血清學B型肝炎IgM核心抗體(IgM anti-HBc)檢測<span style=\"color:red\">*</span>"
-  },
-  {
-    "type": "radio",
-    "list": [
-      "陽性",
-      "陰性"
-    ]
-  },
-  {
-    "type": "htmlSource",
-    "text": "</div>"
-  },
-  {
-    "type": "htmlSource",
-    "text": "<div class=\"row ml-1\">"
-  },
-  {
-    "type": "h4",
-    "title": "<input class='form-check-input mt-1' type='checkbox'> (3)血清學B型肝炎表面抗原(HBsAg)抗原檢測<span style=\"color:red\">*</span>"
-  },
-  {
-    "type": "radio",
-    "list": [
-      "陽性",
-      "陰性"
-    ]
-  },
-  {
-    "type": "htmlSource",
-    "text": "</div>"
-  },
-  {
-    "type": "htmlSource",
-    "text": "<div class=\"row ml-1\">"
-  },
-  {
-    "type": "h4",
-    "title": "<input class='form-check-input mt-1' type='checkbox'> (4)血清學C型肝炎病毒抗體(anti-HCV)檢測<span style=\"color:red\">*</span>"
-  },
-  {
-    "type": "radio",
-    "list": [
-      "陽性",
-      "陰性"
-    ]
-  },
-  {
-    "type": "htmlSource",
-    "text": "</div>"
-  },
-  {
-    "type": "h4",
-    "title": "<input class='form-check-input mt-1' type='checkbox'> (5)急性病毒性D、E型肝炎檢驗部分送疾病管制署確認"
-  },
-  {
-    "type": "h4",
-    "title": "<input class='form-check-input mt-1' type='checkbox'> (6)已排除排除藥物、中毒性肝炎、自體免疫性肝炎、酒精性肝炎、膽道疾病、心血管疾病（如鬱血性心衰竭、休克等）"
-  },
-  {
-    "type": "h4",
-    "title": "<input class='form-check-input mt-1' type='checkbox'> (7) ALT上升2.5倍以上<span style=\"color:red\">*</span>"
-  },
-  {
-    "type": "input",
-    "title": "ALT 檢驗值：",
-    "text": "輸入數字"
+    "type": "htmlFile",
+    "file": "disease_急性病毒性肝炎未定型_通報時檢驗.html"
   },
   {
     "type": "json",
