@@ -24,79 +24,46 @@
     ]
   },
   {
-    "type": "h2",
-    "title": "通報時檢驗資料"
+    "type": "json",
+    "file": "../json/disease_其他症狀.json"
   },
   {
-    "type": "h4",
-    "title": "<input class='form-check-input' type='checkbox'>糞便鏡檢發現疑似痢疾阿米巴"
-  },
-  {
-    "type": "h4",
-    "title": "<input class='form-check-input' type='checkbox'>組織病理切片檢查發現痢疾阿米巴<a href=\"codingMemo.html?strMemo=勾選此項者病理專科醫師姓名必填\">\uD83D\uDD06</a>"
-  },
-  {
-    "type": "inputSmall",
-    "title": "研判病理專科醫生"
-  },
-  {
-    "type": "h4",
-    "title": "<input class='form-check-input' type='checkbox'>二次血清學檢查顯示痢疾阿米巴抗體效價升高<a href=\"codingMemo.html?strMemo=勾選此項者二次血清檢查的抗體效價及檢驗方式必填\n\n\">\uD83D\uDD06</a>"
-  },
-  {
-    "type": "inputSmall",
-    "title": "第一次抗體效價為"
-  },
-  {
-    "type": "dateSmall",
-    "title": "檢測日期為"
-  },
-  {
-    "type": "inputSmall",
-    "title": "第二次抗體效價為"
-  },
-  {
-    "type": "dateSmall",
-    "title": "檢測日期為"
-  },
-  {
-    "type": "inputSmall",
-    "title": "檢驗方式"
-  },
-  {
-    "type": "h4",
-    "title": "<input class='form-check-input' type='checkbox'>超音波或電腦斷層診斷為肝膿瘍，且血清學檢查顯示陽性之痢疾阿米巴抗體者<a href=\"codingMemo.html?strMemo=勾選此項者抗體效價及檢驗方法必填\n\">\uD83D\uDD06</a>"
-  },
-  {
-    "type": "inputSmall",
-    "title": "抗體效價"
-  },
-  {
-    "type": "inputSmall",
-    "title": "檢驗方法"
-  },
-  {
-    "type": "h4",
-    "title": "<input class='form-check-input' type='checkbox'>其他醫院檢查結果，原因："
-  },
-  {
-    "type": "inputSmall"
+    "type": "htmlFile",
+    "file": "disease_阿米巴性痢疾_通報時檢驗資料.html"
   },
   {
     "type": "json",
     "file": "../json/disease_流行病學資料.json"
   },
   {
-    "type": "radio",
-    "title": "是否病例屬高危險群",
-    "list": [
-      "是",
-      "否"
-    ]
+    "type": "json",
+    "file": "../json/disease_個案生母資料.json"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h2\"><div class=\"indent-h3\">"
+  },
+  {
+    "rowStart": "<div class=\"row ml-0 pl-0\">",
+    "type": "TitleOneLine",
+    "title": "是否病例屬高危險群<a href=\"codingMemo.html?strMemo=當「是否病例屬高危險群」勾選「是」者，下方選項才動態產出提供勾選，且選項(1)~(3)至少必選一項\">\uD83D\uDD06</a>"
+  },
+  {
+    "type": "Radio2OptionsOneLine",
+    "option1": "是",
+    "option2": "否"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h4\">"
   },
   {
     "type": "h4",
-    "title": "病例屬高危險群：（可複選）"
+    "title": "病例屬高危險群(可複選)"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h5\">"
   },
   {
     "type": "checkbox",
@@ -104,12 +71,12 @@
       "(1)HIV陽性",
       "(2)同性戀或雙性戀",
       "(3)精神病患或智能障礙者",
-      "(4)長期照護矯正機關（構）之住民或工作人員",
+      "(4)長期照護矯正機關(構)之住民或工作人員",
       "(5)外籍勞工"
     ]
   },
   {
-    "type": "json",
-    "file": "../json/disease_個案生母資料.json"
+    "type": "htmlSource",
+    "text": "</div></div></div></div>"
   }
 ]

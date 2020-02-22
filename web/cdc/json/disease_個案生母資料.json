@@ -6,7 +6,7 @@
   {
     "rowStart": "<div class=\"row ml-0 pl-0\">",
     "type": "TitleOneLine",
-    "title": "個案生母資料<a href=\"codingMemo.html?strMemo=當個案ID為AA時顯示並為必填\">\uD83D\uDD06</a>"
+    "title": "個案生母資料<a href=\"codingMemo.html?strMemo=「HIV確診定義=出生通報母子垂直感染疑似個案之「新生兒之生母為人類免疫缺乏病毒感染者」或「新生兒之生母臨產時為快速檢測法及抗體篩檢檢測陽性者」，顯示並為必填\">\uD83D\uDD06</a>"
   },
   {
     "type": "InputOneLine",
