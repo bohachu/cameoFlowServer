@@ -23,13 +23,21 @@
     "file": "../json/disease_其他症狀.json"
   },
   {
-    "type": "radio",
-    "title": "通報時檢驗資料",
-    "list": [
-      "切片或抹片陽性，漢生病",
-      "切片或抹片陰性，漢生病",
-      "非漢生病"
-    ]
+    "rowStart": "<div class=\"indent-h2\">",
+    "type": "h2",
+    "title": "通報時檢驗資料"
+  },
+  {
+    "rowStart": "<div class=\"indent-h3\"><div class=\"indent-h4\">",
+    "type": "TitleOneLineFs0",
+    "title": "檢驗結果"
+  },
+  {
+    "type": "Radio3OptionsOneLine",
+    "option1": "切片或抹片陽性，漢生病",
+    "option2": "切片或抹片陰性，漢生病",
+    "option3": "非漢生病",
+    "rowEnd":"</div><!--indent-h4--> </div><!--indent-h3-->  </div><!--indent-h2-->"
   },
   {
     "type": "json",
