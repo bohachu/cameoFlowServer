@@ -26,31 +26,34 @@
     "file": "../json/disease_其他症狀.json"
   },
   {
-    "type": "h2",
-    "title": "通報時檢驗資料"
+    "rowStart": "<div class=\"indent-h2\">",
+    "type":"h2",
+    "title":"通報時檢驗資料"
   },
   {
-    "type": "h4",
-    "title": "具備下列其中一種以上淋病雙球菌實驗室診斷<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=下面三個選項為三則一必填\">\uD83D\uDD06</a>"
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h3\">"
   },
   {
-    "type": "checkbox",
-    "list": [
+    "rowStart":"<div class=\"indent-h4 row mt-2 mb-2\">",
+    "type":"CheckboxOneLine",
+    "title":"具備下列其中一種以上淋病雙球菌實驗室診斷<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=下面三個選項為三則一必填\">\uD83D\uDD06</a>",
+    "list":[
       "細菌培養",
       "染色鏡檢",
       "PCR或其他檢驗方式偵測出淋菌抗原或基因"
-    ]
+    ],
+    "rowEnd":"</div>"
   },
   {
-    "type": "h4",
-    "title": "檢驗種類<a href=\"codingMemo.html?strMemo=下面兩個選項為二則一必填\">\uD83D\uDD06</a>"
-  },
-  {
-    "type": "checkbox",
-    "list": [
+    "rowStart":"<div class=\"indent-h4 row mt-2 mb-2\">",
+    "type":"CheckboxOneLine",
+    "title":"檢驗種類<a href=\"codingMemo.html?strMemo=下面兩個選項為二則一必填\">\uD83D\uDD06</a>",
+    "list":[
       "尿液",
       "尿道/子宮頸分泌物"
-    ]
+    ],
+    "rowEnd":"</div>  </div><!--indent-h3--> </div><!--indent-h2-->"
   },
   {
     "type": "json",
@@ -61,11 +64,23 @@
     "file": "../json/disease_個案生母資料.json"
   },
   {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h2\">"
+  },
+  {
     "type": "h2",
     "title": "個案狀況維護與補充資料"
   },
   {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h3\">"
+  },
+  {
     "type": "json",
     "file": "../json/disease_共用_是否進行愛滋病毒篩檢.json"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div></div>"
   }
 ]
