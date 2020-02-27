@@ -22,38 +22,8 @@
     ]
   },
   {
-    "type": "json",
-    "file": "../json/disease_其他症狀.json"
-  },
-  {
-    "rowStart": "<div class=\"indent-h2\">",
-    "type":"h2",
-    "title":"通報時檢驗資料"
-  },
-  {
-    "type": "htmlSource",
-    "text": "<div class=\"indent-h3\">"
-  },
-  {
-    "rowStart":"<div class=\"indent-h4 row mt-2 mb-2\">",
-    "type":"CheckboxOneLine",
-    "title":"具備下列其中一種以上淋病雙球菌實驗室診斷<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=下面三個選項為三則一必填\">\uD83D\uDD06</a>",
-    "list":[
-      "細菌培養",
-      "染色鏡檢",
-      "PCR或其他檢驗方式偵測出淋菌抗原或基因"
-    ],
-    "rowEnd":"</div>"
-  },
-  {
-    "rowStart":"<div class=\"indent-h4 row mt-2 mb-2\">",
-    "type":"CheckboxOneLine",
-    "title":"檢驗種類<a href=\"codingMemo.html?strMemo=下面兩個選項為二則一必填\">\uD83D\uDD06</a>",
-    "list":[
-      "尿液",
-      "尿道/子宮頸分泌物"
-    ],
-    "rowEnd":"</div>  </div><!--indent-h3--> </div><!--indent-h2-->"
+    "type": "htmlFile",
+    "file": "disease_淋病_其他症狀到通報時檢驗資料.html"
   },
   {
     "type": "json",
