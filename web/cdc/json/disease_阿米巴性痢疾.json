@@ -62,21 +62,17 @@
     "title": "病例屬高危險群(可複選)"
   },
   {
-    "type": "htmlSource",
-    "text": "<div class=\"indent-h5\">"
-  },
-  {
     "type": "checkbox",
     "list": [
       "(1)HIV陽性",
       "(2)同性戀或雙性戀",
       "(3)精神病患或智能障礙者",
-      "(4)長期照護矯正機關(構)之住民或工作人員",
+      "(4)長期照護矯正機關(構)之住民或工作人員　　",
       "(5)外籍勞工"
     ]
   },
   {
     "type": "htmlSource",
-    "text": "</div></div></div></div>"
+    "text": "</div></div></div>"
   }
 ]
