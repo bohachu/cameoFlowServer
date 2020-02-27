@@ -8,6 +8,11 @@
     "file": "disease_人類免疫缺乏病毒感染(含母子垂直感染疑似個案)_18月以上成人_臨床症狀.html"
   },
   {
+    "type": "htmlFile",
+    "file": "disease_人類免疫缺乏病毒感染(含母子垂直感染疑似個案)_18月以上成人_通報時檢驗資料.html"
+  },
+
+  {
     "rowStart": "<div class=\"indent-h2\">",
     "type":"h2",
     "title":"通報時檢驗資料"
