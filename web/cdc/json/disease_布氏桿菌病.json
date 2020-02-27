@@ -10,7 +10,6 @@
   {
     "type": "checkbox",
     "list": [
-      "其他",
       "肌肉酸痛",
       "肝臟腫大",
       "食慾不振",
@@ -33,44 +32,26 @@
     "file": "../json/disease_其他症狀.json"
   },
   {
-    "type": "h2",
-    "title": "通報時檢驗資料"
+    "rowStart": "<div class=\"indent-h2\">",
+    "type":"h2",
+    "title":"通報時檢驗資料"
   },
   {
-    "type": "h3",
-    "title": "醫院自行檢驗資料"
+    "rowStart": "<div class=\"indent-h3 row\">",
+    "type":"TitleOneLine",
+    "title":"醫院自行檢驗資料"
   },
-
   {
-    "type": "checkbox",
+    "type":"CheckboxOneLine",
     "list": [
       "分離並鑑定出布氏桿菌屬",
       "血清學抗體檢測陽性"
-    ]
-  },
-  {
-    "type": "json",
-    "file": "../json/disease_流行病學資料.json"
-  },
-  {
-    "type": "h4",
-    "title": "旅遊期間有食用<a href=\"codingMemo.html?strMemo=勾選有時，再出現下面checkbox選單\">\uD83D\uDD06</a>"
-  },
-  {
-    "type": "radio",
-    "list": [
-      "有",
-      "無"
-    ]
-  },
-  {
-    "type": "checkbox",
-    "list": [
-      "牛奶或羊奶",
-      "未煮熟的牛肉或羊肉",
-      "起司或乳酪"
     ],
-    "input": "其他<a href=\"codingMemo.html?strMemo=勾選其他，此欄位必填\">\uD83D\uDD06</a>"
+    "rowEnd": "</div><!--indent-h3--> </div><!--indent-h2-->"
+  },
+  {
+    "type": "htmlFile",
+    "file": "disease_布氏桿菌病_流行病學.html"
   },
   {
     "type": "json",
