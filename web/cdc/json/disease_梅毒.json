@@ -54,12 +54,12 @@
     "rowStart":"<div class=\"row pl-5\">",
     "type":"InputOneLine",
     "title":"RPR(+)效價=1:",
-    "text":"輸入數字"
+    "text":"輸入數字，2的n次方"
   },
   {
     "type":"InputOneLine",
     "title":"　VDRL(+)效價=1:",
-    "text":"輸入數字",
+    "text":"輸入數字，2的n次方",
     "rowEnd":"</div>"
   },
   {
@@ -68,14 +68,16 @@
   },
   {
     "rowStart":"<div class=\"row pl-5\">",
-    "type":"InputOneLine",
-    "title":"TPHA=1:",
-    "text":"輸入數字"
+    "type":"InputOneLineCol",
+    "title":"TPHA效價=1:",
+    "text":"輸入數字，80×2的n次方",
+    "col": "col-4"
   },
   {
-    "type":"InputOneLine",
-    "title":"　TPPA=1:",
-    "text":"輸入數字",
+    "type":"InputOneLineCol",
+    "title":"　TPPA效價=1:",
+    "text":"輸入數字，80×2的n次方",
+    "col": "col-4",
     "rowEnd":"</div>"
   },
   {
@@ -121,7 +123,7 @@
     "rowStart":"<div class=\"indent-h4\">",
     "type":"InputOneLine",
     "title":"CSF-VDRL(+)效價=1:",
-    "text":"輸入數字",
+    "text":"輸入數字，2的n次方",
     "rowEnd":"</div>  </div><!--indent-h3-->"
   },
   {
