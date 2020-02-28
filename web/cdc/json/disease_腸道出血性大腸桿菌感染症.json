@@ -1,0 +1,32 @@
+[
+  {
+    "type": "diseaseName",
+    "title": "腸道出血性大腸桿菌感染症"
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_臨床症狀到主要症狀.json"
+  },
+  {
+    "type": "checkbox",
+    "list": [
+      "血便",
+      "栓塞性血小板缺乏性紫斑症",
+      "溶血性尿毒症候群",
+      "腹絞痛",
+      "腹瀉"
+    ]
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_其他症狀.json"
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_流行病學資料.json"
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_個案生母資料.json"
+  }
+]
