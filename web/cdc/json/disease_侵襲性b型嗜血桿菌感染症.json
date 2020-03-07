@@ -31,45 +31,33 @@
     "file": "../json/disease_其他症狀.json"
   },
   {
-    "type": "h4",
-    "title": "臨床診斷<span style=\"color:red\">*</span>"
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h2\">"
+  },
+  {
+    "rowStart": "<div class=\"indent-h3\">",
+    "type":"h3",
+    "title":"臨床診斷<span style=\"color:red\">*</span>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h4\">"
   },
   {
     "type": "checkbox",
     "list": [
-      [
-        "checkbox",
-        "腦膜炎"
-      ],
-      [
-        "checkbox",
-        "菌血症"
-      ],
-      [
-        "checkbox",
-        "肺炎"
-      ],
-      [
-        "checkbox",
-        "蜂窩組織炎"
-      ],
-      [
-        "checkbox",
-        "敗血性關節炎"
-      ],
-      [
-        "checkbox",
-        "骨髓炎"
-      ],
-      [
-        "checkbox",
-        "會厭炎"
-      ],
-      [
-        "input",
-        "其他"
-      ]
+      "腦膜炎",
+      "菌血症",
+      "肺炎",
+      "蜂窩組織炎",
+      "敗血性關節炎",
+      "骨髓炎",
+      "會厭炎"
     ]
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_其他症狀.json"
   },
   {
     "type": "json",
