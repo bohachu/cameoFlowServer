@@ -30,20 +30,72 @@
     "file": "../json/disease_其他症狀.json"
   },
   {
-    "type": "h4",
-    "title": "請確實檢視病人之臨床表現，同時詢問麻疹相關疫苗接種史及旅遊史，並自下列條件中勾選符合本次通報原因之項目<span style=\"color:red\">*</span>"
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h2\">"
   },
   {
-    "type": "checkbox",
-    "list": [
-      "1.出疹",
-      "2.發燒(耳溫或肛溫)高於38℃",
-      "3.具有下列三項條件任一者：(可複選)<a href=\"codingMemo.html?strMemo=勾選此欄位，產生下面三個選項問題，需做連動設計\">\uD83D\uDD06</a>",
-      "(1)具有咳嗽、流鼻水或結膜炎(畏光、流淚水或眼睛發紅)三種症狀其中的一種",
-      "(2)無麻疹相關疫苗接種史",
+    "rowStart": "<div class=\"indent-h3\">",
+    "type":"h3",
+    "title":"請確實檢視病人之臨床表現，同時詢問麻疹相關疫苗接種史及旅遊史，並自下列條件中勾選符合本次通報原因之項目<span style=\"color:red\">*</span>"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "1.出疹"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "2.發燒(耳溫或肛溫)高於38℃"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "3.具有下列三項條件任一者(可複選)<a href=\"codingMemo.html?strMemo=勾選此欄位，產生下面三個選項問題，需做連動設計\">\uD83D\uDD06</a>"
+    ]
+  },
+  {
+    "rowStart":"<div class=\"indent-h5\">",
+    "type":"checkbox",
+    "list":[
+      "(1)具有咳嗽、流鼻水或結膜炎(畏光、流淚水或眼睛發紅)三種症狀其中的一種"
+    ],
+    "rowEnd": "</div> <!--indent-h5-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h5\">",
+    "type":"checkbox",
+    "list":[
+      "(2)無麻疹相關疫苗接種史"
+    ],
+    "rowEnd": "</div> <!--indent-h5-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h5\">",
+    "type":"checkbox",
+    "list":[
       "(3)發病前三週內，曾有麻疹流行地區旅遊史"
     ],
-    "input": "4.其他"
+    "rowEnd": "</div> <!--indent-h5--> </div> <!--indent-h4-->"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h4\">"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"row pb-1 pl-0 ml-0\">\n        <div class=\"form-check form-check-inline\">\n          <input class=\"form-check-input mb-1\" type=\"checkbox\">\n          <label class=\" ml-0 pl-0 mt-1 mb-2  text-black fs-0\">4.其他</label>\n        </div>\n        <div class=\"col-4 ml-0 pl-1 mb-1\">\n          <input class=\"form-control text-secondary\" id=\"name73$intRandomId\" type=\"text\" placeholder=\"輸入內容\">\n        </div>\n      </div>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div> <!--indent-h4--> </div> <!--indent-h3--> </div> <!--indent-h2-->"
   },
   {
     "type": "json",
