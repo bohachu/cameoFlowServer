@@ -74,7 +74,8 @@
   {
     "type":"Radio2OptionsOneLine",
     "option1":"否",
-    "option2":"是，請勾選下列疾病(可複選)："
+    "option2":"是，請勾選下列疾病(可複選)：",
+    "rowEnd": "</div>"
   },
   {
     "rowStart":"<div class=\"indent-h4\">",
