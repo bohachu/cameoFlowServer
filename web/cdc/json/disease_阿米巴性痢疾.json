@@ -36,10 +36,6 @@
     "file": "../json/disease_流行病學資料.json"
   },
   {
-    "type": "json",
-    "file": "../json/disease_個案生母資料.json"
-  },
-  {
     "type": "htmlSource",
     "text": "<div class=\"indent-h2\"><div class=\"indent-h3\">"
   },
@@ -51,7 +47,8 @@
   {
     "type": "Radio2OptionsOneLine",
     "option1": "是",
-    "option2": "否"
+    "option2": "否",
+    "rowEnd": "</div>"
   },
   {
     "type": "htmlSource",
@@ -73,6 +70,10 @@
   },
   {
     "type": "htmlSource",
-    "text": "</div></div></div>"
+    "text": "</div></div></div></div>"
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_個案生母資料.json"
   }
 ]
