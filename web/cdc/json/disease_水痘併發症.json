@@ -34,37 +34,51 @@
     "file": "../json/disease_其他症狀.json"
   },
   {
-    "type": "h2",
-    "title": "通報時檢驗資料"
+    "rowStart": "<div class=\"indent-h2\">",
+    "type":"h2",
+    "title":"通報時檢驗資料"
   },
   {
-    "type": "h3",
-    "title": "醫院實驗室自行診斷依據"
+    "rowStart": "<div class=\"indent-h3\">",
+    "type":"h3",
+    "title":"醫院實驗室自行診斷依據"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h4\">"
   },
   {
     "type": "checkbox",
     "list": [
-      [
-        "checkbox",
-        "血清 VZV IgM陽性"
-      ],
-      [
-        "checkbox",
-        "血清 VZV IgG於急性期與恢復期，抗體顯著上升"
-      ],
-      [
-        "input",
-        "臨床檢體PCR陽性，檢體來源<a href=\"codingMemo.html?strMemo=勾選此項者，檢體來源必填；若「臨床檢體PCR陽性」未勾選，此欄位不可填寫\">\uD83D\uDD06</a>"
-      ]
+      "血清 VZV IgM陽性",
+      "血清 VZV IgG於急性期與恢復期，抗體顯著上升"
     ]
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"row pb-1 pl-0 ml-0\">\n        <div class=\"form-check form-check-inline\">\n          <input class=\"form-check-input mb-1\" type=\"checkbox\">\n          <label class=\" ml-0 pl-0 mt-1 mb-2  text-black fs-0\">臨床檢體PCR陽性，檢體來源：<a href=\"codingMemo.html?strMemo=勾選此項者，檢體來源必填；若「臨床檢體PCR陽性」未勾選，此欄位不可填寫\">\uD83D\uDD06</a></label>\n        </div>\n        <div class=\"col-4 ml-0 pl-1 mb-1\">\n          <input class=\"form-control text-secondary\" id=\"name73$intRandomId\" type=\"text\" placeholder=\"輸入內容\">\n        </div>\n      </div>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div> <!--indent-h4--> </div> <!--indent-h3--> </div> <!--indent-h2-->"
   },
   {
     "type": "json",
     "file": "../json/disease_流行病學資料.json"
   },
+
   {
-    "type": "h3",
-    "title": "請確認病人是否有下列高危險群組<a href=\"codingMemo.html?strMemo=001若個案為住院或死亡時，此題必填其一；若不為住院或死亡個案時，此項目不可填寫。002勾選「免疫缺陷或低下者」，病名必填。003勾選「其他」，其他欄位必填\">\uD83D\uDD06</a>"
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h2\">"
+  },
+  {
+    "rowStart": "<div class=\"indent-h3\">",
+    "type":"h3",
+    "title":"請確認病人是否有下列高危險群組<a href=\"codingMemo.html?strMemo=001若個案為住院或死亡時，此題必填其一；若不為住院或死亡個案時，此項目不可填寫。002勾選「免疫缺陷或低下者」，病名必填。003勾選「其他」，其他欄位必填\">\uD83D\uDD06</a>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h4\">"
   },
   {
     "type": "checkbox",
@@ -93,22 +107,35 @@
         "checkbox",
         "並非高危險族群"
       ]
-    ]
+    ],
+    "rowEnd":"</div> <!--indent-h4--> </div> <!--indent-h3-->"
   },
   {
-    "type": "h3",
-    "title": "是否為先天性水痘症候群(Congential Varicella Syndrome)通報<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=若個案為水痘併發症之住院或死亡個案，則此題不可答案為是；若個案不為水痘併發症之住院或死亡個案，則此題可為是\">\uD83D\uDD06</a>"
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h3\">"
   },
   {
-    "type": "radio",
-    "list": [
-      "否",
-      "是"
-    ]
+    "type": "htmlSource",
+    "text": "<div class=\"row pb-1 pl-0 ml-0\"><span class=\"fs-1 pb-1 pt-1 font-weight-bold text-black\">是否為先天性水痘症候群(Congential Varicella Syndrome)通報<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=若個案為水痘併發症之住院或死亡個案，則此題不可答案為是；若個案不為水痘併發症之住院或死亡個案，則此題可為是\">\uD83D\uDD06</a></span>"
   },
   {
-    "type": "h3",
-    "title": "病人(新生兒)，請確認是否有下列危險因子<a href=\"codingMemo.html?strMemo=001若上題為是時，此題危險因子必選其一；若不為是時，此項目不可填寫。002勾選「出生缺陷或其他懷疑原因」時，其他懷疑原因必填\">\uD83D\uDD06</a>"
+    "type":"Radio2OptionsOneLine",
+    "option1":"是",
+    "option2":"否",
+    "rowEnd":"</div>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div> <!--indent-h3-->"
+  },
+  {
+    "rowStart": "<div class=\"indent-h3\">",
+    "type":"h3",
+    "title":"病人(新生兒)，請確認是否有下列危險因子<a href=\"codingMemo.html?strMemo=001若上題為是時，此題危險因子必選其一；若不為是時，此項目不可填寫。002勾選「出生缺陷或其他懷疑原因」時，其他懷疑原因必填\">\uD83D\uDD06</a>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h4\">"
   },
   {
     "type": "checkbox",
@@ -130,6 +157,10 @@
         "無上述危險因子"
       ]
     ]
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div> <!--indent-h4--> </div> <!--indent-h3--> </div> <!--indent-h2-->"
   },
   {
     "type": "json",
