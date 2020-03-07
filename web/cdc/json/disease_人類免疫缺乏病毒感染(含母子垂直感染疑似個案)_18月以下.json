@@ -11,52 +11,6 @@
     "type": "htmlFile",
     "file": "disease_人類免疫缺乏病毒感染(含母子垂直感染疑似個案)_18月以上成人_通報時檢驗資料.html"
   },
-
-  {
-    "rowStart": "<div class=\"indent-h2\">",
-    "type":"h2",
-    "title":"通報時檢驗資料"
-  },
-  {
-    "rowStart": "<div class=\"indent-h3\">",
-    "type":"h3",
-    "title":"HIV確診定義<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=如果直接勾選「出生通報母子垂直感染疑似個案」項下的任一選項，系統要自動將「出生通報母子垂直感染疑似個案」勾選起來。\">\uD83D\uDD06</a>"
-  },
-  {
-    "rowStart": "<div class=\"indent-h4\">",
-    "type":"h4",
-    "radioTitle":"出生通報母子垂直感染疑似個案",
-    "tip":"「新生兒之生母為人類免疫缺乏病毒感染者」或「新生兒之生母臨產時為快速檢測法及抗體篩檢檢測陽性者」時，\n則「生母資料」中的「身分證字號」、「媽媽姓名」、「國籍」為必填欄位。"
-  },
-  {
-    "type":"htmlFile",
-    "file":"disease_HIV(18月以下)_新生兒以快速檢測法勾選斷行.html"
-  },
-  {
-    "type":"h4",
-    "radioTitle":"分子生物學核酸檢測(NAT)陽性"
-  },
-  {
-    "type": "htmlSource",
-    "text": "<div class=\"row pl-0 ml-0\">"
-  },
-  {
-    "type":"date",
-    "title":"檢驗日期"
-  },
-  {
-    "type":"input",
-    "title":"檢驗單位<a href=\"codingMemo.html?strMemo=檢驗單位代碼請依輸入之檢驗單位，系統自動紀錄其檢驗單位代碼，並記錄到資料庫裡。\">\uD83D\uDD06</a>"
-  },
-  {
-    "type": "htmlSource",
-    "text": "</div>"
-  },
-  {
-    "type":"addRecord",
-    "title":"＋ 新增一筆分子生物學核酸檢測",
-    "rowEnd": "</div><!--indent-h4--></div><!--indent-h3-->  </div><!--indent-h2-->"
-  },
   {
     "type":"json",
     "file":"../json/disease_流行病學資料.json"
