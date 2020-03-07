@@ -16,8 +16,21 @@
     ]
   },
   {
-    "type": "h4",
-    "title": "臨床症狀"
+    "type": "json",
+    "file": "../json/disease_其他症狀.json"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h2\">"
+  },
+  {
+    "rowStart": "<div class=\"indent-h3\">",
+    "type":"h3",
+    "title":"臨床症狀"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h4\">"
   },
   {
     "type": "checkbox",
@@ -35,20 +48,40 @@
     "file": "../json/disease_其他症狀.json"
   },
   {
-    "type": "h4",
-    "title": "是否有傷口"
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h2\">"
   },
   {
-    "type": "radio",
-    "list": [
-      "有",
-      "無",
-      "不知"
-    ]
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h3\">"
   },
   {
-    "type": "h4",
-    "title": "傷口種類"
+    "type": "htmlSource",
+    "text": "<div class=\"row pb-1 pl-0 ml-0\"><span class=\"fs-1 pb-1 font-weight-bold text-black\">是否有傷口　</span>"
+  },
+  {
+    "type":"Radio3OptionsOneLine",
+    "option1":"有",
+    "option2":"無",
+    "option3":"不知",
+    "rowEnd":"</div>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div> <!--indent-h3--> </div> <!--indent-h2-->"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h2\">"
+  },
+  {
+    "rowStart": "<div class=\"indent-h3\">",
+    "type":"h3",
+    "title":"傷口種類"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h4\">"
   },
   {
     "type": "checkbox",
@@ -60,8 +93,11 @@
       "褥瘡",
       "動物咬傷",
       "未說明傷口種類"
-    ],
-    "input": "其他<a href=\"codingMemo.html?strMemo=說明打勾之後，必填星號以及輸入內容框就要出現，要做連動做設計\">\uD83D\uDD06</a>"
+    ]
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_其他症狀.json"
   },
   {
     "type": "json",
