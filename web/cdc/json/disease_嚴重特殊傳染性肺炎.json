@@ -33,22 +33,13 @@
     "file": "../json/disease_其他症狀.json"
   },
   {
-    "type": "h2",
-    "title": "通報時檢驗資料"
+    "rowStart": "<div class=\"indent-h2\">",
+    "type":"h2",
+    "title":"通報時檢驗資料"
   },
   {
-    "type": "radio",
-    "title": "流感病毒抗原快速篩檢結果",
-    "list": [
-      "陽性",
-      "陰性",
-      "未確定",
-      "未檢驗"
-    ]
-  },
-  {
-    "rowStart": "<div class=\"row pt-3 pl-4\">",
-    "type": "TitleOneLineFs0",
+    "rowStart": "<div class=\"row pl-4\">",
+    "type": "TitleOneLine",
     "title": "流感病毒抗原快速篩檢結果"
   },
   {
@@ -58,6 +49,10 @@
     "option3": "未確定",
     "option4": "未檢驗",
     "rowEnd": "</div>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div> <!--indent-h3--> </div> <!--indent-h2-->"
   },
   {
     "type": "json",
