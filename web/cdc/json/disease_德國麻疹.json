@@ -22,8 +22,17 @@
     "file": "../json/disease_其他症狀.json"
   },
   {
-    "type": "h4",
-    "title": "此為病例調查表之臨床症狀部分"
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h2\">"
+  },
+  {
+    "rowStart": "<div class=\"indent-h3\">",
+    "type":"h3",
+    "title":"此為病例調查表之臨床症狀部分"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h4\">"
   },
   {
     "type": "checkbox",
@@ -34,6 +43,10 @@
       "關節炎(arthritis)",
       "頸部淋巴腺腫大(lymphadenopathy)"
     ]
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div> <!--indent-h4--> </div> <!--indent-h3--> </div> <!--indent-h2-->"
   },
   {
     "type": "json",
