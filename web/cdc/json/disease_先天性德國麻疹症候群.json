@@ -33,30 +33,148 @@
     "file": "../json/disease_其他症狀.json"
   },
   {
-    "type": "h4",
-    "title": "此為病例調查表之臨床症狀部分"
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h2\">"
   },
   {
-    "type": "checkbox",
-    "list": [
-      "1.先天性白內障(congenital cataracts)",
-      "2.先天性青光眼(congenital glaucoma)",
-      "3.先天性心臟病(congenital heart disease)",
-      "3-1.開放性心臟導管<a href=\"codingMemo.html?strMemo=如有勾選「先天性心臟病」，則跳出3-1及3-2選項，需做連動設計\">\uD83D\uDD06</a>",
-      "3-2.肺動脈瓣狹窄<a href=\"codingMemo.html?strMemo=如有勾選「先天性心臟病」，則跳出3-1及3-2選項，需做連動設計\">\uD83D\uDD06</a>",
-      "4.聽力障礙(hearing loss)",
-      "5.色素性視網膜病(pigmentary retinopathy)",
-      "6.血小板數量過低(low platelet count)",
-      "7.其他異常",
-      "8.閉塞性黃疸(jaundice)(24小時內發生)",
-      "9.紫斑(purpura)",
-      "10.長骨放射線透度異常(long bone radiolucencies)",
-      "11.腦膜腦炎(meningoencephaliis)",
-      "12.脾腫大(enlarged spleen)",
-      "13.小腦症(microcephaly)",
-      "14.心智發育遲緩(mental retardation)",
-      "15.肝腫大(enlarged liver)"
+    "rowStart": "<div class=\"indent-h3\">",
+    "type":"h3",
+    "title":"此為病例調查表之臨床症狀部分"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "1.先天性白內障(congenital cataracts)"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "2.先天性青光眼(congenital glaucoma)"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "3.先天性心臟病(congenital heart disease)"
     ]
+  },
+  {
+    "rowStart":"<div class=\"indent-h5\">",
+    "type":"checkbox",
+    "list":[
+      "3-1.開放性心臟導管<a href=\"codingMemo.html?strMemo=如有勾選「先天性心臟病」，則跳出3-1及3-2選項，需做連動設計\">\uD83D\uDD06</a>"
+    ],
+    "rowEnd": "</div> <!--indent-h5-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h5\">",
+    "type":"checkbox",
+    "list":[
+      "3-2.肺動脈瓣狹窄<a href=\"codingMemo.html?strMemo=如有勾選「先天性心臟病」，則跳出3-1及3-2選項，需做連動設計\">\uD83D\uDD06</a>"
+    ],
+    "rowEnd": "</div> <!--indent-h5--> </div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "4.聽力障礙(hearing loss)"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "5.色素性視網膜病(pigmentary retinopathy)"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "6.血小板數量過低(low platelet count)"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "7.其他異常"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "8.閉塞性黃疸(jaundice)(24小時內發生)"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "9.紫斑(purpura)"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "10.長骨放射線透度異常(long bone radiolucencies)"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "11.腦膜腦炎(meningoencephaliis)"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "12.脾腫大(enlarged spleen)"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "13.小腦症(microcephaly)"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "14.心智發育遲緩(mental retardation)"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "15.肝腫大(enlarged liver)"
+    ],
+    "rowEnd": "</div> <!--indent-h4--> </div> <!--indent-h3--> </div> <!--indent-h2-->"
   },
   {
     "type": "json",
