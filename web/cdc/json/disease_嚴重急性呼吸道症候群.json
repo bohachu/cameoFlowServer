@@ -39,27 +39,48 @@
     "file": "../json/disease_其他症狀.json"
   },
   {
-    "type": "h4",
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h2\">"
+  },
+  {
+    "rowStart": "<div class=\"indent-h3\">",
+    "type": "h3",
     "title": "臨床症狀 (以下條件須皆符合)"
   },
   {
+    "rowStart": "<div class=\"indent-h4\">",
     "type": "checkbox",
     "list": [
-      "1.發燒（≧38℃）",
+      "1.發燒（≧38℃）"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart": "<div class=\"indent-h4\">",
+    "type": "checkbox",
+    "list": [
       "2.一種或以上的下呼吸道症狀（咳嗽、呼吸困難、呼吸短促）",
       "3.放射線診斷學上與肺炎或呼吸窘迫症候群一致的肺浸潤證據或屍體解剖的發現與肺炎或呼吸窘迫症候群的病理學一致而無其他可確定的致病因",
       "4.無其他可替代的診斷能完全解釋疾病"
-    ]
+    ],
+    "rowEnd": "</div> <!--indent-h4--> </div> <!--indent-h3--> </div> <!--indent-h2-->"
   },
   {
+    "rowStart": "<div class=\"indent-h2\">",
     "type": "h2",
     "title": "通報時檢驗資料"
   },
   {
+    "rowStart": "<div class=\"indent-h3\">",
     "type": "h3",
     "title": "(1)CBC/DC"
   },
   {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h4\">"
+  },
+  {
+    "rowStart": "<div class=\"row pb-1 pl-0 ml-0\">",
     "type": "dateSmall",
     "title": "日期"
   },
@@ -97,13 +118,20 @@
   },
   {
     "type": "inputSmall",
-    "title": "備註說明"
+    "title": "備註說明",
+    "rowEnd": "</div> </div> <!--indent-h4--> </div> <!--indent-h3-->"
   },
   {
+    "rowStart": "<div class=\"indent-h3\">",
     "type": "h3",
     "title": "(2)Biochem"
   },
   {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h4\">"
+  },
+  {
+    "rowStart": "<div class=\"row pb-1 pl-0 ml-0\">",
     "type": "dateSmall",
     "title": "日期"
   },
@@ -145,13 +173,20 @@
   },
   {
     "type": "inputSmall",
-    "title": "備註說明"
+    "title": "備註說明",
+    "rowEnd": "</div> </div> <!--indent-h4--> </div> <!--indent-h3-->"
   },
   {
+    "rowStart": "<div class=\"indent-h3\">",
     "type": "h3",
-    "title": "(3)ABG： (如有呼吸異常症狀)"
+    "title": "(3)ABG:(如有呼吸異常症狀)"
   },
   {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h4\">"
+  },
+  {
+    "rowStart": "<div class=\"row pb-1 pl-0 ml-0\">",
     "type": "dateSmall",
     "title": "日期"
   },
@@ -173,347 +208,31 @@
   },
   {
     "type": "inputSmall",
-    "title": "備註說明"
+    "title": "備註說明",
+    "rowEnd": "</div> </div> <!--indent-h4--> </div> <!--indent-h3--> </div> <!--indent-h2-->"
   },
-  {
-    "type": "h2",
-    "title": "流行病學資料"
-  },
-  {
-    "type": "h3",
-    "title": "SARS編號：1234567"
-  },
-  {
-    "type": "htmlSource",
-    "text": "<div class=\"row ml-1\">"
-  },
-  {
-    "type": "input",
-    "title": "服務機關"
-  },
-  {
-    "type": "radio",
-    "title": "偷渡客",
-    "list": [
-      "是",
-      "否"
-    ]
-  },
-  {
-    "type": "htmlSource",
-    "text": "</div>"
-  },
-  {
-    "type": "select",
-    "title": "<span class=\"fs-1\"><span style=\"color:black\">職業</span><span style=\"color:red\">*</span><a href=\"https://docs.google.com/spreadsheets/d/11fnorqGalLlV-YU-tVuK0a_pyi5UFEXKnpuzJvi8hFA/edit#gid=344074476\">\uD83D\uDD06</a></span>",
-    "list": [
-      "---高風險職業---",
-      "學生",
-      "工程師",
-      "1",
-      "2",
-      "---其他職業---",
-      "1",
-      "2",
-      "3",
-      "4"
-    ]
-  },
+
   {
     "type": "htmlFile",
-    "file": "旅遊史.html"
-  },
-  {
-    "type": "h4",
-    "title": "<input class='form-check-input mt-1' type='checkbox'> 國內旅遊史<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面\">\uD83D\uDD06</a>"
-  },
-  {
-    "type": "select",
-    "title": "縣市<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=縣市資料請搜尋Google關鍵字：內政部民政司 地方行政區域簡介\">\uD83D\uDD06</a>",
-    "list": [
-      "臺北市",
-      "新北市",
-      "3",
-      "4"
-    ]
-  },
-  {
-    "type": "date",
-    "title": "起始日期<span style=\"color:red\">*</span>"
-  },
-  {
-    "type": "date",
-    "title": "結束日期<span style=\"color:red\">*</span>"
-  },
-  {
-    "type": "addRecord",
-    "title": "＋ 新增一筆國內旅遊史"
-  },
-  {
-    "type": "h4",
-    "title": "<input class='form-check-input mt-1' type='checkbox'> 國外旅遊史<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面\">\uD83D\uDD06</a>"
-  },
-  {
-    "type": "inputSmall",
-    "title": "國家<span style=\"color:red\">*</span>"
-  },
-  {
-    "type": "inputSmall",
-    "title": "次級行政區"
-  },
-  {
-    "type": "dateSmall",
-    "title": "起始日期<span style=\"color:red\">*</span>"
-  },
-  {
-    "type": "dateSmall",
-    "title": "結束日期<span style=\"color:red\">*</span>"
-  },
-  {
-    "type": "addRecord",
-    "title": "＋ 新增一筆國外旅遊史"
-  },
-  {
-    "type": "h4",
-    "title": "旅遊史：過去二星期內是否曾經旅行？(縣市別或國名，請擇一填寫)"
-  },
-  {
-    "type": "date",
-    "title": "日期"
-  },
-  {
-    "type": "select",
-    "title": "縣市別",
-    "list": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6"
-    ]
-  },
-  {
-    "type": "select",
-    "title": "國名(大陸地區請填省份)",
-    "list": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6"
-    ]
-  },
-  {
-    "type": "select",
-    "title": "大陸地區省份",
-    "list": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6"
-    ]
-  },
-  {
-    "type": "addRecord",
-    "title": "＋ 新增一筆過去二星期內旅遊史"
-  },
-  {
-    "type": "h4",
-    "title": "<input class='form-check-input mt-1' type='checkbox'> 國外居住史<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面\">\uD83D\uDD06</a>"
-  },
-  {
-    "type": "inputSmall",
-    "title": "國家<span style=\"color:red\">*</span>"
-  },
-  {
-    "type": "inputSmall",
-    "title": "次級行政區"
-  },
-  {
-    "type": "dateSmall",
-    "title": "離境居住國日期<span style=\"color:red\">*</span>"
-  },
-  {
-    "type": "dateSmall",
-    "title": "入境我國日期<span style=\"color:red\">*</span>"
-  },
-  {
-    "type": "addRecord",
-    "title": "＋ 新增一筆國外居住史"
-  },
-  {
-    "type": "h3",
-    "title": "動物接觸史"
-  },
-  {
-    "type": "htmlSource",
-    "text": "<div class=\"row\">"
-  },
-  {
-    "type": "radioNormal",
-    "list": [
-      "有",
-      "無"
-    ]
-  },
-  {
-    "type": "select",
-    "title": "接觸動物種類<a href=\"https://docs.google.com/spreadsheets/d/1PsMy-qKZjy7WyOQSvkHWtLmuSCJo7CrbfsG_BGTKjH8/edit#gid=715655781&range=A1\">\uD83D\uDD06</a>",
-    "list": [
-      "其它接觸動物",
-      "2",
-      "3",
-      "4"
-    ]
-  },
-  {
-    "type": "input",
-    "title": "其他接觸動物<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=當接觸動物種類選擇「其他接觸動物」才動態顯示此欄位\">\uD83D\uDD06</a>"
-  },
-  {
-    "type": "htmlSource",
-    "text": "</div>"
-  },
-  {
-    "type": "h3",
-    "title": "接觸史：過去二星期內是否曾經與疑似SARS個案接觸史"
-  },
-  {
-    "type": "radio",
-    "list": [
-      "有",
-      "無"
-    ]
-  },
-  {
-    "type": "input",
-    "title": "說明"
-  },
-  {
-    "type": "h3",
-    "title": "發病前10日，具有下列任一個條件"
-  },
-  {
-    "type": "checkbox",
-    "list": [
-      [
-        "checkbox",
-        "1.有SARS流行地區(經WHO宣佈)之旅遊史"
-      ],
-      [
-        "checkbox",
-        "2.有SARS確定病例之接觸史"
-      ],
-      [
-        "checkbox",
-        "3.有與SARS病毒實驗室相關之暴露史"
-      ],
-      [
-        "checkbox",
-        "4.無前述三項流行病學暴露史，但臨床上極度懷疑為SARS者"
-      ]
-    ]
-  },
-  {
-    "type": "h3",
-    "title": "您在最近兩星期內是否到過任何醫院或診所就診，探視病人，訪友，洽公或接受健康檢查等？並註明曾經去過醫院之病房號碼及樓層"
-  },
-  {
-    "type": "dateSmall",
-    "title": "日期"
-  },
-  {
-    "type": "inputSmall",
-    "title": "醫院/診所名稱"
-  },
-  {
-    "type": "inputSmall",
-    "title": "目的"
-  },
-  {
-    "type": "inputSmall",
-    "title": "棟別/樓層"
-  },
-  {
-    "type": "inputSmall",
-    "title": "病房號"
-  },
-  {
-    "type": "inputSmall",
-    "title": "訪友/病人名字"
-  },
-  {
-    "type": "inputSmall",
-    "title": "備註說明"
-  },
-  {
-    "type": "addRecord",
-    "title": "＋ 新增一筆紀錄"
-  },
-  {
-    "type": "h3",
-    "title": "被通報前之其他就診醫療機構"
-  },
-  {
-    "type": "inputBig",
-    "title": "醫院代碼"
-  },
-  {
-    "type": "inputBig",
-    "title": "醫院名稱"
-  },
-  {
-    "type": "h3",
-    "title": "慢性病史"
-  },
-  {
-    "type": "checkbox",
-    "list": [
-      [
-        "checkbox",
-        "糖尿病"
-      ],
-      [
-        "checkbox",
-        "COPD"
-      ],
-      [
-        "checkbox",
-        "ESRD"
-      ],
-      [
-        "checkbox",
-        "慢性肝病"
-      ],
-      [
-        "checkbox",
-        "Malignancy"
-      ],
-      [
-        "checkbox",
-        "Immunologic Disease"
-      ],
-      [
-        "input",
-        "其他"
-      ]
-    ]
+    "file": "disease_嚴重急性呼吸道症候群_流行病學資料.html"
   },
   {
     "type": "json",
     "file": "../json/disease_個案生母資料.json"
   },
   {
+    "rowStart": "<div class=\"indent-h2\">",
     "type": "h2",
     "title": "個案狀況維護與補充資料"
   },
   {
+    "rowStart": "<div class=\"indent-h3\">",
     "type": "h3",
     "title": "發病史：(如：日期、事件及症狀等)"
+  },
+  {
+    "rowStart": "<div class=\"indent-h4 row\">",
+    "type": "h4"
   },
   {
     "type": "date",
@@ -529,11 +248,17 @@
   },
   {
     "type": "addRecord",
-    "title": "＋ 新增一筆紀錄"
+    "title": "＋ 新增一筆紀錄",
+    "rowEnd": "</div> </div>"
   },
   {
+    "rowStart": "<div class=\"indent-h3\">",
     "type": "h3",
     "title": "生命徵兆(BT：記錄當日最高度數之體溫)"
+  },
+  {
+    "rowStart": "<div class=\"indent-h4 row\">",
+    "type": "h4"
   },
   {
     "type": "dateSmall",
@@ -565,6 +290,7 @@
   },
   {
     "type": "inputSmall",
-    "title": "備註說明"
+    "title": "備註說明",
+    "rowEnd": "</div> </div>"
   }
 ]
