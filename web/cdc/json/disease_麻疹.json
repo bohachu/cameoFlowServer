@@ -58,7 +58,7 @@
     "rowStart":"<div class=\"indent-h4\">",
     "type":"checkbox",
     "list":[
-      "3.具有下列三項條件任一者(可複選)<a href=\"codingMemo.html?strMemo=勾選此欄位，產生下面三個選項問題，需做連動設計\">\uD83D\uDD06</a>"
+      "3.具有下列三項條件任一者(可複選)<a href=\"codingMemo.html?strMemo=勾選此欄位，下面三個選項才可做勾選，且下面三個題目保留在頁面上\">\uD83D\uDD06</a>"
     ]
   },
   {

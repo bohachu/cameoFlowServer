@@ -38,9 +38,8 @@
     "title":"通報時檢驗資料"
   },
   {
-    "rowStart": "<div class=\"row pl-4\">",
-    "type": "TitleOneLine",
-    "title": "流感病毒抗原快速篩檢結果"
+    "type": "htmlSource",
+    "text": "<div class=\"row pl-4\"> <span class=\" fs-1 pb-1 pr-3 font-weight-bold text-black\">流感病毒抗原快速篩檢結果</span>"
   },
   {
     "type": "Radio4OptionsOneLine",
