@@ -6,33 +6,15 @@
   </div>
   <div class="indent-h3">
     <div class="row ml-0 pl-0 mt-0 mb-2 font-weight-bold text-black fs-1">
-      SARS編號：1234567
+      SARS編號<a
+      href="codingMemo.html?strMemo=編號會由系統自動帶入，不需填寫">🔆</a>：1234567
     </div>
-    <div class="indent-h4">
-      <div class="row pb-1 pl-0 ml-0">
-        <div class="form-group form-inline ">
-          <b>服務機關</b> <input class="form-control text-secondary ml-2" type="text" placeholder="輸入內容">
-        </div>
-        <span class="pl-4 pr-1 pt-1 fs-0 font-weight-bold text-black">偷渡客</span>
-        <div class="pt-1 pl-4 custom-control custom-radio custom-control-inline">
-          <input type="radio" class="custom-control-input">
-          <label class="custom-control-label fs-0">
-            否
-          </label>
-        </div>
-        <div class="pt-1 pl-4 custom-control custom-radio custom-control-inline">
-          <input type="radio" class="custom-control-input">
-          <label class="custom-control-label fs-0">
-            是，請勾選下列疾病(可複選)：
-          </label>
-        </div>
-      </div>
-    </div> <!--indent-h4-->
   </div> <!--indent-h3-->
+
   <div class="indent-h3 職業">
     <div class="row ml-0 pl-0">
       <label class="fs-0" for="formControlSelect${intRandomId}"><span
-        class="pt-1 fs-1 font-weight-bold text-black"><span style="color:black"><b>職業</b></span><span style="color:red">*</span><a
+        class="form-group form-inline pt-1 fs-1 font-weight-bold text-black"><span style="color:black"><b>職業</b></span><span style="color:red">*</span><a
         href="https://docs.google.com/spreadsheets/d/11fnorqGalLlV-YU-tVuK0a_pyi5UFEXKnpuzJvi8hFA/edit#gid=344074476">🔆</a></span></label><br>
       <div class="col-4 mb-3">
         <select class="form-control text-secondary" id="formControlSelect${intRandomId}">
@@ -49,8 +31,34 @@
           <option>4</option>
         </select>
       </div>
+      <div class="form-group form-inline fs-1 font-weight-bold text-black">
+        <b>職業詳細說明</b> <input class="form-control text-secondary ml-2" type="text" placeholder="輸入內容">
+      </div>
     </div>
   </div>
+
+  <div class="indent-h3">
+    <div class="row pb-1 pl-0 ml-0">
+      <div class="form-group form-inline fs-1 font-weight-bold text-black">
+        <b>服務機關</b> <input class="form-control text-secondary ml-2" type="text" placeholder="輸入內容">
+      </div>
+      <span class="pl-4 pr-1 pt-1 fs-1 font-weight-bold text-black">偷渡客</span>
+      <div class="pt-2 pl-5 custom-control custom-radio custom-control-inline">
+        <input type="radio" class="custom-control-input">
+        <label class="custom-control-label fs-0">
+          是
+        </label>
+      </div>
+      <div class="pt-2 pl-4 custom-control custom-radio custom-control-inline">
+        <input type="radio" class="custom-control-input">
+        <label class="custom-control-label fs-0">
+          否
+        </label>
+      </div>
+    </div>
+  </div> <!--indent-h3-->
+
+
   <div class="indent-h3 旅遊史">
     <div class="row ml-0 pl-0">
       <div class="pt-1 fs-1 font-weight-bold text-black" style="color:black">

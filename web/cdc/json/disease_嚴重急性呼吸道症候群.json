@@ -45,7 +45,8 @@
   {
     "rowStart": "<div class=\"indent-h3\">",
     "type": "h3",
-    "title": "臨床症狀 (以下條件須皆符合)"
+    "title": "臨床症狀<span style=\"color:red\">*</span>",
+    "tip": "以下條件須皆符合"
   },
   {
     "rowStart": "<div class=\"indent-h4\">",
@@ -60,7 +61,7 @@
     "type": "checkbox",
     "list": [
       "2.一種或以上的下呼吸道症狀（咳嗽、呼吸困難、呼吸短促）",
-      "3.放射線診斷學上與肺炎或呼吸窘迫症候群一致的肺浸潤證據或屍體解剖的發現與肺炎或呼吸窘迫症候群的病理學一致而無其他可確定的致病因",
+      "3.放射線診斷學上與肺炎或呼吸窘迫症候群一致的肺浸潤證據，或屍體解剖的發現與肺炎或呼吸窘迫症候群的病理學一致，而無其他可確定的致病因",
       "4.無其他可替代的診斷能完全解釋疾病"
     ],
     "rowEnd": "</div> <!--indent-h4--> </div> <!--indent-h3--> </div> <!--indent-h2-->"
@@ -86,35 +87,43 @@
   },
   {
     "type": "inputSmall",
-    "title": "WBC(10^3)"
+    "title": "WBC(10^3)",
+    "text":"輸入數字"
   },
   {
     "type": "inputSmall",
-    "title": "Seg(%)"
+    "title": "Seg(%)",
+    "text":"輸入數字"
   },
   {
     "type": "inputSmall",
-    "title": "Lym(%)"
+    "title": "Lym(%)",
+    "text":"輸入數字"
   },
   {
     "type": "inputSmall",
-    "title": "Plate(10^3)"
+    "title": "Plate(10^3)",
+    "text":"輸入數字"
   },
   {
     "type": "inputSmall",
-    "title": "Mono(%)"
+    "title": "Mono(%)",
+    "text":"輸入數字"
   },
   {
     "type": "inputSmall",
-    "title": "RBC(10^6)"
+    "title": "RBC(10^6)",
+    "text":"輸入數字"
   },
   {
     "type": "inputSmall",
-    "title": "Hb(g/dL)"
+    "title": "Hb(g/dL)",
+    "text":"輸入數字"
   },
   {
     "type": "inputSmall",
-    "title": "MCV(fL)"
+    "title": "MCV(fL)",
+    "text":"輸入數字"
   },
   {
     "type": "inputSmall",
@@ -137,39 +146,48 @@
   },
   {
     "type": "inputSmall",
-    "title": "Sugar(mg/dL)"
+    "title": "Sugar(mg/dL)",
+    "text":"輸入數字"
   },
   {
     "type": "inputSmall",
-    "title": "BUN(mg/dL)"
+    "title": "BUN(mg/dL)",
+    "text":"輸入數字"
   },
   {
     "type": "inputSmall",
-    "title": "CPK(IU/L)"
+    "title": "CPK(IU/L)",
+    "text":"輸入數字"
   },
   {
     "type": "inputSmall",
-    "title": "LDH(IU/L)"
+    "title": "LDH(IU/L)",
+    "text":"輸入數字"
   },
   {
     "type": "inputSmall",
-    "title": "CRP(mg/L)"
+    "title": "CRP(mg/L)",
+    "text":"輸入數字"
   },
   {
     "type": "inputSmall",
-    "title": "GOT(IU/L)"
+    "title": "GOT(IU/L)",
+    "text":"輸入數字"
   },
   {
     "type": "inputSmall",
-    "title": "GPT(IU/L)"
+    "title": "GPT(IU/L)",
+    "text":"輸入數字"
   },
   {
     "type": "inputSmall",
-    "title": "Na(meq/L)"
+    "title": "Na(meq/L)",
+    "text":"輸入數字"
   },
   {
     "type": "inputSmall",
-    "title": "K(meq/L)"
+    "title": "K(meq/L)",
+    "text":"輸入數字"
   },
   {
     "type": "inputSmall",
@@ -192,19 +210,23 @@
   },
   {
     "type": "inputSmall",
-    "title": "PH"
+    "title": "PH",
+    "text":"輸入數字"
   },
   {
     "type": "inputSmall",
-    "title": "PCO2(mmHg)"
+    "title": "PCO2(mmHg)",
+    "text":"輸入數字"
   },
   {
     "type": "inputSmall",
-    "title": "PO2(mmHg)"
+    "title": "PO2(mmHg)",
+    "text":"輸入數字"
   },
   {
     "type": "inputSmall",
-    "title": "O2Sat(%)"
+    "title": "O2Sat(%)",
+    "text":"輸入數字"
   },
   {
     "type": "inputSmall",
@@ -231,20 +253,22 @@
     "title": "發病史：(如：日期、事件及症狀等)"
   },
   {
-    "rowStart": "<div class=\"indent-h4 row\">",
-    "type": "h4"
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h4\">"
   },
   {
-    "type": "date",
+    "rowStart": "<div class=\"row pl-3\">",
+    "type": "dateSmall",
     "title": "日期"
   },
   {
-    "type": "input",
+    "type": "inputSmall",
     "title": "說明"
   },
   {
-    "type": "input",
-    "title": "備註說明"
+    "type": "inputSmall",
+    "title": "備註說明",
+    "rowEnd": "</div>"
   },
   {
     "type": "addRecord",
@@ -257,8 +281,8 @@
     "title": "生命徵兆(BT：記錄當日最高度數之體溫)"
   },
   {
-    "rowStart": "<div class=\"indent-h4 row\">",
-    "type": "h4"
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h4 row\">"
   },
   {
     "type": "dateSmall",
@@ -266,27 +290,28 @@
   },
   {
     "type": "inputSmall",
-    "title": "BT(°C)"
+    "title": "BT(°C)",
+    "text":"輸入數字"
   },
   {
     "type": "inputSmall",
-    "title": "PR(次/min)"
+    "title": "PR(次/min)",
+    "text":"輸入數字"
   },
   {
     "type": "inputSmall",
-    "title": "PR(次/min)"
+    "title": "RR(次/min)",
+    "text":"輸入數字"
   },
   {
     "type": "inputSmall",
-    "title": "RR(次/min)"
+    "title": "BP(mmg) 收縮壓：",
+    "text":"輸入數字"
   },
   {
     "type": "inputSmall",
-    "title": "BP(mmg) 收縮壓："
-  },
-  {
-    "type": "inputSmall",
-    "title": "BP(mmg) 舒張壓："
+    "title": "BP(mmg) 舒張壓：",
+    "text":"輸入數字"
   },
   {
     "type": "inputSmall",
