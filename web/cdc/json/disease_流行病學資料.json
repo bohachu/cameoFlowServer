@@ -24,7 +24,7 @@
   },
   {
     "type": "select",
-    "title": "縣市<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=縣市資料請搜尋Google關鍵字：內政部民政司 地方行政區域簡介\">\uD83D\uDD06</a>",
+    "title": "縣市<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=縣市資料請參考精誠居佑夥伴手上，由疾管署提供已盤點過居住縣市代碼的試算表\">\uD83D\uDD06</a>",
     "list": [
       "臺北市",
       "新北市",
