@@ -198,7 +198,7 @@
       </div>
     </div>
     <div class="JsonToHtmlSelect_buildHtmlAll col-lg-3 mb-3" style="float: left;">
-      <label class="fs-0" for="formControlSelect${intRandomId}">縣市別<span style="color:red">*</span><a
+      <label class="fs-0" for="formControlSelect${intRandomId}">縣市別<a
         href="codingMemo.html?strMemo=縣市資料請參考精誠居佑夥伴手上，由疾管署提供已盤點過居住縣市代碼的試算表">🔆</a></label><br>
       <select class="form-control text-secondary" id="formControlSelect${intRandomId}">
         <option>請選擇</option>
@@ -209,9 +209,7 @@
       </select>
     </div>
     <div class="JsonToHtmlSelect_buildHtmlAll col-lg-3 mb-3" style="float: left;">
-      <label class="fs-0" for="formControlSelect${intRandomId}">國名<span style="color:red">*</span><span
-        tooltip="大陸地區請填省份" flow="right"><i class="fas fas fa-info-circle"
-                                           style="color: #00a65a;"></i></span></label><br>
+      <label class="fs-0" for="formControlSelect${intRandomId}">國名</label><br>
       <select class="form-control text-secondary" id="formControlSelect${intRandomId}">
         <option>請選擇</option>
         <option>1</option>
@@ -221,7 +219,12 @@
       </select>
     </div>
     <div class="JsonToHtmlSelect_buildHtmlAll col-lg-3 mb-3" style="float: left;">
-      <label class="fs-0" for="formControlSelect${intRandomId}">大陸地區省份<span style="color:red">*</span></label><br>
+      <label class="fs-0" for="formControlSelect${intRandomId}">大陸地區省份<span
+        tooltip="當國名選擇中國國大陸時
+        ，此欄位為必填" flow="left">
+        <i class="fas fas fa-info-circle"
+                                           style="color: #00a65a;"></i></span><a
+        href="codingMemo.html?strMemo=當國名選擇中國國大陸時，此欄位為才可填寫，且為必填">🔆</a></label><br>
       <select class="form-control text-secondary" id="formControlSelect${intRandomId}">
         <option>請選擇</option>
         <option>1</option>
@@ -262,25 +265,25 @@
       </div>
     </div>
     <div class="row ml-0 pl-0"><span
-      class="pt-1 fs-1 pb-1 font-weight-bold text-black">接觸史：過去二星期內是否曾經與疑似SARS個案接觸史　</span>
-      <div class="pt-2 pl-4 custom-control custom-radio custom-control-inline">
-        <input type="radio" class="custom-control-input">
-        <label class="custom-control-label fs-0">
-          有
-        </label>
-      </div>
+      class="pt-1 fs-1 pb-1 font-weight-bold text-black">接觸史：過去二星期內是否曾經與疑似SARS個案接觸？　</span>
       <div class="pt-2 pl-4 custom-control custom-radio custom-control-inline">
         <input type="radio" class="custom-control-input">
         <label class="custom-control-label fs-0">
           無
         </label>
       </div>
+      <div class="pt-2 pl-4 mr-1 custom-control custom-radio custom-control-inline">
+        <input type="radio" class="custom-control-input">
+        <label class="custom-control-label fs-0">
+          有，說明
+        </label>
+      </div>
       <div class="form-group form-inline ">
-        <b>服務機關</b> <input class="form-control text-secondary ml-2" type="text" placeholder="輸入內容">
+         <input class="form-control text-secondary ml-2" type="text" placeholder="輸入內容">
       </div>
     </div>
     <div class="row ml-0 pl-0 mt-0 mb-2 font-weight-bold text-black fs-1">
-      發病前10日，具有下列任一個條件
+      發病前10日，具有下列任一個條件<span style="color:red">*</span>
     </div>
     <div class="indent-h4">
       <div class="JsonToHtmlCheckbox_buildHtmlAll row pl-0 ml-0" style="background-color: #FFFFFF">
@@ -315,10 +318,14 @@
             <input class="form-control text-secondary" id="name31969012" type="text" placeholder="年/月/日">
           </div>
         </div>
-        <div class="JsonToHtmlInputCol3_getTags col-lg-3" style="float: left;">
+        <div class="col-lg-3">
           <div class="form-group">
-            <label class="fs-0" for="name31969012">醫院/診所名稱<span style="color:red">*</span></label>
-            <input class="form-control text-secondary" id="name31969012" type="text" placeholder="輸入內容">
+            <label class="fs-0" for="name31969012">醫院/診所名稱<a
+              href="codingMemo.html?strMemo=001 搜尋功能與通報單位名稱欄位一致，搜尋方式要：<br/>a.通報單位名稱欄位，打醫院的名稱，要可以有 autocomplete 功能。<br/>b.打選放大鏡後，視窗畫面的關鍵字搜尋，不用先選擇地區，就可以有 autocomplete 功能。<br/>c.下面可以先點選，縣市（台北市）、地區（松山區），再點選之後可以出現：醫院列表做點選。">🔆</a></label>
+            <div class="d-flex">
+              <input class="form-control text-secondary" id="name31969012" type="text" value="輸入內容">
+              <i class="fas fa-search" style="font-size: 20px; margin: auto 0; margin-left: 10px;"></i>
+            </div>
           </div>
         </div>
         <div class="JsonToHtmlInputCol3_getTags col-lg-3" style="float: left;">
@@ -363,14 +370,15 @@
       <div class="row ml-0 pl-0 mt-1  font-weight-bold text-black fs-1">
         被通報前之其他就診醫療機構
       </div>
-      <div class="form-group form-inline pl-3 mt-0">
-        <b>　醫院代碼</b> <input class="form-control text-secondary ml-2" type="text" placeholder="輸入內容">
+      <div class="col-lg-6 row">
+          <label class="pl-5 pt-2 fs-0">醫院名稱<a
+            href="codingMemo.html?strMemo=001 搜尋功能與通報單位名稱欄位一致，搜尋方式要：<br/>a.通報單位名稱欄位，打醫院的名稱，要可以有 autocomplete 功能。<br/>b.打選放大鏡後，視窗畫面的關鍵字搜尋，不用先選擇地區，就可以有 autocomplete 功能。<br/>c.下面可以先點選，縣市（台北市）、地區（松山區），再點選之後可以出現：醫院列表做點選。">🔆</a></label>
+          <div class="d-flex">
+            <input class="form-control text-secondary" type="text" value="輸入內容">
+            <i class="fas fa-search" style="font-size: 20px; margin: auto 0; margin-left: 10px;"></i>
+          </div>
+        </div>
       </div>
-      <div class="form-group form-inline ">
-        <b>　醫院名稱</b> <input class="form-control text-secondary ml-2" type="text" placeholder="輸入內容">
-      </div>
-    </div>
-
     <div class="row ml-0 pl-0 mt-0 mb-2 font-weight-bold text-black fs-1">
       慢性病史
     </div>
