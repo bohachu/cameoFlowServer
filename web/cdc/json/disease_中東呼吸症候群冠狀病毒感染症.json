@@ -28,65 +28,115 @@
     "file": "../json/disease_其他症狀.json"
   },
   {
-    "type": "radio",
-    "title": "臨床條件",
-    "list": [
-      "急性呼吸道感染，臨床症狀可能包括發燒（≧38℃）及咳嗽",
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h2\">"
+  },
+  {
+    "rowStart": "<div class=\"indent-h3\">",
+    "type":"h3",
+    "title":"臨床條件"
+  },
+  {
+    "rowStart": "<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "急性呼吸道感染、臨床症狀可能包括發燒（≧38℃）、咳嗽等"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart": "<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
       "臨床、放射線診斷或病理學上顯示肺部實質疾病"
-    ]
+    ],
+    "rowEnd": "</div> <!--indent-h4--></div> <!--indent-h3--></div> <!--indent-h2-->"
   },
   {
     "type": "json",
     "file": "../json/disease_流行病學資料.json"
   },
   {
-    "type": "h3",
-    "title": "流行病學條件"
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h2\">"
   },
   {
-    "type": "radio",
-    "list": [
-      "發病前14日內，曾經與出現症狀的極可能病例或確定病例有密切接觸，包括在無適當防護下提供照護、相處、或有呼吸道分泌物、體液之直接接觸",
-      "發病前14日內，具有中東呼吸症候群冠狀病毒疫情流行地區之旅遊或居住史。"
-    ]
+    "rowStart": "<div class=\"indent-h3\">",
+    "type":"h3",
+    "title":"流行病學條件"
   },
   {
-    "type": "h3",
-    "title": "慢性疾病病史<a href=\"codingMemo.html?strMemo=勾選有時，下面11個選項至少必選一項\">\uD83D\uDD06</a>"
+    "rowStart": "<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "發病前14日內，曾經與出現症狀的極可能病例或確定病例有密切接觸，包括在無適當防護下提供照護、相處、或有呼吸道分泌物、體液之直接接觸"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
   },
   {
-    "type": "radio",
-    "list": [
-      "有",
-      "無"
-    ]
+    "rowStart": "<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "發病前14日內，具有中東呼吸症候群冠狀病毒疫情流行地區之旅遊或居住史"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"row pb-1 pl-0 ml-0\">",
+    "type":"TitleOneLine",
+    "title":"慢性疾病病史<a href=\"codingMemo.html?strMemo=勾選有時，下面10個選項至少必選一項\">\uD83D\uDD06</a>"
+  },
+  {
+    "type":"Radio2OptionsOneLine",
+    "option1":"有",
+    "option2":"無",
+    "rowEnd":"</div>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h4\">"
   },
   {
     "type": "htmlFile",
-    "file": "disease_MERS_慢性疾病病史勾選區塊.html"
+    "file": "disease_MERS_慢性疾病病史.html"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div> <!--indent-h4--> </div> <!--indent-h3--> </div> <!--indent-h2-->"
   },
   {
     "type": "json",
     "file": "../json/disease_個案生母資料.json"
   },
   {
-    "type": "h2",
-    "title": "個案狀況維護與補充資料"
+    "rowStart": "<div class=\"indent-h2\">",
+    "type":"h2",
+    "title":"個案狀況維護與補充資料"
   },
   {
-    "type": "radio",
-    "title": "發病後是否有出現嚴重併發症<a href=\"codingMemo.html?strMemo=若為是，產生下面三個選項，連動設計\">\uD83D\uDD06</a>",
-    "list": [
-      "是",
-      "否"
-    ]
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h3\">"
+  },
+
+  {
+    "rowStart": "<div class=\"row pl-0 ml-0 pb-1\">",
+    "type": "TitleOneLine",
+    "title": "發病後是否有出現嚴重併發症<a href=\"codingMemo.html?strMemo=若為是，產生下面三個選項，連動設計\">\uD83D\uDD06</a>　"
   },
   {
+    "type": "Radio2OptionsOneLine",
+    "option1": "是",
+    "option2": "否",
+    "rowEnd": "</div>"
+  },
+  {
+    "rowStart": "<div class=\"indent-h4\">",
     "type": "checkbox",
     "list": [
       "呼吸衰竭需呼吸器治療",
       "腎臟衰竭需洗腎"
     ],
-    "input": "其他併發症<a href=\"codingMemo.html?strMemo=勾選此項者，其他併發症病名必填\">\uD83D\uDD06</a>"
+    "input": "其他併發症<a href=\"codingMemo.html?strMemo=勾選此項者，其他併發症病名必填\">\uD83D\uDD06</a>",
+    "rowEnd": "</div> <!--indent-h4--> </div> <!--indent-h3--> </div> <!--indent-h2-->"
   }
 ]
