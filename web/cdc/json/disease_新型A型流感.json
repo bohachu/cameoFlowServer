@@ -27,107 +27,108 @@
     "file": "../json/disease_其他症狀.json"
   },
   {
-    "type": "h4",
-    "title": "臨床條件<span style=\"color:red\">*</span>"
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h2\">"
   },
   {
-    "type": "checkbox",
-    "list": [
-      "一、急性呼吸道感染、臨床症狀可能包括發燒（≧38℃）、咳嗽等",
+    "rowStart": "<div class=\"indent-h3\">",
+    "type":"h3",
+    "title":"臨床條件<span style=\"color:red\">*</span>"
+  },
+  {
+    "rowStart": "<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "一、急性呼吸道感染、臨床症狀可能包括發燒（≧38℃）、咳嗽等"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart": "<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
       "二、臨床、放射線診斷或病理學上顯示肺部實質疾病"
-    ]
+    ],
+    "rowEnd": "</div> <!--indent-h4--></div> <!--indent-h3--></div> <!--indent-h2-->"
   },
   {
     "type": "json",
     "file": "../json/disease_流行病學資料.json"
   },
   {
-    "type": "h3",
-    "title": "流行病學條件"
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h2\">"
   },
   {
-    "type": "checkbox",
-    "list": [
-      "一、曾經與出現症狀的極可能或確定病例有密切接觸，包括在無適當防護下提供照護、相處、或有呼吸道分泌物、體液之直接接觸",
-      "二、曾至有出現新型A型流感流行疫情地區之旅遊史或居住史。",
-      "三、曾有禽鳥、豬接觸史或至禽鳥、豬相關場所",
+    "rowStart": "<div class=\"indent-h3\">",
+    "type":"h3",
+    "title":"流行病學條件"
+  },
+  {
+    "rowStart": "<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "一、曾經與出現症狀的極可能或確定病例有密切接觸，包括在無適當防護下提供照護、相處、或有呼吸道分泌物、體液之直接接觸"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart": "<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "二、曾至有出現新型A型流感流行疫情地區之旅遊史或居住史"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart": "<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "三、曾有禽鳥、豬接觸史或至禽鳥、豬相關場所"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart": "<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
       "四、在實驗室或其他環境，無適當防護下處理動物或人類之檢體，而該檢體可能含有新型A型流感病毒"
-    ]
+    ],
+    "rowEnd": "</div> <!--indent-h4--></div> <!--indent-h3-->"
   },
   {
-    "type": "h3",
-    "title": "慢性疾病病史<a href=\"codingMemo.html?strMemo=勾選有時，下面10個選項至少必選一項\">\uD83D\uDD06</a>"
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h3\">"
   },
   {
-    "type": "radio",
-    "list": [
-      "有",
-      "無"
-    ]
+    "rowStart":"<div class=\"row pb-1 pl-0 ml-0\">",
+    "type":"TitleOneLine",
+    "title":"慢性疾病病史<a href=\"codingMemo.html?strMemo=勾選有時，下面10個選項至少必選一項\">\uD83D\uDD06</a>　"
   },
   {
-    "type": "checkbox",
-    "list": [
-      [
-        "checkbox",
-        "精神疾病"
-      ],
-      [
-        "checkbox",
-        "神經肌肉疾病"
-      ],
-      [
-        "checkbox",
-        "慢性肺疾(如氣喘、慢性阻塞性肺疾等)"
-      ],
-      [
-        "checkbox",
-        "代謝性疾病(如糖尿病、高血脂等)"
-      ],
-      [
-        "checkbox",
-        "心血管疾病(高血壓除外)"
-      ],
-      [
-        "checkbox",
-        "肝臟疾病(如肝炎、肝硬化等)"
-      ],
-      [
-        "checkbox",
-        "腎臟疾病(如慢性腎功能不全、長期接受血液或腹膜透析等)"
-      ],
-      [
-        "checkbox",
-        "仍在治療中或未治癒之癌症"
-      ],
-      [
-        "input",
-        "懷孕，週數<a href=\"codingMemo.html?strMemo=勾選此項者，懷孕週數必填\">\uD83D\uDD06</a>"
-      ],
-      [
-        "input",
-        "其他，其他慢性病<a href=\"codingMemo.html?strMemo=勾選此項者，其他慢性病必填\">\uD83D\uDD06</a>"
-      ],
-      [
-        "input",
-        "備註（200字以內）"
-      ]
-    ]
+    "type":"Radio2OptionsOneLine",
+    "option1":"有",
+    "option2":"無",
+    "rowEnd":"</div>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h4\">"
+  },
+  {
+    "type": "htmlFile",
+    "file": "disease_新型A型流感_慢性疾病病史.html"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div> <!--indent-h4--> </div> <!--indent-h3--> </div> <!--indent-h2-->"
   },
   {
     "type": "json",
     "file": "../json/disease_個案生母資料.json"
   },
   {
-    "type": "h2",
-    "title": "個案狀況維護與補充資料"
-  },
-  {
-    "type": "h3",
-    "title": "個案病況追蹤維護"
-  },
-  {
     "type": "htmlFile",
-    "file": "disease_新型A型流感_個案病況追蹤維護_排版上下緊密一點.html"
+    "file": "disease_新型A型流感_個案狀況維護與補充資料.html"
   }
 ]

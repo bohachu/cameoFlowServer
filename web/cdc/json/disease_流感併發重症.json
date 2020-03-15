@@ -100,7 +100,6 @@
     "type": "json",
     "file": "../json/disease_流行病學資料.json"
   },
-
   {
     "type": "htmlSource",
     "text": "<div class=\"indent-h2\">"
