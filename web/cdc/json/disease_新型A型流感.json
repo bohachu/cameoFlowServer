@@ -33,7 +33,7 @@
   {
     "rowStart": "<div class=\"indent-h3\">",
     "type":"h3",
-    "title":"臨床條件<span style=\"color:red\">*</span>"
+    "title":"臨床條件<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=1. 同時符合兩項臨床條件，且流行病學條件中至少符合一項。2. 符合臨床條件第(一)項及流行病學條件第(一)項。且必須符合上述任一點，才可成立通報\">\uD83D\uDD06</a>"
   },
   {
     "rowStart": "<div class=\"indent-h4\">",

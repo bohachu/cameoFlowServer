@@ -2,13 +2,15 @@
   <div class="row ml-0 pl-0 mt-3 mb-2 font-weight-bold text-black fs-2">
     個案狀況維護與補充資料
   </div>
+
   <div class="indent-h3">
     <div class="row ml-0 pl-0 mt-0 mb-1 font-weight-bold text-black fs-1">
-      個案病況追蹤維護
+      個案病況追蹤維護<span style="color:red">*</span>
     </div>
     <div class="indent-h4">
-      <div class="row pb-0 pl-0 ml-0"><span class="pt-2 fs-0 font-weight-bold text-black">個案於出院(或通報)後10日內是否病況加重<span style="color:red">*</span>　</span>
-        <div class="pt-2 pl-4 custom-control custom-radio custom-control-inline">
+      <div class="row pb-2 pl-0 ml-0">
+        <label class="pt-2 fs-0 text-black">個案於出院(或通報)後10日內是否病況加重</label>
+        <div class="pt-2 pl-5 custom-control custom-radio custom-control-inline">
           <input type="radio" class="custom-control-input">
           <label class="custom-control-label fs-0">
             是
@@ -20,25 +22,34 @@
             否
           </label>
         </div>
-        <div class="form-group form-inline ml-3">
-          <b>病況簡要概述(200字以內)<span style="color:red">*</span>
-            <a href="codingMemo.html?strMemo=若個案於出院(或通報)後10日內是否病況加重為是時，病況簡要概述為必填，連動設計">🔆</a></b> <input class="form-control text-secondary ml-2" type="text" placeholder="輸入內容">
-        </div>
       </div>
-      <div class="row pt-0 pb-1 pl-0 ml-0"><span class="pt-2 fs-0 font-weight-bold text-black">抗病毒藥物開立　</span>
-        <div class="pt-2 pl-4 custom-control custom-radio custom-control-inline">
-          <input type="radio" class="custom-control-input">
-          <label class="custom-control-label fs-0">
-            有
-          </label>
-        </div>
-        <div class="pt-2 pl-4 custom-control custom-radio custom-control-inline">
-          <input type="radio" class="custom-control-input">
-          <label class="custom-control-label fs-0">
-            無
-          </label>
-        </div>
-        <label class="pt-2 fs-0 ml-3">開立日<span style="color:red">*</span>
+      <div class="row pb-0 pl-0 ml-0">
+        <label class="form-group form-inline text-black fs-0">病況簡要概述<a
+          href="codingMemo.html?strMemo=若個案於出院(或通報)後10日內是否病況加重為是時，病況簡要概述為必填，連動設計">🔆</a></b> <input
+          class="form-control text-secondary ml-2" type="text" placeholder="輸入內容，限200字">
+        </label>
+      </div>
+    </div> <!--indent-h4-->
+
+
+    <div class="row pt-0 pb-1 pl-0 ml-0">
+      <span class="pt-1 fs-1 font-weight-bold text-black">抗病毒藥物開立<span style="color:red">*</span>　</span>
+      <div class="pt-2 pl-4 custom-control custom-radio custom-control-inline">
+        <input type="radio" class="custom-control-input">
+        <label class="custom-control-label fs-0">
+          有
+        </label>
+      </div>
+      <div class="pt-2 pl-4 custom-control custom-radio custom-control-inline">
+        <input type="radio" class="custom-control-input">
+        <label class="custom-control-label fs-0">
+          無
+        </label>
+      </div>
+    </div>
+    <div class="indent-h4">
+      <div class="row pt-0 pb-1 pl-0 ml-0">
+        <label class="pt-2 fs-0">開立日
           <a href="codingMemo.html?strMemo=若抗病毒藥物開立勾選有，此欄位必填，需做連動設計">🔆</a></label>
         <input class="col-2 form-control text-secondary" type="text" placeholder="年/月/日">
       </div>
