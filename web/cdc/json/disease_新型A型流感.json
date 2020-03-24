@@ -62,7 +62,7 @@
   {
     "rowStart": "<div class=\"indent-h3\">",
     "type":"h3",
-    "title":"流行病學條件"
+    "title":"流行病學條件<span style=\"color:red\">*</span>"
   },
   {
     "rowStart": "<div class=\"indent-h4\">",
@@ -103,7 +103,7 @@
   {
     "rowStart":"<div class=\"row pb-1 pl-0 ml-0\">",
     "type":"TitleOneLine",
-    "title":"慢性疾病病史<a href=\"codingMemo.html?strMemo=勾選有時，下面10個選項至少必選一項\">\uD83D\uDD06</a>　"
+    "title":"慢性疾病病史<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=勾選有時，下面10個選項至少必選一項。勾選無時，下面選項不可填寫\">\uD83D\uDD06</a>　"
   },
   {
     "type":"Radio2OptionsOneLine",
