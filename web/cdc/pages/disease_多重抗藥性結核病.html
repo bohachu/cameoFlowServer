@@ -1,223 +1,357 @@
-<div id="strDiseaseFile">
-  <div class="indent-h2">
-    <div class="mt-3 mb-0 text-black fs-2 font-weight-bold" style="clear: both;"><span class="mt-0">臨床症狀</span></div>
-    <div class="indent-h3">
-      <div class="row pt-0 ml-0 pl-0"><span class="pt-1 fs-1 pb-1 font-weight-bold text-black">有無症狀<span
-        style="color:red">*</span>　</span>
-        <div class="pt-2 pl-4 custom-control custom-radio custom-control-inline">
-          <input type="radio" class="custom-control-input">
-          <label class="custom-control-label fs-0">
-            有
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="utf-8">
+  <title>疾管署</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:100,200,300,400,500,600,700,800,900"
+    rel="stylesheet">
+  <link href="../assets/lib/select2/select2.min.css" rel="stylesheet">
+  <link href="../assets/lib/flatpickr/flatpickr.min.css" rel="stylesheet">
+  <link href="../assets/css/theme.css" rel="stylesheet">
+  <link href="../assets/lib/flatpickr/flatpickr.min.css" rel="stylesheet">
+  <link href="./reportDisease.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="strDiseaseFile">
+    <div class="indent-h2">
+      <div class="mt-3 mb-0 text-black fs-2 font-weight-bold" style="clear: both;"><span class="mt-0">臨床症狀</span></div>
+    </div>
+    <div class="indent-h2">
+      <div class="mt-3 mb-0 text-black fs-2 font-weight-bold" style="clear: both;"><span class="mt-0">檢驗資料</span></div>
+      <div class="indent-h3 診斷報告資料">
+        <div class="row ml-0 pl-0">
+          <div class="pt-1 fs-1 font-weight-bold text-black" style="color:black">
+            <b>診斷報告資料</b>
+          </div>
+        </div>
+      </div>
+      <div class="indent-h4 mb-3">
+        <b>登記類別<span style="color:red">*</span></b>
+        <div class="pt-1 ml-1 custom-control custom-radio custom-control-inline">
+          <input type="radio" class="custom-control-input" id="kind-disease1" name="kind-disease">
+          <label class="custom-control-label fs-0" for="kind-disease1">
+            肺內結核病
           </label>
         </div>
-        <div class="pt-2 pl-4 custom-control custom-radio custom-control-inline">
-          <input type="radio" class="custom-control-input">
-          <label class="custom-control-label fs-0">
-            無
+        <div class="pt-1 ml-1 custom-control custom-radio custom-control-inline">
+          <input type="radio" class="custom-control-input" id="kind-disease2" name="kind-disease">
+          <label class="custom-control-label fs-0" for="kind-disease2">
+            肺外結核病
+          </label>
+        </div>
+        <div class="pt-1 ml-1 custom-control custom-radio custom-control-inline">
+          <input type="radio" class="custom-control-input" id="kind-disease3" name="kind-disease">
+          <label class="custom-control-label fs-0" for="kind-disease3">
+            肺內外合併結核病
           </label>
         </div>
       </div>
-    </div> <!-- indent-h3 有無症狀 -->
-    <div class="indent-h3">
-      <div class="row ml-0 pl-0 mt-0 mb-2 font-weight-bold text-black fs-1">
-        主要症狀<span style="color:red">*</span>
-
-
+      <div class="indent-h4 mb-3">
+        <b>肋膜積水</b>
+        <div class="pt-1 ml-1 custom-control custom-radio custom-control-inline">
+          <input type="radio" class="custom-control-input" id="water1" name="water">
+          <label class="custom-control-label fs-0" for="water1">
+            是
+          </label>
+        </div>
+        <div class="pt-1 ml-1 custom-control custom-radio custom-control-inline">
+          <input type="radio" class="custom-control-input" id="water2" name="water">
+          <label class="custom-control-label fs-0" for="water2">
+            否
+          </label>
+        </div>
       </div>
       <div class="indent-h4">
-        <div class="JsonToHtmlCheckbox_buildHtmlAll row pl-0 ml-0" style="background-color: #FFFFFF">
-          <b></b>
-
-
+        <div class="form-group form-inline ">
+          <b>肺外依據 (確認是否為肺外部位)<span style="color:red">*</span></b>
+          <a href="codingMemo.html?strMemo=001 使用「肺外依據代碼表」002 如登記類別為肺外結核病/肺內外合併結核病，此欄位為必填">🔆</a>
+          <select class="form-control text-secondary ml-2 col-2" id="according">
+            <option>請選擇</option>
+          </select>
         </div>
-        <div class="row ml-0 pl-0 mb-2">
-          <div class="col-0">
-            <label class="fs-0 pt-1">其他症狀</label>
-          </div>
-          <div class="col-4 ml-0 pl-2">
-            <input class="form-control text-secondary" id="name73$intRandomId" type="text" placeholder="輸入內容">
+      </div>
+      <div class="indent-h4">
+        <div class="form-group form-inline ">
+          <b>X光診斷日</b>
+          <input class="form-control text-secondary ml-2" type="text" placeholder="年/月/日">
+        </div>
+      </div>
+      <div class="indent-h4 mb-3">
+        <b>X光診斷結果</b>
+        <div class="pt-1 ml-1 custom-control custom-checkbox custom-control-inline">
+          <input type="checkbox" class="custom-control-input" id="xRayResult1" name="xRayResult">
+          <label class="custom-control-label fs-0" for="xRayResult1">
+            正常
+          </label>
+        </div>
+        <div class="pt-1 ml-1 custom-control custom-checkbox custom-control-inline">
+          <input type="checkbox" class="custom-control-input" id="xRayResult2" name="xRayResult">
+          <label class="custom-control-label fs-0" for="xRayResult2">
+            異常，但無空洞
+          </label>
+        </div>
+        <div class="pt-1 ml-1 custom-control custom-checkbox custom-control-inline">
+          <input type="checkbox" class="custom-control-input" id="xRayResult3" name="xRayResult">
+          <label class="custom-control-label fs-0" for="xRayResult3">
+            異常，且有空洞
+          </label>
+        </div>
+        <div class="pt-1 ml-1 custom-control custom-checkbox custom-control-inline">
+          <input type="checkbox" class="custom-control-input" id="xRayResult4" name="xRayResult">
+          <label class="custom-control-label fs-0" for="xRayResult4">
+            異常，無關結核病
+          </label>
+        </div>
+      </div>
+      <div class="indent-h4 mb-3">
+        <div class="form-group form-inline">
+          <b>轉至院所名稱</b>
+          <a href="codingMemo.html?strMemo=001 搜尋功能與通報單位名稱欄位一致，搜尋方式要：<br/>a.通報單位名稱欄位，打醫院的名稱，要可以有 autocomplete 功能。<br/>b.打選放大鏡後，視窗畫面的關鍵字搜尋，不用先選擇地區，就可以有 autocomplete 功能。<br/>c.下面可以先點選，縣市（台北市）、地區（松山區），再點選之後可以出現：醫院列表做點選。<br/>002 系統資料庫還是需要紀錄醫院代碼">🔆</a>
+          <div class="d-flex ml-2">
+            <input class="form-control text-secondary" id="name729" type="text" value="輸入內容">
+            <i class="fas fa-search" style="font-size: 20px; margin: auto 0; margin-left: 10px;"></i>
           </div>
         </div>
-      </div><!-- indent-h4 其他症狀 --> </div> <!-- indent-h3 主要症狀 --> </div><!-- indent-h2 臨床症狀的結束 -->
-  <div class="indent-h2 流行病學資料">
-    <div class="row ml-0 pl-0">
-      <div class="mt-3 mb-2 font-weight-bold text-black fs-2">
-        流行病學資料
       </div>
     </div>
-    <div class="indent-h3 職業">
+
+
+
+
+    <div class="indent-h2 流行病學資料">
       <div class="row ml-0 pl-0">
-        <label class="fs-0" for="formControlSelect${intRandomId}"><span
-          class="form-group form-inline pt-1 fs-1 font-weight-bold text-black"><span
-          style="color:black"><b>職業</b></span><span style="color:red">*</span><a
-          href="https://docs.google.com/spreadsheets/d/11fnorqGalLlV-YU-tVuK0a_pyi5UFEXKnpuzJvi8hFA/edit#gid=344074476">🔆</a></span></label><br>
-        <div class="col-4 mb-3">
-          <select class="form-control text-secondary" id="formControlSelect${intRandomId}">
+        <div class="mt-3 mb-2 font-weight-bold text-black fs-2">
+          流行病學資料
+        </div>
+      </div>
+      <div class="indent-h3 職業">
+        <div class="row ml-0 pl-0">
+          <label class="fs-0" for="formControlSelect${intRandomId}"><span
+              class="form-group form-inline pt-1 fs-1 font-weight-bold text-black"><span
+                style="color:black"><b>職業</b></span><span style="color:red">*</span><a
+                href="https://docs.google.com/spreadsheets/d/11fnorqGalLlV-YU-tVuK0a_pyi5UFEXKnpuzJvi8hFA/edit#gid=344074476">🔆</a></span></label><br>
+          <div class="col-4 mb-3">
+            <select class="form-control text-secondary" id="formControlSelect${intRandomId}">
+              <option>請選擇</option>
+              <option>---高風險職業---</option>
+              <option>學生</option>
+              <option>工程師</option>
+              <option>1</option>
+              <option>2</option>
+              <option>---其他職業---</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="indent-h3 旅遊史">
+        <div class="row ml-0 pl-0">
+          <div class="pt-1 fs-1 font-weight-bold text-black" style="color:black">
+            <b>旅遊史</b><span style="color:red">*</span>
+            <a href="codingMemo.html?strMemo=點選有無之後，會連動調整展開選項">🔆</a>
+          </div>
+          <div class="pt-1 ml-1 custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="customRadioInline749398"
+              name="customRadioInline749398">
+            <label class="custom-control-label fs-0" for="customRadioInline749398">
+              有
+            </label>
+          </div>
+          <div class="pt-1 ml-1 custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="customRadioInline749" name="customRadioInline749">
+            <label class="custom-control-label fs-0" for="customRadioInline749">
+              無
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="indent-h3">
+        <div class="indent-h4">
+          <div class="JsonToHtmlCheckbox_buildHtmlAll row pl-0 ml-0 mt-2 mb-0" style="background-color: #FFFFFF">
+            <b></b>
+            <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
+              <input class="form-check-input" type="checkbox">
+              <label class="form-check-label font-weight-bold fs-0">國內旅遊史<span style="color:red">*</span><a
+                  href="codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面">🔆</a></label>
+            </div>
+          </div>
+          <div class="JsonToHtmlSelect_buildHtmlAll col-lg-4 mb-3" style="float: left;">
+            <label class="fs-0" for="formControlSelect${intRandomId}">縣市<span style="color:red">*</span><a
+                href="codingMemo.html?strMemo=縣市資料請參考精誠居佑夥伴手上，由疾管署提供已盤點過居住縣市代碼的試算表">🔆</a></label><br>
+            <select class="form-control text-secondary" id="formControlSelect${intRandomId}">
+              <option>請選擇</option>
+              <option>臺北市</option>
+              <option>新北市</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+          <div class="JsonToHtmlDate_getHtmlDate form-group col-4" style="float: left;">
+            <label class="fs-0" for="name66221391">起始日期<span style="color:red">*</span></label>
+            <input class="form-control text-secondary" id="name66221391" type="text" placeholder="年/月/日">
+          </div>
+          <div class="JsonToHtmlDate_getHtmlDate form-group col-4" style="float: left;">
+            <label class="fs-0" for="name6688697">結束日期<span style="color:red">*</span></label>
+            <input class="form-control text-secondary" id="name6688697" type="text" placeholder="年/月/日">
+          </div>
+          <span class="JsonToHtmlAddRecord_getTags ml-3" style="clear: both;"><a href="#">＋ 新增一筆國內旅遊史</a></span>
+          <div class="JsonToHtmlCheckbox_buildHtmlAll row pl-0 ml-0 mt-2 mb-0" style="background-color: #FFFFFF">
+            <b></b>
+            <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
+              <input class="form-check-input" type="checkbox">
+              <label class="form-check-label font-weight-bold fs-0">國外旅遊史<span style="color:red">*</span><a
+                  href="codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面">🔆</a></label>
+            </div>
+          </div>
+          <div class="JsonToHtmlInputCol3_getTags col-lg-3" style="float: left;">
+            <div class="form-group">
+              <label class="fs-0" for="name31101430">國家<span style="color:red">*</span></label>
+              <input class="form-control text-secondary" id="name31101430" type="text" placeholder="輸入內容">
+            </div>
+          </div>
+          <div class="JsonToHtmlInputCol3_getTags col-lg-3" style="float: left;">
+            <div class="form-group">
+              <label class="fs-0" for="name31873378">次級行政區</label>
+              <input class="form-control text-secondary" id="name31873378" type="text" placeholder="輸入內容">
+            </div>
+          </div>
+          <div class="JsonToHtmlDateCol3_getHtmlDate form-group col-3" style="float: left;">
+            <label class="fs-0" for="nameCol3443236">起始日期<span style="color:red">*</span></label>
+            <input class="form-control text-secondary" id="nameCol3443236" type="text" placeholder="年/月/日">
+          </div>
+          <div class="JsonToHtmlDateCol3_getHtmlDate form-group col-3" style="float: left;">
+            <label class="fs-0" for="nameCol363802">結束日期<span style="color:red">*</span></label>
+            <input class="form-control text-secondary" id="nameCol363802" type="text" placeholder="年/月/日">
+          </div>
+          <span class="JsonToHtmlAddRecord_getTags ml-3" style="clear: both;"><a href="#">＋ 新增一筆國外旅遊史</a></span>
+          <div class="JsonToHtmlCheckbox_buildHtmlAll row pl-0 ml-0 mt-2 mb-0" style="background-color: #FFFFFF">
+            <b></b>
+            <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
+              <input class="form-check-input" type="checkbox">
+              <label class="form-check-label font-weight-bold fs-0">國外居住史<span style="color:red">*</span><a
+                  href="codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面">🔆</a></label>
+            </div>
+          </div>
+          <div class="JsonToHtmlInputCol3_getTags col-lg-3" style="float: left;">
+            <div class="form-group">
+              <label class="fs-0" for="name31649579">國家<span style="color:red">*</span></label>
+              <input class="form-control text-secondary" id="name31649579" type="text" placeholder="輸入內容">
+            </div>
+          </div>
+          <div class="JsonToHtmlInputCol3_getTags col-lg-3" style="float: left;">
+            <div class="form-group">
+              <label class="fs-0" for="name31492534">次級行政區</label>
+              <input class="form-control text-secondary" id="name31492534" type="text" placeholder="輸入內容">
+            </div>
+          </div>
+          <div class="JsonToHtmlDateCol3_getHtmlDate form-group col-3" style="float: left;">
+            <label class="fs-0" for="nameCol3883897">離境居住國日期<span style="color:red">*</span></label>
+            <input class="form-control text-secondary" id="nameCol3883897" type="text" placeholder="年/月/日">
+          </div>
+          <div class="JsonToHtmlDateCol3_getHtmlDate form-group col-3" style="float: left;">
+            <label class="fs-0" for="nameCol3669782">入境我國日期<span style="color:red">*</span></label>
+            <input class="form-control text-secondary" id="nameCol3669782" type="text" placeholder="年/月/日">
+          </div>
+          <span class="JsonToHtmlAddRecord_getTags ml-3" style="clear: both;"><a href="#">＋ 新增一筆國外居住史</a></span>
+        </div>
+        <div class="row ml-0 pl-0"><span class="pt-1 fs-1 pb-1 font-weight-bold text-black">動物接觸史　</span>
+          <div class="pt-2 pl-4 custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input">
+            <label class="custom-control-label fs-0">
+              有
+            </label>
+          </div>
+          <div class="pt-2 pl-4 custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input">
+            <label class="custom-control-label fs-0">
+              無
+            </label>
+          </div>
+          <label class="pt-2 fs-0">　接觸動物種類<a
+              href="https://docs.google.com/spreadsheets/d/1PsMy-qKZjy7WyOQSvkHWtLmuSCJo7CrbfsG_BGTKjH8/edit#gid=715655781&amp;range=A1">🔆</a></label>
+          <select class="col-2 form-control text-secondary">
             <option>請選擇</option>
-            <option>---高風險職業---</option>
-            <option>學生</option>
-            <option>工程師</option>
-            <option>1</option>
-            <option>2</option>
-            <option>---其他職業---</option>
             <option>1</option>
             <option>2</option>
             <option>3</option>
             <option>4</option>
+            <option>5</option>
           </select>
+          <div class="form-group form-inline ">
+            <b>　其他接觸動物<span style="color:red">*</span><a
+                href="codingMemo.html?strMemo=當接觸動物種類選擇「其他接觸動物」才動態顯示此欄位">🔆</a></b> <input
+              class="form-control text-secondary ml-2" type="text" placeholder="輸入內容">
+          </div>
         </div>
       </div>
     </div>
-    <div class="indent-h3 旅遊史">
-      <div class="row ml-0 pl-0">
-        <div class="pt-1 fs-1 font-weight-bold text-black" style="color:black">
-          <b>旅遊史</b><span style="color:red">*</span>
-          <a href="codingMemo.html?strMemo=點選有無之後，會連動調整展開選項">🔆</a>
-        </div>
-        <div class="pt-1 ml-1 custom-control custom-radio custom-control-inline">
-          <input type="radio" class="custom-control-input" id="customRadioInline749398" name="customRadioInline749398">
-          <label class="custom-control-label fs-0" for="customRadioInline749398">
-            有
-          </label>
-        </div>
-        <div class="pt-1 ml-1 custom-control custom-radio custom-control-inline">
-          <input type="radio" class="custom-control-input" id="customRadioInline749" name="customRadioInline749">
-          <label class="custom-control-label fs-0" for="customRadioInline749">
-            無
-          </label>
-        </div>
-      </div>
-    </div>
-    <div class="indent-h3">
-      <div class="indent-h4">
-        <div class="JsonToHtmlCheckbox_buildHtmlAll row pl-0 ml-0 mt-2 mb-0" style="background-color: #FFFFFF">
-          <b></b>
-          <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
-            <input class="form-check-input" type="checkbox">
-            <label class="form-check-label font-weight-bold fs-0">國內旅遊史<span style="color:red">*</span><a
-              href="codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面">🔆</a></label>
+    <div class="indent-h2">
+      <div class="indent-h3">
+        <div class="row ml-0 pl-0"><span class="pt-1 fs-1 pb-1 font-weight-bold text-black">個案生母資料<a
+              href="codingMemo.html?strMemo=「HIV確診定義=出生通報母子垂直感染疑似個案之「新生兒之生母為人類免疫缺乏病毒感染者」或「新生兒之生母臨產時為快速檢測法及抗體篩檢檢測陽性者」，顯示並為必填">🔆</a></span>
+          <div class="form-group form-inline ">
+            <b>案母姓名</b> <input class="form-control text-secondary ml-2" type="text" placeholder="輸入內容">
           </div>
-        </div>
-        <div class="JsonToHtmlSelect_buildHtmlAll col-lg-4 mb-3" style="float: left;">
-          <label class="fs-0" for="formControlSelect${intRandomId}">縣市<span style="color:red">*</span><a
-            href="codingMemo.html?strMemo=縣市資料請參考精誠居佑夥伴手上，由疾管署提供已盤點過居住縣市代碼的試算表">🔆</a></label><br>
-          <select class="form-control text-secondary" id="formControlSelect${intRandomId}">
-            <option>請選擇</option>
-            <option>臺北市</option>
-            <option>新北市</option>
-            <option>3</option>
-            <option>4</option>
-          </select>
-        </div>
-        <div class="JsonToHtmlDate_getHtmlDate form-group col-4" style="float: left;">
-          <label class="fs-0" for="name66221391">起始日期<span style="color:red">*</span></label>
-          <input class="form-control text-secondary" id="name66221391" type="text" placeholder="年/月/日">
-        </div>
-        <div class="JsonToHtmlDate_getHtmlDate form-group col-4" style="float: left;">
-          <label class="fs-0" for="name6688697">結束日期<span style="color:red">*</span></label>
-          <input class="form-control text-secondary" id="name6688697" type="text" placeholder="年/月/日">
-        </div>
-        <span class="JsonToHtmlAddRecord_getTags ml-3" style="clear: both;"><a href="#">＋ 新增一筆國內旅遊史</a></span>
-        <div class="JsonToHtmlCheckbox_buildHtmlAll row pl-0 ml-0 mt-2 mb-0" style="background-color: #FFFFFF">
-          <b></b>
-          <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
-            <input class="form-check-input" type="checkbox">
-            <label class="form-check-label font-weight-bold fs-0">國外旅遊史<span style="color:red">*</span><a
-              href="codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面">🔆</a></label>
+          <div class="form-group form-inline ">
+            <b>　案母身分證統一編號/外來人口之居留證統一證號</b> <input class="form-control text-secondary ml-2" type="text"
+              placeholder="輸入內容">
           </div>
-        </div>
-        <div class="JsonToHtmlInputCol3_getTags col-lg-3" style="float: left;">
-          <div class="form-group">
-            <label class="fs-0" for="name31101430">國家<span style="color:red">*</span></label>
-            <input class="form-control text-secondary" id="name31101430" type="text" placeholder="輸入內容">
-          </div>
-        </div>
-        <div class="JsonToHtmlInputCol3_getTags col-lg-3" style="float: left;">
-          <div class="form-group">
-            <label class="fs-0" for="name31873378">次級行政區</label>
-            <input class="form-control text-secondary" id="name31873378" type="text" placeholder="輸入內容">
-          </div>
-        </div>
-        <div class="JsonToHtmlDateCol3_getHtmlDate form-group col-3" style="float: left;">
-          <label class="fs-0" for="nameCol3443236">起始日期<span style="color:red">*</span></label>
-          <input class="form-control text-secondary" id="nameCol3443236" type="text" placeholder="年/月/日">
-        </div>
-        <div class="JsonToHtmlDateCol3_getHtmlDate form-group col-3" style="float: left;">
-          <label class="fs-0" for="nameCol363802">結束日期<span style="color:red">*</span></label>
-          <input class="form-control text-secondary" id="nameCol363802" type="text" placeholder="年/月/日">
-        </div>
-        <span class="JsonToHtmlAddRecord_getTags ml-3" style="clear: both;"><a href="#">＋ 新增一筆國外旅遊史</a></span>
-        <div class="JsonToHtmlCheckbox_buildHtmlAll row pl-0 ml-0 mt-2 mb-0" style="background-color: #FFFFFF">
-          <b></b>
-          <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
-            <input class="form-check-input" type="checkbox">
-            <label class="form-check-label font-weight-bold fs-0">國外居住史<span style="color:red">*</span><a
-              href="codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面">🔆</a></label>
-          </div>
-        </div>
-        <div class="JsonToHtmlInputCol3_getTags col-lg-3" style="float: left;">
-          <div class="form-group">
-            <label class="fs-0" for="name31649579">國家<span style="color:red">*</span></label>
-            <input class="form-control text-secondary" id="name31649579" type="text" placeholder="輸入內容">
-          </div>
-        </div>
-        <div class="JsonToHtmlInputCol3_getTags col-lg-3" style="float: left;">
-          <div class="form-group">
-            <label class="fs-0" for="name31492534">次級行政區</label>
-            <input class="form-control text-secondary" id="name31492534" type="text" placeholder="輸入內容">
-          </div>
-        </div>
-        <div class="JsonToHtmlDateCol3_getHtmlDate form-group col-3" style="float: left;">
-          <label class="fs-0" for="nameCol3883897">離境居住國日期<span style="color:red">*</span></label>
-          <input class="form-control text-secondary" id="nameCol3883897" type="text" placeholder="年/月/日">
-        </div>
-        <div class="JsonToHtmlDateCol3_getHtmlDate form-group col-3" style="float: left;">
-          <label class="fs-0" for="nameCol3669782">入境我國日期<span style="color:red">*</span></label>
-          <input class="form-control text-secondary" id="nameCol3669782" type="text" placeholder="年/月/日">
-        </div>
-        <span class="JsonToHtmlAddRecord_getTags ml-3" style="clear: both;"><a href="#">＋ 新增一筆國外居住史</a></span></div>
-      <div class="row ml-0 pl-0"><span class="pt-1 fs-1 pb-1 font-weight-bold text-black">動物接觸史　</span>
-        <div class="pt-2 pl-4 custom-control custom-radio custom-control-inline">
-          <input type="radio" class="custom-control-input">
-          <label class="custom-control-label fs-0">
-            有
-          </label>
-        </div>
-        <div class="pt-2 pl-4 custom-control custom-radio custom-control-inline">
-          <input type="radio" class="custom-control-input">
-          <label class="custom-control-label fs-0">
-            無
-          </label>
-        </div>
-        <label class="pt-2 fs-0">　接觸動物種類<a
-          href="https://docs.google.com/spreadsheets/d/1PsMy-qKZjy7WyOQSvkHWtLmuSCJo7CrbfsG_BGTKjH8/edit#gid=715655781&amp;range=A1">🔆</a></label>
-        <select class="col-2 form-control text-secondary">
-          <option>請選擇</option>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
-        <div class="form-group form-inline ">
-          <b>　其他接觸動物<span style="color:red">*</span><a
-            href="codingMemo.html?strMemo=當接觸動物種類選擇「其他接觸動物」才動態顯示此欄位">🔆</a></b> <input
-          class="form-control text-secondary ml-2" type="text" placeholder="輸入內容">
         </div>
       </div>
     </div>
   </div>
-  <div class="indent-h2">
-    <div class="indent-h3">
-      <div class="row ml-0 pl-0"><span class="pt-1 fs-1 pb-1 font-weight-bold text-black">個案生母資料<a
-        href="codingMemo.html?strMemo=「HIV確診定義=出生通報母子垂直感染疑似個案之「新生兒之生母為人類免疫缺乏病毒感染者」或「新生兒之生母臨產時為快速檢測法及抗體篩檢檢測陽性者」，顯示並為必填">🔆</a></span>
-        <div class="form-group form-inline ">
-          <b>案母姓名</b> <input class="form-control text-secondary ml-2" type="text" placeholder="輸入內容">
-        </div>
-        <div class="form-group form-inline ">
-          <b>　案母身分證統一編號/外來人口之居留證統一證號</b> <input class="form-control text-secondary ml-2" type="text" placeholder="輸入內容">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
+  <div id="reportDiseaseFooter"></div>
+
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/bootstrap.js"></script>
+  <script src="../assets/lib/stickyfilljs/stickyfill.min.js"></script>
+  <script src="../assets/lib/sticky-kit/sticky-kit.min.js"></script>
+  <script src="../assets/lib/is_js/is.min.js"></script>
+  <script src="../assets/lib/@fortawesome/all.min.js"></script>
+  <script src="../assets/lib/prismjs/prism.js"></script>
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/lib/flatpickr/flatpickr.min.js"></script>
+
+  <script defer src="../dart/jsCdc.dart.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="reportDisease.js"></script>
+
+  <script>
+    const peopleFalse = document.getElementById('people-false');
+    const peopleTrue = document.getElementById('people-true');
+    const peopleUnit = document.getElementById('people-unit');
+
+    peopleFalse.addEventListener('click', function () {
+      peopleUnit.disabled = true;
+    });
+
+    peopleTrue.addEventListener('click', function () {
+      peopleUnit.disabled = false;
+    });
+
+    $(function () {
+      $('#reportDiseaseHeader').load('cdcMainHeader.html');
+    });
+    $(function () {
+      $('#reportDiseaseNav').load('cdcMainNav.html');
+    });
+    $(function () {
+      $('#通報單備註欄位').load('通報單備註欄位.html');
+    });
+    $(function () {
+      $('#reportDiseaseFooter').load('reportDiseaseFooter.html');
+    });
+
+  </script>
+</body>
+
+</html>
