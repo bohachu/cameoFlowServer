@@ -23,105 +23,398 @@
     <div class="indent-h2">
       <div class="mt-3 mb-0 text-black fs-2 font-weight-bold" style="clear: both;"><span class="mt-0">檢驗資料</span></div>
       <div class="indent-h3 診斷報告資料">
-        <div class="row ml-0 pl-0">
-          <div class="pt-1 fs-1 font-weight-bold text-black" style="color:black">
-            <b>診斷報告資料</b>
+        <div class="pt-1 fs-1 font-weight-bold text-black" style="color:black">
+          <b>診斷報告資料</b>
+        </div>
+        <div class="row mb-3">
+          <div class="col-6">
+            <div class="indent-h4">
+              <b>登記類別<span style="color:red">*</span></b>
+              <div class="pt-2 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="kind-disease1" name="kind-disease">
+                <label class="custom-control-label fs-0" for="kind-disease1">
+                  肺內結核病
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="kind-disease2" name="kind-disease">
+                <label class="custom-control-label fs-0" for="kind-disease2">
+                  肺外結核病
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="kind-disease3" name="kind-disease">
+                <label class="custom-control-label fs-0" for="kind-disease3">
+                  肺內外合併結核病
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="indent-h4">
+              <b>肋膜積水</b>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="water1" name="water">
+                <label class="custom-control-label fs-0" for="water1">
+                  是
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="water2" name="water">
+                <label class="custom-control-label fs-0" for="water2">
+                  否
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="indent-h4">
+              <div class="form-group form-inline">
+                <b>肺外依據 (確認是否為肺外部位)<span style="color:red">*</span></b>
+                <a href="codingMemo.html?strMemo=001 使用「肺外依據代碼表」002 如登記類別為肺外結核病/肺內外合併結核病，此欄位為必填">🔆</a>
+                <select class="form-control text-secondary ml-2 col-5" id="according">
+                  <option>請選擇</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="indent-h4">
+              <div class="form-group form-inline">
+                <b>X光診斷日</b>
+                <input class="form-control text-secondary ml-2" type="text" placeholder="年/月/日">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="indent-h4 mb-3">
+          <b>X光診斷結果</b>
+          <div class="pt-1 custom-control custom-checkbox custom-control-inline">
+            <input type="checkbox" class="custom-control-input" id="xRayResult1" name="xRayResult">
+            <label class="custom-control-label fs-0" for="xRayResult1">
+              正常
+            </label>
+          </div>
+          <div class="pt-1 custom-control custom-checkbox custom-control-inline">
+            <input type="checkbox" class="custom-control-input" id="xRayResult2" name="xRayResult">
+            <label class="custom-control-label fs-0" for="xRayResult2">
+              異常，但無空洞
+            </label>
+          </div>
+          <div class="pt-1 custom-control custom-checkbox custom-control-inline">
+            <input type="checkbox" class="custom-control-input" id="xRayResult3" name="xRayResult">
+            <label class="custom-control-label fs-0" for="xRayResult3">
+              異常，且有空洞
+            </label>
+          </div>
+          <div class="pt-1 custom-control custom-checkbox custom-control-inline">
+            <input type="checkbox" class="custom-control-input" id="xRayResult4" name="xRayResult">
+            <label class="custom-control-label fs-0" for="xRayResult4">
+              異常，無關結核病
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="indent-h4">
+              <div class="form-group form-inline">
+                <b>X光診斷單位</b>
+                <a
+                  href="codingMemo.html?strMemo=001 搜尋功能與通報單位名稱欄位一致，搜尋方式要：<br/>a.通報單位名稱欄位，打醫院的名稱，要可以有 autocomplete 功能。<br/>b.打選放大鏡後，視窗畫面的關鍵字搜尋，不用先選擇地區，就可以有 autocomplete 功能。<br/>c.下面可以先點選，縣市（台北市）、地區（松山區），再點選之後可以出現：醫院列表做點選。<br/>002 系統資料庫還是需要紀錄醫院代碼">🔆</a>
+                <div class="d-flex ml-2">
+                  <input class="form-control text-secondary" id="name729" type="text" placeholder="輸入內容">
+                  <i class="fas fa-search" style="font-size: 20px; margin: auto 0; margin-left: 10px;"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="indent-h4">
+              <div class="form-group form-inline ">
+                <b>肺外依據 (確認是否為肺外部位)<span style="color:red">*</span></b>
+                <a href="codingMemo.html?strMemo=001 使用「肺外依據代碼表」002 如登記類別為肺外結核病/肺內外合併結核病，此欄位為必填">🔆</a>
+                <select class="form-control text-secondary ml-2 col-5" id="according">
+                  <option>請選擇</option>
+                </select>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="indent-h4 mb-3">
-        <b>登記類別<span style="color:red">*</span></b>
-        <div class="pt-1 ml-1 custom-control custom-radio custom-control-inline">
-          <input type="radio" class="custom-control-input" id="kind-disease1" name="kind-disease">
-          <label class="custom-control-label fs-0" for="kind-disease1">
-            肺內結核病
-          </label>
+      <div class="indent-h3 其他檢驗資料">
+        <div class="pt-1 fs-1 font-weight-bold text-black mb-3" style="color:black">
+          <b>其他檢驗資料</b>
         </div>
-        <div class="pt-1 ml-1 custom-control custom-radio custom-control-inline">
-          <input type="radio" class="custom-control-input" id="kind-disease2" name="kind-disease">
-          <label class="custom-control-label fs-0" for="kind-disease2">
-            肺外結核病
-          </label>
+        <div class="row">
+          <div class="col-6">
+            <div class="indent-h4">
+              <div class="form-group form-inline ">
+                <b>檢體種類<span style="color:red">*</span></b>
+                <a href="codingMemo.html?strMemo=使用「組織及其他體液檢查檢體種類」且選項增加'痰'">🔆</a>
+                <select class="form-control text-secondary ml-2 col-5" id="according">
+                  <option>請選擇</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="indent-h4">
+              <div class="form-group form-inline ">
+                <b>檢體種類說明</b>
+                <a href="codingMemo.html?strMemo=當檢體種類選擇其他，此欄位說明必填">🔆</a>
+                <input class="form-control text-secondary ml-2" type="text" placeholder="輸入內容">
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="pt-1 ml-1 custom-control custom-radio custom-control-inline">
-          <input type="radio" class="custom-control-input" id="kind-disease3" name="kind-disease">
-          <label class="custom-control-label fs-0" for="kind-disease3">
-            肺內外合併結核病
-          </label>
+        <div class="row">
+          <div class="col-6">
+            <div class="indent-h4">
+              <div class="form-group form-inline ">
+                <b>檢體採檢日<span style="color:red">*</span></b>
+                <input class="form-control text-secondary ml-2" type="text" placeholder="年/月/日">
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="indent-h4">
+              <div class="form-group form-inline">
+                <b>病理報告單位</b>
+                <a
+                  href="codingMemo.html?strMemo=001 搜尋功能與通報單位名稱欄位一致，搜尋方式要：<br/>a.通報單位名稱欄位，打醫院的名稱，要可以有 autocomplete 功能。<br/>b.打選放大鏡後，視窗畫面的關鍵字搜尋，不用先選擇地區，就可以有 autocomplete 功能。<br/>c.下面可以先點選，縣市（台北市）、地區（松山區），再點選之後可以出現：醫院列表做點選。<br/>002 系統資料庫還是需要紀錄醫院代碼">🔆</a>
+                <div class="d-flex ml-2">
+                  <input class="form-control text-secondary" id="name729" type="text" placeholder="輸入內容">
+                  <i class="fas fa-search" style="font-size: 20px; margin: auto 0; margin-left: 10px;"></i>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="indent-h4 mb-3">
-        <b>肋膜積水</b>
-        <div class="pt-1 ml-1 custom-control custom-radio custom-control-inline">
-          <input type="radio" class="custom-control-input" id="water1" name="water">
-          <label class="custom-control-label fs-0" for="water1">
-            是
-          </label>
+        <div class="row">
+          <div class="col-6">
+            <div class="indent-h4">
+              <b>病理報告結果</b>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="diseaseResult1" name="diseaseResult">
+                <label class="custom-control-label fs-0" for="diseaseResult1">
+                  疑似
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="diseaseResult2" name="diseaseResult">
+                <label class="custom-control-label fs-0" for="diseaseResult2">
+                  已驗未出
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="diseaseResult3" name="diseaseResult">
+                <label class="custom-control-label fs-0" for="diseaseResult3">
+                  排除
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="diseaseResult4" name="diseaseResult">
+                <label class="custom-control-label fs-0" for="diseaseResult4">
+                  確定
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="indent-h4">
+              <div class="form-group form-inline">
+                <b>塗片檢驗單位</b>
+                <a
+                  href="codingMemo.html?strMemo=001 搜尋功能與通報單位名稱欄位一致，搜尋方式要：<br/>a.通報單位名稱欄位，打醫院的名稱，要可以有 autocomplete 功能。<br/>b.打選放大鏡後，視窗畫面的關鍵字搜尋，不用先選擇地區，就可以有 autocomplete 功能。<br/>c.下面可以先點選，縣市（台北市）、地區（松山區），再點選之後可以出現：醫院列表做點選。<br/>002 系統資料庫還是需要紀錄醫院代碼">🔆</a>
+                <div class="d-flex ml-2">
+                  <input class="form-control text-secondary" id="name729" type="text" placeholder="輸入內容">
+                  <i class="fas fa-search" style="font-size: 20px; margin: auto 0; margin-left: 10px;"></i>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="pt-1 ml-1 custom-control custom-radio custom-control-inline">
-          <input type="radio" class="custom-control-input" id="water2" name="water">
-          <label class="custom-control-label fs-0" for="water2">
-            否
-          </label>
+        <div class="row">
+          <div class="col-6">
+            <div class="indent-h4">
+              <div class="form-group form-inline ">
+                <b>塗片結果<span style="color:red">*</span></b>
+                <a href="codingMemo.html?strMemo=使用「痰檢驗結果代碼」之痰塗片檢驗結果項目">🔆</a>
+                <select class="form-control text-secondary ml-2 col-5" id="according">
+                  <option>請選擇</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="indent-h4">
+              <div class="form-group form-inline">
+                <b>PCR檢驗單位</b>
+                <a
+                  href="codingMemo.html?strMemo=001 搜尋功能與通報單位名稱欄位一致，搜尋方式要：<br/>a.通報單位名稱欄位，打醫院的名稱，要可以有 autocomplete 功能。<br/>b.打選放大鏡後，視窗畫面的關鍵字搜尋，不用先選擇地區，就可以有 autocomplete 功能。<br/>c.下面可以先點選，縣市（台北市）、地區（松山區），再點選之後可以出現：醫院列表做點選。<br/>002 系統資料庫還是需要紀錄醫院代碼">🔆</a>
+                <div class="d-flex ml-2">
+                  <input class="form-control text-secondary" id="name729" type="text" placeholder="輸入內容">
+                  <i class="fas fa-search" style="font-size: 20px; margin: auto 0; margin-left: 10px;"></i>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="indent-h4">
-        <div class="form-group form-inline ">
-          <b>肺外依據 (確認是否為肺外部位)<span style="color:red">*</span></b>
-          <a href="codingMemo.html?strMemo=001 使用「肺外依據代碼表」002 如登記類別為肺外結核病/肺內外合併結核病，此欄位為必填">🔆</a>
-          <select class="form-control text-secondary ml-2 col-2" id="according">
-            <option>請選擇</option>
-          </select>
+        <div class="row">
+          <div class="col-6">
+            <div class="indent-h4">
+              <b>PCR結果</b>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="diseaseResult1" name="diseaseResult">
+                <label class="custom-control-label fs-0" for="diseaseResult1">
+                  未驗
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="diseaseResult2" name="diseaseResult">
+                <label class="custom-control-label fs-0" for="diseaseResult2">
+                  已驗未出
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="diseaseResult3" name="diseaseResult">
+                <label class="custom-control-label fs-0" for="diseaseResult3">
+                  陽性
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="diseaseResult4" name="diseaseResult">
+                <label class="custom-control-label fs-0" for="diseaseResult4">
+                  陰性
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="indent-h4">
+              <div class="form-group form-inline">
+                <b>培養檢驗單位</b>
+                <a
+                  href="codingMemo.html?strMemo=001 搜尋功能與通報單位名稱欄位一致，搜尋方式要：<br/>a.通報單位名稱欄位，打醫院的名稱，要可以有 autocomplete 功能。<br/>b.打選放大鏡後，視窗畫面的關鍵字搜尋，不用先選擇地區，就可以有 autocomplete 功能。<br/>c.下面可以先點選，縣市（台北市）、地區（松山區），再點選之後可以出現：醫院列表做點選。<br/>002 系統資料庫還是需要紀錄醫院代碼">🔆</a>
+                <div class="d-flex ml-2">
+                  <input class="form-control text-secondary" id="name729" type="text" placeholder="輸入內容">
+                  <i class="fas fa-search" style="font-size: 20px; margin: auto 0; margin-left: 10px;"></i>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="indent-h4">
-        <div class="form-group form-inline ">
-          <b>X光診斷日</b>
-          <input class="form-control text-secondary ml-2" type="text" placeholder="年/月/日">
+        <div class="row">
+          <div class="col-6">
+            <div class="indent-h4">
+              <div class="form-group form-inline ">
+                <b>培養結果</b>
+                <a href="codingMemo.html?strMemo=使用「痰檢驗結果代碼」之痰塗片檢驗結果項目">🔆</a>
+                <select class="form-control text-secondary ml-2 col-5" id="according">
+                  <option>請選擇</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="indent-h4">
+              <div class="form-group form-inline">
+                <b>菌種鑑定單位</b>
+                <a
+                  href="codingMemo.html?strMemo=001 搜尋功能與通報單位名稱欄位一致，搜尋方式要：<br/>a.通報單位名稱欄位，打醫院的名稱，要可以有 autocomplete 功能。<br/>b.打選放大鏡後，視窗畫面的關鍵字搜尋，不用先選擇地區，就可以有 autocomplete 功能。<br/>c.下面可以先點選，縣市（台北市）、地區（松山區），再點選之後可以出現：醫院列表做點選。<br/>002 系統資料庫還是需要紀錄醫院代碼">🔆</a>
+                <div class="d-flex ml-2">
+                  <input class="form-control text-secondary" id="name729" type="text" placeholder="輸入內容">
+                  <i class="fas fa-search" style="font-size: 20px; margin: auto 0; margin-left: 10px;"></i>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="indent-h4 mb-3">
-        <b>X光診斷結果</b>
-        <div class="pt-1 ml-1 custom-control custom-checkbox custom-control-inline">
-          <input type="checkbox" class="custom-control-input" id="xRayResult1" name="xRayResult">
-          <label class="custom-control-label fs-0" for="xRayResult1">
-            正常
-          </label>
+        <div class="row">
+          <div class="col-6">
+            <div class="indent-h4">
+              <div class="form-group form-inline ">
+                <b>菌種鑑定結果</b>
+                <a href="codingMemo.html?strMemo=使用「痰檢驗結果代碼」之痰塗片檢驗結果項目">🔆</a>
+                <select class="form-control text-secondary ml-2 col-5" id="according">
+                  <option>請選擇</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="indent-h4">
+              <div class="form-group form-inline ">
+                <b>檢體院內檢體編號<span style="color:red">*</span></b>
+                <input class="form-control text-secondary ml-2" type="text" placeholder="輸入內容">
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="pt-1 ml-1 custom-control custom-checkbox custom-control-inline">
-          <input type="checkbox" class="custom-control-input" id="xRayResult2" name="xRayResult">
-          <label class="custom-control-label fs-0" for="xRayResult2">
-            異常，但無空洞
-          </label>
+        <div class="indent-h4">
+          <div class="form-group form-inline ">
+            <b>Bar-Code編號</b>
+            <input class="form-control text-secondary ml-2" type="text" placeholder="輸入內容">
+          </div>
         </div>
-        <div class="pt-1 ml-1 custom-control custom-checkbox custom-control-inline">
-          <input type="checkbox" class="custom-control-input" id="xRayResult3" name="xRayResult">
-          <label class="custom-control-label fs-0" for="xRayResult3">
-            異常，且有空洞
-          </label>
-        </div>
-        <div class="pt-1 ml-1 custom-control custom-checkbox custom-control-inline">
-          <input type="checkbox" class="custom-control-input" id="xRayResult4" name="xRayResult">
-          <label class="custom-control-label fs-0" for="xRayResult4">
-            異常，無關結核病
-          </label>
-        </div>
-      </div>
-      <div class="indent-h4 mb-3">
-        <div class="form-group form-inline">
-          <b>轉至院所名稱</b>
-          <a href="codingMemo.html?strMemo=001 搜尋功能與通報單位名稱欄位一致，搜尋方式要：<br/>a.通報單位名稱欄位，打醫院的名稱，要可以有 autocomplete 功能。<br/>b.打選放大鏡後，視窗畫面的關鍵字搜尋，不用先選擇地區，就可以有 autocomplete 功能。<br/>c.下面可以先點選，縣市（台北市）、地區（松山區），再點選之後可以出現：醫院列表做點選。<br/>002 系統資料庫還是需要紀錄醫院代碼">🔆</a>
-          <div class="d-flex ml-2">
-            <input class="form-control text-secondary" id="name729" type="text" value="輸入內容">
-            <i class="fas fa-search" style="font-size: 20px; margin: auto 0; margin-left: 10px;"></i>
+        <div class="row">
+          <div class="col-6">
+            <div class="indent-h4">
+              <b>個案治療方式</b>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="cure1" name="cure">
+                <label class="custom-control-label fs-0" for="cure1">
+                  初次治療
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="cure2" name="cure">
+                <label class="custom-control-label fs-0" for="cure2">
+                  再次治療
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="cure3" name="cure">
+                <label class="custom-control-label fs-0" for="cure3">
+                  MDR初治
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="cure4" name="cure">
+                <label class="custom-control-label fs-0" for="cure4">
+                  MDR再治
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="indent-h4">
+              <b>是否為多重抗藥<span style="color:red">*</span></b>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="cure1" name="cure">
+                <label class="custom-control-label fs-0" for="cure1">
+                  是
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="cure2" name="cure">
+                <label class="custom-control-label fs-0" for="cure2">
+                  否
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="cure3" name="cure">
+                <label class="custom-control-label fs-0" for="cure3">
+                  未知
+                </label>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-
-
-
     <div class="indent-h2 流行病學資料">
       <div class="row ml-0 pl-0">
         <div class="mt-3 mb-2 font-weight-bold text-black fs-2">
@@ -134,7 +427,7 @@
               class="form-group form-inline pt-1 fs-1 font-weight-bold text-black"><span
                 style="color:black"><b>職業</b></span><span style="color:red">*</span><a
                 href="https://docs.google.com/spreadsheets/d/11fnorqGalLlV-YU-tVuK0a_pyi5UFEXKnpuzJvi8hFA/edit#gid=344074476">🔆</a></span></label><br>
-          <div class="col-4 mb-3">
+          <div class="col-4">
             <select class="form-control text-secondary" id="formControlSelect${intRandomId}">
               <option>請選擇</option>
               <option>---高風險職業---</option>
@@ -157,14 +450,14 @@
             <b>旅遊史</b><span style="color:red">*</span>
             <a href="codingMemo.html?strMemo=點選有無之後，會連動調整展開選項">🔆</a>
           </div>
-          <div class="pt-1 ml-1 custom-control custom-radio custom-control-inline">
+          <div class="pt-1 custom-control custom-radio custom-control-inline">
             <input type="radio" class="custom-control-input" id="customRadioInline749398"
               name="customRadioInline749398">
             <label class="custom-control-label fs-0" for="customRadioInline749398">
               有
             </label>
           </div>
-          <div class="pt-1 ml-1 custom-control custom-radio custom-control-inline">
+          <div class="pt-1 custom-control custom-radio custom-control-inline">
             <input type="radio" class="custom-control-input" id="customRadioInline749" name="customRadioInline749">
             <label class="custom-control-label fs-0" for="customRadioInline749">
               無
@@ -182,7 +475,7 @@
                   href="codingMemo.html?strMemo=勾選之後下面的選項才會連動展開，精簡版面">🔆</a></label>
             </div>
           </div>
-          <div class="JsonToHtmlSelect_buildHtmlAll col-lg-4 mb-3" style="float: left;">
+          <div class="JsonToHtmlSelect_buildHtmlAll col-lg-4" style="float: left;">
             <label class="fs-0" for="formControlSelect${intRandomId}">縣市<span style="color:red">*</span><a
                 href="codingMemo.html?strMemo=縣市資料請參考精誠居佑夥伴手上，由疾管署提供已盤點過居住縣市代碼的試算表">🔆</a></label><br>
             <select class="form-control text-secondary" id="formControlSelect${intRandomId}">
@@ -291,8 +584,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="indent-h2">
       <div class="indent-h3">
         <div class="row ml-0 pl-0"><span class="pt-1 fs-1 pb-1 font-weight-bold text-black">個案生母資料<a
               href="codingMemo.html?strMemo=「HIV確診定義=出生通報母子垂直感染疑似個案之「新生兒之生母為人類免疫缺乏病毒感染者」或「新生兒之生母臨產時為快速檢測法及抗體篩檢檢測陽性者」，顯示並為必填">🔆</a></span>
@@ -303,6 +594,597 @@
             <b>　案母身分證統一編號/外來人口之居留證統一證號</b> <input class="form-control text-secondary ml-2" type="text"
               placeholder="輸入內容">
           </div>
+        </div>
+      </div>
+      <div class="indent-h3">
+        <div class="pt-1 fs-1 font-weight-bold text-black" style="color:black">
+          <b>疾病相關狀況</b>
+        </div>
+        <div class="row mb-3">
+          <div class="col-6">
+            <div class="indent-h4">
+              <b>糖尿病<span style="color:red">*</span></b>
+              <div class="pt-2 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="diabetes1" name="diabetes">
+                <label class="custom-control-label fs-0" for="diabetes1">
+                  有
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="diabetes2" name="diabetes">
+                <label class="custom-control-label fs-0" for="diabetes2">
+                  無
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="diabetes3" name="diabetes">
+                <label class="custom-control-label fs-0" for="diabetes3">
+                  未知
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="indent-h4">
+              <b>肝炎<span style="color:red">*</span></b>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="hepatitis1" name="hepatitis">
+                <label class="custom-control-label fs-0" for="hepatitis1">
+                  有
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="hepatitis2" name="hepatitis">
+                <label class="custom-control-label fs-0" for="hepatitis2">
+                  無
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="hepatitis3" name="hepatitis">
+                <label class="custom-control-label fs-0" for="hepatitis3">
+                  未知
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-6">
+            <div class="indent-h4">
+              <b>慢性腎臟病／洗腎<span style="color:red">*</span></b>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="kidney1" name="kidney">
+                <label class="custom-control-label fs-0" for="kidney1">
+                  有
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="kidney2" name="kidney">
+                <label class="custom-control-label fs-0" for="kidney2">
+                  無
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="kidney3" name="kidney">
+                <label class="custom-control-label fs-0" for="kidney3">
+                  未知
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="indent-h4">
+              <b>癌症<span style="color:red">*</span></b>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="cancer1" name="cancer">
+                <label class="custom-control-label fs-0" for="cancer1">
+                  有
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="cancer2" name="cancer">
+                <label class="custom-control-label fs-0" for="cancer2">
+                  無
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="cancer3" name="cancer">
+                <label class="custom-control-label fs-0" for="cancer3">
+                  未知
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="indent-h4">
+              <div class="form-group form-inline ">
+                <b>癌症部位說明</b>
+                <input class="form-control text-secondary ml-2" type="text" placeholder="輸入內容">
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="indent-h4">
+              <b>免疫不全<span style="color:red">*</span></b>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="immunity1" name="immunity">
+                <label class="custom-control-label fs-0" for="immunity1">
+                  有
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="immunity2" name="immunity">
+                <label class="custom-control-label fs-0" for="immunity2">
+                  無
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="immunity3" name="immunity">
+                <label class="custom-control-label fs-0" for="immunity3">
+                  未知
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="indent-h4">
+              <b>長期服用類固醇<span style="color:red">*</span></b>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="steroid1" name="steroid">
+                <label class="custom-control-label fs-0" for="steroid1">
+                  有
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="steroid2" name="steroid">
+                <label class="custom-control-label fs-0" for="steroid2">
+                  無
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="steroid3" name="steroid">
+                <label class="custom-control-label fs-0" for="steroid3">
+                  未知
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 mb-3">
+            <div class="indent-h4">
+              <b>痛風<span style="color:red">*</span></b>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="gout1" name="gout">
+                <label class="custom-control-label fs-0" for="gout1">
+                  有
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="gout2" name="gout">
+                <label class="custom-control-label fs-0" for="gout2">
+                  無
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="gout3" name="gout">
+                <label class="custom-control-label fs-0" for="gout3">
+                  未知
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-6">
+            <div class="indent-h4">
+              <b>酒精濫用<span style="color:red">*</span></b>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="alcohol1" name="alcohol">
+                <label class="custom-control-label fs-0" for="alcohol1">
+                  有
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="alcohol2" name="alcohol">
+                <label class="custom-control-label fs-0" for="alcohol2">
+                  無
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="alcohol3" name="alcohol">
+                <label class="custom-control-label fs-0" for="alcohol3">
+                  未知
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="indent-h4">
+              <b>吸菸<span style="color:red">*</span></b>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="smoke1" name="smoke">
+                <label class="custom-control-label fs-0" for="smoke1">
+                  有
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="smoke2" name="smoke">
+                <label class="custom-control-label fs-0" for="smoke2">
+                  無
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="smoke3" name="smoke">
+                <label class="custom-control-label fs-0" for="smoke3">
+                  未知
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="indent-h4">
+              <b>物質濫用<span style="color:red">*</span></b>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="abuse1" name="abuse">
+                <label class="custom-control-label fs-0" for="abuse1">
+                  有
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="abuse2" name="abuse">
+                <label class="custom-control-label fs-0" for="abuse2">
+                  無
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="abuse3" name="abuse">
+                <label class="custom-control-label fs-0" for="abuse3">
+                  未知
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="indent-h4">
+              <div class="form-group form-inline ">
+                <b>物質濫用種類說明</b>
+                <input class="form-control text-secondary ml-2" type="text" placeholder="輸入內容">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-6">
+            <div class="indent-h4">
+              <b>慢性肺阻塞疾病<span style="color:red">*</span></b>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="COPD1" name="COPD">
+                <label class="custom-control-label fs-0" for="COPD1">
+                  有
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="COPD2" name="COPD">
+                <label class="custom-control-label fs-0" for="COPD2">
+                  無
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="COPD3" name="COPD">
+                <label class="custom-control-label fs-0" for="COPD3">
+                  未知
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="indent-h4">
+              <b>矽肺症<span style="color:red">*</span></b>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="silicosis1" name="silicosis">
+                <label class="custom-control-label fs-0" for="silicosis1">
+                  有
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="silicosis2" name="silicosis">
+                <label class="custom-control-label fs-0" for="silicosis2">
+                  無
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="silicosis3" name="silicosis">
+                <label class="custom-control-label fs-0" for="silicosis3">
+                  未知
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-6">
+            <div class="indent-h4">
+              <b>胃切除<span style="color:red">*</span></b>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="stomachCut1" name="stomachCut">
+                <label class="custom-control-label fs-0" for="stomachCut1">
+                  有
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="stomachCut2" name="stomachCut">
+                <label class="custom-control-label fs-0" for="stomachCut2">
+                  無
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="stomachCut3" name="stomachCut">
+                <label class="custom-control-label fs-0" for="stomachCut3">
+                  未知
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="indent-h4">
+              <b>自體免疫疾病<span style="color:red">*</span></b>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="AID1" name="AID">
+                <label class="custom-control-label fs-0" for="AID1">
+                  有
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="AID2" name="AID">
+                <label class="custom-control-label fs-0" for="AID2">
+                  無
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="AID3" name="AID">
+                <label class="custom-control-label fs-0" for="AID3">
+                  未知
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-6">
+            <div class="indent-h4">
+              <b>腸造廔<span style="color:red">*</span></b>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="enterostomy1" name="enterostomy">
+                <label class="custom-control-label fs-0" for="enterostomy1">
+                  有
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="enterostomy2" name="enterostomy">
+                <label class="custom-control-label fs-0" for="enterostomy2">
+                  無
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="enterostomy3" name="enterostomy">
+                <label class="custom-control-label fs-0" for="enterostomy3">
+                  未知
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="indent-h4">
+              <b>TNF-a blocker<span style="color:red">*</span></b>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="TNF1" name="TNF">
+                <label class="custom-control-label fs-0" for="TNF1">
+                  有
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="TNF2" name="TNF">
+                <label class="custom-control-label fs-0" for="TNF2">
+                  無
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="TNF3" name="TNF">
+                <label class="custom-control-label fs-0" for="TNF3">
+                  未知
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="indent-h4">
+              <b>BMI < 20<span style="color:red">*</span></b>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="BMI1" name="BMI">
+                <label class="custom-control-label fs-0" for="BMI1">
+                  有
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="BMI2" name="BMI">
+                <label class="custom-control-label fs-0" for="BMI2">
+                  無
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="BMI3" name="BMI">
+                <label class="custom-control-label fs-0" for="BMI3">
+                  未知
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="indent-h4">
+              <div class="form-group form-inline ">
+                <b>其他疾病狀況</b>
+                <input class="form-control text-secondary ml-2" type="text" placeholder="輸入內容">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="indent-h4">
+          <b>孕婦<span style="color:red">*</span></b>
+          <div class="pt-1 custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="pregnant1" name="pregnant">
+            <label class="custom-control-label fs-0" for="pregnant1">
+              有
+            </label>
+          </div>
+          <div class="pt-1 custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="pregnant2" name="pregnant">
+            <label class="custom-control-label fs-0" for="pregnant2">
+              無
+            </label>
+          </div>
+          <div class="pt-1 custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="pregnant3" name="pregnant">
+            <label class="custom-control-label fs-0" for="pregnant3">
+              未知
+            </label>
+          </div>
+        </div>
+        <div class="indent-h4 mt-3 mb-3">
+          <b>HIV相關</b>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="indent-h4">
+              <b>HIV檢驗<span style="color:red">*</span></b>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="HIV1" name="HIV">
+                <label class="custom-control-label fs-0" for="HIV1">
+                  有
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="HIV2" name="HIV">
+                <label class="custom-control-label fs-0" for="HIV2">
+                  無
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="HIV3" name="HIV">
+                <label class="custom-control-label fs-0" for="HIV3">
+                  未知
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="indent-h4">
+              <div class="form-group form-inline ">
+                <b>HIV檢驗日期</b>
+                <input class="form-control text-secondary ml-2" type="text" placeholder="輸入內容">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="indent-h4 mt-3 mb-3">
+          <b>結核病史</b>
+        </div>
+        <div class="row mb-3">
+          <div class="col-6">
+            <div class="indent-h4">
+              <b>過去結核病史<span style="color:red">*</span></b>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="TBhistory1" name="TBhistory">
+                <label class="custom-control-label fs-0" for="TBhistory1">
+                  有
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="TBhistory2" name="TBhistory">
+                <label class="custom-control-label fs-0" for="TBhistory2">
+                  無
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="TBhistory3" name="TBhistory">
+                <label class="custom-control-label fs-0" for="TBhistory3">
+                  未知
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="indent-h4">
+              <b>結核病接觸史<span style="color:red">*</span></b>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="TBcontact1" name="TBcontact">
+                <label class="custom-control-label fs-0" for="TBcontact1">
+                  有
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="TBcontact2" name="TBcontact">
+                <label class="custom-control-label fs-0" for="TBcontact2">
+                  無
+                </label>
+              </div>
+              <div class="pt-1 custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="TBcontact3" name="TBcontact">
+                <label class="custom-control-label fs-0" for="TBcontact3">
+                  未知
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="indent-h4">
+          <div class="form-group form-inline ">
+            <b>TB開始用藥日</b>
+            <input class="form-control text-secondary ml-2" type="text" placeholder="輸入內容">
+          </div>
+        </div>
+        <div class="indent-h4">
+          <b>歷史用藥情形(是否曾於過去病程使用抗結核藥物超過一個月)<span style="color:red">*</span></b>
+          <div class="pt-1 custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="TBuseMedicine1" name="TBuseMedicine">
+            <label class="custom-control-label fs-0" for="TBuseMedicine1">
+              是
+            </label>
+          </div>
+          <div class="pt-1 custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="TBuseMedicine2" name="TBuseMedicine">
+            <label class="custom-control-label fs-0" for="TBuseMedicine2">
+              否
+            </label>
+          </div>
+          <div class="pt-1 custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="TBuseMedicine3" name="TBuseMedicine">
+            <label class="custom-control-label fs-0" for="TBuseMedicine3">
+              未知
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="indent-h2">
+      <div class="mt-3 mb-0 text-black fs-2 font-weight-bold" style="clear: both;"><span class="mt-0">個案狀況維護與補充資料</span>
+      </div>
+      <div class="indent-h3">
+        <div class="form-group form-inline">
+          <b>通報時體重(kg)<span style="color:red">*</span></b>
+          <input class="form-control text-secondary ml-2 col-3" type="text" placeholder="輸入數字，可填至小數點第一位">
+        </div>
+      </div>
+      <div class="indent-h3">
+        <div class="form-group form-inline">
+          <b>症狀起始日</b>
+          <input class="form-control text-secondary ml-2 col-3" type="text" placeholder="年/月/日">
         </div>
       </div>
     </div>
