@@ -4,27 +4,7 @@
     "title": "結核病(除多重抗藥性結核病外)"
   },
   {
-    "type": "json",
-    "file": "../json/disease_臨床症狀到主要症狀.json"
-  },
-  {
-    "type": "checkbox",
-    "list": [
-      "長期咳嗽",
-      "發燒",
-      "體重減輕"
-    ]
-  },
-  {
-    "type": "json",
-    "file": "../json/disease_其他症狀.json"
-  },
-  {
-    "type": "json",
-    "file": "../json/disease_流行病學資料.json"
-  },
-  {
-    "type": "json",
-    "file": "../json/disease_個案生母資料.json"
+    "type": "htmlFile",
+    "file": "disease_多重抗藥性結核病.html"
   }
 ]
