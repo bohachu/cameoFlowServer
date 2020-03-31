@@ -4,29 +4,8 @@
     "title": "退伍軍人病"
   },
   {
-    "type": "json",
-    "file": "../json/disease_臨床症狀到主要症狀.json"
-  },
-  {
-    "type": "checkbox",
-    "list": [
-      "肌肉酸痛",
-      "呼吸困難",
-      "肺炎",
-      "咳嗽",
-      "畏寒/寒顫",
-      "發燒",
-      "腹痛",
-      "腹瀉",
-      "頭痛",
-      "噁心",
-      "頭暈",
-      "全身倦怠"
-    ]
-  },
-  {
-    "type": "json",
-    "file": "../json/disease_其他症狀.json"
+    "type": "htmlFile",
+    "file": "disease_退伍軍人病_臨床症狀到主要症狀.html"
   },
   {
     "type": "json",
