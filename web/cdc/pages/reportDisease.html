@@ -472,21 +472,47 @@
                   </select>
                 </div>
               </div>
-              <div class="col-lg-12">
-                <div class="form-group">
-                  <label class="fs-0" for="exampleFormControlSelect712">通報時狀況<a
-                    href="codingMemo.html?strMemo=選到轉院時，才會依據選到的內容，跳出下面七個問題選項，連動效果必須參考試算表「通報單整合(有附加資訊疾病)定稿版V1 」(001選擇[入住隔離病房]，需顯示[首次入住隔離病房日]、[轉出隔離病房日]欄位供填寫、002選擇[入住加護病房]，需顯示[首次住ICU日]及[轉出ICU日]欄位供填寫、003選擇[出院]，需顯示[出院日]欄位供填寫、004選擇[轉院]，需顯示[轉至院所][轉院日期]欄位供填寫)">🔆</a></label>
-                  <select class="form-control text-secondary" id="exampleFormControlSelect712">
-                    <option>請選擇</option>
-                    <option>轉院</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                  </select>
+              <div class="row ml-1 mr-1 mt-2">
+                  <label class="fs-0 ml-2">通報時狀況<a
+                    href="codingMemo.html?strMemo=001 以下欄位預設為反灰：首次入住隔離病房日、轉出隔離病房日、首次住ICU日、轉出ICU日、住院日、出院日、轉至院所名稱、轉院日期</br>002 當「通報時狀況」欄位勾選時，「首次入住隔離病房日、轉出隔離病房日、首次住ICU日、轉出ICU日、住院日、出院日、轉至院所名稱、轉院日期」欄位邏輯判斷如下：</br>01 門診：全部無法填寫，反灰</br>02 急診待床：全部無法填寫，反灰</br>03 入住一般病房：住院日，可填寫</br>04 入住加護病房：首次入住隔離病房日、轉出隔離病房日，可填寫</br>05 入住隔離病房：首次入住隔離病房日、轉出隔離病房日，可填寫</br>06 出院：出院日，可填寫</br>07 轉院：轉至院所、轉院日期，可填寫</br>08 無就醫：全部無法填寫，反灰</br>003 參考試算表「通報單整合(有附加資訊疾病)定稿版V1 」">🔆</a></label>
+                  <div class="JsonToHtmlCheckbox_buildHtmlAll" style="background-color: #FFFFFF">
+                    <b></b>
+                    <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-2">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox598738" value="option598738">
+                      <label class="form-check-label fs-0" for="inlineCheckbox598738">門診</label>
+                    </div>
+                    <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox598739" value="option598739">
+                      <label class="form-check-label fs-0" for="inlineCheckbox598739">急診待床</label>
+                    </div>
+                    <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox598740" value="option598740">
+                      <label class="form-check-label fs-0" for="inlineCheckbox598740">入住一般病房</label>
+                    </div>
+                    <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox598741" value="option598741">
+                      <label class="form-check-label fs-0" for="inlineCheckbox598741">入住加護病房</label>
+                    </div>
+                    <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox598742" value="option598742">
+                      <label class="form-check-label fs-0" for="inlineCheckbox598742">入住隔離病房</label>
+                    </div>
+                    <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox598743" value="option598743">
+                      <label class="form-check-label fs-0" for="inlineCheckbox598743">出院</label>
+                    </div>
+                    <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox598744" value="option598744">
+                      <label class="form-check-label fs-0" for="inlineCheckbox598744">轉院</label>
+                    </div>
+                    <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox598745" value="option598745">
+                      <label class="form-check-label fs-0" for="inlineCheckbox598745">無就醫</label>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
+
+
             <div class="m-0 p-1" style="background-color: #FFFFFF">
               <div class="row ml-1 mr-1">
                 <div class="col-lg-3">
@@ -515,10 +541,19 @@
                 </div>
                 <div class="col-lg-3">
                   <div class="form-group">
+                    <label class="fs-0" for="name294">住院日</label>
+                    <input class="form-control text-secondary" type="text" value="年/月/日">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
                     <label class="fs-0" for="name294">出院日</label>
                     <input class="form-control text-secondary" type="text" value="年/月/日">
                   </div>
                 </div>
+              </div>
+
+                <div class="row ml-1 mr-1">
                 <div class="col-lg-6">
                   <div class="form-group">
                     <label class="fs-0" for="name729">轉至院所名稱<a
@@ -529,8 +564,6 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="row ml-1 mr-1 mt-2">
                 <div class="col-lg-3">
                   <div class="form-group">
                     <label class="fs-0" for="name294">轉院日期</label>
@@ -542,6 +575,10 @@
                 -->
                   </div>
                 </div>
+              </div>
+
+
+              <div class="row ml-0 mr-1 mt-2">
                 <div class="col-lg-3">
                   <div class="form-group">
                     <label class="fs-0">個案是否死亡<span style="color:red">*</span></label><br/>
@@ -569,10 +606,12 @@
                   </div>
                 </div>
               </div>
-              <div class="row ml-1 mr-1">
+
+
+              <div class="row ml-0 mr-1">
                 <div class="col-lg-3">
                   <div class="form-group">
-                    <label class="fs-0" for="name">死亡原因</label>
+                    <label class="fs-0 mb-0" for="name">死亡原因</label>
                     <span tooltip="．請填寫死亡證書所記載內容：輸入內容，如有多項原因，請以逗號分開" flow="right"><i class="fas fas fa-info-circle"
                                                                                      style="color: #00a65a;"></i></span>
                   </div>
@@ -580,23 +619,22 @@
               </div>
               <div class="row ml-1 mr-1 mb-3">
                 <div class="col-3">
-                  <label class="fs-0 ml-2">甲</label>
-                  <input class="form-control text-secondary ml-2" type="text" value="輸入內容">
+                  <label class="fs-0">甲</label>
+                  <input class="form-control text-secondary" type="text" value="輸入內容">
                 </div>
                 <div class="col-3">
-                  <label class="fs-0 ml-2">乙</label>
-                  <input class="form-control text-secondary ml-2" type="text" value="輸入內容">
+                  <label class="fs-0">乙</label>
+                  <input class="form-control text-secondary" type="text" value="輸入內容">
                 </div>
                 <div class="col-3">
-                  <label class="fs-0 ml-2">丙</label>
-                  <input class="form-control text-secondary ml-2" type="text" value="輸入內容">
+                  <label class="fs-0">丙</label>
+                  <input class="form-control text-secondary" type="text" value="輸入內容">
                 </div>
                 <div class="col-3">
-                  <label class="fs-0 ml-2">丁</label>
-                  <input class="form-control text-secondary ml-2" type="text" value="輸入內容">
+                  <label class="fs-0">丁</label>
+                  <input class="form-control text-secondary" type="text" value="輸入內容">
                 </div>
               </div>
-            </div>
           </form>
           <h5 class="title font-weight-bold mt-4" id="state3">通報疾病資料</h5>
           <div class="row">
