@@ -16,719 +16,756 @@
 
 <body>
 
-  <div class="jsCdc.dart" style="display: none;">
-    <!-- 次標題等項目 -->
-    <div class="JsonToHtmlRadio_buildHtmlAll" style="clear: both;">
-      <div class="form-group ml-3">
-        <p class="fs-0 font-weight-bold text-black">$strTitle $strHtmlTip</p>
-        <p class="fs-0" for="name">$strText</p>
-        <!-- radio button list (呈現) -->
-        $strList
-      </div>
-      <!-- 日期 -->
-      $strHtmlDate
+<div class="jsCdc.dart" style="display: none;">
+  <!-- 次標題等項目 -->
+  <div class="JsonToHtmlRadio_buildHtmlAll" style="clear: both;">
+    <div class="form-group ml-3">
+      <p class="fs-0 font-weight-bold text-black">$strTitle $strHtmlTip</p>
+      <p class="fs-0" for="name">$strText</p>
+      <!-- radio button list (呈現) -->
+      $strList
     </div>
+    <!-- 日期 -->
+    $strHtmlDate
+  </div>
 
-    <!-- 比較大的次標題等項目 -->
-    <div class="JsonToHtmlRadioCol6_buildHtmlAll col-lg-6" style="clear: both;">
-      <div class="form-group ml-3">
-        <p class="fs-0 font-weight-bold text-black">$strTitle</p>
-        <p class="fs-0" for="name">$strText $strHtmlTip</p>
-        <!-- radio button list (呈現) -->
-        $strList
-      </div>
-      <!-- 日期 -->
-      $strHtmlDate
+  <!-- 比較大的次標題等項目 -->
+  <div class="JsonToHtmlRadioCol6_buildHtmlAll col-lg-6" style="clear: both;">
+    <div class="form-group ml-3">
+      <p class="fs-0 font-weight-bold text-black">$strTitle</p>
+      <p class="fs-0" for="name">$strText $strHtmlTip</p>
+      <!-- radio button list (呈現) -->
+      $strList
     </div>
+    <!-- 日期 -->
+    $strHtmlDate
+  </div>
 
-    <!-- 比較小的次標題等項目 -->
-    <div class="JsonToHtmlRadioCol4_buildHtmlAll col-lg-4" style="clear: both;">
-      <div class="form-group ml-3">
-        <p class="fs-0 font-weight-bold text-black">$strTitle</p>
-        <p class="fs-0" for="name">$strText $strHtmlTip</p>
-        <!-- radio button list (呈現) -->
-        $strList
-      </div>
-      <!-- 日期 -->
-      $strHtmlDate
+  <!-- 比較小的次標題等項目 -->
+  <div class="JsonToHtmlRadioCol4_buildHtmlAll col-lg-4" style="clear: both;">
+    <div class="form-group ml-3">
+      <p class="fs-0 font-weight-bold text-black">$strTitle</p>
+      <p class="fs-0" for="name">$strText $strHtmlTip</p>
+      <!-- radio button list (呈現) -->
+      $strList
     </div>
+    <!-- 日期 -->
+    $strHtmlDate
+  </div>
 
-    <!-- 比較小的次標題等項目 -->
-    <div class="JsonToHtmlRadioCol3_buildHtmlAll col-lg-3" style="clear: both;">
-      <div class="form-group ml-3">
-        <p class="fs-0 font-weight-bold text-black">$strTitle</p>
-        <p class="fs-0" for="name">$strText $strHtmlTip</p>
-        <!-- radio button list (呈現) -->
-        $strList
-      </div>
-      <!-- 日期 -->
-      $strHtmlDate
+  <!-- 比較小的次標題等項目 -->
+  <div class="JsonToHtmlRadioCol3_buildHtmlAll col-lg-3" style="clear: both;">
+    <div class="form-group ml-3">
+      <p class="fs-0 font-weight-bold text-black">$strTitle</p>
+      <p class="fs-0" for="name">$strText $strHtmlTip</p>
+      <!-- radio button list (呈現) -->
+      $strList
     </div>
+    <!-- 日期 -->
+    $strHtmlDate
+  </div>
 
-    <!-- tooltip -->
-    <span class="JsonToHtmlRadio_buildTip" tooltip="$strTip" flow="right">
+  <!-- tooltip -->
+  <span class="JsonToHtmlRadio_buildTip" tooltip="$strTip" flow="right">
       <i class="fas fas fa-info-circle" style="color: #00a65a;"></i>
     </span>
 
-    <!-- radio button list (製造) -->
-    <div class="JsonToHtmlRadio_getListTemplate custom-control custom-radio custom-control-inline">
-      <input type="radio" class="custom-control-input" id="customRadioInline${intRandomId + i}"
-        name="customRadioInline$intRandomId">
-      <label class="custom-control-label fs-0" for="customRadioInline${intRandomId + i}">
-        ${lstList[i]}
-      </label>
-    </div>
-
-    <!-- checkbox 文字 (製造) -->
-    <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
-      <input class="form-check-input" type="checkbox" id="inlineCheckbox${intRandomId + i}"
-        value="option${intRandomId + i}">
-      <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId + i}">${strLabel}</label>
-    </div>
-
-    <!-- checkbox 文字 + input text (製造) -->
-    <div class="JsonToHtmlCheckbox_getInputWithLabel form-check form-check-inline mb-2 ml-2">
-      <input class="form-check-input" type="checkbox" id="inlineCheckbox${intRandomId + 200}"
-        value="option${intRandomId}">
-      <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId + 200}">$strLabel</label>
-      <input class="text-secondary ml-3 p-1" type="text" placeholder="輸入內容">
-    </div>
-
-    <div class="JsonToHtmlCheckbox_buildHtmlAll row pl-0 ml-0" style="background-color: #FFFFFF">
-      <b>$strTitle</b>
-      $strList
-      $strHtmlInput
-    </div>
-
-    <!-- 比較大的 checkbox 文字 (製造) -->
-    <div class="JsonToHtmlCheckboxCol6_getCheckboxWithLabel form-check form-check-inline pb-2 m-0">
-      <input class="form-check-input" type="checkbox" id="inlineCheckboxCol6${intRandomId + i}"
-        value="option${intRandomId + i}">
-      <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId + i}">${strLabel}</label>
-    </div>
-
-    <!-- 比較大的 checkbox 文字 + input text (製造) -->
-    <div class="JsonToHtmlCheckboxCol6_getInputWithLabel form-check form-check-inline pb-2 mr-0">
-      <input class="form-check-input" type="checkbox" id="inlineCheckboxCol6${intRandomId + 200}"
-        value="option${intRandomId}">
-      <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId + 200}">$strLabel</label>
-      <input class="text-secondary ml-3" type="text" placeholder="輸入內容">
-    </div>
-
-    <!-- 比較大的灰色框部分 -->
-    <div class="JsonToHtmlCheckboxCol6_buildHtmlAll pl-4 pr-4" style="background-color: #FFFFFF">
-      $strList
-      $strHtmlInput
-    </div>
-
-    <!-- 比較小的 checkbox 文字 (製造) -->
-    <div class="JsonToHtmlCheckboxCol3_getCheckboxWithLabel form-check form-check-inline pb-2 m-0">
-      <input class="form-check-input" type="checkbox" id="inlineCheckboxCol3${intRandomId + i}"
-        value="option${intRandomId + i}">
-      <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId + i}">${strLabel}</label>
-    </div>
-
-    <!-- 比較小的 checkbox 文字 + input text (製造) -->
-    <div class="JsonToHtmlCheckboxCol3_getInputWithLabel form-check form-check-inline pb-2 mr-0">
-      <input class="form-check-input" type="checkbox" id="inlineCheckboxCol3{intRandomId + 200}"
-        value="option${intRandomId}">
-      <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId + 200}">$strLabel</label>
-      <input class="text-secondary ml-1" type="text" placeholder="輸入內容">
-    </div>
-
-    <!-- 比較小的灰色框部分 -->
-    <div class="JsonToHtmlCheckboxCol3_buildHtmlAll pl-4 pr-4" style="background-color: #FFFFFF">
-      $strList
-      $strHtmlInput
-    </div>
-
-    <!-- ＋ 新增一筆國內旅遊史 等文字 -->
-    <span class="JsonToHtmlAddRecord_getTags ml-3" style="clear: both;"><a href="#">$strTitle</a></span>
-
-    <!-- 選擇日期 -->
-    <div class="JsonToHtmlDate_getHtmlDate form-group col-4" style="float: left;">
-      <label class="fs-0" for="name66$intRandomId">$strTitle</label>
-      <input class="form-control text-secondary" id="name66$intRandomId" type="text" placeholder="年/月/日">
-    </div>
-
-    <!-- 比較大的選擇日期 -->
-    <div class="JsonToHtmlDateCol6_getHtmlDate form-group col-6" style="float: left;">
-      <label class="fs-0" for="nameCol6$intRandomId">$strTitle</label>
-      <input class="form-control text-secondary" id="nameCol6$intRandomId" type="text" placeholder="年/月/日">
-    </div>
-
-    <!-- 選擇日期 -->
-    <div class="JsonToHtmlDateCol3_getHtmlDate form-group col-3" style="float: left;">
-      <label class="fs-0" for="nameCol3$intRandomId">$strTitle</label>
-      <input class="form-control text-secondary" id="nameCol3$intRandomId" type="text" placeholder="年/月/日">
-    </div>
-
-    <!-- 輸入文字 -->
-    <div class="JsonToHtmlInput_getTags col-lg-4" style="float: left;">
-      <div class="form-group">
-        <label class="fs-0" for="name73$intRandomId">$strTitle</label>
-        <input class="form-control text-secondary" id="name73$intRandomId" type="text" placeholder="$strText">
-      </div>
-    </div>
-
-    <!-- 比較大的輸入文字 -->
-    <div class="JsonToHtmlInputCol6_getTags col-lg-6" style="float: left;">
-      <div class="form-group">
-        <label class="fs-0" for="name88$intRandomId">$strTitle</label>
-        <input class="form-control text-secondary" id="name88$intRandomId" type="text" placeholder="$strText">
-      </div>
-    </div>
-
-    <!-- 比較小的輸入文字 -->
-    <div class="JsonToHtmlInputCol3_getTags col-lg-3" style="float: left;">
-      <div class="form-group">
-        <label class="fs-0" for="name31$intRandomId">$strTitle</label>
-        <input class="form-control text-secondary" id="name31$intRandomId" type="text" placeholder="$strText">
-      </div>
-    </div>
-
-    <!-- 下拉選單 -->
-    <div class="JsonToHtmlSelect_buildHtmlAll col-lg-4 mb-3" style="float: left;">
-      <label class="fs-0" for="formControlSelect${intRandomId}">$strTitle</label><br />
-      <select class="form-control text-secondary" id="formControlSelect${intRandomId}">
-        $strList
-      </select>
-    </div>
-
-    <!-- 比較大的下拉選單 -->
-    <div class="JsonToHtmlSelectCol6_buildHtmlAll col-lg-6 mb-3" style="float: left;">
-      <label class="fs-0" for="formControlSelectCol6${intRandomId}">$strTitle</label><br />
-      <select class="form-control text-secondary" id="formControlSelectCol6${intRandomId}">
-        $strList
-      </select>
-    </div>
-
-    <!-- 比較小的下拉選單 -->
-    <div class="JsonToHtmlSelectCol3_buildHtmlAll col-lg-3 mb-3" style="float: left;">
-      <label class="fs-0" for="formControlSelectCol3${intRandomId}">$strTitle</label><br />
-      <select class="form-control text-secondary" id="formControlSelectCol3${intRandomId}">
-        $strList
-      </select>
-    </div>
-
+  <!-- radio button list (製造) -->
+  <div class="JsonToHtmlRadio_getListTemplate custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="customRadioInline${intRandomId + i}"
+           name="customRadioInline$intRandomId">
+    <label class="custom-control-label fs-0" for="customRadioInline${intRandomId + i}">
+      ${lstList[i]}
+    </label>
   </div>
 
+  <!-- checkbox 文字 (製造) -->
+  <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox${intRandomId + i}"
+           value="option${intRandomId + i}">
+    <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId + i}">${strLabel}</label>
+  </div>
 
-  <div id="reportDiseaseHeader"></div>
-  <div class="container-fluid pl-0" style="padding-bottom: 30px; background-color: #F2F2F2" id="parent">
-    <div id="reportDiseaseNav"></div>
+  <!-- checkbox 文字 + input text (製造) -->
+  <div class="JsonToHtmlCheckbox_getInputWithLabel form-check form-check-inline mb-2 ml-2">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox${intRandomId + 200}"
+           value="option${intRandomId}">
+    <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId + 200}">$strLabel</label>
+    <input class="text-secondary ml-3 p-1" type="text" placeholder="輸入內容">
+  </div>
 
-    <div id="vue_block">
-      <!-- {{message}}  {{message}} -->
-      <main class="py-md-s pl-md-4" id="top">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#" style="color: black">功能表</a></li>
-            <li class="breadcrumb-item active" aria-current="page" style="color: #00a65a">新增通報單</li>
-          </ol>
-        </nav>
-        <div class="card-header pb-0">
-          <div class="state-bar">
-            <div class="row">
-              <div class="col-4" onclick="location.href='#state1';" style="cursor: pointer;">
-                通報單位資料
-                <span tooltip="．資料已填寫完成" flow="left"><i class="fas fa-check-circle" style="color: #00a65a;"></i></span>
-              </div>
-              <div class="col-4" onclick="location.href='#state2';" style="cursor: pointer;">
-                個案資料
-                <span tooltip="．資料未填寫完成" flow="left"><i class="fas fa-exclamation-circle"
-                    style="color: #00a65a;"></i></span>
-              </div>
-              <div class="col-4" onclick="location.href='#state3';" style="cursor: pointer;">
-                通報疾病資料
-                <span tooltip="．資料尚未填寫" flow="left"><i class="far fa-circle" style="color: #00a65a;"></i></span>
-              </div>
+  <div class="JsonToHtmlCheckbox_buildHtmlAll row pl-0 ml-0" style="background-color: #FFFFFF">
+    <b>$strTitle</b>
+    $strList
+    $strHtmlInput
+  </div>
+
+  <!-- 比較大的 checkbox 文字 (製造) -->
+  <div class="JsonToHtmlCheckboxCol6_getCheckboxWithLabel form-check form-check-inline pb-2 m-0">
+    <input class="form-check-input" type="checkbox" id="inlineCheckboxCol6${intRandomId + i}"
+           value="option${intRandomId + i}">
+    <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId + i}">${strLabel}</label>
+  </div>
+
+  <!-- 比較大的 checkbox 文字 + input text (製造) -->
+  <div class="JsonToHtmlCheckboxCol6_getInputWithLabel form-check form-check-inline pb-2 mr-0">
+    <input class="form-check-input" type="checkbox" id="inlineCheckboxCol6${intRandomId + 200}"
+           value="option${intRandomId}">
+    <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId + 200}">$strLabel</label>
+    <input class="text-secondary ml-3" type="text" placeholder="輸入內容">
+  </div>
+
+  <!-- 比較大的灰色框部分 -->
+  <div class="JsonToHtmlCheckboxCol6_buildHtmlAll pl-4 pr-4" style="background-color: #FFFFFF">
+    $strList
+    $strHtmlInput
+  </div>
+
+  <!-- 比較小的 checkbox 文字 (製造) -->
+  <div class="JsonToHtmlCheckboxCol3_getCheckboxWithLabel form-check form-check-inline pb-2 m-0">
+    <input class="form-check-input" type="checkbox" id="inlineCheckboxCol3${intRandomId + i}"
+           value="option${intRandomId + i}">
+    <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId + i}">${strLabel}</label>
+  </div>
+
+  <!-- 比較小的 checkbox 文字 + input text (製造) -->
+  <div class="JsonToHtmlCheckboxCol3_getInputWithLabel form-check form-check-inline pb-2 mr-0">
+    <input class="form-check-input" type="checkbox" id="inlineCheckboxCol3{intRandomId + 200}"
+           value="option${intRandomId}">
+    <label class="form-check-label fs-0" for="inlineCheckbox${intRandomId + 200}">$strLabel</label>
+    <input class="text-secondary ml-1" type="text" placeholder="輸入內容">
+  </div>
+
+  <!-- 比較小的灰色框部分 -->
+  <div class="JsonToHtmlCheckboxCol3_buildHtmlAll pl-4 pr-4" style="background-color: #FFFFFF">
+    $strList
+    $strHtmlInput
+  </div>
+
+  <!-- ＋ 新增一筆國內旅遊史 等文字 -->
+  <span class="JsonToHtmlAddRecord_getTags ml-3" style="clear: both;"><a href="#">$strTitle</a></span>
+
+  <!-- 選擇日期 -->
+  <div class="JsonToHtmlDate_getHtmlDate form-group col-4" style="float: left;">
+    <label class="fs-0" for="name66$intRandomId">$strTitle</label>
+    <input class="form-control text-secondary" id="name66$intRandomId" type="text" placeholder="年/月/日">
+  </div>
+
+  <!-- 比較大的選擇日期 -->
+  <div class="JsonToHtmlDateCol6_getHtmlDate form-group col-6" style="float: left;">
+    <label class="fs-0" for="nameCol6$intRandomId">$strTitle</label>
+    <input class="form-control text-secondary" id="nameCol6$intRandomId" type="text" placeholder="年/月/日">
+  </div>
+
+  <!-- 選擇日期 -->
+  <div class="JsonToHtmlDateCol3_getHtmlDate form-group col-3" style="float: left;">
+    <label class="fs-0" for="nameCol3$intRandomId">$strTitle</label>
+    <input class="form-control text-secondary" id="nameCol3$intRandomId" type="text" placeholder="年/月/日">
+  </div>
+
+  <!-- 輸入文字 -->
+  <div class="JsonToHtmlInput_getTags col-lg-4" style="float: left;">
+    <div class="form-group">
+      <label class="fs-0" for="name73$intRandomId">$strTitle</label>
+      <input class="form-control text-secondary" id="name73$intRandomId" type="text" placeholder="$strText">
+    </div>
+  </div>
+
+  <!-- 比較大的輸入文字 -->
+  <div class="JsonToHtmlInputCol6_getTags col-lg-6" style="float: left;">
+    <div class="form-group">
+      <label class="fs-0" for="name88$intRandomId">$strTitle</label>
+      <input class="form-control text-secondary" id="name88$intRandomId" type="text" placeholder="$strText">
+    </div>
+  </div>
+
+  <!-- 比較小的輸入文字 -->
+  <div class="JsonToHtmlInputCol3_getTags col-lg-3" style="float: left;">
+    <div class="form-group">
+      <label class="fs-0" for="name31$intRandomId">$strTitle</label>
+      <input class="form-control text-secondary" id="name31$intRandomId" type="text" placeholder="$strText">
+    </div>
+  </div>
+
+  <!-- 下拉選單 -->
+  <div class="JsonToHtmlSelect_buildHtmlAll col-lg-4 mb-3" style="float: left;">
+    <label class="fs-0" for="formControlSelect${intRandomId}">$strTitle</label><br/>
+    <select class="form-control text-secondary" id="formControlSelect${intRandomId}">
+      $strList
+    </select>
+  </div>
+
+  <!-- 比較大的下拉選單 -->
+  <div class="JsonToHtmlSelectCol6_buildHtmlAll col-lg-6 mb-3" style="float: left;">
+    <label class="fs-0" for="formControlSelectCol6${intRandomId}">$strTitle</label><br/>
+    <select class="form-control text-secondary" id="formControlSelectCol6${intRandomId}">
+      $strList
+    </select>
+  </div>
+
+  <!-- 比較小的下拉選單 -->
+  <div class="JsonToHtmlSelectCol3_buildHtmlAll col-lg-3 mb-3" style="float: left;">
+    <label class="fs-0" for="formControlSelectCol3${intRandomId}">$strTitle</label><br/>
+    <select class="form-control text-secondary" id="formControlSelectCol3${intRandomId}">
+      $strList
+    </select>
+  </div>
+
+</div>
+
+
+<div id="reportDiseaseHeader"></div>
+<div class="container-fluid pl-0" style="padding-bottom: 30px; background-color: #F2F2F2" id="parent">
+  <div id="reportDiseaseNav"></div>
+
+  <div id="vue_block">
+    <!-- {{message}}  {{message}} -->
+    <main class="py-md-s pl-md-4" id="top">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#" style="color: black">功能表</a></li>
+          <li class="breadcrumb-item active" aria-current="page" style="color: #00a65a">新增通報單</li>
+        </ol>
+      </nav>
+      <div class="card-header pb-0">
+        <div class="state-bar">
+          <div class="row">
+            <div class="col-4" onclick="location.href='#state1';" style="cursor: pointer;">
+              通報單位資料
+              <span tooltip="．資料已填寫完成" flow="left"><i class="fas fa-check-circle" style="color: #00a65a;"></i></span>
             </div>
-            <div class="row">
-              <div class="progress" style="height: 3px; width: 100%;">
-                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
-                  aria-valuemax="100"></div>
-              </div>
+            <div class="col-4" onclick="location.href='#state2';" style="cursor: pointer;">
+              個案資料
+              <span tooltip="．資料未填寫完成" flow="left"><i class="fas fa-exclamation-circle"
+                                                      style="color: #00a65a;"></i></span>
+            </div>
+            <div class="col-4" onclick="location.href='#state3';" style="cursor: pointer;">
+              通報疾病資料
+              <span tooltip="．資料尚未填寫" flow="left"><i class="far fa-circle" style="color: #00a65a;"></i></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="progress" style="height: 3px; width: 100%;">
+              <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+                   aria-valuemax="100"></div>
             </div>
           </div>
         </div>
-        <div class="card ml-6 pt-0" style=" -webkit-box-shadow: 0 0 0 0, 0 0 0 0; box-shadow: 0 0 0 0, 0 0 0 0;">
-          <!-- card body -->
-          <div class="card-body pb-0 pt-0">
-            <!--
-          <div class="row align-items-center mb-3">
-            <div class="col-6 col-sm-auto d-flex align-items-center title">
-              <h1 class="fs-0 mb-0 py-2 py-xl-0" style="color: #0F7742"><b>新增通報單</b></h1>
-            </div>
+      </div>
+      <div class="card ml-6 pt-0" style=" -webkit-box-shadow: 0 0 0 0, 0 0 0 0; box-shadow: 0 0 0 0, 0 0 0 0;">
+        <!-- card body -->
+        <div class="card-body pb-0 pt-0">
+          <!--
+        <div class="row align-items-center mb-3">
+          <div class="col-6 col-sm-auto d-flex align-items-center title">
+            <h1 class="fs-0 mb-0 py-2 py-xl-0" style="color: #0F7742"><b>新增通報單</b></h1>
           </div>
-          -->
+        </div>
+        -->
 
-            <h3 class="mt-3 mb-3 text-nowrap" style="color: #0F7742"><b>通報單增修 : 1000100012297</b><a
-                href="codingMemo.html?strMemo=001 系統產出帶入和介接欄位的名稱內容不需顯示在資料增修的畫面</br>002 若為通報時填寫的欄位且不開放修改，則反灰顯示該欄位，規則依照 [通報單整合(有附加資訊疾病)定稿版V1 ] W欄位：https://docs.google.com/spreadsheets/d/11fnorqGalLlV-YU-tVuK0a_pyi5UFEXKnpuzJvi8hFA/edit#gid=1054066465</br>003 審核中的欄位內容先不押上去，待通過審核後系統才會更新成新的資料">🔆</a>
-            </h3>
+          <h3 class="mt-3 mb-3 text-nowrap" style="color: #0F7742"><b>通報單增修 : 1000100012297</b><a
+            href="codingMemo.html?strMemo=001 系統產出帶入和介接欄位的名稱內容不需顯示在資料增修的畫面</br>002 若為通報時填寫的欄位且不開放修改，則反灰顯示該欄位，規則依照 [通報單整合(有附加資訊疾病)定稿版V1 ] W欄位：https://docs.google.com/spreadsheets/d/11fnorqGalLlV-YU-tVuK0a_pyi5UFEXKnpuzJvi8hFA/edit#gid=1054066465</br>003 審核中的欄位內容先不押上去，待通過審核後系統才會更新成新的資料">🔆</a>
+          </h3>
 
-            <h5 class="title font-weight-bold mt-3" id="state1">通報單位資料</h5>
-            <form>
-              <div class="row m-1">
+          <h5 class="title font-weight-bold mt-3" id="state1">通報單位資料</h5>
+          <form>
+            <div class="row m-1">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="fs-0" for="first-name">通報單位名稱<a
+                    href="codingMemo.html?strMemo=001 疾管署與卡米爾當面討論之後建議：按下放大鏡之後的醫院搜尋介面畫面已經做在精誠動態雛形，因此，可以用抓圖方式（彈出搜尋元件），精誠夥伴請提供給疾管署做確認。<br/>002 如果通報單位非醫院，要變成「非反灰」可自行輸入。<br/>003 填入單位醫院與非醫院欄位邏輯：<br/>a.填入單位為醫院：則通報單位名稱、通報單位代碼、通報單位地址、通報單登錄者姓名、通報者聯絡電話為自動帶入(反灰)。<br/>b.填入單位為非醫院，則選擇通報單位名稱，用放大鏡搜尋完畢之後：通報單位名稱、通報單位代碼、通報單位地址，是依照搜尋完的結果帶入內容。通報單登錄者姓名、通報者聯絡電話，則維持自動帶入(反灰)。<br/>c.在非醫院通報時，通報單位名稱欄位的預設值要為：「輸入內容」。<br/>004 通報單位名稱，搜尋方式要：<br/>  a.通報單位名稱欄位，打醫院的名稱，要可以有 autocomplete 功能。<br/>  b.打選放大鏡後，視窗畫面的關鍵字搜尋，不用先選擇地區，就可以有 autocomplete 功能。<br/>  c.下面可以先點選，縣市（台北市）、地區（松山區），再點選之後可以出現：醫院列表做點選。<br/>005 通報單位名稱點下放大鏡按鈕顯示的畫面說明：https://photos.app.goo.gl/L2xhohPGxzHYhrxn8">🔆</a></label>
+                  <div class="d-flex">
+                    <input class="form-control text-secondary" style="background-color: #F2F2F2;" id="first-name"
+                           type="text" value="國立臺灣大學醫學院附設醫院">
+                    <i class="fas fa-search" style="font-size: 20px; margin: auto 0; margin-left: 10px;"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="fs-0" for="number">通報單位代碼<span style="color:red">*</span></label>
+                  <input class="form-control text-secondary" style="background-color: #F2F2F2" id="number" type="text"
+                         value="0036428">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="fs-0" for="doctor">診斷醫生<span style="color:red">*</span></label>
+                  <input class="form-control text-secondary" id="doctor" type="text" value="輸入內容">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="fs-0" for="address">通報單位地址<span style="color:red">*</span></label>
+                  <input class="form-control text-secondary" style="background-color: #F2F2F2" id="address"
+                         type="text" value="台北市中正區中山南路7號">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="fs-0" for="name178">通報單登錄者姓名<span style="color:red">*</span></label>
+                  <input class="form-control text-secondary" style="background-color: #F2F2F2" id="name178"
+                         type="text" value="王大明">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="fs-0" for="phone">通報者聯絡電話<span style="color:red">*</span></label>
+                  <input class="form-control text-secondary" style="background-color: #F2F2F2" id="phone553"
+                         type="text" value="02-2557-5555 #237">
+                </div>
+              </div>
+            </div>
+          </form>
+          <h5 class="title font-weight-bold mt-3" id="state2">個案資料</h5>
+          <form>
+            <div class="row m-1">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="fs-0" for="idnum">身分證統一編號/外來人口之居留證統一證號、護照號碼<span style="color:red">*</span><a
+                    href="codingMemo.html?strMemo=001「身分證統一編號/外來人口之居留證統一證號、護照號碼」如填寫身分證或居留證，需由第二碼辨識性別後，自動帶入性別的勾選欄位</br> 002 「身分證統一編號/外來人口之居留證統一證號、護照號碼」如填寫身分證或居留證，自動帶入國籍欄位為本國籍">🔆</a></label>
+                  <span tooltip="・無身分證時才能輸入統一證號或護照號碼
+・新生兒的出生日期~資料修改日小於6個月時，得以「AA」輸入
+・本國籍人士且無法得知身分證號時使用，得以「BB」輸入
+・外國人士且無法得知身分證號時使用，得以「CC」輸入 " flow="right"><i class="fas fas fa-info-circle" style="color: #00a65a;"></i></span>
+                  <input class="form-control text-secondary" id="idnum" type="text" value="輸入內容">
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="form-group">
+                  <label class="fs-0" for="name329">個案姓名<span style="color:red">*</span></label>
+                  <input class="form-control text-secondary" id="name2330" type="text" value="輸入內容">
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="form-group">
+                  <label class="fs-0" for="name185">姓名羅馬拼音</label>
+                  <input class="form-control text-secondary" id="name2336" type="text" value="輸入內容">
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="form-group">
+                  <label class="fs-0" for="gender">性別</label></br>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input class="custom-control-input" id="customRadioInline1" type="radio"
+                           name="customRadioInline1">
+                    <label class="custom-control-label fs-0" for="customRadioInline1">男</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input class="custom-control-input" id="customRadioInline2" type="radio"
+                           name="customRadioInline1">
+                    <label class="custom-control-label fs-0" for="customRadioInline2">女</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="form-group">
+                  <label class="fs-0" for="name147">出生日期<span style="color:red">*</span><a
+                    href="codingMemo.html?strMemo=001 所有需要填寫日期的欄位，都要使用可以「選擇年份日期的元件小日曆 jPicker」（可參考精誠易用性動態雛形的元件）</br>002 出生日期民國前元件畫面，請參考：https://photos.google.com/share/AF1QipOsBjqq08toiO7bnnf3ZhkH00aJtPn_Lcw7qqWWJQqEbgPHXL7zzr7Wf41OBoiJ-w/photo/AF1QipPvi7bxfG28TxmbsZxW5H1LU-i9_K6XZcH1U8bQ?key=ZVl3TTN1UUxPQ3VTbXRmM2xJd1k4MExHRlYxMV9n</br>003 所有的日期欄位邏輯備註在此，請依照下面邏輯連動：</br>a.發病日期 <= 診斷日期  <= 報告日期  <= 今日</br>b. 國內旅遊史、國外旅遊史：起始日期 <= 結束日期 <= 今日</br>c. 離境居住國日期 <= 入境我國日前 <= 今日</br>d. 首次入住隔離病房日 <= 轉出隔離病房日 <= 今日</br>e. 首次住 ICU 日 <= 轉出 ICU 日 <= 今日 （待確認）</br>g. 出院日 <= 今日</br>g. 轉院日期 <= 今日</br>h. 出生日期 <= 死亡日期  <= 今日">🔆</a></label>
+                  <input class="form-control text-secondary" id="name147" type="text" value="年/月/日">
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="form-group">
+                  <label class="fs-0" for="name">國籍<a
+                    href="codingMemo.html?strMemo=相依性欄位連動，如：填寫「非本國籍」則須填寫「國家」連動效果必須參考試算表「通報單整合(有附加資訊疾病)定稿版V1 」">🔆</a></label><br/>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input class="custom-control-input" id="customRadioInline601" type="radio"
+                           name="customRadioInlineGroup601">
+                    <label class="custom-control-label fs-0" for="customRadioInline601">本國籍</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input class="custom-control-input" id="customRadioInline605" type="radio"
+                           name="customRadioInlineGroup601">
+                    <label class="custom-control-label fs-0" for="customRadioInline605">非本國籍</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="form-group">
+                  <label class="fs-0" for="country256">國家<a
+                    href="codingMemo.html?strMemo=001 此欄位要精誠夥伴採用 Partial input 輸入部分國家文字就會把「國家代碼」value完整帶出來，國家的代碼在前面、國家的中文在後面，如果搜尋不到該國家就屬於其他國家直接套用「其他國家」的代碼並且新增這個國家 value。<br/>002 當使用者在國家這個自動完成的輸入框，可以選擇任意國家名稱自動完成輸入，並且自動在前面會把國家代碼輸入系統（自動帶入）。但是如果使用者輸入時選了「其他國家」這個選項時，或者填寫了完全不存在系統的國家時，這個全新的國家名稱會全自動加入系統，然後也會全自動套用一個叫做「其他國家」的代碼標籤。<br/>003 舉例：輸入「阿」時，下方會跳出「AF 阿富汗」、「AL 阿爾巴尼亞」、「DZ 阿爾及利亞」等等都是「阿」開頭的國家，可以直接做點選。若輸入不在國家代碼表的國家名稱，則會自動帶入變成「ZZ 新國家名稱」（ZZ 代表其他國家的代碼）。國家代碼表可參考：應參照資訊室訂定的國家代碼來源<br/>004<br/>a.不管輸入國家代碼或國家名稱中文字，都會 autocomplete 進行點選<br/>b.輸入關鍵字為全新國家的名稱，在輸入完畢或離開此欄位的時候，輸入框會出現「ZZ 新國家名稱<br/>c.已經輸入的「ZZ 新國家名稱」，先不要收進資料庫做 autocomplete 點選，而是先存在後台資料表，定期檢視是否確實有新增的國家名稱（因為有可能是打錯字才導致找不到對應的國家名稱，並不一定是真的全新國家名稱），待盤點後再決議是否加入國家名稱選項中<br/>d.後台資料庫的代碼 ZZ 和新國家名稱是分開兩個欄位做儲存的，因此在統計報表可以統計所有 ZZ 其他國家有哪些">🔆</a></label>
+                  <input class="form-control text-secondary" id="name2" type="text" value="輸入內容">
+                </div>
+              </div>
+            </div>
+            <div class="row ml-1 mr-1">
+              <div class="col-lg-6">
+                <div class="form-group"><label for="exampleFormControlSelect1" class="fs-0">非本國籍居民身份<a
+                  href="codingMemo.html?strMemo=當非本國籍居民身份選擇「其他」，非本國籍居民身份說明為必填。當非本國籍居民身份不是選擇「其他」，非本國籍居民身份說明不可填">🔆</a></label>
+                  <select id="exampleFormControlSelect100" class="form-control text-secondary">
+                    <option>請選擇</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>其他</option>
+                  </select></div>
+              </div>
+              <div class="col-lg-6 mb-3">
+                <div class="form-group"><label for="name620" class="fs-0">非本國籍居民身份說明</label> <input id="name1000"
+                                                                                                    type="text"
+                                                                                                    value="輸入內容"
+                                                                                                    class="form-control text-secondary">
+                </div>
+              </div>
+            </div>
+            <div class="row ml-1 mr-1">
+              <div class="col-lg-6 mb-3">
+                <div class="form-group">
+                  <label class="fs-0" for="name620">手機<span style="color:red">*</span></label>
+                  <input class="form-control text-secondary" id="name620" type="text" value="輸入內容">
+                </div>
+                <a href="#">＋ 新增一筆手機號碼</a><a
+                href="codingMemo.html?strMemo=001 按新增時會出現填寫輸入框。002 新增的輸入框需要在右邊有一個動態小叉叉，讓使用者可以刪掉資料。">🔆</a>
+              </div>
+              <div class="col-lg-6 mb-3">
+                <div class="form-group">
+                  <label class="fs-0" for="name628">聯絡電話(公司或個人住家)<span style="color:red">*</span></label>
+                  <input class="form-control text-secondary" id="name628" type="text" value="輸入內容">
+                </div>
+                <a href="#">＋ 新增一筆聯絡電話</a><a
+                href="codingMemo.html?strMemo=001 按新增時會出現填寫輸入框。002 新增的輸入框需要在右邊有一個動態小叉叉，讓使用者可以刪掉資料。">🔆</a>
+              </div>
+              <div class="col-lg-3">
+                <div class="form-group">
+                  <label class="fs-0" for="exampleFormControlSelect1">居住縣市<span style="color:red">*</span><a
+                    href="codingMemo.html?strMemo=縣市資料請參考精誠居佑夥伴手上，由疾管署提供已盤點過居住縣市代碼的試算表">🔆</a></label>
+                  <select class="form-control text-secondary" id="exampleFormControlSelect1">
+                    <option>請選擇</option>
+                    <option>臺北市</option>
+                    <option>新北市</option>
+                    <option>桃園市</option>
+                    <option>桃園縣</option>
+                    <option>新竹市</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="form-group">
+                  <label class="fs-0" for="exampleFormControlSelect2">鄉鎮市區<span style="color:red">*</span></label>
+                  <select class="form-control text-secondary" id="exampleFormControlSelect2">
+                    <option>請選擇</option>
+                    <option>板橋區</option>
+                    <option>三重區</option>
+                    <option>蘆洲區</option>
+                    <option>新莊區</option>
+                    <option>永和區</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="form-group">
+                  <label class="fs-0" for="exampleFormControlSelect3">居住村里<a
+                    href="codingMemo.html?strMemo=居住村里欄位：寫了街道地址後，全自動利用 TGOS Database 自動帶入村里鄰的欄位，請精誠夥伴協助和疾管署夥伴確認可行性。">🔆</a></label>
+                  <select class="form-control text-secondary" id="exampleFormControlSelect3">
+                    <option>請選擇</option>
+                    <option>大安里</option>
+                    <option>里</option>
+                    <option>里</option>
+                    <option>里</option>
+                    <option>里</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="fs-0" for="name675">街道地址</label>
+                  <input class="form-control text-secondary" id="name675" type="text"
+                         value="例：住家、飯店、人口密集機構或公司之村里街路門牌">
+                </div>
+              </div>
+              <div class="col-lg-3" style="margin-top: 32px;">
+                <button class="btn text-white mr-1" style="background-color: #0F7841;">手動定位</button>
+                <span tooltip="連結至TGOS尋找及調整個案居住地" flow="right"><i class="fas fas fa-info-circle"
+                                                                  style="color: #00a65a;"></i></span>
+              </div>
+            </div>
+            <div class="row ml-1 mr-1">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="fs-0" for="name">人口密集機構</label><br/>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input class="custom-control-input" id="people-true" type="radio" name="customRadioInline1">
+                    <label class="custom-control-label fs-0" for="people-true">有</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input class="custom-control-input" id="people-false" type="radio" name="customRadioInline1">
+                    <label class="custom-control-label fs-0" for="people-false">無</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="fs-0" for="people-unit">機構類別</label>
+                  <select class="form-control text-secondary" id="people-unit">
+                    <option>請選擇</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row ml-1 mr-1">
+              <div class="col-lg-6">
+                <div class="form-group"><label for="people-unit" class="fs-0">婚姻狀況</label> <select
+                  class="form-control text-secondary">
+                  <option>請選擇</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select></div>
+              </div>
+            </div>
+
+
+            <div class="row ml-1 mr-1 mt-2">
+              <label class="fs-0 pl-2 ml-1">通報時狀況<a
+                href="codingMemo.html?strMemo=001 以下欄位預設為反灰：首次入住隔離病房日、轉出隔離病房日、首次住ICU日、轉出ICU日、住院日、出院日、轉至院所名稱、轉院日期</br>002 當「通報時狀況」欄位勾選時，「首次入住隔離病房日、轉出隔離病房日、首次住ICU日、轉出ICU日、住院日、出院日、轉至院所名稱、轉院日期」欄位邏輯判斷如下：</br>01 門診：全部無法填寫，反灰</br>02 急診待床：全部無法填寫，反灰</br>03 入住一般病房：住院日，可填寫</br>04 入住加護病房：首次入住隔離病房日、轉出隔離病房日，可填寫</br>05 入住隔離病房：首次入住隔離病房日、轉出隔離病房日，可填寫</br>06 出院：出院日，可填寫</br>07 轉院：轉至院所、轉院日期，可填寫</br>08 無就醫：全部無法填寫，反灰</br>003 參考試算表「通報單整合(有附加資訊疾病)定稿版V1 」">🔆</a></label>
+              <div class="JsonToHtmlCheckbox_buildHtmlAll" style="background-color: #FFFFFF">
+                <b></b>
+                <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-2">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox598738" value="option598738">
+                  <label class="form-check-label fs-0" for="inlineCheckbox598738">門診</label>
+                </div>
+                <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox598739" value="option598739">
+                  <label class="form-check-label fs-0" for="inlineCheckbox598739">急診待床</label>
+                </div>
+                <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox598740" value="option598740">
+                  <label class="form-check-label fs-0" for="inlineCheckbox598740">入住一般病房</label>
+                </div>
+                <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox598741" value="option598741">
+                  <label class="form-check-label fs-0" for="inlineCheckbox598741">入住加護病房</label>
+                </div>
+                <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox598742" value="option598742">
+                  <label class="form-check-label fs-0" for="inlineCheckbox598742">入住隔離病房</label>
+                </div>
+                <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox598743" value="option598743">
+                  <label class="form-check-label fs-0" for="inlineCheckbox598743">出院</label>
+                </div>
+                <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox598744" value="option598744">
+                  <label class="form-check-label fs-0" for="inlineCheckbox598744">轉院</label>
+                </div>
+                <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox598745" value="option598745">
+                  <label class="form-check-label fs-0" for="inlineCheckbox598745">無就醫</label>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="m-0 p-1" style="background-color: #FFFFFF">
+              <div class="row ml-1 mr-1">
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="fs-0" for="name294">首次入住隔離病房日</label>
+                    <input class="form-control text-secondary" type="text" value="年/月/日">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="fs-0" for="name294">轉出隔離病房日</label>
+                    <input class="form-control text-secondary" type="text" value="年/月/日">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="fs-0" for="name294">首次住ICU日<a
+                      href="https://docs.google.com/spreadsheets/d/11fnorqGalLlV-YU-tVuK0a_pyi5UFEXKnpuzJvi8hFA/edit#gid=1054066465">🔆</a></label>
+                    <input class="form-control text-secondary" type="text" value="年/月/日">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="fs-0" for="name294">轉出ICU日</label>
+                    <input class="form-control text-secondary" type="text" value="年/月/日">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="fs-0" for="name294">住院日</label>
+                    <input class="form-control text-secondary" type="text" value="年/月/日">
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="fs-0" for="name294">出院日</label>
+                    <input class="form-control text-secondary" type="text" value="年/月/日">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row ml-1 mr-1">
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <label class="fs-0" for="first-name">通報單位名稱<a
-                        href="codingMemo.html?strMemo=001 疾管署與卡米爾當面討論之後建議：按下放大鏡之後的醫院搜尋介面畫面已經做在精誠動態雛形，因此，可以用抓圖方式（彈出搜尋元件），精誠夥伴請提供給疾管署做確認。<br/>002 如果通報單位非醫院，要變成「非反灰」可自行輸入。<br/>003 填入單位醫院與非醫院欄位邏輯：<br/>a.填入單位為醫院：則通報單位名稱、通報單位代碼、通報單位地址、通報單登錄者姓名、通報者聯絡電話為自動帶入(反灰)。<br/>b.填入單位為非醫院，則選擇通報單位名稱，用放大鏡搜尋完畢之後：通報單位名稱、通報單位代碼、通報單位地址，是依照搜尋完的結果帶入內容。通報單登錄者姓名、通報者聯絡電話，則維持自動帶入(反灰)。<br/>c.在非醫院通報時，通報單位名稱欄位的預設值要為：「輸入內容」。<br/>004 通報單位名稱，搜尋方式要：<br/>  a.通報單位名稱欄位，打醫院的名稱，要可以有 autocomplete 功能。<br/>  b.打選放大鏡後，視窗畫面的關鍵字搜尋，不用先選擇地區，就可以有 autocomplete 功能。<br/>  c.下面可以先點選，縣市（台北市）、地區（松山區），再點選之後可以出現：醫院列表做點選。<br/>005 通報單位名稱點下放大鏡按鈕顯示的畫面說明：https://photos.app.goo.gl/L2xhohPGxzHYhrxn8">🔆</a></label>
+                    <label class="fs-0" for="name729">轉至院所名稱<a
+                      href="codingMemo.html?strMemo=001 搜尋功能與通報單位名稱欄位一致，搜尋方式要：<br/>a.通報單位名稱欄位，打醫院的名稱，要可以有 autocomplete 功能。<br/>b.打選放大鏡後，視窗畫面的關鍵字搜尋，不用先選擇地區，就可以有 autocomplete 功能。<br/>c.下面可以先點選，縣市（台北市）、地區（松山區），再點選之後可以出現：醫院列表做點選。<br/>002 系統資料庫還是需要紀錄醫院代碼">🔆</a></label>
                     <div class="d-flex">
-                      <input class="form-control text-secondary" style="background-color: #F2F2F2;" id="first-name"
-                        type="text" value="國立臺灣大學醫學院附設醫院">
+                      <input class="form-control text-secondary" id="name729" type="text" value="輸入內容">
                       <i class="fas fa-search" style="font-size: 20px; margin: auto 0; margin-left: 10px;"></i>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label class="fs-0" for="number">通報單位代碼<span style="color:red">*</span></label>
-                    <input class="form-control text-secondary" style="background-color: #F2F2F2" id="number" type="text"
-                      value="0036428">
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label class="fs-0" for="doctor">診斷醫生<span style="color:red">*</span></label>
-                    <input class="form-control text-secondary" id="doctor" type="text" value="輸入內容">
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label class="fs-0" for="address">通報單位地址<span style="color:red">*</span></label>
-                    <input class="form-control text-secondary" style="background-color: #F2F2F2" id="address"
-                      type="text" value="台北市中正區中山南路7號">
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label class="fs-0" for="name178">通報單登錄者姓名<span style="color:red">*</span></label>
-                    <input class="form-control text-secondary" style="background-color: #F2F2F2" id="name178"
-                      type="text" value="王大明">
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label class="fs-0" for="phone">通報者聯絡電話<span style="color:red">*</span></label>
-                    <input class="form-control text-secondary" style="background-color: #F2F2F2" id="phone553"
-                      type="text" value="02-2557-5555 #237">
-                  </div>
-                </div>
-              </div>
-            </form>
-            <h5 class="title font-weight-bold mt-3" id="state2">個案資料</h5>
-            <form>
-              <div class="row m-1">
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label class="fs-0" for="idnum">身分證統一編號/外來人口之居留證統一證號、護照號碼<span style="color:red">*</span><a
-                        href="codingMemo.html?strMemo=001「身分證統一編號/外來人口之居留證統一證號、護照號碼」如填寫身分證或居留證，需由第二碼辨識性別後，自動帶入性別的勾選欄位</br> 002 「身分證統一編號/外來人口之居留證統一證號、護照號碼」如填寫身分證或居留證，自動帶入國籍欄位為本國籍">🔆</a></label>
-                    <span tooltip="・無身分證時才能輸入統一證號或護照號碼
-・新生兒的出生日期~資料修改日小於6個月時，得以「AA」輸入
-・本國籍人士且無法得知身分證號時使用，得以「BB」輸入
-・外國人士且無法得知身分證號時使用，得以「CC」輸入 " flow="right"><i class="fas fas fa-info-circle" style="color: #00a65a;"></i></span>
-                    <input class="form-control text-secondary" id="idnum" type="text" value="輸入內容">
-                  </div>
-                </div>
                 <div class="col-lg-3">
                   <div class="form-group">
-                    <label class="fs-0" for="name329">個案姓名<span style="color:red">*</span></label>
-                    <input class="form-control text-secondary" id="name2330" type="text" value="輸入內容">
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="form-group">
-                    <label class="fs-0" for="name185">姓名羅馬拼音</label>
-                    <input class="form-control text-secondary" id="name2336" type="text" value="輸入內容">
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="form-group">
-                    <label class="fs-0" for="gender">性別</label></br>
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input class="custom-control-input" id="customRadioInline1" type="radio"
-                        name="customRadioInline1">
-                      <label class="custom-control-label fs-0" for="customRadioInline1">男</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input class="custom-control-input" id="customRadioInline2" type="radio"
-                        name="customRadioInline1">
-                      <label class="custom-control-label fs-0" for="customRadioInline2">女</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="form-group">
-                    <label class="fs-0" for="name147">出生日期<span style="color:red">*</span><a
-                        href="codingMemo.html?strMemo=001 所有需要填寫日期的欄位，都要使用可以「選擇年份日期的元件小日曆 jPicker」（可參考精誠易用性動態雛形的元件）</br>002 出生日期民國前元件畫面，請參考：https://photos.google.com/share/AF1QipOsBjqq08toiO7bnnf3ZhkH00aJtPn_Lcw7qqWWJQqEbgPHXL7zzr7Wf41OBoiJ-w/photo/AF1QipPvi7bxfG28TxmbsZxW5H1LU-i9_K6XZcH1U8bQ?key=ZVl3TTN1UUxPQ3VTbXRmM2xJd1k4MExHRlYxMV9n</br>003 所有的日期欄位邏輯備註在此，請依照下面邏輯連動：</br>a.發病日期 <= 診斷日期  <= 報告日期  <= 今日</br>b. 國內旅遊史、國外旅遊史：起始日期 <= 結束日期 <= 今日</br>c. 離境居住國日期 <= 入境我國日前 <= 今日</br>d. 首次入住隔離病房日 <= 轉出隔離病房日 <= 今日</br>e. 首次住 ICU 日 <= 轉出 ICU 日 <= 今日 （待確認）</br>g. 出院日 <= 今日</br>g. 轉院日期 <= 今日</br>h. 出生日期 <= 死亡日期  <= 今日">🔆</a></label>
-                    <input class="form-control text-secondary" id="name147" type="text" value="年/月/日">
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="form-group">
-                    <label class="fs-0" for="name">國籍<a
-                        href="codingMemo.html?strMemo=相依性欄位連動，如：填寫「非本國籍」則須填寫「國家」連動效果必須參考試算表「通報單整合(有附加資訊疾病)定稿版V1 」">🔆</a></label><br />
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input class="custom-control-input" id="customRadioInline601" type="radio"
-                        name="customRadioInlineGroup601">
-                      <label class="custom-control-label fs-0" for="customRadioInline601">本國籍</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input class="custom-control-input" id="customRadioInline605" type="radio"
-                        name="customRadioInlineGroup601">
-                      <label class="custom-control-label fs-0" for="customRadioInline605">非本國籍</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="form-group">
-                    <label class="fs-0" for="country256">國家<a
-                        href="codingMemo.html?strMemo=001 此欄位要精誠夥伴採用 Partial input 輸入部分國家文字就會把「國家代碼」value完整帶出來，國家的代碼在前面、國家的中文在後面，如果搜尋不到該國家就屬於其他國家直接套用「其他國家」的代碼並且新增這個國家 value。<br/>002 當使用者在國家這個自動完成的輸入框，可以選擇任意國家名稱自動完成輸入，並且自動在前面會把國家代碼輸入系統（自動帶入）。但是如果使用者輸入時選了「其他國家」這個選項時，或者填寫了完全不存在系統的國家時，這個全新的國家名稱會全自動加入系統，然後也會全自動套用一個叫做「其他國家」的代碼標籤。<br/>003 舉例：輸入「阿」時，下方會跳出「AF 阿富汗」、「AL 阿爾巴尼亞」、「DZ 阿爾及利亞」等等都是「阿」開頭的國家，可以直接做點選。若輸入不在國家代碼表的國家名稱，則會自動帶入變成「ZZ 新國家名稱」（ZZ 代表其他國家的代碼）。國家代碼表可參考：應參照資訊室訂定的國家代碼來源<br/>004<br/>a.不管輸入國家代碼或國家名稱中文字，都會 autocomplete 進行點選<br/>b.輸入關鍵字為全新國家的名稱，在輸入完畢或離開此欄位的時候，輸入框會出現「ZZ 新國家名稱<br/>c.已經輸入的「ZZ 新國家名稱」，先不要收進資料庫做 autocomplete 點選，而是先存在後台資料表，定期檢視是否確實有新增的國家名稱（因為有可能是打錯字才導致找不到對應的國家名稱，並不一定是真的全新國家名稱），待盤點後再決議是否加入國家名稱選項中<br/>d.後台資料庫的代碼 ZZ 和新國家名稱是分開兩個欄位做儲存的，因此在統計報表可以統計所有 ZZ 其他國家有哪些">🔆</a></label>
-                    <input class="form-control text-secondary" id="name2" type="text" value="輸入內容">
-                  </div>
-                </div>
-              </div>
-              <div class="row ml-1 mr-1">
-                <div class="col-lg-6 mb-3">
-                  <div class="form-group">
-                    <label class="fs-0" for="name620">手機<span style="color:red">*</span></label>
-                    <input class="form-control text-secondary" id="name620" type="text" value="輸入內容">
-                  </div>
-                  <a href="#">＋ 新增一筆手機號碼</a><a
-                    href="codingMemo.html?strMemo=001 按新增時會出現填寫輸入框。002 新增的輸入框需要在右邊有一個動態小叉叉，讓使用者可以刪掉資料。">🔆</a>
-                </div>
-                <div class="col-lg-6 mb-3">
-                  <div class="form-group">
-                    <label class="fs-0" for="name628">聯絡電話(公司或個人住家)<span style="color:red">*</span></label>
-                    <input class="form-control text-secondary" id="name628" type="text" value="輸入內容">
-                  </div>
-                  <a href="#">＋ 新增一筆聯絡電話</a><a
-                    href="codingMemo.html?strMemo=001 按新增時會出現填寫輸入框。002 新增的輸入框需要在右邊有一個動態小叉叉，讓使用者可以刪掉資料。">🔆</a>
-                </div>
-                <div class="col-lg-3">
-                  <div class="form-group">
-                    <label class="fs-0" for="exampleFormControlSelect1">居住縣市<span style="color:red">*</span><a
-                        href="codingMemo.html?strMemo=縣市資料請參考精誠居佑夥伴手上，由疾管署提供已盤點過居住縣市代碼的試算表">🔆</a></label>
-                    <select class="form-control text-secondary" id="exampleFormControlSelect1">
-                      <option>請選擇</option>
-                      <option>臺北市</option>
-                      <option>新北市</option>
-                      <option>桃園市</option>
-                      <option>桃園縣</option>
-                      <option>新竹市</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="form-group">
-                    <label class="fs-0" for="exampleFormControlSelect2">鄉鎮市區<span style="color:red">*</span></label>
-                    <select class="form-control text-secondary" id="exampleFormControlSelect2">
-                      <option>請選擇</option>
-                      <option>板橋區</option>
-                      <option>三重區</option>
-                      <option>蘆洲區</option>
-                      <option>新莊區</option>
-                      <option>永和區</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="form-group">
-                    <label class="fs-0" for="exampleFormControlSelect3">居住村里<a
-                        href="codingMemo.html?strMemo=居住村里欄位：寫了街道地址後，全自動利用 TGOS Database 自動帶入村里鄰的欄位，請精誠夥伴協助和疾管署夥伴確認可行性。">🔆</a></label>
-                    <select class="form-control text-secondary" id="exampleFormControlSelect3">
-                      <option>請選擇</option>
-                      <option>大安里</option>
-                      <option>里</option>
-                      <option>里</option>
-                      <option>里</option>
-                      <option>里</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label class="fs-0" for="name675">街道地址</label>
-                    <input class="form-control text-secondary" id="name675" type="text"
-                      value="例：住家、飯店、人口密集機構或公司之村里街路門牌">
-                  </div>
-                </div>
-                <div class="col-lg-3" style="margin-top: 32px;">
-                  <button class="btn text-white mr-1" style="background-color: #0F7841;">手動定位</button>
-                  <span tooltip="連結至TGOS尋找及調整個案居住地" flow="right"><i class="fas fas fa-info-circle"
-                      style="color: #00a65a;"></i></span>
-                </div>
-              </div>
-              <div class="row ml-1 mr-1">
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label class="fs-0" for="name">人口密集機構</label><br />
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input class="custom-control-input" id="people-true" type="radio" name="customRadioInline1">
-                      <label class="custom-control-label fs-0" for="people-true">有</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input class="custom-control-input" id="people-false" type="radio" name="customRadioInline1">
-                      <label class="custom-control-label fs-0" for="people-false">無</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label class="fs-0" for="people-unit">機構類別</label>
-                    <select class="form-control text-secondary" id="people-unit">
-                      <option>請選擇</option>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="row ml-1 mr-1 mt-2">
-                <label class="fs-0 ml-2">通報時狀況<a
-                    href="codingMemo.html?strMemo=001 以下欄位預設為反灰：首次入住隔離病房日、轉出隔離病房日、首次住ICU日、轉出ICU日、住院日、出院日、轉至院所名稱、轉院日期</br>002 當「通報時狀況」欄位勾選時，「首次入住隔離病房日、轉出隔離病房日、首次住ICU日、轉出ICU日、住院日、出院日、轉至院所名稱、轉院日期」欄位邏輯判斷如下：</br>01 門診：全部無法填寫，反灰</br>02 急診待床：全部無法填寫，反灰</br>03 入住一般病房：住院日，可填寫</br>04 入住加護病房：首次入住隔離病房日、轉出隔離病房日，可填寫</br>05 入住隔離病房：首次入住隔離病房日、轉出隔離病房日，可填寫</br>06 出院：出院日，可填寫</br>07 轉院：轉至院所、轉院日期，可填寫</br>08 無就醫：全部無法填寫，反灰</br>003 參考試算表「通報單整合(有附加資訊疾病)定稿版V1 」">🔆</a></label>
-                <div class="JsonToHtmlCheckbox_buildHtmlAll" style="background-color: #FFFFFF">
-                  <b></b>
-                  <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-2">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox598738" value="option598738">
-                    <label class="form-check-label fs-0" for="inlineCheckbox598738">門診</label>
-                  </div>
-                  <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox598739" value="option598739">
-                    <label class="form-check-label fs-0" for="inlineCheckbox598739">急診待床</label>
-                  </div>
-                  <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox598740" value="option598740">
-                    <label class="form-check-label fs-0" for="inlineCheckbox598740">入住一般病房</label>
-                  </div>
-                  <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox598741" value="option598741">
-                    <label class="form-check-label fs-0" for="inlineCheckbox598741">入住加護病房</label>
-                  </div>
-                  <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox598742" value="option598742">
-                    <label class="form-check-label fs-0" for="inlineCheckbox598742">入住隔離病房</label>
-                  </div>
-                  <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox598743" value="option598743">
-                    <label class="form-check-label fs-0" for="inlineCheckbox598743">出院</label>
-                  </div>
-                  <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox598744" value="option598744">
-                    <label class="form-check-label fs-0" for="inlineCheckbox598744">轉院</label>
-                  </div>
-                  <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox598745" value="option598745">
-                    <label class="form-check-label fs-0" for="inlineCheckbox598745">無就醫</label>
+                    <label class="fs-0" for="name294">轉院日期</label>
+                    <input class="form-control text-secondary" type="text" value="年/月/日">
+                    <!--
+                <label class="fs-0" for="datepicker735">轉院日期</label>
+                <input class="form-control datetimepicker text-secondary" id="datepicker735" type="text" value="年/月/日"
+                       data-options='{"dateFormat":"y/m/d"}'>
+                -->
                   </div>
                 </div>
               </div>
 
 
-              <div class="m-0 p-1" style="background-color: #FFFFFF">
-                <div class="row ml-1 mr-1">
-                  <div class="col-lg-3">
-                    <div class="form-group">
-                      <label class="fs-0" for="name294">首次入住隔離病房日</label>
-                      <input class="form-control text-secondary" type="text" value="年/月/日">
+              <div class="row ml-0 mr-1 mt-2">
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="fs-0">個案是否死亡<span style="color:red">*</span></label><br/>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input class="custom-control-input" id="customRadioInline752" type="radio"
+                             name="customRadioInline1">
+                      <label class="custom-control-label fs-0" for="customRadioInline752">是</label>
                     </div>
-                  </div>
-                  <div class="col-lg-3">
-                    <div class="form-group">
-                      <label class="fs-0" for="name294">轉出隔離病房日</label>
-                      <input class="form-control text-secondary" type="text" value="年/月/日">
-                    </div>
-                  </div>
-                  <div class="col-lg-3">
-                    <div class="form-group">
-                      <label class="fs-0" for="name294">首次住ICU日<a
-                          href="https://docs.google.com/spreadsheets/d/11fnorqGalLlV-YU-tVuK0a_pyi5UFEXKnpuzJvi8hFA/edit#gid=1054066465">🔆</a></label>
-                      <input class="form-control text-secondary" type="text" value="年/月/日">
-                    </div>
-                  </div>
-                  <div class="col-lg-3">
-                    <div class="form-group">
-                      <label class="fs-0" for="name294">轉出ICU日</label>
-                      <input class="form-control text-secondary" type="text" value="年/月/日">
-                    </div>
-                  </div>
-                  <div class="col-lg-3">
-                    <div class="form-group">
-                      <label class="fs-0" for="name294">住院日</label>
-                      <input class="form-control text-secondary" type="text" value="年/月/日">
-                    </div>
-                  </div>
-                  <div class="col-lg-3">
-                    <div class="form-group">
-                      <label class="fs-0" for="name294">出院日</label>
-                      <input class="form-control text-secondary" type="text" value="年/月/日">
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input class="custom-control-input" id="customRadioInline756" type="radio"
+                             name="customRadioInline1">
+                      <label class="custom-control-label fs-0" for="customRadioInline756">否</label>
                     </div>
                   </div>
                 </div>
-
-                <div class="row ml-1 mr-1">
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <label class="fs-0" for="name729">轉至院所名稱<a
-                          href="codingMemo.html?strMemo=001 搜尋功能與通報單位名稱欄位一致，搜尋方式要：<br/>a.通報單位名稱欄位，打醫院的名稱，要可以有 autocomplete 功能。<br/>b.打選放大鏡後，視窗畫面的關鍵字搜尋，不用先選擇地區，就可以有 autocomplete 功能。<br/>c.下面可以先點選，縣市（台北市）、地區（松山區），再點選之後可以出現：醫院列表做點選。<br/>002 系統資料庫還是需要紀錄醫院代碼">🔆</a></label>
-                      <div class="d-flex">
-                        <input class="form-control text-secondary" id="name729" type="text" value="輸入內容">
-                        <i class="fas fa-search" style="font-size: 20px; margin: auto 0; margin-left: 10px;"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3">
-                    <div class="form-group">
-                      <label class="fs-0" for="name294">轉院日期</label>
-                      <input class="form-control text-secondary" type="text" value="年/月/日">
-                      <!--
-                  <label class="fs-0" for="datepicker735">轉院日期</label>
-                  <input class="form-control datetimepicker text-secondary" id="datepicker735" type="text" value="年/月/日"
-                         data-options='{"dateFormat":"y/m/d"}'>
-                  -->
-                    </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="fs-0" for="name329">死亡日期<a
+                      href="codingMemo.html?strMemo=按選擇日期時，月份要顯示為本月份">🔆</a></label>
+                    <input class="form-control text-secondary" id="name329" type="text" value="年/月/日">
+                    <!--
+                <label class="fs-0" for="datepicker766">死亡日期</label>
+                <input class="form-control datetimepicker text-secondary" id="datepicker766" type="text" value="年/月/日"
+                       data-options='{"dateFormat":"y/m/d"}'>
+                -->
                   </div>
                 </div>
+              </div>
 
 
-                <div class="row ml-0 mr-1 mt-2">
-                  <div class="col-lg-3">
-                    <div class="form-group">
-                      <label class="fs-0">個案是否死亡<span style="color:red">*</span></label><br />
-                      <div class="custom-control custom-radio custom-control-inline">
-                        <input class="custom-control-input" id="customRadioInline752" type="radio"
-                          name="customRadioInline1">
-                        <label class="custom-control-label fs-0" for="customRadioInline752">是</label>
-                      </div>
-                      <div class="custom-control custom-radio custom-control-inline">
-                        <input class="custom-control-input" id="customRadioInline756" type="radio"
-                          name="customRadioInline1">
-                        <label class="custom-control-label fs-0" for="customRadioInline756">否</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3">
-                    <div class="form-group">
-                      <label class="fs-0" for="name329">死亡日期<a
-                          href="codingMemo.html?strMemo=按選擇日期時，月份要顯示為本月份">🔆</a></label>
-                      <input class="form-control text-secondary" id="name329" type="text" value="年/月/日">
-                      <!--
-                  <label class="fs-0" for="datepicker766">死亡日期</label>
-                  <input class="form-control datetimepicker text-secondary" id="datepicker766" type="text" value="年/月/日"
-                         data-options='{"dateFormat":"y/m/d"}'>
-                  -->
-                    </div>
+              <div class="row ml-0 mr-1">
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="fs-0 mb-0" for="name">死亡原因</label>
+                    <span tooltip="．請填寫死亡證書所記載內容：輸入內容，如有多項原因，請以逗號分開" flow="right"><i class="fas fas fa-info-circle"
+                                                                                     style="color: #00a65a;"></i></span>
                   </div>
                 </div>
-
-
-                <div class="row ml-0 mr-1">
-                  <div class="col-lg-3">
-                    <div class="form-group">
-                      <label class="fs-0 mb-0" for="name">死亡原因</label>
-                      <span tooltip="．請填寫死亡證書所記載內容：輸入內容，如有多項原因，請以逗號分開" flow="right"><i class="fas fas fa-info-circle"
-                          style="color: #00a65a;"></i></span>
-                    </div>
-                  </div>
+              </div>
+              <div class="row ml-1 mr-1 mb-3">
+                <div class="col-3">
+                  <label class="fs-0">甲</label>
+                  <input class="form-control text-secondary" type="text" value="輸入內容">
                 </div>
-                <div class="row ml-1 mr-1 mb-3">
-                  <div class="col-3">
-                    <label class="fs-0">甲</label>
-                    <input class="form-control text-secondary" type="text" value="輸入內容">
-                  </div>
-                  <div class="col-3">
-                    <label class="fs-0">乙</label>
-                    <input class="form-control text-secondary" type="text" value="輸入內容">
-                  </div>
-                  <div class="col-3">
-                    <label class="fs-0">丙</label>
-                    <input class="form-control text-secondary" type="text" value="輸入內容">
-                  </div>
-                  <div class="col-3">
-                    <label class="fs-0">丁</label>
-                    <input class="form-control text-secondary" type="text" value="輸入內容">
-                  </div>
+                <div class="col-3">
+                  <label class="fs-0">乙</label>
+                  <input class="form-control text-secondary" type="text" value="輸入內容">
                 </div>
-            </form>
-            <h5 class="title font-weight-bold mt-4" id="state3">通報疾病資料</h5>
-            <div class="row">
-              <div class="col-12">
-                <!--<button type="button" class="btn text-white" style="background-color:#0F7841">選擇疾病</button>
-              <a
-                href="codingMemo.html?strMemo=</br>當「選擇疾病」選擇完畢按下確認時（畫面：https://photos.app.goo.gl/9xMQKid1imEi6Au49），下方會動態展延選擇的疾病及下一步（畫面：https://photos.app.goo.gl/oqYJ5bFciKxrbd4s7），當點選下一步之後，畫面會顯示成通報疾病（畫面：https://photos.app.goo.gl/CMxuCUPAWJK31Pm76）</br>按下「選擇疾病」：</br> 001 白色跳出視窗的高度固定，內容文字依視窗大小調整，讓文字內容有下拉卷軸做拉動。</br>002 全部的選項，設計點選文字及checkbox都可以打勾選取。</br>003 點選疾病名稱後，在上方標題自動帶入，舉例選擇疾病：鼠疫、天花（用、分隔依序排列）。<br/>004 選擇疾病按鈕點下顯示的畫面說明：https://photos.app.goo.gl/L2xhohPGxzHYhrxn8</br>005 選擇疾病選擇完畢後，畫面使用連結圖檔，且要與群聚畫面同步，畫面示意說明：https://photos.app.goo.gl/VwCvUBSXq4vxSpRGA</br>006 當通報疾病為「後天免疫缺乏症候群」，需要先判斷個案是否有報過「人類免疫缺乏病毒感染(含母子垂直感染疑似個案)」。如果沒有通報過，下方通報單需要動態新增「人類免疫缺乏病毒感染(含母子垂直感染疑似個案)」通報單讓個案填寫。</br>按下「下一步」：</br>001 顯示上面未填的必填欄位，用紅色框框起未填欄位，且若有必填欄位尚未填寫時，會將 tip 展開說明，告知使用者如何填寫的規則，舉例：梅毒，四擇一必填，詳見下方連結示意圖說明。</br>002 畫面會自動跳到第一個尚未填寫的欄位處，讓使用者做填寫。</br>003 頁面最上方的通報單位資料、個案資料、通報疾病資料，三個頁籤要有相對應的驚嘆號說明表示資料是否填寫完成。<br/>004 當通報疾病為「後天免疫缺乏症候群」，點選「下一步」時需檢核是否該個案通報過HIV，若無，需要跳出視窗說明「該個案未曾通報過HIV，請一併完成HIV之通報」，並於下方通報單動態新增「人類免疫缺乏病毒感染(含母子垂直感染疑似個案)」通報單供填寫<br/>005 下一步按鈕點下顯示的畫面說明：https://photos.app.goo.gl/L2xhohPGxzHYhrxn8</br>006 一單多病說明：</br>a.根據先勾選的疾病，先全部列出所有選項，「主要症狀」第一個疾病和第二個疾病有差異的部分，直接整併到後面(都在標題主要症狀的下面，同一區塊)。其他相同標題也為同樣作法，保留標題，內容做整併。</br>b.如果遇到第一個疾病裡，沒有第二個疾病的標題選項，完全沒有相同標題選，就往下附加在下面。</br>c.影片說明連結：https://drive.google.com/file/d/1gMPded01g_EpvOOBxgxHcyC4XLaNQk-i/view?usp=sharing">🔆</a>-->
-                <div id="strDiseaseName" class="fs-1">通報疾病：登革熱</div>
+                <div class="col-3">
+                  <label class="fs-0">丙</label>
+                  <input class="form-control text-secondary" type="text" value="輸入內容">
+                </div>
+                <div class="col-3">
+                  <label class="fs-0">丁</label>
+                  <input class="form-control text-secondary" type="text" value="輸入內容">
+                </div>
+              </div>
+          </form>
+          <h5 class="title font-weight-bold mt-4" id="state3">通報疾病資料</h5>
+          <div class="row">
+            <div class="col-12">
+              <!--<button type="button" class="btn text-white" style="background-color:#0F7841">選擇疾病</button>
+            <a
+              href="codingMemo.html?strMemo=</br>當「選擇疾病」選擇完畢按下確認時（畫面：https://photos.app.goo.gl/9xMQKid1imEi6Au49），下方會動態展延選擇的疾病及下一步（畫面：https://photos.app.goo.gl/oqYJ5bFciKxrbd4s7），當點選下一步之後，畫面會顯示成通報疾病（畫面：https://photos.app.goo.gl/CMxuCUPAWJK31Pm76）</br>按下「選擇疾病」：</br> 001 白色跳出視窗的高度固定，內容文字依視窗大小調整，讓文字內容有下拉卷軸做拉動。</br>002 全部的選項，設計點選文字及checkbox都可以打勾選取。</br>003 點選疾病名稱後，在上方標題自動帶入，舉例選擇疾病：鼠疫、天花（用、分隔依序排列）。<br/>004 選擇疾病按鈕點下顯示的畫面說明：https://photos.app.goo.gl/L2xhohPGxzHYhrxn8</br>005 選擇疾病選擇完畢後，畫面使用連結圖檔，且要與群聚畫面同步，畫面示意說明：https://photos.app.goo.gl/VwCvUBSXq4vxSpRGA</br>006 當通報疾病為「後天免疫缺乏症候群」，需要先判斷個案是否有報過「人類免疫缺乏病毒感染(含母子垂直感染疑似個案)」。如果沒有通報過，下方通報單需要動態新增「人類免疫缺乏病毒感染(含母子垂直感染疑似個案)」通報單讓個案填寫。</br>按下「下一步」：</br>001 顯示上面未填的必填欄位，用紅色框框起未填欄位，且若有必填欄位尚未填寫時，會將 tip 展開說明，告知使用者如何填寫的規則，舉例：梅毒，四擇一必填，詳見下方連結示意圖說明。</br>002 畫面會自動跳到第一個尚未填寫的欄位處，讓使用者做填寫。</br>003 頁面最上方的通報單位資料、個案資料、通報疾病資料，三個頁籤要有相對應的驚嘆號說明表示資料是否填寫完成。<br/>004 當通報疾病為「後天免疫缺乏症候群」，點選「下一步」時需檢核是否該個案通報過HIV，若無，需要跳出視窗說明「該個案未曾通報過HIV，請一併完成HIV之通報」，並於下方通報單動態新增「人類免疫缺乏病毒感染(含母子垂直感染疑似個案)」通報單供填寫<br/>005 下一步按鈕點下顯示的畫面說明：https://photos.app.goo.gl/L2xhohPGxzHYhrxn8</br>006 一單多病說明：</br>a.根據先勾選的疾病，先全部列出所有選項，「主要症狀」第一個疾病和第二個疾病有差異的部分，直接整併到後面(都在標題主要症狀的下面，同一區塊)。其他相同標題也為同樣作法，保留標題，內容做整併。</br>b.如果遇到第一個疾病裡，沒有第二個疾病的標題選項，完全沒有相同標題選，就往下附加在下面。</br>c.影片說明連結：https://drive.google.com/file/d/1gMPded01g_EpvOOBxgxHcyC4XLaNQk-i/view?usp=sharing">🔆</a>-->
+              <div id="strDiseaseName" class="fs-1">通報疾病：登革熱</div>
+            </div>
+          </div>
+          <div class="row mt-3">
+          </div>
+          <div class="row pl-1">
+            <div class="col-6">
+              <label class="fs-2 mb-1 font-weight-bold text-black">相關日期</label><br/>
+            </div>
+          </div>
+          <div class="row pl-4">
+            <div class="col-3">
+              <label class="fs-0">發病日期<span style="color:red">*</span></label>
+              <input class="form-control text-secondary" type="text" value="年/月/日">
+            </div>
+            <div class="col-3">
+              <div class="custom-control custom-radio custom-control-inline">
+                <input class="custom-control-input" id="customRadio634" type="radio">
+                <label class="custom-control-label fs-0" for="customRadio634">無發病日</label>
               </div>
             </div>
-            <div class="row mt-3">
-            </div>
-            <div class="row pl-1">
-              <div class="col-6">
-                <label class="fs-2 mb-1 font-weight-bold text-black">相關日期</label><br />
-              </div>
-            </div>
-            <div class="row pl-4">
-              <div class="col-3">
-                <label class="fs-0">發病日期<span style="color:red">*</span></label>
+            <div class="col-3">
+              <div class="form-group">
+                <label class="fs-0">診斷日期<span style="color:red">*</span></label>
                 <input class="form-control text-secondary" type="text" value="年/月/日">
               </div>
-              <div class="col-3">
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input class="custom-control-input" id="customRadio634" type="radio">
-                  <label class="custom-control-label fs-0" for="customRadio634">無發病日</label>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="form-group">
-                  <label class="fs-0">診斷日期<span style="color:red">*</span></label>
-                  <input class="form-control text-secondary" type="text" value="年/月/日">
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="form-group">
-                  <label class="fs-0">報告日期<span style="color:red">*</span></label>
-                  <span tooltip="依傳染病防治法規定向當地主管機關報告傳染病個案之日期" flow="left"><i class="fas fa-info-circle"
-                      style="color: #00a65a;"></i></span>
-                  <input class="form-control text-secondary" type="text" value="年/月/日">
-                </div>
+            </div>
+            <div class="col-3">
+              <div class="form-group">
+                <label class="fs-0">報告日期<span style="color:red">*</span></label>
+                <span tooltip="依傳染病防治法規定向當地主管機關報告傳染病個案之日期" flow="left"><i class="fas fa-info-circle"
+                                                                          style="color: #00a65a;"></i></span>
+                <input class="form-control text-secondary" type="text" value="年/月/日">
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div id="strDiseaseFile"></div>
-        <vue_01></vue_01>
-        <div id="json_02"></div>
-        <vue_03></vue_03>
-        <div id="json_04"></div>
-        <vue_05></vue_05>
-        <div id="json_06"></div>
-        <vue_07></vue_07>
-        <div id="json_08"></div>
+      <div id="strDiseaseFile"></div>
+      <vue_01></vue_01>
+      <div id="json_02"></div>
+      <vue_03></vue_03>
+      <div id="json_04"></div>
+      <vue_05></vue_05>
+      <div id="json_06"></div>
+      <vue_07></vue_07>
+      <div id="json_08"></div>
 
-        <div id="通報單備註欄位"></div>
+      <div id="通報單備註欄位"></div>
 
-        <div id="資料增修原因欄位"></div>
+      <div id="資料增修原因欄位"></div>
 
-        <div class="mt-3 mb-3">
-          <button type="button" class="btn pl-3 pr-3 text-white ml-3" style="background-color: #0F7841; border: none;"
-            data-toggle="modal" data-target="#sure-change">確定修改</button>
-          <button type="button" class="btn pl-3 pr-3 text-white ml-3" style="background-color: #FAA039">取消</button>
-        </div>
-    </div>
-    </main>
+      <div class="mt-3 mb-3">
+        <button type="button" class="btn pl-3 pr-3 text-white ml-3" style="background-color: #0F7841; border: none;"
+                data-toggle="modal" data-target="#sure-change">確定修改
+        </button>
+        <button type="button" class="btn pl-3 pr-3 text-white ml-3" style="background-color: #FAA039">取消</button>
+      </div>
   </div>
-  </div>
+  </main>
+</div>
+</div>
 
-  <div class="modal fade" id="sure-change" tabindex="-1" role="dialog" aria-labelledby="sure-change-modal"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body text-center mt-3 mb-3">
-          <h5 class="mb-3">確定增修以下內容?<a href="codingMemo.html?strMemo=001 需要審核的欄位需在修改欄位名稱加上 (待審核) 或 (待審核轉案) ，原則是醫療院所和衛生所修改某些欄位需要審核，請依照 [通報單整合(有附加資訊疾病)定稿版V1
+<div class="modal fade" id="sure-change" tabindex="-1" role="dialog" aria-labelledby="sure-change-modal"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body text-center mt-3 mb-3">
+        <h5 class="mb-3">確定增修以下內容?<a href="codingMemo.html?strMemo=001 需要審核的欄位需在修改欄位名稱加上 (待審核) 或 (待審核轉案) ，原則是醫療院所和衛生所修改某些欄位需要審核，請依照 [通報單整合(有附加資訊疾病)定稿版V1
 ] W欄位：https://docs.google.com/spreadsheets/d/11fnorqGalLlV-YU-tVuK0a_pyi5UFEXKnpuzJvi8hFA/edit#gid=1054066465
 
 002 修改地址會分為2種情況：不涉及轉案和涉及轉案。
@@ -740,121 +777,125 @@
 
 請依照 [通報單整合(有附加資訊疾病)定稿版V1
 ] W欄位：https://docs.google.com/spreadsheets/d/11fnorqGalLlV-YU-tVuK0a_pyi5UFEXKnpuzJvi8hFA/edit#gid=1054066465">🔆</a>
-          </h5>
-          <table class="table table-hover mb-0 table-dashboard text-center">
-            <thead class="text-900" style="background-color: #f9f9f9;">
-              <tr style="color: #333333;">
-                <th>修改欄位</th>
-                <th>原欄位內容</th>
-                <th>增修後內容</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="btn-reveal-trigger">
-                <td>個案姓名<span style="color: red;">(待審核)</span></td>
-                <td>林小華</td>
-                <td>林小花</td>
-              </tr>
-              <tr class="btn-reveal-trigger">
-                <td>居住地址<span style="color: red;">(待審核轉案)</span></td>
-                <td>新北市永和區中和路6號</td>
-                <td>台北市大安區忠孝東路三段21號</td>
-              </tr>
-            </tbody>
-          </table>
-          <button type="button" class="btn mr-3 mt-4 btn-success" data-dismiss="modal" data-toggle="modal"
-            data-target="#sure-again" style="background-color: #0F7841; border: none;">確認</button>
-          <button type="button" class="btn mt-4" style="background-color: #FAA039; color: #fff;">取消</button>
-        </div>
+        </h5>
+        <table class="table table-hover mb-0 table-dashboard text-center">
+          <thead class="text-900" style="background-color: #f9f9f9;">
+          <tr style="color: #333333;">
+            <th>修改欄位</th>
+            <th>原欄位內容</th>
+            <th>增修後內容</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr class="btn-reveal-trigger">
+            <td>個案姓名<span style="color: red;">(待審核)</span></td>
+            <td>林小華</td>
+            <td>林小花</td>
+          </tr>
+          <tr class="btn-reveal-trigger">
+            <td>居住地址<span style="color: red;">(待審核轉案)</span></td>
+            <td>新北市永和區中和路6號</td>
+            <td>台北市大安區忠孝東路三段21號</td>
+          </tr>
+          </tbody>
+        </table>
+        <button type="button" class="btn mr-3 mt-4 btn-success" data-dismiss="modal" data-toggle="modal"
+                data-target="#sure-again" style="background-color: #0F7841; border: none;">確認
+        </button>
+        <button type="button" class="btn mt-4" style="background-color: #FAA039; color: #fff;">取消</button>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="modal fade" id="sure-again" tabindex="-1" role="dialog" aria-labelledby="sure-again-modal"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body text-center mt-4 mb-3">
-          <h5 class="mb-4">修改個案居住地址：台北市大安區OO路21號</h5>
-          <h5>將轉移此個案至 台北市衛生局<a href="codingMemo.html?strMemo=衛生局(含)以上層級的單位若修改地址涉及轉案則會看到此轉案視窗">🔆</a></h5>
-          <button type="button" class="btn mr-3 mt-4 btn-success" data-dismiss="modal" data-toggle="modal"
-            data-target="#repressModal" style="background-color: #0F7841; border: none;">確認</button>
-          <button type="button" class="btn mt-4" style="background-color: #FAA039; color: #fff;">取消</button>
-        </div>
+<div class="modal fade" id="sure-again" tabindex="-1" role="dialog" aria-labelledby="sure-again-modal"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body text-center mt-4 mb-3">
+        <h5 class="mb-4">修改個案居住地址：台北市大安區OO路21號</h5>
+        <h5>將轉移此個案至 台北市衛生局<a href="codingMemo.html?strMemo=衛生局(含)以上層級的單位若修改地址涉及轉案則會看到此轉案視窗">🔆</a></h5>
+        <button type="button" class="btn mr-3 mt-4 btn-success" data-dismiss="modal" data-toggle="modal"
+                data-target="#repressModal" style="background-color: #0F7841; border: none;">確認
+        </button>
+        <button type="button" class="btn mt-4" style="background-color: #FAA039; color: #fff;">取消</button>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="modal fade" id="repressModal" tabindex="-1" role="dialog" aria-labelledby="repressModal"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content pt-4 pb-3">
-        <div class="modal-body text-center">
-          <h5 class="mb-3">欄位（手機、生日、性別）增修內容將同步更新至此個案的以下通報單<a
-              href="codingMemo.html?strMemo=增修時需同步更新的欄位請依照 [通報單整合(有附加資訊疾病)定稿版V1
+<div class="modal fade" id="repressModal" tabindex="-1" role="dialog" aria-labelledby="repressModal"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content pt-4 pb-3">
+      <div class="modal-body text-center">
+        <h5 class="mb-3">欄位（手機、生日、性別）增修內容將同步更新至此個案的以下通報單<a
+          href="codingMemo.html?strMemo=增修時需同步更新的欄位請依照 [通報單整合(有附加資訊疾病)定稿版V1
               ]
               X欄位：https://docs.google.com/spreadsheets/d/11fnorqGalLlV-YU-tVuK0a_pyi5UFEXKnpuzJvi8hFA/edit#gid=1054066465">🔆</a>
-              </h5>
-          <p class="mb-1">1004589523 恙蟲病 (106/09/24)</p>
-          <p class="mb-1">1035863981 水痘併發症 (106/09/26)</p>
-          <div class="d-flex justify-content-center mt-4">
-            <button type="button" class="btn mr-3 btn-success" data-dismiss="modal"
-              style="background-color: #0F7841; border: none;">確認</button>
-            <button type="button" class="btn" style="background-color: #FAA039; color: #fff;"
-              data-dismiss="modal">取消</button>
-          </div>
+        </h5>
+        <p class="mb-1">1004589523 恙蟲病 (106/09/24)</p>
+        <p class="mb-1">1035863981 水痘併發症 (106/09/26)</p>
+        <div class="d-flex justify-content-center mt-4">
+          <button type="button" class="btn mr-3 btn-success" data-dismiss="modal"
+                  style="background-color: #0F7841; border: none;">確認
+          </button>
+          <button type="button" class="btn" style="background-color: #FAA039; color: #fff;"
+                  data-dismiss="modal">取消
+          </button>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  <div id="reportDiseaseFooter"></div>
+<div id="reportDiseaseFooter"></div>
 
-  <script src="../assets/js/jquery.min.js"></script>
-  <script src="../assets/js/bootstrap.js"></script>
-  <script src="../assets/lib/stickyfilljs/stickyfill.min.js"></script>
-  <script src="../assets/lib/sticky-kit/sticky-kit.min.js"></script>
-  <script src="../assets/lib/is_js/is.min.js"></script>
-  <script src="../assets/lib/@fortawesome/all.min.js"></script>
-  <script src="../assets/lib/prismjs/prism.js"></script>
-  <script src="../assets/js/theme.js"></script>
-  <script src="../assets/lib/flatpickr/flatpickr.min.js"></script>
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/bootstrap.js"></script>
+<script src="../assets/lib/stickyfilljs/stickyfill.min.js"></script>
+<script src="../assets/lib/sticky-kit/sticky-kit.min.js"></script>
+<script src="../assets/lib/is_js/is.min.js"></script>
+<script src="../assets/lib/@fortawesome/all.min.js"></script>
+<script src="../assets/lib/prismjs/prism.js"></script>
+<script src="../assets/js/theme.js"></script>
+<script src="../assets/lib/flatpickr/flatpickr.min.js"></script>
 
-  <script defer src="../dart/jsCdc.dart.js"></script>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="reportDisease.js"></script>
+<script defer src="../dart/jsCdc.dart.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="reportDisease.js"></script>
 
-  <script>
-    const peopleFalse = document.getElementById('people-false');
-    const peopleTrue = document.getElementById('people-true');
-    const peopleUnit = document.getElementById('people-unit');
+<script>
+  const peopleFalse = document.getElementById('people-false');
+  const peopleTrue = document.getElementById('people-true');
+  const peopleUnit = document.getElementById('people-unit');
 
-    peopleFalse.addEventListener('click', function () {
-      peopleUnit.disabled = true;
-    });
+  peopleFalse.addEventListener('click', function () {
+    peopleUnit.disabled = true;
+  });
 
-    peopleTrue.addEventListener('click', function () {
-      peopleUnit.disabled = false;
-    });
+  peopleTrue.addEventListener('click', function () {
+    peopleUnit.disabled = false;
+  });
 
-    $(function () {
-      $('#reportDiseaseHeader').load('cdcMainHeader.html');
-    });
-    $(function () {
-      $('#reportDiseaseNav').load('cdcMainNav.html');
-    });
-    $(function () {
-      $('#通報單備註欄位').load('通報單備註欄位.html');
-    });
-    $(function () {
-      $('#資料增修原因欄位').load('資料增修原因欄位.html');
-    });
-    $(function () {
-      $('#reportDiseaseFooter').load('reportDiseaseFooter.html');
-    });
+  $(function () {
+    $('#reportDiseaseHeader').load('cdcMainHeader.html');
+  });
+  $(function () {
+    $('#reportDiseaseNav').load('cdcMainNav.html');
+  });
+  $(function () {
+    $('#通報單備註欄位').load('通報單備註欄位.html');
+  });
+  $(function () {
+    $('#資料增修原因欄位').load('資料增修原因欄位.html');
+  });
+  $(function () {
+    $('#reportDiseaseFooter').load('reportDiseaseFooter.html');
+  });
 
-  </script>
+</script>
 </body>
 
 </html>
