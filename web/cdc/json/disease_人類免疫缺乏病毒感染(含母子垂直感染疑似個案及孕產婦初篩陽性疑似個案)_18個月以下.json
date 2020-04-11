@@ -9,7 +9,29 @@
   },
   {
     "type": "htmlFile",
-    "file": "disease_人類免疫缺乏病毒感染(含母子垂直感染疑似個案)_18月以上成人_通報時檢驗資料.html"
+    "file": "disease_人類免疫缺乏病毒感染(含母子垂直感染疑似個案)_18月以下_通報時檢驗資料.html"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h3\">"
+  },
+  {
+    "rowStart":"<div class=\"row pb-1 pl-0 ml-0\">",
+    "type":"TitleOneLine",
+    "title":"CD4值或比例符合檢驗條件<span style=\"color:red\">*</span>"
+  },
+  {
+    "type":"InputOneLineCol",
+    "title":"　CD4值",
+    "text":"輸入數字，為整數",
+    "col": "col-3"
+  },
+  {
+    "type":"InputOneLineCol",
+    "title":"　CD4比例(%)",
+    "text":"輸入數字，可至小數點第二位",
+    "col": "col-3",
+    "rowEnd":"</div>  </div><!--indent-h3--> </div><!--indent-h2-->"
   },
   {
     "type":"json",

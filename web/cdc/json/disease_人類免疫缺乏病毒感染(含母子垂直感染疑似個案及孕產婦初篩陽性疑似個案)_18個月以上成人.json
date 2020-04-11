@@ -15,8 +15,62 @@
   {
     "rowStart": "<div class=\"indent-h3\">",
     "type": "h3",
-    "title": "HIV確診定義<span style=\"color:red\">*</span><a href=\"codingMemo_HIV(18月以上成人)001.html\">\uD83D\uDD06</a>",
-    "rowEnd": "</div><!--indent-h3-->"
+    "title": "HIV通報定義<span style=\"color:red\">*</span><a href=\"codingMemo_HIV(18月以上成人)001.html\">\uD83D\uDD06</a>"
+  },
+  {
+    "rowStart": "<div class=\"indent-h4\">",
+    "type": "h4",
+    "checkboxTitle": "孕產婦初篩陽性<a href=\"codingMemo.html?strMemo=系統需增設檢核邏輯：性別為女性，自動勾選\">\uD83D\uDD06</a>"
+  },
+  {
+    "type": "checkbox",
+    "list": [
+      [
+        "checkbox",
+        "1.抗原/抗體複合型檢測(HIV Ag/Ab Combo)"
+      ]
+    ]
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"row pl-0 ml-0\">"
+  },
+  {
+    "type": "date",
+    "title": "檢驗日期"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div>"
+  },
+  {
+    "type": "checkbox",
+    "list": [
+      [
+        "checkbox",
+        "2.抗體篩檢檢測(EIA或PA)"
+      ]
+    ]
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"row pl-0 ml-0\">"
+  },
+  {
+    "type": "date",
+    "title": "檢驗日期"
+  },
+  {
+    "type": "input",
+    "title": "檢驗單位"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div> </div><!--indent-h4-->"
   },
   {
     "rowStart": "<div class=\"indent-h4\">",
@@ -28,11 +82,11 @@
     "list": [
       [
         "checkbox",
-        "西方墨點法"
+        "1.抗體免疫層析檢驗法"
       ],
       [
         "checkbox",
-        "抗體免疫層析確認檢驗"
+        "2.西方墨點法"
       ],
       [
         "input",
@@ -54,8 +108,7 @@
   },
   {
     "type": "htmlSource",
-    "text": "</div>",
-    "rowEnd": "</div><!--indent-h3-->"
+    "text": "</div> </div><!--indent-h4-->"
   },
   {
     "rowStart": "<div class=\"indent-h4\">",
@@ -77,11 +130,12 @@
   },
   {
     "type": "htmlSource",
-    "text": "</div>"
+    "text": "</div> </div><!--indent-h4--> </div><!--indent-h3-->"
   },
   {
-    "type": "h4",
-    "title": "　是否為急性感染判斷<a href=\"codingMemo_HIV(18月以上成人)001.html\">\uD83D\uDD06</a>",
+    "rowStart": "<div class=\"indent-h3\">",
+    "type": "h3",
+    "title": "是否為急性感染判斷<a href=\"codingMemo_HIV(18月以上成人)001.html\">\uD83D\uDD06</a>",
     "tip": "勾選前項[分子生物學核酸檢測(NAT)陽性]時，本項需填答，供判斷個案是否為急性感染。"
   },
   {
@@ -111,8 +165,13 @@
     "file": "disease_HIV(18月以上成人)_HIV抗原p24篩檢陽性_展開的表單.html"
   },
   {
-    "type": "h4",
-    "title": "　是否為急性感染判斷<a href=\"codingMemo_HIV(18月以上成人)001.html\">\uD83D\uDD06</a>",
+    "type": "htmlSource",
+    "text": "</div>"
+  },
+  {
+    "rowStart": "<div class=\"indent-h3\">",
+    "type": "h3",
+    "title": "是否為急性感染判斷<a href=\"codingMemo_HIV(18月以上成人)001.html\">\uD83D\uDD06</a>",
     "tip": "勾選前項[HIV抗原p24篩檢陽性，且進行中和試驗確認陽性]時，本項需填答，供判斷個案是否為急性感染。"
   },
   {
@@ -130,7 +189,29 @@
     "list": [
       "前180天內(含本次) 無相關檢驗結果 <span class='JsonToHtmlRadio_buildTip' tooltip='無抗體篩檢檢測、抗原/抗體複合型檢測、HIV-1及2抗體確認檢驗方法、分子生物學核酸檢測HIV抗原p24篩檢或中和試驗等檢驗結果。' flow='right'><i class='fas fas fa-info-circle' style='color: #00a65a;'></i></span>"
     ],
-    "rowEnd": "</div><!--indent-h3-->  </div><!--indent-h2-->"
+    "rowEnd": "</div><!--indent-h3-->"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h3\">"
+  },
+  {
+    "rowStart":"<div class=\"row pb-1 pl-0 ml-0\">",
+    "type":"TitleOneLine",
+    "title":"CD4值或比例符合檢驗條件<span style=\"color:red\">*</span>"
+  },
+  {
+    "type":"InputOneLineCol",
+    "title":"　CD4值",
+    "text":"輸入數字，為整數",
+    "col": "col-3"
+  },
+  {
+    "type":"InputOneLineCol",
+    "title":"　CD4比例(%)",
+    "text":"輸入數字，可至小數點第二位",
+    "col": "col-3",
+    "rowEnd":"</div>  </div><!--indent-h3--> </div><!--indent-h2-->"
   },
   {
     "type": "json",
