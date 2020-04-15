@@ -152,8 +152,7 @@
     "type": "radio",
     "list": [
       "前180天內(含本次) 無相關檢驗結果 <span class='JsonToHtmlRadio_buildTip' tooltip='無抗體篩檢檢測、抗原/抗體複合型檢測、HIV-1及2抗體確認檢驗方法、分子生物學核酸檢測HIV抗原p24篩檢或中和試驗等檢驗結果。' flow='right'><i class='fas fas fa-info-circle' style='color: #00a65a;'></i></span>"
-    ],
-    "rowEnd": "</div><!--indent-->"
+    ]
   },
   {
     "rowStart": "<div class=\"indent-h4\">",
@@ -166,7 +165,7 @@
   },
   {
     "type": "htmlSource",
-    "text": "</div>"
+    "text": "</div></div><!--indent-->"
   },
   {
     "rowStart": "<div class=\"indent-h3\">",

@@ -8,44 +8,6 @@
     "file": "disease_後天免疫缺乏症候群_臨床症狀.html"
   },
   {
-    "rowStart": "<div class=\"indent-h2\">",
-    "type":"h2",
-    "title":"通報時檢驗資料"
-  },
-  {
-    "type": "htmlSource",
-    "text": "<div class=\"indent-h3\">"
-  },
-  {
-    "rowStart":"<div class=\"row pb-1 pl-0 ml-0\">",
-    "type":"TitleOneLine",
-    "title":"排除急性初期感染<span style=\"color:red\">*</span><span class='JsonToHtmlRadio_buildTip fs-0' style=\"font-weight:400\" tooltip=\"急性初期感染定義：\n分子生物學核酸檢測陽性且該檢測前180天內任一初篩檢驗\n或HIV-1及2抗體確認檢驗方法結果是陰性或不確定者。\" flow='right'>\n      <i class='fas fas fa-info-circle' style='color: #00a65a;'></i>\n    </span>"
-  },
-  {
-    "type":"Radio2OptionsOneLine",
-    "option1":"是",
-    "option2":"否",
-    "rowEnd":"</div>"
-  },
-  {
-    "rowStart":"<div class=\"row pb-1 pl-0 ml-0\">",
-    "type":"TitleOneLine",
-    "title":"CD4值或比例符合檢驗條件<span style=\"color:red\">*</span>"
-  },
-  {
-    "type":"InputOneLineCol",
-    "title":"　CD4值",
-    "text":"輸入數字，為整數",
-    "col": "col-3"
-  },
-  {
-    "type":"InputOneLineCol",
-    "title":"　CD4比例(%)",
-    "text":"輸入數字，可至小數點第二位",
-    "col": "col-3",
-    "rowEnd":"</div>  </div><!--indent-h3--> </div><!--indent-h2-->"
-  },
-  {
     "type":"json",
     "file":"../json/disease_流行病學資料.json"
   },
