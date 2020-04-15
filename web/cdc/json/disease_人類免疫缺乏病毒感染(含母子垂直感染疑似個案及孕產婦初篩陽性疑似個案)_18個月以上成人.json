@@ -224,5 +224,43 @@
   {
     "type": "json",
     "file": "../json/disease_個案生母資料.json"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h2\">"
+  },
+  {
+    "type":"h2",
+    "title":"個案狀況維護與補充資料"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h3\">"
+  },
+  {
+    "rowStart":"<div class=\"row pb-1 pl-0 ml-0\">",
+    "type":"TitleOneLine",
+    "title":"懷孕週數(週)"
+  },
+  {
+    "type": "InputOneLine",
+    "title": "",
+    "text": "輸入數字",
+    "rowEnd": "</div>"
+  },
+  {
+    "rowStart":"<div class=\"row pb-1 pl-0 ml-0\">",
+    "type": "h3",
+    "title": "預產期<a href=\"codingMemo.html?strMemo=勾選孕產婦初篩陽性者，此兩題為必填\">\uD83D\uDD06</a>",
+    "tip": "勾選孕產婦初篩陽性者，此兩題為必填"
+  },
+  {
+    "type": "DateOneLine",
+    "title": "　　",
+    "rowEnd": "</div>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div></div>"
   }
 ]
