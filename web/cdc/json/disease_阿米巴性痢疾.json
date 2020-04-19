@@ -36,43 +36,6 @@
     "file": "../json/disease_流行病學資料.json"
   },
   {
-    "type": "htmlSource",
-    "text": "<div class=\"indent-h2\"><div class=\"indent-h3\">"
-  },
-  {
-    "rowStart": "<div class=\"row ml-0 pl-0\">",
-    "type": "TitleOneLine",
-    "title": "是否病例屬高危險群<a href=\"codingMemo.html?strMemo=當「是否病例屬高危險群」勾選「是」者，下方選項才動態產出提供勾選，且選項(1)~(3)至少必選一項\">\uD83D\uDD06</a>"
-  },
-  {
-    "type": "Radio2OptionsOneLine",
-    "option1": "是",
-    "option2": "否",
-    "rowEnd": "</div>"
-  },
-  {
-    "type": "htmlSource",
-    "text": "<div class=\"indent-h4\">"
-  },
-  {
-    "type": "h4",
-    "title": "病例屬高危險群(可複選)"
-  },
-  {
-    "type": "checkbox",
-    "list": [
-      "(1)HIV陽性",
-      "(2)同性戀或雙性戀",
-      "(3)精神病患或智能障礙者",
-      "(4)長期照護矯正機關(構)之住民或工作人員",
-      "(5)外籍勞工"
-    ]
-  },
-  {
-    "type": "htmlSource",
-    "text": "</div></div></div></div>"
-  },
-  {
     "type": "json",
     "file": "../json/disease_個案生母資料.json"
   }

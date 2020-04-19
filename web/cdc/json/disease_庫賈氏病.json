@@ -4,8 +4,8 @@
     "title": "庫賈氏病"
   },
   {
-    "type": "json",
-    "file": "../json/disease_臨床症狀到主要症狀.json"
+    "type": "htmlFile",
+    "file": "disease_庫賈氏病_臨床症狀到主要症狀.html"
   },
   {
     "type": "checkbox",
