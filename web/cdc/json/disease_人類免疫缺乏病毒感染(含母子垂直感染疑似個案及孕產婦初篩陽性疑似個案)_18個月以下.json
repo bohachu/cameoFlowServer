@@ -17,18 +17,24 @@
   },
   {
     "rowStart":"<div class=\"row pb-1 pl-0 ml-0\">",
-    "type":"TitleOneLine",
-    "title":"CD4值或比例符合檢驗條件<span style=\"color:red\">*</span>"
+    "type":"h3",
+    "title":"CD4值",
+    "tip": "優先填寫CD4值，若無CD4值才填比例"
   },
   {
     "type":"InputOneLineCol",
-    "title":"　CD4值",
+    "title":"　",
     "text":"輸入數字，為整數",
     "col": "col-3"
   },
   {
-    "type":"InputOneLineCol",
+    "type":"h3",
     "title":"　CD4比例(%)",
+    "tip": "優先填寫CD4值，若無CD4值才填比例"
+  },
+  {
+    "type":"InputOneLineCol",
+    "title":"　",
     "text":"輸入數字，可至小數點第二位",
     "col": "col-3",
     "rowEnd":"</div>  </div><!--indent-h3--> </div><!--indent-h2-->"
@@ -36,10 +42,6 @@
   {
     "type":"json",
     "file":"../json/disease_流行病學資料.json"
-  },
-  {
-    "type": "htmlFile",
-    "file": "disease_人類免疫缺乏病毒感染(含母子垂直感染疑似個案)_18月以上成人_感染危險因子.html"
   },
   {
     "type":"htmlFile",

@@ -20,14 +20,14 @@
   {
     "rowStart": "<div class=\"indent-h4\">",
     "type": "h4",
-    "checkboxTitle": "孕產婦初篩陽性<a href=\"codingMemo.html?strMemo=系統需增設檢核邏輯：性別為女性，自動勾選\">\uD83D\uDD06</a>"
+    "checkboxTitle": "孕產婦初篩陽性<a href=\"codingMemo.html?strMemo=系統需增設檢核邏輯：性別為女性時，「孕產婦初篩陽性」區塊之題目可做勾選，當性別不為女性時，「孕產婦初篩陽性」區塊之題目不可做勾選，以反灰呈現\">\uD83D\uDD06</a>"
   },
   {
     "type": "checkbox",
     "list": [
       [
         "checkbox",
-        "1.抗原/抗體複合型檢測(HIV Ag/Ab Combo)"
+        "抗原/抗體複合型檢測(HIV Ag/Ab Combo)"
       ]
     ]
   },
@@ -52,7 +52,7 @@
     "list": [
       [
         "checkbox",
-        "2.抗體篩檢檢測(EIA或PA)"
+        "抗體篩檢檢測(EIA或PA)"
       ]
     ]
   },
@@ -82,15 +82,11 @@
     "list": [
       [
         "checkbox",
-        "1.抗體免疫層析檢驗法"
+        "抗體免疫層析檢驗法"
       ],
       [
         "checkbox",
-        "2.西方墨點法"
-      ],
-      [
-        "input",
-        "其他"
+        "西方墨點法"
       ]
     ]
   },
@@ -196,18 +192,24 @@
   },
   {
     "rowStart":"<div class=\"row pb-1 pl-0 ml-0\">",
-    "type":"TitleOneLine",
-    "title":"CD4值或比例符合檢驗條件<span style=\"color:red\">*</span>"
+    "type":"h3",
+    "title":"CD4值",
+    "tip": "優先填寫CD4值，若無CD4值才填比例"
   },
   {
     "type":"InputOneLineCol",
-    "title":"　CD4值",
+    "title":"　",
     "text":"輸入數字，為整數",
     "col": "col-3"
   },
   {
-    "type":"InputOneLineCol",
+    "type":"h3",
     "title":"　CD4比例(%)",
+    "tip": "優先填寫CD4值，若無CD4值才填比例"
+  },
+  {
+    "type":"InputOneLineCol",
+    "title":"　",
     "text":"輸入數字，可至小數點第二位",
     "col": "col-3",
     "rowEnd":"</div>  </div><!--indent-h3--> </div><!--indent-h2-->"
@@ -230,7 +232,7 @@
   },
   {
     "type":"h2",
-    "title":"個案狀況維護與補充資料"
+    "title":"個案狀況維護與補充資料<a href=\"codingMemo.html?strMemo=勾選孕產婦初篩陽性者，此兩題為必填\">\uD83D\uDD06</a>"
   },
   {
     "type": "htmlSource",
@@ -238,19 +240,20 @@
   },
   {
     "rowStart":"<div class=\"row pb-1 pl-0 ml-0\">",
-    "type":"TitleOneLine",
-    "title":"懷孕週數(週)"
+    "type": "h3",
+    "title": "懷孕週數(週)",
+    "tip": "勾選孕產婦初篩陽性者，此兩題為必填"
   },
   {
     "type": "InputOneLine",
-    "title": "",
+    "title": "　　",
     "text": "輸入數字",
     "rowEnd": "</div>"
   },
   {
     "rowStart":"<div class=\"row pb-1 pl-0 ml-0\">",
     "type": "h3",
-    "title": "預產期<a href=\"codingMemo.html?strMemo=勾選孕產婦初篩陽性者，此兩題為必填\">\uD83D\uDD06</a>",
+    "title": "預產期",
     "tip": "勾選孕產婦初篩陽性者，此兩題為必填"
   },
   {
