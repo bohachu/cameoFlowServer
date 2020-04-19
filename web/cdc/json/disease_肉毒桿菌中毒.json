@@ -37,6 +37,79 @@
     "file": "../json/disease_流行病學資料.json"
   },
   {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h2\">"
+  },
+  {
+    "rowStart": "<div class=\"indent-h3\">",
+    "type":"h3",
+    "title":"接觸史"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "曾與確定病例有共同嫌疑食品暴露史"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "潛伏期內(4 小時 ~ 8 天，平均 3 天)曾食用市售或家庭自製罐頭食品或醃漬食品(如:蔬菜、水果、魚類、肉類、水產品等)、真空包裝食品或其他肉毒桿菌中毒嫌疑食品(如:低溫煙燻即時食品)"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "攝食可能含肉毒桿菌孢子之嫌疑食品，如蜂蜜（偶亦含此孢子）、蔬果（表面可能有孢子）或海鮮"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "發病前 2 週有傷口受細砂、泥土之污染"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "發病前 2 週曾使用靜脈藥物者"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "發病前(6 週內)曾注射肉毒桿菌毒素"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "因意外(如實驗室操作)或故意(如生物攻擊)之肉毒桿菌毒素暴露史者"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "因腸道手術或腸道菌叢改變者，致肉毒桿菌孢子存在腸道產生毒素者"
+    ],
+    "rowEnd": "</div> <!--indent-h4--> </div> <!--indent-h3--> </div> <!--indent-h2-->"
+  },
+  {
     "type": "json",
     "file": "../json/disease_個案生母資料.json"
   }
