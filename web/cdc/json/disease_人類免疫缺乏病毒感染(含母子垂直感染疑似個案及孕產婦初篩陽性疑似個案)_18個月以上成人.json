@@ -20,7 +20,8 @@
   {
     "rowStart": "<div class=\"indent-h4\">",
     "type": "h4",
-    "checkboxTitle": "孕產婦初篩陽性<a href=\"codingMemo.html?strMemo=系統需增設檢核邏輯：性別為女性時，「孕產婦初篩陽性」區塊之題目可做勾選，當性別不為女性時，「孕產婦初篩陽性」區塊之題目不可做勾選，以反灰呈現\">\uD83D\uDD06</a>"
+    "checkboxTitle": "孕產婦初篩陽性<a href=\"codingMemo.html?strMemo=系統需增設檢核邏輯：個案性別為女性，此項才可填寫\">\uD83D\uDD06</a>",
+    "tip": "個案性別為女性，此項才可填寫"
   },
   {
     "type": "checkbox",
@@ -126,29 +127,7 @@
   },
   {
     "type": "htmlSource",
-    "text": "</div> </div><!--indent-h4--> </div><!--indent-h3-->"
-  },
-  {
-    "rowStart": "<div class=\"indent-h3\">",
-    "type": "h3",
-    "title": "是否為急性感染判斷<a href=\"codingMemo_HIV(18月以上成人)001.html\">\uD83D\uDD06</a>",
-    "tip": "勾選前項[分子生物學核酸檢測(NAT)陽性]時，本項需填答，供判斷個案是否為急性感染。"
-  },
-  {
-    "type": "radio",
-    "list": [
-      "前180天內(含本次)任一檢驗結果為[陰性或未確定] <span class='JsonToHtmlRadio_buildTip' tooltip='選擇此項請續填檢驗結果。' flow='right'><i class='fas fas fa-info-circle' style='color: #00a65a;'></i></span>"
-    ]
-  },
-  {
-    "type": "htmlFile",
-    "file": "disease_HIV(18月以上成人)_是否為急性感染判斷_展開的表單.html"
-  },
-  {
-    "type": "radio",
-    "list": [
-      "前180天內(含本次) 無相關檢驗結果 <span class='JsonToHtmlRadio_buildTip' tooltip='無抗體篩檢檢測、抗原/抗體複合型檢測、HIV-1及2抗體確認檢驗方法、分子生物學核酸檢測HIV抗原p24篩檢或中和試驗等檢驗結果。' flow='right'><i class='fas fas fa-info-circle' style='color: #00a65a;'></i></span>"
-    ]
+    "text": "</div> </div><!--indent-h4-->"
   },
   {
     "rowStart": "<div class=\"indent-h4\">",
@@ -166,7 +145,7 @@
   {
     "rowStart": "<div class=\"indent-h3\">",
     "type": "h3",
-    "title": "是否為急性感染判斷<a href=\"codingMemo_HIV(18月以上成人)001.html\">\uD83D\uDD06</a>",
+    "title": "是否為急性感染判斷<span style=\"color:red\">*</span><a href=\"codingMemo_HIV(18月以上成人)001.html\">\uD83D\uDD06</a>",
     "tip": "勾選前項[HIV抗原p24篩檢陽性，且進行中和試驗確認陽性]時，本項需填答，供判斷個案是否為急性感染。"
   },
   {
