@@ -27,6 +27,10 @@
     "file": "../json/disease_其他症狀.json"
   },
   {
+    "type": "htmlFile",
+    "file": "disease_李斯特菌症_通報時檢驗資料.html"
+  },
+  {
     "type": "json",
     "file": "../json/disease_流行病學資料.json"
   },

@@ -38,12 +38,7 @@
   },
   {
     "type": "htmlSource",
-    "text": "<div class=\"indent-h2\">"
-  },
-  {
-    "rowStart": "<div class=\"indent-h3\">",
-    "type":"h3",
-    "title":"接觸史"
+    "text": "<div class=\"indent-h2\"> <div class=\"indent-h3\">"
   },
   {
     "rowStart":"<div class=\"indent-h4\">",
