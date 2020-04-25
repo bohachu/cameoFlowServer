@@ -8,6 +8,17 @@
     "file": "../json/disease_臨床症狀到主要症狀.json"
   },
   {
+    "type": "checkbox",
+    "list": [
+      "發燒",
+      "嘔吐",
+      "頭痛",
+      "水泡",
+      "發冷",
+      "膿疱"
+    ]
+  },
+  {
     "type": "json",
     "file": "../json/disease_其他症狀.json"
   },
