@@ -101,9 +101,9 @@
   },
   {
     "rowStart": "<div class=\"row ml-0 pl-0\">",
-    "type": "h3",
-    "title": "接觸史",
-    "rowEnd": "</div>"
+    "type": "htmlSource",
+    "text": "<div class=\"row ml-0 pl-0 mt-0 font-weight-bold text-black fs-1\">\n          接觸史\n          \n          \n          \n        </div></div>",
+    "comment": "「接觸史」標題"
   },
   {
     "type": "htmlSource",
