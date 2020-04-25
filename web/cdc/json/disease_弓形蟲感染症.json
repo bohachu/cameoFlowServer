@@ -37,6 +37,42 @@
     "file": "../json/disease_流行病學資料.json"
   },
   {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h2\"> <div class=\"indent-h3\">"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "食入未經煮熟的動物肉、組織或體液，或食入含有貓排出的卵囊污染的水或食物"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "母子垂直感染"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "輸血感染"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "器官移植感染"
+    ],
+    "rowEnd": "</div> <!--indent-h4--> </div> <!--indent-h3--> </div> <!--indent-h2-->"
+  },
+  {
     "type": "json",
     "file": "../json/disease_個案生母資料.json"
   }

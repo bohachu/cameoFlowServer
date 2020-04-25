@@ -36,6 +36,34 @@
     "file": "../json/disease_流行病學資料.json"
   },
   {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h2\"> <div class=\"indent-h3\">"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "潛伏期內有狂犬病相關流行地區旅遊史，且曾遭犬、貓、蝙蝠、浣熊等哺乳動物咬傷，或傷口、黏膜曾接觸帶有狂犬病病毒之唾液"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "潛伏期內曾接受器官移植者，而器官捐贈者疑似感染狂犬病"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "潛伏期內進行狂犬病病毒或檢體實驗室操作"
+    ],
+    "rowEnd": "</div> <!--indent-h4--> </div> <!--indent-h3--> </div> <!--indent-h2-->"
+  },
+  {
     "type": "json",
     "file": "../json/disease_個案生母資料.json"
   }

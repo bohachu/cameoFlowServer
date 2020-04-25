@@ -58,6 +58,42 @@
     "file": "../json/disease_流行病學資料.json"
   },
   {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h2\"> <div class=\"indent-h3\">"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "曾使用人類腦下垂體賀爾蒙製劑治療"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "曾接受人類硬腦膜移植"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "曾接受確定/極可能/可能庫賈氏病個案之眼角膜移植"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "曾有暴露於確定/極可能/可能庫賈氏病個案所接觸過之神經外科器械者"
+    ],
+    "rowEnd": "</div> <!--indent-h4--> </div> <!--indent-h3--> </div> <!--indent-h2-->"
+  },
+  {
     "type": "json",
     "file": "../json/disease_個案生母資料.json"
   },

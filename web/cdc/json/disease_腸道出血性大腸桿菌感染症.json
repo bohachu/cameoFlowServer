@@ -26,6 +26,26 @@
     "file": "../json/disease_流行病學資料.json"
   },
   {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h2\"> <div class=\"indent-h3\">"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "曾經與確定病例具有密切接觸"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "曾經與確定病例暴露共同感染源"
+    ],
+    "rowEnd": "</div> <!--indent-h4--> </div> <!--indent-h3--> </div> <!--indent-h2-->"
+  },
+  {
     "type": "json",
     "file": "../json/disease_個案生母資料.json"
   }

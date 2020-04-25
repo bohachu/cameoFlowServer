@@ -10,8 +10,6 @@
     "type": "checkbox",
     "list": [
       "呼吸困難",
-      "呼吸急促",
-      "肺炎(Pneumonia)",
       "X光片顯示肺炎",
       "肌肉酸痛",
       "咳嗽",
@@ -20,12 +18,14 @@
       "發燒",
       "腹瀉",
       "嘔吐",
-      "鼻炎",
       "關節痛",
       "全身倦怠",
-      "尿量減少",
-      "血尿",
-      "不明原因呼吸性疾病致死"
+      "噁心",
+      "頭痛",
+      "CT顯示肺炎",
+      "嗅覺異常",
+      "味覺異常",
+      "其他"
     ]
   },
   {
@@ -33,29 +33,36 @@
     "file": "../json/disease_其他症狀.json"
   },
   {
-    "rowStart": "<div class=\"indent-h2\">",
-    "type":"h2",
-    "title":"通報時檢驗資料"
-  },
-  {
-    "type": "htmlSource",
-    "text": "<div class=\"row pl-4\"> <span class=\" fs-1 pb-1 pr-3 font-weight-bold text-black\">流感病毒抗原快速篩檢結果</span>"
-  },
-  {
-    "type": "Radio4OptionsOneLine",
-    "option1": "陽性",
-    "option2": "陰性",
-    "option3": "未確定",
-    "option4": "未檢驗",
-    "rowEnd": "</div>"
-  },
-  {
-    "type": "htmlSource",
-    "text": "</div> <!--indent-h3--> </div> <!--indent-h2-->"
-  },
-  {
     "type": "json",
     "file": "../json/disease_流行病學資料.json"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h2\"> <div class=\"indent-h3\">"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "曾接觸來自國外有發燒或呼吸道症狀人士"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "曾經與出現症狀的極可能或確定病例有密切接觸"
+    ],
+    "rowEnd": "</div> <!--indent-h4-->"
+  },
+  {
+    "rowStart":"<div class=\"indent-h4\">",
+    "type":"checkbox",
+    "list":[
+      "家庭或同單位有群聚情形"
+    ],
+    "rowEnd": "</div> <!--indent-h4--> </div> <!--indent-h3--> </div> <!--indent-h2-->"
   },
   {
     "type": "json",
