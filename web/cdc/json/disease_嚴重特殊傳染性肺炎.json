@@ -62,10 +62,77 @@
     "list":[
       "家庭或同單位有群聚情形"
     ],
-    "rowEnd": "</div> <!--indent-h4--> </div> <!--indent-h3--> </div> <!--indent-h2-->"
+    "rowEnd": "</div> <!--indent-h4--> </div> <!--indent-h3-->"
+  },
+  {
+    "type": "htmlFile",
+    "file": "disease_嚴重特殊傳染性肺炎_慢性疾病病史.html"
   },
   {
     "type": "json",
     "file": "../json/disease_個案生母資料.json"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h2\">"
+  },
+  {
+    "type": "h2",
+    "title": "個案狀況維護與補充資料"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h3\">"
+  },
+  {
+    "rowStart": "<div class=\"row ml-0 pl-0\">",
+    "type": "htmlSource",
+    "text": "<div class=\"row ml-0 pl-0 mt-0 font-weight-bold text-black fs-1\">\n          侵入性治療\n          \n          \n          \n        </div></div>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"indent-h4\">"
+  },
+  {
+    "rowStart": "<div class=\"row ml-0 pl-0\">",
+    "type": "htmlSource",
+    "text": "<label class=\"row ml-0 pl-0 mt-2 mb-2 form-group form-inline  fs-0\">\n          是否插管　\n          \n          \n          \n        </label>"
+  },
+  {
+    "type": "Radio2OptionsOneLine",
+    "option1": "是",
+    "option2": "否"
+  },
+  {
+    "type": "DateOneLine",
+    "title": "　首次插管日　"
+  },
+  {
+    "type": "DateOneLine",
+    "title": "　　拔管日　",
+    "rowEnd": "</div>"
+  },
+  {
+    "rowStart": "<div class=\"row ml-0 pl-0\">",
+    "type": "htmlSource",
+    "text": "<label class=\"row ml-0 pl-0 mt-2 mb-2 form-group form-inline  fs-0\">\n          是否使用ECMO　\n          \n          \n          \n        </label>"
+  },
+  {
+    "type": "Radio2OptionsOneLine",
+    "option1": "是",
+    "option2": "否"
+  },
+  {
+    "type": "DateOneLine",
+    "title": "　首次使用ECMO日　"
+  },
+  {
+    "type": "DateOneLine",
+    "title": "　　移除ECMO日　",
+    "rowEnd": "</div>"
+  },
+  {
+    "type": "htmlSource",
+    "text": "</div><!--indent-h4-->  </div><!--indent-h3-->  </div><!--indent-h2-->"
   }
 ]
