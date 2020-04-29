@@ -176,8 +176,9 @@
     "option2":"否"
   },
   {
-    "type":"SelectOneLine",
-    "title":"妊娠週數<span style=\"color:red\">*</span>\n<a href=\"codingMemo.html?strMemo=若個案是否懷孕勾選是，此欄位必填，需做連動設計\">\uD83D\uDD06</a>",
+    "type":"InputOneLine",
+    "title":"　妊娠週數<span style=\"color:red\">*</span>\n<a href=\"codingMemo.html?strMemo=若個案是否懷孕勾選是，此欄位必填，需做連動設計\">\uD83D\uDD06</a>",
+    "text": "輸入數字",
     "rowEnd":"</div>"
   },
   {
