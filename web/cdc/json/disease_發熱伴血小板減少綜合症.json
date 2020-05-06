@@ -1,0 +1,38 @@
+[
+  {
+    "type": "diseaseName",
+    "title": "發熱伴血小板減少綜合症"
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_臨床症狀到主要症狀.json"
+  },
+  {
+    "type": "checkbox",
+    "list": [
+      "出血症狀",
+      "肌肉痛",
+      "血小板數量過低",
+      "淋巴腺腫大",
+      "發燒",
+      "腹瀉",
+      "嘔吐",
+      "頭痛",
+      "噁心",
+      "意識障礙",
+      "腦膜/腦炎型：發燒合併以下任一症狀意識喪失、抽蓄、或腦膜炎症狀"
+    ]
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_其他症狀.json"
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_流行病學資料.json"
+  },
+  {
+    "type": "json",
+    "file": "../json/disease_個案生母資料.json"
+  }
+]

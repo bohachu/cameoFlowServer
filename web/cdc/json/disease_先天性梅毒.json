@@ -37,7 +37,7 @@
   {
     "rowStart": "<div class=\"indent-h3\">",
     "type":"h3",
-    "radioTitle":"1. 特異性梅毒螺旋體試驗<span style=\"color:red\">*</span>"
+    "radioTitle":"1. 特異性梅毒螺旋體試驗"
   },
   {
     "rowStart":"<div class=\"indent-h4 row\">",
@@ -79,7 +79,7 @@
   {
     "rowStart": "<div class=\"indent-h3\">",
     "type":"h3",
-    "radioTitle":"2. 非特異性梅毒螺旋體試驗<span style=\"color:red\">*</span>"
+    "radioTitle":"2. 非特異性梅毒螺旋體試驗"
   },
   {
     "rowStart":"<div class=\"indent-h4 row\">",
@@ -96,7 +96,7 @@
   {
     "rowStart": "<div class=\"indent-h3\">",
     "type":"h3",
-    "radioTitle":"3. 臨床檢體(病灶滲出液、組織、胎盤、臍帶、屍體、鼻腔分泌物等)以下列方式檢測出梅毒螺旋體<span style=\"color:red\">*</span>"
+    "radioTitle":"3. 臨床檢體(病灶滲出液、組織、胎盤、臍帶、屍體、鼻腔分泌物等)以下列方式檢測出梅毒螺旋體"
   },
   {
     "rowStart":"<div class=\"indent-h4\">",
@@ -111,7 +111,7 @@
   {
     "rowStart": "<div class=\"indent-h3\">",
     "type":"h3",
-    "radioTitle":"4. 血清學特異性梅毒螺旋體 IgM 試驗<span style=\"color:red\">*</span>"
+    "radioTitle":"4. 血清學特異性梅毒螺旋體 IgM 試驗"
   },
   {
     "rowStart":"<div class=\"indent-h4\">",
@@ -125,7 +125,7 @@
   {
     "rowStart": "<div class=\"indent-h3\">",
     "type":"h3",
-    "radioTitle":"5. 腦脊髓液性病研究實驗室試驗<span style=\"color:red\">*</span>"
+    "radioTitle":"5. 腦脊髓液性病研究實驗室試驗"
   },
   {
     "rowStart":"<div class=\"indent-h4\">",
