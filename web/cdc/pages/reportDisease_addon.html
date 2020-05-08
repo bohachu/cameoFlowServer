@@ -283,36 +283,29 @@
               </div>
               <div class="col-lg-6">
                 <div class="form-group">
-                  <label class="fs-0" for="number">通報單位代碼<span style="color:red">*</span></label>
-                  <input class="form-control text-secondary" style="background-color: #F2F2F2" id="number" type="text"
-                         value="0036428">
+                  <label class="fs-0" for="address">通報單位地址<span style="color:red">*</span></label>
+                  <input class="form-control text-secondary" style="background-color: #F2F2F2" id="address" type="text"
+                         value="台北市中正區中山南路7號">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="fs-0" for="name178">通報單登錄者姓名<span style="color:red">*</span></label>
+                  <input class="form-control text-secondary" style="background-color: #F2F2F2" id="name178" type="text"
+                         value="王大明">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="fs-0" for="phone">通報者聯絡電話<span style="color:red">*</span></label>
+                  <input class="form-control text-secondary" style="background-color: #F2F2F2" id="phone553" type="text"
+                         value="02-2557-5555 #237">
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="form-group">
                   <label class="fs-0" for="doctor">診斷醫生<span style="color:red">*</span></label>
                   <input class="form-control text-secondary" id="doctor" type="text" value="輸入內容">
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="form-group">
-                  <label class="fs-0" for="address">通報單位地址<span style="color:red">*</span></label>
-                  <input class="form-control text-secondary" style="background-color: #F2F2F2" id="address"
-                         type="text" value="台北市中正區中山南路7號">
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="form-group">
-                  <label class="fs-0" for="name178">通報單登錄者姓名<span style="color:red">*</span></label>
-                  <input class="form-control text-secondary" style="background-color: #F2F2F2" id="name178"
-                         type="text" value="王大明">
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="form-group">
-                  <label class="fs-0" for="phone">通報者聯絡電話<span style="color:red">*</span></label>
-                  <input class="form-control text-secondary" style="background-color: #F2F2F2" id="phone553"
-                         type="text" value="02-2557-5555 #237">
                 </div>
               </div>
             </div>
@@ -779,21 +772,21 @@
 ] W欄位：https://docs.google.com/spreadsheets/d/11fnorqGalLlV-YU-tVuK0a_pyi5UFEXKnpuzJvi8hFA/edit#gid=1054066465">🔆</a>
         </h5>
         <table class="table table-hover mb-0 table-dashboard text-center">
-          <thead class="text-900" style="background-color: #f9f9f9;">
+          <thead class="text-900 col-5" style="background-color: #f9f9f9;">
           <tr style="color: #333333;">
-            <th>修改欄位</th>
-            <th>原欄位內容</th>
-            <th>增修後內容</th>
+            <th width="30%">修改欄位</th>
+            <th width="35%">原欄位內容</th>
+            <th width="35%">增修後內容</th>
           </tr>
           </thead>
           <tbody>
           <tr class="btn-reveal-trigger">
-            <td>個案姓名<span style="color: red;">(待審核)</span></td>
+            <td>個案姓名</br><span style="color: red;">(待審核)</span></td>
             <td>林小華</td>
             <td>林小花</td>
           </tr>
           <tr class="btn-reveal-trigger">
-            <td>居住地址<span style="color: red;">(待審核轉案)</span></td>
+            <td>居住地址</br><span style="color: red;">(待審核轉案)</span></td>
             <td>新北市永和區中和路6號</td>
             <td>台北市大安區忠孝東路三段21號</td>
           </tr>
@@ -829,13 +822,15 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content pt-4 pb-3">
       <div class="modal-body text-center">
-        <h5 class="mb-3">欄位（手機、生日、性別）增修內容將同步更新至此個案的以下通報單<a
+        <h5 class="mb-3">欄位（手機、生日、性別）增修內容</br>將同步更新至此個案的下列通報單<a
           href="codingMemo.html?strMemo=增修時需同步更新的欄位請依照 [通報單整合(有附加資訊疾病)定稿版V1
               ]
               X欄位：https://docs.google.com/spreadsheets/d/11fnorqGalLlV-YU-tVuK0a_pyi5UFEXKnpuzJvi8hFA/edit#gid=1054066465">🔆</a>
         </h5>
-        <p class="mb-1">1004589523 恙蟲病 (106/09/24)</p>
-        <p class="mb-1">1035863981 水痘併發症 (106/09/26)</p>
+        <p style="text-align:left" class="ml-7 mb-1">1004589523 恙蟲病 (106/09/24) 子單</p>
+        <p style="text-align:left" class="ml-7 mb-1">1005489589 恙蟲病 (106/09/25) 子單</p>
+        <p style="text-align:left" class="ml-7 mb-1">1003389589 登革熱 (106/11/25)</p>
+        <p style="text-align:left" class="ml-7 mb-1">1005569584 屈公病 (106/11/25)</p>
         <div class="d-flex justify-content-center mt-4">
           <button type="button" class="btn mr-3 btn-success" data-dismiss="modal"
                   style="background-color: #0F7841; border: none;">確認
