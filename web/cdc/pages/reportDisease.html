@@ -277,19 +277,6 @@
               </div>
               <div class="col-lg-6">
                 <div class="form-group">
-                  <label class="fs-0" for="number">通報單位代碼<span style="color:red">*</span></label>
-                  <input class="form-control text-secondary" style="background-color: #F2F2F2" id="number" type="text"
-                         value="0036428">
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="form-group">
-                  <label class="fs-0" for="doctor">診斷醫生<span style="color:red">*</span></label>
-                  <input class="form-control text-secondary" id="doctor" type="text" value="輸入內容">
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="form-group">
                   <label class="fs-0" for="address">通報單位地址<span style="color:red">*</span></label>
                   <input class="form-control text-secondary" style="background-color: #F2F2F2" id="address" type="text"
                          value="台北市中正區中山南路7號">
@@ -309,6 +296,12 @@
                          value="02-2557-5555 #237">
                 </div>
               </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="fs-0" for="doctor">診斷醫生<span style="color:red">*</span></label>
+                  <input class="form-control text-secondary" id="doctor" type="text" value="輸入內容">
+                </div>
+              </div>
             </div>
           </form>
           <h5 class="title font-weight-bold mt-3" id="state2">個案資料</h5>
@@ -316,7 +309,8 @@
             <div class="row m-1">
               <div class="col-lg-6">
                 <div class="form-group">
-                  <label class="fs-0" for="idnum">身分證統一編號/外來人口之居留證統一證號、護照號碼<span style="color:red">*</span><a href="codingMemo.html?strMemo=001「身分證統一編號/外來人口之居留證統一證號、護照號碼」如填寫身分證或居留證，需由第二碼辨識性別後，自動帶入性別的勾選欄位</br> 002 「身分證統一編號/外來人口之居留證統一證號、護照號碼」如填寫身分證或居留證，自動帶入國籍欄位為本國籍 </br> 003 「身分證統一編號/外來人口之居留證統一證號、護照號碼」如不是填寫身分證或居留證，自動帶入國籍欄位為非本國籍">🔆</a></label>
+                  <label class="fs-0" for="idnum">身分證統一編號/外來人口之居留證統一證號、護照號碼<span style="color:red">*</span><a
+                    href="codingMemo.html?strMemo=001「身分證統一編號/外來人口之居留證統一證號、護照號碼」如填寫身分證或居留證，需由第二碼辨識性別後，自動帶入性別的勾選欄位</br> 002 「身分證統一編號/外來人口之居留證統一證號、護照號碼」如填寫身分證或居留證，自動帶入國籍欄位為本國籍 </br> 003 「身分證統一編號/外來人口之居留證統一證號、護照號碼」如不是填寫身分證或居留證，自動帶入國籍欄位為非本國籍">🔆</a></label>
                   <span tooltip="・無身分證時才能輸入統一證號或護照號碼
 ・新生兒的出生日期~資料修改日小於6個月時，得以「AA」輸入
 ・本國籍人士且無法得知身分證號時使用，得以「BB」輸入
@@ -340,11 +334,13 @@
                 <div class="form-group">
                   <label class="fs-0" for="gender">性別</label></br>
                   <div class="custom-control custom-radio custom-control-inline">
-                    <input class="custom-control-input" id="customRadioInline1" type="radio" name="customRadioInline1">
+                    <input class="custom-control-input" id="customRadioInline1" type="radio"
+                           name="customRadioInline1">
                     <label class="custom-control-label fs-0" for="customRadioInline1">男</label>
                   </div>
                   <div class="custom-control custom-radio custom-control-inline">
-                    <input class="custom-control-input" id="customRadioInline2" type="radio" name="customRadioInline1">
+                    <input class="custom-control-input" id="customRadioInline2" type="radio"
+                           name="customRadioInline1">
                     <label class="custom-control-label fs-0" for="customRadioInline2">女</label>
                   </div>
                 </div>
@@ -358,7 +354,8 @@
               </div>
               <div class="col-lg-3">
                 <div class="form-group">
-                  <label class="fs-0" for="name">國籍<a href="codingMemo.html?strMemo=相依性欄位連動，如：填寫「非本國籍」則須填寫「國家」連動效果必須參考試算表「通報單整合(有附加資訊疾病)定稿版V1 」">🔆</a></label><br/>
+                  <label class="fs-0" for="name">國籍<a
+                    href="codingMemo.html?strMemo=相依性欄位連動，如：填寫「非本國籍」則須填寫「國家」連動效果必須參考試算表「通報單整合(有附加資訊疾病)定稿版V1 」">🔆</a></label><br/>
                   <div class="custom-control custom-radio custom-control-inline">
                     <input class="custom-control-input" id="customRadioInline601" type="radio"
                            name="customRadioInlineGroup601">
@@ -380,23 +377,47 @@
               </div>
             </div>
             <div class="row ml-1 mr-1">
+              <div class="col-lg-6">
+                <div class="form-group"><label for="exampleFormControlSelect1" class="fs-0">非本國籍居民身份<a
+                  href="codingMemo.html?strMemo=當非本國籍居民身份選擇「其他」，非本國籍居民身份說明為必填。當非本國籍居民身份不是選擇「其他」，非本國籍居民身份說明不可填">🔆</a></label>
+                  <select id="exampleFormControlSelect100" class="form-control text-secondary">
+                    <option>請選擇</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>其他</option>
+                  </select></div>
+              </div>
+              <div class="col-lg-6 mb-3">
+                <div class="form-group"><label for="name620" class="fs-0">非本國籍居民身份說明</label> <input id="name1000"
+                                                                                                    type="text"
+                                                                                                    value="輸入內容"
+                                                                                                    class="form-control text-secondary">
+                </div>
+              </div>
+            </div>
+            <div class="row ml-1 mr-1">
               <div class="col-lg-6 mb-3">
                 <div class="form-group">
                   <label class="fs-0" for="name620">手機<span style="color:red">*</span></label>
                   <input class="form-control text-secondary" id="name620" type="text" value="輸入內容">
                 </div>
-                <a href="#">＋ 新增一筆手機號碼</a><a href="codingMemo.html?strMemo=001 按新增時會出現填寫輸入框。002 新增的輸入框需要在右邊有一個動態小叉叉，讓使用者可以刪掉資料。">🔆</a>
+                <a href="#">＋ 新增一筆手機號碼</a><a
+                href="codingMemo.html?strMemo=001 按新增時會出現填寫輸入框。002 新增的輸入框需要在右邊有一個動態小叉叉，讓使用者可以刪掉資料。">🔆</a>
               </div>
               <div class="col-lg-6 mb-3">
                 <div class="form-group">
                   <label class="fs-0" for="name628">聯絡電話(公司或個人住家)<span style="color:red">*</span></label>
                   <input class="form-control text-secondary" id="name628" type="text" value="輸入內容">
                 </div>
-                <a href="#">＋ 新增一筆聯絡電話</a><a href="codingMemo.html?strMemo=001 按新增時會出現填寫輸入框。002 新增的輸入框需要在右邊有一個動態小叉叉，讓使用者可以刪掉資料。">🔆</a>
+                <a href="#">＋ 新增一筆聯絡電話</a><a
+                href="codingMemo.html?strMemo=001 按新增時會出現填寫輸入框。002 新增的輸入框需要在右邊有一個動態小叉叉，讓使用者可以刪掉資料。">🔆</a>
               </div>
               <div class="col-lg-3">
                 <div class="form-group">
-                  <label class="fs-0" for="exampleFormControlSelect1">居住縣市<span style="color:red">*</span><a href="codingMemo.html?strMemo=縣市資料請參考精誠居佑夥伴手上，由疾管署提供已盤點過居住縣市代碼的試算表">🔆</a></label>
+                  <label class="fs-0" for="exampleFormControlSelect1">居住縣市<span style="color:red">*</span><a
+                    href="codingMemo.html?strMemo=縣市資料請參考精誠居佑夥伴手上，由疾管署提供已盤點過居住縣市代碼的試算表">🔆</a></label>
                   <select class="form-control text-secondary" id="exampleFormControlSelect1">
                     <option>請選擇</option>
                     <option>臺北市</option>
@@ -422,7 +443,8 @@
               </div>
               <div class="col-lg-3">
                 <div class="form-group">
-                  <label class="fs-0" for="exampleFormControlSelect3">居住村里<a href="codingMemo.html?strMemo=居住村里欄位：寫了街道地址後，全自動利用 TGOS Database 自動帶入村里鄰的欄位，請精誠夥伴協助和疾管署夥伴確認可行性。">🔆</a></label>
+                  <label class="fs-0" for="exampleFormControlSelect3">居住村里<a
+                    href="codingMemo.html?strMemo=居住村里欄位：寫了街道地址後，全自動利用 TGOS Database 自動帶入村里鄰的欄位，請精誠夥伴協助和疾管署夥伴確認可行性。">🔆</a></label>
                   <select class="form-control text-secondary" id="exampleFormControlSelect3">
                     <option>請選擇</option>
                     <option>大安里</option>
@@ -436,7 +458,8 @@
               <div class="col-lg-6">
                 <div class="form-group">
                   <label class="fs-0" for="name675">街道地址</label>
-                  <input class="form-control text-secondary" id="name675" type="text" value="例：住家、飯店、人口密集機構或公司之村里街路門牌">
+                  <input class="form-control text-secondary" id="name675" type="text"
+                         value="例：住家、飯店、人口密集機構或公司之村里街路門牌">
                 </div>
               </div>
               <div class="col-lg-3" style="margin-top: 32px;">
@@ -473,45 +496,60 @@
                 </div>
               </div>
             </div>
-              <div class="row ml-1 mr-1 mt-2">
-                  <label class="fs-0 pl-2 ml-1">通報時狀況<a
-                    href="codingMemo.html?strMemo=001 以下欄位預設為反灰：首次入住隔離病房日、轉出隔離病房日、首次住ICU日、轉出ICU日、住院日、出院日、轉至院所名稱、轉院日期</br>002 當「通報時狀況」欄位勾選時，「首次入住隔離病房日、轉出隔離病房日、首次住ICU日、轉出ICU日、住院日、出院日、轉至院所名稱、轉院日期」欄位邏輯判斷如下：</br>01 門診：全部無法填寫，反灰</br>02 急診待床：全部無法填寫，反灰</br>03 入住一般病房：住院日，可填寫</br>04 入住加護病房：首次入住隔離病房日、轉出隔離病房日，可填寫</br>05 入住隔離病房：首次入住隔離病房日、轉出隔離病房日，可填寫</br>06 出院：出院日，可填寫</br>07 轉院：轉至院所、轉院日期，可填寫</br>08 無就醫：全部無法填寫，反灰</br>003 參考試算表「通報單整合(有附加資訊疾病)定稿版V1 」">🔆</a></label>
-                  <div class="JsonToHtmlCheckbox_buildHtmlAll" style="background-color: #FFFFFF">
-                    <b></b>
-                    <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-2">
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox598738" value="option598738">
-                      <label class="form-check-label fs-0" for="inlineCheckbox598738">門診</label>
-                    </div>
-                    <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox598739" value="option598739">
-                      <label class="form-check-label fs-0" for="inlineCheckbox598739">急診待床</label>
-                    </div>
-                    <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox598740" value="option598740">
-                      <label class="form-check-label fs-0" for="inlineCheckbox598740">入住一般病房</label>
-                    </div>
-                    <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox598741" value="option598741">
-                      <label class="form-check-label fs-0" for="inlineCheckbox598741">入住加護病房</label>
-                    </div>
-                    <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox598742" value="option598742">
-                      <label class="form-check-label fs-0" for="inlineCheckbox598742">入住隔離病房</label>
-                    </div>
-                    <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox598743" value="option598743">
-                      <label class="form-check-label fs-0" for="inlineCheckbox598743">出院</label>
-                    </div>
-                    <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox598744" value="option598744">
-                      <label class="form-check-label fs-0" for="inlineCheckbox598744">轉院</label>
-                    </div>
-                    <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox598745" value="option598745">
-                      <label class="form-check-label fs-0" for="inlineCheckbox598745">無就醫</label>
-                    </div>
-                  </div>
+            <div class="row ml-1 mr-1">
+              <div class="col-lg-6">
+                <div class="form-group"><label for="people-unit" class="fs-0">婚姻狀況</label> <select
+                  class="form-control text-secondary">
+                  <option>請選擇</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select></div>
+              </div>
+            </div>
+
+
+            <div class="row ml-1 mr-1 mt-2">
+              <label class="fs-0 pl-2 ml-1">通報時狀況<a
+                href="codingMemo.html?strMemo=001 以下欄位預設為反灰：首次入住隔離病房日、轉出隔離病房日、首次住ICU日、轉出ICU日、住院日、出院日、轉至院所名稱、轉院日期</br>002 當「通報時狀況」欄位勾選時，「首次入住隔離病房日、轉出隔離病房日、首次住ICU日、轉出ICU日、住院日、出院日、轉至院所名稱、轉院日期」欄位邏輯判斷如下：</br>01 門診：全部無法填寫，反灰</br>02 急診待床：全部無法填寫，反灰</br>03 入住一般病房：住院日，可填寫</br>04 入住加護病房：首次入住隔離病房日、轉出隔離病房日，可填寫</br>05 入住隔離病房：首次入住隔離病房日、轉出隔離病房日，可填寫</br>06 出院：出院日，可填寫</br>07 轉院：轉至院所、轉院日期，可填寫</br>08 無就醫：全部無法填寫，反灰</br>003 參考試算表「通報單整合(有附加資訊疾病)定稿版V1 」">🔆</a></label>
+              <div class="JsonToHtmlCheckbox_buildHtmlAll" style="background-color: #FFFFFF">
+                <b></b>
+                <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-2">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox598738" value="option598738">
+                  <label class="form-check-label fs-0" for="inlineCheckbox598738">門診</label>
                 </div>
+                <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox598739" value="option598739">
+                  <label class="form-check-label fs-0" for="inlineCheckbox598739">急診待床</label>
+                </div>
+                <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox598740" value="option598740">
+                  <label class="form-check-label fs-0" for="inlineCheckbox598740">入住一般病房</label>
+                </div>
+                <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox598741" value="option598741">
+                  <label class="form-check-label fs-0" for="inlineCheckbox598741">入住加護病房</label>
+                </div>
+                <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox598742" value="option598742">
+                  <label class="form-check-label fs-0" for="inlineCheckbox598742">入住隔離病房</label>
+                </div>
+                <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox598743" value="option598743">
+                  <label class="form-check-label fs-0" for="inlineCheckbox598743">出院</label>
+                </div>
+                <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox598744" value="option598744">
+                  <label class="form-check-label fs-0" for="inlineCheckbox598744">轉院</label>
+                </div>
+                <div class="JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox598745" value="option598745">
+                  <label class="form-check-label fs-0" for="inlineCheckbox598745">無就醫</label>
+                </div>
+              </div>
+            </div>
 
 
             <div class="m-0 p-1" style="background-color: #FFFFFF">
@@ -530,7 +568,8 @@
                 </div>
                 <div class="col-lg-3">
                   <div class="form-group">
-                    <label class="fs-0" for="name294">首次住ICU日<a href="https://docs.google.com/spreadsheets/d/11fnorqGalLlV-YU-tVuK0a_pyi5UFEXKnpuzJvi8hFA/edit#gid=1054066465">🔆</a></label>
+                    <label class="fs-0" for="name294">首次住ICU日<a
+                      href="https://docs.google.com/spreadsheets/d/11fnorqGalLlV-YU-tVuK0a_pyi5UFEXKnpuzJvi8hFA/edit#gid=1054066465">🔆</a></label>
                     <input class="form-control text-secondary" type="text" value="年/月/日">
                   </div>
                 </div>
@@ -554,7 +593,7 @@
                 </div>
               </div>
 
-                <div class="row ml-1 mr-1">
+              <div class="row ml-1 mr-1">
                 <div class="col-lg-6">
                   <div class="form-group">
                     <label class="fs-0" for="name729">轉至院所名稱<a
@@ -597,7 +636,8 @@
                 </div>
                 <div class="col-lg-3">
                   <div class="form-group">
-                    <label class="fs-0" for="name329">死亡日期<a href="codingMemo.html?strMemo=按選擇日期時，月份要顯示為本月份">🔆</a></label>
+                    <label class="fs-0" for="name329">死亡日期<a
+                      href="codingMemo.html?strMemo=按選擇日期時，月份要顯示為本月份">🔆</a></label>
                     <input class="form-control text-secondary" id="name329" type="text" value="年/月/日">
                     <!--
                 <label class="fs-0" for="datepicker766">死亡日期</label>
