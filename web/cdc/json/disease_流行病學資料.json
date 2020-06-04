@@ -133,6 +133,26 @@
   },
   {
     "type": "htmlSource",
+    "text": "<div class=\"JsonToHtmlCheckbox_buildHtmlAll row pl-0 ml-0 mt-2 mb-0\" style=\"background-color: #FFFFFF\">\n      <b></b>\n      <div class=\"JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0\">\n        <input class=\"form-check-input\" type=\"checkbox\">\n        <label class=\"form-check-label font-weight-bold fs-0\">與確定/極可能/可能病例曾有接觸或暴露共同感染源</label>\n      </div>\n    </div>",
+    "comment": "與確定/極可能/可能病例曾有接觸或暴露共同感染源標題"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"JsonToHtmlCheckbox_buildHtmlAll row pl-0 ml-0 mt-2 mb-0\" style=\"background-color: #FFFFFF\">\n      <b></b>\n      <div class=\"JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0\">\n        <input class=\"form-check-input\" type=\"checkbox\">\n        <label class=\"form-check-label font-weight-bold fs-0\">具血體液接觸</label>\n      </div>\n    </div>",
+    "comment": "具血體液接觸標題"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"JsonToHtmlCheckbox_buildHtmlAll row pl-0 ml-0 mt-2 mb-0\" style=\"background-color: #FFFFFF\">\n      <b></b>\n      <div class=\"JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0\">\n        <input class=\"form-check-input\" type=\"checkbox\">\n        <label class=\"form-check-label font-weight-bold fs-0\">具實驗室暴露史</label>\n      </div>\n    </div>",
+    "comment": "具實驗室暴露史標題"
+  },
+  {
+    "type": "htmlSource",
+    "text": "<div class=\"JsonToHtmlCheckbox_buildHtmlAll row pl-0 ml-0 mt-2 mb-0\" style=\"background-color: #FFFFFF\">\n      <b></b>\n      <div class=\"JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0\">\n        <input class=\"form-check-input\" type=\"checkbox\">\n        <label class=\"form-check-label font-weight-bold fs-0\">曾食用受汙染的水或食物</label>\n      </div>\n    </div>",
+    "comment": "曾食用受汙染的水或食物標題"
+  },
+  {
+    "type": "htmlSource",
     "text": "</div></div>",
     "comment": "indent-h3 避免一次從 indent h2 跳到 h4"
   },

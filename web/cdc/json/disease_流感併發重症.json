@@ -85,6 +85,17 @@
   {
     "rowStart":"<div class=\"row pb-1 pl-0 ml-0\">",
     "type":"TitleOneLine",
+    "title":"當季是否已接種流感疫苗<span style=\"color:red\">*</span>　"
+  },
+  {
+    "type":"Radio2OptionsOneLine",
+    "option1":"是",
+    "option2":"否",
+    "rowEnd":"</div>"
+  },
+  {
+    "rowStart":"<div class=\"row pb-1 pl-0 ml-0\">",
+    "type":"TitleOneLine",
     "title":"抗病毒藥物開立<span style=\"color:red\">*</span>　"
   },
   {
