@@ -127,7 +127,7 @@
   },
   {
     "type": "InputOneLine",
-    "title": "　其他接觸動物<span style=\"color:red\">*</span><a href=\"codingMemo.html?strMemo=當接觸動物種類選擇「其他接觸動物」才動態顯示此欄位\">\uD83D\uDD06</a>",
+    "title": "　其他接觸動物<a href=\"codingMemo.html?strMemo=當接觸動物種類選擇「其他接觸動物」才動態顯示此欄位\">\uD83D\uDD06</a>",
     "text": "輸入內容",
     "rowEnd": "</div>"
   },
