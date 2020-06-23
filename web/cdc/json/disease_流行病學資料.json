@@ -126,29 +126,28 @@
     "title": "　接觸動物種類<a href=\"https://docs.google.com/spreadsheets/d/1PsMy-qKZjy7WyOQSvkHWtLmuSCJo7CrbfsG_BGTKjH8/edit#gid=715655781&range=A1\">\uD83D\uDD06</a>"
   },
   {
-    "type": "InputOneLine",
-    "title": "　其他接觸動物<a href=\"codingMemo.html?strMemo=當接觸動物種類選擇「其他接觸動物」才動態顯示此欄位\">\uD83D\uDD06</a>",
-    "text": "輸入內容",
-    "rowEnd": "</div>"
+    "type": "htmlSource",
+    "text": "<div class=\"form-group form-inline \">\n        <label class=\"fs-0 ml-4\">\n          其他接觸動物<a href=\"codingMemo.html?strMemo=當接觸動物種類選擇「其他接觸動物」才動態顯示此欄位\">\uD83D\uDD06</a></label>\n          <input class=\"form-control text-secondary ml-2\" type=\"text\" placeholder=\"輸入內容\">\n        </div>\n\n    </div>",
+    "comment": "其他接觸動物"
   },
   {
     "type": "htmlSource",
-    "text": "<div class=\"JsonToHtmlCheckbox_buildHtmlAll row pl-0 ml-0 mt-2 mb-0\" style=\"background-color: #FFFFFF\">\n      <b></b>\n      <div class=\"JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0\">\n        <input class=\"form-check-input\" type=\"checkbox\">\n        <label class=\"form-check-label font-weight-bold fs-0\">與確定/極可能/可能病例曾有接觸或暴露共同感染源</label>\n      </div>\n    </div>",
+    "text": "<div class=\"JsonToHtmlCheckbox_buildHtmlAll row pl-0 ml-0 mt-2 mb-0\" style=\"background-color: #FFFFFF\">\n      <b></b>\n      <div class=\"JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0\">\n        <input class=\"form-check-input\" type=\"checkbox\">\n        <label class=\"form-check-label fs-0\">與確定/極可能/可能病例曾有接觸或暴露共同感染源</label>\n      </div>\n    </div>",
     "comment": "與確定/極可能/可能病例曾有接觸或暴露共同感染源標題"
   },
   {
     "type": "htmlSource",
-    "text": "<div class=\"JsonToHtmlCheckbox_buildHtmlAll row pl-0 ml-0 mt-2 mb-0\" style=\"background-color: #FFFFFF\">\n      <b></b>\n      <div class=\"JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0\">\n        <input class=\"form-check-input\" type=\"checkbox\">\n        <label class=\"form-check-label font-weight-bold fs-0\">具血體液接觸</label>\n      </div>\n    </div>",
+    "text": "<div class=\"JsonToHtmlCheckbox_buildHtmlAll row pl-0 ml-0 mt-2 mb-0\" style=\"background-color: #FFFFFF\">\n      <b></b>\n      <div class=\"JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0\">\n        <input class=\"form-check-input\" type=\"checkbox\">\n        <label class=\"form-check-label fs-0\">具血體液接觸</label>\n      </div>\n    </div>",
     "comment": "具血體液接觸標題"
   },
   {
     "type": "htmlSource",
-    "text": "<div class=\"JsonToHtmlCheckbox_buildHtmlAll row pl-0 ml-0 mt-2 mb-0\" style=\"background-color: #FFFFFF\">\n      <b></b>\n      <div class=\"JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0\">\n        <input class=\"form-check-input\" type=\"checkbox\">\n        <label class=\"form-check-label font-weight-bold fs-0\">具實驗室暴露史</label>\n      </div>\n    </div>",
+    "text": "<div class=\"JsonToHtmlCheckbox_buildHtmlAll row pl-0 ml-0 mt-2 mb-0\" style=\"background-color: #FFFFFF\">\n      <b></b>\n      <div class=\"JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0\">\n        <input class=\"form-check-input\" type=\"checkbox\">\n        <label class=\"form-check-label fs-0\">具實驗室暴露史</label>\n      </div>\n    </div>",
     "comment": "具實驗室暴露史標題"
   },
   {
     "type": "htmlSource",
-    "text": "<div class=\"JsonToHtmlCheckbox_buildHtmlAll row pl-0 ml-0 mt-2 mb-0\" style=\"background-color: #FFFFFF\">\n      <b></b>\n      <div class=\"JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0\">\n        <input class=\"form-check-input\" type=\"checkbox\">\n        <label class=\"form-check-label font-weight-bold fs-0\">曾食用受汙染的水或食物</label>\n      </div>\n    </div>",
+    "text": "<div class=\"JsonToHtmlCheckbox_buildHtmlAll row pl-0 ml-0 mt-2 mb-0\" style=\"background-color: #FFFFFF\">\n      <b></b>\n      <div class=\"JsonToHtmlCheckbox_getCheckboxWithLabel form-check form-check-inline mb-2 ml-0\">\n        <input class=\"form-check-input\" type=\"checkbox\">\n        <label class=\"form-check-label fs-0\">曾食用受汙染的水或食物</label>\n      </div>\n    </div>",
     "comment": "曾食用受汙染的水或食物標題"
   },
   {
