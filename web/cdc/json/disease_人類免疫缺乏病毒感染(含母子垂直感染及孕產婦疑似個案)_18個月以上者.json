@@ -1,7 +1,7 @@
 [
   {
     "type": "diseaseName",
-    "title": ""
+    "title": "人類免疫缺乏病毒感染(含母子垂直感染及孕產婦疑似個案)_18個月以上者"
   },
   {
     "type": "htmlFile",
@@ -211,7 +211,7 @@
   },
   {
     "type":"h2",
-    "title":"個案狀況維護與補充資料<a href=\"codingMemo.html?strMemo=勾選孕產婦初篩陽性者，此兩題為必填\">\uD83D\uDD06</a>"
+    "title":"個案狀況維護與補充資料<a href=\"codingMemo.html?strMemo=勾選孕產婦快篩/初篩陽性者，此兩題為必填\">\uD83D\uDD06</a>"
   },
   {
     "type": "htmlSource",
